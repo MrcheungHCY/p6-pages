@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Told-To Dual Race</title>
+
+<link rel="stylesheet" href="../../../assets/fx-kit/css/hcy-fx.css" />
+<link rel="stylesheet" href="../../../assets/hcy-touch.css" />
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-motion.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-audio.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-three.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx.js"></script>
+<script src="../../../assets/character-library/hcy-chars.js"></script>
+<script src="../../../assets/hcy-touch.js"></script>
+<script src="../../banks/no-exam-filter.js"></script>
+
+<style>
+:root{--ink:#2a1830;--pink:#ff7ab6;--sky:#5ec8ff;--mint:#7dffb3;--yel:#ffe14a;--lilac:#b48cff;--cream:#fff8fb;--card:#ffffffee}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:"Comic Sans MS","Chalkboard SE","Nunito","Segoe UI Rounded",system-ui,sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;
+background:radial-gradient(circle at 10% 20%,rgba(255,122,182,.35) 0 20px,transparent 21px),radial-gradient(circle at 85% 15%,rgba(94,200,255,.4) 0 16px,transparent 17px),linear-gradient(165deg,#ffd6ea 0%,#fff3b0 40%,#c8ffe8 70%,#b8e8ff 100%)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background-image:radial-gradient(circle,#ff7ab6 1.6px,transparent 2px);background-size:40px 40px}
+.app{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:8px;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;background:var(--card);border:4px solid var(--ink);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--ink)}
+.title-block{display:flex;align-items:center;gap:10px}.title-block img.scene{width:56px;height:56px;object-fit:contain;animation:idleBob 1.5s ease-in-out infinite alternate}
+.title-block h1{font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.15}.title-block .mode{font-size:.75rem;font-weight:800;opacity:.75}
+.hud{display:flex;flex-wrap:wrap;gap:6px}
+.stat{padding:6px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-weight:900;font-size:clamp(.72rem,1.8vw,.92rem);box-shadow:0 2px 0 var(--ink)}
+.stat.timer{background:#b8e8ff}.stat.lives{background:#ffd0e8}.stat.streak{background:#ffe14a}.stat.p1{background:#ffb0d8}.stat.p2{background:#a8f0ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;font:inherit;font-weight:900;border:4px solid var(--ink);border-radius:999px;background:#ffb0d8;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 var(--ink);touch-action:none}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.btn-sky{background:#7ad4ff}.btn-mint{background:#7dffc0}.btn-yel{background:#ffe14a}.btn-lilac{background:#d4b8ff}
+.stage{flex:1;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:8px}
+.prompt-card{background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:12px 14px;box-shadow:0 4px 0 var(--ink);text-align:center}
+.prompt-card .label{font-size:.75rem;font-weight:800;opacity:.7}.prompt-card .prompt{font-size:clamp(1.05rem,3vw,1.5rem);font-weight:900;line-height:1.25}
+.prompt-card .hint{margin-top:6px;font-size:.85rem;font-weight:700;opacity:.75}
+.play{min-height:0;display:flex;gap:8px;align-items:stretch}
+.pad{flex:1;min-width:0;border:4px solid var(--ink);border-radius:22px;background:#ffd6ea;box-shadow:0 5px 0 var(--ink);padding:10px;display:flex;flex-direction:column;gap:8px;touch-action:none}
+.pad.p2{background:#c8f0ff}.pad h2{font-size:clamp(.9rem,2vw,1.05rem);text-align:center}
+.grid{display:grid;gap:8px;flex:1;min-height:0;align-content:start;overflow:auto;grid-template-columns:1fr}
+.choice,.chip{min-height:52px;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;font-weight:800;font-size:clamp(.82rem,2vw,1.02rem);cursor:pointer;touch-action:none;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center;justify-content:center;text-align:center}
+.choice.held,.chip.held,.lane.held,.corner.held,.zone.held{background:#ffe14a;transform:scale(.97)}
+.choice.ok,.chip.ok{background:#7dffb3}.choice.bad,.chip.bad{background:#ff9aac;animation:shake .35s ease}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;min-height:0}
+.zone{border:4px dashed var(--ink);border-radius:20px;padding:8px;min-height:100px;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.zone.should{background:#d8ffe8}.zone.shouldnt{background:#ffe0e8}.zone h3{text-align:center}
+.cards-pool{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px;max-height:40%;overflow:auto}
+.corner-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;flex:1;min-height:0}
+.corner{border:4px solid var(--ink);border-radius:18px;padding:8px;background:#fff;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.corner.before{background:#d4f0ff}.corner.during{background:#ffe8b0}.corner.after{background:#d8ffe0}.corner.never{background:#ffd0d8}
+.lane-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.lane{min-height:64px;border:4px solid var(--ink);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;touch-action:none;box-shadow:0 3px 0 var(--ink)}
+.footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.toast{position:fixed;left:50%;bottom:8vh;transform:translateX(-50%);background:#ff7ab6;color:#fff;font-weight:900;padding:10px 18px;border-radius:14px;border:3px solid var(--ink);z-index:50;pointer-events:none;opacity:0;transition:opacity .2s}.toast.on{opacity:1}
+#hcy-mascot-slot{position:fixed;right:8px;bottom:8px;width:110px;height:110px;z-index:40;pointer-events:none}
+.start-overlay{position:absolute;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(255,248,251,.9)}
+.start-card{background:#fff;border:5px solid var(--ink);border-radius:24px;padding:22px;max-width:520px;text-align:center;box-shadow:0 8px 0 var(--ink)}
+.start-card p{margin:10px 0 16px;font-weight:700;line-height:1.4}
+.blank{min-width:90px;min-height:48px;border:3px dashed var(--ink);border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:900;padding:6px 10px;margin:4px}
+.blank.p1{background:#ffb0d8;border-style:solid}.blank.p2{background:#a8f0ff;border-style:solid}
+.passage{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:800;line-height:1.6;text-align:left}
+@keyframes idleBob{0%{transform:translateY(0) rotate(-2deg)}100%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media(max-width:700px){.play{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="title-block">
+      <img class="scene" src="../../../assets/character-library/png/char-026.png" alt="" onerror="this.style.display='none'" />
+      <div><div class="mode">MODE 1 — told … to / not to</div><h1>Told-To Dual Race</h1></div>
+    </div>
+    <div class="hud">
+      <span class="stat" id="hud-q">0/0</span>
+      <span class="stat timer" id="hud-timer">⏱ —</span>
+      <span class="stat lives" id="hud-lives">♥ 3</span>
+      <span class="stat streak" id="hud-streak">🔥 0</span>
+      <span class="stat p1" id="hud-p1">P1 0</span>
+      <span class="stat p2" id="hud-p2">P2 0</span>
+    </div>
+  </div>
+  <div class="stage"><div class="prompt-card"><div class="label">told … to / not to</div><div class="prompt" id="prompt">…</div><div class="hint" id="hint"></div></div>
+<div class="play"><div class="pad" id="pad1"><h2>P1</h2><div class="grid" id="grid1"></div></div><div class="pad p2" id="pad2"><h2>P2</h2><div class="grid" id="grid2"></div></div></div></div>
+  <div class="footer">
+    <button class="btn btn-mint" id="btn-start" type="button">▶ Start</button>
+    <button class="btn btn-yel" id="btn-next" type="button">Next ▶</button>
+    <button class="btn btn-lilac" id="btn-reset" type="button">↺ Teacher Reset</button>
+  </div>
+</div>
+<div id="start-overlay" class="start-overlay"><div class="start-card"><h2>Told-To Dual Race</h2><p>L/R pads race on told…to / not to choices. Grammar focus: told to / not to.</p>
+<button class="btn btn-sky" id="btn-start2" type="button">▶ Start Game</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="hcy-mascot-slot"></div>
+<script type="application/json" id="bank-json">{"meta":{"bank":"told-to","skill":"told-to","count":51,"primary_source":"P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx","also":["_targets.json","p6-conditionals.js","p6-u1-3-vocab.js","parallel-original"],"exclude":"每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)","item_schema":["id","prompt","choices|slots","answer","distractors","unit","skill","difficulty"],"scrubbed":"2026-11-04 Asia/Hong_Kong — exam stems removed"},"items":[{"id":"told-01","prompt":"The doctor said: \"Karen, have plenty of rest.\" Choose the correct reported sentence.","answer":"The doctor told Karen to have plenty of rest.","distractors":["The doctor told Karen not to have plenty of rest.","The doctor told Karen have plenty of rest.","The doctor said Karen to have plenty of rest."],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["The doctor told Karen have plenty of rest.","The doctor told Karen to have plenty of rest.","The doctor told Karen not to have plenty of rest.","The doctor said Karen to have plenty of rest."],"source":"WS"},{"id":"told-02","prompt":"The doctor said: \"Tim, drink lots of warm water.\" Choose the correct reported sentence.","answer":"The doctor told Tim to drink lots of warm water.","distractors":["The doctor told Tim not to drink lots of warm water.","The doctor told Tim drink lots of warm water.","The doctor said Tim to drink lots of warm water."],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["The doctor told Tim to drink lots of warm water.","The doctor told Tim not to drink lots of warm water.","The doctor told Tim drink lots of warm water.","The doctor said Tim to drink lots of warm water."],"source":"WS"},{"id":"told-03","prompt":"The doctor said: \"Jack, don't eat fried food.\" Choose the correct reported sentence.","answer":"The doctor told Jack not to eat fried food.","distractors":["The doctor told Jack to eat fried food.","The doctor told Jack eat fried food.","The doctor said Jack to eat fried food."],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["The doctor told Jack to eat fried food.","The doctor said Jack to eat fried food.","The doctor told Jack eat fried food.","The doctor told Jack not to eat fried food."],"source":"WS"},{"id":"told-04","prompt":"The doctor said: \"Miss Ho, eat more fruit and vegetables.\" Choose the correct reported sentence.","answer":"The doctor told Miss Ho to eat more fruit and vegetables.","distractors":["The doctor told Miss Ho not to eat more fruit and vegetables.","The doctor told Miss Ho eat more fruit and vegetables.","The doctor said Miss Ho to eat more fruit and vegetables."],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["The doctor told Miss Ho to eat more fruit and vegetables.","The doctor told Miss Ho not to eat more fruit and vegetables.","The doctor told Miss Ho eat more fruit and vegetables.","The doctor said Miss Ho to eat more fruit and vegetables."],"source":"WS"},{"id":"told-05","prompt":"The doctor said: \"Mr Chan, take his medicine on time.\" Choose the correct reported sentence.","answer":"The doctor told Mr Chan to take his medicine on time.","distractors":["The doctor told Mr Chan not to take his medicine on time.","The doctor told Mr Chan take his medicine on time.","The doctor said Mr Chan to take his medicine on time."],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["The doctor told Mr Chan to take his medicine on time.","The doctor told Mr Chan take his medicine on time.","The doctor said Mr Chan to take his medicine on time.","The doctor told Mr Chan not to take his medicine on time."],"source":"WS"},{"id":"told-06","prompt":"Mum said: \"Amy, cover her mouth when she coughs.\" Choose the correct reported sentence.","answer":"Mum told Amy to cover her mouth when she coughs.","distractors":["Mum told Amy not to cover her mouth when she coughs.","Mum told Amy cover her mouth when she coughs.","Mum said Amy to cover her mouth when she coughs."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Amy to cover her mouth when she coughs.","Mum told Amy not to cover her mouth when she coughs.","Mum said Amy to cover her mouth when she coughs.","Mum told Amy cover her mouth when she coughs."],"source":"parallel"},{"id":"told-07","prompt":"Mum said: \"Ben, wash his hands before eating.\" Choose the correct reported sentence.","answer":"Mum told Ben to wash his hands before eating.","distractors":["Mum told Ben not to wash his hands before eating.","Mum told Ben wash his hands before eating.","Mum said Ben to wash his hands before eating."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Ben not to wash his hands before eating.","Mum told Ben to wash his hands before eating.","Mum told Ben wash his hands before eating.","Mum said Ben to wash his hands before eating."],"source":"parallel"},{"id":"told-08","prompt":"Mum said: \"Cindy, don't eat junk food.\" Choose the correct reported sentence.","answer":"Mum told Cindy not to eat junk food.","distractors":["Mum told Cindy to eat junk food.","Mum told Cindy eat junk food.","Mum said Cindy to eat junk food."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Cindy not to eat junk food.","Mum told Cindy to eat junk food.","Mum told Cindy eat junk food.","Mum said Cindy to eat junk food."],"source":"parallel"},{"id":"told-09","prompt":"Mum said: \"David, finish his homework first.\" Choose the correct reported sentence.","answer":"Mum told David to finish his homework first.","distractors":["Mum told David not to finish his homework first.","Mum told David finish his homework first.","Mum said David to finish his homework first."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum said David to finish his homework first.","Mum told David not to finish his homework first.","Mum told David finish his homework first.","Mum told David to finish his homework first."],"source":"parallel"},{"id":"told-10","prompt":"Mum said: \"Eva, don't run in the corridor.\" Choose the correct reported sentence.","answer":"Mum told Eva not to run in the corridor.","distractors":["Mum told Eva to run in the corridor.","Mum told Eva run in the corridor.","Mum said Eva to run in the corridor."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Eva not to run in the corridor.","Mum said Eva to run in the corridor.","Mum told Eva run in the corridor.","Mum told Eva to run in the corridor."],"source":"parallel"},{"id":"told-11","prompt":"Mum said: \"Fred, wear a mask when he is sick.\" Choose the correct reported sentence.","answer":"Mum told Fred to wear a mask when he is sick.","distractors":["Mum told Fred not to wear a mask when he is sick.","Mum told Fred wear a mask when he is sick.","Mum said Fred to wear a mask when he is sick."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Fred to wear a mask when he is sick.","Mum told Fred not to wear a mask when he is sick.","Mum said Fred to wear a mask when he is sick.","Mum told Fred wear a mask when he is sick."],"source":"parallel"},{"id":"told-12","prompt":"Mum said: \"Grace, don't share her water bottle.\" Choose the correct reported sentence.","answer":"Mum told Grace not to share her water bottle.","distractors":["Mum told Grace to share her water bottle.","Mum told Grace share her water bottle.","Mum said Grace to share her water bottle."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Grace share her water bottle.","Mum told Grace not to share her water bottle.","Mum told Grace to share her water bottle.","Mum said Grace to share her water bottle."],"source":"parallel"},{"id":"told-13","prompt":"Mum said: \"Henry, drink warm soup.\" Choose the correct reported sentence.","answer":"Mum told Henry to drink warm soup.","distractors":["Mum told Henry not to drink warm soup.","Mum told Henry drink warm soup.","Mum said Henry to drink warm soup."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum said Henry to drink warm soup.","Mum told Henry to drink warm soup.","Mum told Henry not to drink warm soup.","Mum told Henry drink warm soup."],"source":"parallel"},{"id":"told-14","prompt":"Mum said: \"Ivy, don't skip breakfast.\" Choose the correct reported sentence.","answer":"Mum told Ivy not to skip breakfast.","distractors":["Mum told Ivy to skip breakfast.","Mum told Ivy skip breakfast.","Mum said Ivy to skip breakfast."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Ivy to skip breakfast.","Mum told Ivy not to skip breakfast.","Mum said Ivy to skip breakfast.","Mum told Ivy skip breakfast."],"source":"parallel"},{"id":"told-15","prompt":"Mum said: \"Jason, put on a jacket.\" Choose the correct reported sentence.","answer":"Mum told Jason to put on a jacket.","distractors":["Mum told Jason not to put on a jacket.","Mum told Jason put on a jacket.","Mum said Jason to put on a jacket."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum said Jason to put on a jacket.","Mum told Jason to put on a jacket.","Mum told Jason put on a jacket.","Mum told Jason not to put on a jacket."],"source":"parallel"},{"id":"told-16","prompt":"Mum said: \"Kelly, don't play ball games after dinner.\" Choose the correct reported sentence.","answer":"Mum told Kelly not to play ball games after dinner.","distractors":["Mum told Kelly to play ball games after dinner.","Mum told Kelly play ball games after dinner.","Mum said Kelly to play ball games after dinner."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Kelly not to play ball games after dinner.","Mum told Kelly play ball games after dinner.","Mum told Kelly to play ball games after dinner.","Mum said Kelly to play ball games after dinner."],"source":"parallel"},{"id":"told-17","prompt":"Mum said: \"Leo, see the dentist.\" Choose the correct reported sentence.","answer":"Mum told Leo to see the dentist.","distractors":["Mum told Leo not to see the dentist.","Mum told Leo see the dentist.","Mum said Leo to see the dentist."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum said Leo to see the dentist.","Mum told Leo see the dentist.","Mum told Leo to see the dentist.","Mum told Leo not to see the dentist."],"source":"parallel"},{"id":"told-18","prompt":"Mum said: \"Mandy, don't touch dirty surfaces.\" Choose the correct reported sentence.","answer":"Mum told Mandy not to touch dirty surfaces.","distractors":["Mum told Mandy to touch dirty surfaces.","Mum told Mandy touch dirty surfaces.","Mum said Mandy to touch dirty surfaces."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Mandy touch dirty surfaces.","Mum said Mandy to touch dirty surfaces.","Mum told Mandy not to touch dirty surfaces.","Mum told Mandy to touch dirty surfaces."],"source":"parallel"},{"id":"told-19","prompt":"Mum said: \"Nick, rest in bed.\" Choose the correct reported sentence.","answer":"Mum told Nick to rest in bed.","distractors":["Mum told Nick not to rest in bed.","Mum told Nick rest in bed.","Mum said Nick to rest in bed."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Nick rest in bed.","Mum said Nick to rest in bed.","Mum told Nick to rest in bed.","Mum told Nick not to rest in bed."],"source":"parallel"},{"id":"told-20","prompt":"Mum said: \"Olivia, don't shout in the library.\" Choose the correct reported sentence.","answer":"Mum told Olivia not to shout in the library.","distractors":["Mum told Olivia to shout in the library.","Mum told Olivia shout in the library.","Mum said Olivia to shout in the library."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Olivia not to shout in the library.","Mum said Olivia to shout in the library.","Mum told Olivia shout in the library.","Mum told Olivia to shout in the library."],"source":"parallel"},{"id":"told-21","prompt":"Mum said: \"Peter, take an umbrella.\" Choose the correct reported sentence.","answer":"Mum told Peter to take an umbrella.","distractors":["Mum told Peter not to take an umbrella.","Mum told Peter take an umbrella.","Mum said Peter to take an umbrella."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Peter not to take an umbrella.","Mum told Peter to take an umbrella.","Mum said Peter to take an umbrella.","Mum told Peter take an umbrella."],"source":"parallel"},{"id":"told-22","prompt":"Mum said: \"Queen, don't forget her medicine.\" Choose the correct reported sentence.","answer":"Mum told Queen not to forget her medicine.","distractors":["Mum told Queen to forget her medicine.","Mum told Queen forget her medicine.","Mum said Queen to forget her medicine."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Queen not to forget her medicine.","Mum said Queen to forget her medicine.","Mum told Queen to forget her medicine.","Mum told Queen forget her medicine."],"source":"parallel"},{"id":"told-23","prompt":"Mum said: \"Ryan, brush his teeth twice a day.\" Choose the correct reported sentence.","answer":"Mum told Ryan to brush his teeth twice a day.","distractors":["Mum told Ryan not to brush his teeth twice a day.","Mum told Ryan brush his teeth twice a day.","Mum said Ryan to brush his teeth twice a day."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Ryan not to brush his teeth twice a day.","Mum said Ryan to brush his teeth twice a day.","Mum told Ryan brush his teeth twice a day.","Mum told Ryan to brush his teeth twice a day."],"source":"parallel"},{"id":"told-24","prompt":"Mum said: \"Sara, don't stay in wet clothes.\" Choose the correct reported sentence.","answer":"Mum told Sara not to stay in wet clothes.","distractors":["Mum told Sara to stay in wet clothes.","Mum told Sara stay in wet clothes.","Mum said Sara to stay in wet clothes."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Sara stay in wet clothes.","Mum told Sara to stay in wet clothes.","Mum told Sara not to stay in wet clothes.","Mum said Sara to stay in wet clothes."],"source":"parallel"},{"id":"told-25","prompt":"Mum said: \"Tony, open the window for fresh air.\" Choose the correct reported sentence.","answer":"Mum told Tony to open the window for fresh air.","distractors":["Mum told Tony not to open the window for fresh air.","Mum told Tony open the window for fresh air.","Mum said Tony to open the window for fresh air."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Tony open the window for fresh air.","Mum told Tony not to open the window for fresh air.","Mum said Tony to open the window for fresh air.","Mum told Tony to open the window for fresh air."],"source":"parallel"},{"id":"told-26","prompt":"Mum said: \"Uma, don't eat too quickly.\" Choose the correct reported sentence.","answer":"Mum told Uma not to eat too quickly.","distractors":["Mum told Uma to eat too quickly.","Mum told Uma eat too quickly.","Mum said Uma to eat too quickly."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Uma not to eat too quickly.","Mum said Uma to eat too quickly.","Mum told Uma to eat too quickly.","Mum told Uma eat too quickly."],"source":"parallel"},{"id":"told-27","prompt":"Mum said: \"Victor, do light exercise.\" Choose the correct reported sentence.","answer":"Mum told Victor to do light exercise.","distractors":["Mum told Victor not to do light exercise.","Mum told Victor do light exercise.","Mum said Victor to do light exercise."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Victor do light exercise.","Mum told Victor to do light exercise.","Mum said Victor to do light exercise.","Mum told Victor not to do light exercise."],"source":"parallel"},{"id":"told-28","prompt":"Mum said: \"Wendy, don't use other people's towels.\" Choose the correct reported sentence.","answer":"Mum told Wendy not to use other people's towels.","distractors":["Mum told Wendy to use other people's towels.","Mum told Wendy use other people's towels.","Mum said Wendy to use other people's towels."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Wendy to use other people's towels.","Mum said Wendy to use other people's towels.","Mum told Wendy use other people's towels.","Mum told Wendy not to use other people's towels."],"source":"parallel"},{"id":"told-29","prompt":"Mum said: \"Xander, keep the classroom clean.\" Choose the correct reported sentence.","answer":"Mum told Xander to keep the classroom clean.","distractors":["Mum told Xander not to keep the classroom clean.","Mum told Xander keep the classroom clean.","Mum said Xander to keep the classroom clean."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum said Xander to keep the classroom clean.","Mum told Xander to keep the classroom clean.","Mum told Xander not to keep the classroom clean.","Mum told Xander keep the classroom clean."],"source":"parallel"},{"id":"told-30","prompt":"Mum said: \"Yvonne, don't copy homework.\" Choose the correct reported sentence.","answer":"Mum told Yvonne not to copy homework.","distractors":["Mum told Yvonne to copy homework.","Mum told Yvonne copy homework.","Mum said Yvonne to copy homework."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Yvonne not to copy homework.","Mum told Yvonne to copy homework.","Mum told Yvonne copy homework.","Mum said Yvonne to copy homework."],"source":"parallel"},{"id":"told-31","prompt":"Mum said: \"Zac, pack his bag the night before.\" Choose the correct reported sentence.","answer":"Mum told Zac to pack his bag the night before.","distractors":["Mum told Zac not to pack his bag the night before.","Mum told Zac pack his bag the night before.","Mum said Zac to pack his bag the night before."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Zac not to pack his bag the night before.","Mum told Zac to pack his bag the night before.","Mum said Zac to pack his bag the night before.","Mum told Zac pack his bag the night before."],"source":"parallel"},{"id":"told-32","prompt":"Mum said: \"Alice, don't drink ice water when she has a sore throat.\" Choose the correct reported sentence.","answer":"Mum told Alice not to drink ice water when she has a sore throat.","distractors":["Mum told Alice to drink ice water when she has a sore throat.","Mum told Alice drink ice water when she has a sore throat.","Mum said Alice to drink ice water when she has a sore throat."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Alice to drink ice water when she has a sore throat.","Mum told Alice drink ice water when she has a sore throat.","Mum told Alice not to drink ice water when she has a sore throat.","Mum said Alice to drink ice water when she has a sore throat."],"source":"parallel"},{"id":"told-33","prompt":"Mum said: \"Bobby, tell the teacher if he feels dizzy.\" Choose the correct reported sentence.","answer":"Mum told Bobby to tell the teacher if he feels dizzy.","distractors":["Mum told Bobby not to tell the teacher if he feels dizzy.","Mum told Bobby tell the teacher if he feels dizzy.","Mum said Bobby to tell the teacher if he feels dizzy."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Bobby to tell the teacher if he feels dizzy.","Mum said Bobby to tell the teacher if he feels dizzy.","Mum told Bobby tell the teacher if he feels dizzy.","Mum told Bobby not to tell the teacher if he feels dizzy."],"source":"parallel"},{"id":"told-34","prompt":"Mum said: \"Chloe, don't leave rubbish on the floor.\" Choose the correct reported sentence.","answer":"Mum told Chloe not to leave rubbish on the floor.","distractors":["Mum told Chloe to leave rubbish on the floor.","Mum told Chloe leave rubbish on the floor.","Mum said Chloe to leave rubbish on the floor."],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["Mum told Chloe to leave rubbish on the floor.","Mum told Chloe not to leave rubbish on the floor.","Mum told Chloe leave rubbish on the floor.","Mum said Chloe to leave rubbish on the floor."],"source":"parallel"},{"id":"told-35","prompt":"Mum said: \"Derek, wash fruit before eating.\" Choose the correct reported sentence.","answer":"Mum told Derek to wash fruit before eating.","distractors":["Mum told Derek not to wash fruit before eating.","Mum told Derek wash fruit before eating.","Mum said Derek to wash fruit before eating."],"unit":"U1","skill":"told-to","difficulty":"hard","choices":["Mum told Derek wash fruit before eating.","Mum said Derek to wash fruit before eating.","Mum told Derek to wash fruit before eating.","Mum told Derek not to wash fruit before eating."],"source":"parallel"},{"id":"told-36","prompt":"The nurse told Sam ____ drink warm water.","answer":"to","distractors":["not to","for","that"],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["to","not to","for","that"],"source":"slot-parallel","form":"gap"},{"id":"told-37","prompt":"Dad told Mia ____ eat oily food.","answer":"not to","distractors":["to","don't","no"],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["to","not to","don't","no"],"source":"slot-parallel","form":"gap"},{"id":"told-38","prompt":"Miss Lee told the class ____ wash their hands.","answer":"to","distractors":["not to","for","and"],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["to","not to","for","and"],"source":"slot-parallel","form":"gap"},{"id":"told-39","prompt":"The dentist told Ken ____ eat too many sweets.","answer":"not to","distractors":["to","don't","never"],"unit":"U1","skill":"told-to","difficulty":"easy","choices":["to","not to","don't","never"],"source":"slot-parallel","form":"gap"},{"id":"told-40","prompt":"Coach told Leo ____ stretch before running.","answer":"to","distractors":["not to","for","must"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","for","must"],"source":"slot-parallel","form":"gap"},{"id":"told-41","prompt":"Mum told us ____ stay up late before the exam.","answer":"not to","distractors":["to","don't","no"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","don't","no"],"source":"slot-parallel","form":"gap"},{"id":"told-42","prompt":"Mr Chan told Pam ____ take her medicine on time.","answer":"to","distractors":["not to","for","that"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","for","that"],"source":"slot-parallel","form":"gap"},{"id":"told-43","prompt":"The doctor told Jack ____ play football today.","answer":"not to","distractors":["to","don't","stop"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","don't","stop"],"source":"slot-parallel","form":"gap"},{"id":"told-44","prompt":"Teacher told Amy ____ bring her textbook tomorrow.","answer":"to","distractors":["not to","for","bring"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","for","bring"],"source":"slot-parallel","form":"gap"},{"id":"told-45","prompt":"Dad told Ben ____ shout in the cinema.","answer":"not to","distractors":["to","don't","no"],"unit":"U1","skill":"told-to","difficulty":"mid","choices":["to","not to","don't","no"],"source":"slot-parallel","form":"gap"},{"id":"told-46","prompt":"Mum said: \"Eva, pack your raincoat.\" Choose the correct reported sentence.","answer":"Mum told Eva to pack her raincoat.","distractors":["Mum told Eva not to pack her raincoat.","Mum told Eva pack her raincoat.","Mum said Eva to pack her raincoat."],"unit":"U1","skill":"told-to","difficulty":"easy","source":"parallel","choices":["Mum told Eva to pack her raincoat.","Mum told Eva not to pack her raincoat.","Mum told Eva pack her raincoat.","Mum said Eva to pack her raincoat."]},{"id":"told-47","prompt":"Dad said: \"Hugo, don't leave wet shoes indoors.\" Choose the correct reported sentence.","answer":"Dad told Hugo not to leave wet shoes indoors.","distractors":["Dad told Hugo to leave wet shoes indoors.","Dad told Hugo leave wet shoes indoors.","Dad said Hugo not to leave wet shoes indoors."],"unit":"U1","skill":"told-to","difficulty":"easy","source":"parallel","choices":["Dad told Hugo leave wet shoes indoors.","Dad said Hugo not to leave wet shoes indoors.","Dad told Hugo not to leave wet shoes indoors.","Dad told Hugo to leave wet shoes indoors."]},{"id":"told-48","prompt":"The nurse said: \"Rita, take your temperature again.\" Choose the correct reported sentence.","answer":"The nurse told Rita to take her temperature again.","distractors":["The nurse told Rita not to take her temperature again.","The nurse told Rita take her temperature again.","The nurse said Rita to take her temperature again."],"unit":"U1","skill":"told-to","difficulty":"mid","source":"parallel","choices":["The nurse told Rita to take her temperature again.","The nurse told Rita not to take her temperature again.","The nurse told Rita take her temperature again.","The nurse said Rita to take her temperature again."]},{"id":"told-49","prompt":"Coach said: \"Ben and Kay, don't skip warm-ups.\" Choose the correct reported sentence.","answer":"Coach told Ben and Kay not to skip warm-ups.","distractors":["Coach told Ben and Kay to skip warm-ups.","Coach told Ben and Kay skip warm-ups.","Coach said Ben and Kay not to skip warm-ups."],"unit":"U1","skill":"told-to","difficulty":"mid","source":"parallel","choices":["Coach told Ben and Kay not to skip warm-ups.","Coach told Ben and Kay to skip warm-ups.","Coach told Ben and Kay skip warm-ups.","Coach said Ben and Kay not to skip warm-ups."]},{"id":"told-50","prompt":"Miss Lam said: \"Otto, bring a spare mask.\" Choose the correct reported sentence.","answer":"Miss Lam told Otto to bring a spare mask.","distractors":["Miss Lam told Otto not to bring a spare mask.","Miss Lam told Otto bring a spare mask.","Miss Lam said Otto to bring a spare mask."],"unit":"U1","skill":"told-to","difficulty":"easy","source":"parallel","choices":["Miss Lam told Otto bring a spare mask.","Miss Lam said Otto to bring a spare mask.","Miss Lam told Otto to bring a spare mask.","Miss Lam told Otto not to bring a spare mask."]},{"id":"told-51","prompt":"Mum said: \"Pam, don't stay up late.\" Choose the correct reported sentence.","answer":"Mum told Pam not to stay up late.","distractors":["Mum told Pam to stay up late.","Mum told Pam stay up late.","Mum said Pam not to stay up late."],"choices":["Mum told Pam stay up late.","Mum said Pam not to stay up late.","Mum told Pam not to stay up late.","Mum told Pam to stay up late."],"unit":"U1","skill":"told-to","difficulty":"easy","source":"WS"}]}</script>
+<script>
+
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('on')},1100)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=(Math.random()*(i+1))|0;var x=a[i];a[i]=a[j];a[j]=x}return a}
+function pickN(a,n){return shuffle(a).slice(0,Math.min(n,a.length))}
+function GameShell(o){
+  var s=this;s.lives=o.lives||3;s.max=s.lives;s.streak=0;s.s1=0;s.s2=0;s.sec=o.timerSec||18;s.left=0;s.tid=null;s.run=false;s.qi=0;s.items=o.items||[];
+  s.hud=function(){$('hud-timer').textContent='⏱ '+s.left+'s';$('hud-lives').textContent='♥ '+s.lives;$('hud-streak').textContent='🔥 '+s.streak;$('hud-p1').textContent='P1 '+s.s1;$('hud-p2').textContent='P2 '+s.s2;$('hud-q').textContent=(s.items.length?(s.qi+1):0)+'/'+s.items.length};
+  s.startTimer=function(){clearInterval(s.tid);s.left=s.sec;s.hud();s.tid=setInterval(function(){s.left--;s.hud();if(s.left<=0){clearInterval(s.tid);if(s.onTimeout)s.onTimeout()}},1000)};
+  s.stop=function(){clearInterval(s.tid)};
+  s.ok=function(p){s.streak++;if(p===2)s.s2++;else s.s1++;s.hud();try{HcyFx.correct()}catch(e){}toast('Nice!');};
+  s.bad=function(){s.streak=0;s.lives=Math.max(0,s.lives-1);s.hud();try{HcyFx.wrong()}catch(e){}toast(s.lives?'Oops':'Out of lives');};
+  s.reset=function(){s.stop();s.lives=s.max;s.streak=0;s.s1=0;s.s2=0;s.qi=0;s.run=false;s.hud();try{HcyFx.reset()}catch(e){};$('start-overlay').style.display='flex'};
+}
+function bootFx(){try{HcyFx.init({mascotMount:$('hcy-mascot-slot'),mascotMode:'3d'})}catch(e){}
+ document.body.addEventListener('pointerdown',function(){try{HcyFxAudio&&HcyFxAudio.unlock()}catch(e){}},{once:true});}
+
+/* Aaron HARD RULE: no P6 GE 1st Term Exam 2026-2027 paper items */
+function isExamPaperItem(it){
+  if(!it || typeof it!=="object") return false;
+  var s=String(it.source||""), u=String(it.unit||""), tag=String(it.tag||""), id=String(it.id||""), p=String(it.prompt||"");
+  var origin=String(it.origin||""), section=String(it.section||"");
+  var blob=(s+" "+u+" "+tag+" "+id+" "+p+" "+origin).toLowerCase();
+  if(/^exam/i.test(s)) return true;
+  if(/exam\s*[a-j]/i.test(blob)) return true;
+  if(/\bexam[a-j]\b/i.test(blob)) return true;
+  if(/u\d\s*\/\s*exam/i.test(u)) return true;
+  if(/typhoon-parallel|examc-parallel|exam-parallel/i.test(tag+" "+origin)) return true;
+  if(/\[exam\b/i.test(p) || /\[exam\b/i.test(id)) return true;
+  if((section==="F"||section==="H") && (/exam/i.test(s+u) || /\[exam/i.test(p))) return true;
+  return false;
+}
+function filterNoExamItems(arr){
+  if(!Array.isArray(arr)) return [];
+  return arr.filter(function(it){ return !isExamPaperItem(it); });
+}
+function showExamQuarantine(msg){
+  var banner=document.getElementById("exam-quarantine-banner");
+  if(!banner){
+    banner=document.createElement("div");
+    banner.id="exam-quarantine-banner";
+    banner.setAttribute("role","status");
+    banner.style.cssText="position:sticky;top:0;z-index:9999;background:#7f1d1d;color:#fff;padding:12px 16px;font:600 15px/1.4 system-ui,sans-serif;text-align:center;border-bottom:3px solid #fbbf24;";
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+  banner.textContent=msg;
+  ["btn-start","btn-start2"].forEach(function(id){
+    var b=document.getElementById(id);
+    if(b){ b.disabled=true; b.style.opacity="0.45"; b.style.pointerEvents="none"; b.textContent="0 items — exam bank removed"; }
+  });
+  var n=document.querySelector("#start-overlay .start-card p");
+  if(n) n.textContent=msg+" · 0 playable items.";
+}
+
+function parseBankPayload(data){
+  if(!data) return [];
+  if(Array.isArray(data)) return data;
+  if(data.items && Array.isArray(data.items)) return data.items;
+  return [];
+}
+function loadFatBank(fileName, normalizeFn, onReady){
+  function finish(raw){
+    var payloadItems = filterNoExamItems(parseBankPayload(raw));
+    var items = normalizeFn(payloadItems);
+    if(!items.length){
+      try{
+        var emb = filterNoExamItems(parseBankPayload(JSON.parse($("bank-json").textContent)));
+        items = normalizeFn(emb);
+      }catch(e){ items=[]; }
+    }
+    onReady(shuffle(items));
+  }
+  var embedded = null;
+  try{ embedded = JSON.parse($("bank-json").textContent); }catch(e){ embedded = {items:[]}; }
+  var tryFetch = (location.protocol !== "file:");
+  if(!tryFetch){ finish(embedded); return; }
+  fetch("../../banks/"+fileName).then(function(r){ if(!r.ok) throw new Error("bad"); return r.json(); })
+    .then(function(data){ finish(data); })
+    .catch(function(){ finish(embedded); });
+}
+
+
+
+var BANK=[], G=null, cur=null, lock=false;
+function normalizeTold(raw){
+  return raw.map(function(it){
+    var ans=it.answer||'';
+    var choices=(it.choices&&it.choices.length)?it.choices.slice():[ans].concat(it.distractors||[]);
+    return {id:it.id, prompt:it.prompt||ans, answer:ans, choices:shuffle(choices)};
+  }).filter(function(x){return x.answer && x.choices.length});
+}
+function paint(){cur=G.items[G.qi%G.items.length];lock=false;
+ $('prompt').textContent=cur.prompt;
+ $('hint').textContent='Race! Tap the correct told…to / not to sentence on either pad';
+ function fill(id,p){var g=$(id);g.innerHTML='';
+  cur.choices.forEach(function(opt){var b=document.createElement('button');b.type='button';b.className='choice';b.textContent=opt;
+   b.addEventListener('pointerdown',function(e){e.preventDefault();if(lock||!G.run)return;try{b.setPointerCapture(e.pointerId)}catch(err){}
+    lock=true;G.stop();var ok=opt===cur.answer; if(ok){b.classList.add('ok');G.ok(p)}else{b.classList.add('bad');G.bad()} setTimeout(next,650)});
+   g.appendChild(b)});
+ }
+ fill('grid1',1);fill('grid2',2);G.startTimer();
+}
+function next(){if(G.lives<=0)return;G.qi++;if(G.qi>=G.items.length)G.qi=0;paint()}
+function start(){G.run=true;$('start-overlay').style.display='none';G.qi=0;G.lives=G.max;G.streak=0;G.s1=0;G.s2=0;G.items=shuffle(BANK);paint()}
+function bootGame(items){
+  BANK=items; G=new GameShell({items:BANK,timerSec:18});
+  G.onTimeout=function(){G.bad();next()};
+  $('btn-start').onclick=$('btn-start2').onclick=start;
+  $('btn-reset').onclick=function(){G.reset()};
+  $('btn-next').onclick=function(){if(G.run)next()};
+  bootFx();G.hud();
+  var n=$('start-overlay').querySelector('.start-card p');
+  if(n) n.textContent='Fat bank loaded: '+BANK.length+' items. L/R pads race on told…to / not to choices.';
+}
+loadFatBank('told-to.json', normalizeTold, bootGame);
+
+</script>
+</body>
+</html>

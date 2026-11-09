@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Vocab Meaning Duel</title>
+
+<link rel="stylesheet" href="../../../assets/fx-kit/css/hcy-fx.css" />
+<link rel="stylesheet" href="../../../assets/hcy-touch.css" />
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-motion.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-audio.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-three.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx.js"></script>
+<script src="../../../assets/character-library/hcy-chars.js"></script>
+<script src="../../../assets/hcy-touch.js"></script>
+<script src="../../banks/no-exam-filter.js"></script>
+
+<style>
+:root{--ink:#2a1830;--pink:#ff7ab6;--sky:#5ec8ff;--mint:#7dffb3;--yel:#ffe14a;--lilac:#b48cff;--cream:#fff8fb;--card:#ffffffee}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:"Comic Sans MS","Chalkboard SE","Nunito","Segoe UI Rounded",system-ui,sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;
+background:radial-gradient(circle at 10% 20%,rgba(255,122,182,.35) 0 20px,transparent 21px),radial-gradient(circle at 85% 15%,rgba(94,200,255,.4) 0 16px,transparent 17px),linear-gradient(165deg,#ffd6ea 0%,#fff3b0 40%,#c8ffe8 70%,#b8e8ff 100%)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background-image:radial-gradient(circle,#ff7ab6 1.6px,transparent 2px);background-size:40px 40px}
+.app{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:8px;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;background:var(--card);border:4px solid var(--ink);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--ink)}
+.title-block{display:flex;align-items:center;gap:10px}.title-block img.scene{width:56px;height:56px;object-fit:contain;animation:idleBob 1.5s ease-in-out infinite alternate}
+.title-block h1{font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.15}.title-block .mode{font-size:.75rem;font-weight:800;opacity:.75}
+.hud{display:flex;flex-wrap:wrap;gap:6px}
+.stat{padding:6px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-weight:900;font-size:clamp(.72rem,1.8vw,.92rem);box-shadow:0 2px 0 var(--ink)}
+.stat.timer{background:#b8e8ff}.stat.lives{background:#ffd0e8}.stat.streak{background:#ffe14a}.stat.p1{background:#ffb0d8}.stat.p2{background:#a8f0ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;font:inherit;font-weight:900;border:4px solid var(--ink);border-radius:999px;background:#ffb0d8;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 var(--ink);touch-action:none}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.btn-sky{background:#7ad4ff}.btn-mint{background:#7dffc0}.btn-yel{background:#ffe14a}.btn-lilac{background:#d4b8ff}
+.stage{flex:1;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:8px}
+.prompt-card{background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:12px 14px;box-shadow:0 4px 0 var(--ink);text-align:center}
+.prompt-card .label{font-size:.75rem;font-weight:800;opacity:.7}.prompt-card .prompt{font-size:clamp(1.05rem,3vw,1.5rem);font-weight:900;line-height:1.25}
+.prompt-card .hint{margin-top:6px;font-size:.85rem;font-weight:700;opacity:.75}
+.play{min-height:0;display:flex;gap:8px;align-items:stretch}
+.pad{flex:1;min-width:0;border:4px solid var(--ink);border-radius:22px;background:#ffd6ea;box-shadow:0 5px 0 var(--ink);padding:10px;display:flex;flex-direction:column;gap:8px;touch-action:none}
+.pad.p2{background:#c8f0ff}.pad h2{font-size:clamp(.9rem,2vw,1.05rem);text-align:center}
+.grid{display:grid;gap:8px;flex:1;min-height:0;align-content:start;overflow:auto;grid-template-columns:1fr}
+.choice,.chip{min-height:52px;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;font-weight:800;font-size:clamp(.82rem,2vw,1.02rem);cursor:pointer;touch-action:none;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center;justify-content:center;text-align:center}
+.choice.held,.chip.held,.lane.held,.corner.held,.zone.held{background:#ffe14a;transform:scale(.97)}
+.choice.ok,.chip.ok{background:#7dffb3}.choice.bad,.chip.bad{background:#ff9aac;animation:shake .35s ease}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;min-height:0}
+.zone{border:4px dashed var(--ink);border-radius:20px;padding:8px;min-height:100px;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.zone.should{background:#d8ffe8}.zone.shouldnt{background:#ffe0e8}.zone h3{text-align:center}
+.cards-pool{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px;max-height:40%;overflow:auto}
+.corner-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;flex:1;min-height:0}
+.corner{border:4px solid var(--ink);border-radius:18px;padding:8px;background:#fff;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.corner.before{background:#d4f0ff}.corner.during{background:#ffe8b0}.corner.after{background:#d8ffe0}.corner.never{background:#ffd0d8}
+.lane-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.lane{min-height:64px;border:4px solid var(--ink);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;touch-action:none;box-shadow:0 3px 0 var(--ink)}
+.footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.toast{position:fixed;left:50%;bottom:8vh;transform:translateX(-50%);background:#ff7ab6;color:#fff;font-weight:900;padding:10px 18px;border-radius:14px;border:3px solid var(--ink);z-index:50;pointer-events:none;opacity:0;transition:opacity .2s}.toast.on{opacity:1}
+#hcy-mascot-slot{position:fixed;right:8px;bottom:8px;width:110px;height:110px;z-index:40;pointer-events:none}
+.start-overlay{position:absolute;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(255,248,251,.9)}
+.start-card{background:#fff;border:5px solid var(--ink);border-radius:24px;padding:22px;max-width:520px;text-align:center;box-shadow:0 8px 0 var(--ink)}
+.start-card p{margin:10px 0 16px;font-weight:700;line-height:1.4}
+.blank{min-width:90px;min-height:48px;border:3px dashed var(--ink);border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:900;padding:6px 10px;margin:4px}
+.blank.p1{background:#ffb0d8;border-style:solid}.blank.p2{background:#a8f0ff;border-style:solid}
+.passage{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:800;line-height:1.6;text-align:left}
+@keyframes idleBob{0%{transform:translateY(0) rotate(-2deg)}100%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media(max-width:700px){.play{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="title-block">
+      <img class="scene" src="../../../assets/character-library/png/char-031.png" alt="" onerror="this.style.display='none'" />
+      <div><div class="mode">MODE 7 — vocab (secondary)</div><h1>Vocab Meaning Duel</h1></div>
+    </div>
+    <div class="hud">
+      <span class="stat" id="hud-q">0/0</span>
+      <span class="stat timer" id="hud-timer">⏱ —</span>
+      <span class="stat lives" id="hud-lives">♥ 3</span>
+      <span class="stat streak" id="hud-streak">🔥 0</span>
+      <span class="stat p1" id="hud-p1">P1 0</span>
+      <span class="stat p2" id="hud-p2">P2 0</span>
+    </div>
+  </div>
+  <div class="stage"><div class="prompt-card"><div class="label">Vocab Meaning Duel (secondary)</div><div class="prompt" id="prompt">…</div><div class="hint">Two grids — smash at once!</div></div>
+<div class="play"><div class="pad"><h2>🐹 P1</h2><div class="grid" id="grid1"></div></div><div class="pad p2"><h2>🐰 P2</h2><div class="grid" id="grid2"></div></div></div></div>
+  <div class="footer">
+    <button class="btn btn-mint" id="btn-start" type="button">▶ Start</button>
+    <button class="btn btn-yel" id="btn-next" type="button">Next ▶</button>
+    <button class="btn btn-lilac" id="btn-reset" type="button">↺ Teacher Reset</button>
+  </div>
+</div>
+<div id="start-overlay" class="start-overlay"><div class="start-card"><h2>Vocab Meaning Duel</h2><p>Two answer grids — vs meaning race. Secondary to grammar modes.</p>
+<button class="btn btn-sky" id="btn-start2" type="button">▶ Start Game</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="hcy-mascot-slot"></div>
+<script type="application/json" id="bank-json">{"meta":{"bank":"vocab-u1-3","skill":"vocab","count":49,"primary_source":"P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx","also":["_targets.json","p6-conditionals.js","p6-u1-3-vocab.js","parallel-original"],"exclude":"每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)","item_schema":["id","prompt","choices|slots","answer","distractors","unit","skill","difficulty"],"scrubbed":"2026-11-04 Asia/Hong_Kong — exam stems removed"},"items":[{"id":"vocab-01","prompt":"What does «the flu» mean?","answer":"an illness like a bad cold","distractors":["keeping clean to stay healthy","liquid coming from your nose","pain in your head"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["an illness like a bad cold","keeping clean to stay healthy","liquid coming from your nose","pain in your head"],"source":"p6-u1-3-vocab.js","word":"the flu"},{"id":"vocab-02","prompt":"What does «a cough» mean?","answer":"when you force air from your throat noisily","distractors":["pain when you swallow","heavy snow with strong wind","pain in your stomach"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["pain when you swallow","heavy snow with strong wind","when you force air from your throat noisily","pain in your stomach"],"source":"p6-u1-3-vocab.js","word":"a cough"},{"id":"vocab-03","prompt":"What does «a headache» mean?","answer":"pain in your head","distractors":["in good condition; not ill","a place where people in an area meet for activities","something you do regularly"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["in good condition; not ill","pain in your head","a place where people in an area meet for activities","something you do regularly"],"source":"p6-u1-3-vocab.js","word":"a headache"},{"id":"vocab-04","prompt":"What does «a backache» mean?","answer":"pain in your back","distractors":["in good condition; not ill","the ground shaking suddenly","to give someone support or confidence"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["in good condition; not ill","pain in your back","the ground shaking suddenly","to give someone support or confidence"],"source":"p6-u1-3-vocab.js","word":"a backache"},{"id":"vocab-05","prompt":"What does «a toothache» mean?","answer":"pain in a tooth","distractors":["keeping clean to stay healthy","heavy snow with strong wind","a long time with little or no rain"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["keeping clean to stay healthy","pain in a tooth","heavy snow with strong wind","a long time with little or no rain"],"source":"p6-u1-3-vocab.js","word":"a toothache"},{"id":"vocab-06","prompt":"What does «a fever» mean?","answer":"when your body is too hot because you are ill","distractors":["water covering land that is usually dry","pain when you swallow","pain in your stomach"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["when your body is too hot because you are ill","water covering land that is usually dry","pain when you swallow","pain in your stomach"],"source":"p6-u1-3-vocab.js","word":"a fever"},{"id":"vocab-07","prompt":"What does «a sore throat» mean?","answer":"pain when you swallow","distractors":["to build again after damage","pain in your head","full of things that are good for your body"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["to build again after damage","pain when you swallow","pain in your head","full of things that are good for your body"],"source":"p6-u1-3-vocab.js","word":"a sore throat"},{"id":"vocab-08","prompt":"What does «a stomachache» mean?","answer":"pain in your stomach","distractors":["a very strong tropical storm","something you take to get better","the usual order of things you do each day"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["a very strong tropical storm","something you take to get better","pain in your stomach","the usual order of things you do each day"],"source":"p6-u1-3-vocab.js","word":"a stomachache"},{"id":"vocab-09","prompt":"What does «a runny nose» mean?","answer":"liquid coming from your nose","distractors":["in good condition; not ill","when your body is too hot because you are ill","the usual order of things you do each day"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["liquid coming from your nose","in good condition; not ill","when your body is too hot because you are ill","the usual order of things you do each day"],"source":"p6-u1-3-vocab.js","word":"a runny nose"},{"id":"vocab-10","prompt":"What does «dizzy» mean?","answer":"feeling like you might fall or spin","distractors":["to build again after damage","a very strong tropical storm","small round pieces of medicine"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["feeling like you might fall or spin","to build again after damage","a very strong tropical storm","small round pieces of medicine"],"source":"p6-u1-3-vocab.js","word":"dizzy"},{"id":"vocab-11","prompt":"What does «terrible» mean?","answer":"very bad / very unpleasant","distractors":["small round pieces of medicine","keeping clean to stay healthy","pain in a tooth"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["small round pieces of medicine","very bad / very unpleasant","keeping clean to stay healthy","pain in a tooth"],"source":"p6-u1-3-vocab.js","word":"terrible"},{"id":"vocab-12","prompt":"What does «pills» mean?","answer":"small round pieces of medicine","distractors":["keeping clean to stay healthy","water covering land that is usually dry","in good condition; not ill"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["keeping clean to stay healthy","small round pieces of medicine","water covering land that is usually dry","in good condition; not ill"],"source":"p6-u1-3-vocab.js","word":"pills"},{"id":"vocab-13","prompt":"What does «advice» mean?","answer":"helpful ideas about what to do","distractors":["a lot of rain falling hard","pain in your head","earth and rocks sliding down a hill"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["a lot of rain falling hard","helpful ideas about what to do","pain in your head","earth and rocks sliding down a hill"],"source":"p6-u1-3-vocab.js","word":"advice"},{"id":"vocab-14","prompt":"What does «medicine» mean?","answer":"something you take to get better","distractors":["a lot of rain falling hard","something you do regularly","ready to face danger or difficulty"],"unit":"U1","skill":"vocab","difficulty":"easy","choices":["a lot of rain falling hard","something you do regularly","ready to face danger or difficulty","something you take to get better"],"source":"p6-u1-3-vocab.js","word":"medicine"},{"id":"vocab-15","prompt":"What does «habit» mean?","answer":"something you do regularly","distractors":["feeling like you might fall or spin","liquid coming from your nose","full of things that are good for your body"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["feeling like you might fall or spin","something you do regularly","liquid coming from your nose","full of things that are good for your body"],"source":"p6-u1-3-vocab.js","word":"habit"},{"id":"vocab-16","prompt":"What does «healthy» mean?","answer":"in good condition; not ill","distractors":["a very strong tropical storm","heavy snow with strong wind","earth and rocks sliding down a hill"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["a very strong tropical storm","in good condition; not ill","heavy snow with strong wind","earth and rocks sliding down a hill"],"source":"p6-u1-3-vocab.js","word":"healthy"},{"id":"vocab-17","prompt":"What does «exercise» mean?","answer":"activity that keeps your body fit","distractors":["when your body is too hot because you are ill","pain in your stomach","pain in your back"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["activity that keeps your body fit","when your body is too hot because you are ill","pain in your stomach","pain in your back"],"source":"p6-u1-3-vocab.js","word":"exercise"},{"id":"vocab-18","prompt":"What does «nutritious» mean?","answer":"full of things that are good for your body","distractors":["heavy snow with strong wind","pain in a tooth","water covering land that is usually dry"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["heavy snow with strong wind","pain in a tooth","water covering land that is usually dry","full of things that are good for your body"],"source":"p6-u1-3-vocab.js","word":"nutritious"},{"id":"vocab-19","prompt":"What does «hygiene» mean?","answer":"keeping clean to stay healthy","distractors":["activity that keeps your body fit","an illness like a bad cold","money or things given to help others"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["keeping clean to stay healthy","activity that keeps your body fit","an illness like a bad cold","money or things given to help others"],"source":"p6-u1-3-vocab.js","word":"hygiene"},{"id":"vocab-20","prompt":"What does «routine» mean?","answer":"the usual order of things you do each day","distractors":["keeping clean to stay healthy","pain in your stomach","a long time with little or no rain"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["keeping clean to stay healthy","pain in your stomach","a long time with little or no rain","the usual order of things you do each day"],"source":"p6-u1-3-vocab.js","word":"routine"},{"id":"vocab-21","prompt":"What does «regularly» mean?","answer":"happening often / at fixed times","distractors":["an illness like a bad cold","a place where people in an area meet for activities","activity that keeps your body fit"],"unit":"U2","skill":"vocab","difficulty":"easy","choices":["happening often / at fixed times","an illness like a bad cold","a place where people in an area meet for activities","activity that keeps your body fit"],"source":"p6-u1-3-vocab.js","word":"regularly"},{"id":"vocab-22","prompt":"What does «heavy rain» mean?","answer":"a lot of rain falling hard","distractors":["helpful ideas about what to do","the usual order of things you do each day","a place where people in an area meet for activities"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["helpful ideas about what to do","the usual order of things you do each day","a lot of rain falling hard","a place where people in an area meet for activities"],"source":"p6-u1-3-vocab.js","word":"heavy rain"},{"id":"vocab-23","prompt":"What does «a drought» mean?","answer":"a long time with little or no rain","distractors":["an illness like a bad cold","happening often / at fixed times","money or things given to help others"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["an illness like a bad cold","happening often / at fixed times","money or things given to help others","a long time with little or no rain"],"source":"p6-u1-3-vocab.js","word":"a drought"},{"id":"vocab-24","prompt":"What does «thunder and lightning» mean?","answer":"loud noise and bright flash in a storm","distractors":["the usual order of things you do each day","in good condition; not ill","a very strong tropical storm"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["the usual order of things you do each day","in good condition; not ill","loud noise and bright flash in a storm","a very strong tropical storm"],"source":"p6-u1-3-vocab.js","word":"thunder and lightning"},{"id":"vocab-25","prompt":"What does «a typhoon» mean?","answer":"a very strong tropical storm","distractors":["pain in a tooth","when your body is too hot because you are ill","ready to face danger or difficulty"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["pain in a tooth","a very strong tropical storm","when your body is too hot because you are ill","ready to face danger or difficulty"],"source":"p6-u1-3-vocab.js","word":"a typhoon"},{"id":"vocab-26","prompt":"What does «a flood» mean?","answer":"water covering land that is usually dry","distractors":["activity that keeps your body fit","money or things given to help others","very bad / very unpleasant"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["activity that keeps your body fit","money or things given to help others","very bad / very unpleasant","water covering land that is usually dry"],"source":"p6-u1-3-vocab.js","word":"a flood"},{"id":"vocab-27","prompt":"What does «a landslide» mean?","answer":"earth and rocks sliding down a hill","distractors":["the usual order of things you do each day","water covering land that is usually dry","loud noise and bright flash in a storm"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["the usual order of things you do each day","water covering land that is usually dry","loud noise and bright flash in a storm","earth and rocks sliding down a hill"],"source":"p6-u1-3-vocab.js","word":"a landslide"},{"id":"vocab-28","prompt":"What does «an earthquake» mean?","answer":"the ground shaking suddenly","distractors":["something you do regularly","in good condition; not ill","pain in your stomach"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["something you do regularly","the ground shaking suddenly","in good condition; not ill","pain in your stomach"],"source":"p6-u1-3-vocab.js","word":"an earthquake"},{"id":"vocab-29","prompt":"What does «a snowstorm» mean?","answer":"heavy snow with strong wind","distractors":["an illness like a bad cold","pain in a tooth","something you do regularly"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["an illness like a bad cold","pain in a tooth","heavy snow with strong wind","something you do regularly"],"source":"p6-u1-3-vocab.js","word":"a snowstorm"},{"id":"vocab-30","prompt":"What does «encourage» mean?","answer":"to give someone support or confidence","distractors":["pain in your head","pain in a tooth","a lot of rain falling hard"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["pain in your head","pain in a tooth","to give someone support or confidence","a lot of rain falling hard"],"source":"p6-u1-3-vocab.js","word":"encourage"},{"id":"vocab-31","prompt":"What does «rebuild» mean?","answer":"to build again after damage","distractors":["something you take to get better","very serious or very strong","liquid coming from your nose"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["something you take to get better","very serious or very strong","to build again after damage","liquid coming from your nose"],"source":"p6-u1-3-vocab.js","word":"rebuild"},{"id":"vocab-32","prompt":"What does «severe» mean?","answer":"very serious or very strong","distractors":["helpful ideas about what to do","pain when you swallow","the ground shaking suddenly"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["helpful ideas about what to do","very serious or very strong","pain when you swallow","the ground shaking suddenly"],"source":"p6-u1-3-vocab.js","word":"severe"},{"id":"vocab-33","prompt":"What does «brave» mean?","answer":"ready to face danger or difficulty","distractors":["pain when you swallow","pain in your back","to give someone support or confidence"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["ready to face danger or difficulty","pain when you swallow","pain in your back","to give someone support or confidence"],"source":"p6-u1-3-vocab.js","word":"brave"},{"id":"vocab-34","prompt":"What does «community centre» mean?","answer":"a place where people in an area meet for activities","distractors":["pain when you swallow","helpful ideas about what to do","in good condition; not ill"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["pain when you swallow","a place where people in an area meet for activities","helpful ideas about what to do","in good condition; not ill"],"source":"p6-u1-3-vocab.js","word":"community centre"},{"id":"vocab-35","prompt":"What does «donation» mean?","answer":"money or things given to help others","distractors":["liquid coming from your nose","the ground shaking suddenly","small round pieces of medicine"],"unit":"U3","skill":"vocab","difficulty":"easy","choices":["money or things given to help others","liquid coming from your nose","the ground shaking suddenly","small round pieces of medicine"],"source":"p6-u1-3-vocab.js","word":"donation"},{"id":"vocab-36","prompt":"What does «calm» mean?","choices":["the usual order of things you do each day","a lot of rain falling hard","group that helps people in need","quiet and not panicked"],"answer":"quiet and not panicked","distractors":["a lot of rain falling hard","the usual order of things you do each day","group that helps people in need"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"WS need to be","word":"calm"},{"id":"vocab-37","prompt":"What does «careful» mean?","choices":["paying attention to avoid danger","telling the truth; not lying","when your body is too hot because you are ill","pain in your back"],"answer":"paying attention to avoid danger","distractors":["telling the truth; not lying","when your body is too hot because you are ill","pain in your back"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"WS need to be","word":"careful"},{"id":"vocab-38","prompt":"What does «generous» mean?","choices":["happy to give or share","something you take to get better","helpful ideas about what to do","to build again after damage"],"answer":"happy to give or share","distractors":["to build again after damage","something you take to get better","helpful ideas about what to do"],"unit":"U3","skill":"vocab","difficulty":"mid","source":"WS need to be","word":"generous"},{"id":"vocab-39","prompt":"What does «quiet» mean?","choices":["a long time with little or no rain","group that helps people in need","making little or no noise","able to wait calmly without getting angry"],"answer":"making little or no noise","distractors":["able to wait calmly without getting angry","group that helps people in need","a long time with little or no rain"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"WS need to be","word":"quiet"},{"id":"vocab-40","prompt":"What does «strong» mean?","choices":["not careful with hands/body; easy to spill or drop things","a long time with little or no rain","physically powerful or mentally tough","keeping clean to stay healthy"],"answer":"physically powerful or mentally tough","distractors":["keeping clean to stay healthy","not careful with hands/body; easy to spill or drop things","a long time with little or no rain"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"WS need to be","word":"strong"},{"id":"vocab-41","prompt":"What does «responsible» mean?","choices":["group that helps people in need","pain in your head","doing what you should; taking care of duties","something you do regularly"],"answer":"doing what you should; taking care of duties","distractors":["something you do regularly","group that helps people in need","pain in your head"],"unit":"U3","skill":"vocab","difficulty":"mid","source":"WS need to B","word":"responsible"},{"id":"vocab-42","prompt":"What does «a stomachache» mean?","answer":"pain in your stomach","distractors":["pain in a tooth","liquid from your nose","a loud cough"],"unit":"U1","skill":"vocab","difficulty":"easy","source":"p6-u1-3-vocab.js","word":"a stomachache","choices":["a loud cough","pain in your stomach","pain in a tooth","liquid from your nose"]},{"id":"vocab-43","prompt":"What does «a toothache» mean?","answer":"pain in a tooth","distractors":["pain in your stomach","feeling shy","strong wind with rain"],"unit":"U1","skill":"vocab","difficulty":"easy","source":"p6-u1-3-vocab.js","word":"a toothache","choices":["strong wind with rain","pain in a tooth","pain in your stomach","feeling shy"]},{"id":"vocab-44","prompt":"What does «medicine» mean?","answer":"something you take to feel better when you are sick","distractors":["a sports day game","a school subject only","a kind of typhoon"],"unit":"U1","skill":"vocab","difficulty":"easy","source":"p6-u1-3-vocab.js","word":"medicine","choices":["something you take to feel better when you are sick","a sports day game","a school subject only","a kind of typhoon"]},{"id":"vocab-45","prompt":"What does «a flood» mean?","answer":"water covering land that is usually dry","distractors":["a small cough","a quiet library","a pencil case"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"p6-u1-3-vocab.js","word":"a flood","choices":["water covering land that is usually dry","a small cough","a quiet library","a pencil case"]},{"id":"vocab-46","prompt":"What does «patient» mean?","answer":"able to wait calmly without getting angry","distractors":["always late","very noisy","afraid of water"],"unit":"U3","skill":"vocab","difficulty":"easy","source":"WS need to be","word":"patient","choices":["able to wait calmly without getting angry","always late","very noisy","afraid of water"]},{"id":"vocab-47","prompt":"What does «a landslide» mean?","answer":"rocks and soil sliding down a hill after heavy rain","distractors":["a school assembly","a soft pillow","a maths test"],"unit":"U3","skill":"vocab","difficulty":"mid","source":"p6-u1-3-vocab.js","word":"a landslide","choices":["rocks and soil sliding down a hill after heavy rain","a school assembly","a soft pillow","a maths test"]},{"id":"vocab-48","prompt":"What does «donation» mean?","answer":"money or things you give to help others","distractors":["a rainy-day game","a desk drawer","a PE warm-up"],"unit":"U3","skill":"vocab","difficulty":"mid","source":"p6-u1-3-vocab.js","word":"donation","choices":["a PE warm-up","money or things you give to help others","a rainy-day game","a desk drawer"]},{"id":"vocab-49","prompt":"What does «rebuild» mean?","answer":"to build again after damage","distractors":["to skip homework","to shout louder","to sleep late"],"unit":"U3","skill":"vocab","difficulty":"mid","source":"p6-u1-3-vocab.js","word":"rebuild","choices":["to sleep late","to build again after damage","to skip homework","to shout louder"]}]}</script>
+<script>
+
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('on')},1100)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=(Math.random()*(i+1))|0;var x=a[i];a[i]=a[j];a[j]=x}return a}
+function pickN(a,n){return shuffle(a).slice(0,Math.min(n,a.length))}
+function GameShell(o){
+  var s=this;s.lives=o.lives||3;s.max=s.lives;s.streak=0;s.s1=0;s.s2=0;s.sec=o.timerSec||18;s.left=0;s.tid=null;s.run=false;s.qi=0;s.items=o.items||[];
+  s.hud=function(){$('hud-timer').textContent='⏱ '+s.left+'s';$('hud-lives').textContent='♥ '+s.lives;$('hud-streak').textContent='🔥 '+s.streak;$('hud-p1').textContent='P1 '+s.s1;$('hud-p2').textContent='P2 '+s.s2;$('hud-q').textContent=(s.items.length?(s.qi+1):0)+'/'+s.items.length};
+  s.startTimer=function(){clearInterval(s.tid);s.left=s.sec;s.hud();s.tid=setInterval(function(){s.left--;s.hud();if(s.left<=0){clearInterval(s.tid);if(s.onTimeout)s.onTimeout()}},1000)};
+  s.stop=function(){clearInterval(s.tid)};
+  s.ok=function(p){s.streak++;if(p===2)s.s2++;else s.s1++;s.hud();try{HcyFx.correct()}catch(e){}toast('Nice!');};
+  s.bad=function(){s.streak=0;s.lives=Math.max(0,s.lives-1);s.hud();try{HcyFx.wrong()}catch(e){}toast(s.lives?'Oops':'Out of lives');};
+  s.reset=function(){s.stop();s.lives=s.max;s.streak=0;s.s1=0;s.s2=0;s.qi=0;s.run=false;s.hud();try{HcyFx.reset()}catch(e){};$('start-overlay').style.display='flex'};
+}
+function bootFx(){try{HcyFx.init({mascotMount:$('hcy-mascot-slot'),mascotMode:'3d'})}catch(e){}
+ document.body.addEventListener('pointerdown',function(){try{HcyFxAudio&&HcyFxAudio.unlock()}catch(e){}},{once:true});}
+
+/* Aaron HARD RULE: no P6 GE 1st Term Exam 2026-2027 paper items */
+function isExamPaperItem(it){
+  if(!it || typeof it!=="object") return false;
+  var s=String(it.source||""), u=String(it.unit||""), tag=String(it.tag||""), id=String(it.id||""), p=String(it.prompt||"");
+  var origin=String(it.origin||""), section=String(it.section||"");
+  var blob=(s+" "+u+" "+tag+" "+id+" "+p+" "+origin).toLowerCase();
+  if(/^exam/i.test(s)) return true;
+  if(/exam\s*[a-j]/i.test(blob)) return true;
+  if(/\bexam[a-j]\b/i.test(blob)) return true;
+  if(/u\d\s*\/\s*exam/i.test(u)) return true;
+  if(/typhoon-parallel|examc-parallel|exam-parallel/i.test(tag+" "+origin)) return true;
+  if(/\[exam\b/i.test(p) || /\[exam\b/i.test(id)) return true;
+  if((section==="F"||section==="H") && (/exam/i.test(s+u) || /\[exam/i.test(p))) return true;
+  return false;
+}
+function filterNoExamItems(arr){
+  if(!Array.isArray(arr)) return [];
+  return arr.filter(function(it){ return !isExamPaperItem(it); });
+}
+function showExamQuarantine(msg){
+  var banner=document.getElementById("exam-quarantine-banner");
+  if(!banner){
+    banner=document.createElement("div");
+    banner.id="exam-quarantine-banner";
+    banner.setAttribute("role","status");
+    banner.style.cssText="position:sticky;top:0;z-index:9999;background:#7f1d1d;color:#fff;padding:12px 16px;font:600 15px/1.4 system-ui,sans-serif;text-align:center;border-bottom:3px solid #fbbf24;";
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+  banner.textContent=msg;
+  ["btn-start","btn-start2"].forEach(function(id){
+    var b=document.getElementById(id);
+    if(b){ b.disabled=true; b.style.opacity="0.45"; b.style.pointerEvents="none"; b.textContent="0 items — exam bank removed"; }
+  });
+  var n=document.querySelector("#start-overlay .start-card p");
+  if(n) n.textContent=msg+" · 0 playable items.";
+}
+
+function parseBankPayload(data){
+  if(!data) return [];
+  if(Array.isArray(data)) return data;
+  if(data.items && Array.isArray(data.items)) return data.items;
+  return [];
+}
+function loadFatBank(fileName, normalizeFn, onReady){
+  function finish(raw){
+    var payloadItems = filterNoExamItems(parseBankPayload(raw));
+    var items = normalizeFn(payloadItems);
+    if(!items.length){
+      try{
+        var emb = filterNoExamItems(parseBankPayload(JSON.parse($("bank-json").textContent)));
+        items = normalizeFn(emb);
+      }catch(e){ items=[]; }
+    }
+    onReady(shuffle(items));
+  }
+  var embedded = null;
+  try{ embedded = JSON.parse($("bank-json").textContent); }catch(e){ embedded = {items:[]}; }
+  var tryFetch = (location.protocol !== "file:");
+  if(!tryFetch){ finish(embedded); return; }
+  fetch("../../banks/"+fileName).then(function(r){ if(!r.ok) throw new Error("bad"); return r.json(); })
+    .then(function(data){ finish(data); })
+    .catch(function(){ finish(embedded); });
+}
+
+
+
+var BANK=[], G=null, cur=null, lock=false;
+function normalizeVocab(raw){
+  return raw.map(function(it){
+    var meaning=it.answer||'';
+    var word=it.word||'';
+    if(!word){ var m=(it.prompt||'').match(/«([^»]+)»/); word=m?m[1]:(it.prompt||'word'); }
+    var choices=(it.choices&&it.choices.length)?it.choices.slice():[meaning].concat(it.distractors||[]);
+    return {id:it.id, word:word, meaning:meaning, choices:choices};
+  }).filter(function(x){return x.word && x.meaning});
+}
+function paint(){cur=G.items[G.qi%G.items.length];lock=false;
+ $('prompt').textContent='What does «'+cur.word+'» mean?';
+ var choices=cur.choices && cur.choices.length ? shuffle(cur.choices.slice()) :
+   shuffle([cur.meaning].concat(pickN(BANK.map(function(x){return x.meaning}).filter(function(m){return m!==cur.meaning}),3)));
+ function fill(id,p){var g=$(id);g.innerHTML='';choices.forEach(function(m){var b=document.createElement('button');b.type='button';b.className='choice';b.textContent=m;
+  b.addEventListener('pointerdown',function(e){e.preventDefault();try{e.currentTarget.setPointerCapture(e.pointerId)}catch(err){} if(lock||!G.run)return;lock=true;G.stop();
+   if(m===cur.meaning){b.classList.add('ok');G.ok(p)}else{b.classList.add('bad');G.bad()} setTimeout(next,600)});
+  g.appendChild(b)})}
+ fill('grid1',1);fill('grid2',2);G.startTimer();
+}
+function next(){if(G.lives<=0)return;G.qi++;if(G.qi>=G.items.length)G.qi=0;paint()}
+function start(){G.run=true;$('start-overlay').style.display='none';G.qi=0;G.lives=G.max;G.streak=0;G.s1=0;G.s2=0;G.items=shuffle(BANK);paint()}
+function bootGame(items){
+  BANK=items; G=new GameShell({items:BANK,timerSec:12,lives:3});
+  G.onTimeout=function(){G.bad();next()};
+  $('btn-start').onclick=$('btn-start2').onclick=start;
+  $('btn-reset').onclick=function(){G.reset()};
+  $('btn-next').onclick=function(){if(G.run)next()};
+  bootFx();G.hud();
+  var n=$('start-overlay').querySelector('.start-card p');
+  if(n) n.textContent='Vocab U1–3 duel · bank '+BANK.length+'.';
+}
+loadFatBank('vocab-u1-3.json', normalizeVocab, bootGame);
+
+</script>
+</body>
+</html>

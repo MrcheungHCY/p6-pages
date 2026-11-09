@@ -1,0 +1,360 @@
+/* HCY Classroom FX Kit — soft pastel, projector-readable, high-density FX OK */
+:root {
+  --hcy-ink: #2a1830;
+  --hcy-pink: #ff7ab6;
+  --hcy-sky: #5ec8ff;
+  --hcy-mint: #7dffb3;
+  --hcy-yellow: #ffe14a;
+  --hcy-lilac: #b48cff;
+  --hcy-peach: #ff9a4a;
+  --hcy-cream: #fff6fb;
+  --hcy-stage-floor: rgba(42, 24, 48, 0.07);
+  --hcy-mascot-size: clamp(140px, 40vh, 220px);
+}
+
+.hcy-fx-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9990;
+  overflow: hidden;
+}
+
+/* Particles behind mascot stage content — face stays readable */
+.hcy-fx-layer-2d,
+#hcy-fx-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hcy-fx-dom {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hcy-fx-layer-3d,
+#hcy-fx-three {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hcy-fx-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 9985;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.95), rgba(255, 225, 120, 0.35) 40%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.08s linear;
+}
+
+.hcy-fx-stamp {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%, -50%) scale(2.4) rotate(-12deg);
+  opacity: 0;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  letter-spacing: 0.04em;
+  color: #e84f9a;
+  text-shadow: 3px 3px 0 rgba(42, 24, 48, 0.12);
+  border: 5px solid #e84f9a;
+  border-radius: 18px;
+  padding: 0.18em 0.55em;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 0 rgba(42, 24, 48, 0.1);
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.hcy-fx-stamp.is-soft {
+  color: #7a6a88;
+  border-color: #c8bdd4;
+}
+
+.hcy-fx-toast {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%) translateY(-12px);
+  opacity: 0;
+  max-width: min(88vw, 420px);
+  padding: 0.55em 1em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 3px solid var(--hcy-sky);
+  color: var(--hcy-ink);
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.95rem, 2.6vw, 1.15rem);
+  text-align: center;
+  box-shadow: 0 6px 0 rgba(42, 24, 48, 0.08);
+}
+
+.hcy-fx-score {
+  position: absolute;
+  font-family: "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  color: var(--hcy-yellow);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hcy-fx-flash { display: none; }
+}
+
+/* ——— Stage: floor + larger mascot framing ——— */
+#hcy-demo-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Art stage floor (Legacy soft-3D plate) — CSS gradient fallback if image 404 */
+#hcy-demo-stage .hcy-stage-floor {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  width: min(92%, 520px);
+  height: auto;
+  max-height: 42%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  opacity: 0.95;
+}
+
+#hcy-demo-stage::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 5%;
+  height: 26%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 40%,
+    rgba(42, 24, 48, 0.1) 0%,
+    rgba(42, 24, 48, 0.04) 45%,
+    transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hcy-demo-stage.has-floor-art::before {
+  opacity: 0.35; /* art plate carries the contact oval */
+}
+
+#hcy-demo-stage > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* HUD chips — ink-outlined pills (streak / combo / E) */
+.hcy-hud-chips,
+#hcy-demo-stage .meter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.55rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#hcy-demo-stage .meter > span,
+.hcy-hud-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+  padding: 0.28em 0.75em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2.5px solid var(--hcy-ink, #2a1830);
+  box-shadow: 0 3px 0 rgba(42, 24, 48, 0.1);
+  font-weight: 800;
+  font-size: clamp(0.85rem, 2.2vw, 1.05rem);
+  letter-spacing: 0.01em;
+  color: var(--hcy-ink, #2a1830);
+}
+
+#hcy-demo-stage .meter > span b,
+.hcy-hud-chip b {
+  font-weight: 900;
+  color: var(--hcy-accent, var(--hcy-pink));
+}
+
+/* ——— HCY mascot (ADD life; particles stay primary, behind face) ——— */
+.hcy-mascot-slot {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: calc(var(--hcy-mascot-size) + 24px);
+  margin: 0.35rem 0 0.55rem;
+  position: relative;
+  z-index: 4; /* above particle canvas (fx-root is fixed overlay; slot local stacking for stage kids) */
+}
+
+.hcy-mascot {
+  position: relative;
+  width: var(--hcy-mascot-size);
+  height: var(--hcy-mascot-size);
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 10px 14px rgba(42, 24, 48, 0.12));
+  cursor: pointer;
+  touch-action: manipulation;
+  outline: none;
+}
+.hcy-mascot:focus-visible {
+  box-shadow: 0 0 0 3px rgba(94, 200, 255, 0.65);
+  border-radius: 24%;
+}
+
+.hcy-mascot-ground-shadow {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 2%;
+  height: 12%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 50%,
+    rgba(42, 24, 48, 0.28) 0%,
+    rgba(42, 24, 48, 0.1) 48%,
+    transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+  transform: scaleY(0.55);
+}
+
+.hcy-mascot-aura {
+  position: absolute;
+  inset: 6% 4%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 55%,
+    rgba(255, 225, 74, 0.32),
+    rgba(255, 122, 182, 0.16) 45%,
+    transparent 70%);
+  filter: blur(3px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hcy-mascot-three {
+  position: absolute;
+  inset: -18%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hcy-mascot-three canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.hcy-mascot-body {
+  position: relative;
+  z-index: 2;
+  width: 92%;
+  height: 92%;
+  transform-origin: 50% 88%;
+  will-change: transform;
+}
+
+.hcy-mascot-img,
+.hcy-mascot-placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  /* Soft edge — less harsh PNG slam */
+  -webkit-mask-image: radial-gradient(ellipse 92% 92% at 50% 50%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(ellipse 92% 92% at 50% 50%, #000 70%, transparent 100%);
+}
+
+.hcy-mascot-img.is-hidden,
+.hcy-mascot-placeholder.is-hidden {
+  display: none;
+}
+
+.hcy-mascot-placeholder {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(165deg, #fff6fb 0%, #ffd0ea 55%, #ffe8a8 100%);
+  border: 3px solid var(--hcy-ink);
+  box-shadow: 0 6px 0 rgba(42, 24, 48, 0.1);
+  overflow: hidden;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.hcy-mascot-face-svg {
+  width: 92%;
+  height: 92%;
+}
+
+.hcy-mascot-body.is-happy .hcy-mascot-placeholder {
+  background: linear-gradient(165deg, #fff9e8 0%, #ffe14a 40%, #ff9ccc 100%);
+}
+
+.hcy-mascot-body.is-oops .hcy-mascot-placeholder {
+  background: linear-gradient(165deg, #f3eef8 0%, #dccfe8 55%, #c8bdd4 100%);
+}
+
+.hcy-mascot.is-mode-3d .hcy-mascot-aura {
+  opacity: 0.28;
+}
+
+/* Quality toggle (High / Soft for projectors) */
+.hcy-quality-toggle {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.hcy-quality-toggle button {
+  font: inherit;
+  font-weight: 800;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 2.5px solid var(--hcy-ink, #2a1830);
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.hcy-quality-toggle button.is-active {
+  background: var(--hcy-pink, #ff7ab6);
+  color: #fff;
+  box-shadow: 0 3px 0 rgba(42, 24, 48, 0.12);
+}
+
+html[data-hcy-quality="soft"] {
+  --hcy-mascot-size: clamp(120px, 34vh, 180px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hcy-mascot-body { transition: none !important; }
+  .hcy-mascot-aura { display: none; }
+}

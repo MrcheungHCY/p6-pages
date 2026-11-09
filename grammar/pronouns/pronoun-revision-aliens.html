@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Pronoun Revision</title>
+<!-- HCY_SHARED_WIRED -->
+<script src="../../assets/banks/pronoun-bank.js"></script>
+<script src="../../assets/banks/p6-pronouns-100.js"></script>
+<link rel="stylesheet" href="../../assets/hcy-teacher-hud.css">
+<script src="../../assets/hcy-teacher-hud.js" data-auto="1"></script>
+
+<style>
+  :root {
+    --bg-top: #1a1a3e;
+    --bg-bot: #2d1b4e;
+    --card: rgba(255,255,255,0.94);
+    --primary: #7eb8da;
+    --primary-dark: #5a9bc4;
+    --accent: #f4a261;
+    --accent2: #e9c46a;
+    --success: #2a9d8f;
+    --error: #e76f51;
+    --text: #264653;
+    --muted: #6b8a99;
+    --hint: #d62828;
+    --pastel-pink: #ffb3c6;
+    --pastel-mint: #b5ead7;
+    --pastel-lav: #c9b6e4;
+    --pastel-peach: #ffdac1;
+    --pastel-sky: #a2d2ff;
+    --shadow: 0 4px 20px rgba(0,0,0,0.25);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    font-family: "Segoe UI", "Nunito", "Comic Sans MS", Arial, sans-serif;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: linear-gradient(180deg, #1a1a3e 0%, #2d1b4e 50%, #3d2a5c 100%);
+  }
+  .screen {
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    padding: 0.6rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 0;
+  }
+  .screen.active { display: flex; }
+  footer.app-footer {
+    text-align: center;
+    padding: 0.45rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  h1.title {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    color: var(--text);
+    line-height: 1.15;
+    margin: 0.35rem 0 0.2rem;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    border: 3px solid #e8d5f5;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.12s, box-shadow 0.12s, background 0.15s;
+    font-family: inherit;
+    margin: 0.4rem 0;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.12);
+    touch-action: manipulation;
+  }
+  .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,0.12); }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-dark); }
+  .btn-accent { background: var(--accent); color: #fff; }
+  .btn-choice {
+    background: #fff8f0;
+    color: var(--text);
+    border: 3px solid #f0d9b5;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+  }
+  .btn-choice:hover:not(:disabled) { background: #fff0dc; border-color: var(--accent); }
+  .btn-choice.correct {
+    background: #d8f3ef;
+    border-color: var(--success);
+    color: #1a6b62;
+  }
+  .btn-choice.wrong {
+    background: #fde8e4;
+    border-color: var(--error);
+    color: #9b3a28;
+  }
+  .btn-choice:disabled { opacity: 0.85; cursor: default; }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    margin: 0.75rem 0 1.1rem;
+  }
+  .filter-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 999px;
+    border: 3px solid #e0d0b8;
+    background: #fff;
+    color: var(--text);
+    cursor: pointer;
+    font-family: inherit;
+    touch-action: manipulation;
+  }
+  .filter-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary-dark);
+  }
+  .decor { font-size: 2.2rem; text-align: center; margin: 0.3rem 0; }
+  #titleScreen .card, #endScreen .card {
+    margin: auto;
+    text-align: center;
+    max-width: 520px;
+  }
+  #endScreen .card { text-align: center; }
+  .end-score {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    font-weight: 800;
+    color: var(--success);
+    margin: 0.75rem 0;
+  }
+  .end-msg {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+  }
+
+  /* ---- GAME LAYOUT ---- */
+  #gameScreen { padding: 0.4rem; gap: 0.35rem; }
+  .hud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem 0.75rem;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    padding: 0.45rem 0.7rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255,255,255,0.18);
+    flex-shrink: 0;
+  }
+  .hud-group { display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap; }
+  .lives { letter-spacing: 0.05em; font-size: 1.15rem; }
+  .power-icons { display: flex; gap: 0.35rem; align-items: center; }
+  .pwr {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 1.85rem;
+    padding: 0 0.4rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    background: rgba(0,0,0,0.25);
+    border: 2px solid transparent;
+    opacity: 0.35;
+  }
+  .pwr.on { opacity: 1; border-color: #ffe66d; box-shadow: 0 0 10px rgba(255,230,109,0.5); }
+  .pwr.shield.on { background: #5dade2; }
+  .pwr.slow.on { background: #af7ac5; }
+  .pwr.blast.on { background: #e67e22; }
+  .cat-label {
+    background: rgba(162,210,255,0.25);
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
+  .stem-panel {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 0.65rem 0.9rem;
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+  }
+  .stem {
+    font-size: clamp(1.05rem, 3.5vw, 1.4rem);
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .stem .hint { color: var(--hint); font-weight: 800; }
+  .blank {
+    display: inline-block;
+    min-width: 2.8rem;
+    border-bottom: 3px solid var(--accent);
+    text-align: center;
+    color: var(--accent);
+    font-weight: 800;
+    margin: 0 0.1rem;
+  }
+  .arena-wrap {
+    position: relative;
+    flex: 1;
+    min-height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 3px solid rgba(255,255,255,0.2);
+  }
+  #gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+    cursor: crosshair;
+    background: #1a1a3e;
+  }
+  .arena-wrap.shake {
+    animation: shake 0.4s ease;
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+  }
+  .floating-msg {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 5;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .floating-msg.show { opacity: 1; }
+  .feedback {
+    margin: 0;
+    padding: 0.55rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: none;
+    flex-shrink: 0;
+  }
+  .feedback.show { display: block; }
+  .feedback.ok {
+    background: #d8f3ef;
+    color: #1a6b62;
+    border: 2px solid var(--success);
+  }
+  .feedback.bad {
+    background: #fde8e4;
+    color: #9b3a28;
+    border: 2px solid var(--error);
+  }
+  .choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+  .choices .btn { margin: 0; }
+  @media (max-width: 520px) {
+    .choices { grid-template-columns: 1fr; }
+    .hud { font-size: 0.85rem; }
+  }
+  .howto {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+    line-height: 1.4;
+  }
+</style>
+<!-- Shared-authoritative: ../../assets/banks/pronoun-bank.js → HCY_PRONOUN_BANK. Inline || fallback only. -->
+</head>
+<body>
+
+<!-- TITLE -->
+<div id="titleScreen" class="screen active">
+  <div class="card">
+    <div class="decor">🚀👽✨</div>
+    <h1 class="title">Pronoun Revision</h1>
+    <p class="subtitle">P.6 English · Shoot the correct alien!</p>
+    <p style="font-size:1.05rem;font-weight:700;margin-bottom:0.35rem;">Category filter</p>
+    <div class="filter-row" id="filterRow">
+      <button type="button" class="filter-btn active" data-cat="0">All</button>
+      <button type="button" class="filter-btn" data-cat="1">1 Subject</button>
+      <button type="button" class="filter-btn" data-cat="2">2 Object</button>
+      <button type="button" class="filter-btn" data-cat="3">3 Poss. Adj.</button>
+      <button type="button" class="filter-btn" data-cat="4">4 Poss. Pron.</button>
+      <button type="button" class="filter-btn" data-cat="5">5 Reflexive</button>
+      <button type="button" class="filter-btn" data-cat="6">6 Mixed</button>
+    </div>
+    <button type="button" class="btn btn-primary" id="startBtn">▶ Launch (20 questions)</button>
+    <p class="howto">Tap an alien or press <strong>1–4</strong>. Answer under 4 seconds to earn Shield / Slow-mo / Blast. You have 3 lives!</p>
+  </div>
+</div>
+
+<!-- GAME -->
+<div id="gameScreen" class="screen">
+  <div class="hud">
+    <div class="hud-group">
+      <span class="lives" id="livesHud" title="Lives">❤️❤️❤️</span>
+      <span id="scoreHud">Score: 0</span>
+      <span id="qHud">Q 1/20</span>
+    </div>
+    <div class="hud-group">
+      <div class="power-icons" title="Power-ups">
+        <span class="pwr shield" id="pwrShield">🛡️</span>
+        <span class="pwr slow" id="pwrSlow">🐢</span>
+        <span class="pwr blast" id="pwrBlast">💥</span>
+      </div>
+      <span class="cat-label" id="catBadge">Subject</span>
+    </div>
+  </div>
+  <div class="stem-panel">
+    <div class="stem" id="stem"></div>
+  </div>
+  <div class="arena-wrap" id="arenaWrap">
+    <canvas id="gameCanvas"></canvas>
+    <div class="floating-msg" id="floatMsg"></div>
+  </div>
+  <div class="feedback" id="feedback"></div>
+  <div class="choices" id="choices"></div>
+  <button type="button" class="btn btn-accent" id="continueBtn" style="display:none;">Continue →</button>
+</div>
+
+<!-- END -->
+<div id="endScreen" class="screen">
+  <div class="card">
+    <div class="decor" id="endDecor">🌟</div>
+    <h1 class="title" style="font-size:clamp(1.6rem,6vw,2.3rem);">Mission complete!</h1>
+    <div class="end-score" id="endScore">0/20</div>
+    <p class="end-msg" id="endMsg"></p>
+    <button type="button" class="btn btn-primary" id="playAgainBtn">↻ Play again</button>
+    <button type="button" class="btn btn-choice" id="homeBtn" style="text-align:center;">← Back to title</button>
+  </div>
+</div>
+
+<footer class="app-footer">HCY English · Pronoun Revision</footer>
+
+<script>
+
+const CAT_NAMES = {
+  1: "1 · Subject personal",
+  2: "2 · Object personal",
+  3: "3 · Possessive adjectives",
+  4: "4 · Possessive pronouns",
+  5: "5 · Reflexive",
+  6: "6 · Mixed"
+};
+/* Prefer shared tips when present */
+const CAT_TIPS = (window.HCY_BANKS && window.HCY_BANKS.pronounTips) || {
+  1: "Subject personal: I, you, he, she, it, we, they (do the action).",
+  2: "Object personal: me, you, him, her, it, us, them (receive the action).",
+  3: "Possessive adjectives: my, your, his, her, its, our, their (+ noun).",
+  4: "Possessive pronouns: mine, yours, his, hers, ours, theirs (stand alone).",
+  5: "Reflexive: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+  6: "Mixed: check if you need subject, object, possessive or reflexive."
+};
+
+/* Argon: shared _assets/banks/pronoun-bank.js (HCY_PRONOUN_BANK) is authoritative.
+   Inline array kept only as emergency fallback if shared script fails to load. */
+const BANK = window.HCY_PRONOUN_BANK || window.HCY_BANKS && window.HCY_BANKS.pronouns || [
+  // ===== CAT 1 Subject personal (16) =====
+  {id:1, category:1, stem:'<span class="hint">Tom</span> is hungry. ___ wants a sandwich.', choices:["He","Him","His","Himself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:2, category:1, stem:'<span class="hint">Mary and I</span> are classmates. ___ sit together.', choices:["We","Us","Our","Ourselves"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:3, category:1, stem:'Look! <span class="hint">The cat</span> is sleeping. ___ looks so cute.', choices:["It","Its","Itself","Them"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:4, category:1, stem:'<span class="hint">My sister</span> loves drawing. ___ draws every day.', choices:["She","Her","Hers","Herself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:5, category:1, stem:'<span class="hint">The boys</span> are playing football. ___ are noisy!', choices:["They","Them","Their","Themselves"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:6, category:1, stem:'Hello! ___ am <span class="hint">Peter</span>. Nice to meet you.', choices:["I","Me","My","Myself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:7, category:1, stem:'<span class="hint">You and your brother</span> can help. ___ can carry the boxes.', choices:["You","Your","Yours","Yourself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:8, category:1, stem:'<span class="hint">Dad</span> is cooking dinner. ___ is in the kitchen.', choices:["He","Him","His","Himself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:9, category:1, stem:'<span class="hint">Grandma</span> tells great stories. ___ makes us laugh.', choices:["She","Her","Hers","Herself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:10, category:1, stem:'<span class="hint">The students</span> finished early. ___ went to the playground.', choices:["They","Them","Their","Themselves"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:11, category:1, stem:'<span class="hint">My friend and I</span> walk to school. ___ leave at 7:30.', choices:["We","Us","Our","Ourselves"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:12, category:1, stem:'Is <span class="hint">the bus</span> late? ___ usually comes at eight.', choices:["It","Its","Itself","They"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:13, category:1, stem:'<span class="hint">Mr Chan</span> teaches English. ___ is very kind.', choices:["He","Him","His","Himself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:14, category:1, stem:'<span class="hint">Amy</span> forgot her book. ___ left it at home.', choices:["She","Her","Hers","Herself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:15, category:1, stem:'Can ___ help <span class="hint">me</span>, please? I need a ruler.', choices:["you","your","yours","yourself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:16, category:1, stem:'<span class="hint">The birds</span> are singing. ___ sound lovely.', choices:["They","Them","Their","Themselves"], answerIndex:0, tip:CAT_TIPS[1]},
+
+  // ===== CAT 2 Object personal (16) =====
+  {id:17, category:2, stem:'Please give <span class="hint">the book</span> to ___. I need it.', choices:["me","I","my","myself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:18, category:2, stem:'Mum is calling <span class="hint">Tom</span>. Can you tell ___?', choices:["him","he","his","himself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:19, category:2, stem:'I saw <span class="hint">Lucy</span> at the park. I waved to ___.', choices:["her","she","hers","herself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:20, category:2, stem:'The teacher asked <span class="hint">the class</span> a question. She looked at ___.', choices:["them","they","their","themselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:21, category:2, stem:'Can you help <span class="hint">my brother and me</span>? Please help ___.', choices:["us","we","our","ourselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:22, category:2, stem:'Put <span class="hint">the cup</span> on the table. Be careful with ___.', choices:["it","its","itself","them"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:23, category:2, stem:'This gift is for <span class="hint">you</span>. I made it for ___.', choices:["you","your","yours","yourself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:24, category:2, stem:'Dad took <span class="hint">Sam</span> to the clinic. He waited with ___.', choices:["him","he","his","himself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:25, category:2, stem:'We invited <span class="hint">Aunt May</span> to dinner. We cooked for ___.', choices:["her","she","hers","herself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:26, category:2, stem:'Please pass ___ the salt. <span class="hint">I</span> cannot reach it.', choices:["me","I","my","myself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:27, category:2, stem:'The dog followed <span class="hint">the children</span>. It barked at ___.', choices:["them","they","their","themselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:28, category:2, stem:'Grandpa told <span class="hint">Ben and me</span> a joke. He made ___ laugh.', choices:["us","we","our","ourselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:29, category:2, stem:'I found <span class="hint">your pencil</span>. Do you want ___ back?', choices:["it","its","itself","them"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:30, category:2, stem:'Miss Wong praised <span class="hint">Kelly</span>. She gave ___ a sticker.', choices:["her","she","hers","herself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:31, category:2, stem:'Can you show ___ <span class="hint">your homework</span>? I want to check.', choices:["me","I","my","myself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:32, category:2, stem:'The shopkeeper smiled at <span class="hint">the customers</span>. He thanked ___.', choices:["them","they","their","themselves"], answerIndex:0, tip:CAT_TIPS[2]},
+
+  // ===== CAT 3 Possessive adjectives (17) =====
+  {id:33, category:3, stem:'This is <span class="hint">my</span> bag. That is ___ bag too? (your)', choices:["your","yours","you","yourself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:34, category:3, stem:'<span class="hint">Tom</span> forgot ___ lunchbox at home.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:35, category:3, stem:'<span class="hint">Amy</span> loves ___ new bicycle.', choices:["her","hers","she","herself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:36, category:3, stem:'The dog wagged ___ tail happily.', choices:["its","it","itself","their"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:37, category:3, stem:'We cleaned ___ classroom after school.', choices:["our","ours","us","ourselves"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:38, category:3, stem:'The girls put on ___ school shoes.', choices:["their","theirs","them","themselves"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:39, category:3, stem:'Is this ___ pencil, Ken? (belonging to Ken)', choices:["your","yours","you","yourself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:40, category:3, stem:'<span class="hint">I</span> washed ___ hands before eating.', choices:["my","mine","me","myself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:41, category:3, stem:'<span class="hint">Mr Lee</span> parked ___ car outside.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:42, category:3, stem:'<span class="hint">Mum</span> lost ___ keys again!', choices:["her","hers","she","herself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:43, category:3, stem:'The bird built ___ nest in the tree.', choices:["its","it","itself","their"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:44, category:3, stem:'My cousins brought ___ favourite toys.', choices:["their","theirs","them","themselves"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:45, category:3, stem:'Please write ___ name on the paper. (the listener\'s)', choices:["your","yours","you","yourself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:46, category:3, stem:'Dad and I packed ___ suitcases for the trip.', choices:["our","ours","us","ourselves"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:47, category:3, stem:'<span class="hint">The baby</span> dropped ___ bottle on the floor.', choices:["its","it","itself","his"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:48, category:3, stem:'Look at <span class="hint">the boys</span> — ___ football is under the bench.', choices:["their","theirs","them","they"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:49, category:3, stem:'<span class="hint">We</span> (the class) like ___ new teacher. She is funny.', choices:["our","ours","us","ourselves"], answerIndex:0, tip:CAT_TIPS[3]},
+
+  // ===== CAT 4 Possessive pronouns (16) =====
+  {id:50, category:4, stem:'This book is <span class="hint">mine</span>. That one is ___. (your book)', choices:["yours","your","you","yourself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:51, category:4, stem:'Is this umbrella <span class="hint">Tom\'s</span>? Yes, it is ___.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:52, category:4, stem:'Whose bag is this? It is <span class="hint">Mary\'s</span>. It is ___.', choices:["hers","her","she","herself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:53, category:4, stem:'These seats are <span class="hint">our</span> seats. They are ___.', choices:["ours","our","us","ourselves"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:54, category:4, stem:'That football is <span class="hint">the boys\'</span>. It is ___.', choices:["theirs","their","them","themselves"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:55, category:4, stem:'<span class="hint">My</span> lunchbox is blue. ___ is red. (your lunchbox)', choices:["Yours","Your","You","Yourself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:56, category:4, stem:'Don\'t take that pencil — it is ___. (<span class="hint">belongs to me</span>)', choices:["mine","my","me","myself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:57, category:4, stem:'<span class="hint">Dad</span> said the wallet is ___.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:58, category:4, stem:'Is this scarf <span class="hint">Mum\'s</span>? Yes, it\'s ___.', choices:["hers","her","she","herself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:59, category:4, stem:'We found a phone. Is it ___? (<span class="hint">belonging to you</span>)', choices:["yours","your","you","yourself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:60, category:4, stem:'<span class="hint">Their</span> house is big. ___ is smaller. (our house)', choices:["Ours","Our","Us","Ourselves"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:61, category:4, stem:'The red shoes are <span class="hint">the girls\'</span>. They are ___.', choices:["theirs","their","them","themselves"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:62, category:4, stem:'This water bottle is not ___. (<span class="hint">not belonging to me</span>)', choices:["mine","my","me","myself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:63, category:4, stem:'Which jacket is <span class="hint">Ken\'s</span>? The black one is ___.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:64, category:4, stem:'Whose eraser is pink? It is <span class="hint">Lisa\'s</span> — it\'s ___.', choices:["hers","her","she","herself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:65, category:4, stem:'Is this classroom ___? (<span class="hint">belonging to us</span>)', choices:["ours","our","us","ourselves"], answerIndex:0, tip:CAT_TIPS[4]},
+
+  // ===== CAT 5 Reflexive (17) =====
+  {id:66, category:5, stem:'<span class="hint">I</span> hurt ___ when I fell off the bike.', choices:["myself","me","my","mine"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:67, category:5, stem:'<span class="hint">Tom</span> taught ___ to play the piano.', choices:["himself","him","his","he"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:68, category:5, stem:'<span class="hint">Sarah</span> looked at ___ in the mirror.', choices:["herself","her","hers","she"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:69, category:5, stem:'Be careful! Don\'t cut ___ with that knife. (<span class="hint">you</span>)', choices:["yourself","you","your","yours"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:70, category:5, stem:'<span class="hint">We</span> enjoyed ___ at the funfair.', choices:["ourselves","us","our","ours"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:71, category:5, stem:'<span class="hint">The children</span> made the cake by ___.', choices:["themselves","them","their","theirs"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:72, category:5, stem:'<span class="hint">The cat</span> washed ___ after eating.', choices:["itself","it","its","them"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:73, category:5, stem:'Did <span class="hint">you two</span> introduce ___ to the new teacher?', choices:["yourselves","yourself","you","your"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:74, category:5, stem:'<span class="hint">I</span> can carry the bag by ___. Don\'t worry!', choices:["myself","me","my","mine"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:75, category:5, stem:'<span class="hint">Dad</span> fixed the chair by ___.', choices:["himself","him","his","he"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:76, category:5, stem:'<span class="hint">Mum</span> bought ___ a new dress.', choices:["herself","her","hers","she"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:77, category:5, stem:'Please help ___ to some fruit. (<span class="hint">you</span>, polite)', choices:["yourself","you","your","yours"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:78, category:5, stem:'<span class="hint">My sister and I</span> painted the room ___.', choices:["ourselves","us","our","ours"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:79, category:5, stem:'<span class="hint">The boys</span> blamed ___ for the broken window.', choices:["themselves","them","their","theirs"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:80, category:5, stem:'<span class="hint">The robot</span> turned ___ off automatically.', choices:["itself","it","its","them"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:81, category:5, stem:'<span class="hint">Kids</span>, please behave ___.', choices:["yourselves","yourself","you","your"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:82, category:5, stem:'<span class="hint">She</span> cut ___ a slice of cake.', choices:["herself","her","hers","she"], answerIndex:0, tip:CAT_TIPS[5]},
+
+  // ===== CAT 6 Mixed (18) =====
+  {id:83, category:6, stem:'<span class="hint">Peter</span> is my friend. I play with ___ every day.', choices:["him","he","his","himself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:84, category:6, stem:'Is this <span class="hint">your</span> ruler? No, ___ is longer.', choices:["mine","my","me","myself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:85, category:6, stem:'<span class="hint">The girls</span> enjoyed ___ at the picnic.', choices:["themselves","them","their","theirs"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:86, category:6, stem:'<span class="hint">My brother</span> lost ___ keys on the bus.', choices:["his","him","he","himself"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:87, category:6, stem:'Can ___ open the door, please? <span class="hint">My hands</span> are full.', choices:["you","your","yours","yourself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:88, category:6, stem:'This water bottle is <span class="hint">Jenny\'s</span>. Please give it to ___.', choices:["her","she","hers","herself"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:89, category:6, stem:'<span class="hint">We</span> cooked dinner by ___. Nobody helped us.', choices:["ourselves","us","our","ours"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:90, category:6, stem:'Whose shoes are these? They are <span class="hint">the twins\'</span>. They are ___.', choices:["theirs","their","them","themselves"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:91, category:6, stem:'<span class="hint">The puppy</span> chased ___ tail in circles.', choices:["its","it","itself","their"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:92, category:6, stem:'Mum asked <span class="hint">Ben and me</span> to wash the dishes. She asked ___.', choices:["us","we","our","ourselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:93, category:6, stem:'<span class="hint">I</span> bought ___ a new pencil case. (for me)', choices:["myself","me","my","mine"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:94, category:6, stem:'<span class="hint">Miss Wong</span> is our teacher. ___ teaches Science too.', choices:["She","Her","Hers","Herself"], answerIndex:0, tip:CAT_TIPS[1]},
+  {id:95, category:6, stem:'That lunchbox is not ___ — ___ is the green one. (belonging to you / belonging to me)', choices:["yours; mine","your; my","you; me","yourself; myself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:96, category:6, stem:'Please put <span class="hint">the books</span> on the shelf. Put ___ away neatly.', choices:["them","they","their","themselves"], answerIndex:0, tip:CAT_TIPS[2]},
+  {id:97, category:6, stem:'<span class="hint">Uncle Bob</span> fixed the bike by ___.', choices:["himself","him","his","he"], answerIndex:0, tip:CAT_TIPS[5]},
+  {id:98, category:6, stem:'We love ___ school. It is friendly and bright.', choices:["our","ours","us","ourselves"], answerIndex:0, tip:CAT_TIPS[3]},
+  {id:99, category:6, stem:'Is this scarf ___? (belonging to <span class="hint">Mary</span>)', choices:["hers","her","she","herself"], answerIndex:0, tip:CAT_TIPS[4]},
+  {id:100, category:6, stem:'Look at <span class="hint">Jack and Jill</span> — ___ are running to the gate!', choices:["they","them","their","themselves"], answerIndex:0, tip:CAT_TIPS[1]}
+];
+
+// --- Power-up cycle ---
+const POWER_CYCLE = ['shield', 'slow', 'blast'];
+const ALIEN_COLORS = ['#ffb3c6', '#b5ead7', '#c9b6e4', '#ffdac1'];
+const ALIEN_EYES = ['#264653', '#5a4a6a', '#3d5a80', '#6b4226'];
+const CHEERS = ['Great job! ⭐', 'Well done! 👏', 'Excellent! 🎉', 'Correct! 👍', 'Nice work! 🌟', 'Alien down! 🚀'];
+
+// --- Game state ---
+let selectedCat = 0;
+let deck = [];
+let qIndex = 0;
+let score = 0;
+let lives = 3;
+let attempts = 0;
+let locked = false;
+let questionStart = 0;
+let nextPowerIdx = 0;
+let hasShield = false;
+let slowActive = false;   // applies to current/next question
+let blastArmed = false;   // removes one wrong alien mid-question
+let choiceOrder = [];     // display order of original indices
+let rafId = 0;
+let lastTs = 0;
+let gameRunning = false;
+
+// Canvas entities
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+let W = 0, H = 0;
+let stars = [];
+let aliens = [];
+let plane = { x: 0.5, y: 0.92, wiggle: 0 };
+let lasers = [];
+let particles = [];
+let boomBursts = [];
+let hoverIdx = -1;
+let blastTimer = 0;
+let blastDone = false;
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function dealQuestions(cat) {
+  let pool = cat === 0 ? BANK.slice() : BANK.filter(q => q.category === cat);
+  if (pool.length === 0) pool = BANK.slice();
+
+  if (cat === 0) {
+    const byCat = {1:[],2:[],3:[],4:[],5:[],6:[]};
+    pool.forEach(q => byCat[q.category].push(q));
+    Object.keys(byCat).forEach(k => { byCat[k] = shuffle(byCat[k]); });
+    const picked = [];
+    let i = 0;
+    while (picked.length < 20) {
+      for (const c of [1,2,3,4,5,6]) {
+        if (picked.length >= 20) break;
+        if (byCat[c].length > i) picked.push(byCat[c][i]);
+      }
+      i++;
+      if (i > 30) break;
+    }
+    if (picked.length < 20) {
+      const ids = new Set(picked.map(q => q.id));
+      const rest = shuffle(pool.filter(q => !ids.has(q.id)));
+      while (picked.length < 20 && rest.length) picked.push(rest.shift());
+    }
+    return shuffle(picked).slice(0, 20);
+  }
+
+  let out = shuffle(pool);
+  if (out.length >= 20) return out.slice(0, 20);
+  while (out.length < 20) out = out.concat(shuffle(pool));
+  return out.slice(0, 20);
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if (id === 'gameScreen') {
+    requestAnimationFrame(() => { resizeCanvas(); });
+  }
+}
+
+function resizeCanvas() {
+  const wrap = document.getElementById('arenaWrap');
+  const rect = wrap.getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  W = Math.max(280, Math.floor(rect.width));
+  H = Math.max(160, Math.floor(rect.height));
+  canvas.width = Math.floor(W * dpr);
+  canvas.height = Math.floor(H * dpr);
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  if (stars.length === 0) initStars();
+}
+
+function initStars() {
+  stars = [];
+  for (let i = 0; i < 60; i++) {
+    stars.push({
+      x: Math.random(),
+      y: Math.random(),
+      r: 0.6 + Math.random() * 1.8,
+      s: 0.02 + Math.random() * 0.08,
+      a: 0.3 + Math.random() * 0.7
+    });
+  }
+}
+
+function updateHud() {
+  const hearts = '❤️'.repeat(Math.max(0, lives)) + '🖤'.repeat(Math.max(0, 3 - lives));
+  document.getElementById('livesHud').textContent = hearts || '💀';
+  document.getElementById('scoreHud').textContent = 'Score: ' + score;
+  document.getElementById('qHud').textContent = 'Q ' + (qIndex + 1) + '/20';
+  document.getElementById('pwrShield').classList.toggle('on', hasShield);
+  document.getElementById('pwrSlow').classList.toggle('on', slowActive);
+  document.getElementById('pwrBlast').classList.toggle('on', blastArmed);
+}
+
+function startGame() {
+  deck = dealQuestions(selectedCat);
+  qIndex = 0;
+  score = 0;
+  lives = 3;
+  attempts = 0;
+  locked = false;
+  nextPowerIdx = 0;
+  hasShield = false;
+  slowActive = false;
+  blastArmed = false;
+  showScreen('gameScreen');
+  gameRunning = true;
+  resizeCanvas();
+  lastTs = 0;
+  cancelAnimationFrame(rafId);
+  rafId = requestAnimationFrame(loop);
+  renderQuestion();
+}
+
+function spawnAliens(q) {
+  choiceOrder = shuffle([0, 1, 2, 3]);
+  aliens = choiceOrder.map((origIdx, i) => {
+    const lane = (i + 0.5) / 4;
+    return {
+      origIdx,
+      label: q.choices[origIdx],
+      x: lane,
+      y: 0.08 + Math.random() * 0.06,
+      vx: (Math.random() - 0.5) * 0.00015,
+      alive: true,
+      bob: Math.random() * Math.PI * 2,
+      color: ALIEN_COLORS[i],
+      eye: ALIEN_EYES[i],
+      scale: 1,
+      hitFlash: 0
+    };
+  });
+  lasers = [];
+  particles = [];
+  boomBursts = [];
+  hoverIdx = -1;
+  blastTimer = 0;
+  blastDone = false;
+  plane.x = 0.5;
+}
+
+function renderQuestion() {
+  const q = deck[qIndex];
+  attempts = 0;
+  locked = false;
+  questionStart = performance.now();
+  updateHud();
+  document.getElementById('catBadge').textContent = CAT_NAMES[q.category];
+  document.getElementById('stem').innerHTML = q.stem.replace(/___/g, '<span class="blank">____</span>');
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback';
+  fb.textContent = '';
+  document.getElementById('continueBtn').style.display = 'none';
+  document.getElementById('floatMsg').className = 'floating-msg';
+  document.getElementById('floatMsg').textContent = '';
+
+  spawnAliens(q);
+
+  const box = document.getElementById('choices');
+  box.innerHTML = '';
+  choiceOrder.forEach((origIdx, displayPos) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn btn-choice';
+    btn.id = 'choice' + displayPos;
+    btn.textContent = (displayPos + 1) + '.  ' + q.choices[origIdx];
+    btn.dataset.orig = origIdx;
+    btn.dataset.slot = displayPos;
+    btn.addEventListener('click', () => onChoose(displayPos));
+    box.appendChild(btn);
+  });
+}
+
+function grantPowerUp() {
+  const kind = POWER_CYCLE[nextPowerIdx % 3];
+  nextPowerIdx++;
+  if (kind === 'shield') {
+    hasShield = true;
+    return 'Power-up: Shield! 🛡️';
+  }
+  if (kind === 'slow') {
+    slowActive = true;
+    return 'Power-up: Slow-mo! 🐢';
+  }
+  blastArmed = true;
+  return 'Power-up: Blast! 💥';
+}
+
+function loseLifeOrShield() {
+  if (hasShield) {
+    hasShield = false;
+    updateHud();
+    return 'Shield blocked the hit! 🛡️';
+  }
+  lives = Math.max(0, lives - 1);
+  updateHud();
+  return lives <= 0 ? 'Out of lives!' : 'Lost a life!';
+}
+
+function showFloat(text, ms) {
+  const el = document.getElementById('floatMsg');
+  el.textContent = text;
+  el.className = 'floating-msg show';
+  clearTimeout(showFloat._t);
+  showFloat._t = setTimeout(() => { el.className = 'floating-msg'; }, ms || 1200);
+}
+
+function fireLaser(slot) {
+  const a = aliens[slot];
+  if (!a || !a.alive) return;
+  plane.x = a.x;
+  lasers.push({
+    x0: plane.x,
+    y0: plane.y - 0.04,
+    x1: a.x,
+    y1: a.y + 0.02,
+    life: 0.18,
+    max: 0.18
+  });
+}
+
+function explodeAlien(slot) {
+  const a = aliens[slot];
+  if (!a) return;
+  a.alive = false;
+  boomBursts.push({ x: a.x, y: a.y, t: 0, color: a.color });
+  for (let i = 0; i < 18; i++) {
+    const ang = Math.random() * Math.PI * 2;
+    const sp = 0.08 + Math.random() * 0.25;
+    particles.push({
+      x: a.x, y: a.y,
+      vx: Math.cos(ang) * sp * 0.01,
+      vy: Math.sin(ang) * sp * 0.01,
+      life: 0.5 + Math.random() * 0.4,
+      color: a.color,
+      r: 2 + Math.random() * 3
+    });
+  }
+}
+
+function onChoose(slot) {
+  if (locked) return;
+  const a = aliens[slot];
+  if (!a || !a.alive) return;
+  const q = deck[qIndex];
+  const origIdx = a.origIdx;
+  const correct = origIdx === q.answerIndex;
+  const fb = document.getElementById('feedback');
+  const buttons = document.querySelectorAll('#choices .btn-choice');
+
+  fireLaser(slot);
+
+  if (correct) {
+    locked = true;
+    explodeAlien(slot);
+    // dim others
+    aliens.forEach((al, i) => {
+      if (i !== slot && al.alive) al.alive = false;
+    });
+    buttons.forEach(b => {
+      b.disabled = true;
+      if (Number(b.dataset.slot) === slot) b.classList.add('correct');
+    });
+    if (attempts === 0) score++;
+    const elapsed = (performance.now() - questionStart) / 1000;
+    let msg = CHEERS[Math.floor(Math.random() * CHEERS.length)];
+    let powerNote = '';
+    if (attempts === 0 && elapsed < 4) {
+      powerNote = grantPowerUp();
+      msg += ' ' + powerNote;
+    }
+    // consume slow after this question answered
+    if (slowActive) slowActive = false;
+    updateHud();
+    fb.className = 'feedback show ok';
+    fb.textContent = msg;
+    showFloat(attempts === 0 && elapsed < 4 ? '⚡ Fast! ' + powerNote : '💥 Boom!');
+    document.getElementById('scoreHud').textContent = 'Score: ' + score;
+    document.getElementById('continueBtn').style.display = 'block';
+    document.getElementById('continueBtn').onclick = nextQuestion;
+  } else {
+    a.hitFlash = 0.35;
+    const wrap = document.getElementById('arenaWrap');
+    wrap.classList.remove('shake');
+    void wrap.offsetWidth;
+    wrap.classList.add('shake');
+
+    const btn = document.getElementById('choice' + slot);
+    if (btn) {
+      btn.classList.add('wrong');
+      btn.disabled = true;
+    }
+    a.alive = false; // wrong alien drops out
+
+    if (attempts === 0) {
+      attempts = 1;
+      fb.className = 'feedback show bad';
+      fb.textContent = 'Not quite. Tip: ' + q.tip + ' Try once more!';
+      showFloat('Try again!');
+    } else {
+      locked = true;
+      const lifeMsg = loseLifeOrShield();
+      // reveal correct
+      aliens.forEach((al, i) => {
+        if (al.origIdx === q.answerIndex && al.alive) {
+          al.hitFlash = 0.6;
+        }
+      });
+      buttons.forEach(b => {
+        b.disabled = true;
+        if (Number(b.dataset.orig) === q.answerIndex) b.classList.add('correct');
+      });
+      fb.className = 'feedback show bad';
+      fb.textContent = 'The answer is “‘ + q.choices[q.answerIndex] + ’”. ' + q.tip + ' (' + lifeMsg + ')';
+      showFloat(lifeMsg);
+      if (slowActive) slowActive = false;
+      updateHud();
+      document.getElementById('continueBtn').style.display = 'block';
+      document.getElementById('continueBtn').onclick = () => {
+        if (lives <= 0) endGame(true);
+        else nextQuestion();
+      };
+    }
+  }
+}
+
+function nextQuestion() {
+  qIndex++;
+  if (qIndex >= 20) {
+    endGame(false);
+  } else {
+    renderQuestion();
+  }
+}
+
+function endGame(outOfLives) {
+  gameRunning = false;
+  cancelAnimationFrame(rafId);
+  showScreen('endScreen');
+  document.getElementById('endScore').textContent = score + ' / 20';
+  let msg, decor;
+  if (outOfLives) {
+    msg = 'Out of lives — score ' + score + '/20. Review the tips and try again!';
+    decor = '👾💫👾';
+  } else if (score >= 18) {
+    msg = 'Outstanding pilot! You are a pronoun star!';
+    decor = '🏆🌟🏆';
+  } else if (score >= 14) {
+    msg = 'Great flying! Keep practising!';
+    decor = '⭐👏⭐';
+  } else if (score >= 10) {
+    msg = 'Good try! Review the tips and play again.';
+    decor = '💪📚💪';
+  } else {
+    msg = 'Keep going! Practice makes perfect.';
+    decor = '✏️🌈✏️';
+  }
+  document.getElementById('endMsg').textContent = msg;
+  document.getElementById('endDecor').textContent = decor;
+}
+
+// --- Canvas drawing ---
+function drawStars(dt) {
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#1a1a3e');
+  g.addColorStop(0.55, '#2d1b4e');
+  g.addColorStop(1, '#4a3060');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+
+  // soft nebulae
+  ctx.globalAlpha = 0.15;
+  ctx.fillStyle = '#ffb3c6';
+  ctx.beginPath(); ctx.arc(W * 0.2, H * 0.3, W * 0.25, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#a2d2ff';
+  ctx.beginPath(); ctx.arc(W * 0.8, H * 0.2, W * 0.2, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#c9b6e4';
+  ctx.beginPath(); ctx.arc(W * 0.5, H * 0.7, W * 0.22, 0, Math.PI * 2); ctx.fill();
+  ctx.globalAlpha = 1;
+
+  stars.forEach(s => {
+    s.y += s.s * dt;
+    if (s.y > 1) { s.y = 0; s.x = Math.random(); }
+    ctx.globalAlpha = s.a;
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(s.x * W, s.y * H, s.r, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  ctx.globalAlpha = 1;
+}
+
+function drawPlane() {
+  const px = plane.x * W;
+  const py = plane.y * H + Math.sin(plane.wiggle) * 3;
+  const s = Math.min(W, H) * 0.055;
+
+  ctx.save();
+  ctx.translate(px, py);
+
+  // glow
+  ctx.fillStyle = 'rgba(126,184,218,0.35)';
+  ctx.beginPath();
+  ctx.ellipse(0, 4, s * 1.4, s * 0.5, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // body
+  ctx.fillStyle = '#7eb8da';
+  ctx.beginPath();
+  ctx.moveTo(0, -s * 1.4);
+  ctx.lineTo(s * 0.85, s * 0.7);
+  ctx.lineTo(0, s * 0.35);
+  ctx.lineTo(-s * 0.85, s * 0.7);
+  ctx.closePath();
+  ctx.fill();
+
+  // cockpit
+  ctx.fillStyle = '#ffe66d';
+  ctx.beginPath();
+  ctx.ellipse(0, -s * 0.35, s * 0.28, s * 0.35, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // wings accent
+  ctx.fillStyle = '#f4a261';
+  ctx.beginPath();
+  ctx.moveTo(-s * 0.9, s * 0.35);
+  ctx.lineTo(-s * 1.5, s * 0.55);
+  ctx.lineTo(-s * 0.5, s * 0.55);
+  ctx.closePath();
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(s * 0.9, s * 0.35);
+  ctx.lineTo(s * 1.5, s * 0.55);
+  ctx.lineTo(s * 0.5, s * 0.55);
+  ctx.closePath();
+  ctx.fill();
+
+  // engine flame
+  ctx.fillStyle = '#ff8c69';
+  ctx.beginPath();
+  ctx.moveTo(-s * 0.2, s * 0.55);
+  ctx.lineTo(0, s * 1.1 + Math.random() * s * 0.3);
+  ctx.lineTo(s * 0.2, s * 0.55);
+  ctx.closePath();
+  ctx.fill();
+
+  // shield ring
+  if (hasShield) {
+    ctx.strokeStyle = 'rgba(93,173,226,0.7)';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(0, 0, s * 1.7, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function drawAlien(a, i) {
+  if (!a.alive && a.hitFlash <= 0) return;
+  const ax = a.x * W;
+  const ay = a.y * H + Math.sin(a.bob) * 4;
+  const s = Math.min(W, H) * 0.07 * a.scale;
+  const highlight = (hoverIdx === i && a.alive && !locked);
+
+  ctx.save();
+  ctx.translate(ax, ay);
+  if (a.hitFlash > 0) ctx.globalAlpha = 0.5 + a.hitFlash;
+
+  // shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.2)';
+  ctx.beginPath();
+  ctx.ellipse(0, s * 1.1, s * 0.7, s * 0.2, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // body
+  ctx.fillStyle = highlight ? '#fff' : a.color;
+  ctx.beginPath();
+  ctx.ellipse(0, 0, s * 0.85, s, 0, 0, Math.PI * 2);
+  ctx.fill();
+  if (highlight) {
+    ctx.strokeStyle = '#ffe66d';
+    ctx.lineWidth = 3;
+    ctx.stroke();
+  }
+
+  // antennae
+  ctx.strokeStyle = a.color;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(-s * 0.3, -s * 0.7);
+  ctx.quadraticCurveTo(-s * 0.5, -s * 1.3, -s * 0.55, -s * 1.35);
+  ctx.moveTo(s * 0.3, -s * 0.7);
+  ctx.quadraticCurveTo(s * 0.5, -s * 1.3, s * 0.55, -s * 1.35);
+  ctx.stroke();
+  ctx.fillStyle = '#ffe66d';
+  ctx.beginPath(); ctx.arc(-s * 0.55, -s * 1.35, s * 0.12, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(s * 0.55, -s * 1.35, s * 0.12, 0, Math.PI * 2); ctx.fill();
+
+  // eyes
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.ellipse(-s * 0.28, -s * 0.15, s * 0.22, s * 0.28, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(s * 0.28, -s * 0.15, s * 0.22, s * 0.28, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = a.eye;
+  ctx.beginPath(); ctx.arc(-s * 0.28, -s * 0.1, s * 0.1, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(s * 0.28, -s * 0.1, s * 0.1, 0, Math.PI * 2); ctx.fill();
+
+  // smile
+  ctx.strokeStyle = a.eye;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(0, s * 0.25, s * 0.25, 0.15 * Math.PI, 0.85 * Math.PI);
+  ctx.stroke();
+
+  // label bubble
+  const label = a.label;
+  ctx.font = 'bold ' + Math.max(11, Math.floor(s * 0.55)) + 'px "Segoe UI", Arial, sans-serif';
+  const tw = ctx.measureText(label).width;
+  const bw = Math.max(tw + 14, s * 1.2);
+  const bh = Math.max(22, s * 0.55);
+  const by = s * 1.15;
+  ctx.fillStyle = 'rgba(255,255,255,0.95)';
+  roundRect(ctx, -bw / 2, by, bw, bh, 8);
+  ctx.fill();
+  ctx.strokeStyle = highlight ? '#ffe66d' : 'rgba(38,70,83,0.25)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#264653';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(label, 0, by + bh / 2);
+
+  // number badge
+  ctx.fillStyle = 'rgba(38,70,83,0.85)';
+  ctx.beginPath();
+  ctx.arc(-s * 0.85, -s * 0.85, s * 0.28, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold ' + Math.max(10, Math.floor(s * 0.35)) + 'px Arial';
+  ctx.fillText(String(i + 1), -s * 0.85, -s * 0.85);
+
+  ctx.restore();
+}
+
+function roundRect(c, x, y, w, h, r) {
+  c.beginPath();
+  c.moveTo(x + r, y);
+  c.arcTo(x + w, y, x + w, y + h, r);
+  c.arcTo(x + w, y + h, x, y + h, r);
+  c.arcTo(x, y + h, x, y, r);
+  c.arcTo(x, y, x + w, y, r);
+  c.closePath();
+}
+
+function drawLasers(dt) {
+  for (let i = lasers.length - 1; i >= 0; i--) {
+    const L = lasers[i];
+    L.life -= dt;
+    if (L.life <= 0) { lasers.splice(i, 1); continue; }
+    const t = 1 - L.life / L.max;
+    ctx.strokeStyle = '#ffe66d';
+    ctx.lineWidth = 3;
+    ctx.globalAlpha = L.life / L.max;
+    ctx.beginPath();
+    ctx.moveTo(L.x0 * W, L.y0 * H);
+    ctx.lineTo(L.x1 * W, L.y1 * H);
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(
+      (L.x0 + (L.x1 - L.x0) * t) * W,
+      (L.y0 + (L.y1 - L.y0) * t) * H,
+      4, 0, Math.PI * 2
+    );
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+}
+
+function drawParticles(dt) {
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.life -= dt;
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.0004;
+    if (p.life <= 0) { particles.splice(i, 1); continue; }
+    ctx.globalAlpha = Math.max(0, p.life);
+    ctx.fillStyle = p.color;
+    ctx.beginPath();
+    ctx.arc(p.x * W, p.y * H, p.r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+  for (let i = boomBursts.length - 1; i >= 0; i--) {
+    const b = boomBursts[i];
+    b.t += dt * 2.5;
+    if (b.t > 1) { boomBursts.splice(i, 1); continue; }
+    ctx.globalAlpha = 1 - b.t;
+    ctx.strokeStyle = b.color;
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.arc(b.x * W, b.y * H, b.t * Math.min(W, H) * 0.15, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+}
+
+function updateAliens(dt) {
+  if (locked) {
+    aliens.forEach(a => { if (a.hitFlash > 0) a.hitFlash -= dt; });
+    return;
+  }
+  const speed = (slowActive ? 0.018 : 0.038) * dt;
+  aliens.forEach(a => {
+    if (!a.alive) {
+      if (a.hitFlash > 0) a.hitFlash -= dt;
+      return;
+    }
+    a.y += speed;
+    a.x += a.vx;
+    if (a.x < 0.08 || a.x > 0.92) a.vx *= -1;
+    a.bob += dt * 3;
+    if (a.hitFlash > 0) a.hitFlash -= dt;
+    // soft hover near plane
+    if (a.y > 0.72) a.y = 0.72 + Math.sin(a.bob) * 0.01;
+  });
+
+  // Blast: after ~2.5s destroy one wrong alien
+  if (blastArmed && !blastDone && !locked) {
+    blastTimer += dt;
+    if (blastTimer >= 2.5) {
+      blastDone = true;
+      blastArmed = false;
+      const wrong = aliens
+        .map((a, i) => ({ a, i }))
+        .filter(o => o.a.alive && o.a.origIdx !== deck[qIndex].answerIndex);
+      if (wrong.length) {
+        const pick = wrong[Math.floor(Math.random() * wrong.length)];
+        explodeAlien(pick.i);
+        const btn = document.getElementById('choice' + pick.i);
+        if (btn) { btn.disabled = true; btn.style.opacity = '0.45'; }
+        showFloat('💥 Blast removed a wrong answer!');
+        updateHud();
+      }
+    }
+  }
+}
+
+function loop(ts) {
+  if (!gameRunning) return;
+  const dt = lastTs ? Math.min(0.05, (ts - lastTs) / 1000) : 0.016;
+  lastTs = ts;
+  plane.wiggle += dt * 4;
+
+  drawStars(dt);
+  updateAliens(dt);
+  aliens.forEach((a, i) => drawAlien(a, i));
+  drawLasers(dt);
+  drawParticles(dt);
+  drawPlane();
+
+  rafId = requestAnimationFrame(loop);
+}
+
+// Pointer hit-test on aliens
+function canvasToNorm(e) {
+  const rect = canvas.getBoundingClientRect();
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+  return {
+    x: (clientX - rect.left) / rect.width,
+    y: (clientY - rect.top) / rect.height
+  };
+}
+
+function hitTestAlien(nx, ny) {
+  const s = Math.min(W, H) * 0.07 / Math.max(W, 1);
+  // use normalized approx radius
+  const rx = 0.1;
+  const ry = 0.14;
+  for (let i = 0; i < aliens.length; i++) {
+    const a = aliens[i];
+    if (!a.alive) continue;
+    const dx = nx - a.x;
+    const dy = ny - a.y;
+    if ((dx * dx) / (rx * rx) + (dy * dy) / (ry * ry) < 1.2) return i;
+  }
+  return -1;
+}
+
+canvas.addEventListener('pointermove', (e) => {
+  if (locked || !gameRunning) { hoverIdx = -1; return; }
+  const p = canvasToNorm(e);
+  hoverIdx = hitTestAlien(p.x, p.y);
+});
+canvas.addEventListener('pointerleave', () => { hoverIdx = -1; });
+canvas.addEventListener('pointerdown', (e) => {
+  if (locked || !gameRunning) return;
+  e.preventDefault();
+  const p = canvasToNorm(e);
+  const idx = hitTestAlien(p.x, p.y);
+  if (idx >= 0) onChoose(idx);
+});
+
+window.addEventListener('keydown', (e) => {
+  if (!gameRunning || locked) return;
+  const k = e.key;
+  if (k >= '1' && k <= '4') {
+    e.preventDefault();
+    onChoose(Number(k) - 1);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (document.getElementById('gameScreen').classList.contains('active')) resizeCanvas();
+});
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedCat = Number(btn.dataset.cat);
+  });
+});
+
+document.getElementById('startBtn').addEventListener('click', startGame);
+document.getElementById('playAgainBtn').addEventListener('click', startGame);
+document.getElementById('homeBtn').addEventListener('click', () => {
+  gameRunning = false;
+  cancelAnimationFrame(rafId);
+  showScreen('titleScreen');
+});
+</script>
+</body>
+</html>

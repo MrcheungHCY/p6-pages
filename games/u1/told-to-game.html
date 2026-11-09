@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Told… to / Told… not to · HCY English</title>
+<style>
+  :root {
+    --cream: #FDF7F2;
+    --cream2: #FFF9F4;
+    --pink: #FCE4EC;
+    --pink2: #F8BBD0;
+    --mint: #E8F5E9;
+    --mint2: #A5D6A7;
+    --sky: #E3F2FD;
+    --sky2: #90CAF9;
+    --peach: #FFE0B2;
+    --lavender: #EDE7F6;
+    --ink: #5D4037;
+    --ink-soft: #8D6E63;
+    --teal: #4A7C6E;
+    --red: #D32F2F;
+    --ok: #2E7D32;
+    --bad: #C62828;
+    --card: #FFFFFF;
+    --shadow: 0 8px 28px rgba(93, 64, 55, 0.10);
+    --radius: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    min-height: 100%;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif;
+    background:
+      radial-gradient(ellipse at 12% 8%, var(--pink) 0%, transparent 42%),
+      radial-gradient(ellipse at 88% 18%, var(--sky) 0%, transparent 40%),
+      radial-gradient(ellipse at 70% 90%, var(--mint) 0%, transparent 45%),
+      radial-gradient(ellipse at 20% 85%, var(--peach) 0%, transparent 38%),
+      var(--cream);
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1.45;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 14px 28px;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+    position: relative;
+  }
+
+  /* --- cute blob decorations --- */
+  .blob {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.85;
+  }
+  .blob svg { display: block; }
+
+  header.top {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .screen {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px 22px 24px;
+    border: 2px solid rgba(248, 187, 208, 0.45);
+  }
+  .screen.active { display: block; animation: fadeIn 0.35s ease; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.55rem, 5vw, 2.1rem);
+    color: var(--teal);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.25rem, 4vw, 1.55rem);
+    color: var(--teal);
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .formula {
+    background: linear-gradient(135deg, var(--mint), var(--sky));
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin: 16px 0 20px;
+    font-size: 1.05rem;
+    text-align: center;
+    border: 2px dashed rgba(74, 124, 110, 0.35);
+  }
+
+  .g { color: var(--red); font-weight: 800; }
+
+  .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .progress .pill {
+    background: var(--lavender);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .progress .score-pill {
+    background: var(--peach);
+  }
+
+  .bar {
+    height: 8px;
+    background: var(--pink);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  .bar > i {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--mint2), var(--sky2));
+    border-radius: 999px;
+    transition: width 0.35s ease;
+  }
+
+  .scene {
+    background: var(--cream2);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    border: 2px solid var(--pink2);
+  }
+  .scene .who {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .scene .quote {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px 16px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 3px 0 rgba(248, 187, 208, 0.5);
+    color: var(--ink);
+  }
+  .scene .quote::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: -8px;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+  }
+
+  .hint {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+
+  .build-area {
+    min-height: 64px;
+    background: linear-gradient(180deg, var(--sky), #fff);
+    border: 3px dashed var(--sky2);
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .build-area.empty::after {
+    content: "Tap the chips below in order…";
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+    justify-content: center;
+  }
+
+  .chip {
+    appearance: none;
+    border: 2px solid var(--pink2);
+    background: #fff;
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    min-height: 48px;
+    transition: transform 0.12s ease, background 0.15s, border-color 0.15s, opacity 0.15s;
+    box-shadow: 0 3px 0 rgba(248, 187, 208, 0.55);
+    font-family: inherit;
+  }
+  .chip:hover:not(:disabled) { transform: translateY(-2px); background: var(--pink); }
+  .chip:active:not(:disabled) { transform: translateY(1px); box-shadow: none; }
+  .chip:disabled, .chip.used {
+    opacity: 0.35;
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+  }
+  .chip.in-build {
+    background: var(--mint);
+    border-color: var(--mint2);
+    box-shadow: 0 3px 0 rgba(165, 214, 167, 0.55);
+  }
+  .chip.key { border-color: #EF9A9A; }
+  .chip.key .g, .chip .g { color: var(--red); font-weight: 800; }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .opt {
+    appearance: none;
+    text-align: left;
+    border: 2px solid var(--pink2);
+    background: #fff;
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 16px 18px;
+    border-radius: 16px;
+    cursor: pointer;
+    min-height: 56px;
+    font-family: inherit;
+    line-height: 1.4;
+    box-shadow: 0 4px 0 rgba(248, 187, 208, 0.45);
+    transition: transform 0.12s, background 0.15s, border-color 0.15s;
+  }
+  .opt:hover:not(:disabled) { background: var(--pink); transform: translateY(-1px); }
+  .opt:active:not(:disabled) { transform: translateY(2px); box-shadow: none; }
+  .opt:disabled { cursor: default; }
+  .opt.correct {
+    background: var(--mint);
+    border-color: var(--ok);
+    box-shadow: 0 4px 0 rgba(46, 125, 50, 0.25);
+  }
+  .opt.wrong {
+    background: #FFEBEE;
+    border-color: var(--bad);
+    opacity: 0.85;
+  }
+
+  .feedback {
+    min-height: 28px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 6px 0 12px;
+    text-align: center;
+  }
+  .feedback.ok { color: var(--ok); }
+  .feedback.bad { color: var(--bad); }
+
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .btn {
+    appearance: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 999px;
+    cursor: pointer;
+    min-height: 52px;
+    min-width: 140px;
+    transition: transform 0.12s, box-shadow 0.12s, opacity 0.15s;
+  }
+  .btn:active { transform: translateY(2px); }
+  .btn-primary {
+    background: linear-gradient(135deg, #F48FB1, #81D4FA);
+    color: #3E2723;
+    box-shadow: 0 5px 0 rgba(244, 143, 177, 0.55);
+  }
+  .btn-primary:hover { filter: brightness(1.05); }
+  .btn-secondary {
+    background: var(--lavender);
+    color: var(--ink);
+    box-shadow: 0 4px 0 rgba(179, 157, 219, 0.4);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 2px solid var(--pink2);
+    box-shadow: none;
+    min-width: auto;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+  .btn:disabled {
+    opacity: 0.45;
+    cursor: default;
+    transform: none;
+  }
+
+  .decor-row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 18px 0 8px;
+    flex-wrap: wrap;
+  }
+
+  .end-score {
+    font-size: clamp(2.4rem, 10vw, 3.4rem);
+    font-weight: 800;
+    color: var(--teal);
+    text-align: center;
+    margin: 8px 0;
+    font-family: Georgia, serif;
+  }
+  .encourage {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+
+  footer.foot {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* confetti */
+  .confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 14px;
+    top: -20px;
+    z-index: 100;
+    border-radius: 3px;
+    pointer-events: none;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(720deg);
+      opacity: 0.85;
+    }
+  }
+
+  .shake { animation: shake 0.4s ease; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+  }
+
+  .mode-tag {
+    display: inline-block;
+    background: var(--sky);
+    color: var(--teal);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 420px) {
+    .screen { padding: 22px 14px 18px; }
+    .chip { font-size: 0.98rem; padding: 11px 13px; }
+    .opt { font-size: 0.98rem; padding: 14px 14px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- floating blobs -->
+    <div class="blob" style="top:-8px;left:-6px;" aria-hidden="true">
+      <svg width="64" height="56" viewBox="0 0 64 56">
+        <ellipse cx="32" cy="34" rx="26" ry="20" fill="#FFF8E7"/>
+        <ellipse cx="18" cy="14" rx="7" ry="9" fill="#FFF8E7"/>
+        <ellipse cx="46" cy="14" rx="7" ry="9" fill="#FFF8E7"/>
+        <circle cx="24" cy="32" r="2.2" fill="#5D4037"/>
+        <circle cx="40" cy="32" r="2.2" fill="#5D4037"/>
+        <ellipse cx="22" cy="38" rx="4" ry="2.5" fill="#F8BBD0" opacity="0.9"/>
+        <ellipse cx="42" cy="38" rx="4" ry="2.5" fill="#F8BBD0" opacity="0.9"/>
+        <path d="M30 40 Q32 43 34 40" stroke="#5D4037" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="blob" style="top:4px;right:-4px;" aria-hidden="true">
+      <svg width="58" height="50" viewBox="0 0 58 50">
+        <ellipse cx="29" cy="30" rx="24" ry="18" fill="#E8F5E9"/>
+        <ellipse cx="14" cy="12" rx="6" ry="10" fill="#E8F5E9"/>
+        <ellipse cx="44" cy="12" rx="6" ry="10" fill="#E8F5E9"/>
+        <circle cx="22" cy="28" r="2" fill="#5D4037"/>
+        <circle cx="36" cy="28" r="2" fill="#5D4037"/>
+        <ellipse cx="20" cy="34" rx="3.5" ry="2.2" fill="#F8BBD0"/>
+        <ellipse cx="38" cy="34" rx="3.5" ry="2.2" fill="#F8BBD0"/>
+      </svg>
+    </div>
+
+    <!-- TITLE -->
+    <section id="screen-title" class="screen active" aria-label="Title">
+      <p class="subtitle">Someone told me…</p>
+      <h1>Told… <span class="g">to</span> / Told… <span class="g">not to</span></h1>
+      <div class="decor-row" aria-hidden="true">
+        <svg width="72" height="60" viewBox="0 0 72 60">
+          <ellipse cx="36" cy="36" rx="28" ry="22" fill="#FFE0B2"/>
+          <circle cx="22" cy="14" r="8" fill="#FFE0B2"/>
+          <circle cx="50" cy="14" r="8" fill="#FFE0B2"/>
+          <circle cx="28" cy="34" r="2.4" fill="#5D4037"/>
+          <circle cx="44" cy="34" r="2.4" fill="#5D4037"/>
+          <ellipse cx="26" cy="40" rx="4.5" ry="2.8" fill="#F48FB1"/>
+          <ellipse cx="46" cy="40" rx="4.5" ry="2.8" fill="#F48FB1"/>
+          <path d="M33 42 Q36 46 39 42" stroke="#5D4037" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        <svg width="56" height="48" viewBox="0 0 56 48">
+          <ellipse cx="28" cy="30" rx="22" ry="16" fill="#E3F2FD"/>
+          <ellipse cx="12" cy="12" rx="5" ry="9" fill="#E3F2FD"/>
+          <ellipse cx="44" cy="12" rx="5" ry="9" fill="#E3F2FD"/>
+          <circle cx="21" cy="28" r="2" fill="#5D4037"/>
+          <circle cx="35" cy="28" r="2" fill="#5D4037"/>
+          <ellipse cx="19" cy="33" rx="3.2" ry="2" fill="#F8BBD0"/>
+          <ellipse cx="37" cy="33" rx="3.2" ry="2" fill="#F8BBD0"/>
+        </svg>
+      </div>
+      <div class="formula" role="note">
+        Subject + <span class="g">told</span> + person + <span class="g">to</span> / <span class="g">not to</span> + base verb
+      </div>
+      <p style="text-align:center;color:var(--ink-soft);margin-bottom:18px;">
+        Build sentences · Fix mistakes · 10 random questions each play
+      </p>
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary" id="btn-start">Start ✿</button>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section id="screen-game" class="screen" aria-label="Game">
+      <div class="progress">
+        <span class="pill" id="q-label">Q 1 / 10</span>
+        <span class="mode-tag" id="mode-tag">Build</span>
+        <span class="pill score-pill" id="score-label">Score: 0</span>
+      </div>
+      <div class="bar" aria-hidden="true"><i id="bar-fill"></i></div>
+
+      <div id="panel-build">
+        <h2>Build the sentence</h2>
+        <div class="scene">
+          <div class="who" id="build-who"></div>
+          <div class="quote" id="build-quote"></div>
+        </div>
+        <p class="hint">Tap chips <strong>in order</strong> to make the reported command.</p>
+        <div class="build-area empty" id="build-area" aria-live="polite"></div>
+        <div class="chips" id="build-chips"></div>
+        <div class="feedback" id="build-feedback" aria-live="assertive"></div>
+        <div class="btn-row">
+          <button type="button" class="btn btn-ghost" id="btn-undo">↩ Undo</button>
+          <button type="button" class="btn btn-ghost" id="btn-clear">Clear</button>
+          <button type="button" class="btn btn-primary" id="btn-check" disabled>Check ✓</button>
+        </div>
+      </div>
+
+      <div id="panel-fix" style="display:none;">
+        <h2>Fix it!</h2>
+        <div class="scene">
+          <p style="margin-bottom:8px;color:var(--ink-soft);font-size:0.95rem;">Wrong sentence:</p>
+          <p id="fix-wrong" style="font-size:1.15rem;font-weight:700;color:var(--bad);"></p>
+          <p style="margin-top:10px;font-size:0.95rem;" id="fix-context"></p>
+        </div>
+        <p class="hint">Pick the <strong>correct</strong> reported command.</p>
+        <div class="options" id="fix-options"></div>
+        <div class="feedback" id="fix-feedback" aria-live="assertive"></div>
+        <div class="btn-row">
+          <button type="button" class="btn btn-primary" id="btn-next-fix" style="display:none;">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section id="screen-end" class="screen" aria-label="Results">
+      <p class="subtitle">All done!</p>
+      <h1>Your score</h1>
+      <div class="decor-row" aria-hidden="true">
+        <svg width="80" height="66" viewBox="0 0 80 66">
+          <ellipse cx="40" cy="40" rx="30" ry="24" fill="#FCE4EC"/>
+          <ellipse cx="22" cy="16" rx="8" ry="11" fill="#FCE4EC"/>
+          <ellipse cx="58" cy="16" rx="8" ry="11" fill="#FCE4EC"/>
+          <path d="M30 36 Q33 33 36 36" stroke="#5D4037" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M44 36 Q47 33 50 36" stroke="#5D4037" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="28" cy="42" rx="5" ry="3" fill="#F48FB1"/>
+          <ellipse cx="52" cy="42" rx="5" ry="3" fill="#F48FB1"/>
+          <path d="M36 48 Q40 52 44 48" stroke="#5D4037" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="end-score" id="end-score">0 / 10</div>
+      <p class="encourage" id="end-msg"></p>
+      <div class="formula" style="margin-top:0;">
+        Remember: Subject + <span class="g">told</span> + person + <span class="g">to</span> / <span class="g">not to</span> + base verb
+      </div>
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary" id="btn-replay">New 10 questions ✿</button>
+      </div>
+    </section>
+
+    <footer class="foot">HCY English · Reporting commands</footer>
+  </div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- question bank (large; each run picks 10 shuffled) ---------- */
+  const BANK = [
+    {
+      type: "build",
+      speaker: "Grandma",
+      listener: "Jenny",
+      quote: "Go back to sleep.",
+      chips: ["Grandma", "told", "Jenny", "to", "go back to sleep"],
+      answer: ["Grandma", "told", "Jenny", "to", "go back to sleep"],
+      distractors: ["not to", "going", "sleeps"],
+      tip: "Positive command → use to + base verb (go), not going/goes."
+    },
+    {
+      type: "build",
+      speaker: "Mum",
+      listener: "her",
+      quote: "Don't drink orange juice.",
+      chips: ["Mum", "told", "her", "not to", "drink orange juice"],
+      answer: ["Mum", "told", "her", "not to", "drink orange juice"],
+      distractors: ["to", "don't", "drank"],
+      tip: "Don't… → not to + base verb. Never keep don't after told."
+    },
+    {
+      type: "build",
+      speaker: "Teacher",
+      listener: "us",
+      quote: "Sit down.",
+      chips: ["Teacher", "told", "us", "to", "sit down"],
+      answer: ["Teacher", "told", "us", "to", "sit down"],
+      distractors: ["not to", "sitting", "them"],
+      tip: "Keep the listener (us) after told, then to + sit."
+    },
+    {
+      type: "fix",
+      speaker: "Teacher",
+      listener: "us",
+      quote: "Don't run in the corridor.",
+      wrong: "Teacher told us don't run in the corridor.",
+      options: [
+        { text: "Teacher told us not to run in the corridor.", correct: true },
+        { text: "Teacher told us to not running in the corridor.", correct: false },
+        { text: "Teacher said us don't run in the corridor.", correct: false }
+      ],
+      tip: "Change don't → not to. Keep the base verb run (not running)."
+    },
+    {
+      type: "build",
+      speaker: "Coach",
+      listener: "them",
+      quote: "Drink water.",
+      chips: ["Coach", "told", "them", "to", "drink water"],
+      answer: ["Coach", "told", "them", "to", "drink water"],
+      distractors: ["not to", "drinking", "us"],
+      tip: "Speaker + told + listener + to + base verb."
+    },
+    {
+      type: "fix",
+      speaker: "Sister",
+      listener: "Kelly",
+      quote: "Don't play basketball for a week.",
+      wrong: "Sister told Kelly to not to play basketball for a week.",
+      options: [
+        { text: "Sister told Kelly not to play basketball for a week.", correct: true },
+        { text: "Sister told Kelly don't play basketball for a week.", correct: false },
+        { text: "Sister told Kelly to play not basketball for a week.", correct: false }
+      ],
+      tip: "Use not to once — never to not to."
+    },
+    {
+      type: "build",
+      speaker: "Father",
+      listener: "Sally",
+      quote: "Take more rest.",
+      chips: ["Father", "told", "Sally", "to", "take more rest"],
+      answer: ["Father", "told", "Sally", "to", "take more rest"],
+      distractors: ["not to", "takes", "taking"],
+      tip: "After to, keep base form take — not takes/taking."
+    },
+    {
+      type: "fix",
+      speaker: "Miss Chan",
+      listener: "Mark",
+      quote: "See a dentist.",
+      wrong: "Miss Chan told Mark seeing a dentist.",
+      options: [
+        { text: "Miss Chan told Mark to see a dentist.", correct: true },
+        { text: "Miss Chan told Mark not to see a dentist.", correct: false },
+        { text: "Miss Chan told Mark see a dentist.", correct: false }
+      ],
+      tip: "Need to before the base verb: to see (not seeing / bare see)."
+    },
+    {
+      type: "build",
+      speaker: "Michael",
+      listener: "Jim",
+      quote: "Don't eat ice cream.",
+      chips: ["Michael", "told", "Jim", "not to", "eat ice cream"],
+      answer: ["Michael", "told", "Jim", "not to", "eat ice cream"],
+      distractors: ["to", "don't", "eating"],
+      tip: "Negative command → not to + eat."
+    },
+    {
+      type: "fix",
+      speaker: "Grandfather",
+      listener: "Cathy",
+      quote: "Wear a mask.",
+      wrong: "Grandfather told Cathy wear a mask.",
+      options: [
+        { text: "Grandfather told Cathy to wear a mask.", correct: true },
+        { text: "Grandfather told Cathy not to wear a mask.", correct: false },
+        { text: "Grandfather told to Cathy wear a mask.", correct: false }
+      ],
+      tip: "Always put to before the verb: told Cathy to wear…"
+    },
+    {
+      type: "build",
+      speaker: "PE teacher",
+      listener: "us",
+      quote: "Don't forget your water bottle.",
+      chips: ["PE teacher", "told", "us", "not to", "forget our water bottle"],
+      answer: ["PE teacher", "told", "us", "not to", "forget our water bottle"],
+      distractors: ["to", "don't", "forgetting"],
+      tip: "Don't forget → not to forget; change your → our when we report."
+    },
+    {
+      type: "fix",
+      speaker: "Dad",
+      listener: "me",
+      quote: "Don't stay up late.",
+      wrong: "Dad told me to don't stay up late.",
+      options: [
+        { text: "Dad told me not to stay up late.", correct: true },
+        { text: "Dad told me to not staying up late.", correct: false },
+        { text: "Dad told I not to stay up late.", correct: false }
+      ],
+      tip: "Don't keep don't. Use not to + stay. Object pronoun is me (not I)."
+    },
+    {
+      type: "build",
+      speaker: "Mum",
+      listener: "me",
+      quote: "Tidy your desk.",
+      chips: ["Mum", "told", "me", "to", "tidy my desk"],
+      answer: ["Mum", "told", "me", "to", "tidy my desk"],
+      distractors: ["not to", "tidying", "her"],
+      tip: "your desk → my desk when I report what Mum told me."
+    },
+    {
+      type: "build",
+      speaker: "Nurse",
+      listener: "him",
+      quote: "Don't remove the bandage.",
+      chips: ["Nurse", "told", "him", "not to", "remove the bandage"],
+      answer: ["Nurse", "told", "him", "not to", "remove the bandage"],
+      distractors: ["to", "don't", "removing"],
+      tip: "Don't… → not to + remove (base verb)."
+    },
+    {
+      type: "build",
+      speaker: "Doctor",
+      listener: "her",
+      quote: "Take this medicine.",
+      chips: ["Doctor", "told", "her", "to", "take this medicine"],
+      answer: ["Doctor", "told", "her", "to", "take this medicine"],
+      distractors: ["not to", "takes", "taking"],
+      tip: "to + take — keep the base verb."
+    },
+    {
+      type: "fix",
+      speaker: "Mum",
+      listener: "Tom",
+      quote: "Brush your teeth.",
+      wrong: "Mum told Tom brushing his teeth.",
+      options: [
+        { text: "Mum told Tom to brush his teeth.", correct: true },
+        { text: "Mum told Tom not to brush his teeth.", correct: false },
+        { text: "Mum told Tom brush your teeth.", correct: false }
+      ],
+      tip: "Need to + brush. Change your → his when reporting about Tom."
+    },
+    {
+      type: "build",
+      speaker: "Librarian",
+      listener: "us",
+      quote: "Don't talk loudly.",
+      chips: ["Librarian", "told", "us", "not to", "talk loudly"],
+      answer: ["Librarian", "told", "us", "not to", "talk loudly"],
+      distractors: ["to", "don't", "talking"],
+      tip: "Don't talk → not to talk."
+    },
+    {
+      type: "fix",
+      speaker: "Coach",
+      listener: "them",
+      quote: "Warm up first.",
+      wrong: "Coach told them warm up first.",
+      options: [
+        { text: "Coach told them to warm up first.", correct: true },
+        { text: "Coach told them not to warm up first.", correct: false },
+        { text: "Coach told to them warm up first.", correct: false }
+      ],
+      tip: "Add to before the verb phrase: to warm up."
+    },
+    {
+      type: "build",
+      speaker: "Mrs Wong",
+      listener: "the class",
+      quote: "Open your books.",
+      chips: ["Mrs Wong", "told", "the class", "to", "open their books"],
+      answer: ["Mrs Wong", "told", "the class", "to", "open their books"],
+      distractors: ["not to", "opening", "your"],
+      tip: "your books → their books when we report about the class."
+    },
+    {
+      type: "fix",
+      speaker: "Dad",
+      listener: "me",
+      quote: "Wash your hands.",
+      wrong: "Dad told me wash your hands.",
+      options: [
+        { text: "Dad told me to wash my hands.", correct: true },
+        { text: "Dad told me to wash your hands.", correct: false },
+        { text: "Dad told me not to wash my hands.", correct: false }
+      ],
+      tip: "Need to, and change your → my when I report."
+    },
+    {
+      type: "build",
+      speaker: "Police officer",
+      listener: "them",
+      quote: "Don't cross the road.",
+      chips: ["Police officer", "told", "them", "not to", "cross the road"],
+      answer: ["Police officer", "told", "them", "not to", "cross the road"],
+      distractors: ["to", "don't", "crossing"],
+      tip: "Don't cross → not to cross."
+    },
+    {
+      type: "fix",
+      speaker: "Teacher",
+      listener: "us",
+      quote: "Line up quietly.",
+      wrong: "Teacher told us lining up quietly.",
+      options: [
+        { text: "Teacher told us to line up quietly.", correct: true },
+        { text: "Teacher told us not to line up quietly.", correct: false },
+        { text: "Teacher told us line up quietly.", correct: false }
+      ],
+      tip: "to + line (base verb), not lining / bare line."
+    },
+    {
+      type: "build",
+      speaker: "Brother",
+      listener: "me",
+      quote: "Don't touch my phone.",
+      chips: ["Brother", "told", "me", "not to", "touch his phone"],
+      answer: ["Brother", "told", "me", "not to", "touch his phone"],
+      distractors: ["to", "don't", "touching"],
+      tip: "my phone → his phone when you report brother's words."
+    },
+    {
+      type: "fix",
+      speaker: "Mum",
+      listener: "us",
+      quote: "Don't leave the door open.",
+      wrong: "Mum told us to don't leave the door open.",
+      options: [
+        { text: "Mum told us not to leave the door open.", correct: true },
+        { text: "Mum told us don't leave the door open.", correct: false },
+        { text: "Mum told we not to leave the door open.", correct: false }
+      ],
+      tip: "Use not to — drop don't. Object is us (not we)."
+    },
+    {
+      type: "build",
+      speaker: "Dentist",
+      listener: "Amy",
+      quote: "Don't bite on that side.",
+      chips: ["Dentist", "told", "Amy", "not to", "bite on that side"],
+      answer: ["Dentist", "told", "Amy", "not to", "bite on that side"],
+      distractors: ["to", "don't", "biting"],
+      tip: "Don't bite → not to bite."
+    },
+    {
+      type: "fix",
+      speaker: "Sister",
+      listener: "me",
+      quote: "Close the window.",
+      wrong: "Sister told me closing the window.",
+      options: [
+        { text: "Sister told me to close the window.", correct: true },
+        { text: "Sister told me not to close the window.", correct: false },
+        { text: "Sister told I to close the window.", correct: false }
+      ],
+      tip: "to + close. Listener pronoun is me, not I."
+    },
+    {
+      type: "build",
+      speaker: "Coach",
+      listener: "us",
+      quote: "Stretch before the race.",
+      chips: ["Coach", "told", "us", "to", "stretch before the race"],
+      answer: ["Coach", "told", "us", "to", "stretch before the race"],
+      distractors: ["not to", "stretching", "them"],
+      tip: "to + stretch (base form)."
+    },
+    {
+      type: "fix",
+      speaker: "Teacher",
+      listener: "Peter",
+      quote: "Don't shout.",
+      wrong: "Teacher told Peter to shout not.",
+      options: [
+        { text: "Teacher told Peter not to shout.", correct: true },
+        { text: "Teacher told Peter don't shout.", correct: false },
+        { text: "Teacher told Peter to not shouting.", correct: false }
+      ],
+      tip: "Put not to before the verb: not to shout."
+    },
+    {
+      type: "build",
+      speaker: "Grandma",
+      listener: "us",
+      quote: "Come for dinner.",
+      chips: ["Grandma", "told", "us", "to", "come for dinner"],
+      answer: ["Grandma", "told", "us", "to", "come for dinner"],
+      distractors: ["not to", "coming", "them"],
+      tip: "Positive → to + come."
+    },
+    {
+      type: "fix",
+      speaker: "Dad",
+      listener: "them",
+      quote: "Don't play near the road.",
+      wrong: "Dad told them not playing near the road.",
+      options: [
+        { text: "Dad told them not to play near the road.", correct: true },
+        { text: "Dad told them to not play near the road.", correct: false },
+        { text: "Dad told they not to play near the road.", correct: false }
+      ],
+      tip: "not to + play (base verb). Prefer not to over to not. Use them, not they."
+    }
+  ];
+
+  const TOTAL = 10;
+  let queue = [];
+  let idx = 0;
+  let score = 0;
+  let selected = []; // build chips chosen
+  let chipPool = []; // current shuffled chips for build
+  let answered = false;
+
+  const $ = (id) => document.getElementById(id);
+
+  function show(id) {
+    document.querySelectorAll(".screen").forEach((s) => s.classList.remove("active"));
+    $(id).classList.add("active");
+  }
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function pickQuestions() {
+    // Each play: shuffle bank, mix ~6 build + ~4 fix, then shuffle order
+    const builds = shuffle(BANK.filter((q) => q.type === "build"));
+    const fixes = shuffle(BANK.filter((q) => q.type === "fix"));
+    // Aim ~6 build + 4 fix (or as available)
+    const nBuild = Math.min(6, builds.length);
+    const nFix = Math.min(4, fixes.length);
+    let picked = builds.slice(0, nBuild).concat(fixes.slice(0, nFix));
+    // fill if short
+    const used = new Set(picked);
+    const rest = shuffle(BANK.filter((q) => !used.has(q)));
+    while (picked.length < TOTAL && rest.length) picked.push(rest.shift());
+    return shuffle(picked).slice(0, TOTAL);
+  }
+
+  function markGrammar(htmlText) {
+    // Bold-red key grammar words; protect "not to" before matching bare "to"
+    return htmlText
+      .replace(/\bnot to\b/gi, '§NOTTO§')
+      .replace(/\btold\b/gi, '<span class="g">told</span>')
+      .replace(/\bto\b/gi, '<span class="g">to</span>')
+      .replace(/§NOTTO§/g, '<span class="g">not to</span>');
+  }
+
+  function updateProgress() {
+    $("q-label").textContent = "Q " + (idx + 1) + " / " + TOTAL;
+    $("score-label").textContent = "Score: " + score;
+    $("bar-fill").style.width = ((idx / TOTAL) * 100) + "%";
+  }
+
+  function startGame() {
+    queue = pickQuestions();
+    idx = 0;
+    score = 0;
+    show("screen-game");
+    renderQuestion();
+  }
+
+  function renderQuestion() {
+    answered = false;
+    selected = [];
+    updateProgress();
+    const q = queue[idx];
+    if (q.type === "build") {
+      $("mode-tag").textContent = "Build";
+      $("panel-build").style.display = "block";
+      $("panel-fix").style.display = "none";
+      renderBuild(q);
+    } else {
+      $("mode-tag").textContent = "Fix it";
+      $("panel-build").style.display = "none";
+      $("panel-fix").style.display = "block";
+      renderFix(q);
+    }
+  }
+
+  function renderBuild(q) {
+    $("build-who").innerHTML =
+      "<strong>" + esc(q.speaker) + "</strong> → <strong>" + esc(q.listener) + "</strong>";
+    $("build-quote").textContent = '"' + q.quote + '"';
+    $("build-feedback").textContent = "";
+    $("build-feedback").className = "feedback";
+    $("btn-check").disabled = true;
+    $("btn-check").style.display = "";
+    $("btn-undo").disabled = false;
+    $("btn-clear").disabled = false;
+
+    // pool = answer chips + up to 2 distractors, shuffled
+    const extra = shuffle(q.distractors || []).slice(0, 2);
+    chipPool = shuffle(q.chips.concat(extra)).map(function (label, i) {
+      return { id: i + "-" + label, label: label, used: false };
+    });
+    paintBuildArea();
+    paintChips();
+  }
+
+  function paintBuildArea() {
+    const area = $("build-area");
+    area.innerHTML = "";
+    if (!selected.length) {
+      area.classList.add("empty");
+      return;
+    }
+    area.classList.remove("empty");
+    selected.forEach(function (chip) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip in-build" + (isKey(chip.label) ? " key" : "");
+      b.innerHTML = markGrammar(esc(chip.label));
+      b.disabled = answered;
+      b.addEventListener("click", function () {
+        if (answered) return;
+        // remove this chip from selected (undo that piece)
+        const pos = selected.findIndex(function (c) { return c.id === chip.id; });
+        if (pos >= 0) selected.splice(pos, 1);
+        const poolItem = chipPool.find(function (c) { return c.id === chip.id; });
+        if (poolItem) poolItem.used = false;
+        paintBuildArea();
+        paintChips();
+        $("btn-check").disabled = selected.length === 0;
+      });
+      area.appendChild(b);
+    });
+  }
+
+  function paintChips() {
+    const box = $("build-chips");
+    box.innerHTML = "";
+    chipPool.forEach(function (chip) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip" + (isKey(chip.label) ? " key" : "") + (chip.used ? " used" : "");
+      b.innerHTML = markGrammar(esc(chip.label));
+      b.disabled = chip.used || answered;
+      b.addEventListener("click", function () {
+        if (answered || chip.used) return;
+        chip.used = true;
+        selected.push(chip);
+        paintBuildArea();
+        paintChips();
+        $("btn-check").disabled = selected.length === 0;
+      });
+      box.appendChild(b);
+    });
+  }
+
+  function isKey(label) {
+    const l = label.toLowerCase();
+    return l === "told" || l === "to" || l === "not to";
+  }
+
+  function checkBuild() {
+    if (answered) return;
+    const q = queue[idx];
+    const got = selected.map(function (c) { return c.label; });
+    const ok =
+      got.length === q.answer.length &&
+      got.every(function (w, i) { return w === q.answer[i]; });
+    answered = true;
+    $("btn-check").disabled = true;
+    $("btn-undo").disabled = true;
+    $("btn-clear").disabled = true;
+    chipPool.forEach(function (c) { /* leave used state */ });
+    paintChips();
+
+    const fb = $("build-feedback");
+    if (ok) {
+      score++;
+      fb.textContent = "Correct! ✿";
+      fb.className = "feedback ok";
+    } else {
+      fb.innerHTML =
+        "Not quite. Answer: <strong>" +
+        markGrammar(esc(q.answer.join(" "))) +
+        "</strong><br><span style=\"font-weight:600;color:var(--ink);\">Why: " +
+        esc(q.tip || "Use told + person + to / not to + base verb.") +
+        "</span>";
+      fb.className = "feedback bad";
+      $("build-area").classList.add("shake");
+      setTimeout(function () { $("build-area").classList.remove("shake"); }, 400);
+    }
+    updateProgress();
+    setTimeout(nextQuestion, ok ? 900 : 2600);
+  }
+
+  function undoBuild() {
+    if (answered || !selected.length) return;
+    const chip = selected.pop();
+    const poolItem = chipPool.find(function (c) { return c.id === chip.id; });
+    if (poolItem) poolItem.used = false;
+    paintBuildArea();
+    paintChips();
+    $("btn-check").disabled = selected.length === 0;
+  }
+
+  function clearBuild() {
+    if (answered) return;
+    selected = [];
+    chipPool.forEach(function (c) { c.used = false; });
+    paintBuildArea();
+    paintChips();
+    $("btn-check").disabled = true;
+    $("build-feedback").textContent = "";
+    $("build-feedback").className = "feedback";
+  }
+
+  function renderFix(q) {
+    $("fix-wrong").textContent = q.wrong;
+    $("fix-context").innerHTML =
+      "<strong>" + esc(q.speaker) + "</strong> → <strong>" + esc(q.listener) + "</strong>: " +
+      '"' + esc(q.quote) + '"';
+    $("fix-feedback").textContent = "";
+    $("fix-feedback").className = "feedback";
+    $("btn-next-fix").style.display = "none";
+
+    const box = $("fix-options");
+    box.innerHTML = "";
+    const opts = shuffle(q.options);
+    opts.forEach(function (opt, i) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "opt";
+      b.innerHTML = markGrammar(esc(opt.text));
+      b.addEventListener("click", function () { chooseFix(opt, opts, b); });
+      box.appendChild(b);
+    });
+  }
+
+  function chooseFix(opt, allOpts, btn) {
+    if (answered) return;
+    answered = true;
+    const q = queue[idx];
+    const buttons = Array.prototype.slice.call($("fix-options").querySelectorAll(".opt"));
+    buttons.forEach(function (b) { b.disabled = true; });
+
+    // DOM order matches the shuffled allOpts array
+    buttons.forEach(function (b, i) {
+      if (allOpts[i].correct) b.classList.add("correct");
+      else if (b === btn && !opt.correct) b.classList.add("wrong");
+    });
+
+    const fb = $("fix-feedback");
+    if (opt.correct) {
+      score++;
+      fb.textContent = "Correct! ✿";
+      fb.className = "feedback ok";
+      updateProgress();
+      setTimeout(nextQuestion, 900);
+    } else {
+      fb.innerHTML =
+        "Oops — the green one is right.<br><span style=\"font-weight:600;color:var(--ink);\">Why: " +
+        esc(q.tip || "Use told + person + to / not to + base verb.") +
+        "</span>";
+      fb.className = "feedback bad";
+      updateProgress();
+      $("btn-next-fix").style.display = "";
+    }
+  }
+
+  function nextQuestion() {
+    idx++;
+    if (idx >= TOTAL) {
+      endGame();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function endGame() {
+    $("bar-fill").style.width = "100%";
+    show("screen-end");
+    $("end-score").textContent = score + " / " + TOTAL;
+    let msg;
+    if (score === 10) {
+      msg = "Perfect! You are a reporting-commands star! ✿✿✿";
+      launchConfetti();
+    } else if (score >= 8) {
+      msg = "Great job! Almost perfect — keep practising!";
+    } else if (score >= 5) {
+      msg = "Good try! Remember: told + person + to / not to + base verb.";
+    } else {
+      msg = "Keep going! Look at the formula and try again.";
+    }
+    $("end-msg").textContent = msg;
+  }
+
+  function launchConfetti() {
+    const colors = ["#F48FB1", "#81D4FA", "#A5D6A7", "#FFE082", "#CE93D8", "#FFAB91"];
+    for (let i = 0; i < 42; i++) {
+      const el = document.createElement("div");
+      el.className = "confetti-piece";
+      el.style.left = Math.random() * 100 + "vw";
+      el.style.background = colors[i % colors.length];
+      el.style.animationDuration = 2.2 + Math.random() * 2 + "s";
+      el.style.animationDelay = Math.random() * 0.8 + "s";
+      el.style.width = 8 + Math.random() * 8 + "px";
+      el.style.height = 8 + Math.random() * 12 + "px";
+      document.body.appendChild(el);
+      setTimeout(function () { el.remove(); }, 4500);
+    }
+  }
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  // events
+  $("btn-start").addEventListener("click", startGame);
+  $("btn-replay").addEventListener("click", startGame);
+  $("btn-check").addEventListener("click", checkBuild);
+  $("btn-undo").addEventListener("click", undoBuild);
+  $("btn-clear").addEventListener("click", clearBuild);
+  $("btn-next-fix").addEventListener("click", nextQuestion);
+})();
+</script>
+</body>
+</html>

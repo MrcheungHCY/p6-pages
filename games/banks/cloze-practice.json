@@ -1,0 +1,603 @@
+{
+  "meta": {
+    "bank": "cloze-practice",
+    "skill": "cloze-practice",
+    "count": 26,
+    "primary_source": "P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx",
+    "also": [
+      "same grammar skills as mixed-tense blog + one-word summary cloze",
+      "_targets.json",
+      "p6-conditionals.js",
+      "p6-u1-3-vocab.js",
+      "parallel-original"
+    ],
+    "exclude": "每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)",
+    "replaces": "cloze-exam.json (retired as playable source)",
+    "scrubbed": "2026-11-04 Asia/Hong_Kong — exam stems removed",
+    "item_schema": [
+      "id",
+      "prompt",
+      "choices",
+      "answer",
+      "distractors",
+      "unit",
+      "skill",
+      "difficulty",
+      "passage"
+    ]
+  },
+  "items": [
+    {
+      "id": "cloze-01",
+      "prompt": "[Practice garden blog] Last Friday our class ____ (plant) herbs in the rooftop garden.",
+      "answer": "planted",
+      "distractors": [
+        "plants",
+        "planting",
+        "plant"
+      ],
+      "choices": [
+        "plants",
+        "planting",
+        "plant",
+        "planted"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-02",
+      "prompt": "[Practice garden blog] It ____ (be) the first time our grade grew food at school.",
+      "answer": "was",
+      "distractors": [
+        "is",
+        "been",
+        "were"
+      ],
+      "choices": [
+        "is",
+        "been",
+        "were",
+        "was"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-03",
+      "prompt": "[Practice garden blog] I ____ (smell) the mint while I was watering the pots.",
+      "answer": "smelled",
+      "distractors": [
+        "smell",
+        "smells",
+        "smelling"
+      ],
+      "choices": [
+        "smelled",
+        "smell",
+        "smells",
+        "smelling"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-04",
+      "prompt": "[Practice garden blog] Miss Wu told us to ____ (wash) our hands after gardening.",
+      "answer": "wash",
+      "distractors": [
+        "washed",
+        "washes",
+        "washing"
+      ],
+      "choices": [
+        "washes",
+        "washing",
+        "wash",
+        "washed"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-05",
+      "prompt": "[Practice garden blog] A small watering can ____ (fall) off the bench and made a loud bang.",
+      "answer": "fell",
+      "distractors": [
+        "fall",
+        "falls",
+        "fallen"
+      ],
+      "choices": [
+        "fell",
+        "fall",
+        "falls",
+        "fallen"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-06",
+      "prompt": "[Practice garden blog] Today we ____ (check) which seedlings need more sun.",
+      "answer": "checked",
+      "distractors": [
+        "check",
+        "checks",
+        "checking"
+      ],
+      "choices": [
+        "checked",
+        "check",
+        "checks",
+        "checking"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-07",
+      "prompt": "[Practice garden blog] Luckily the strong sun ____ (not burn) the basil leaves.",
+      "answer": "didn't burn",
+      "distractors": [
+        "doesn't burn",
+        "not burned",
+        "wasn't burn"
+      ],
+      "choices": [
+        "wasn't burn",
+        "didn't burn",
+        "doesn't burn",
+        "not burned"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-08",
+      "prompt": "[Practice garden blog] Tomorrow helpers ____ (add) fresh soil to the tomato pots.",
+      "answer": "will add",
+      "distractors": [
+        "adds",
+        "added",
+        "adding"
+      ],
+      "choices": [
+        "will add",
+        "adds",
+        "added",
+        "adding"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-09",
+      "prompt": "[Practice garden blog] Art club ____ (paint) new plant labels at the same time.",
+      "answer": "will paint",
+      "distractors": [
+        "paints",
+        "painted",
+        "painting"
+      ],
+      "choices": [
+        "will paint",
+        "paints",
+        "painted",
+        "painting"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-10",
+      "prompt": "[Practice garden blog] ____ you ever ____ (grow) food with your classmates?",
+      "answer": "Have; grown",
+      "distractors": [
+        "Did; grow",
+        "Has; grown",
+        "Do; grow"
+      ],
+      "choices": [
+        "Have; grown",
+        "Did; grow",
+        "Has; grown",
+        "Do; grow"
+      ],
+      "unit": "U2-U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "A-garden-blog",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-11",
+      "prompt": "[Practice camp diary] On Sunday the hiking club ____ (reach) the hill top before noon.",
+      "answer": "reached",
+      "distractors": [
+        "reach",
+        "reaches",
+        "reaching"
+      ],
+      "choices": [
+        "reached",
+        "reach",
+        "reaches",
+        "reaching"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-12",
+      "prompt": "[Practice camp diary] It ____ (be) three months since our last overnight camp.",
+      "answer": "has been",
+      "distractors": [
+        "have been",
+        "was",
+        "is"
+      ],
+      "choices": [
+        "have been",
+        "was",
+        "is",
+        "has been"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-13",
+      "prompt": "[Practice camp diary] We ____ (hear) owls while we were zipping our tents.",
+      "answer": "heard",
+      "distractors": [
+        "hear",
+        "hears",
+        "hearing"
+      ],
+      "choices": [
+        "hear",
+        "hears",
+        "hearing",
+        "heard"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-14",
+      "prompt": "[Practice camp diary] Leaders told us to ____ (zip) the food bags tightly.",
+      "answer": "zip",
+      "distractors": [
+        "zipped",
+        "zips",
+        "zipping"
+      ],
+      "choices": [
+        "zipped",
+        "zips",
+        "zipping",
+        "zip"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-15",
+      "prompt": "[Practice camp diary] A torch ____ (roll) under a bench and someone stepped on it.",
+      "answer": "rolled",
+      "distractors": [
+        "roll",
+        "rolls",
+        "rolling"
+      ],
+      "choices": [
+        "rolls",
+        "rolling",
+        "rolled",
+        "roll"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-16",
+      "prompt": "[Practice camp diary] This morning we ____ (map) a safer path around the stream.",
+      "answer": "mapped",
+      "distractors": [
+        "map",
+        "maps",
+        "mapping"
+      ],
+      "choices": [
+        "map",
+        "maps",
+        "mapping",
+        "mapped"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-17",
+      "prompt": "[Practice camp diary] Luckily the light rain ____ (not stop) our morning walk.",
+      "answer": "didn't stop",
+      "distractors": [
+        "doesn't stop",
+        "not stopped",
+        "wasn't stop"
+      ],
+      "choices": [
+        "wasn't stop",
+        "didn't stop",
+        "doesn't stop",
+        "not stopped"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-18",
+      "prompt": "[Practice camp diary] Tomorrow parents ____ (collect) us at the park gate.",
+      "answer": "will collect",
+      "distractors": [
+        "collects",
+        "collected",
+        "collecting"
+      ],
+      "choices": [
+        "will collect",
+        "collects",
+        "collected",
+        "collecting"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-19",
+      "prompt": "[Practice camp diary] The bus ____ (leave) when everyone is checked in.",
+      "answer": "will leave",
+      "distractors": [
+        "leaves",
+        "left",
+        "leaving"
+      ],
+      "choices": [
+        "will leave",
+        "leaves",
+        "left",
+        "leaving"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-20",
+      "prompt": "[Practice camp diary] ____ you ever ____ (sleep) in a tent with your class?",
+      "answer": "Have; slept",
+      "distractors": [
+        "Did; sleep",
+        "Has; slept",
+        "Do; sleep"
+      ],
+      "choices": [
+        "Did; sleep",
+        "Has; slept",
+        "Do; sleep",
+        "Have; slept"
+      ],
+      "unit": "U3",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "B-camp-diary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-21",
+      "prompt": "[Practice story summary] After the relay story, I understand that steady ____ help a team finish well.",
+      "answer": "habits",
+      "distractors": [
+        "hobbies",
+        "houses",
+        "helmets"
+      ],
+      "choices": [
+        "hobbies",
+        "houses",
+        "helmets",
+        "habits"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-22",
+      "prompt": "[Practice story summary] Making silly ____ when we drop the baton stops us from practising again.",
+      "answer": "excuses",
+      "distractors": [
+        "exercises",
+        "examples",
+        "exits"
+      ],
+      "choices": [
+        "excuses",
+        "exercises",
+        "examples",
+        "exits"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-23",
+      "prompt": "[Practice story summary] Mei stayed ____ and admitted her false start instead of blaming others.",
+      "answer": "honest",
+      "distractors": [
+        "hungry",
+        "heavy",
+        "hidden"
+      ],
+      "choices": [
+        "honest",
+        "hungry",
+        "heavy",
+        "hidden"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-24",
+      "prompt": "[Practice story summary] The coach said teamwork and ____ matter more than showing off.",
+      "answer": "practice",
+      "distractors": [
+        "parties",
+        "posters",
+        "puzzles"
+      ],
+      "choices": [
+        "puzzles",
+        "practice",
+        "parties",
+        "posters"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-25",
+      "prompt": "[Practice story summary] Leo learned not to call a hard race 'boring' — that was only a proud ____.",
+      "answer": "lie",
+      "distractors": [
+        "line",
+        "list",
+        "lamp"
+      ],
+      "choices": [
+        "lamp",
+        "lie",
+        "line",
+        "list"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "mid",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    },
+    {
+      "id": "cloze-26",
+      "prompt": "[Practice story summary] Good friends ____ us try again after we fail a heat.",
+      "answer": "help",
+      "distractors": [
+        "hide",
+        "hunt",
+        "hang"
+      ],
+      "choices": [
+        "help",
+        "hide",
+        "hunt",
+        "hang"
+      ],
+      "unit": "U2",
+      "skill": "cloze-practice",
+      "difficulty": "easy",
+      "source": "original-practice",
+      "passage": "C-relay-summary",
+      "note": "ORIGINAL practice summary cloze — not exam paper Section H"
+    }
+  ]
+}

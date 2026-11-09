@@ -1,0 +1,391 @@
+/* HCY FX — demo style packs (data-hcy-style on <html>). Kit + demo only. */
+:root,
+html[data-hcy-style="legacy"],
+html:not([data-hcy-style]) {
+  --hcy-ink: #2a1830;
+  --hcy-pink: #ff7ab6;
+  --hcy-sky: #5ec8ff;
+  --hcy-mint: #7dffb3;
+  --hcy-yellow: #ffe14a;
+  --hcy-lilac: #b48cff;
+  --hcy-peach: #ff9a4a;
+  --hcy-cream: #fff6fb;
+  --hcy-accent: #e84f9a;
+  --hcy-accent-2: #5ec8ff;
+  --hcy-stage-bg: rgba(255,255,255,.88);
+  --hcy-stage-border: 3px solid var(--hcy-ink);
+  --hcy-stage-radius: 22px;
+  --hcy-stage-shadow: 0 10px 0 rgba(42,24,48,.1);
+  --hcy-btn-bg: #fff;
+  --hcy-btn-border: 3px solid var(--hcy-ink);
+  --hcy-btn-radius: 14px;
+  --hcy-btn-shadow: 0 4px 0 var(--hcy-ink);
+  --hcy-btn-good: linear-gradient(180deg, #b8ffd4, #7dffb3);
+  --hcy-btn-bad: linear-gradient(180deg, #ffd0ea, #ff9ccc);
+  --hcy-stamp-color: #e84f9a;
+  --hcy-stamp-border: 5px solid #e84f9a;
+  --hcy-stamp-radius: 18px;
+  --hcy-stamp-bg: rgba(255,255,255,.94);
+  --hcy-stamp-shadow: 0 10px 0 rgba(42,24,48,.1);
+  --hcy-stamp-rotate: -12deg;
+  --hcy-font-title: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  --hcy-font-body: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  --hcy-font-stamp: var(--hcy-font-title);
+  --hcy-body-fg: #2a1830;
+  --hcy-page-bg:
+    radial-gradient(circle at 12% 18%, rgba(255,120,180,.3) 0 18px, transparent 19px),
+    radial-gradient(circle at 78% 12%, rgba(100,200,255,.35) 0 14px, transparent 15px),
+    radial-gradient(circle at 55% 80%, rgba(255,220,80,.35) 0 16px, transparent 17px),
+    repeating-linear-gradient(45deg, #fff6fb 0 14px, #ffe8f4 14px 28px),
+    linear-gradient(165deg, #ffd0ea 0%, #fff3a8 35%, #b8ffe0 65%, #a8e4ff 100%);
+  --hcy-mesh-tint: #ffb8d9;
+  --hcy-particle-a: #ff7ab6;
+  --hcy-particle-b: #5ec8ff;
+}
+
+/* ——— Japanese ——— */
+html[data-hcy-style="01-jp-kawaii-shop"] {
+  --hcy-ink: #4a3058; --hcy-accent: #ff8ec8; --hcy-accent-2: #ffd6ec;
+  --hcy-pink: #ff9ad0; --hcy-mint: #c8f5e0; --hcy-sky: #c8e8ff; --hcy-yellow: #ffe8a8; --hcy-lilac: #e0b8ff;
+  --hcy-cream: #fff5fb; --hcy-mesh-tint: #ffc0e0;
+  --hcy-font-title: "M PLUS Rounded 1c", "Nunito", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-stamp: "M PLUS Rounded 1c", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(255,248,252,.92); --hcy-stage-radius: 28px;
+  --hcy-btn-radius: 999px; --hcy-btn-good: linear-gradient(180deg,#ffe0f0,#ffb8dc);
+  --hcy-btn-bad: linear-gradient(180deg,#e8e0f0,#d0c0e0);
+  --hcy-stamp-color: #ff6eb0; --hcy-stamp-border: 4px solid #ff6eb0; --hcy-stamp-radius: 999px;
+  --hcy-page-bg: radial-gradient(circle at 20% 20%, #ffe8f4 0 40%, transparent 41%),
+    radial-gradient(circle at 80% 10%, #e8fff4 0 30%, transparent 31%),
+    linear-gradient(160deg, #fff0f8, #ffe8f0 40%, #e8fff8 100%);
+  --hcy-particle-a: #ff9ad0; --hcy-particle-b: #c8f5e0;
+}
+html[data-hcy-style="02-jp-retro-game"] {
+  --hcy-ink: #0a1a12; --hcy-accent: #39ff14; --hcy-accent-2: #00e5ff;
+  --hcy-pink: #ff4d9a; --hcy-mint: #39ff14; --hcy-sky: #00e5ff; --hcy-yellow: #f0ff3d; --hcy-lilac: #b14dff;
+  --hcy-cream: #0d2218; --hcy-mesh-tint: #1a3d2a; --hcy-body-fg: #c8ffd8;
+  --hcy-font-title: "Yusei Magic", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-body: "Noto Sans JP", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Yusei Magic", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(8,28,18,.92); --hcy-stage-border: 3px solid #39ff14;
+  --hcy-stage-radius: 4px; --hcy-stage-shadow: 0 0 18px rgba(57,255,20,.35);
+  --hcy-btn-bg: #102818; --hcy-btn-border: 3px solid #39ff14; --hcy-btn-radius: 2px;
+  --hcy-btn-shadow: 0 0 0 2px #0a1a12, 4px 4px 0 #00e5ff;
+  --hcy-btn-good: linear-gradient(180deg,#2a6a30,#1a4020); --hcy-btn-bad: linear-gradient(180deg,#5a2040,#301018);
+  --hcy-stamp-color: #39ff14; --hcy-stamp-border: 4px dashed #39ff14; --hcy-stamp-bg: rgba(8,28,18,.95);
+  --hcy-stamp-radius: 0; --hcy-stamp-shadow: 4px 4px 0 #00e5ff;
+  --hcy-page-bg: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.15) 2px, rgba(0,0,0,.15) 4px),
+    linear-gradient(180deg, #061410, #0a2218 50%, #041008);
+  --hcy-particle-a: #39ff14; --hcy-particle-b: #00e5ff;
+}
+html[data-hcy-style="03-jp-ukiyo-pop"] {
+  --hcy-ink: #1a1420; --hcy-accent: #c41e3a; --hcy-accent-2: #1e3a8a;
+  --hcy-pink: #e85a7a; --hcy-mint: #3d8b6e; --hcy-sky: #4a6fa5; --hcy-yellow: #e8c547; --hcy-lilac: #6b4c7a;
+  --hcy-cream: #f3e6d0; --hcy-mesh-tint: #d4b896;
+  --hcy-font-title: "Zen Maru Gothic", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-body: "Noto Sans JP", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Zen Maru Gothic", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(243,230,208,.94); --hcy-stage-border: 4px solid #1a1420;
+  --hcy-stage-radius: 8px; --hcy-stage-shadow: 8px 8px 0 rgba(196,30,58,.25);
+  --hcy-btn-bg: #f3e6d0; --hcy-btn-border: 3px solid #1a1420; --hcy-btn-radius: 6px;
+  --hcy-btn-shadow: 4px 4px 0 #1e3a8a;
+  --hcy-btn-good: linear-gradient(180deg,#e8d4a8,#c9a86c); --hcy-btn-bad: linear-gradient(180deg,#e8b0b8,#c41e3a);
+  --hcy-stamp-color: #c41e3a; --hcy-stamp-border: 5px double #c41e3a; --hcy-stamp-bg: #f3e6d0;
+  --hcy-stamp-radius: 4px; --hcy-stamp-rotate: -8deg;
+  --hcy-page-bg: radial-gradient(ellipse at 30% 20%, rgba(196,30,58,.12), transparent 50%),
+    linear-gradient(165deg, #f7edd8, #e8dcc4 40%, #d4c4a8);
+  --hcy-particle-a: #c41e3a; --hcy-particle-b: #1e3a8a;
+}
+html[data-hcy-style="04-jp-stationery"] {
+  --hcy-ink: #3a4550; --hcy-accent: #7eb8a8; --hcy-accent-2: #e8a0b0;
+  --hcy-pink: #f0b0c0; --hcy-mint: #a8dcc8; --hcy-sky: #b0d0e8; --hcy-yellow: #f0e0a0; --hcy-lilac: #c8b8d8;
+  --hcy-cream: #faf6f0; --hcy-mesh-tint: #e8ddd0;
+  --hcy-font-title: "M PLUS Rounded 1c", "Quicksand", system-ui, sans-serif;
+  --hcy-font-body: "Quicksand", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-stamp: "M PLUS Rounded 1c", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(250,246,240,.95); --hcy-stage-border: 2px solid #c8b8a8;
+  --hcy-stage-radius: 12px; --hcy-stage-shadow: 0 8px 24px rgba(58,69,80,.08);
+  --hcy-btn-bg: #faf6f0; --hcy-btn-border: 2px solid #a89888; --hcy-btn-radius: 10px;
+  --hcy-btn-shadow: 0 3px 0 #d8c8b8;
+  --hcy-btn-good: linear-gradient(180deg,#d8f0e8,#a8dcc8); --hcy-btn-bad: linear-gradient(180deg,#f8e0e8,#f0b0c0);
+  --hcy-stamp-color: #7eb8a8; --hcy-stamp-border: 3px solid #7eb8a8; --hcy-stamp-radius: 8px;
+  --hcy-stamp-bg: rgba(250,246,240,.96);
+  --hcy-page-bg: repeating-linear-gradient(90deg, transparent, transparent 24px, rgba(200,184,168,.15) 24px, rgba(200,184,168,.15) 25px),
+    linear-gradient(180deg, #faf6f0, #f0e8dc);
+  --hcy-particle-a: #a8dcc8; --hcy-particle-b: #f0b0c0;
+}
+html[data-hcy-style="05-jp-matsuri"] {
+  --hcy-ink: #2a1010; --hcy-accent: #e8a020; --hcy-accent-2: #d4302a;
+  --hcy-pink: #ff6b6b; --hcy-mint: #50c878; --hcy-sky: #4a90d9; --hcy-yellow: #ffd700; --hcy-lilac: #c060a0;
+  --hcy-cream: #fff5e0; --hcy-mesh-tint: #ffc070;
+  --hcy-font-title: "Reggae One", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-body: "Noto Sans JP", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Reggae One", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(40,16,16,.88); --hcy-body-fg: #fff5e0;
+  --hcy-stage-border: 4px solid #e8a020; --hcy-stage-radius: 16px;
+  --hcy-stage-shadow: 0 0 28px rgba(232,160,32,.4), inset 0 0 40px rgba(212,48,42,.15);
+  --hcy-btn-bg: #3a1810; --hcy-btn-border: 3px solid #e8a020; --hcy-btn-radius: 12px;
+  --hcy-btn-shadow: 0 4px 0 #8a5010;
+  --hcy-btn-good: linear-gradient(180deg,#ffd700,#e8a020); --hcy-btn-bad: linear-gradient(180deg,#ff8a80,#d4302a);
+  --hcy-stamp-color: #ffd700; --hcy-stamp-border: 5px solid #ffd700; --hcy-stamp-bg: rgba(42,16,16,.92);
+  --hcy-stamp-radius: 10px; --hcy-stamp-shadow: 0 0 16px rgba(255,215,0,.5);
+  --hcy-page-bg: radial-gradient(circle at 50% 0%, rgba(255,215,0,.25), transparent 45%),
+    repeating-linear-gradient(90deg, #3a1010 0 18px, #2a0c0c 18px 36px),
+    linear-gradient(180deg, #4a1810, #1a0808);
+  --hcy-particle-a: #ffd700; --hcy-particle-b: #d4302a;
+}
+
+/* ——— American ——— */
+html[data-hcy-style="06-us-saturday-cartoon"] {
+  --hcy-ink: #1a1a2e; --hcy-accent: #ff3d7f; --hcy-accent-2: #3d9eff;
+  --hcy-pink: #ff5ca8; --hcy-mint: #5cff9a; --hcy-sky: #5cb8ff; --hcy-yellow: #ffe14a; --hcy-lilac: #b48cff;
+  --hcy-cream: #fff8e8; --hcy-mesh-tint: #ffd080;
+  --hcy-font-title: "Bangers", "Fredoka", system-ui, sans-serif;
+  --hcy-font-body: "Fredoka", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Bangers", system-ui, sans-serif;
+  --hcy-stage-bg: #fff8e8; --hcy-stage-border: 5px solid #1a1a2e;
+  --hcy-stage-radius: 4px; --hcy-stage-shadow: 8px 8px 0 #1a1a2e;
+  --hcy-btn-bg: #fff; --hcy-btn-border: 4px solid #1a1a2e; --hcy-btn-radius: 4px;
+  --hcy-btn-shadow: 4px 4px 0 #1a1a2e;
+  --hcy-btn-good: #5cff9a; --hcy-btn-bad: #ff8ec8;
+  --hcy-stamp-color: #ff3d7f; --hcy-stamp-border: 6px solid #1a1a2e; --hcy-stamp-radius: 4px;
+  --hcy-stamp-bg: #ffe14a; --hcy-stamp-rotate: -14deg; --hcy-stamp-shadow: 6px 6px 0 #1a1a2e;
+  --hcy-page-bg: repeating-conic-gradient(#1a1a2e 0% 25%, #ffe14a 0% 50%) 0 0 / 28px 28px;
+  --hcy-particle-a: #ff3d7f; --hcy-particle-b: #ffe14a;
+}
+html[data-hcy-style="07-us-comic-book"] {
+  --hcy-ink: #0a0a0a; --hcy-accent: #ffcc00; --hcy-accent-2: #e00;
+  --hcy-pink: #ff3366; --hcy-mint: #00cc66; --hcy-sky: #0066ff; --hcy-yellow: #ffcc00; --hcy-lilac: #9900ff;
+  --hcy-cream: #fffef5; --hcy-mesh-tint: #ffcc00;
+  --hcy-font-title: "Bangers", "Oswald", system-ui, sans-serif;
+  --hcy-font-body: "Oswald", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Bangers", system-ui, sans-serif;
+  --hcy-stage-bg: #fffef5; --hcy-stage-border: 6px solid #0a0a0a;
+  --hcy-stage-radius: 0; --hcy-stage-shadow: 0 0 0 4px #ffcc00, 10px 10px 0 #0a0a0a;
+  --hcy-btn-bg: #fff; --hcy-btn-border: 4px solid #0a0a0a; --hcy-btn-radius: 0;
+  --hcy-btn-shadow: 5px 5px 0 #0a0a0a;
+  --hcy-btn-good: #00cc66; --hcy-btn-bad: #e00;
+  --hcy-stamp-color: #0a0a0a; --hcy-stamp-border: 5px solid #0a0a0a; --hcy-stamp-bg: #ffcc00;
+  --hcy-stamp-radius: 0; --hcy-stamp-rotate: -18deg; --hcy-stamp-shadow: 5px 5px 0 #e00;
+  --hcy-page-bg: radial-gradient(circle, #0a0a0a 1.2px, transparent 1.3px) 0 0 / 10px 10px,
+    linear-gradient(180deg, #fff8d0, #ffe8a0);
+  --hcy-particle-a: #ffcc00; --hcy-particle-b: #e00;
+}
+html[data-hcy-style="08-us-diner-neon"] {
+  --hcy-ink: #1a0a20; --hcy-accent: #ff2bd6; --hcy-accent-2: #2bfff2;
+  --hcy-pink: #ff2bd6; --hcy-mint: #2bff9a; --hcy-sky: #2bfff2; --hcy-yellow: #ffe66d; --hcy-lilac: #c44dff;
+  --hcy-cream: #120818; --hcy-mesh-tint: #3a1848; --hcy-body-fg: #ffe8ff;
+  --hcy-font-title: "Lobster", "Nunito", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Lobster", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(20,8,28,.9); --hcy-stage-border: 3px solid #ff2bd6;
+  --hcy-stage-radius: 20px; --hcy-stage-shadow: 0 0 24px rgba(255,43,214,.45), 0 0 48px rgba(43,255,242,.2);
+  --hcy-btn-bg: #1a0a20; --hcy-btn-border: 2px solid #2bfff2; --hcy-btn-radius: 999px;
+  --hcy-btn-shadow: 0 0 12px rgba(43,255,242,.5);
+  --hcy-btn-good: linear-gradient(180deg,#2bff9a,#0a8050); --hcy-btn-bad: linear-gradient(180deg,#ff2bd6,#801050);
+  --hcy-stamp-color: #2bfff2; --hcy-stamp-border: 3px solid #ff2bd6; --hcy-stamp-bg: rgba(20,8,28,.95);
+  --hcy-stamp-radius: 999px; --hcy-stamp-shadow: 0 0 20px rgba(255,43,214,.6);
+  --hcy-page-bg: radial-gradient(ellipse at 50% 30%, rgba(255,43,214,.2), transparent 55%),
+    linear-gradient(165deg, #1a0820, #0a0410 60%, #120828);
+  --hcy-particle-a: #ff2bd6; --hcy-particle-b: #2bfff2;
+}
+html[data-hcy-style="09-us-campus-sports"] {
+  --hcy-ink: #0b1d3a; --hcy-accent: #c5a000; --hcy-accent-2: #c8102e;
+  --hcy-pink: #e85a7a; --hcy-mint: #3cb371; --hcy-sky: #4a7ab5; --hcy-yellow: #ffd700; --hcy-lilac: #6a5acd;
+  --hcy-cream: #f4f0e8; --hcy-mesh-tint: #c5a000;
+  --hcy-font-title: "Oswald", "Nunito", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Oswald", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(244,240,232,.95); --hcy-stage-border: 4px solid #0b1d3a;
+  --hcy-stage-radius: 8px; --hcy-stage-shadow: 0 6px 0 #c5a000;
+  --hcy-btn-bg: #0b1d3a; --hcy-body-fg: #0b1d3a; --hcy-btn-border: 3px solid #c5a000;
+  --hcy-btn-radius: 6px; --hcy-btn-shadow: 0 4px 0 #061028; color-scheme: light;
+  --hcy-btn-good: linear-gradient(180deg,#ffd700,#c5a000); --hcy-btn-bad: linear-gradient(180deg,#e85050,#c8102e);
+  --hcy-stamp-color: #0b1d3a; --hcy-stamp-border: 4px solid #0b1d3a; --hcy-stamp-bg: #ffd700;
+  --hcy-stamp-radius: 4px; --hcy-stamp-rotate: -6deg;
+  --hcy-page-bg: repeating-linear-gradient(90deg, #0b1d3a 0 12px, #c5a000 12px 16px, #f4f0e8 16px 48px),
+    linear-gradient(180deg, #e8e4dc, #f4f0e8);
+  --hcy-particle-a: #c5a000; --hcy-particle-b: #0b1d3a;
+}
+html[data-hcy-style="10-us-skate-sticker"] {
+  --hcy-ink: #111; --hcy-accent: #ff4d6d; --hcy-accent-2: #00c2ff;
+  --hcy-pink: #ff4d6d; --hcy-mint: #00e676; --hcy-sky: #00c2ff; --hcy-yellow: #ffea00; --hcy-lilac: #d500f9;
+  --hcy-cream: #f5f5f5; --hcy-mesh-tint: #ff4d6d;
+  --hcy-font-title: "Outfit", "Nunito", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Outfit", system-ui, sans-serif;
+  --hcy-stage-bg: #fff; --hcy-stage-border: 3px solid #111;
+  --hcy-stage-radius: 16px; --hcy-stage-shadow: 6px 6px 0 #ff4d6d;
+  --hcy-btn-bg: #fff; --hcy-btn-border: 3px solid #111; --hcy-btn-radius: 12px;
+  --hcy-btn-shadow: 3px 3px 0 #00c2ff;
+  --hcy-btn-good: #00e676; --hcy-btn-bad: #ff4d6d;
+  --hcy-stamp-color: #111; --hcy-stamp-border: 4px solid #111; --hcy-stamp-bg: #ffea00;
+  --hcy-stamp-radius: 12px; --hcy-stamp-rotate: -10deg; --hcy-stamp-shadow: 4px 4px 0 #ff4d6d;
+  --hcy-page-bg: linear-gradient(135deg, #f5f5f5 25%, transparent 25%) -20px 0 / 40px 40px,
+    linear-gradient(225deg, #f5f5f5 25%, transparent 25%) -20px 0 / 40px 40px,
+    linear-gradient(180deg, #e8e8e8, #fafafa);
+  --hcy-particle-a: #ff4d6d; --hcy-particle-b: #00c2ff;
+}
+
+/* ——— JP × US ——— */
+html[data-hcy-style="11-ja-neo-tokyo-arcade"] {
+  --hcy-ink: #0a0618; --hcy-accent: #00f0ff; --hcy-accent-2: #ff00aa;
+  --hcy-pink: #ff00aa; --hcy-mint: #00ffa0; --hcy-sky: #00f0ff; --hcy-yellow: #ffe600; --hcy-lilac: #b000ff;
+  --hcy-cream: #0a0618; --hcy-mesh-tint: #1a1040; --hcy-body-fg: #e0f8ff;
+  --hcy-font-title: "Black Ops One", "Changa One", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Changa One", "Black Ops One", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(10,6,24,.92); --hcy-stage-border: 3px solid #00f0ff;
+  --hcy-stage-radius: 6px; --hcy-stage-shadow: 0 0 20px rgba(0,240,255,.4), 0 0 40px rgba(255,0,170,.25);
+  --hcy-btn-bg: #120a28; --hcy-btn-border: 3px solid #ff00aa; --hcy-btn-radius: 4px;
+  --hcy-btn-shadow: 0 0 10px rgba(255,0,170,.5), 4px 4px 0 #00f0ff;
+  --hcy-btn-good: linear-gradient(180deg,#00ffa0,#008050); --hcy-btn-bad: linear-gradient(180deg,#ff00aa,#800050);
+  --hcy-stamp-color: #00f0ff; --hcy-stamp-border: 4px solid #ff00aa; --hcy-stamp-bg: rgba(10,6,24,.95);
+  --hcy-stamp-radius: 2px; --hcy-stamp-shadow: 0 0 16px #00f0ff;
+  --hcy-page-bg: radial-gradient(circle at 15% 20%, rgba(0,240,255,.2), transparent 35%),
+    radial-gradient(circle at 85% 70%, rgba(255,0,170,.2), transparent 40%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,240,255,.04) 3px, rgba(0,240,255,.04) 4px),
+    linear-gradient(180deg, #0a0618, #120828);
+  --hcy-particle-a: #00f0ff; --hcy-particle-b: #ff00aa;
+}
+html[data-hcy-style="12-ja-japantown-cafe"] {
+  --hcy-ink: #3d3548; --hcy-accent: #e8a0b8; --hcy-accent-2: #a8d8c8;
+  --hcy-pink: #f0b8c8; --hcy-mint: #b8e8d0; --hcy-sky: #b8d8e8; --hcy-yellow: #f0e0b0; --hcy-lilac: #d0c0e0;
+  --hcy-cream: #fff8f4; --hcy-mesh-tint: #f0d0d8;
+  --hcy-font-title: "M PLUS Rounded 1c", "Quicksand", system-ui, sans-serif;
+  --hcy-font-body: "Quicksand", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-stamp: "M PLUS Rounded 1c", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(255,248,244,.94); --hcy-stage-border: 3px solid #d8c8c0;
+  --hcy-stage-radius: 24px; --hcy-stage-shadow: 0 12px 28px rgba(61,53,72,.1);
+  --hcy-btn-bg: #fff8f4; --hcy-btn-border: 2px solid #c8b0b8; --hcy-btn-radius: 18px;
+  --hcy-btn-shadow: 0 4px 0 #e8d8d0;
+  --hcy-btn-good: linear-gradient(180deg,#d0f0e0,#a8d8c8); --hcy-btn-bad: linear-gradient(180deg,#f8d8e0,#e8a0b8);
+  --hcy-stamp-color: #e8a0b8; --hcy-stamp-border: 3px dashed #e8a0b8; --hcy-stamp-radius: 16px;
+  --hcy-stamp-bg: rgba(255,248,244,.96);
+  --hcy-page-bg: radial-gradient(circle at 10% 30%, rgba(255,200,210,.35) 0 20px, transparent 21px),
+    radial-gradient(circle at 90% 20%, rgba(180,230,210,.35) 0 16px, transparent 17px),
+    linear-gradient(165deg, #fff4f0, #f8ece8 50%, #e8f4f0);
+  --hcy-particle-a: #e8a0b8; --hcy-particle-b: #a8d8c8;
+}
+html[data-hcy-style="13-ja-90s-sat-cartoon"] {
+  --hcy-ink: #221133; --hcy-accent: #ff4d8d; --hcy-accent-2: #4dcfff;
+  --hcy-pink: #ff6eb0; --hcy-mint: #6effb0; --hcy-sky: #6ec8ff; --hcy-yellow: #ffe14a; --hcy-lilac: #c48cff;
+  --hcy-cream: #fff5e8; --hcy-mesh-tint: #ffc090;
+  --hcy-font-title: "Bangers", "Fredoka", system-ui, sans-serif;
+  --hcy-font-body: "Fredoka", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Bangers", system-ui, sans-serif;
+  --hcy-stage-bg: #fff5e8; --hcy-stage-border: 5px solid #221133;
+  --hcy-stage-radius: 8px; --hcy-stage-shadow: 10px 10px 0 #221133;
+  --hcy-btn-bg: #fff; --hcy-btn-border: 4px solid #221133; --hcy-btn-radius: 8px;
+  --hcy-btn-shadow: 5px 5px 0 #221133;
+  --hcy-btn-good: linear-gradient(180deg,#6effb0,#3ad080); --hcy-btn-bad: linear-gradient(180deg,#ff6eb0,#e04080);
+  --hcy-stamp-color: #ff4d8d; --hcy-stamp-border: 6px solid #221133; --hcy-stamp-bg: #ffe14a;
+  --hcy-stamp-radius: 8px; --hcy-stamp-rotate: -16deg; --hcy-stamp-shadow: 6px 6px 0 #221133;
+  --hcy-page-bg: repeating-conic-gradient(#221133 0% 25%, #ffe14a 0% 50%) 0 0 / 32px 32px;
+  --hcy-particle-a: #ff4d8d; --hcy-particle-b: #4dcfff;
+}
+html[data-hcy-style="14-ja-origami-streetwear"] {
+  --hcy-ink: #1a1040; --hcy-accent: #3d4db8; --hcy-accent-2: #ff6b5a;
+  --hcy-pink: #ff6b5a; --hcy-mint: #5ad0a0; --hcy-sky: #5a8cff; --hcy-yellow: #ffc94d; --hcy-lilac: #7a6cff;
+  --hcy-cream: #f0eef8; --hcy-mesh-tint: #c8c0e8;
+  --hcy-font-title: "Outfit", "IBM Plex Sans JP", system-ui, sans-serif;
+  --hcy-font-body: "IBM Plex Sans JP", "Nunito", system-ui, sans-serif;
+  --hcy-font-stamp: "Outfit", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(240,238,248,.95); --hcy-stage-border: 3px solid #1a1040;
+  --hcy-stage-radius: 4px; --hcy-stage-shadow: 8px 8px 0 #ff6b5a;
+  --hcy-btn-bg: #fff; --hcy-btn-border: 3px solid #1a1040; --hcy-btn-radius: 2px;
+  --hcy-btn-shadow: 4px 4px 0 #3d4db8;
+  --hcy-btn-good: linear-gradient(180deg,#a0e0c8,#5ad0a0); --hcy-btn-bad: linear-gradient(180deg,#ffb0a0,#ff6b5a);
+  --hcy-stamp-color: #3d4db8; --hcy-stamp-border: 3px solid #1a1040; --hcy-stamp-bg: #fff;
+  --hcy-stamp-radius: 2px; --hcy-stamp-rotate: -5deg; --hcy-stamp-shadow: 5px 5px 0 #ff6b5a;
+  --hcy-page-bg: linear-gradient(135deg, rgba(61,77,184,.08) 25%, transparent 25%) 0 0 / 40px 40px,
+    linear-gradient(180deg, #e8e4f4, #f8f6fc);
+  --hcy-particle-a: #3d4db8; --hcy-particle-b: #ff6b5a;
+}
+html[data-hcy-style="15-ja-festival-float"] {
+  --hcy-ink: #2a1810; --hcy-accent: #d4a017; --hcy-accent-2: #e04830;
+  --hcy-pink: #ff6b6b; --hcy-mint: #50c878; --hcy-sky: #4a90d9; --hcy-yellow: #ffd700; --hcy-lilac: #c060a0;
+  --hcy-cream: #fff8e8; --hcy-mesh-tint: #ffd080; --hcy-body-fg: #2a1810;
+  --hcy-font-title: "Reggae One", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-body: "Nunito", "Noto Sans JP", system-ui, sans-serif;
+  --hcy-font-stamp: "Reggae One", system-ui, sans-serif;
+  --hcy-stage-bg: rgba(255,248,232,.92); --hcy-stage-border: 4px solid #d4a017;
+  --hcy-stage-radius: 14px; --hcy-stage-shadow: 0 0 24px rgba(212,160,23,.35);
+  --hcy-btn-bg: #fff8e8; --hcy-btn-border: 3px solid #e04830; --hcy-btn-radius: 10px;
+  --hcy-btn-shadow: 0 4px 0 #d4a017;
+  --hcy-btn-good: linear-gradient(180deg,#ffe66d,#d4a017); --hcy-btn-bad: linear-gradient(180deg,#ff8a70,#e04830);
+  --hcy-stamp-color: #d4a017; --hcy-stamp-border: 5px solid #d4a017; --hcy-stamp-bg: rgba(42,24,16,.9);
+  --hcy-stamp-radius: 8px; --hcy-stamp-shadow: 0 0 14px rgba(212,160,23,.55);
+  --hcy-page-bg: repeating-linear-gradient(90deg, #e04830 0 14px, #d4a017 14px 28px, #2a1810 28px 32px, #fff8e8 32px 56px),
+    linear-gradient(180deg, #fff0d0, #ffe8c0);
+  --hcy-particle-a: #d4a017; --hcy-particle-b: #e04830;
+}
+
+/* Demo chrome driven by theme vars */
+body.hcy-demo-themed {
+  font-family: var(--hcy-font-body);
+  color: var(--hcy-body-fg, var(--hcy-ink));
+  background: var(--hcy-page-bg);
+  min-height: 100%;
+}
+body.hcy-demo-themed h1,
+body.hcy-demo-themed .hcy-style-group-label {
+  font-family: var(--hcy-font-title);
+}
+#hcy-demo-stage {
+  background: var(--hcy-stage-bg);
+  border: var(--hcy-stage-border);
+  border-radius: var(--hcy-stage-radius);
+  box-shadow: var(--hcy-stage-shadow);
+}
+body.hcy-demo-themed button {
+  font-family: var(--hcy-font-body);
+  font-weight: 800;
+  border: var(--hcy-btn-border);
+  border-radius: var(--hcy-btn-radius);
+  background: var(--hcy-btn-bg);
+  box-shadow: var(--hcy-btn-shadow);
+  color: inherit;
+}
+body.hcy-demo-themed button.good { background: var(--hcy-btn-good); }
+body.hcy-demo-themed button.bad { background: var(--hcy-btn-bad); }
+body.hcy-demo-themed .meter b { color: var(--hcy-accent); }
+body.hcy-demo-themed .sliders,
+body.hcy-demo-themed .note,
+body.hcy-demo-themed .hcy-style-picker {
+  background: var(--hcy-stage-bg);
+  border: var(--hcy-stage-border);
+  border-radius: var(--hcy-stage-radius);
+  color: inherit;
+}
+.hcy-fx-stamp {
+  font-family: var(--hcy-font-stamp) !important;
+  color: var(--hcy-stamp-color) !important;
+  border: var(--hcy-stamp-border) !important;
+  border-radius: var(--hcy-stamp-radius) !important;
+  background: var(--hcy-stamp-bg) !important;
+  box-shadow: var(--hcy-stamp-shadow) !important;
+}
+.hcy-fx-stamp.is-good {
+  transform: translate(-50%, -50%) scale(2.4) rotate(var(--hcy-stamp-rotate, -12deg));
+}
+.hcy-style-picker {
+  padding: .85rem 1rem;
+  margin-bottom: 1rem;
+}
+.hcy-style-picker .hcy-style-row {
+  display: flex; flex-wrap: wrap; gap: .4rem; margin: .35rem 0 .65rem;
+}
+.hcy-style-picker button.hcy-style-btn {
+  font-size: .78rem; font-weight: 700; padding: .4rem .65rem;
+}
+.hcy-style-picker button.hcy-style-btn.is-active {
+  outline: 3px solid var(--hcy-accent);
+  outline-offset: 1px;
+}
+.hcy-style-group-label {
+  font-size: .75rem; font-weight: 800; letter-spacing: .06em;
+  text-transform: uppercase; opacity: .7; margin: .5rem 0 .15rem;
+}
+.hcy-mode-toggle { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; margin-top: .5rem; }
+.hcy-mode-toggle button.is-active { outline: 3px solid var(--hcy-accent-2); }

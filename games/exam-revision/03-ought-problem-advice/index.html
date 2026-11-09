@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Ought-To Problem↔Advice Lock</title>
+
+<link rel="stylesheet" href="../../../assets/fx-kit/css/hcy-fx.css" />
+<link rel="stylesheet" href="../../../assets/hcy-touch.css" />
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-motion.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-audio.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-three.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx.js"></script>
+<script src="../../../assets/character-library/hcy-chars.js"></script>
+<script src="../../../assets/hcy-touch.js"></script>
+<script src="../../banks/no-exam-filter.js"></script>
+
+<style>
+:root{--ink:#2a1830;--pink:#ff7ab6;--sky:#5ec8ff;--mint:#7dffb3;--yel:#ffe14a;--lilac:#b48cff;--cream:#fff8fb;--card:#ffffffee}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:"Comic Sans MS","Chalkboard SE","Nunito","Segoe UI Rounded",system-ui,sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;
+background:radial-gradient(circle at 10% 20%,rgba(255,122,182,.35) 0 20px,transparent 21px),radial-gradient(circle at 85% 15%,rgba(94,200,255,.4) 0 16px,transparent 17px),linear-gradient(165deg,#ffd6ea 0%,#fff3b0 40%,#c8ffe8 70%,#b8e8ff 100%)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background-image:radial-gradient(circle,#ff7ab6 1.6px,transparent 2px);background-size:40px 40px}
+.app{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:8px;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;background:var(--card);border:4px solid var(--ink);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--ink)}
+.title-block{display:flex;align-items:center;gap:10px}.title-block img.scene{width:56px;height:56px;object-fit:contain;animation:idleBob 1.5s ease-in-out infinite alternate}
+.title-block h1{font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.15}.title-block .mode{font-size:.75rem;font-weight:800;opacity:.75}
+.hud{display:flex;flex-wrap:wrap;gap:6px}
+.stat{padding:6px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-weight:900;font-size:clamp(.72rem,1.8vw,.92rem);box-shadow:0 2px 0 var(--ink)}
+.stat.timer{background:#b8e8ff}.stat.lives{background:#ffd0e8}.stat.streak{background:#ffe14a}.stat.p1{background:#ffb0d8}.stat.p2{background:#a8f0ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;font:inherit;font-weight:900;border:4px solid var(--ink);border-radius:999px;background:#ffb0d8;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 var(--ink);touch-action:none}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.btn-sky{background:#7ad4ff}.btn-mint{background:#7dffc0}.btn-yel{background:#ffe14a}.btn-lilac{background:#d4b8ff}
+.stage{flex:1;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:8px}
+.prompt-card{background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:12px 14px;box-shadow:0 4px 0 var(--ink);text-align:center}
+.prompt-card .label{font-size:.75rem;font-weight:800;opacity:.7}.prompt-card .prompt{font-size:clamp(1.05rem,3vw,1.5rem);font-weight:900;line-height:1.25}
+.prompt-card .hint{margin-top:6px;font-size:.85rem;font-weight:700;opacity:.75}
+.play{min-height:0;display:flex;gap:8px;align-items:stretch}
+.pad{flex:1;min-width:0;border:4px solid var(--ink);border-radius:22px;background:#ffd6ea;box-shadow:0 5px 0 var(--ink);padding:10px;display:flex;flex-direction:column;gap:8px;touch-action:none}
+.pad.p2{background:#c8f0ff}.pad h2{font-size:clamp(.9rem,2vw,1.05rem);text-align:center}
+.grid{display:grid;gap:8px;flex:1;min-height:0;align-content:start;overflow:auto;grid-template-columns:1fr}
+.choice,.chip{min-height:52px;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;font-weight:800;font-size:clamp(.82rem,2vw,1.02rem);cursor:pointer;touch-action:none;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center;justify-content:center;text-align:center}
+.choice.held,.chip.held,.lane.held,.corner.held,.zone.held{background:#ffe14a;transform:scale(.97)}
+.choice.ok,.chip.ok{background:#7dffb3}.choice.bad,.chip.bad{background:#ff9aac;animation:shake .35s ease}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;min-height:0}
+.zone{border:4px dashed var(--ink);border-radius:20px;padding:8px;min-height:100px;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.zone.should{background:#d8ffe8}.zone.shouldnt{background:#ffe0e8}.zone h3{text-align:center}
+.cards-pool{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px;max-height:40%;overflow:auto}
+.corner-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;flex:1;min-height:0}
+.corner{border:4px solid var(--ink);border-radius:18px;padding:8px;background:#fff;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.corner.before{background:#d4f0ff}.corner.during{background:#ffe8b0}.corner.after{background:#d8ffe0}.corner.never{background:#ffd0d8}
+.lane-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.lane{min-height:64px;border:4px solid var(--ink);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;touch-action:none;box-shadow:0 3px 0 var(--ink)}
+.footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.toast{position:fixed;left:50%;bottom:8vh;transform:translateX(-50%);background:#ff7ab6;color:#fff;font-weight:900;padding:10px 18px;border-radius:14px;border:3px solid var(--ink);z-index:50;pointer-events:none;opacity:0;transition:opacity .2s}.toast.on{opacity:1}
+#hcy-mascot-slot{position:fixed;right:8px;bottom:8px;width:110px;height:110px;z-index:40;pointer-events:none}
+.start-overlay{position:absolute;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(255,248,251,.9)}
+.start-card{background:#fff;border:5px solid var(--ink);border-radius:24px;padding:22px;max-width:520px;text-align:center;box-shadow:0 8px 0 var(--ink)}
+.start-card p{margin:10px 0 16px;font-weight:700;line-height:1.4}
+.blank{min-width:90px;min-height:48px;border:3px dashed var(--ink);border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:900;padding:6px 10px;margin:4px}
+.blank.p1{background:#ffb0d8;border-style:solid}.blank.p2{background:#a8f0ff;border-style:solid}
+.passage{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:800;line-height:1.6;text-align:left}
+@keyframes idleBob{0%{transform:translateY(0) rotate(-2deg)}100%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media(max-width:700px){.play{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="title-block">
+      <img class="scene" src="../../../assets/character-library/png/char-065.png" alt="" onerror="this.style.display='none'" />
+      <div><div class="mode">MODE 3 — ought to</div><h1>Ought-To Problem↔Advice Lock</h1></div>
+    </div>
+    <div class="hud">
+      <span class="stat" id="hud-q">0/0</span>
+      <span class="stat timer" id="hud-timer">⏱ —</span>
+      <span class="stat lives" id="hud-lives">♥ 3</span>
+      <span class="stat streak" id="hud-streak">🔥 0</span>
+      <span class="stat p1" id="hud-p1">P1 0</span>
+      <span class="stat p2" id="hud-p2">P2 0</span>
+    </div>
+  </div>
+  <div class="stage"><div class="prompt-card"><div class="label">ought to — problem ↔ advice lock</div><div class="prompt" id="prompt">…</div><div class="hint" id="hint"></div></div>
+<div class="play"><div class="pad"><h2>Problems (hold)</h2><div class="grid" id="grid1"></div></div><div class="pad p2"><h2>Advice (hold)</h2><div class="grid" id="grid2"></div></div></div></div>
+  <div class="footer">
+    <button class="btn btn-mint" id="btn-start" type="button">▶ Start</button>
+    <button class="btn btn-yel" id="btn-next" type="button">Next ▶</button>
+    <button class="btn btn-lilac" id="btn-reset" type="button">↺ Teacher Reset</button>
+  </div>
+</div>
+<div id="start-overlay" class="start-overlay"><div class="start-card"><h2>Ought-To Problem↔Advice Lock</h2><p>Hold a PROBLEM and matching ADVICE together to lock. Grammar: ought to.</p>
+<button class="btn btn-sky" id="btn-start2" type="button">▶ Start Game</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="hcy-mascot-slot"></div>
+<script type="application/json" id="bank-json">{"meta":{"bank":"ought-to","skill":"ought-to","count":46,"primary_source":"P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx","also":["_targets.json","p6-conditionals.js","p6-u1-3-vocab.js","parallel-original"],"exclude":"每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)","item_schema":["id","prompt","choices|slots","answer","distractors","unit","skill","difficulty"],"scrubbed":"2026-11-04 Asia/Hong_Kong — exam stems removed"},"items":[{"id":"ought-01","prompt":"Problem: Ben is talking loudly on his phone in the cinema. → Complete with ought to + phrase.","answer":"ought to turn off his mobile phone","distractors":["should to turn off his mobile phone","ought turn off his mobile phone","must to turn off his mobile phone"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to turn off his mobile phone","should to turn off his mobile phone","ought turn off his mobile phone","must to turn off his mobile phone"],"source":"WS-A","problem":"Ben is talking loudly on his phone in the cinema.","advice":"turn off his mobile phone"},{"id":"ought-02","prompt":"Problem: Mary watches too much TV. → Complete with ought to + phrase.","answer":"ought to do more exercise","distractors":["should to do more exercise","ought do more exercise","must to do more exercise"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to do more exercise","should to do more exercise","ought do more exercise","must to do more exercise"],"source":"WS-A","problem":"Mary watches too much TV.","advice":"do more exercise"},{"id":"ought-03","prompt":"Problem: Josephine's bedroom is messy. → Complete with ought to + phrase.","answer":"ought to tidy her bedroom","distractors":["should to tidy her bedroom","ought tidy her bedroom","must to tidy her bedroom"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to tidy her bedroom","should to tidy her bedroom","ought tidy her bedroom","must to tidy her bedroom"],"source":"WS-A","problem":"Josephine's bedroom is messy.","advice":"tidy her bedroom"},{"id":"ought-04","prompt":"Problem: Jack always has stomachaches. → Complete with ought to + phrase.","answer":"ought to eat his food slowly","distractors":["should to eat his food slowly","ought eat his food slowly","must to eat his food slowly"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to eat his food slowly","should to eat his food slowly","ought eat his food slowly","must to eat his food slowly"],"source":"WS-A","problem":"Jack always has stomachaches.","advice":"eat his food slowly"},{"id":"ought-05","prompt":"Problem: Ida's parents didn't know where she was. → Complete with ought to + phrase.","answer":"ought to phone her parents","distractors":["should to phone her parents","ought phone her parents","must to phone her parents"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to phone her parents","should to phone her parents","ought phone her parents","must to phone her parents"],"source":"WS-A","problem":"Ida's parents didn't know where she was.","advice":"phone her parents"},{"id":"ought-06","prompt":"Problem: Eric witnessed a crime. → Complete with ought to + phrase.","answer":"ought to call the police","distractors":["should to call the police","ought call the police","must to call the police"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to call the police","should to call the police","ought call the police","must to call the police"],"source":"WS-A","problem":"Eric witnessed a crime.","advice":"call the police"},{"id":"ought-07","prompt":"Problem: Ivan's hair is too long. → Complete with ought to + phrase.","answer":"ought to comb his hair every morning","distractors":["should to comb his hair every morning","ought comb his hair every morning","must to comb his hair every morning"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["should to comb his hair every morning","ought comb his hair every morning","must to comb his hair every morning","ought to comb his hair every morning"],"source":"WS-B-rewritten","problem":"Ivan's hair is too long.","advice":"comb his hair every morning"},{"id":"ought-08","prompt":"Problem: Doris falls asleep in class. → Complete with ought to + phrase.","answer":"ought to get enough sleep","distractors":["should to get enough sleep","ought get enough sleep","must to get enough sleep"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to get enough sleep","should to get enough sleep","ought get enough sleep","must to get enough sleep"],"source":"WS-B","problem":"Doris falls asleep in class.","advice":"get enough sleep"},{"id":"ought-09","prompt":"Problem: Jacky's bag is too heavy. → Complete with ought to + phrase.","answer":"ought to take out books he does not need","distractors":["should to take out books he does not need","ought take out books he does not need","must to take out books he does not need"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["should to take out books he does not need","ought take out books he does not need","must to take out books he does not need","ought to take out books he does not need"],"source":"WS-B-rewritten","problem":"Jacky's bag is too heavy.","advice":"take out books he does not need"},{"id":"ought-10","prompt":"Problem: Lily does not know the homework. → Complete with ought to + phrase.","answer":"ought to ask her teacher for help","distractors":["should to ask her teacher for help","ought ask her teacher for help","must to ask her teacher for help"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to ask her teacher for help","should to ask her teacher for help","ought ask her teacher for help","must to ask her teacher for help"],"source":"WS-B","problem":"Lily does not know the homework.","advice":"ask her teacher for help"},{"id":"ought-11","prompt":"Problem: Ella's uniform is dirty and smelly. → Complete with ought to + phrase.","answer":"ought to change her school uniform more often","distractors":["should to change her school uniform more often","ought change her school uniform more often","must to change her school uniform more often"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to change her school uniform more often","should to change her school uniform more often","ought change her school uniform more often","must to change her school uniform more often"],"source":"WS-B","problem":"Ella's uniform is dirty and smelly.","advice":"change her school uniform more often"},{"id":"ought-12","prompt":"Problem: Mike is late for school again. → Complete with ought to + phrase.","answer":"ought to set an alarm clock to wake himself up","distractors":["should to set an alarm clock to wake himself up","ought set an alarm clock to wake himself up","must to set an alarm clock to wake himself up"],"unit":"U2","skill":"ought-to","difficulty":"easy","choices":["ought to set an alarm clock to wake himself up","should to set an alarm clock to wake himself up","ought set an alarm clock to wake himself up","must to set an alarm clock to wake himself up"],"source":"WS-B","problem":"Mike is late for school again.","advice":"set an alarm clock to wake himself up"},{"id":"ought-13","prompt":"Problem: Sam never brushes his teeth at night. → Complete with ought to + phrase.","answer":"ought to brush his teeth before bed","distractors":["should to brush his teeth before bed","ought brush his teeth before bed","must to brush his teeth before bed"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to brush his teeth before bed","should to brush his teeth before bed","ought brush his teeth before bed","must to brush his teeth before bed"],"source":"parallel","problem":"Sam never brushes his teeth at night.","advice":"brush his teeth before bed"},{"id":"ought-14","prompt":"Problem: Tina leaves wet towels on the bed. → Complete with ought to + phrase.","answer":"ought to hang up her towels","distractors":["should to hang up her towels","ought hang up her towels","must to hang up her towels"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to hang up her towels","should to hang up her towels","ought hang up her towels","must to hang up her towels"],"source":"parallel","problem":"Tina leaves wet towels on the bed.","advice":"hang up her towels"},{"id":"ought-15","prompt":"Problem: Hugo shouts in the library. → Complete with ought to + phrase.","answer":"ought to keep his voice down","distractors":["should to keep his voice down","ought keep his voice down","must to keep his voice down"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to keep his voice down","should to keep his voice down","ought keep his voice down","must to keep his voice down"],"source":"parallel","problem":"Hugo shouts in the library.","advice":"keep his voice down"},{"id":"ought-16","prompt":"Problem: Rita forgets her student card every day. → Complete with ought to + phrase.","answer":"ought to check her bag before leaving home","distractors":["should to check her bag before leaving home","ought check her bag before leaving home","must to check her bag before leaving home"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to check her bag before leaving home","should to check her bag before leaving home","ought check her bag before leaving home","must to check her bag before leaving home"],"source":"parallel","problem":"Rita forgets her student card every day.","advice":"check her bag before leaving home"},{"id":"ought-17","prompt":"Problem: Paul plays games until midnight. → Complete with ought to + phrase.","answer":"ought to go to bed earlier","distractors":["should to go to bed earlier","ought go to bed earlier","must to go to bed earlier"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to go to bed earlier","should to go to bed earlier","ought go to bed earlier","must to go to bed earlier"],"source":"parallel","problem":"Paul plays games until midnight.","advice":"go to bed earlier"},{"id":"ought-18","prompt":"Problem: Nora never helps at home. → Complete with ought to + phrase.","answer":"ought to help her parents with chores","distractors":["should to help her parents with chores","ought help her parents with chores","must to help her parents with chores"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to help her parents with chores","should to help her parents with chores","ought help her parents with chores","must to help her parents with chores"],"source":"parallel","problem":"Nora never helps at home.","advice":"help her parents with chores"},{"id":"ought-19","prompt":"Problem: Chris drops litter in the corridor. → Complete with ought to + phrase.","answer":"ought to put rubbish in the bin","distractors":["should to put rubbish in the bin","ought put rubbish in the bin","must to put rubbish in the bin"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to put rubbish in the bin","should to put rubbish in the bin","ought put rubbish in the bin","must to put rubbish in the bin"],"source":"parallel","problem":"Chris drops litter in the corridor.","advice":"put rubbish in the bin"},{"id":"ought-20","prompt":"Problem: Jade never revises for tests. → Complete with ought to + phrase.","answer":"ought to make a revision plan","distractors":["should to make a revision plan","ought make a revision plan","must to make a revision plan"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to make a revision plan","should to make a revision plan","ought make a revision plan","must to make a revision plan"],"source":"parallel","problem":"Jade never revises for tests.","advice":"make a revision plan"},{"id":"ought-21","prompt":"Problem: Omar skips breakfast and is hungry at recess. → Complete with ought to + phrase.","answer":"ought to eat breakfast every morning","distractors":["should to eat breakfast every morning","ought eat breakfast every morning","must to eat breakfast every morning"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to eat breakfast every morning","should to eat breakfast every morning","ought eat breakfast every morning","must to eat breakfast every morning"],"source":"parallel","problem":"Omar skips breakfast and is hungry at recess.","advice":"eat breakfast every morning"},{"id":"ought-22","prompt":"Problem: Vera's desk is covered with paper. → Complete with ought to + phrase.","answer":"ought to tidy her desk every day","distractors":["should to tidy her desk every day","ought tidy her desk every day","must to tidy her desk every day"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to tidy her desk every day","should to tidy her desk every day","ought tidy her desk every day","must to tidy her desk every day"],"source":"parallel","problem":"Vera's desk is covered with paper.","advice":"tidy her desk every day"},{"id":"ought-23","prompt":"Problem: Finn forgets to bring his PE kit. → Complete with ought to + phrase.","answer":"ought to pack his PE kit the night before","distractors":["should to pack his PE kit the night before","ought pack his PE kit the night before","must to pack his PE kit the night before"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to pack his PE kit the night before","should to pack his PE kit the night before","ought pack his PE kit the night before","must to pack his PE kit the night before"],"source":"parallel","problem":"Finn forgets to bring his PE kit.","advice":"pack his PE kit the night before"},{"id":"ought-24","prompt":"Problem: Lana talks during assembly. → Complete with ought to + phrase.","answer":"ought to be quiet in assembly","distractors":["should to be quiet in assembly","ought be quiet in assembly","must to be quiet in assembly"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to be quiet in assembly","should to be quiet in assembly","ought be quiet in assembly","must to be quiet in assembly"],"source":"parallel","problem":"Lana talks during assembly.","advice":"be quiet in assembly"},{"id":"ought-25","prompt":"Problem: Greg never washes fruit. → Complete with ought to + phrase.","answer":"ought to wash fruit before eating","distractors":["should to wash fruit before eating","ought wash fruit before eating","must to wash fruit before eating"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to wash fruit before eating","should to wash fruit before eating","ought wash fruit before eating","must to wash fruit before eating"],"source":"parallel","problem":"Greg never washes fruit.","advice":"wash fruit before eating"},{"id":"ought-26","prompt":"Problem: Helen shares drinks when she has a cold. → Complete with ought to + phrase.","answer":"ought to use her own bottle when she is sick","distractors":["should to use her own bottle when she is sick","ought use her own bottle when she is sick","must to use her own bottle when she is sick"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to use her own bottle when she is sick","should to use her own bottle when she is sick","ought use her own bottle when she is sick","must to use her own bottle when she is sick"],"source":"parallel","problem":"Helen shares drinks when she has a cold.","advice":"use her own bottle when she is sick"},{"id":"ought-27","prompt":"Problem: Ivan never says thank you. → Complete with ought to + phrase.","answer":"ought to thank people who help him","distractors":["should to thank people who help him","ought thank people who help him","must to thank people who help him"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to thank people who help him","should to thank people who help him","ought thank people who help him","must to thank people who help him"],"source":"parallel","problem":"Ivan never says thank you.","advice":"thank people who help him"},{"id":"ought-28","prompt":"Problem: Judy is rude to the lunch ladies. → Complete with ought to + phrase.","answer":"ought to speak politely to school staff","distractors":["should to speak politely to school staff","ought speak politely to school staff","must to speak politely to school staff"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to speak politely to school staff","should to speak politely to school staff","ought speak politely to school staff","must to speak politely to school staff"],"source":"parallel","problem":"Judy is rude to the lunch ladies.","advice":"speak politely to school staff"},{"id":"ought-29","prompt":"Problem: Karl never waters the class plants. → Complete with ought to + phrase.","answer":"ought to take turns watering the plants","distractors":["should to take turns watering the plants","ought take turns watering the plants","must to take turns watering the plants"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to take turns watering the plants","should to take turns watering the plants","ought take turns watering the plants","must to take turns watering the plants"],"source":"parallel","problem":"Karl never waters the class plants.","advice":"take turns watering the plants"},{"id":"ought-30","prompt":"Problem: Molly spends all her pocket money on snacks. → Complete with ought to + phrase.","answer":"ought to save some money each week","distractors":["should to save some money each week","ought save some money each week","must to save some money each week"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to save some money each week","should to save some money each week","ought save some money each week","must to save some money each week"],"source":"parallel","problem":"Molly spends all her pocket money on snacks.","advice":"save some money each week"},{"id":"ought-31","prompt":"Problem: Ned never looks both ways before crossing. → Complete with ought to + phrase.","answer":"ought to look carefully before crossing the road","distractors":["should to look carefully before crossing the road","ought look carefully before crossing the road","must to look carefully before crossing the road"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to look carefully before crossing the road","should to look carefully before crossing the road","ought look carefully before crossing the road","must to look carefully before crossing the road"],"source":"parallel","problem":"Ned never looks both ways before crossing.","advice":"look carefully before crossing the road"},{"id":"ought-32","prompt":"Problem: Olive leaves lights on when she leaves. → Complete with ought to + phrase.","answer":"ought to turn off the lights when she leaves","distractors":["should to turn off the lights when she leaves","ought turn off the lights when she leaves","must to turn off the lights when she leaves"],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["ought to turn off the lights when she leaves","should to turn off the lights when she leaves","ought turn off the lights when she leaves","must to turn off the lights when she leaves"],"source":"parallel","problem":"Olive leaves lights on when she leaves.","advice":"turn off the lights when she leaves"},{"id":"ought-33","prompt":"Problem: Ben is noisy on his phone in the cinema. Choose the correct sentence.","answer":"He ought to turn off his mobile phone.","distractors":["He ought turn off his mobile phone.","He should to turn off his mobile phone.","He must to turn off his mobile phone."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["He ought turn off his mobile phone.","He should to turn off his mobile phone.","He must to turn off his mobile phone.","He ought to turn off his mobile phone."],"source":"full-sent"},{"id":"ought-34","prompt":"Problem: Mary watches too much TV. Choose the correct sentence.","answer":"She ought to do more exercise.","distractors":["She ought do more exercise.","She should to do more exercise.","She must to do more exercise."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["She ought to do more exercise.","She ought do more exercise.","She should to do more exercise.","She must to do more exercise."],"source":"full-sent"},{"id":"ought-35","prompt":"Problem: Mike is late again. Choose the correct sentence.","answer":"He ought to set an alarm clock to wake himself up.","distractors":["He ought set an alarm clock to wake himself up.","He should to set an alarm clock to wake himself up.","He must to set an alarm clock to wake himself up."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["He should to set an alarm clock to wake himself up.","He ought set an alarm clock to wake himself up.","He ought to set an alarm clock to wake himself up.","He must to set an alarm clock to wake himself up."],"source":"full-sent"},{"id":"ought-36","prompt":"Problem: Ella's uniform smells bad. Choose the correct sentence.","answer":"She ought to change her school uniform more often.","distractors":["She ought change her school uniform more often.","She should to change her school uniform more often.","She must to change her school uniform more often."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["She must to change her school uniform more often.","She should to change her school uniform more often.","She ought change her school uniform more often.","She ought to change her school uniform more often."],"source":"full-sent"},{"id":"ought-37","prompt":"Problem: Doris falls asleep in class. Choose the correct sentence.","answer":"She ought to get enough sleep.","distractors":["She ought get enough sleep.","She should to get enough sleep.","She must to get enough sleep."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["She must to get enough sleep.","She ought get enough sleep.","She ought to get enough sleep.","She should to get enough sleep."],"source":"full-sent"},{"id":"ought-38","prompt":"Problem: Eric witnessed a crime. Choose the correct sentence.","answer":"He ought to call the police.","distractors":["He ought call the police.","He should to call the police.","He must to call the police."],"unit":"U2","skill":"ought-to","difficulty":"mid","choices":["He ought call the police.","He should to call the police.","He must to call the police.","He ought to call the police."],"source":"full-sent"},{"id":"ought-39","prompt":"Problem: Felix never labels his water bottle. → Complete with ought to + phrase.","answer":"ought to write his name on his bottle","distractors":["should to write his name on his bottle","ought write his name on his bottle","must to write his name on his bottle"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Felix never labels his water bottle.","advice":"write his name on his bottle","choices":["must to write his name on his bottle","ought to write his name on his bottle","should to write his name on his bottle","ought write his name on his bottle"]},{"id":"ought-40","prompt":"Problem: Gina leaves art scraps on the floor. → Complete with ought to + phrase.","answer":"ought to tidy the art corner after craft","distractors":["should to tidy the art corner after craft","ought tidy the art corner after craft","must to tidy the art corner after craft"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Gina leaves art scraps on the floor.","advice":"tidy the art corner after craft","choices":["should to tidy the art corner after craft","ought tidy the art corner after craft","must to tidy the art corner after craft","ought to tidy the art corner after craft"]},{"id":"ought-41","prompt":"Problem: Hank forgets to charge his tablet for class. → Complete with ought to + phrase.","answer":"ought to charge his tablet the night before","distractors":["should to charge his tablet the night before","ought charge his tablet the night before","must to charge his tablet the night before"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Hank forgets to charge his tablet for class.","advice":"charge his tablet the night before","choices":["must to charge his tablet the night before","ought to charge his tablet the night before","should to charge his tablet the night before","ought charge his tablet the night before"]},{"id":"ought-42","prompt":"Problem: Ivy never returns library books on time. → Complete with ought to + phrase.","answer":"ought to note the return date in her diary","distractors":["should to note the return date in her diary","ought note the return date in her diary","must to note the return date in her diary"],"unit":"U2","skill":"ought-to","difficulty":"mid","source":"parallel","problem":"Ivy never returns library books on time.","advice":"note the return date in her diary","choices":["should to note the return date in her diary","ought note the return date in her diary","must to note the return date in her diary","ought to note the return date in her diary"]},{"id":"ought-43","prompt":"Problem: Joel talks while others present. → Complete with ought to + phrase.","answer":"ought to listen quietly during presentations","distractors":["should to listen quietly during presentations","ought listen quietly during presentations","must to listen quietly during presentations"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Joel talks while others present.","advice":"listen quietly during presentations","choices":["should to listen quietly during presentations","ought listen quietly during presentations","must to listen quietly during presentations","ought to listen quietly during presentations"]},{"id":"ought-44","prompt":"Problem: Kate's pencil case is sticky and dirty. → Complete with ought to + phrase.","answer":"ought to wipe her pencil case every week","distractors":["should to wipe her pencil case every week","ought wipe her pencil case every week","must to wipe her pencil case every week"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Kate's pencil case is sticky and dirty.","advice":"wipe her pencil case every week","choices":["should to wipe her pencil case every week","ought wipe her pencil case every week","must to wipe her pencil case every week","ought to wipe her pencil case every week"]},{"id":"ought-45","prompt":"Problem: Liam never practises his recorder. → Complete with ought to + phrase.","answer":"ought to practise for ten minutes daily","distractors":["should to practise for ten minutes daily","ought practise for ten minutes daily","must to practise for ten minutes daily"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Liam never practises his recorder.","advice":"practise for ten minutes daily","choices":["must to practise for ten minutes daily","ought to practise for ten minutes daily","should to practise for ten minutes daily","ought practise for ten minutes daily"]},{"id":"ought-46","prompt":"Problem: Nina rushes and spills soup often. → Complete with ought to + phrase.","answer":"ought to carry trays with both hands","distractors":["should to carry trays with both hands","ought carry trays with both hands","must to carry trays with both hands"],"unit":"U2","skill":"ought-to","difficulty":"easy","source":"parallel","problem":"Nina rushes and spills soup often.","advice":"carry trays with both hands","choices":["should to carry trays with both hands","ought carry trays with both hands","must to carry trays with both hands","ought to carry trays with both hands"]}]}</script>
+<script>
+
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('on')},1100)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=(Math.random()*(i+1))|0;var x=a[i];a[i]=a[j];a[j]=x}return a}
+function pickN(a,n){return shuffle(a).slice(0,Math.min(n,a.length))}
+function GameShell(o){
+  var s=this;s.lives=o.lives||3;s.max=s.lives;s.streak=0;s.s1=0;s.s2=0;s.sec=o.timerSec||18;s.left=0;s.tid=null;s.run=false;s.qi=0;s.items=o.items||[];
+  s.hud=function(){$('hud-timer').textContent='⏱ '+s.left+'s';$('hud-lives').textContent='♥ '+s.lives;$('hud-streak').textContent='🔥 '+s.streak;$('hud-p1').textContent='P1 '+s.s1;$('hud-p2').textContent='P2 '+s.s2;$('hud-q').textContent=(s.items.length?(s.qi+1):0)+'/'+s.items.length};
+  s.startTimer=function(){clearInterval(s.tid);s.left=s.sec;s.hud();s.tid=setInterval(function(){s.left--;s.hud();if(s.left<=0){clearInterval(s.tid);if(s.onTimeout)s.onTimeout()}},1000)};
+  s.stop=function(){clearInterval(s.tid)};
+  s.ok=function(p){s.streak++;if(p===2)s.s2++;else s.s1++;s.hud();try{HcyFx.correct()}catch(e){}toast('Nice!');};
+  s.bad=function(){s.streak=0;s.lives=Math.max(0,s.lives-1);s.hud();try{HcyFx.wrong()}catch(e){}toast(s.lives?'Oops':'Out of lives');};
+  s.reset=function(){s.stop();s.lives=s.max;s.streak=0;s.s1=0;s.s2=0;s.qi=0;s.run=false;s.hud();try{HcyFx.reset()}catch(e){};$('start-overlay').style.display='flex'};
+}
+function bootFx(){try{HcyFx.init({mascotMount:$('hcy-mascot-slot'),mascotMode:'3d'})}catch(e){}
+ document.body.addEventListener('pointerdown',function(){try{HcyFxAudio&&HcyFxAudio.unlock()}catch(e){}},{once:true});}
+
+/* Aaron HARD RULE: no P6 GE 1st Term Exam 2026-2027 paper items */
+function isExamPaperItem(it){
+  if(!it || typeof it!=="object") return false;
+  var s=String(it.source||""), u=String(it.unit||""), tag=String(it.tag||""), id=String(it.id||""), p=String(it.prompt||"");
+  var origin=String(it.origin||""), section=String(it.section||"");
+  var blob=(s+" "+u+" "+tag+" "+id+" "+p+" "+origin).toLowerCase();
+  if(/^exam/i.test(s)) return true;
+  if(/exam\s*[a-j]/i.test(blob)) return true;
+  if(/\bexam[a-j]\b/i.test(blob)) return true;
+  if(/u\d\s*\/\s*exam/i.test(u)) return true;
+  if(/typhoon-parallel|examc-parallel|exam-parallel/i.test(tag+" "+origin)) return true;
+  if(/\[exam\b/i.test(p) || /\[exam\b/i.test(id)) return true;
+  if((section==="F"||section==="H") && (/exam/i.test(s+u) || /\[exam/i.test(p))) return true;
+  return false;
+}
+function filterNoExamItems(arr){
+  if(!Array.isArray(arr)) return [];
+  return arr.filter(function(it){ return !isExamPaperItem(it); });
+}
+function showExamQuarantine(msg){
+  var banner=document.getElementById("exam-quarantine-banner");
+  if(!banner){
+    banner=document.createElement("div");
+    banner.id="exam-quarantine-banner";
+    banner.setAttribute("role","status");
+    banner.style.cssText="position:sticky;top:0;z-index:9999;background:#7f1d1d;color:#fff;padding:12px 16px;font:600 15px/1.4 system-ui,sans-serif;text-align:center;border-bottom:3px solid #fbbf24;";
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+  banner.textContent=msg;
+  ["btn-start","btn-start2"].forEach(function(id){
+    var b=document.getElementById(id);
+    if(b){ b.disabled=true; b.style.opacity="0.45"; b.style.pointerEvents="none"; b.textContent="0 items — exam bank removed"; }
+  });
+  var n=document.querySelector("#start-overlay .start-card p");
+  if(n) n.textContent=msg+" · 0 playable items.";
+}
+
+function parseBankPayload(data){
+  if(!data) return [];
+  if(Array.isArray(data)) return data;
+  if(data.items && Array.isArray(data.items)) return data.items;
+  return [];
+}
+function loadFatBank(fileName, normalizeFn, onReady){
+  function finish(raw){
+    var payloadItems = filterNoExamItems(parseBankPayload(raw));
+    var items = normalizeFn(payloadItems);
+    if(!items.length){
+      try{
+        var emb = filterNoExamItems(parseBankPayload(JSON.parse($("bank-json").textContent)));
+        items = normalizeFn(emb);
+      }catch(e){ items=[]; }
+    }
+    onReady(shuffle(items));
+  }
+  var embedded = null;
+  try{ embedded = JSON.parse($("bank-json").textContent); }catch(e){ embedded = {items:[]}; }
+  var tryFetch = (location.protocol !== "file:");
+  if(!tryFetch){ finish(embedded); return; }
+  fetch("../../banks/"+fileName).then(function(r){ if(!r.ok) throw new Error("bad"); return r.json(); })
+    .then(function(data){ finish(data); })
+    .catch(function(){ finish(embedded); });
+}
+
+
+
+var BANK=[], G=null, cur=null, lock=false, holdP={}, holdA={};
+function normalizeOught(raw){
+  return raw.map(function(it){
+    var problem=it.problem, advice=it.advice, ans=it.answer||'';
+    var phrase=advice||'';
+    if(phrase && /^ought to\s+/i.test(phrase)) phrase=phrase.replace(/^ought to\s+/i,'');
+    if(!phrase && ans){
+      var m=ans.match(/ought to\s+(.+?)\.?$/i); phrase=m?m[1]:'';
+    }
+    if(!problem){
+      problem=(it.prompt||'').replace(/^Problem:\s*/i,'').replace(/\s*→.*$/,'').replace(/\s*Complete.*$/i,'').trim();
+    }
+    if(!problem) problem=ans;
+    return {id:it.id, problem:problem, advice:phrase?'ought to '+phrase:ans, phrase:phrase, answer:ans};
+  }).filter(function(x){return x.phrase && x.problem});
+}
+function paint(){cur=G.items[G.qi%G.items.length];lock=false;holdP={};holdA={};
+ $('prompt').textContent='Match PROBLEM ↔ ADVICE (hold both)'; $('hint').textContent=cur.problem;
+ var probs=shuffle([cur].concat(pickN(BANK.filter(function(x){return x.problem!==cur.problem}),3)));
+ var advs=shuffle([cur].concat(pickN(BANK.filter(function(x){return x.phrase!==cur.phrase}),3)));
+ function fill(id,list,kind){var g=$(id);g.innerHTML='';list.forEach(function(it){var b=document.createElement('button');b.type='button';b.className='choice';
+  b.textContent=kind==='p'?it.problem:('ought to '+it.phrase);
+  b.addEventListener('pointerdown',function(e){e.preventDefault();if(lock||!G.run)return;try{b.setPointerCapture(e.pointerId)}catch(err){}b.classList.add('held');
+   var side=id==='grid1'?1:2; if(kind==='p')holdP[e.pointerId]={it:it,el:b,side:side}; else holdA[e.pointerId]={it:it,el:b,side:side}; tryLock();});
+  b.addEventListener('pointerup',function(e){b.classList.remove('held');delete holdP[e.pointerId];delete holdA[e.pointerId]});g.appendChild(b)})}
+ fill('grid1',probs,'p'); fill('grid2',advs,'a'); G.startTimer();
+}
+function tryLock(){var ps=Object.keys(holdP),as=Object.keys(holdA); if(!ps.length||!as.length)return;
+ var P=holdP[ps[0]],A=holdA[as[0]]; if(lock)return; lock=true;G.stop();
+ var ok=P.it.phrase===A.it.phrase && P.it.phrase===cur.phrase;
+ if(ok){P.el.classList.add('ok');A.el.classList.add('ok');G.ok(P.side); try{HcyFx.stamp('Locked!')}catch(e){}}
+ else{P.el.classList.add('bad');A.el.classList.add('bad');G.bad()} setTimeout(next,750)}
+function next(){if(G.lives<=0)return;G.qi++;if(G.qi>=G.items.length)G.qi=0;paint()}
+function start(){G.run=true;$('start-overlay').style.display='none';G.qi=0;G.lives=G.max;G.streak=0;G.s1=0;G.s2=0;G.items=shuffle(BANK);paint()}
+function bootGame(items){
+  BANK=items; G=new GameShell({items:BANK,timerSec:20});
+  G.onTimeout=function(){G.bad();next()};
+  $('btn-start').onclick=$('btn-start2').onclick=start;
+  $('btn-reset').onclick=function(){G.reset()};
+  $('btn-next').onclick=function(){if(G.run)next()};
+  bootFx();G.hud();
+  var n=$('start-overlay').querySelector('.start-card p');
+  if(n) n.textContent='Ought-to problem↔advice · bank '+BANK.length+'.';
+}
+loadFatBank('ought-to.json', normalizeOught, bootGame);
+
+</script>
+</body>
+</html>

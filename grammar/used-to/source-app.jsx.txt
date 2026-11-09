@@ -1,0 +1,401 @@
+import React, { useState } from 'react';
+import { Hand, Wand2, Image as ImageIcon, Loader2, RefreshCw, ArrowRight, ArrowLeft, Star } from 'lucide-react';
+
+const FireworksDisplay = () => {
+const colors = ['#FF595E', '#FFCA3A', '#8AC926', '#1982C4', '#6A4C93'];
+
+const createParticles = () => Array.from({ length: 60 }).map((_, i) => {
+const angle = (Math.PI * 2 * i) / 60;
+const velocity = 100 + Math.random() * 250;
+return {
+id: i,
+tx: `${Math.cos(angle) * velocity}px`,
+ty: `${Math.sin(angle) * velocity}px`,
+color: colors[Math.floor(Math.random() * colors.length)],
+delay: Math.random() * 0.2,
+scale: Math.random() * 0.5 + 0.5
+};
+});
+
+const bursts = [
+{ id: 1, left: '50%', top: '50%', delay: 0, particles: createParticles() },
+{ id: 2, left: '25%', top: '40%', delay: 0.3, particles: createParticles() },
+{ id: 3, left: '75%', top: '60%', delay: 0.6, particles: createParticles() },
+];
+
+return (
+<div className="absolute inset-0 z-[100] pointer-events-none flex flex-col items-center justify-center">
+<style>
+{`
+@keyframes firework-explode {
+0% { transform: translate(0, 0) scale(1); opacity: 1; }
+80% { opacity: 1; }
+100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+}
+.firework-particle {
+animation: firework-explode 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+`}
+</style>
+
+{bursts.map(burst => (
+<div key={burst.id} className="absolute" style={{ left: burst.left, top: burst.top }}>
+{burst.particles.map(p => (
+<div
+key={p.id}
+className="absolute w-3 h-3 rounded-full firework-particle"
+style={{
+backgroundColor: p.color,
+'--tx': p.tx,
+'--ty': p.ty,
+transform: `scale(${p.scale})`,
+animationDelay: `${burst.delay + p.delay}s`
+}}
+/>
+))}
+</div>
+))}
+
+<h2 className="relative z-10 text-5xl md:text-7xl font-black text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] animate-bounce mt-48 uppercase tracking-widest">
+Unlocked!
+</h2>
+</div>
+);
+};
+
+export default function App() {
+// Navigation State
+const [currentActivity, setCurrentActivity] = useState(1);
+const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
+const [showFireworks, setShowFireworks] = useState(false);
+const [passwordInput, setPasswordInput] = useState('');
+const [passwordError, setPasswordError] = useState(false);
+
+// --- Activity 2 State ---
+const [selectedColor, setSelectedColor] = useState(null);
+
+// --- Activity 3 State ---
+const [prompt, setPrompt] = useState('');
+const [submittedSentence, setSubmittedSentence] = useState('');
+const [imageUrl, setImageUrl] = useState(null);
+const [isLoading, setIsLoading] = useState(false);
+const [error, setError] = useState(null);
+
+// --- Activity 3 Logic ---
+const generateImage = async () => {
+if (!prompt.trim()) return;
+
+setIsLoading(true);
+setError(null);
+setImageUrl(null);
+setSubmittedSentence(prompt); // Save the exact sentence to display on the picture
+
+// Preset the AI to create a split screen before/after image
+const enhancedPrompt = `A split-screen before-and-after illustration. The left half shows the past, and the right half shows the present. It illustrates this change: "${prompt}". Featuring a young student as the main character, colorful storybook style.`;
+
+const apiKey = ""; // API key is provided by the execution environment
+const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
+
+const payload = {
+instances: { prompt: enhancedPrompt },
+parameters: { sampleCount: 1, aspectRatio: "16:9" }
+};
+
+let retries = 5;
+let delay = 1000;
+
+while (retries > 0) {
+try {
+const response = await fetch(url, {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(payload)
+});
+
+if (!response.ok) {
+throw new Error(`HTTP error! status: ${response.status}`);
+}
+
+const result = await response.json();
+
+if (result.predictions && result.predictions[0] && result.predictions[0].bytesBase64Encoded) {
+setImageUrl(`data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`);
+setIsLoading(false);
+return;
+} else {
+throw new Error("Could not parse the generated image.");
+}
+} catch (err) {
+retries--;
+if (retries === 0) {
+setError("Oops! We couldn't generate the image right now. Please try changing your description slightly and try again.");
+setIsLoading(false);
+} else {
+// Wait before retrying (exponential backoff)
+await new Promise(resolve => setTimeout(resolve, delay));
+delay *= 2;
+}
+}
+}
+};
+
+const handleResetImage = () => {
+setPrompt('');
+setSubmittedSentence('');
+setImageUrl(null);
+setError(null);
+};
+
+const handlePasswordSubmit = () => {
+if (passwordInput.toLowerCase() === 'but') {
+setShowFireworks(true);
+setTimeout(() => {
+setShowFireworks(false);
+setShowPasswordPrompt(false);
+setPasswordInput('');
+setCurrentActivity(2);
+}, 2500); // Wait 2.5 seconds for the fireworks to finish
+} else {
+setPasswordError(true);
+}
+};
+
+// ==========================================
+// RENDER ACTIVITY 2 (Colour Picking Game)
+// ==========================================
+if (currentActivity === 1) {
+// If a color is selected, show the full screen color
+if (selectedColor) {
+const bgColor = selectedColor === 'red' ? 'bg-red-600' : 'bg-blue-600';
+return (
+<div
+className={`min-h-screen w-full flex flex-col items-center justify-center cursor-pointer transition-colors duration-300 ${bgColor}`}
+onClick={() => setSelectedColor(null)}
+>
+<Hand className="w-24 h-24 text-white opacity-50 mb-4 animate-bounce" />
+<p className="text-white text-3xl font-bold opacity-80 text-center px-4">
+Tap anywhere to reset
+</p>
+</div>
+);
+}
+
+// Default Activity 2 View: Selection screen
+return (
+<div className="min-h-screen w-full bg-slate-50 flex flex-col items-center justify-center p-6 relative">
+<div className="max-w-3xl w-full text-center space-y-12 mb-16">
+
+<header className="space-y-4">
+<h1 className="text-5xl md:text-6xl font-extrabold text-slate-800 tracking-tight">
+Chapter 1
+</h1>
+<h2 className="text-3xl md:text-4xl font-bold text-slate-600">
+Red or Blue Portal
+</h2>
+<p className="text-xl text-slate-500 mt-4">
+Tap a color to fill your screen!
+</p>
+</header>
+
+<div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
+{/* Red Button */}
+<button
+onClick={() => setSelectedColor('red')}
+className="w-full md:w-1/2 aspect-[2/1] md:aspect-square bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-200 transform hover:-translate-y-2 active:translate-y-1 flex flex-col items-center justify-center group"
+>
+<span className="text-5xl md:text-7xl font-black uppercase tracking-wider group-hover:scale-110 transition-transform duration-200">
+Red
+</span>
+</button>
+
+{/* Blue Button */}
+<button
+onClick={() => setSelectedColor('blue')}
+className="w-full md:w-1/2 aspect-[2/1] md:aspect-square bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-200 transform hover:-translate-y-2 active:translate-y-1 flex flex-col items-center justify-center group"
+>
+<span className="text-5xl md:text-7xl font-black uppercase tracking-wider group-hover:scale-110 transition-transform duration-200">
+Blue
+</span>
+</button>
+</div>
+</div>
+
+{/* Proceed to Activity 3 Button */}
+<div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-10">
+<button
+onClick={() => setShowPasswordPrompt(true)}
+className="flex items-center gap-3 px-6 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 active:translate-y-0"
+>
+Proceed to Chapter 2 <ArrowRight className="w-6 h-6" />
+</button>
+</div>
+
+{/* Password Modal */}
+{showPasswordPrompt && (
+<div className="fixed inset-0 bg-slate-900/80 flex items-center justify-center z-50 p-4 backdrop-blur-sm transition-colors duration-500">
+{showFireworks ? (
+<FireworksDisplay />
+) : (
+<div className="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl space-y-6 transform animate-in zoom-in-95 duration-200">
+<div className="text-center space-y-2">
+<h3 className="text-3xl font-extrabold text-slate-800">Secret Word Required</h3>
+<p className="text-slate-500 font-medium">To enter Chapter 2, you need the password!</p>
+</div>
+
+<div className="space-y-4">
+<input
+type="text"
+maxLength={3}
+value={passwordInput}
+onChange={(e) => {
+setPasswordInput(e.target.value);
+setPasswordError(false);
+}}
+onKeyDown={(e) => e.key === 'Enter' && handlePasswordSubmit()}
+placeholder="_ _ _"
+className="w-full text-center text-5xl font-black tracking-[0.25em] p-6 rounded-2xl border-4 border-slate-100 focus:border-indigo-500 focus:ring-0 transition-all uppercase placeholder:text-slate-300"
+autoFocus
+/>
+{passwordError && (
+<p className="text-red-500 text-center font-bold animate-pulse">
+Incorrect! Please try again.
+</p>
+)}
+</div>
+
+<div className="flex gap-4 pt-2">
+<button
+onClick={() => {
+setShowPasswordPrompt(false);
+setPasswordInput('');
+setPasswordError(false);
+}}
+className="flex-1 py-4 bg-slate-100 text-slate-600 rounded-xl font-bold hover:bg-slate-200 transition-colors"
+>
+Go Back
+</button>
+<button
+onClick={handlePasswordSubmit}
+className="flex-1 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors shadow-lg hover:shadow-indigo-500/30"
+>
+Unlock
+</button>
+</div>
+</div>
+)}
+</div>
+)}
+</div>
+);
+}
+
+// ==========================================
+// RENDER ACTIVITY 3 (Story Illustrator)
+// ==========================================
+if (currentActivity === 2) {
+return (
+<div className="min-h-screen w-full bg-slate-50 flex flex-col items-center p-6 md:p-12 font-sans relative">
+
+{/* Navigation Back Button */}
+<div className="w-full max-w-4xl mb-6 flex justify-start">
+<button
+onClick={() => setCurrentActivity(1)}
+className="flex items-center gap-2 px-4 py-2 text-slate-500 hover:text-slate-800 hover:bg-slate-200 rounded-full transition-colors font-medium"
+>
+<ArrowLeft className="w-5 h-5" />
+Back to Chapter 1
+</button>
+</div>
+
+<div className="max-w-4xl w-full space-y-8">
+<header className="text-center space-y-4">
+<h1 className="text-4xl md:text-5xl font-extrabold text-indigo-900 tracking-tight">
+Chapter 2
+</h1>
+<h2 className="text-2xl md:text-3xl font-bold text-indigo-700 flex items-center justify-center gap-3">
+<Wand2 className="w-8 h-8" />
+Story Illustrator
+</h2>
+<p className="text-lg text-slate-600 max-w-2xl mx-auto">
+Write a sentence using "used to" to describe a change, and the AI will draw a before-and-after picture!
+</p>
+</header>
+
+<div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8 space-y-6">
+<div className="space-y-3">
+<label htmlFor="story-prompt" className="block text-xl font-bold text-slate-800">
+Write your "used to" sentence:
+</label>
+<textarea
+id="story-prompt"
+value={prompt}
+onChange={(e) => setPrompt(e.target.value)}
+disabled={isLoading}
+placeholder="E.g., I used to be afraid of insects but I am braver now..."
+className="w-full h-32 p-4 rounded-xl border-2 border-slate-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 transition-all resize-none text-lg text-slate-800 placeholder:text-slate-400 disabled:opacity-50 disabled:bg-slate-50"
+/>
+</div>
+
+<button
+onClick={generateImage}
+disabled={isLoading || !prompt.trim()}
+className="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white rounded-xl text-xl font-bold transition-all duration-200 flex items-center justify-center gap-3 shadow-lg hover:shadow-indigo-500/30"
+>
+{isLoading ? (
+<>
+<Loader2 className="w-6 h-6 animate-spin" />
+Drawing your story...
+</>
+) : (
+<>
+<ImageIcon className="w-6 h-6" />
+Generate Magic Image!
+</>
+)}
+</button>
+
+{error && (
+<div className="p-4 bg-red-50 text-red-700 rounded-xl border border-red-200 text-center font-medium">
+{error}
+</div>
+)}
+</div>
+
+{/* Result Area */}
+{imageUrl && (
+<div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+<h3 className="text-2xl font-bold text-center text-slate-800">
+Your Illustration is Ready!
+</h3>
+
+<div className="relative w-full bg-slate-100 rounded-2xl overflow-hidden shadow-xl border-4 border-slate-800 flex flex-col">
+<img
+src={imageUrl}
+alt="Generated before and after illustration"
+className="w-full h-auto object-contain bg-white"
+/>
+{/* Sentence Display at the bottom of the picture */}
+<div className="bg-slate-800 text-white p-4 md:p-6 text-center">
+<p className="text-xl md:text-3xl font-bold tracking-wide">
+{submittedSentence}
+</p>
+</div>
+</div>
+
+<button
+onClick={handleResetImage}
+className="mx-auto flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full font-semibold transition-colors mt-6"
+>
+<RefreshCw className="w-5 h-5" />
+Draw another change
+</button>
+</div>
+)}
+</div>
+</div>
+);
+}
+
+// Fallback (shouldn't be reached)
+return null;
+}

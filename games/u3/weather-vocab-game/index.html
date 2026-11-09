@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>HCY English · P.6 · Weather & Disasters</title>
+<!-- HCY_SHARED_WIRED -->
+<script src="../../../assets/hcy-speech.js"></script>
+<script src="../../../assets/hcy-deeplinks.js"></script>
+<link rel="stylesheet" href="../../../assets/hcy-teacher-hud.css">
+<script src="../../../assets/hcy-teacher-hud.js" data-auto="1"></script>
+
+<style>
+:root{
+  --bg1:#e8f4ff; --bg2:#fff4e0; --ink:#2a3544; --line:#9ec9ef;
+  --card:#fffdf8; --ok:#2f9e5b; --bad:#d64545; --blue:#3a7bd5;
+  --shadow:0 8px 24px rgba(40,70,110,.12);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; color:var(--ink);
+  font-family:"Comic Sans MS","Chalkboard SE","Segoe Print",system-ui,sans-serif;
+  background:
+    radial-gradient(circle at 15% 8%,#d6ecff 0,transparent 42%),
+    radial-gradient(circle at 88% 5%,#ffe8c8 0,transparent 38%),
+    linear-gradient(165deg,var(--bg1),var(--bg2));
+}
+h1,h2,h3{margin:0}
+button{font:inherit; cursor:pointer}
+.wrap{max-width:1080px; margin:0 auto; padding:16px 14px 56px}
+.header{text-align:center; margin-bottom:14px}
+.header h1{font-size:clamp(1.55rem,4.8vw,2.35rem); letter-spacing:.02em}
+.header p{margin:6px 0 0; font-size:1.05rem; opacity:.85}
+.screen{display:none}
+.screen.on{display:block}
+.card{
+  background:var(--card); border:3px solid var(--line); border-radius:22px;
+  box-shadow:var(--shadow); padding:18px;
+}
+.big{font-size:clamp(1.55rem,5.2vw,2.6rem); font-weight:700; text-align:center}
+.row{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+.btn{
+  border:3px solid #7eb6e8; background:#fff; border-radius:16px;
+  padding:14px 18px; font-size:1.2rem; min-width:140px;
+  box-shadow:0 3px 0 #7eb6e8; transition:transform .08s;
+  touch-action:manipulation;
+}
+.btn:active{transform:translateY(2px); box-shadow:none}
+.btn-primary{background:#ffd56a; border-color:#e0a83a; box-shadow:0 3px 0 #e0a83a}
+.btn-ok{background:#c9f0d6; border-color:#2f9e5b}
+.btn-bad{background:#ffd0d0; border-color:#d64545}
+.btn:disabled{opacity:.45; pointer-events:none}
+.feedback{
+  min-height:1.4em; margin:12px 0 4px; text-align:center;
+  font-size:1.2rem; font-weight:700;
+}
+.feedback.ok{color:var(--ok)}
+.feedback.bad{color:var(--bad)}
+.hud{display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; margin-bottom:10px; font-size:1.1rem; font-weight:700}
+.progress{height:12px; background:#d6e9fb; border-radius:999px; overflow:hidden; margin:8px 0 14px}
+.progress>i{display:block; height:100%; width:0; background:linear-gradient(90deg,#4dabf7,#ffb347); transition:width .25s}
+.footer{
+  margin-top:18px; text-align:center; opacity:.8; font-size:.95rem;
+  position:fixed; left:0; right:0; bottom:0;
+  padding:8px; background:linear-gradient(transparent, rgba(255,253,248,.92));
+  pointer-events:none;
+}
+.center{text-align:center}
+.menu-grid{display:grid; gap:12px; margin-top:14px}
+.hide{display:none!important}
+#fxCanvas{
+  position:fixed; inset:0; width:100%; height:100%;
+  pointer-events:none; z-index:9999;
+}
+.scene-wrap{
+  max-width:320px; margin:0 auto 12px;
+  background:radial-gradient(circle at 30% 20%, #fffef8, #e3f2fd);
+  border-radius:18px; border:3px solid #b8d9f5; padding:8px;
+  box-shadow:0 3px 0 #b8d9f5;
+}
+.scene-wrap svg{width:100%; height:auto; display:block}
+.word-choices{display:grid; grid-template-columns:repeat(2,minmax(140px,1fr)); gap:10px; margin-top:12px}
+.word-choices .btn{min-height:64px; font-size:1.15rem; width:100%}
+@media(max-width:560px){.word-choices{grid-template-columns:1fr}}
+
+/* Part B match */
+.match-board{
+  display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px;
+}
+@media(max-width:720px){.match-board{grid-template-columns:1fr}}
+.match-col h3{text-align:center; margin-bottom:8px; font-size:1.15rem}
+.match-item{
+  border:3px solid #9ec9ef; border-radius:14px; background:#fff;
+  padding:12px 14px; margin:8px 0; font-size:1.1rem; font-weight:700;
+  cursor:pointer; box-shadow:0 3px 0 #9ec9ef; touch-action:manipulation;
+  user-select:none; min-height:52px;
+}
+.match-item:active{transform:translateY(2px); box-shadow:none}
+.match-item.selected{background:#fff3c4; border-color:#e0a83a; box-shadow:0 3px 0 #e0a83a}
+.match-item.matched{opacity:.35; pointer-events:none; background:#e8fbeb; border-color:var(--ok)}
+.match-item.wrong-flash{background:#ffecec; border-color:var(--bad)}
+.match-item.drag-over{outline:3px dashed #e0a83a; background:#fff8e1}
+.meaning-item{font-weight:600; font-size:1.02rem}
+
+/* Part C scramble */
+.timer{
+  text-align:center; font-size:clamp(2rem,8vw,3.2rem); font-weight:900;
+  margin:8px 0 10px; color:#b45309;
+}
+.timer.warn{color:#d64545}
+.scramble-slots,.letter-tray{
+  display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:10px 0;
+}
+.slot,.chip{
+  min-width:48px; height:56px; border-radius:12px; border:3px dashed #7eb6e8;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.55rem; font-weight:800; background:#fffaf0;
+  touch-action:manipulation;
+}
+.chip{
+  border-style:solid; background:#fff; cursor:pointer; box-shadow:0 3px 0 #7eb6e8;
+  user-select:none; min-width:48px;
+}
+.chip:active{transform:translateY(2px); box-shadow:none}
+.chip.used{opacity:.25; pointer-events:none}
+.slot.filled{border-style:solid; background:#fff}
+.hint-emoji{font-size:2.4rem; text-align:center; margin:4px 0}
+.type-input{
+  width:100%; max-width:420px; margin:8px auto; display:block;
+  font:inherit; font-size:1.25rem; font-weight:700; text-align:center;
+  padding:12px; border:3px solid #7eb6e8; border-radius:14px;
+}
+</style>
+</head>
+<body>
+<canvas id="fxCanvas"></canvas>
+<div class="wrap">
+  <header class="header">
+    <h1>⛈️ Weather &amp; Disasters</h1>
+    <p>P.6 · Picture pick · Word match · Letter scramble</p>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="screen on">
+    <div class="card">
+      <div class="big">Choose a part</div>
+      <div class="menu-grid">
+        <button class="btn btn-primary" data-go="partA">A) Picture pick</button>
+        <button class="btn btn-primary" data-go="partB">B) Word match</button>
+        <button class="btn btn-primary" data-go="partC">C) Timed letter scramble</button>
+        <button class="btn" data-go="journey">▶️ Play all (A → B → C)</button>
+      </div>
+      <p class="center" style="margin-top:14px;opacity:.8">8 weather words · tap big buttons · offline</p>
+    </div>
+  </section>
+
+  <!-- PART A Picture pick -->
+  <section id="partA" class="screen">
+    <div class="card">
+      <div class="hud"><span id="aHud">Q 1/8</span><span id="aScore">Score: 0</span></div>
+      <div class="progress"><i id="aBar"></i></div>
+      <div class="center">Look at the picture. Tap the matching word.</div>
+      <div class="scene-wrap" id="aScene"></div>
+      <div class="word-choices" id="aChoices"></div>
+      <div class="feedback" id="aFb"></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn" data-go="home">Home</button>
+        <button class="btn btn-primary hide" id="aNext">Next ▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART B Word match -->
+  <section id="partB" class="screen">
+    <div class="card">
+      <div class="hud"><span id="bHud">Matched 0/8</span><span id="bScore">Score: 0</span></div>
+      <div class="progress"><i id="bBar"></i></div>
+      <div class="center">Tap a word, then tap its meaning — or drag word onto meaning.</div>
+      <div class="match-board">
+        <div class="match-col">
+          <h3>Words</h3>
+          <div id="bWords"></div>
+        </div>
+        <div class="match-col">
+          <h3>Meanings</h3>
+          <div id="bMeanings"></div>
+        </div>
+      </div>
+      <div class="feedback" id="bFb"></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn" data-go="home">Home</button>
+        <button class="btn btn-primary hide" id="bNext">Next ▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART C Timed scramble -->
+  <section id="partC" class="screen">
+    <div class="card">
+      <div class="hud"><span id="cHud">Word 1/8</span><span id="cScore">Score: 0</span></div>
+      <div class="progress"><i id="cBar"></i></div>
+      <div class="timer" id="cTimer">60</div>
+      <div class="center">Unscramble the letters! Tap letters or type.</div>
+      <div class="hint-emoji" id="cHint"></div>
+      <div class="scramble-slots" id="cSlots"></div>
+      <div class="letter-tray" id="cTray"></div>
+      <input class="type-input" id="cType" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="or type here…"/>
+      <div class="feedback" id="cFb"></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn" id="cClear">Clear</button>
+        <button class="btn" id="cSkip">Skip ▶</button>
+        <button class="btn" data-go="home">Home</button>
+        <button class="btn btn-primary hide" id="cDone">Finish ▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONE -->
+  <section id="done" class="screen">
+    <div class="card center">
+      <div class="big">🎉 Well done!</div>
+      <p id="doneMsg" style="font-size:1.2rem;margin:14px 0"></p>
+      <div class="row">
+        <button class="btn btn-primary" data-go="home">Home</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">HCY English · P.6 · Weather &amp; Disasters</div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+const WORDS = [
+  { id:"heavy-rain", word:"heavy rain", meaning:"a lot of rain falling hard", emoji:"🌧️" },
+  { id:"drought", word:"a drought", meaning:"a long time with little or no rain", emoji:"☀️" },
+  { id:"thunder", word:"thunder and lightning", meaning:"loud sound and bright flash in a storm", emoji:"⛈️" },
+  { id:"typhoon", word:"a typhoon", meaning:"a very strong tropical storm with wind and rain", emoji:"🌀" },
+  { id:"flood", word:"a flood", meaning:"too much water covering land or streets", emoji:"🌊" },
+  { id:"landslide", word:"a landslide", meaning:"earth and rocks sliding down a hill", emoji:"⛰️" },
+  { id:"earthquake", word:"an earthquake", meaning:"the ground shaking strongly", emoji:"🏚️" },
+  { id:"snowstorm", word:"a snowstorm", meaning:"heavy snow and strong wind", emoji:"❄️" }
+];
+
+/* ---- Distinct SVG scenes (no answer text) ---- */
+const SCENES = {
+  "heavy-rain": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#90a4ae"/>
+    <ellipse cx="90" cy="48" rx="48" ry="26" fill="#546e7a"/>
+    <ellipse cx="130" cy="42" rx="40" ry="22" fill="#607d8b"/>
+    <ellipse cx="175" cy="50" rx="44" ry="24" fill="#546e7a"/>
+    <g stroke="#4fc3f7" stroke-width="3" stroke-linecap="round">
+      <line x1="60" y1="78" x2="48" y2="118"/><line x1="90" y1="82" x2="78" y2="128"/>
+      <line x1="120" y1="76" x2="108" y2="122"/><line x1="150" y1="84" x2="138" y2="134"/>
+      <line x1="180" y1="78" x2="168" y2="126"/><line x1="210" y1="86" x2="198" y2="132"/>
+      <line x1="75" y1="90" x2="63" y2="140"/><line x1="165" y1="92" x2="153" y2="142"/>
+    </g>
+    <rect x="0" y="150" width="280" height="30" fill="#81c784"/>
+    <rect x="40" y="120" width="36" height="40" fill="#8d6e63" rx="4"/>
+    <polygon points="30,120 58,95 86,120" fill="#66bb6a"/>
+  </svg>`,
+  "drought": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#ffe082"/>
+    <circle cx="210" cy="42" r="28" fill="#ffb300"/>
+    <rect x="0" y="110" width="280" height="70" fill="#d7ccc8"/>
+    <path d="M20 130 Q50 145 80 128 Q110 150 140 132 Q170 148 200 130 Q230 145 260 128" fill="none" stroke="#a1887f" stroke-width="4"/>
+    <path d="M40 155 Q70 168 100 152 Q130 170 160 154" fill="none" stroke="#8d6e63" stroke-width="3"/>
+    <line x1="120" y1="100" x2="120" y2="130" stroke="#795548" stroke-width="4"/>
+    <circle cx="120" cy="92" r="10" fill="#a1887f"/>
+    <path d="M108 88 Q120 70 132 88" fill="none" stroke="#6d4c41" stroke-width="2"/>
+  </svg>`,
+  "thunder": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#37474f"/>
+    <ellipse cx="100" cy="50" rx="50" ry="28" fill="#263238"/>
+    <ellipse cx="150" cy="44" rx="46" ry="26" fill="#455a64"/>
+    <ellipse cx="190" cy="54" rx="40" ry="22" fill="#263238"/>
+    <polygon points="150,70 135,110 155,110 140,150 185,100 160,100 175,70" fill="#ffee58"/>
+    <circle cx="60" cy="40" r="3" fill="#fff59d" opacity=".9"/>
+    <circle cx="230" cy="35" r="2.5" fill="#fff59d"/>
+    <rect x="0" y="155" width="280" height="25" fill="#455a64"/>
+  </svg>`,
+  "typhoon": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#81d4fa"/>
+    <path d="M140 90 m-55 0 a55 55 0 1 1 110 0 a45 45 0 1 1 -90 0 a35 35 0 1 1 70 0" fill="none" stroke="#0277bd" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="140" cy="90" r="14" fill="#01579b"/>
+    <path d="M40 150 Q90 120 140 145 Q190 115 240 148" fill="none" stroke="#0288d1" stroke-width="6"/>
+    <path d="M30 40 Q80 55 70 25" fill="none" stroke="#4fc3f7" stroke-width="4"/>
+    <path d="M210 35 Q250 50 240 20" fill="none" stroke="#4fc3f7" stroke-width="4"/>
+    <ellipse cx="70" cy="160" rx="18" ry="6" fill="#66bb6a" opacity=".5"/>
+  </svg>`,
+  "flood": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#b3e5fc"/>
+    <rect x="0" y="95" width="280" height="85" fill="#29b6f6"/>
+    <path d="M0 110 Q40 95 80 110 Q120 125 160 108 Q200 92 240 112 Q260 120 280 110 L280 180 L0 180 Z" fill="#0288d1" opacity=".55"/>
+    <rect x="50" y="55" width="50" height="55" fill="#8d6e63"/>
+    <polygon points="45,55 75,30 105,55" fill="#ef5350"/>
+    <rect x="70" y="70" width="14" height="18" fill="#81d4fa"/>
+    <rect x="170" y="70" width="40" height="40" fill="#6d4c41"/>
+    <circle cx="100" cy="130" r="8" fill="#fff" opacity=".5"/>
+    <circle cx="200" cy="145" r="6" fill="#fff" opacity=".45"/>
+  </svg>`,
+  "landslide": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#c8e6c9"/>
+    <polygon points="0,180 0,70 100,20 160,90 220,40 280,100 280,180" fill="#81c784"/>
+    <polygon points="80,50 140,100 200,70 240,130 100,160 40,120" fill="#8d6e63"/>
+    <circle cx="120" cy="115" r="10" fill="#5d4037"/>
+    <circle cx="155" cy="130" r="14" fill="#6d4c41"/>
+    <circle cx="185" cy="105" r="8" fill="#4e342e"/>
+    <polygon points="90,80 110,95 95,100" fill="#795548"/>
+    <rect x="200" y="140" width="28" height="22" fill="#ef9a9a" opacity=".8"/>
+  </svg>`,
+  "earthquake": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#fff3e0"/>
+    <rect x="40" y="70" width="70" height="80" fill="#bdbdbd"/>
+    <polygon points="35,70 75,40 115,70" fill="#e57373"/>
+    <rect x="60" y="95" width="18" height="22" fill="#90caf9"/>
+    <rect x="150" y="85" width="80" height="65" fill="#9e9e9e" transform="rotate(-8 190 117)"/>
+    <polygon points="145,88 190,50 235,90" fill="#ef5350" transform="rotate(-8 190 70)"/>
+    <path d="M10 155 L40 145 L70 160 L110 140 L150 158 L190 138 L230 155 L270 145" fill="none" stroke="#5d4037" stroke-width="5" stroke-linecap="round"/>
+    <line x1="55" y1="70" x2="50" y2="150" stroke="#757575" stroke-width="3"/>
+  </svg>`,
+  "snowstorm": `<svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="280" height="180" rx="12" fill="#e3f2fd"/>
+    <ellipse cx="100" cy="48" rx="48" ry="24" fill="#90a4ae"/>
+    <ellipse cx="150" cy="42" rx="42" ry="22" fill="#78909c"/>
+    <ellipse cx="190" cy="52" rx="38" ry="20" fill="#90a4ae"/>
+    <g fill="#fff" stroke="#bbdefb" stroke-width="1">
+      <circle cx="50" cy="80" r="4"/><circle cx="90" cy="100" r="5"/>
+      <circle cx="130" cy="75" r="3.5"/><circle cx="170" cy="110" r="4.5"/>
+      <circle cx="210" cy="85" r="4"/><circle cx="70" cy="130" r="3"/>
+      <circle cx="150" cy="140" r="5"/><circle cx="230" cy="120" r="3.5"/>
+      <circle cx="110" cy="155" r="4"/><circle cx="190" cy="150" r="3"/>
+    </g>
+    <path d="M40 70 Q100 90 80 50" fill="none" stroke="#90caf9" stroke-width="3"/>
+    <path d="M180 60 Q240 85 220 45" fill="none" stroke="#90caf9" stroke-width="3"/>
+    <rect x="0" y="160" width="280" height="20" fill="#eceff1"/>
+  </svg>`
+};
+
+function shuffle(arr){
+  const a=arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+function byId(id){ return WORDS.find(w=>w.id===id); }
+function $(sel){ return document.querySelector(sel); }
+function $all(sel){ return Array.from(document.querySelectorAll(sel)); }
+
+function show(id){
+  $all(".screen").forEach(s=>s.classList.remove("on"));
+  const el=document.getElementById(id);
+  if(el) el.classList.add("on");
+}
+
+/* ---- Celebrate ---- */
+let audioCtx=null;
+function getAudio(){
+  if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==="suspended") audioCtx.resume();
+  return audioCtx;
+}
+function playCheer(){
+  try{
+    const ctx=getAudio();
+    const now=ctx.currentTime;
+    [523.25,659.25,783.99,1046.5].forEach((freq,i)=>{
+      const o=ctx.createOscillator();
+      const g=ctx.createGain();
+      o.type="sine";
+      o.frequency.value=freq;
+      g.gain.setValueAtTime(0.0001, now);
+      g.gain.exponentialRampToValueAtTime(0.12, now+0.03+i*0.07);
+      g.gain.exponentialRampToValueAtTime(0.0001, now+0.35+i*0.08);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(now+i*0.07);
+      o.stop(now+0.45+i*0.08);
+    });
+    const bufSize=ctx.sampleRate*0.2;
+    const buf=ctx.createBuffer(1,bufSize,ctx.sampleRate);
+    const data=buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) data[i]=(Math.random()*2-1)*Math.pow(1-i/bufSize,2);
+    const noise=ctx.createBufferSource();
+    noise.buffer=buf;
+    const ng=ctx.createGain();
+    ng.gain.value=0.04;
+    noise.connect(ng); ng.connect(ctx.destination);
+    noise.start(now+0.05);
+  }catch(e){}
+}
+function celebrate(){
+  playCheer();
+  fireConfetti();
+}
+function fireConfetti(){
+  const c=document.getElementById("fxCanvas");
+  if(!c) return;
+  const ctx=c.getContext("2d");
+  const dpr=window.devicePixelRatio||1;
+  c.width=window.innerWidth*dpr;
+  c.height=window.innerHeight*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const W=window.innerWidth, H=window.innerHeight;
+  const colors=["#ff6b6b","#ffd93d","#6bcB77","#4d96ff","#ff8fab","#c77dff","#ff9f1c"];
+  const parts=[];
+  for(let i=0;i<90;i++){
+    parts.push({
+      x:W*0.5+(Math.random()-0.5)*W*0.35,
+      y:H*0.35+(Math.random()-0.5)*80,
+      vx:(Math.random()-0.5)*14,
+      vy:-Math.random()*16-4,
+      g:0.35+Math.random()*0.25,
+      w:6+Math.random()*8,
+      h:4+Math.random()*6,
+      rot:Math.random()*Math.PI,
+      vr:(Math.random()-0.5)*0.3,
+      color:colors[i%colors.length],
+      life:60+Math.random()*40
+    });
+  }
+  for(const side of [-1,1]){
+    for(let i=0;i<35;i++){
+      parts.push({
+        x:side<0?W*0.12:W*0.88,
+        y:H*0.55,
+        vx:side*(4+Math.random()*10),
+        vy:-Math.random()*12-2,
+        g:0.4, w:5+Math.random()*7, h:3+Math.random()*5,
+        rot:Math.random()*Math.PI, vr:(Math.random()-0.5)*0.4,
+        color:colors[(i+3)%colors.length], life:50+Math.random()*30
+      });
+    }
+  }
+  let frame=0;
+  function tick(){
+    frame++;
+    ctx.clearRect(0,0,W,H);
+    let alive=0;
+    for(const p of parts){
+      if(p.life<=0) continue;
+      alive++;
+      p.life--;
+      p.vy+=p.g;
+      p.x+=p.vx;
+      p.y+=p.vy;
+      p.rot+=p.vr;
+      ctx.save();
+      ctx.translate(p.x,p.y);
+      ctx.rotate(p.rot);
+      ctx.globalAlpha=Math.max(0,Math.min(1,p.life/40));
+      ctx.fillStyle=p.color;
+      ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
+      ctx.restore();
+    }
+    if(alive>0 && frame<120) requestAnimationFrame(tick);
+    else ctx.clearRect(0,0,W,H);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* ---- Journey / navigation ---- */
+let journey=false;
+let journeyStep=0; // 0=A,1=B,2=C
+
+$all("[data-go]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const go=btn.getAttribute("data-go");
+    if(go==="home"){ journey=false; stopTimer(); show("home"); return; }
+    if(go==="journey"){
+      journey=true; journeyStep=0; startPartA(); return;
+    }
+    if(go==="partA"){ journey=false; startPartA(); }
+    if(go==="partB"){ journey=false; startPartB(); }
+    if(go==="partC"){ journey=false; startPartC(); }
+  });
+});
+
+function afterPartDone(part){
+  if(journey){
+    if(part==="A"){ journeyStep=1; startPartB(); }
+    else if(part==="B"){ journeyStep=2; startPartC(); }
+    else {
+      journey=false;
+      $("#doneMsg").textContent="You finished Picture pick, Word match, and Letter scramble!";
+      celebrate();
+      show("done");
+    }
+  } else {
+    $("#doneMsg").textContent="Great work on this part!";
+    show("done");
+  }
+}
+
+/* ========== PART A ========== */
+let aOrder=[], ai=0, aScore=0, aLocked=false;
+function startPartA(){
+  aOrder=shuffle(WORDS.map(w=>w.id));
+  ai=0; aScore=0; aLocked=false;
+  show("partA");
+  renderA();
+}
+function renderA(){
+  aLocked=false;
+  $("#aNext").classList.add("hide");
+  $("#aFb").textContent="";
+  $("#aFb").className="feedback";
+  $("#aHud").textContent="Q "+(ai+1)+"/"+aOrder.length;
+  $("#aScore").textContent="Score: "+aScore;
+  $("#aBar").style.width=((ai/aOrder.length)*100)+"%";
+  const cur=byId(aOrder[ai]);
+  $("#aScene").innerHTML=SCENES[cur.id]||"";
+  const distractors=shuffle(WORDS.filter(w=>w.id!==cur.id)).slice(0,3);
+  const choices=shuffle([cur].concat(distractors));
+  const box=$("#aChoices");
+  box.innerHTML="";
+  choices.forEach(ch=>{
+    const b=document.createElement("button");
+    b.className="btn";
+    b.textContent=ch.word;
+    b.addEventListener("click",()=>pickA(ch.id,b));
+    box.appendChild(b);
+  });
+}
+function pickA(id,btn){
+  if(aLocked) return;
+  aLocked=true;
+  const cur=byId(aOrder[ai]);
+  $all("#aChoices .btn").forEach(b=>b.disabled=true);
+  if(id===cur.id){
+    aScore++;
+    btn.classList.add("btn-ok");
+    $("#aFb").textContent="Correct! ✓";
+    $("#aFb").className="feedback ok";
+    celebrate();
+  } else {
+    btn.classList.add("btn-bad");
+    $("#aFb").textContent="Not quite — it is “"+cur.word+"”";
+    $("#aFb").className="feedback bad";
+    $all("#aChoices .btn").forEach(b=>{
+      if(b.textContent===cur.word) b.classList.add("btn-ok");
+    });
+  }
+  $("#aScore").textContent="Score: "+aScore;
+  $("#aBar").style.width((((ai+1)/aOrder.length)*100)+"%");
+  $("#aNext").classList.remove("hide");
+}
+$("#aNext").addEventListener("click",()=>{
+  ai++;
+  if(ai>=aOrder.length){
+    $("#aBar").style.width="100%";
+    afterPartDone("A");
+  } else renderA();
+});
+
+/* ========== PART B ========== */
+let bMatched=0, bScore=0, bSelected=null, bDone=false;
+function startPartB(){
+  bMatched=0; bScore=0; bSelected=null; bDone=false;
+  $("#bNext").classList.add("hide");
+  $("#bFb").textContent="";
+  $("#bFb").className="feedback";
+  show("partB");
+  renderB();
+}
+function renderB(){
+  const words=shuffle(WORDS.slice());
+  const meanings=shuffle(WORDS.slice());
+  const wBox=$("#bWords");
+  const mBox=$("#bMeanings");
+  wBox.innerHTML="";
+  mBox.innerHTML="";
+  words.forEach(w=>{
+    const el=document.createElement("div");
+    el.className="match-item";
+    el.textContent=w.word;
+    el.dataset.id=w.id;
+    el.draggable=true;
+    el.addEventListener("click",()=>tapWord(el));
+    el.addEventListener("dragstart",e=>{
+      e.dataTransfer.setData("text/plain", w.id);
+      bSelected=w.id;
+      highlightSelected();
+    });
+    wBox.appendChild(el);
+  });
+  meanings.forEach(w=>{
+    const el=document.createElement("div");
+    el.className="match-item meaning-item";
+    el.textContent=w.meaning;
+    el.dataset.id=w.id;
+    el.addEventListener("click",()=>tapMeaning(el));
+    el.addEventListener("dragover",e=>{ e.preventDefault(); el.classList.add("drag-over"); });
+    el.addEventListener("dragleave",()=>el.classList.remove("drag-over"));
+    el.addEventListener("drop",e=>{
+      e.preventDefault();
+      el.classList.remove("drag-over");
+      const id=e.dataTransfer.getData("text/plain")||bSelected;
+      tryMatch(id, el.dataset.id, el);
+    });
+    mBox.appendChild(el);
+  });
+  updateBHud();
+}
+function highlightSelected(){
+  $all("#bWords .match-item").forEach(el=>{
+    el.classList.toggle("selected", el.dataset.id===bSelected && !el.classList.contains("matched"));
+  });
+}
+function tapWord(el){
+  if(el.classList.contains("matched")||bDone) return;
+  bSelected=el.dataset.id;
+  highlightSelected();
+  $("#bFb").textContent="Now tap the matching meaning →";
+  $("#bFb").className="feedback";
+}
+function tapMeaning(el){
+  if(el.classList.contains("matched")||bDone) return;
+  if(!bSelected){
+    $("#bFb").textContent="Tap a word on the left first.";
+    $("#bFb").className="feedback";
+    return;
+  }
+  tryMatch(bSelected, el.dataset.id, el);
+}
+function tryMatch(wordId, meaningId, meaningEl){
+  const wordEl=$all("#bWords .match-item").find(e=>e.dataset.id===wordId);
+  if(!wordEl || wordEl.classList.contains("matched")) return;
+  if(wordId===meaningId){
+    wordEl.classList.add("matched");
+    meaningEl.classList.add("matched");
+    bMatched++;
+    bScore++;
+    bSelected=null;
+    highlightSelected();
+    $("#bFb").textContent="Matched! ✓";
+    $("#bFb").className="feedback ok";
+    celebrate();
+    updateBHud();
+    if(bMatched>=WORDS.length){
+      bDone=true;
+      $("#bNext").classList.remove("hide");
+      $("#bFb").textContent="All 8 matched! 🌟";
+    }
+  } else {
+    meaningEl.classList.add("wrong-flash");
+    if(wordEl) wordEl.classList.add("wrong-flash");
+    $("#bFb").textContent="Try again";
+    $("#bFb").className="feedback bad";
+    setTimeout(()=>{
+      meaningEl.classList.remove("wrong-flash");
+      if(wordEl) wordEl.classList.remove("wrong-flash");
+    },450);
+  }
+}
+function updateBHud(){
+  $("#bHud").textContent="Matched "+bMatched+"/8";
+  $("#bScore").textContent="Score: "+bScore;
+  $("#bBar").style.width=((bMatched/8)*100)+"%";
+}
+$("#bNext").addEventListener("click",()=>afterPartDone("B"));
+
+/* ========== PART C ========== */
+let cOrder=[], ci=0, cScore=0, cSlots=[], cLetters=[], cLocked=false;
+let timerLeft=60, timerId=null, timerStarted=false;
+
+function lettersOf(word){
+  // keep spaces as blank slots students must fill with space chips
+  return word.split("");
+}
+function scrambleLetters(chars){
+  // scramble non-space; keep spaces available as chips too
+  return shuffle(chars.slice());
+}
+
+function startPartC(){
+  stopTimer();
+  cOrder=shuffle(WORDS.map(w=>w.id));
+  ci=0; cScore=0; cLocked=false;
+  timerLeft=60; timerStarted=false;
+  $("#cDone").classList.add("hide");
+  $("#cTimer").textContent="60";
+  $("#cTimer").className="timer";
+  show("partC");
+  renderC();
+}
+function stopTimer(){
+  if(timerId){ clearInterval(timerId); timerId=null; }
+}
+function startTimer(){
+  if(timerStarted) return;
+  timerStarted=true;
+  stopTimer();
+  timerId=setInterval(()=>{
+    timerLeft--;
+    $("#cTimer").textContent=String(timerLeft);
+    if(timerLeft<=10) $("#cTimer").classList.add("warn");
+    if(timerLeft<=0){
+      stopTimer();
+      $("#cTimer").textContent="0";
+      $("#cFb").textContent="Time's up! Score: "+cScore;
+      $("#cFb").className="feedback bad";
+      cLocked=true;
+      $("#cDone").classList.remove("hide");
+      $("#cDone").textContent="See results ▶";
+    }
+  },1000);
+}
+function renderC(){
+  cLocked=false;
+  $("#cFb").textContent="";
+  $("#cFb").className="feedback";
+  $("#cDone").classList.add("hide");
+  const cur=byId(cOrder[ci]);
+  $("#cHud").textContent="Word "+(ci+1)+"/"+cOrder.length;
+  $("#cScore").textContent="Score: "+cScore;
+  $("#cBar").style.width=((ci/cOrder.length)*100)+"%";
+  $("#cHint").textContent=cur.emoji+"  "+cur.meaning;
+  const chars=lettersOf(cur.word);
+  cSlots=chars.map(()=>null);
+  cLetters=scrambleLetters(chars).map((ch,i)=>({ch, id:i, used:false}));
+  // ensure not already solved
+  let tries=0;
+  while(cLetters.map(L=>L.ch).join("")===cur.word && tries<20){
+    cLetters=scrambleLetters(chars).map((ch,i)=>({ch, id:i, used:false}));
+    tries++;
+  }
+  drawSlots();
+  drawTray();
+  const tip=$("#cType");
+  tip.value="";
+  tip.focus({preventScroll:true});
+}
+function drawSlots(){
+  const box=$("#cSlots");
+  box.innerHTML="";
+  cSlots.forEach((ch,i)=>{
+    const s=document.createElement("div");
+    s.className="slot"+(ch!==null?" filled":"");
+    if(ch===" ") s.textContent="␣";
+    else s.textContent=ch||"";
+    s.addEventListener("click",()=>popSlot(i));
+    box.appendChild(s);
+  });
+}
+function drawTray(){
+  const box=$("#cTray");
+  box.innerHTML="";
+  cLetters.forEach(L=>{
+    const chip=document.createElement("button");
+    chip.type="button";
+    chip.className="chip"+(L.used?" used":"");
+    chip.textContent=L.ch===" "?"␣":L.ch;
+    chip.addEventListener("click",()=>tapLetter(L));
+    box.appendChild(chip);
+  });
+}
+function tapLetter(L){
+  if(cLocked||L.used) return;
+  startTimer();
+  const idx=cSlots.findIndex(x=>x===null);
+  if(idx<0) return;
+  cSlots[idx]=L.ch;
+  L.used=true;
+  drawSlots();
+  drawTray();
+  syncTypeFromSlots();
+  checkCComplete();
+}
+function popSlot(i){
+  if(cLocked) return;
+  const ch=cSlots[i];
+  if(ch===null) return;
+  cSlots[i]=null;
+  // free one matching unused letter of that ch that is marked used
+  const L=cLetters.find(x=>x.used && x.ch===ch);
+  if(L) L.used=false;
+  drawSlots();
+  drawTray();
+  syncTypeFromSlots();
+}
+function syncTypeFromSlots(){
+  const filled=cSlots.every(x=>x!==null);
+  $("#cType").value=filled?cSlots.join(""):cSlots.map(x=>x===null?"":x).join("");
+}
+function checkCComplete(){
+  if(cSlots.some(x=>x===null)) return;
+  const built=cSlots.join("");
+  const cur=byId(cOrder[ci]);
+  if(built===cur.word){
+    cLocked=true;
+    cScore++;
+    $("#cScore").textContent="Score: "+cScore;
+    $("#cFb").textContent="Correct! ✓  "+cur.word;
+    $("#cFb").className="feedback ok";
+    $("#cBar").style.width((((ci+1)/cOrder.length)*100)+"%");
+    celebrate();
+    setTimeout(()=>advanceC(),900);
+  } else {
+    $("#cFb").textContent="Not yet — keep trying!";
+    $("#cFb").className="feedback bad";
+  }
+}
+function advanceC(){
+  if(timerLeft<=0) return;
+  ci++;
+  if(ci>=cOrder.length){
+    stopTimer();
+    $("#cBar").style.width="100%";
+    $("#cFb").textContent="All words done! Score: "+cScore+" · Time left: "+timerLeft+"s";
+    $("#cFb").className="feedback ok";
+    $("#cDone").classList.remove("hide");
+    $("#cDone").textContent="Finish ▶";
+    celebrate();
+  } else {
+    renderC();
+  }
+}
+$("#cClear").addEventListener("click",()=>{
+  if(cLocked) return;
+  cSlots=cSlots.map(()=>null);
+  cLetters.forEach(L=>L.used=false);
+  drawSlots(); drawTray();
+  $("#cType").value="";
+  $("#cFb").textContent="";
+});
+$("#cSkip").addEventListener("click",()=>{
+  if(timerLeft<=0) return;
+  startTimer();
+  const cur=byId(cOrder[ci]);
+  $("#cFb").textContent="Skipped — answer: "+cur.word;
+  $("#cFb").className="feedback bad";
+  cLocked=true;
+  setTimeout(()=>advanceC(),700);
+});
+$("#cDone").addEventListener("click",()=>{
+  stopTimer();
+  afterPartDone("C");
+});
+$("#cType").addEventListener("input",e=>{
+  if(cLocked) return;
+  startTimer();
+  const cur=byId(cOrder[ci]);
+  let v=e.target.value.toLowerCase();
+  // allow only letters and spaces matching target charset loosely
+  const target=cur.word;
+  if(v.length>target.length) v=v.slice(0,target.length);
+  e.target.value=v;
+  // map typed string onto slots & tray
+  const needed=target.split("");
+  cSlots=needed.map((_,i)=> i<v.length ? v[i] : null);
+  // mark tray used greedily
+  cLetters.forEach(L=>L.used=false);
+  for(const ch of v){
+    const L=cLetters.find(x=>!x.used && x.ch===ch);
+    if(L) L.used=true;
+  }
+  drawSlots(); drawTray();
+  if(v===target){
+    cSlots=target.split("");
+    checkCComplete();
+  }
+});
+
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  if (window.HCY_SPEECH) HCY_SPEECH.ensureUnlock(document.body);
+  var header = document.querySelector('.header') || document.querySelector('.wrap') || document.body;
+  if (window.HCY_DEEPLINKS && header) {
+    var row = document.createElement('div');
+    row.style.cssText='display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0';
+    HCY_DEEPLINKS.mountButton(row,{key:'T03',preset:'u3',label:'📖 Quotes & Emotions'});
+    // T02 may be missing on disk — button still offered; opens path if present later
+    HCY_DEEPLINKS.mountButton(row,{key:'T02',preset:'u3',label:'📖 Typhoon vs Hurricane'});
+    var sp=document.createElement('button'); sp.type='button'; sp.textContent='🔊 Speak';
+    sp.onclick=function(){
+      var t=(document.querySelector('h1,h2,.prompt,.card')||{}).textContent||'Weather vocabulary';
+      if(window.HCY_SPEECH) HCY_SPEECH.speak(t);
+    };
+    row.appendChild(sp);
+    header.appendChild(row);
+  }
+});
+</script>
+</body>
+</html>

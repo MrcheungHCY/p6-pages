@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Should / Shouldn't Split Zones</title>
+
+<link rel="stylesheet" href="../../../assets/fx-kit/css/hcy-fx.css" />
+<link rel="stylesheet" href="../../../assets/hcy-touch.css" />
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-motion.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-audio.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-three.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx.js"></script>
+<script src="../../../assets/character-library/hcy-chars.js"></script>
+<script src="../../../assets/hcy-touch.js"></script>
+<script src="../../banks/no-exam-filter.js"></script>
+
+<style>
+:root{--ink:#2a1830;--pink:#ff7ab6;--sky:#5ec8ff;--mint:#7dffb3;--yel:#ffe14a;--lilac:#b48cff;--cream:#fff8fb;--card:#ffffffee}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:"Comic Sans MS","Chalkboard SE","Nunito","Segoe UI Rounded",system-ui,sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;
+background:radial-gradient(circle at 10% 20%,rgba(255,122,182,.35) 0 20px,transparent 21px),radial-gradient(circle at 85% 15%,rgba(94,200,255,.4) 0 16px,transparent 17px),linear-gradient(165deg,#ffd6ea 0%,#fff3b0 40%,#c8ffe8 70%,#b8e8ff 100%)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background-image:radial-gradient(circle,#ff7ab6 1.6px,transparent 2px);background-size:40px 40px}
+.app{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:8px;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;background:var(--card);border:4px solid var(--ink);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--ink)}
+.title-block{display:flex;align-items:center;gap:10px}.title-block img.scene{width:56px;height:56px;object-fit:contain;animation:idleBob 1.5s ease-in-out infinite alternate}
+.title-block h1{font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.15}.title-block .mode{font-size:.75rem;font-weight:800;opacity:.75}
+.hud{display:flex;flex-wrap:wrap;gap:6px}
+.stat{padding:6px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-weight:900;font-size:clamp(.72rem,1.8vw,.92rem);box-shadow:0 2px 0 var(--ink)}
+.stat.timer{background:#b8e8ff}.stat.lives{background:#ffd0e8}.stat.streak{background:#ffe14a}.stat.p1{background:#ffb0d8}.stat.p2{background:#a8f0ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;font:inherit;font-weight:900;border:4px solid var(--ink);border-radius:999px;background:#ffb0d8;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 var(--ink);touch-action:none}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.btn-sky{background:#7ad4ff}.btn-mint{background:#7dffc0}.btn-yel{background:#ffe14a}.btn-lilac{background:#d4b8ff}
+.stage{flex:1;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:8px}
+.prompt-card{background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:12px 14px;box-shadow:0 4px 0 var(--ink);text-align:center}
+.prompt-card .label{font-size:.75rem;font-weight:800;opacity:.7}.prompt-card .prompt{font-size:clamp(1.05rem,3vw,1.5rem);font-weight:900;line-height:1.25}
+.prompt-card .hint{margin-top:6px;font-size:.85rem;font-weight:700;opacity:.75}
+.play{min-height:0;display:flex;gap:8px;align-items:stretch}
+.pad{flex:1;min-width:0;border:4px solid var(--ink);border-radius:22px;background:#ffd6ea;box-shadow:0 5px 0 var(--ink);padding:10px;display:flex;flex-direction:column;gap:8px;touch-action:none}
+.pad.p2{background:#c8f0ff}.pad h2{font-size:clamp(.9rem,2vw,1.05rem);text-align:center}
+.grid{display:grid;gap:8px;flex:1;min-height:0;align-content:start;overflow:auto;grid-template-columns:1fr}
+.choice,.chip{min-height:52px;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;font-weight:800;font-size:clamp(.82rem,2vw,1.02rem);cursor:pointer;touch-action:none;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center;justify-content:center;text-align:center}
+.choice.held,.chip.held,.lane.held,.corner.held,.zone.held{background:#ffe14a;transform:scale(.97)}
+.choice.ok,.chip.ok{background:#7dffb3}.choice.bad,.chip.bad{background:#ff9aac;animation:shake .35s ease}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;min-height:0}
+.zone{border:4px dashed var(--ink);border-radius:20px;padding:8px;min-height:100px;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.zone.should{background:#d8ffe8}.zone.shouldnt{background:#ffe0e8}.zone h3{text-align:center}
+.cards-pool{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px;max-height:40%;overflow:auto}
+.corner-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;flex:1;min-height:0}
+.corner{border:4px solid var(--ink);border-radius:18px;padding:8px;background:#fff;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.corner.before{background:#d4f0ff}.corner.during{background:#ffe8b0}.corner.after{background:#d8ffe0}.corner.never{background:#ffd0d8}
+.lane-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.lane{min-height:64px;border:4px solid var(--ink);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;touch-action:none;box-shadow:0 3px 0 var(--ink)}
+.footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.toast{position:fixed;left:50%;bottom:8vh;transform:translateX(-50%);background:#ff7ab6;color:#fff;font-weight:900;padding:10px 18px;border-radius:14px;border:3px solid var(--ink);z-index:50;pointer-events:none;opacity:0;transition:opacity .2s}.toast.on{opacity:1}
+#hcy-mascot-slot{position:fixed;right:8px;bottom:8px;width:110px;height:110px;z-index:40;pointer-events:none}
+.start-overlay{position:absolute;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(255,248,251,.9)}
+.start-card{background:#fff;border:5px solid var(--ink);border-radius:24px;padding:22px;max-width:520px;text-align:center;box-shadow:0 8px 0 var(--ink)}
+.start-card p{margin:10px 0 16px;font-weight:700;line-height:1.4}
+.blank{min-width:90px;min-height:48px;border:3px dashed var(--ink);border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:900;padding:6px 10px;margin:4px}
+.blank.p1{background:#ffb0d8;border-style:solid}.blank.p2{background:#a8f0ff;border-style:solid}
+.passage{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:800;line-height:1.6;text-align:left}
+@keyframes idleBob{0%{transform:translateY(0) rotate(-2deg)}100%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media(max-width:700px){.play{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="title-block">
+      <img class="scene" src="../../../assets/character-library/png/char-063.png" alt="" onerror="this.style.display='none'" />
+      <div><div class="mode">MODE 2 — should / shouldn't</div><h1>Should / Shouldn't Split Zones</h1></div>
+    </div>
+    <div class="hud">
+      <span class="stat" id="hud-q">0/0</span>
+      <span class="stat timer" id="hud-timer">⏱ —</span>
+      <span class="stat lives" id="hud-lives">♥ 3</span>
+      <span class="stat streak" id="hud-streak">🔥 0</span>
+      <span class="stat p1" id="hud-p1">P1 0</span>
+      <span class="stat p2" id="hud-p2">P2 0</span>
+    </div>
+  </div>
+  <div class="stage"><div class="prompt-card"><div class="label">should / shouldn't split zones</div><div class="prompt" id="prompt">…</div><div class="hint" id="hint"></div><div class="cards-pool" id="pool"></div></div>
+<div class="play"><div class="zones" style="flex:1"><div class="zone should" id="zone-should"><h3>SHOULD ✅</h3></div><div class="zone shouldnt" id="zone-shouldnt"><h3>SHOULDN'T ❌</h3></div></div></div></div>
+  <div class="footer">
+    <button class="btn btn-mint" id="btn-start" type="button">▶ Start</button>
+    <button class="btn btn-yel" id="btn-next" type="button">Next ▶</button>
+    <button class="btn btn-lilac" id="btn-reset" type="button">↺ Teacher Reset</button>
+  </div>
+</div>
+<div id="start-overlay" class="start-overlay"><div class="start-card"><h2>Should / Shouldn't Split Zones</h2><p>Sort cards into SHOULD vs SHOULDN'T zones. Two students can sort at once.</p>
+<button class="btn btn-sky" id="btn-start2" type="button">▶ Start Game</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="hcy-mascot-slot"></div>
+<script type="application/json" id="bank-json">{"meta":{"bank":"should","skill":"should","count":48,"primary_source":"P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx","also":["_targets.json","p6-conditionals.js","p6-u1-3-vocab.js","parallel-original"],"exclude":"每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)","item_schema":["id","prompt","choices|slots","answer","distractors","unit","skill","difficulty"],"scrubbed":"2026-11-04 Asia/Hong_Kong — exam stems removed"},"items":[{"id":"should-01","prompt":"Choose the best advice (bad/unsafe): Roy and Ken / eat too much meat.","answer":"Roy and Ken shouldn't eat too much meat.","distractors":["Roy and Ken should eat too much meat.","Roy and Ken ought eat too much meat.","Roy and Ken must to eat too much meat."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Roy and Ken ought eat too much meat.","Roy and Ken must to eat too much meat.","Roy and Ken shouldn't eat too much meat.","Roy and Ken should eat too much meat."],"source":"WS-A","modal":"shouldn't","phrase":"eat too much meat"},{"id":"should-02","prompt":"Choose the best advice (good/safe): Rose / cover her mouth.","answer":"Rose should cover her mouth.","distractors":["Rose shouldn't cover her mouth.","Rose ought cover her mouth.","Rose must to cover her mouth."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Rose ought cover her mouth.","Rose must to cover her mouth.","Rose shouldn't cover her mouth.","Rose should cover her mouth."],"source":"WS-A","modal":"should","phrase":"cover her mouth"},{"id":"should-03","prompt":"Choose the best advice (bad/unsafe): Henry / drink cold drinks.","answer":"Henry shouldn't drink cold drinks.","distractors":["Henry should drink cold drinks.","Henry ought drink cold drinks.","Henry must to drink cold drinks."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Henry ought drink cold drinks.","Henry shouldn't drink cold drinks.","Henry must to drink cold drinks.","Henry should drink cold drinks."],"source":"WS-A","modal":"shouldn't","phrase":"drink cold drinks"},{"id":"should-04","prompt":"Choose the best advice (good/safe): Aaron / keep his voice down.","answer":"Aaron should keep his voice down.","distractors":["Aaron shouldn't keep his voice down.","Aaron ought keep his voice down.","Aaron must to keep his voice down."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Aaron must to keep his voice down.","Aaron ought keep his voice down.","Aaron shouldn't keep his voice down.","Aaron should keep his voice down."],"source":"WS-A","modal":"should","phrase":"keep his voice down"},{"id":"should-05","prompt":"Choose the best advice (good/safe): Kelly / wear more clothes.","answer":"Kelly should wear more clothes.","distractors":["Kelly shouldn't wear more clothes.","Kelly ought wear more clothes.","Kelly must to wear more clothes."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Kelly should wear more clothes.","Kelly ought wear more clothes.","Kelly shouldn't wear more clothes.","Kelly must to wear more clothes."],"source":"WS-A","modal":"should","phrase":"wear more clothes"},{"id":"should-06","prompt":"Choose the best advice (bad/unsafe): Joey and Lucy / watch too much TV.","answer":"Joey and Lucy shouldn't watch too much TV.","distractors":["Joey and Lucy should watch too much TV.","Joey and Lucy ought watch too much TV.","Joey and Lucy must to watch too much TV."],"unit":"U1","skill":"should","difficulty":"easy","choices":["Joey and Lucy shouldn't watch too much TV.","Joey and Lucy should watch too much TV.","Joey and Lucy must to watch too much TV.","Joey and Lucy ought watch too much TV."],"source":"WS-A","modal":"shouldn't","phrase":"watch too much TV"},{"id":"should-07","prompt":"Choose the best advice (good/safe): We / watch our weight.","answer":"We should watch our weight.","distractors":["We shouldn't watch our weight.","We ought watch our weight.","We must to watch our weight."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We must to watch our weight.","We shouldn't watch our weight.","We should watch our weight.","We ought watch our weight."],"source":"WS-B","modal":"should","phrase":"watch our weight"},{"id":"should-08","prompt":"Choose the best advice (bad/unsafe): We / go to bed late.","answer":"We shouldn't go to bed late.","distractors":["We should go to bed late.","We ought go to bed late.","We must to go to bed late."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We should go to bed late.","We ought go to bed late.","We must to go to bed late.","We shouldn't go to bed late."],"source":"WS-B","modal":"shouldn't","phrase":"go to bed late"},{"id":"should-09","prompt":"Choose the best advice (good/safe): We / have body check-ups regularly.","answer":"We should have body check-ups regularly.","distractors":["We shouldn't have body check-ups regularly.","We ought have body check-ups regularly.","We must to have body check-ups regularly."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We shouldn't have body check-ups regularly.","We must to have body check-ups regularly.","We should have body check-ups regularly.","We ought have body check-ups regularly."],"source":"WS-B","modal":"should","phrase":"have body check-ups regularly"},{"id":"should-10","prompt":"Choose the best advice (good/safe): We / have a healthy diet.","answer":"We should have a healthy diet.","distractors":["We shouldn't have a healthy diet.","We ought have a healthy diet.","We must to have a healthy diet."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We ought have a healthy diet.","We should have a healthy diet.","We must to have a healthy diet.","We shouldn't have a healthy diet."],"source":"WS-B","modal":"should","phrase":"have a healthy diet"},{"id":"should-11","prompt":"Choose the best advice (bad/unsafe): We / drink too many soft drinks.","answer":"We shouldn't drink too many soft drinks.","distractors":["We should drink too many soft drinks.","We ought drink too many soft drinks.","We must to drink too many soft drinks."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We shouldn't drink too many soft drinks.","We should drink too many soft drinks.","We must to drink too many soft drinks.","We ought drink too many soft drinks."],"source":"WS-B","modal":"shouldn't","phrase":"drink too many soft drinks"},{"id":"should-12","prompt":"Choose the best advice (bad/unsafe): We / eat too much oily food.","answer":"We shouldn't eat too much oily food.","distractors":["We should eat too much oily food.","We ought eat too much oily food.","We must to eat too much oily food."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We should eat too much oily food.","We ought eat too much oily food.","We must to eat too much oily food.","We shouldn't eat too much oily food."],"source":"WS-B","modal":"shouldn't","phrase":"eat too much oily food"},{"id":"should-13","prompt":"Choose the best advice (good/safe): We / drink plenty of water.","answer":"We should drink plenty of water.","distractors":["We shouldn't drink plenty of water.","We ought drink plenty of water.","We must to drink plenty of water."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We must to drink plenty of water.","We should drink plenty of water.","We shouldn't drink plenty of water.","We ought drink plenty of water."],"source":"WS-B","modal":"should","phrase":"drink plenty of water"},{"id":"should-14","prompt":"Choose the best advice (good/safe): We / do exercise regularly.","answer":"We should do exercise regularly.","distractors":["We shouldn't do exercise regularly.","We ought do exercise regularly.","We must to do exercise regularly."],"unit":"U1","skill":"should","difficulty":"easy","choices":["We shouldn't do exercise regularly.","We must to do exercise regularly.","We should do exercise regularly.","We ought do exercise regularly."],"source":"WS-B","modal":"should","phrase":"do exercise regularly"},{"id":"should-15","prompt":"Choose the best advice (good/safe): Tom / see a doctor.","answer":"Tom should see a doctor.","distractors":["Tom shouldn't see a doctor.","Tom ought see a doctor.","Tom must to see a doctor."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Tom must to see a doctor.","Tom should see a doctor.","Tom shouldn't see a doctor.","Tom ought see a doctor."],"source":"parallel","modal":"should","phrase":"see a doctor"},{"id":"should-16","prompt":"Choose the best advice (bad/unsafe): Lily / share her chopsticks when she is sick.","answer":"Lily shouldn't share her chopsticks when she is sick.","distractors":["Lily should share her chopsticks when she is sick.","Lily ought share her chopsticks when she is sick.","Lily must to share her chopsticks when she is sick."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Lily ought share her chopsticks when she is sick.","Lily should share her chopsticks when she is sick.","Lily shouldn't share her chopsticks when she is sick.","Lily must to share her chopsticks when she is sick."],"source":"parallel","modal":"shouldn't","phrase":"share her chopsticks when she is sick"},{"id":"should-17","prompt":"Choose the best advice (good/safe): Max / wash fruit before eating.","answer":"Max should wash fruit before eating.","distractors":["Max shouldn't wash fruit before eating.","Max ought wash fruit before eating.","Max must to wash fruit before eating."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Max should wash fruit before eating.","Max shouldn't wash fruit before eating.","Max must to wash fruit before eating.","Max ought wash fruit before eating."],"source":"parallel","modal":"should","phrase":"wash fruit before eating"},{"id":"should-18","prompt":"Choose the best advice (bad/unsafe): Nina / skip breakfast.","answer":"Nina shouldn't skip breakfast.","distractors":["Nina should skip breakfast.","Nina ought skip breakfast.","Nina must to skip breakfast."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Nina shouldn't skip breakfast.","Nina ought skip breakfast.","Nina should skip breakfast.","Nina must to skip breakfast."],"source":"parallel","modal":"shouldn't","phrase":"skip breakfast"},{"id":"should-19","prompt":"Choose the best advice (good/safe): Owen / rest when he has a fever.","answer":"Owen should rest when he has a fever.","distractors":["Owen shouldn't rest when he has a fever.","Owen ought rest when he has a fever.","Owen must to rest when he has a fever."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Owen should rest when he has a fever.","Owen shouldn't rest when he has a fever.","Owen must to rest when he has a fever.","Owen ought rest when he has a fever."],"source":"parallel","modal":"should","phrase":"rest when he has a fever"},{"id":"should-20","prompt":"Choose the best advice (bad/unsafe): Patty / touch her eyes with dirty hands.","answer":"Patty shouldn't touch her eyes with dirty hands.","distractors":["Patty should touch her eyes with dirty hands.","Patty ought touch her eyes with dirty hands.","Patty must to touch her eyes with dirty hands."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Patty ought touch her eyes with dirty hands.","Patty should touch her eyes with dirty hands.","Patty must to touch her eyes with dirty hands.","Patty shouldn't touch her eyes with dirty hands."],"source":"parallel","modal":"shouldn't","phrase":"touch her eyes with dirty hands"},{"id":"should-21","prompt":"Choose the best advice (good/safe): Quinn / cover her sneeze with a tissue.","answer":"Quinn should cover her sneeze with a tissue.","distractors":["Quinn shouldn't cover her sneeze with a tissue.","Quinn ought cover her sneeze with a tissue.","Quinn must to cover her sneeze with a tissue."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Quinn ought cover her sneeze with a tissue.","Quinn should cover her sneeze with a tissue.","Quinn must to cover her sneeze with a tissue.","Quinn shouldn't cover her sneeze with a tissue."],"source":"parallel","modal":"should","phrase":"cover her sneeze with a tissue"},{"id":"should-22","prompt":"Choose the best advice (bad/unsafe): Ray / drink ice water with a sore throat.","answer":"Ray shouldn't drink ice water with a sore throat.","distractors":["Ray should drink ice water with a sore throat.","Ray ought drink ice water with a sore throat.","Ray must to drink ice water with a sore throat."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Ray should drink ice water with a sore throat.","Ray must to drink ice water with a sore throat.","Ray ought drink ice water with a sore throat.","Ray shouldn't drink ice water with a sore throat."],"source":"parallel","modal":"shouldn't","phrase":"drink ice water with a sore throat"},{"id":"should-23","prompt":"Choose the best advice (good/safe): Sue / keep the classroom clean.","answer":"Sue should keep the classroom clean.","distractors":["Sue shouldn't keep the classroom clean.","Sue ought keep the classroom clean.","Sue must to keep the classroom clean."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Sue should keep the classroom clean.","Sue shouldn't keep the classroom clean.","Sue ought keep the classroom clean.","Sue must to keep the classroom clean."],"source":"parallel","modal":"should","phrase":"keep the classroom clean"},{"id":"should-24","prompt":"Choose the best advice (bad/unsafe): Ted / leave wet clothes on the floor.","answer":"Ted shouldn't leave wet clothes on the floor.","distractors":["Ted should leave wet clothes on the floor.","Ted ought leave wet clothes on the floor.","Ted must to leave wet clothes on the floor."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Ted ought leave wet clothes on the floor.","Ted should leave wet clothes on the floor.","Ted shouldn't leave wet clothes on the floor.","Ted must to leave wet clothes on the floor."],"source":"parallel","modal":"shouldn't","phrase":"leave wet clothes on the floor"},{"id":"should-25","prompt":"Choose the best advice (good/safe): Una / pack an umbrella on rainy days.","answer":"Una should pack an umbrella on rainy days.","distractors":["Una shouldn't pack an umbrella on rainy days.","Una ought pack an umbrella on rainy days.","Una must to pack an umbrella on rainy days."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Una must to pack an umbrella on rainy days.","Una shouldn't pack an umbrella on rainy days.","Una ought pack an umbrella on rainy days.","Una should pack an umbrella on rainy days."],"source":"parallel","modal":"should","phrase":"pack an umbrella on rainy days"},{"id":"should-26","prompt":"Choose the best advice (bad/unsafe): Vince / run on wet floors.","answer":"Vince shouldn't run on wet floors.","distractors":["Vince should run on wet floors.","Vince ought run on wet floors.","Vince must to run on wet floors."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Vince should run on wet floors.","Vince shouldn't run on wet floors.","Vince must to run on wet floors.","Vince ought run on wet floors."],"source":"parallel","modal":"shouldn't","phrase":"run on wet floors"},{"id":"should-27","prompt":"Choose the best advice (good/safe): Willa / help classmates who feel unwell.","answer":"Willa should help classmates who feel unwell.","distractors":["Willa shouldn't help classmates who feel unwell.","Willa ought help classmates who feel unwell.","Willa must to help classmates who feel unwell."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Willa must to help classmates who feel unwell.","Willa ought help classmates who feel unwell.","Willa shouldn't help classmates who feel unwell.","Willa should help classmates who feel unwell."],"source":"parallel","modal":"should","phrase":"help classmates who feel unwell"},{"id":"should-28","prompt":"Choose the best advice (bad/unsafe): York / play phone games all night.","answer":"York shouldn't play phone games all night.","distractors":["York should play phone games all night.","York ought play phone games all night.","York must to play phone games all night."],"unit":"U1","skill":"should","difficulty":"mid","choices":["York should play phone games all night.","York must to play phone games all night.","York shouldn't play phone games all night.","York ought play phone games all night."],"source":"parallel","modal":"shouldn't","phrase":"play phone games all night"},{"id":"should-29","prompt":"Choose the best advice (good/safe): Zoe / eat more vegetables.","answer":"Zoe should eat more vegetables.","distractors":["Zoe shouldn't eat more vegetables.","Zoe ought eat more vegetables.","Zoe must to eat more vegetables."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Zoe must to eat more vegetables.","Zoe should eat more vegetables.","Zoe shouldn't eat more vegetables.","Zoe ought eat more vegetables."],"source":"parallel","modal":"should","phrase":"eat more vegetables"},{"id":"should-30","prompt":"Choose the best advice (bad/unsafe): Alan / shout in the library.","answer":"Alan shouldn't shout in the library.","distractors":["Alan should shout in the library.","Alan ought shout in the library.","Alan must to shout in the library."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Alan should shout in the library.","Alan must to shout in the library.","Alan shouldn't shout in the library.","Alan ought shout in the library."],"source":"parallel","modal":"shouldn't","phrase":"shout in the library"},{"id":"should-31","prompt":"Choose the best advice (good/safe): Bella / wash hands after PE.","answer":"Bella should wash hands after PE.","distractors":["Bella shouldn't wash hands after PE.","Bella ought wash hands after PE.","Bella must to wash hands after PE."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Bella should wash hands after PE.","Bella must to wash hands after PE.","Bella shouldn't wash hands after PE.","Bella ought wash hands after PE."],"source":"parallel","modal":"should","phrase":"wash hands after PE"},{"id":"should-32","prompt":"Choose the best advice (bad/unsafe): Carl / eat snacks instead of lunch.","answer":"Carl shouldn't eat snacks instead of lunch.","distractors":["Carl should eat snacks instead of lunch.","Carl ought eat snacks instead of lunch.","Carl must to eat snacks instead of lunch."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Carl should eat snacks instead of lunch.","Carl must to eat snacks instead of lunch.","Carl shouldn't eat snacks instead of lunch.","Carl ought eat snacks instead of lunch."],"source":"parallel","modal":"shouldn't","phrase":"eat snacks instead of lunch"},{"id":"should-33","prompt":"Choose the best advice (good/safe): Dora / go to bed before ten.","answer":"Dora should go to bed before ten.","distractors":["Dora shouldn't go to bed before ten.","Dora ought go to bed before ten.","Dora must to go to bed before ten."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Dora ought go to bed before ten.","Dora shouldn't go to bed before ten.","Dora must to go to bed before ten.","Dora should go to bed before ten."],"source":"parallel","modal":"should","phrase":"go to bed before ten"},{"id":"should-34","prompt":"Choose the best advice (bad/unsafe): Eli / copy friends' homework.","answer":"Eli shouldn't copy friends' homework.","distractors":["Eli should copy friends' homework.","Eli ought copy friends' homework.","Eli must to copy friends' homework."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Eli must to copy friends' homework.","Eli ought copy friends' homework.","Eli should copy friends' homework.","Eli shouldn't copy friends' homework."],"source":"parallel","modal":"shouldn't","phrase":"copy friends' homework"},{"id":"should-35","prompt":"Choose the best advice (good/safe): Fay / drink warm water when she has a cough.","answer":"Fay should drink warm water when she has a cough.","distractors":["Fay shouldn't drink warm water when she has a cough.","Fay ought drink warm water when she has a cough.","Fay must to drink warm water when she has a cough."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Fay ought drink warm water when she has a cough.","Fay shouldn't drink warm water when she has a cough.","Fay must to drink warm water when she has a cough.","Fay should drink warm water when she has a cough."],"source":"parallel","modal":"should","phrase":"drink warm water when she has a cough"},{"id":"should-36","prompt":"Choose the best advice (bad/unsafe): Gus / stand near windows in a typhoon.","answer":"Gus shouldn't stand near windows in a typhoon.","distractors":["Gus should stand near windows in a typhoon.","Gus ought stand near windows in a typhoon.","Gus must to stand near windows in a typhoon."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Gus should stand near windows in a typhoon.","Gus shouldn't stand near windows in a typhoon.","Gus must to stand near windows in a typhoon.","Gus ought stand near windows in a typhoon."],"source":"parallel","modal":"shouldn't","phrase":"stand near windows in a typhoon"},{"id":"should-37","prompt":"Choose the best advice (good/safe): Holly / listen to the weather report.","answer":"Holly should listen to the weather report.","distractors":["Holly shouldn't listen to the weather report.","Holly ought listen to the weather report.","Holly must to listen to the weather report."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Holly ought listen to the weather report.","Holly should listen to the weather report.","Holly shouldn't listen to the weather report.","Holly must to listen to the weather report."],"source":"parallel","modal":"should","phrase":"listen to the weather report"},{"id":"should-38","prompt":"Choose the best advice (bad/unsafe): Ian / go hiking during Signal 8.","answer":"Ian shouldn't go hiking during Signal 8.","distractors":["Ian should go hiking during Signal 8.","Ian ought go hiking during Signal 8.","Ian must to go hiking during Signal 8."],"unit":"U1","skill":"should","difficulty":"mid","choices":["Ian ought go hiking during Signal 8.","Ian shouldn't go hiking during Signal 8.","Ian should go hiking during Signal 8.","Ian must to go hiking during Signal 8."],"source":"parallel","modal":"shouldn't","phrase":"go hiking during Signal 8"},{"id":"should-39","prompt":"When you cough, you ____ cover your mouth.","answer":"should","distractors":["shouldn't","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","choices":["should","shouldn't","ought","must to"],"source":"gap","form":"gap"},{"id":"should-40","prompt":"You ____ eat too much fried food.","answer":"shouldn't","distractors":["should","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","choices":["should","shouldn't","ought","must to"],"source":"gap","form":"gap"},{"id":"should-41","prompt":"To stay healthy, we ____ drink plenty of water.","answer":"should","distractors":["shouldn't","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","choices":["should","shouldn't","ought","must to"],"source":"gap","form":"gap"},{"id":"should-42","prompt":"We ____ go to bed late every night.","answer":"shouldn't","distractors":["should","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","choices":["should","shouldn't","ought","must to"],"source":"gap","form":"gap"},{"id":"should-43","prompt":"Choose the best advice (good/safe): Mira / rinse her lunchbox every day.","answer":"Mira should rinse her lunchbox every day.","distractors":["Mira shouldn't rinse her lunchbox every day.","Mira ought rinse her lunchbox every day.","Mira must to rinse her lunchbox every day."],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","modal":"should","phrase":"rinse her lunchbox every day","choices":["Mira shouldn't rinse her lunchbox every day.","Mira ought rinse her lunchbox every day.","Mira must to rinse her lunchbox every day.","Mira should rinse her lunchbox every day."]},{"id":"should-44","prompt":"Choose the best advice (bad/unsafe): Noel / share earphones when he has a cold.","answer":"Noel shouldn't share earphones when he has a cold.","distractors":["Noel should share earphones when he has a cold.","Noel ought share earphones when he has a cold.","Noel must to share earphones when he has a cold."],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","modal":"shouldn't","phrase":"share earphones when he has a cold","choices":["Noel should share earphones when he has a cold.","Noel ought share earphones when he has a cold.","Noel must to share earphones when he has a cold.","Noel shouldn't share earphones when he has a cold."]},{"id":"should-45","prompt":"Choose the best advice (good/safe): Pia / stretch after sitting for homework.","answer":"Pia should stretch after sitting for homework.","distractors":["Pia shouldn't stretch after sitting for homework.","Pia ought stretch after sitting for homework.","Pia must to stretch after sitting for homework."],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","modal":"should","phrase":"stretch after sitting for homework","choices":["Pia must to stretch after sitting for homework.","Pia should stretch after sitting for homework.","Pia shouldn't stretch after sitting for homework.","Pia ought stretch after sitting for homework."]},{"id":"should-46","prompt":"Choose the best advice (bad/unsafe): Quinn / leave half-eaten fruit in the desk.","answer":"Quinn shouldn't leave half-eaten fruit in the desk.","distractors":["Quinn should leave half-eaten fruit in the desk.","Quinn ought leave half-eaten fruit in the desk.","Quinn must to leave half-eaten fruit in the desk."],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","modal":"shouldn't","phrase":"leave half-eaten fruit in the desk","choices":["Quinn must to leave half-eaten fruit in the desk.","Quinn shouldn't leave half-eaten fruit in the desk.","Quinn should leave half-eaten fruit in the desk.","Quinn ought leave half-eaten fruit in the desk."]},{"id":"should-47","prompt":"When you feel dizzy, you ____ sit down and rest.","answer":"should","distractors":["shouldn't","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","form":"gap","choices":["must to","should","shouldn't","ought"]},{"id":"should-48","prompt":"You ____ copy a friend's medicine dosage.","answer":"shouldn't","distractors":["should","ought","must to"],"unit":"U1","skill":"should","difficulty":"easy","source":"parallel","form":"gap","choices":["must to","shouldn't","should","ought"]}]}</script>
+<script>
+
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('on')},1100)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=(Math.random()*(i+1))|0;var x=a[i];a[i]=a[j];a[j]=x}return a}
+function pickN(a,n){return shuffle(a).slice(0,Math.min(n,a.length))}
+function GameShell(o){
+  var s=this;s.lives=o.lives||3;s.max=s.lives;s.streak=0;s.s1=0;s.s2=0;s.sec=o.timerSec||18;s.left=0;s.tid=null;s.run=false;s.qi=0;s.items=o.items||[];
+  s.hud=function(){$('hud-timer').textContent='⏱ '+s.left+'s';$('hud-lives').textContent='♥ '+s.lives;$('hud-streak').textContent='🔥 '+s.streak;$('hud-p1').textContent='P1 '+s.s1;$('hud-p2').textContent='P2 '+s.s2;$('hud-q').textContent=(s.items.length?(s.qi+1):0)+'/'+s.items.length};
+  s.startTimer=function(){clearInterval(s.tid);s.left=s.sec;s.hud();s.tid=setInterval(function(){s.left--;s.hud();if(s.left<=0){clearInterval(s.tid);if(s.onTimeout)s.onTimeout()}},1000)};
+  s.stop=function(){clearInterval(s.tid)};
+  s.ok=function(p){s.streak++;if(p===2)s.s2++;else s.s1++;s.hud();try{HcyFx.correct()}catch(e){}toast('Nice!');};
+  s.bad=function(){s.streak=0;s.lives=Math.max(0,s.lives-1);s.hud();try{HcyFx.wrong()}catch(e){}toast(s.lives?'Oops':'Out of lives');};
+  s.reset=function(){s.stop();s.lives=s.max;s.streak=0;s.s1=0;s.s2=0;s.qi=0;s.run=false;s.hud();try{HcyFx.reset()}catch(e){};$('start-overlay').style.display='flex'};
+}
+function bootFx(){try{HcyFx.init({mascotMount:$('hcy-mascot-slot'),mascotMode:'3d'})}catch(e){}
+ document.body.addEventListener('pointerdown',function(){try{HcyFxAudio&&HcyFxAudio.unlock()}catch(e){}},{once:true});}
+
+/* Aaron HARD RULE: no P6 GE 1st Term Exam 2026-2027 paper items */
+function isExamPaperItem(it){
+  if(!it || typeof it!=="object") return false;
+  var s=String(it.source||""), u=String(it.unit||""), tag=String(it.tag||""), id=String(it.id||""), p=String(it.prompt||"");
+  var origin=String(it.origin||""), section=String(it.section||"");
+  var blob=(s+" "+u+" "+tag+" "+id+" "+p+" "+origin).toLowerCase();
+  if(/^exam/i.test(s)) return true;
+  if(/exam\s*[a-j]/i.test(blob)) return true;
+  if(/\bexam[a-j]\b/i.test(blob)) return true;
+  if(/u\d\s*\/\s*exam/i.test(u)) return true;
+  if(/typhoon-parallel|examc-parallel|exam-parallel/i.test(tag+" "+origin)) return true;
+  if(/\[exam\b/i.test(p) || /\[exam\b/i.test(id)) return true;
+  if((section==="F"||section==="H") && (/exam/i.test(s+u) || /\[exam/i.test(p))) return true;
+  return false;
+}
+function filterNoExamItems(arr){
+  if(!Array.isArray(arr)) return [];
+  return arr.filter(function(it){ return !isExamPaperItem(it); });
+}
+function showExamQuarantine(msg){
+  var banner=document.getElementById("exam-quarantine-banner");
+  if(!banner){
+    banner=document.createElement("div");
+    banner.id="exam-quarantine-banner";
+    banner.setAttribute("role","status");
+    banner.style.cssText="position:sticky;top:0;z-index:9999;background:#7f1d1d;color:#fff;padding:12px 16px;font:600 15px/1.4 system-ui,sans-serif;text-align:center;border-bottom:3px solid #fbbf24;";
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+  banner.textContent=msg;
+  ["btn-start","btn-start2"].forEach(function(id){
+    var b=document.getElementById(id);
+    if(b){ b.disabled=true; b.style.opacity="0.45"; b.style.pointerEvents="none"; b.textContent="0 items — exam bank removed"; }
+  });
+  var n=document.querySelector("#start-overlay .start-card p");
+  if(n) n.textContent=msg+" · 0 playable items.";
+}
+
+function parseBankPayload(data){
+  if(!data) return [];
+  if(Array.isArray(data)) return data;
+  if(data.items && Array.isArray(data.items)) return data.items;
+  return [];
+}
+function loadFatBank(fileName, normalizeFn, onReady){
+  function finish(raw){
+    var payloadItems = filterNoExamItems(parseBankPayload(raw));
+    var items = normalizeFn(payloadItems);
+    if(!items.length){
+      try{
+        var emb = filterNoExamItems(parseBankPayload(JSON.parse($("bank-json").textContent)));
+        items = normalizeFn(emb);
+      }catch(e){ items=[]; }
+    }
+    onReady(shuffle(items));
+  }
+  var embedded = null;
+  try{ embedded = JSON.parse($("bank-json").textContent); }catch(e){ embedded = {items:[]}; }
+  var tryFetch = (location.protocol !== "file:");
+  if(!tryFetch){ finish(embedded); return; }
+  fetch("../../banks/"+fileName).then(function(r){ if(!r.ok) throw new Error("bad"); return r.json(); })
+    .then(function(data){ finish(data); })
+    .catch(function(){ finish(embedded); });
+}
+
+
+
+var BANK=[], G=null, cur=null, lock=false, holding={};
+function normalizeShould(raw){
+  return raw.filter(function(it){
+    var u=String(it.unit||''); var s=String(it.source||'');
+    if(s==='ExamC' || u.indexOf('ExamC')>=0) return false;
+    return true;
+  }).map(function(it){
+    var modal=it.modal, phrase=it.phrase, ans=it.answer||'';
+    if(!modal || !phrase){
+      var m=ans.match(/\b(shouldn'?t|should)\b/i);
+      modal=m?m[1].toLowerCase().replace("’","'"):'should';
+      if(modal==="shouldn't"||modal==="shouldnt") modal="shouldn't";
+      phrase=ans.replace(/^.*?\bshouldn'?t\s+/i,'').replace(/^.*?\bshould\s+/i,'').replace(/\.$/,'').trim();
+    }
+    var who=(it.prompt||'').split('/')[0];
+    who=who.replace(/^Choose[^:]*:\s*/i,'').trim();
+    if(who.length>40){
+      var wm=ans.match(/^(.+?)\s+should/i); who=wm?wm[1]:'Someone';
+    }
+    var mark=(modal==="shouldn't")?'bad':'good';
+    return {id:it.id, who:who, modal:modal, phrase:phrase, mark:mark, answer:ans};
+  }).filter(function(x){return x.phrase});
+}
+function paint(){cur=G.items[G.qi%G.items.length];lock=false;holding={};
+ $('prompt').textContent=(cur.who?cur.who+': ':'')+cur.phrase;
+ $('hint').textContent="Sort into SHOULD or SHOULDN'T — two can sort at once";
+ var pool=$('pool'); if(pool) pool.innerHTML='';
+ var distractors=pickN(BANK.filter(function(x){return x.phrase!==cur.phrase}),3).concat([cur]);
+ shuffle(distractors).forEach(function(it){
+  var c=document.createElement('button');c.type='button';c.className='chip';c.textContent=it.who+': '+it.phrase;c.dataset.modal=it.modal;c.dataset.phrase=it.phrase;
+  c.addEventListener('pointerdown',function(e){e.preventDefault();if(lock||!G.run)return;try{c.setPointerCapture(e.pointerId)}catch(err){}c.classList.add('held');holding[e.pointerId]={el:c,modal:it.modal,phrase:it.phrase,player:e.clientX<window.innerWidth/2?1:2};});
+  c.addEventListener('pointerup',function(e){c.classList.remove('held');delete holding[e.pointerId]});
+  if(pool) pool.appendChild(c);
+ });
+ ['zone-should','zone-shouldnt'].forEach(function(zid){
+  var z=$(zid); if(!z) return;
+  z.onpointerdown=function(e){e.preventDefault(); if(lock||!G.run)return;
+   var ids=Object.keys(holding); if(!ids.length){z.classList.add('held'); setTimeout(function(){z.classList.remove('held')},150); return}
+   var h=holding[ids[ids.length-1]];
+   var want=(zid==="zone-should")?"should":"shouldn't";
+   var ok=(h.modal===want);
+   if(h.phrase===cur.phrase){lock=true;G.stop(); if(ok){h.el.classList.add('ok');G.ok(h.player); z.appendChild(h.el)} else {h.el.classList.add('bad');G.bad()} setTimeout(next,700)}
+   else {
+     if(ok){h.el.classList.add('ok');G.ok(h.player); try{HcyFx.stamp('Sort!')}catch(e){} z.appendChild(h.el)}
+     else {h.el.classList.add('bad');G.bad()}
+   }
+  };
+ });
+ G.startTimer();
+}
+function next(){if(G.lives<=0)return;G.qi++;if(G.qi>=G.items.length)G.qi=0;paint()}
+function start(){G.run=true;$('start-overlay').style.display='none';G.qi=0;G.lives=G.max;G.streak=0;G.s1=0;G.s2=0;G.items=shuffle(BANK);paint()}
+function bootGame(items){
+  BANK=items; G=new GameShell({items:BANK,timerSec:20});
+  G.onTimeout=function(){G.bad();next()};
+  $('btn-start').onclick=$('btn-start2').onclick=start;
+  $('btn-reset').onclick=function(){G.reset()};
+  $('btn-next').onclick=function(){if(G.run)next()};
+  bootFx();G.hud();
+  var n=$('start-overlay').querySelector('.start-card p');
+  if(n) n.textContent='Should / Shouldn\'t zones · bank '+BANK.length+' (U1 / non-ExamC).';
+}
+loadFatBank('should.json', normalizeShould, bootGame);
+
+</script>
+</body>
+</html>

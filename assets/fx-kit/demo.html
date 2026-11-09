@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-hcy-style="legacy" data-hcy-quality="high">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HCY FX Kit — Demo (Legacy + spectrum animals)</title>
+  <link rel="stylesheet" href="css/hcy-fx.css" />
+  <link rel="stylesheet" href="css/hcy-fx-themes.css" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1.25rem 1rem 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 4vw, 1.85rem);
+      margin: 0 0 .35rem;
+      letter-spacing: .02em;
+    }
+    .sub { opacity: .75; margin-bottom: 1rem; font-weight: 600; }
+    #hcy-demo-stage {
+      min-height: min(58vh, 420px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      gap: .45rem;
+      padding: 1.25rem 1.5rem 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .meter {
+      font-size: 1.05rem;
+      font-weight: 800;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem .55rem;
+      justify-content: center;
+      z-index: 2;
+    }
+    .bar {
+      width: min(90%, 360px);
+      height: 16px;
+      border-radius: 999px;
+      background: rgba(128,128,128,.2);
+      border: 2px solid var(--hcy-ink, #2a1830);
+      overflow: hidden;
+      z-index: 2;
+    }
+    .bar > i {
+      display: block;
+      height: 100%;
+      width: 8%;
+      background: linear-gradient(90deg, var(--hcy-pink,#ff7ab6), var(--hcy-yellow,#ffe14a), var(--hcy-mint,#7dffb3), var(--hcy-sky,#5ec8ff));
+      transition: width .2s ease;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    button {
+      font: inherit;
+      font-weight: 800;
+      padding: .65rem 1.1rem;
+      cursor: pointer;
+    }
+    button:active { transform: translateY(2px); }
+    button.mute[aria-pressed="true"] { filter: grayscale(.6); opacity: .8; }
+    .sliders {
+      padding: .9rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .sliders label {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-weight: 700;
+      margin: .35rem 0;
+    }
+    .sliders input[type=range] { flex: 1; }
+    .note {
+      font-size: .9rem;
+      line-height: 1.45;
+      border-radius: 12px;
+      padding: .75rem 1rem;
+      border-style: dashed;
+    }
+    .note code { background: rgba(255,255,255,.5); padding: .1em .35em; border-radius: 6px; }
+    .pips { display: flex; gap: 6px; margin-top: .25rem; z-index: 2; }
+    .pips span {
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 2px solid var(--hcy-ink,#2a1830); background: rgba(128,128,128,.25);
+    }
+    .pips span.on { background: var(--hcy-pink,#ff7ab6); }
+    .pips span.hot { background: linear-gradient(135deg,var(--hcy-yellow,#ffe14a),var(--hcy-pink,#ff7ab6),var(--hcy-sky,#5ec8ff)); }
+    .hcy-mascot.is-mode-3d .hcy-mascot-aura { opacity: .28; }
+    #ui-style-name { font-weight: 800; opacity: .85; }
+    #hcy-char-picker {
+      background: var(--hcy-stage-bg, rgba(255,255,255,.88));
+      border: var(--hcy-stage-border, 3px solid #2a1830);
+      border-radius: var(--hcy-stage-radius, 22px);
+      box-shadow: var(--hcy-stage-shadow, 0 10px 0 rgba(42,24,48,.1));
+      padding: .85rem 1rem;
+      margin-bottom: 1rem;
+    }
+    #hcy-char-picker .hcy-char-title {
+      display: block;
+      font-weight: 800;
+      margin-bottom: .35rem;
+    }
+    #hcy-char-picker .hcy-char-hint {
+      font-size: .82rem;
+      font-weight: 600;
+      opacity: .72;
+      margin: 0 0 .55rem;
+      line-height: 1.35;
+    }
+    #hcy-char-picker .hcy-char-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      align-items: center;
+    }
+    #hcy-char-picker button.hcy-char-btn {
+      font-size: .88rem;
+      font-weight: 800;
+      padding: .5rem .9rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #fff, #ffeef8);
+    }
+    #hcy-char-picker button.hcy-char-btn.is-active {
+      outline: 3px solid var(--hcy-accent, #e84f9a);
+      outline-offset: 2px;
+      background: linear-gradient(180deg, #ffe0f0, #ffb8dc);
+    }
+    #hcy-char-picker button.hcy-char-btn:focus-visible {
+      outline: 3px solid var(--hcy-sky, #5ec8ff);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="hcy-demo-themed">
+  <div class="wrap">
+    <h1>HCY FX Kit demo</h1>
+    <p class="sub">Legacy soft-3D · pick hamster / bunny / penguin · lively idle + react motion · 3D on by default · kit only (packs held)</p>
+
+    <div id="hcy-char-picker" aria-label="Mascot character"></div>
+
+    <div id="hcy-style-picker"></div>
+
+    <div id="hcy-demo-stage">
+      <img class="hcy-stage-floor" src="mascot/stage-floor.png" alt="" width="512" height="256" decoding="async"
+           onload="this.parentElement.classList.add('has-floor-art')"
+           onerror="this.style.display='none'" />
+      <div id="hcy-mascot-slot" class="hcy-mascot-slot" aria-label="HCY mascot"></div>
+      <div class="meter hcy-hud-chips">
+        <span>Streak <b id="ui-streak">0</b></span>
+        <span>Combo <b id="ui-level">0</b> / 10</span>
+        <span>Punch <b id="ui-e">0.08</b></span>
+        <span id="ui-style-name">legacy</span>
+      </div>
+      <div class="bar" aria-hidden="true"><i id="ui-bar"></i></div>
+      <div class="pips" id="ui-pips"></div>
+      <p style="margin:0;font-weight:700;opacity:.7;z-index:2">Idle bobs on its own · Correct = happy hop · Wrong = shake/squash · tap mascot = squash. Switch animal above (Legacy / hamster / bunny / penguin). Packs 01–15 held.</p>
+    </div>
+
+    <div class="controls">
+      <button type="button" class="good" id="btn-correct">Correct</button>
+      <button type="button" class="bad" id="btn-wrong">Wrong</button>
+      <button type="button" id="btn-reset">Reset</button>
+      <button type="button" class="mute" id="btn-mute" aria-pressed="false">Mute</button>
+      <div class="hcy-quality-toggle" role="group" aria-label="Render quality">
+        <span style="opacity:.75">Quality</span>
+        <button type="button" id="btn-q-high" class="is-active">High</button>
+        <button type="button" id="btn-q-soft">Soft</button>
+      </div>
+    </div>
+
+    <div class="sliders">
+      <label>Intensity <input id="sl-intensity" type="range" min="0" max="100" value="100" /> <span id="ui-int">100%</span></label>
+    </div>
+
+    <div class="note">
+      <strong>Open via local HTTP</strong> (CDN Three.js + Google Fonts need network):
+      <br />From this folder: <code>python3 -m http.server 8765</code>
+      <br />then <code>http://127.0.0.1:8765/demo.html</code>
+      <br /><strong>Switch animals:</strong> use the soft <em>Character</em> row — <strong>Legacy</strong> (default) · <strong>hamster</strong> · <strong>bunny</strong> · <strong>penguin</strong>. Choice persists in <code>localStorage</code> (<code>hcy-fx-mascot-char</code>). Animals load <code>mascot/preview/&lt;name&gt;/</code> idle/happy/oops (happy/oops are idle duplicates until Visuals ships poses). Same MOVE: idle bob, tap squash, Correct hop, Wrong shake.
+      <br /><strong>Default:</strong> Legacy art + <strong>3D</strong> on. Soft lights, matte buddy, stage floor, continuous idle bob, spring hop / shake / tap squash.
+      <br /><strong>Quality:</strong> High = full MSAA/pixelRatio; Soft = projector-friendly (lower DPR, fewer particles).
+      <br /><strong>Mascot:</strong> Legacy plates in <code>mascot/</code> (idle / happy / oops; 3D prefers <code>idle-3q.png</code>). Spectrum preview under <code>mascot/preview/</code>. Packs 01–15 held inactive.
+      <br />Kit + demo only — not wired into games. No franchise IP.
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/hcy-fx-motion.js"></script>
+  <script src="js/hcy-fx-audio.js"></script>
+  <script src="js/hcy-fx-three.js"></script>
+  <script src="js/hcy-fx-mascot.js"></script>
+  <script src="js/hcy-fx.js"></script>
+  <script src="js/hcy-fx-themes.js"></script>
+  <script>
+    (function () {
+      var pips = document.getElementById('ui-pips');
+      for (var i = 0; i < 10; i++) {
+        var s = document.createElement('span');
+        pips.appendChild(s);
+      }
+
+      var STORAGE_Q = 'hcy-fx-quality';
+      var STORAGE_CHAR = 'hcy-fx-mascot-char';
+      var CHAR_OPTS = [
+        { id: 'legacy', label: 'Legacy', base: 'mascot/' },
+        { id: 'hamster', label: 'hamster', base: 'mascot/preview/hamster/' },
+        { id: 'bunny', label: 'bunny', base: 'mascot/preview/bunny/' },
+        { id: 'penguin', label: 'penguin', base: 'mascot/preview/penguin/' }
+      ];
+      function readQ() {
+        try {
+          var v = localStorage.getItem(STORAGE_Q);
+          return v === 'soft' ? 'soft' : 'high';
+        } catch (e) { return 'high'; }
+      }
+      function writeQ(q) {
+        try { localStorage.setItem(STORAGE_Q, q); } catch (e) {}
+      }
+      function findChar(id) {
+        for (var i = 0; i < CHAR_OPTS.length; i++) if (CHAR_OPTS[i].id === id) return CHAR_OPTS[i];
+        return CHAR_OPTS[0];
+      }
+      function readChar() {
+        try {
+          var v = localStorage.getItem(STORAGE_CHAR);
+          return findChar(v).id;
+        } catch (e) { return 'legacy'; }
+      }
+      function writeChar(id) {
+        try { localStorage.setItem(STORAGE_CHAR, id); } catch (e) {}
+      }
+      function themeArtBase() {
+        if (window.HcyFxThemes && HcyFxThemes.artBaseFor) {
+          return HcyFxThemes.artBaseFor(HcyFxThemes.getStyle());
+        }
+        return 'mascot/';
+      }
+      function artBaseForChar(id) {
+        var c = findChar(id);
+        if (c.id === 'legacy') return themeArtBase();
+        return c.base;
+      }
+      function applyChar(id, opts) {
+        opts = opts || {};
+        var c = findChar(id);
+        writeChar(c.id);
+        var base = artBaseForChar(c.id);
+        var mode = (window.HcyFxThemes && HcyFxThemes.getMode) ? HcyFxThemes.getMode() : '3d';
+        if (mode !== '2d' && mode !== '3d') mode = '3d';
+        var q = readQ();
+        if (window.HcyFxMascot) {
+          if (HcyFxMascot.setRenderMode) HcyFxMascot.setRenderMode(mode);
+          if (HcyFxMascot.reloadArt) HcyFxMascot.reloadArt({ base: base, mode: mode, quality: q });
+          if (HcyFxMascot.setQuality) HcyFxMascot.setQuality(q);
+        }
+        if (window.HcyFxThree) {
+          if (HcyFxThree.setMascotMode) HcyFxThree.setMascotMode(mode);
+          if (HcyFxThree.setMascotArtBase) HcyFxThree.setMascotArtBase(base);
+        }
+        var host = document.getElementById('hcy-char-picker');
+        if (host) {
+          var btns = host.querySelectorAll('button.hcy-char-btn');
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].classList.toggle('is-active', btns[i].getAttribute('data-char') === c.id);
+          }
+        }
+        if (!opts.silent && typeof refresh === 'function') refresh();
+        return c.id;
+      }
+      function mountCharPicker() {
+        var host = document.getElementById('hcy-char-picker');
+        if (!host) return;
+        host.innerHTML = '';
+        var title = document.createElement('strong');
+        title.className = 'hcy-char-title';
+        title.textContent = 'Character';
+        host.appendChild(title);
+        var hint = document.createElement('p');
+        hint.className = 'hcy-char-hint';
+        hint.textContent = 'Pick Legacy or a spectrum animal. Idle bob + Correct/Wrong/tap motion use the same MOVE code. Choice is saved in this browser.';
+        host.appendChild(hint);
+        var row = document.createElement('div');
+        row.className = 'hcy-char-row';
+        row.setAttribute('role', 'group');
+        row.setAttribute('aria-label', 'Mascot character');
+        var cur = readChar();
+        CHAR_OPTS.forEach(function (c) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'hcy-char-btn' + (c.id === cur ? ' is-active' : '');
+          b.setAttribute('data-char', c.id);
+          b.textContent = c.label;
+          b.onclick = function () { applyChar(c.id); };
+          row.appendChild(b);
+        });
+        host.appendChild(row);
+      }
+
+      function applyQuality(q) {
+        q = q === 'soft' ? 'soft' : 'high';
+        document.documentElement.setAttribute('data-hcy-quality', q);
+        writeQ(q);
+        document.getElementById('btn-q-high').classList.toggle('is-active', q === 'high');
+        document.getElementById('btn-q-soft').classList.toggle('is-active', q === 'soft');
+        if (window.HcyFxMascot && HcyFxMascot.setQuality) HcyFxMascot.setQuality(q);
+        if (window.HcyFxThree && HcyFxThree.setQuality) HcyFxThree.setQuality(q);
+      }
+
+      function refresh() {
+        var st = HcyFx.getState();
+        document.getElementById('ui-streak').textContent = st.streak;
+        document.getElementById('ui-level').textContent = st.level;
+        document.getElementById('ui-e').textContent = st.E.toFixed(2);
+        document.getElementById('ui-bar').style.width = Math.min(100, st.E * 100) + '%';
+        var dots = pips.querySelectorAll('span');
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].className = '';
+          if (i < st.level) dots[i].classList.add(st.level >= 8 ? 'hot' : 'on');
+        }
+        if (window.HcyFxThemes) {
+          document.getElementById('ui-style-name').textContent =
+            HcyFxThemes.getStyle() + ' · ' + HcyFxThemes.getMode().toUpperCase();
+        }
+      }
+
+      HcyFxThemes.init();
+      HcyFxThemes.mountPicker('#hcy-style-picker');
+      mountCharPicker();
+      HcyFxThemes.onChange(function () {
+        // Style packs stay independent; re-apply character so animal preview is not clobbered
+        applyChar(readChar(), { silent: true });
+        refresh();
+      });
+
+      // Force Legacy + 3D as demo default when no stored preference conflicts —
+      // themes already DEFAULT_STYLE=legacy, DEFAULT_MODE=3d
+      // Character picker can override art to mascot/preview/{animal}/
+      var mode = HcyFxThemes.getMode();
+      if (mode !== '2d' && mode !== '3d') mode = '3d';
+      var charId = readChar();
+      var artBase = artBaseForChar(charId);
+
+      var q0 = readQ();
+      HcyFx.init({
+        shakeTarget: document.getElementById('hcy-demo-stage'),
+        intensity: 1,
+        mascotBase: artBase,
+        mascotEagerThree: mode === '3d'
+      });
+      if (HcyFxMascot) {
+        HcyFxMascot.setRenderMode(mode);
+        HcyFxMascot.reloadArt({ base: artBase, mode: mode, quality: q0 });
+        if (HcyFxMascot.setQuality) HcyFxMascot.setQuality(q0);
+      }
+      if (HcyFxThree) {
+        HcyFxThree.init({ quality: q0 });
+        HcyFxThree.setMascotMode(mode);
+        HcyFxThree.setMascotSlot(document.getElementById('hcy-mascot-slot'));
+        HcyFxThree.setMascotArtBase(artBase);
+        if (HcyFxThree.setQuality) HcyFxThree.setQuality(q0);
+      }
+      applyQuality(q0);
+      applyChar(charId, { silent: true });
+
+      function arm() { HcyFxAudio && HcyFxAudio.unlock(); refresh(); }
+      document.body.addEventListener('pointerdown', arm, { once: true });
+
+      document.getElementById('btn-correct').onclick = function () {
+        HcyFx.correct();
+        refresh();
+      };
+      document.getElementById('btn-wrong').onclick = function () {
+        HcyFx.wrong();
+        refresh();
+      };
+      document.getElementById('btn-reset').onclick = function () {
+        HcyFx.reset();
+        refresh();
+      };
+      document.getElementById('btn-mute').onclick = function () {
+        var btn = this;
+        var on = btn.getAttribute('aria-pressed') === 'true';
+        on = !on;
+        btn.setAttribute('aria-pressed', String(on));
+        btn.textContent = on ? 'Unmute' : 'Mute';
+        HcyFx.mute(on);
+      };
+      document.getElementById('btn-q-high').onclick = function () { applyQuality('high'); };
+      document.getElementById('btn-q-soft').onclick = function () { applyQuality('soft'); };
+      document.getElementById('sl-intensity').oninput = function () {
+        var v = Number(this.value) / 100;
+        document.getElementById('ui-int').textContent = Math.round(v * 100) + '%';
+        HcyFx.setIntensity(v);
+        refresh();
+      };
+      refresh();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#hcy-teacher-hud {
+  position: fixed; top: 8px; right: 8px; z-index: 100000;
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
+  padding: 4px 6px; border-radius: 12px;
+  background: rgba(20,20,28,.88); color: #fff;
+  font: 700 12px/1.2 system-ui,sans-serif;
+  box-shadow: 0 4px 16px rgba(0,0,0,.25);
+  max-width: min(96vw, 420px);
+}
+#hcy-teacher-hud button {
+  font: inherit; color: #fff; background: #2a2a36; border: 1px solid #555;
+  border-radius: 8px; padding: 5px 8px; cursor: pointer;
+}
+#hcy-teacher-hud button:hover { filter: brightness(1.15); }
+#hcy-teacher-hud button.on { background: #0f9e8a; border-color: #0f9e8a; }
+#hcy-teacher-hud .hcy-hud-label { opacity: .7; margin: 0 2px 0 4px; }

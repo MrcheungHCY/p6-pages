@@ -1,0 +1,1078 @@
+{
+  "meta": {
+    "bank": "should",
+    "skill": "should",
+    "count": 48,
+    "primary_source": "P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx",
+    "also": [
+      "_targets.json",
+      "p6-conditionals.js",
+      "p6-u1-3-vocab.js",
+      "parallel-original"
+    ],
+    "exclude": "每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)",
+    "item_schema": [
+      "id",
+      "prompt",
+      "choices|slots",
+      "answer",
+      "distractors",
+      "unit",
+      "skill",
+      "difficulty"
+    ],
+    "scrubbed": "2026-11-04 Asia/Hong_Kong — exam stems removed"
+  },
+  "items": [
+    {
+      "id": "should-01",
+      "prompt": "Choose the best advice (bad/unsafe): Roy and Ken / eat too much meat.",
+      "answer": "Roy and Ken shouldn't eat too much meat.",
+      "distractors": [
+        "Roy and Ken should eat too much meat.",
+        "Roy and Ken ought eat too much meat.",
+        "Roy and Ken must to eat too much meat."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Roy and Ken ought eat too much meat.",
+        "Roy and Ken must to eat too much meat.",
+        "Roy and Ken shouldn't eat too much meat.",
+        "Roy and Ken should eat too much meat."
+      ],
+      "source": "WS-A",
+      "modal": "shouldn't",
+      "phrase": "eat too much meat"
+    },
+    {
+      "id": "should-02",
+      "prompt": "Choose the best advice (good/safe): Rose / cover her mouth.",
+      "answer": "Rose should cover her mouth.",
+      "distractors": [
+        "Rose shouldn't cover her mouth.",
+        "Rose ought cover her mouth.",
+        "Rose must to cover her mouth."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Rose ought cover her mouth.",
+        "Rose must to cover her mouth.",
+        "Rose shouldn't cover her mouth.",
+        "Rose should cover her mouth."
+      ],
+      "source": "WS-A",
+      "modal": "should",
+      "phrase": "cover her mouth"
+    },
+    {
+      "id": "should-03",
+      "prompt": "Choose the best advice (bad/unsafe): Henry / drink cold drinks.",
+      "answer": "Henry shouldn't drink cold drinks.",
+      "distractors": [
+        "Henry should drink cold drinks.",
+        "Henry ought drink cold drinks.",
+        "Henry must to drink cold drinks."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Henry ought drink cold drinks.",
+        "Henry shouldn't drink cold drinks.",
+        "Henry must to drink cold drinks.",
+        "Henry should drink cold drinks."
+      ],
+      "source": "WS-A",
+      "modal": "shouldn't",
+      "phrase": "drink cold drinks"
+    },
+    {
+      "id": "should-04",
+      "prompt": "Choose the best advice (good/safe): Aaron / keep his voice down.",
+      "answer": "Aaron should keep his voice down.",
+      "distractors": [
+        "Aaron shouldn't keep his voice down.",
+        "Aaron ought keep his voice down.",
+        "Aaron must to keep his voice down."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Aaron must to keep his voice down.",
+        "Aaron ought keep his voice down.",
+        "Aaron shouldn't keep his voice down.",
+        "Aaron should keep his voice down."
+      ],
+      "source": "WS-A",
+      "modal": "should",
+      "phrase": "keep his voice down"
+    },
+    {
+      "id": "should-05",
+      "prompt": "Choose the best advice (good/safe): Kelly / wear more clothes.",
+      "answer": "Kelly should wear more clothes.",
+      "distractors": [
+        "Kelly shouldn't wear more clothes.",
+        "Kelly ought wear more clothes.",
+        "Kelly must to wear more clothes."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Kelly should wear more clothes.",
+        "Kelly ought wear more clothes.",
+        "Kelly shouldn't wear more clothes.",
+        "Kelly must to wear more clothes."
+      ],
+      "source": "WS-A",
+      "modal": "should",
+      "phrase": "wear more clothes"
+    },
+    {
+      "id": "should-06",
+      "prompt": "Choose the best advice (bad/unsafe): Joey and Lucy / watch too much TV.",
+      "answer": "Joey and Lucy shouldn't watch too much TV.",
+      "distractors": [
+        "Joey and Lucy should watch too much TV.",
+        "Joey and Lucy ought watch too much TV.",
+        "Joey and Lucy must to watch too much TV."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "Joey and Lucy shouldn't watch too much TV.",
+        "Joey and Lucy should watch too much TV.",
+        "Joey and Lucy must to watch too much TV.",
+        "Joey and Lucy ought watch too much TV."
+      ],
+      "source": "WS-A",
+      "modal": "shouldn't",
+      "phrase": "watch too much TV"
+    },
+    {
+      "id": "should-07",
+      "prompt": "Choose the best advice (good/safe): We / watch our weight.",
+      "answer": "We should watch our weight.",
+      "distractors": [
+        "We shouldn't watch our weight.",
+        "We ought watch our weight.",
+        "We must to watch our weight."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We must to watch our weight.",
+        "We shouldn't watch our weight.",
+        "We should watch our weight.",
+        "We ought watch our weight."
+      ],
+      "source": "WS-B",
+      "modal": "should",
+      "phrase": "watch our weight"
+    },
+    {
+      "id": "should-08",
+      "prompt": "Choose the best advice (bad/unsafe): We / go to bed late.",
+      "answer": "We shouldn't go to bed late.",
+      "distractors": [
+        "We should go to bed late.",
+        "We ought go to bed late.",
+        "We must to go to bed late."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We should go to bed late.",
+        "We ought go to bed late.",
+        "We must to go to bed late.",
+        "We shouldn't go to bed late."
+      ],
+      "source": "WS-B",
+      "modal": "shouldn't",
+      "phrase": "go to bed late"
+    },
+    {
+      "id": "should-09",
+      "prompt": "Choose the best advice (good/safe): We / have body check-ups regularly.",
+      "answer": "We should have body check-ups regularly.",
+      "distractors": [
+        "We shouldn't have body check-ups regularly.",
+        "We ought have body check-ups regularly.",
+        "We must to have body check-ups regularly."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We shouldn't have body check-ups regularly.",
+        "We must to have body check-ups regularly.",
+        "We should have body check-ups regularly.",
+        "We ought have body check-ups regularly."
+      ],
+      "source": "WS-B",
+      "modal": "should",
+      "phrase": "have body check-ups regularly"
+    },
+    {
+      "id": "should-10",
+      "prompt": "Choose the best advice (good/safe): We / have a healthy diet.",
+      "answer": "We should have a healthy diet.",
+      "distractors": [
+        "We shouldn't have a healthy diet.",
+        "We ought have a healthy diet.",
+        "We must to have a healthy diet."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We ought have a healthy diet.",
+        "We should have a healthy diet.",
+        "We must to have a healthy diet.",
+        "We shouldn't have a healthy diet."
+      ],
+      "source": "WS-B",
+      "modal": "should",
+      "phrase": "have a healthy diet"
+    },
+    {
+      "id": "should-11",
+      "prompt": "Choose the best advice (bad/unsafe): We / drink too many soft drinks.",
+      "answer": "We shouldn't drink too many soft drinks.",
+      "distractors": [
+        "We should drink too many soft drinks.",
+        "We ought drink too many soft drinks.",
+        "We must to drink too many soft drinks."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We shouldn't drink too many soft drinks.",
+        "We should drink too many soft drinks.",
+        "We must to drink too many soft drinks.",
+        "We ought drink too many soft drinks."
+      ],
+      "source": "WS-B",
+      "modal": "shouldn't",
+      "phrase": "drink too many soft drinks"
+    },
+    {
+      "id": "should-12",
+      "prompt": "Choose the best advice (bad/unsafe): We / eat too much oily food.",
+      "answer": "We shouldn't eat too much oily food.",
+      "distractors": [
+        "We should eat too much oily food.",
+        "We ought eat too much oily food.",
+        "We must to eat too much oily food."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We should eat too much oily food.",
+        "We ought eat too much oily food.",
+        "We must to eat too much oily food.",
+        "We shouldn't eat too much oily food."
+      ],
+      "source": "WS-B",
+      "modal": "shouldn't",
+      "phrase": "eat too much oily food"
+    },
+    {
+      "id": "should-13",
+      "prompt": "Choose the best advice (good/safe): We / drink plenty of water.",
+      "answer": "We should drink plenty of water.",
+      "distractors": [
+        "We shouldn't drink plenty of water.",
+        "We ought drink plenty of water.",
+        "We must to drink plenty of water."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We must to drink plenty of water.",
+        "We should drink plenty of water.",
+        "We shouldn't drink plenty of water.",
+        "We ought drink plenty of water."
+      ],
+      "source": "WS-B",
+      "modal": "should",
+      "phrase": "drink plenty of water"
+    },
+    {
+      "id": "should-14",
+      "prompt": "Choose the best advice (good/safe): We / do exercise regularly.",
+      "answer": "We should do exercise regularly.",
+      "distractors": [
+        "We shouldn't do exercise regularly.",
+        "We ought do exercise regularly.",
+        "We must to do exercise regularly."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "We shouldn't do exercise regularly.",
+        "We must to do exercise regularly.",
+        "We should do exercise regularly.",
+        "We ought do exercise regularly."
+      ],
+      "source": "WS-B",
+      "modal": "should",
+      "phrase": "do exercise regularly"
+    },
+    {
+      "id": "should-15",
+      "prompt": "Choose the best advice (good/safe): Tom / see a doctor.",
+      "answer": "Tom should see a doctor.",
+      "distractors": [
+        "Tom shouldn't see a doctor.",
+        "Tom ought see a doctor.",
+        "Tom must to see a doctor."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Tom must to see a doctor.",
+        "Tom should see a doctor.",
+        "Tom shouldn't see a doctor.",
+        "Tom ought see a doctor."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "see a doctor"
+    },
+    {
+      "id": "should-16",
+      "prompt": "Choose the best advice (bad/unsafe): Lily / share her chopsticks when she is sick.",
+      "answer": "Lily shouldn't share her chopsticks when she is sick.",
+      "distractors": [
+        "Lily should share her chopsticks when she is sick.",
+        "Lily ought share her chopsticks when she is sick.",
+        "Lily must to share her chopsticks when she is sick."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Lily ought share her chopsticks when she is sick.",
+        "Lily should share her chopsticks when she is sick.",
+        "Lily shouldn't share her chopsticks when she is sick.",
+        "Lily must to share her chopsticks when she is sick."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "share her chopsticks when she is sick"
+    },
+    {
+      "id": "should-17",
+      "prompt": "Choose the best advice (good/safe): Max / wash fruit before eating.",
+      "answer": "Max should wash fruit before eating.",
+      "distractors": [
+        "Max shouldn't wash fruit before eating.",
+        "Max ought wash fruit before eating.",
+        "Max must to wash fruit before eating."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Max should wash fruit before eating.",
+        "Max shouldn't wash fruit before eating.",
+        "Max must to wash fruit before eating.",
+        "Max ought wash fruit before eating."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "wash fruit before eating"
+    },
+    {
+      "id": "should-18",
+      "prompt": "Choose the best advice (bad/unsafe): Nina / skip breakfast.",
+      "answer": "Nina shouldn't skip breakfast.",
+      "distractors": [
+        "Nina should skip breakfast.",
+        "Nina ought skip breakfast.",
+        "Nina must to skip breakfast."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Nina shouldn't skip breakfast.",
+        "Nina ought skip breakfast.",
+        "Nina should skip breakfast.",
+        "Nina must to skip breakfast."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "skip breakfast"
+    },
+    {
+      "id": "should-19",
+      "prompt": "Choose the best advice (good/safe): Owen / rest when he has a fever.",
+      "answer": "Owen should rest when he has a fever.",
+      "distractors": [
+        "Owen shouldn't rest when he has a fever.",
+        "Owen ought rest when he has a fever.",
+        "Owen must to rest when he has a fever."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Owen should rest when he has a fever.",
+        "Owen shouldn't rest when he has a fever.",
+        "Owen must to rest when he has a fever.",
+        "Owen ought rest when he has a fever."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "rest when he has a fever"
+    },
+    {
+      "id": "should-20",
+      "prompt": "Choose the best advice (bad/unsafe): Patty / touch her eyes with dirty hands.",
+      "answer": "Patty shouldn't touch her eyes with dirty hands.",
+      "distractors": [
+        "Patty should touch her eyes with dirty hands.",
+        "Patty ought touch her eyes with dirty hands.",
+        "Patty must to touch her eyes with dirty hands."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Patty ought touch her eyes with dirty hands.",
+        "Patty should touch her eyes with dirty hands.",
+        "Patty must to touch her eyes with dirty hands.",
+        "Patty shouldn't touch her eyes with dirty hands."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "touch her eyes with dirty hands"
+    },
+    {
+      "id": "should-21",
+      "prompt": "Choose the best advice (good/safe): Quinn / cover her sneeze with a tissue.",
+      "answer": "Quinn should cover her sneeze with a tissue.",
+      "distractors": [
+        "Quinn shouldn't cover her sneeze with a tissue.",
+        "Quinn ought cover her sneeze with a tissue.",
+        "Quinn must to cover her sneeze with a tissue."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Quinn ought cover her sneeze with a tissue.",
+        "Quinn should cover her sneeze with a tissue.",
+        "Quinn must to cover her sneeze with a tissue.",
+        "Quinn shouldn't cover her sneeze with a tissue."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "cover her sneeze with a tissue"
+    },
+    {
+      "id": "should-22",
+      "prompt": "Choose the best advice (bad/unsafe): Ray / drink ice water with a sore throat.",
+      "answer": "Ray shouldn't drink ice water with a sore throat.",
+      "distractors": [
+        "Ray should drink ice water with a sore throat.",
+        "Ray ought drink ice water with a sore throat.",
+        "Ray must to drink ice water with a sore throat."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Ray should drink ice water with a sore throat.",
+        "Ray must to drink ice water with a sore throat.",
+        "Ray ought drink ice water with a sore throat.",
+        "Ray shouldn't drink ice water with a sore throat."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "drink ice water with a sore throat"
+    },
+    {
+      "id": "should-23",
+      "prompt": "Choose the best advice (good/safe): Sue / keep the classroom clean.",
+      "answer": "Sue should keep the classroom clean.",
+      "distractors": [
+        "Sue shouldn't keep the classroom clean.",
+        "Sue ought keep the classroom clean.",
+        "Sue must to keep the classroom clean."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Sue should keep the classroom clean.",
+        "Sue shouldn't keep the classroom clean.",
+        "Sue ought keep the classroom clean.",
+        "Sue must to keep the classroom clean."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "keep the classroom clean"
+    },
+    {
+      "id": "should-24",
+      "prompt": "Choose the best advice (bad/unsafe): Ted / leave wet clothes on the floor.",
+      "answer": "Ted shouldn't leave wet clothes on the floor.",
+      "distractors": [
+        "Ted should leave wet clothes on the floor.",
+        "Ted ought leave wet clothes on the floor.",
+        "Ted must to leave wet clothes on the floor."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Ted ought leave wet clothes on the floor.",
+        "Ted should leave wet clothes on the floor.",
+        "Ted shouldn't leave wet clothes on the floor.",
+        "Ted must to leave wet clothes on the floor."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "leave wet clothes on the floor"
+    },
+    {
+      "id": "should-25",
+      "prompt": "Choose the best advice (good/safe): Una / pack an umbrella on rainy days.",
+      "answer": "Una should pack an umbrella on rainy days.",
+      "distractors": [
+        "Una shouldn't pack an umbrella on rainy days.",
+        "Una ought pack an umbrella on rainy days.",
+        "Una must to pack an umbrella on rainy days."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Una must to pack an umbrella on rainy days.",
+        "Una shouldn't pack an umbrella on rainy days.",
+        "Una ought pack an umbrella on rainy days.",
+        "Una should pack an umbrella on rainy days."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "pack an umbrella on rainy days"
+    },
+    {
+      "id": "should-26",
+      "prompt": "Choose the best advice (bad/unsafe): Vince / run on wet floors.",
+      "answer": "Vince shouldn't run on wet floors.",
+      "distractors": [
+        "Vince should run on wet floors.",
+        "Vince ought run on wet floors.",
+        "Vince must to run on wet floors."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Vince should run on wet floors.",
+        "Vince shouldn't run on wet floors.",
+        "Vince must to run on wet floors.",
+        "Vince ought run on wet floors."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "run on wet floors"
+    },
+    {
+      "id": "should-27",
+      "prompt": "Choose the best advice (good/safe): Willa / help classmates who feel unwell.",
+      "answer": "Willa should help classmates who feel unwell.",
+      "distractors": [
+        "Willa shouldn't help classmates who feel unwell.",
+        "Willa ought help classmates who feel unwell.",
+        "Willa must to help classmates who feel unwell."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Willa must to help classmates who feel unwell.",
+        "Willa ought help classmates who feel unwell.",
+        "Willa shouldn't help classmates who feel unwell.",
+        "Willa should help classmates who feel unwell."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "help classmates who feel unwell"
+    },
+    {
+      "id": "should-28",
+      "prompt": "Choose the best advice (bad/unsafe): York / play phone games all night.",
+      "answer": "York shouldn't play phone games all night.",
+      "distractors": [
+        "York should play phone games all night.",
+        "York ought play phone games all night.",
+        "York must to play phone games all night."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "York should play phone games all night.",
+        "York must to play phone games all night.",
+        "York shouldn't play phone games all night.",
+        "York ought play phone games all night."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "play phone games all night"
+    },
+    {
+      "id": "should-29",
+      "prompt": "Choose the best advice (good/safe): Zoe / eat more vegetables.",
+      "answer": "Zoe should eat more vegetables.",
+      "distractors": [
+        "Zoe shouldn't eat more vegetables.",
+        "Zoe ought eat more vegetables.",
+        "Zoe must to eat more vegetables."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Zoe must to eat more vegetables.",
+        "Zoe should eat more vegetables.",
+        "Zoe shouldn't eat more vegetables.",
+        "Zoe ought eat more vegetables."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "eat more vegetables"
+    },
+    {
+      "id": "should-30",
+      "prompt": "Choose the best advice (bad/unsafe): Alan / shout in the library.",
+      "answer": "Alan shouldn't shout in the library.",
+      "distractors": [
+        "Alan should shout in the library.",
+        "Alan ought shout in the library.",
+        "Alan must to shout in the library."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Alan should shout in the library.",
+        "Alan must to shout in the library.",
+        "Alan shouldn't shout in the library.",
+        "Alan ought shout in the library."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "shout in the library"
+    },
+    {
+      "id": "should-31",
+      "prompt": "Choose the best advice (good/safe): Bella / wash hands after PE.",
+      "answer": "Bella should wash hands after PE.",
+      "distractors": [
+        "Bella shouldn't wash hands after PE.",
+        "Bella ought wash hands after PE.",
+        "Bella must to wash hands after PE."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Bella should wash hands after PE.",
+        "Bella must to wash hands after PE.",
+        "Bella shouldn't wash hands after PE.",
+        "Bella ought wash hands after PE."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "wash hands after PE"
+    },
+    {
+      "id": "should-32",
+      "prompt": "Choose the best advice (bad/unsafe): Carl / eat snacks instead of lunch.",
+      "answer": "Carl shouldn't eat snacks instead of lunch.",
+      "distractors": [
+        "Carl should eat snacks instead of lunch.",
+        "Carl ought eat snacks instead of lunch.",
+        "Carl must to eat snacks instead of lunch."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Carl should eat snacks instead of lunch.",
+        "Carl must to eat snacks instead of lunch.",
+        "Carl shouldn't eat snacks instead of lunch.",
+        "Carl ought eat snacks instead of lunch."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "eat snacks instead of lunch"
+    },
+    {
+      "id": "should-33",
+      "prompt": "Choose the best advice (good/safe): Dora / go to bed before ten.",
+      "answer": "Dora should go to bed before ten.",
+      "distractors": [
+        "Dora shouldn't go to bed before ten.",
+        "Dora ought go to bed before ten.",
+        "Dora must to go to bed before ten."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Dora ought go to bed before ten.",
+        "Dora shouldn't go to bed before ten.",
+        "Dora must to go to bed before ten.",
+        "Dora should go to bed before ten."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "go to bed before ten"
+    },
+    {
+      "id": "should-34",
+      "prompt": "Choose the best advice (bad/unsafe): Eli / copy friends' homework.",
+      "answer": "Eli shouldn't copy friends' homework.",
+      "distractors": [
+        "Eli should copy friends' homework.",
+        "Eli ought copy friends' homework.",
+        "Eli must to copy friends' homework."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Eli must to copy friends' homework.",
+        "Eli ought copy friends' homework.",
+        "Eli should copy friends' homework.",
+        "Eli shouldn't copy friends' homework."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "copy friends' homework"
+    },
+    {
+      "id": "should-35",
+      "prompt": "Choose the best advice (good/safe): Fay / drink warm water when she has a cough.",
+      "answer": "Fay should drink warm water when she has a cough.",
+      "distractors": [
+        "Fay shouldn't drink warm water when she has a cough.",
+        "Fay ought drink warm water when she has a cough.",
+        "Fay must to drink warm water when she has a cough."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Fay ought drink warm water when she has a cough.",
+        "Fay shouldn't drink warm water when she has a cough.",
+        "Fay must to drink warm water when she has a cough.",
+        "Fay should drink warm water when she has a cough."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "drink warm water when she has a cough"
+    },
+    {
+      "id": "should-36",
+      "prompt": "Choose the best advice (bad/unsafe): Gus / stand near windows in a typhoon.",
+      "answer": "Gus shouldn't stand near windows in a typhoon.",
+      "distractors": [
+        "Gus should stand near windows in a typhoon.",
+        "Gus ought stand near windows in a typhoon.",
+        "Gus must to stand near windows in a typhoon."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Gus should stand near windows in a typhoon.",
+        "Gus shouldn't stand near windows in a typhoon.",
+        "Gus must to stand near windows in a typhoon.",
+        "Gus ought stand near windows in a typhoon."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "stand near windows in a typhoon"
+    },
+    {
+      "id": "should-37",
+      "prompt": "Choose the best advice (good/safe): Holly / listen to the weather report.",
+      "answer": "Holly should listen to the weather report.",
+      "distractors": [
+        "Holly shouldn't listen to the weather report.",
+        "Holly ought listen to the weather report.",
+        "Holly must to listen to the weather report."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Holly ought listen to the weather report.",
+        "Holly should listen to the weather report.",
+        "Holly shouldn't listen to the weather report.",
+        "Holly must to listen to the weather report."
+      ],
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "listen to the weather report"
+    },
+    {
+      "id": "should-38",
+      "prompt": "Choose the best advice (bad/unsafe): Ian / go hiking during Signal 8.",
+      "answer": "Ian shouldn't go hiking during Signal 8.",
+      "distractors": [
+        "Ian should go hiking during Signal 8.",
+        "Ian ought go hiking during Signal 8.",
+        "Ian must to go hiking during Signal 8."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "mid",
+      "choices": [
+        "Ian ought go hiking during Signal 8.",
+        "Ian shouldn't go hiking during Signal 8.",
+        "Ian should go hiking during Signal 8.",
+        "Ian must to go hiking during Signal 8."
+      ],
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "go hiking during Signal 8"
+    },
+    {
+      "id": "should-39",
+      "prompt": "When you cough, you ____ cover your mouth.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "should",
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "source": "gap",
+      "form": "gap"
+    },
+    {
+      "id": "should-40",
+      "prompt": "You ____ eat too much fried food.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "should",
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "source": "gap",
+      "form": "gap"
+    },
+    {
+      "id": "should-41",
+      "prompt": "To stay healthy, we ____ drink plenty of water.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "should",
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "source": "gap",
+      "form": "gap"
+    },
+    {
+      "id": "should-42",
+      "prompt": "We ____ go to bed late every night.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "choices": [
+        "should",
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "source": "gap",
+      "form": "gap"
+    },
+    {
+      "id": "should-43",
+      "prompt": "Choose the best advice (good/safe): Mira / rinse her lunchbox every day.",
+      "answer": "Mira should rinse her lunchbox every day.",
+      "distractors": [
+        "Mira shouldn't rinse her lunchbox every day.",
+        "Mira ought rinse her lunchbox every day.",
+        "Mira must to rinse her lunchbox every day."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "rinse her lunchbox every day",
+      "choices": [
+        "Mira shouldn't rinse her lunchbox every day.",
+        "Mira ought rinse her lunchbox every day.",
+        "Mira must to rinse her lunchbox every day.",
+        "Mira should rinse her lunchbox every day."
+      ]
+    },
+    {
+      "id": "should-44",
+      "prompt": "Choose the best advice (bad/unsafe): Noel / share earphones when he has a cold.",
+      "answer": "Noel shouldn't share earphones when he has a cold.",
+      "distractors": [
+        "Noel should share earphones when he has a cold.",
+        "Noel ought share earphones when he has a cold.",
+        "Noel must to share earphones when he has a cold."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "share earphones when he has a cold",
+      "choices": [
+        "Noel should share earphones when he has a cold.",
+        "Noel ought share earphones when he has a cold.",
+        "Noel must to share earphones when he has a cold.",
+        "Noel shouldn't share earphones when he has a cold."
+      ]
+    },
+    {
+      "id": "should-45",
+      "prompt": "Choose the best advice (good/safe): Pia / stretch after sitting for homework.",
+      "answer": "Pia should stretch after sitting for homework.",
+      "distractors": [
+        "Pia shouldn't stretch after sitting for homework.",
+        "Pia ought stretch after sitting for homework.",
+        "Pia must to stretch after sitting for homework."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "modal": "should",
+      "phrase": "stretch after sitting for homework",
+      "choices": [
+        "Pia must to stretch after sitting for homework.",
+        "Pia should stretch after sitting for homework.",
+        "Pia shouldn't stretch after sitting for homework.",
+        "Pia ought stretch after sitting for homework."
+      ]
+    },
+    {
+      "id": "should-46",
+      "prompt": "Choose the best advice (bad/unsafe): Quinn / leave half-eaten fruit in the desk.",
+      "answer": "Quinn shouldn't leave half-eaten fruit in the desk.",
+      "distractors": [
+        "Quinn should leave half-eaten fruit in the desk.",
+        "Quinn ought leave half-eaten fruit in the desk.",
+        "Quinn must to leave half-eaten fruit in the desk."
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "modal": "shouldn't",
+      "phrase": "leave half-eaten fruit in the desk",
+      "choices": [
+        "Quinn must to leave half-eaten fruit in the desk.",
+        "Quinn shouldn't leave half-eaten fruit in the desk.",
+        "Quinn should leave half-eaten fruit in the desk.",
+        "Quinn ought leave half-eaten fruit in the desk."
+      ]
+    },
+    {
+      "id": "should-47",
+      "prompt": "When you feel dizzy, you ____ sit down and rest.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "form": "gap",
+      "choices": [
+        "must to",
+        "should",
+        "shouldn't",
+        "ought"
+      ]
+    },
+    {
+      "id": "should-48",
+      "prompt": "You ____ copy a friend's medicine dosage.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "unit": "U1",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel",
+      "form": "gap",
+      "choices": [
+        "must to",
+        "shouldn't",
+        "should",
+        "ought"
+      ]
+    }
+  ]
+}

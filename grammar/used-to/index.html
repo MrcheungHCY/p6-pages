@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P.6 · used to … but … · Red or Blue Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes firework-explode {
+      0% { transform: translate(0, 0) scale(1); opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+    }
+    .firework-particle {
+      animation: firework-explode 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+    @keyframes bounce-gentle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .animate-bounce-gentle { animation: bounce-gentle 1s ease-in-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .animate-spin { animation: spin 1s linear infinite; }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-result { animation: fade-in-up 0.5s ease-out; }
+    @keyframes zoom-in {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .animate-modal { animation: zoom-in 0.2s ease-out; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .footer-bar {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      text-align: center; font-size: 0.75rem; color: #94a3b8;
+      padding: 0.35rem 0.5rem; pointer-events: none; z-index: 5;
+    }
+  </style>
+</head>
+<body class="bg-slate-50">
+  <!--
+    CONFIG: optional Imagen API key. Leave empty for offline placeholder mode.
+    You can also pass ?key=YOUR_KEY in the URL. Never commit a real key.
+  -->
+  <script>
+    const CONFIG = {
+      apiKey: '' // leave empty — class works offline with Past|Present placeholder
+    };
+  </script>
+
+  <div id="app"></div>
+  <div class="footer-bar">HCY English · P.6 · used to</div>
+
+  <script>
+(function () {
+  // --- Icons (inline SVG, lucide-style) ---
+  const icons = {
+    hand: '<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>',
+    wand: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>',
+    image: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>',
+    loader: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>',
+    refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>',
+    arrowRight: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
+    arrowLeft: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>'
+  };
+
+  // Resolve API key: CONFIG first, then ?key= from URL (never hardcoded real key)
+  function resolveApiKey() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = (params.get('key') || '').trim();
+      if (fromQuery) return fromQuery;
+    } catch (_) {}
+    return (typeof CONFIG !== 'undefined' && CONFIG.apiKey) ? String(CONFIG.apiKey).trim() : '';
+  }
+
+  // State
+  let currentActivity = 1;
+  let showPasswordPrompt = false;
+  let showFireworks = false;
+  let passwordInput = '';
+  let passwordError = false;
+  let selectedColor = null;
+  let prompt = '';
+  let submittedSentence = '';
+  let imageUrl = null;
+  let isLoading = false;
+  let error = null;
+  let softNote = null;
+
+  const app = document.getElementById('app');
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function buildPlaceholderDataUrl(sentence) {
+    const past = 'Past';
+    const present = 'Present';
+    const caption = (sentence || '').slice(0, 120);
+    // SVG split before|after — Past / Present labels
+    const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="pastG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="presG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="#f8fafc"/>
+  <rect x="0" y="0" width="480" height="540" fill="url(#pastG)"/>
+  <rect x="480" y="0" width="480" height="540" fill="url(#presG)"/>
+  <line x1="480" y1="40" x2="480" y2="500" stroke="#1e293b" stroke-width="6" stroke-dasharray="12 10"/>
+  <!-- Past scene: sitting sad (simplified kid) -->
+  <circle cx="240" cy="200" r="48" fill="#fde68a" stroke="#1e293b" stroke-width="3"/>
+  <ellipse cx="222" cy="195" rx="6" ry="8" fill="#1e293b"/>
+  <ellipse cx="258" cy="195" rx="6" ry="8" fill="#1e293b"/>
+  <path d="M220 230 Q240 220 260 230" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="200" y="255" width="80" height="90" rx="16" fill="#6366f1" stroke="#1e293b" stroke-width="3"/>
+  <path d="M200 280 L160 340" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M280 280 L320 340" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <text x="240" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#312e81">${past}</text>
+  <text x="240" y="420" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#312e81">used to …</text>
+  <!-- Present scene: happy standing -->
+  <circle cx="720" cy="180" r="48" fill="#fde68a" stroke="#1e293b" stroke-width="3"/>
+  <ellipse cx="702" cy="175" rx="6" ry="8" fill="#1e293b"/>
+  <ellipse cx="738" cy="175" rx="6" ry="8" fill="#1e293b"/>
+  <path d="M700 205 Q720 225 740 205" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="680" y="235" width="80" height="100" rx="16" fill="#10b981" stroke="#1e293b" stroke-width="3"/>
+  <path d="M680 260 L640 200" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M760 260 L800 200" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M700 335 L690 400" stroke="#1e293b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M740 335 L750 400" stroke="#1e293b" stroke-width="10" stroke-linecap="round"/>
+  <text x="720" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#064e3b">${present}</text>
+  <text x="720" y="450" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#064e3b">but … now!</text>
+  <!-- star accents -->
+  <text x="120" y="140" font-size="28" fill="#fbbf24">★</text>
+  <text x="840" y="140" font-size="28" fill="#fbbf24">★</text>
+</svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+
+  function createParticles() {
+    const colors = ['#FF595E', '#FFCA3A', '#8AC926', '#1982C4', '#6A4C93'];
+    return Array.from({ length: 60 }).map((_, i) => {
+      const angle = (Math.PI * 2 * i) / 60;
+      const velocity = 100 + Math.random() * 250;
+      return {
+        id: i,
+        tx: Math.cos(angle) * velocity + 'px',
+        ty: Math.sin(angle) * velocity + 'px',
+        color: colors[Math.floor(Math.random() * colors.length)],
+        delay: Math.random() * 0.2,
+        scale: Math.random() * 0.5 + 0.5
+      };
+    });
+  }
+
+  function renderFireworks() {
+    const bursts = [
+      { id: 1, left: '50%', top: '50%', delay: 0, particles: createParticles() },
+      { id: 2, left: '25%', top: '40%', delay: 0.3, particles: createParticles() },
+      { id: 3, left: '75%', top: '60%', delay: 0.6, particles: createParticles() }
+    ];
+    let html = '<div class="absolute inset-0 z-[100] pointer-events-none flex flex-col items-center justify-center">';
+    bursts.forEach(burst => {
+      html += `<div class="absolute" style="left:${burst.left};top:${burst.top}">`;
+      burst.particles.forEach(p => {
+        html += `<div class="absolute w-3 h-3 rounded-full firework-particle" style="background-color:${p.color};--tx:${p.tx};--ty:${p.ty};transform:scale(${p.scale});animation-delay:${burst.delay + p.delay}s"></div>`;
+      });
+      html += '</div>';
+    });
+    html += '<h2 class="relative z-10 text-5xl md:text-7xl font-black text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] animate-bounce-gentle mt-48 uppercase tracking-widest">Unlocked!</h2>';
+    html += '</div>';
+    return html;
+  }
+
+  function handlePasswordSubmit() {
+    if (passwordInput.toLowerCase() === 'but') {
+      showFireworks = true;
+      passwordError = false;
+      render();
+      setTimeout(() => {
+        showFireworks = false;
+        showPasswordPrompt = false;
+        passwordInput = '';
+        currentActivity = 2;
+        render();
+      }, 2500);
+    } else {
+      passwordError = true;
+      render();
+    }
+  }
+
+  async function generateImage() {
+    if (!prompt.trim()) return;
+    isLoading = true;
+    error = null;
+    softNote = null;
+    imageUrl = null;
+    submittedSentence = prompt;
+    render();
+
+    const enhancedPrompt = `A split-screen before-and-after illustration. The left half shows the past, and the right half shows the present. It illustrates this change: "${prompt}". Featuring a young student as the main character, colorful storybook style.`;
+    const apiKey = resolveApiKey();
+
+    if (!apiKey) {
+      // Offline / no key — polished local placeholder
+      await new Promise(r => setTimeout(r, 600));
+      imageUrl = buildPlaceholderDataUrl(submittedSentence);
+      softNote = null;
+      isLoading = false;
+      render();
+      return;
+    }
+
+    // Optional Imagen via Generative Language API (predict-style as in source App.jsx)
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${encodeURIComponent(apiKey)}`;
+    const payload = {
+      instances: { prompt: enhancedPrompt },
+      parameters: { sampleCount: 1, aspectRatio: '16:9' }
+    };
+
+    let retries = 3;
+    let delay = 1000;
+    while (retries > 0) {
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const result = await response.json();
+        if (result.predictions && result.predictions[0] && result.predictions[0].bytesBase64Encoded) {
+          imageUrl = 'data:image/png;base64,' + result.predictions[0].bytesBase64Encoded;
+          isLoading = false;
+          softNote = null;
+          render();
+          return;
+        }
+        throw new Error('Could not parse the generated image.');
+      } catch (err) {
+        retries--;
+        if (retries === 0) {
+          // Silent-ish fallback to placeholder
+          imageUrl = buildPlaceholderDataUrl(submittedSentence);
+          softNote = 'Using offline story picture (API unavailable).';
+          isLoading = false;
+          render();
+        } else {
+          await new Promise(r => setTimeout(r, delay));
+          delay *= 2;
+        }
+      }
+    }
+  }
+
+  function handleResetImage() {
+    prompt = '';
+    submittedSentence = '';
+    imageUrl = null;
+    error = null;
+    softNote = null;
+    render();
+  }
+
+  function renderChapter1() {
+    if (selectedColor) {
+      const bg = selectedColor === 'red' ? 'bg-red-600' : 'bg-blue-600';
+      return `
+        <div class="min-h-screen w-full flex flex-col items-center justify-center cursor-pointer transition-colors duration-300 ${bg}" id="color-fill">
+          <div class="text-white opacity-50 mb-4 animate-bounce-gentle">${icons.hand}</div>
+          <p class="text-white text-3xl font-bold opacity-80 text-center px-4">Tap anywhere to reset</p>
+        </div>`;
+    }
+
+    return `
+      <div class="min-h-screen w-full bg-slate-50 flex flex-col items-center justify-center p-6 relative pb-16">
+        <div class="max-w-3xl w-full text-center space-y-12 mb-16">
+          <header class="space-y-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-800 tracking-tight">Chapter 1</h1>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-600">Red or Blue Portal</h2>
+            <p class="text-xl text-slate-500 mt-4">Tap a color to fill your screen!</p>
+          </header>
+          <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
+            <button type="button" id="btn-red" class="w-full md:w-1/2 aspect-[2/1] md:aspect-square bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-200 transform hover:-translate-y-2 active:translate-y-1 flex flex-col items-center justify-center group">
+              <span class="text-5xl md:text-7xl font-black uppercase tracking-wider group-hover:scale-110 transition-transform duration-200">Red</span>
+            </button>
+            <button type="button" id="btn-blue" class="w-full md:w-1/2 aspect-[2/1] md:aspect-square bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-200 transform hover:-translate-y-2 active:translate-y-1 flex flex-col items-center justify-center group">
+              <span class="text-5xl md:text-7xl font-black uppercase tracking-wider group-hover:scale-110 transition-transform duration-200">Blue</span>
+            </button>
+          </div>
+        </div>
+        <div class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-10">
+          <button type="button" id="btn-proceed" class="flex items-center gap-3 px-6 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 active:translate-y-0">
+            Proceed to Chapter 2 ${icons.arrowRight}
+          </button>
+        </div>
+        ${showPasswordPrompt ? renderPasswordModal() : ''}
+      </div>`;
+  }
+
+  function renderPasswordModal() {
+    return `
+      <div class="fixed inset-0 bg-slate-900/80 flex items-center justify-center z-50 p-4 backdrop-blur-sm transition-colors duration-500">
+        ${showFireworks ? renderFireworks() : `
+          <div class="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl space-y-6 animate-modal">
+            <div class="text-center space-y-2">
+              <h3 class="text-3xl font-extrabold text-slate-800">Secret Word Required</h3>
+              <p class="text-slate-500 font-medium">To enter Chapter 2, you need the password!</p>
+            </div>
+            <div class="space-y-4">
+              <input type="text" maxlength="3" id="password-input" value="${escapeHtml(passwordInput)}"
+                placeholder="_ _ _"
+                class="w-full text-center text-5xl font-black tracking-[0.25em] p-6 rounded-2xl border-4 border-slate-100 focus:border-indigo-500 focus:ring-0 transition-all uppercase placeholder:text-slate-300 outline-none" autofocus />
+              ${passwordError ? '<p class="text-red-500 text-center font-bold animate-pulse">Incorrect! Please try again.</p>' : ''}
+            </div>
+            <div class="flex gap-4 pt-2">
+              <button type="button" id="btn-pw-back" class="flex-1 py-4 bg-slate-100 text-slate-600 rounded-xl font-bold hover:bg-slate-200 transition-colors">Go Back</button>
+              <button type="button" id="btn-pw-unlock" class="flex-1 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors shadow-lg">Unlock</button>
+            </div>
+          </div>
+        `}
+      </div>`;
+  }
+
+  function renderChapter2() {
+    return `
+      <div class="min-h-screen w-full bg-slate-50 flex flex-col items-center p-6 md:p-12 font-sans relative pb-16">
+        <div class="w-full max-w-4xl mb-6 flex justify-start">
+          <button type="button" id="btn-back-ch1" class="flex items-center gap-2 px-4 py-2 text-slate-500 hover:text-slate-800 hover:bg-slate-200 rounded-full transition-colors font-medium">
+            ${icons.arrowLeft} Back to Chapter 1
+          </button>
+        </div>
+        <div class="max-w-4xl w-full space-y-8">
+          <header class="text-center space-y-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-900 tracking-tight">Chapter 2</h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-700 flex items-center justify-center gap-3">
+              ${icons.wand} Story Illustrator
+            </h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+              Write a sentence using "used to" to describe a change, and the AI will draw a before-and-after picture!
+            </p>
+          </header>
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8 space-y-6">
+            <div class="space-y-3">
+              <label for="story-prompt" class="block text-xl font-bold text-slate-800">Write your "used to" sentence:</label>
+              <textarea id="story-prompt" ${isLoading ? 'disabled' : ''}
+                placeholder="E.g., I used to be afraid of insects but I am braver now..."
+                class="w-full h-32 p-4 rounded-xl border-2 border-slate-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 transition-all resize-none text-lg text-slate-800 placeholder:text-slate-400 disabled:opacity-50 disabled:bg-slate-50 outline-none">${escapeHtml(prompt)}</textarea>
+            </div>
+            <button type="button" id="btn-generate" ${isLoading || !prompt.trim() ? 'disabled' : ''}
+              class="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 disabled:bg-slate-300 disabled:cursor-not-allowed text-white rounded-xl text-xl font-bold transition-all duration-200 flex items-center justify-center gap-3 shadow-lg">
+              ${isLoading
+                ? icons.loader + ' Drawing your story...'
+                : icons.image + ' Generate Magic Image!'}
+            </button>
+            ${error ? `<div class="p-4 bg-red-50 text-red-700 rounded-xl border border-red-200 text-center font-medium">${escapeHtml(error)}</div>` : ''}
+            ${softNote ? `<div class="p-3 bg-amber-50 text-amber-800 rounded-xl border border-amber-200 text-center text-sm font-medium">${escapeHtml(softNote)}</div>` : ''}
+          </div>
+          ${imageUrl ? `
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8 space-y-6 animate-result">
+              <h3 class="text-2xl font-bold text-center text-slate-800">Your Illustration is Ready!</h3>
+              <div class="relative w-full bg-slate-100 rounded-2xl overflow-hidden shadow-xl border-4 border-slate-800 flex flex-col">
+                <img src="${imageUrl}" alt="Generated before and after illustration" class="w-full h-auto object-contain bg-white" />
+                <div class="bg-slate-800 text-white p-4 md:p-6 text-center">
+                  <p class="text-xl md:text-3xl font-bold tracking-wide">${escapeHtml(submittedSentence)}</p>
+                </div>
+              </div>
+              <button type="button" id="btn-reset" class="mx-auto flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full font-semibold transition-colors mt-6">
+                ${icons.refresh} Draw another change
+              </button>
+            </div>
+          ` : ''}
+        </div>
+      </div>`;
+  }
+
+  function bindEvents() {
+    if (currentActivity === 1) {
+      if (selectedColor) {
+        const fill = document.getElementById('color-fill');
+        if (fill) fill.addEventListener('click', () => { selectedColor = null; render(); });
+        return;
+      }
+      const red = document.getElementById('btn-red');
+      const blue = document.getElementById('btn-blue');
+      const proceed = document.getElementById('btn-proceed');
+      if (red) red.addEventListener('click', () => { selectedColor = 'red'; render(); });
+      if (blue) blue.addEventListener('click', () => { selectedColor = 'blue'; render(); });
+      if (proceed) proceed.addEventListener('click', () => {
+        showPasswordPrompt = true;
+        passwordInput = '';
+        passwordError = false;
+        render();
+      });
+      if (showPasswordPrompt && !showFireworks) {
+        const input = document.getElementById('password-input');
+        const back = document.getElementById('btn-pw-back');
+        const unlock = document.getElementById('btn-pw-unlock');
+        if (input) {
+          input.focus();
+          input.addEventListener('input', (e) => {
+            passwordInput = e.target.value;
+            passwordError = false;
+          });
+          input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') handlePasswordSubmit();
+          });
+        }
+        if (back) back.addEventListener('click', () => {
+          showPasswordPrompt = false;
+          passwordInput = '';
+          passwordError = false;
+          render();
+        });
+        if (unlock) unlock.addEventListener('click', handlePasswordSubmit);
+      }
+      return;
+    }
+
+    if (currentActivity === 2) {
+      const back = document.getElementById('btn-back-ch1');
+      const ta = document.getElementById('story-prompt');
+      const gen = document.getElementById('btn-generate');
+      const reset = document.getElementById('btn-reset');
+      if (back) back.addEventListener('click', () => { currentActivity = 1; render(); });
+      if (ta) {
+        ta.addEventListener('input', (e) => {
+          prompt = e.target.value;
+          // enable/disable generate without full re-render of textarea caret
+          if (gen) gen.disabled = isLoading || !prompt.trim();
+        });
+      }
+      if (gen) gen.addEventListener('click', generateImage);
+      if (reset) reset.addEventListener('click', handleResetImage);
+    }
+  }
+
+  function render() {
+    if (currentActivity === 1) {
+      app.innerHTML = renderChapter1();
+    } else if (currentActivity === 2) {
+      app.innerHTML = renderChapter2();
+    } else {
+      app.innerHTML = '';
+    }
+    bindEvents();
+  }
+
+  render();
+})();
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Need-To-Be Adj Lock</title>
+
+<link rel="stylesheet" href="../../../assets/fx-kit/css/hcy-fx.css" />
+<link rel="stylesheet" href="../../../assets/hcy-touch.css" />
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-motion.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-audio.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-three.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
+<script src="../../../assets/fx-kit/js/hcy-fx.js"></script>
+<script src="../../../assets/character-library/hcy-chars.js"></script>
+<script src="../../../assets/hcy-touch.js"></script>
+<script src="../../banks/no-exam-filter.js"></script>
+
+<style>
+:root{--ink:#2a1830;--pink:#ff7ab6;--sky:#5ec8ff;--mint:#7dffb3;--yel:#ffe14a;--lilac:#b48cff;--cream:#fff8fb;--card:#ffffffee}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:"Comic Sans MS","Chalkboard SE","Nunito","Segoe UI Rounded",system-ui,sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;
+background:radial-gradient(circle at 10% 20%,rgba(255,122,182,.35) 0 20px,transparent 21px),radial-gradient(circle at 85% 15%,rgba(94,200,255,.4) 0 16px,transparent 17px),linear-gradient(165deg,#ffd6ea 0%,#fff3b0 40%,#c8ffe8 70%,#b8e8ff 100%)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background-image:radial-gradient(circle,#ff7ab6 1.6px,transparent 2px);background-size:40px 40px}
+.app{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:8px;gap:8px}
+.top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;background:var(--card);border:4px solid var(--ink);border-radius:18px;padding:8px 10px;box-shadow:0 4px 0 var(--ink)}
+.title-block{display:flex;align-items:center;gap:10px}.title-block img.scene{width:56px;height:56px;object-fit:contain;animation:idleBob 1.5s ease-in-out infinite alternate}
+.title-block h1{font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.15}.title-block .mode{font-size:.75rem;font-weight:800;opacity:.75}
+.hud{display:flex;flex-wrap:wrap;gap:6px}
+.stat{padding:6px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-weight:900;font-size:clamp(.72rem,1.8vw,.92rem);box-shadow:0 2px 0 var(--ink)}
+.stat.timer{background:#b8e8ff}.stat.lives{background:#ffd0e8}.stat.streak{background:#ffe14a}.stat.p1{background:#ffb0d8}.stat.p2{background:#a8f0ff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;font:inherit;font-weight:900;border:4px solid var(--ink);border-radius:999px;background:#ffb0d8;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 var(--ink);touch-action:none}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.btn-sky{background:#7ad4ff}.btn-mint{background:#7dffc0}.btn-yel{background:#ffe14a}.btn-lilac{background:#d4b8ff}
+.stage{flex:1;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:8px}
+.prompt-card{background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:12px 14px;box-shadow:0 4px 0 var(--ink);text-align:center}
+.prompt-card .label{font-size:.75rem;font-weight:800;opacity:.7}.prompt-card .prompt{font-size:clamp(1.05rem,3vw,1.5rem);font-weight:900;line-height:1.25}
+.prompt-card .hint{margin-top:6px;font-size:.85rem;font-weight:700;opacity:.75}
+.play{min-height:0;display:flex;gap:8px;align-items:stretch}
+.pad{flex:1;min-width:0;border:4px solid var(--ink);border-radius:22px;background:#ffd6ea;box-shadow:0 5px 0 var(--ink);padding:10px;display:flex;flex-direction:column;gap:8px;touch-action:none}
+.pad.p2{background:#c8f0ff}.pad h2{font-size:clamp(.9rem,2vw,1.05rem);text-align:center}
+.grid{display:grid;gap:8px;flex:1;min-height:0;align-content:start;overflow:auto;grid-template-columns:1fr}
+.choice,.chip{min-height:52px;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;font-weight:800;font-size:clamp(.82rem,2vw,1.02rem);cursor:pointer;touch-action:none;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center;justify-content:center;text-align:center}
+.choice.held,.chip.held,.lane.held,.corner.held,.zone.held{background:#ffe14a;transform:scale(.97)}
+.choice.ok,.chip.ok{background:#7dffb3}.choice.bad,.chip.bad{background:#ff9aac;animation:shake .35s ease}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;min-height:0}
+.zone{border:4px dashed var(--ink);border-radius:20px;padding:8px;min-height:100px;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.zone.should{background:#d8ffe8}.zone.shouldnt{background:#ffe0e8}.zone h3{text-align:center}
+.cards-pool{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px;max-height:40%;overflow:auto}
+.corner-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;flex:1;min-height:0}
+.corner{border:4px solid var(--ink);border-radius:18px;padding:8px;background:#fff;display:flex;flex-direction:column;gap:6px;touch-action:none;overflow:auto}
+.corner.before{background:#d4f0ff}.corner.during{background:#ffe8b0}.corner.after{background:#d8ffe0}.corner.never{background:#ffd0d8}
+.lane-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.lane{min-height:64px;border:4px solid var(--ink);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;touch-action:none;box-shadow:0 3px 0 var(--ink)}
+.footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.toast{position:fixed;left:50%;bottom:8vh;transform:translateX(-50%);background:#ff7ab6;color:#fff;font-weight:900;padding:10px 18px;border-radius:14px;border:3px solid var(--ink);z-index:50;pointer-events:none;opacity:0;transition:opacity .2s}.toast.on{opacity:1}
+#hcy-mascot-slot{position:fixed;right:8px;bottom:8px;width:110px;height:110px;z-index:40;pointer-events:none}
+.start-overlay{position:absolute;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;background:rgba(255,248,251,.9)}
+.start-card{background:#fff;border:5px solid var(--ink);border-radius:24px;padding:22px;max-width:520px;text-align:center;box-shadow:0 8px 0 var(--ink)}
+.start-card p{margin:10px 0 16px;font-weight:700;line-height:1.4}
+.blank{min-width:90px;min-height:48px;border:3px dashed var(--ink);border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:900;padding:6px 10px;margin:4px}
+.blank.p1{background:#ffb0d8;border-style:solid}.blank.p2{background:#a8f0ff;border-style:solid}
+.passage{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:800;line-height:1.6;text-align:left}
+@keyframes idleBob{0%{transform:translateY(0) rotate(-2deg)}100%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@media(max-width:700px){.play{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="title-block">
+      <img class="scene" src="../../../assets/character-library/png/char-067.png" alt="" onerror="this.style.display='none'" />
+      <div><div class="mode">MODE 6 — need to be / need to + V</div><h1>Need-To-Be Adj Lock</h1></div>
+    </div>
+    <div class="hud">
+      <span class="stat" id="hud-q">0/0</span>
+      <span class="stat timer" id="hud-timer">⏱ —</span>
+      <span class="stat lives" id="hud-lives">♥ 3</span>
+      <span class="stat streak" id="hud-streak">🔥 0</span>
+      <span class="stat p1" id="hud-p1">P1 0</span>
+      <span class="stat p2" id="hud-p2">P2 0</span>
+    </div>
+  </div>
+  <div class="stage"><div class="prompt-card"><div class="label">need to be + adj  vs  need to + verb</div><div class="prompt" id="prompt">…</div><div class="hint" id="hint"></div>
+<div class="lane-row"><div class="lane" id="lane-adj">ADJ lane<br/>need to be + adj</div><div class="lane" id="lane-verb">VERB lane<br/>need to + verb</div></div></div>
+<div class="play"><div class="pad" style="flex:1"><h2>Word bank (hold with a lane)</h2><div class="grid" id="grid1" style="grid-template-columns:1fr 1fr"></div></div></div></div>
+  <div class="footer">
+    <button class="btn btn-mint" id="btn-start" type="button">▶ Start</button>
+    <button class="btn btn-yel" id="btn-next" type="button">Next ▶</button>
+    <button class="btn btn-lilac" id="btn-reset" type="button">↺ Teacher Reset</button>
+  </div>
+</div>
+<div id="start-overlay" class="start-overlay"><div class="start-card"><h2>Need-To-Be Adj Lock</h2><p>Hold ADJ lane or VERB lane + the word. Unit 3 need to be.</p>
+<button class="btn btn-sky" id="btn-start2" type="button">▶ Start Game</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="hcy-mascot-slot"></div>
+<script type="application/json" id="bank-json">{"meta":{"bank":"need-to-be","skill":"need-to-be","count":53,"primary_source":"P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx","also":["_targets.json","p6-conditionals.js","p6-u1-3-vocab.js","parallel-original"],"exclude":"每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)","item_schema":["id","prompt","choices|slots","answer","distractors","unit","skill","difficulty"],"scrubbed":"2026-11-04 Asia/Hong_Kong — exam stems removed"},"items":[{"id":"need-01","prompt":"Nora is a war-zone reporter. She ________.","answer":"need to be brave","distractors":["need to brave","need be brave","must to be brave"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be brave","need to brave","need be brave","must to be brave"],"source":"WS-A","branch":"adj"},{"id":"need-02","prompt":"When you cross a busy road, you ________.","answer":"need to be careful","distractors":["need to careful","need be careful","must to be careful"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be careful","need to careful","need be careful","must to be careful"],"source":"WS-A","branch":"adj"},{"id":"need-03","prompt":"After an earthquake, people ________ with donations.","answer":"need to be generous","distractors":["need to generous","need be generous","must to be generous"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be generous","need to generous","need be generous","must to be generous"],"source":"WS-A","branch":"adj"},{"id":"need-04","prompt":"In morning assembly, students ________.","answer":"need to be quiet","distractors":["need to quiet","need be quiet","must to be quiet"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be quiet","need to quiet","need be quiet","must to be quiet"],"source":"WS-A","branch":"adj"},{"id":"need-05","prompt":"To overcome difficulties, we ________.","answer":"need to be strong","distractors":["need to strong","need be strong","must to be strong"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be strong","need to strong","need be strong","must to be strong"],"source":"WS-A","branch":"adj"},{"id":"need-06","prompt":"Gary has a broken arm. He ________ while it heals.","answer":"needs to be patient","distractors":["need to be patient","need to patient","need be patient"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["needs to be patient","need to be patient","need to patient","need be patient"],"source":"WS-A","branch":"adj"},{"id":"need-07","prompt":"After a car accident, you ________ then call the police.","answer":"need to be calm","distractors":["need to calm","need be calm","must to be calm"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be calm","need to calm","need be calm","must to be calm"],"source":"WS-A","branch":"adj"},{"id":"need-08","prompt":"Making a model plane is complicated. You ________.","answer":"need to be patient","distractors":["need to patient","need be patient","must to be patient"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to patient","need to be patient","need be patient","must to be patient"],"source":"WS-B","branch":"adj"},{"id":"need-09","prompt":"Before making a model, you ________ some tools.","answer":"need to get","distractors":["need to be get","ought get","need to gets"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to gets","need to be get","ought get","need to get"],"source":"WS-B","branch":"verb"},{"id":"need-10","prompt":"To be a good cat owner, you ________.","answer":"need to be responsible","distractors":["need to responsible","need be responsible","must to be responsible"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["must to be responsible","need to responsible","need to be responsible","need be responsible"],"source":"WS-B","branch":"adj"},{"id":"need-11","prompt":"You ________ your cat every day.","answer":"need to feed","distractors":["need to be feed","ought feed","need to feeds"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["ought feed","need to feed","need to be feed","need to feeds"],"source":"WS-B","branch":"verb"},{"id":"need-12","prompt":"You also ________ with your cat.","answer":"need to play","distractors":["need to be play","ought play","need to plays"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["ought play","need to play","need to plays","need to be play"],"source":"WS-B","branch":"verb"},{"id":"need-13","prompt":"If Pam wants more friends, she ________.","answer":"need to be generous","distractors":["need to generous","need be generous","must to be generous"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to be generous","need to generous","need be generous","must to be generous"],"source":"WS-B","branch":"adj"},{"id":"need-14","prompt":"She ________ to share her things.","answer":"need to learn","distractors":["need to be learn","ought learn","need to learns"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["ought learn","need to learns","need to learn","need to be learn"],"source":"WS-B","branch":"verb"},{"id":"need-15","prompt":"Bill wants to be a fireman. He ________ more exercise.","answer":"need to do","distractors":["need to be do","ought do","need to dos"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to dos","need to be do","need to do","ought do"],"source":"WS-B","branch":"verb"},{"id":"need-16","prompt":"He ________ to be a fireman.","answer":"need to be strong","distractors":["need to strong","need be strong","must to be strong"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to be strong","must to be strong","need be strong","need to strong"],"source":"WS-B","branch":"adj"},{"id":"need-17","prompt":"Tim ________ a speech at the graduation ceremony.","answer":"need to give","distractors":["need to be give","ought give","need to gives"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to gives","need to be give","ought give","need to give"],"source":"WS-B","branch":"verb"},{"id":"need-18","prompt":"Before the speech, Tim ________.","answer":"need to be brave","distractors":["need to brave","need be brave","must to be brave"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["must to be brave","need to brave","need to be brave","need be brave"],"source":"WS-B","branch":"adj"},{"id":"need-19","prompt":"In a typhoon, you ________ and follow news updates.","answer":"need to be calm","distractors":["need to calm","need be calm","must to be calm"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["must to be calm","need to calm","need to be calm","need be calm"],"source":"parallel","branch":"adj"},{"id":"need-20","prompt":"Firefighters ________ to rescue people.","answer":"need to be brave","distractors":["need to brave","need be brave","must to be brave"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need be brave","need to be brave","need to brave","must to be brave"],"source":"parallel","branch":"adj"},{"id":"need-21","prompt":"When carrying scissors, children ________.","answer":"need to be careful","distractors":["need to careful","need be careful","must to be careful"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need be careful","must to be careful","need to careful","need to be careful"],"source":"parallel","branch":"adj"},{"id":"need-22","prompt":"Good classmates ________ with time and help.","answer":"need to be generous","distractors":["need to generous","need be generous","must to be generous"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need be generous","need to generous","need to be generous","must to be generous"],"source":"parallel","branch":"adj"},{"id":"need-23","prompt":"Library users ________.","answer":"need to be quiet","distractors":["need to quiet","need be quiet","must to be quiet"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["must to be quiet","need to be quiet","need to quiet","need be quiet"],"source":"parallel","branch":"adj"},{"id":"need-24","prompt":"Athletes ________ for long training.","answer":"need to be strong","distractors":["need to strong","need be strong","must to be strong"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need be strong","need to be strong","must to be strong","need to strong"],"source":"parallel","branch":"adj"},{"id":"need-25","prompt":"A group leader ________ for the team's jobs.","answer":"need to be responsible","distractors":["need to responsible","need be responsible","must to be responsible"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to be responsible","must to be responsible","need to responsible","need be responsible"],"source":"parallel","branch":"adj"},{"id":"need-26","prompt":"When waiting for results, you ________.","answer":"need to be patient","distractors":["need to patient","need be patient","must to be patient"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to patient","need to be patient","must to be patient","need be patient"],"source":"parallel","branch":"adj"},{"id":"need-27","prompt":"Before PE, students ________ warm-up exercises.","answer":"need to do","distractors":["need to be do","ought do","need to dos"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to be do","need to dos","need to do","ought do"],"source":"parallel","branch":"verb"},{"id":"need-28","prompt":"Sick students ________ their medicine on time.","answer":"need to take","distractors":["need to be take","ought take","need to takes"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought take","need to take","need to be take","need to takes"],"source":"parallel","branch":"verb"},{"id":"need-29","prompt":"Cat owners ________ their pets clean water.","answer":"need to give","distractors":["need to be give","ought give","need to gives"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought give","need to give","need to gives","need to be give"],"source":"parallel","branch":"verb"},{"id":"need-30","prompt":"Writers ________ their work carefully.","answer":"need to check","distractors":["need to be check","ought check","need to checks"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to checks","need to be check","ought check","need to check"],"source":"parallel","branch":"verb"},{"id":"need-31","prompt":"In heavy rain, we ________ indoors.","answer":"need to stay","distractors":["need to be stay","ought stay","need to stays"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to stay","need to be stay","ought stay","need to stays"],"source":"parallel","branch":"verb"},{"id":"need-32","prompt":"Before crossing, you ________ both ways.","answer":"need to look","distractors":["need to be look","ought look","need to looks"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to be look","need to look","need to looks","ought look"],"source":"parallel","branch":"verb"},{"id":"need-33","prompt":"To stay healthy, we ________ enough sleep.","answer":"need to get","distractors":["need to be get","ought get","need to gets"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to gets","need to be get","need to get","ought get"],"source":"parallel","branch":"verb"},{"id":"need-34","prompt":"After PE, you ________ your hands.","answer":"need to wash","distractors":["need to be wash","ought wash","need to washs"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to be wash","need to wash","ought wash","need to washs"],"source":"parallel","branch":"verb"},{"id":"need-35","prompt":"During Signal 8, people ________ away from the sea.","answer":"need to stay","distractors":["need to be stay","ought stay","need to stays"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought stay","need to be stay","need to stay","need to stays"],"source":"parallel","branch":"verb"},{"id":"need-36","prompt":"Helpers at a centre ________ blankets and food.","answer":"need to sort","distractors":["need to be sort","ought sort","need to sorts"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought sort","need to sort","need to be sort","need to sorts"],"source":"parallel","branch":"verb"},{"id":"need-37","prompt":"Speakers ________ clearly so everyone can hear.","answer":"need to speak","distractors":["need to be speak","ought speak","need to speaks"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought speak","need to be speak","need to speaks","need to speak"],"source":"parallel","branch":"verb"},{"id":"need-38","prompt":"Team members ________ each other.","answer":"need to help","distractors":["need to be help","ought help","need to helps"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to helps","ought help","need to be help","need to help"],"source":"parallel","branch":"verb"},{"id":"need-39","prompt":"Students ________ their homework before playing.","answer":"need to finish","distractors":["need to be finish","ought finish","need to finishs"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought finish","need to finishs","need to be finish","need to finish"],"source":"parallel","branch":"verb"},{"id":"need-40","prompt":"In an emergency, you ________ the teacher.","answer":"need to tell","distractors":["need to be tell","ought tell","need to tells"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["ought tell","need to tell","need to be tell","need to tells"],"source":"parallel","branch":"verb"},{"id":"need-41","prompt":"To protect teeth, children ________ twice a day.","answer":"need to brush","distractors":["need to be brush","ought brush","need to brushs"],"unit":"U3","skill":"need-to-be","difficulty":"hard","choices":["need to brush","ought brush","need to be brush","need to brushs"],"source":"parallel","branch":"verb"},{"id":"need-42","prompt":"Reporters in danger zones ________.","answer":"need to be brave","distractors":["need to brave","need be brave","must to be brave"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need be brave","need to be brave","must to be brave","need to brave"],"source":"parallel","branch":"adj"},{"id":"need-43","prompt":"When friends are upset, you ________.","answer":"need to be patient","distractors":["need to patient","need be patient","must to be patient"],"unit":"U3","skill":"need-to-be","difficulty":"mid","choices":["need to patient","must to be patient","need be patient","need to be patient"],"source":"parallel","branch":"adj"},{"id":"need-44","prompt":"Making models takes time. You ____ patient.","answer":"need to be","distractors":["need to","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be","need to","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-45","prompt":"You ____ get some scissors first.","answer":"need to","distractors":["need to be","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to","need to be","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-46","prompt":"A good friend ____ generous.","answer":"need to be","distractors":["need to","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be","need to","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-47","prompt":"She ____ learn to share.","answer":"need to","distractors":["need to be","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to","need to be","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-48","prompt":"Firemen ____ strong.","answer":"need to be","distractors":["need to","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be","need to","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-49","prompt":"He ____ do more exercise.","answer":"need to","distractors":["need to be","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to","need to be","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-50","prompt":"Tim ____ give a speech tomorrow.","answer":"need to","distractors":["need to be","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to","need to be","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-51","prompt":"Before speaking, you ____ brave.","answer":"need to be","distractors":["need to","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be","need to","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-52","prompt":"Cat owners ____ responsible.","answer":"need to be","distractors":["need to","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to be","need to","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"},{"id":"need-53","prompt":"You ____ feed your cat every day.","answer":"need to","distractors":["need to be","need be","needs"],"unit":"U3","skill":"need-to-be","difficulty":"easy","choices":["need to","need to be","need be","needs"],"source":"branch-gap","form":"gap","branch":"meta"}]}</script>
+<script>
+
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('on')},1100)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=(Math.random()*(i+1))|0;var x=a[i];a[i]=a[j];a[j]=x}return a}
+function pickN(a,n){return shuffle(a).slice(0,Math.min(n,a.length))}
+function GameShell(o){
+  var s=this;s.lives=o.lives||3;s.max=s.lives;s.streak=0;s.s1=0;s.s2=0;s.sec=o.timerSec||18;s.left=0;s.tid=null;s.run=false;s.qi=0;s.items=o.items||[];
+  s.hud=function(){$('hud-timer').textContent='⏱ '+s.left+'s';$('hud-lives').textContent='♥ '+s.lives;$('hud-streak').textContent='🔥 '+s.streak;$('hud-p1').textContent='P1 '+s.s1;$('hud-p2').textContent='P2 '+s.s2;$('hud-q').textContent=(s.items.length?(s.qi+1):0)+'/'+s.items.length};
+  s.startTimer=function(){clearInterval(s.tid);s.left=s.sec;s.hud();s.tid=setInterval(function(){s.left--;s.hud();if(s.left<=0){clearInterval(s.tid);if(s.onTimeout)s.onTimeout()}},1000)};
+  s.stop=function(){clearInterval(s.tid)};
+  s.ok=function(p){s.streak++;if(p===2)s.s2++;else s.s1++;s.hud();try{HcyFx.correct()}catch(e){}toast('Nice!');};
+  s.bad=function(){s.streak=0;s.lives=Math.max(0,s.lives-1);s.hud();try{HcyFx.wrong()}catch(e){}toast(s.lives?'Oops':'Out of lives');};
+  s.reset=function(){s.stop();s.lives=s.max;s.streak=0;s.s1=0;s.s2=0;s.qi=0;s.run=false;s.hud();try{HcyFx.reset()}catch(e){};$('start-overlay').style.display='flex'};
+}
+function bootFx(){try{HcyFx.init({mascotMount:$('hcy-mascot-slot'),mascotMode:'3d'})}catch(e){}
+ document.body.addEventListener('pointerdown',function(){try{HcyFxAudio&&HcyFxAudio.unlock()}catch(e){}},{once:true});}
+
+/* Aaron HARD RULE: no P6 GE 1st Term Exam 2026-2027 paper items */
+function isExamPaperItem(it){
+  if(!it || typeof it!=="object") return false;
+  var s=String(it.source||""), u=String(it.unit||""), tag=String(it.tag||""), id=String(it.id||""), p=String(it.prompt||"");
+  var origin=String(it.origin||""), section=String(it.section||"");
+  var blob=(s+" "+u+" "+tag+" "+id+" "+p+" "+origin).toLowerCase();
+  if(/^exam/i.test(s)) return true;
+  if(/exam\s*[a-j]/i.test(blob)) return true;
+  if(/\bexam[a-j]\b/i.test(blob)) return true;
+  if(/u\d\s*\/\s*exam/i.test(u)) return true;
+  if(/typhoon-parallel|examc-parallel|exam-parallel/i.test(tag+" "+origin)) return true;
+  if(/\[exam\b/i.test(p) || /\[exam\b/i.test(id)) return true;
+  if((section==="F"||section==="H") && (/exam/i.test(s+u) || /\[exam/i.test(p))) return true;
+  return false;
+}
+function filterNoExamItems(arr){
+  if(!Array.isArray(arr)) return [];
+  return arr.filter(function(it){ return !isExamPaperItem(it); });
+}
+function showExamQuarantine(msg){
+  var banner=document.getElementById("exam-quarantine-banner");
+  if(!banner){
+    banner=document.createElement("div");
+    banner.id="exam-quarantine-banner";
+    banner.setAttribute("role","status");
+    banner.style.cssText="position:sticky;top:0;z-index:9999;background:#7f1d1d;color:#fff;padding:12px 16px;font:600 15px/1.4 system-ui,sans-serif;text-align:center;border-bottom:3px solid #fbbf24;";
+    document.body.insertBefore(banner, document.body.firstChild);
+  }
+  banner.textContent=msg;
+  ["btn-start","btn-start2"].forEach(function(id){
+    var b=document.getElementById(id);
+    if(b){ b.disabled=true; b.style.opacity="0.45"; b.style.pointerEvents="none"; b.textContent="0 items — exam bank removed"; }
+  });
+  var n=document.querySelector("#start-overlay .start-card p");
+  if(n) n.textContent=msg+" · 0 playable items.";
+}
+
+function parseBankPayload(data){
+  if(!data) return [];
+  if(Array.isArray(data)) return data;
+  if(data.items && Array.isArray(data.items)) return data.items;
+  return [];
+}
+function loadFatBank(fileName, normalizeFn, onReady){
+  function finish(raw){
+    var payloadItems = filterNoExamItems(parseBankPayload(raw));
+    var items = normalizeFn(payloadItems);
+    if(!items.length){
+      try{
+        var emb = filterNoExamItems(parseBankPayload(JSON.parse($("bank-json").textContent)));
+        items = normalizeFn(emb);
+      }catch(e){ items=[]; }
+    }
+    onReady(shuffle(items));
+  }
+  var embedded = null;
+  try{ embedded = JSON.parse($("bank-json").textContent); }catch(e){ embedded = {items:[]}; }
+  var tryFetch = (location.protocol !== "file:");
+  if(!tryFetch){ finish(embedded); return; }
+  fetch("../../banks/"+fileName).then(function(r){ if(!r.ok) throw new Error("bad"); return r.json(); })
+    .then(function(data){ finish(data); })
+    .catch(function(){ finish(embedded); });
+}
+
+
+
+var BANK=[], G=null, cur=null, lock=false, holdLane=null, holdWord=null;
+function normalizeNeed(raw){
+  return raw.map(function(it){
+    var branch=it.branch||'adj';
+    var ans=it.answer||'';
+    var word='';
+    var lane=branch;
+    if(branch==='adj'){
+      var m=ans.match(/need to be\s+(.+)$/i); word=m?m[1].replace(/\.$/,''):ans.replace(/^need to be\s+/i,'');
+      lane='adj';
+    } else if(branch==='verb'){
+      var m2=ans.match(/need to\s+(.+)$/i); word=m2?m2[1].replace(/\.$/,''):ans.replace(/^need to\s+/i,'');
+      lane='verb';
+    } else if(branch==='meta'){
+      if(/^need to be$/i.test(ans.trim()) || /\bneed to be\b/i.test(ans) && !/^need to be\s+\w+/i.test(ans)){
+        lane='adj'; word='be + adj';
+        // try extract adj from prompt blank context
+        var pm=(it.prompt||'').match(/____\s+(\w+)/); if(pm) word=pm[1];
+        else {
+          var choices=it.choices||[];
+          // keep answer as meta marker — use distractor-free word from prompt
+          var last=(it.prompt||'').trim().split(/\s+/).pop().replace(/[._]/g,'');
+          if(last && last.toLowerCase()!=='____') word=last;
+        }
+      } else if(/^need to$/i.test(ans.trim())){
+        lane='verb';
+        var pm2=(it.prompt||'').match(/____\s+(\w+)/); word=pm2?pm2[1]:'verb';
+        var rest=(it.prompt||'').replace(/^.*?____\s*/,'');
+        if(rest) word=rest.split(/\s+/).slice(0,3).join(' ').replace(/\.$/,'');
+      } else if(/^need to be\s+/i.test(ans)){
+        lane='adj'; word=ans.replace(/^need to be\s+/i,'').replace(/\.$/,'');
+      } else if(/^need to\s+/i.test(ans)){
+        lane='verb'; word=ans.replace(/^need to\s+/i,'').replace(/\.$/,'');
+      } else { lane='adj'; word=ans; }
+    }
+    return {id:it.id, cue:it.prompt||ans, lane:lane, word:word, answer:ans, branch:branch};
+  }).filter(function(x){return x.word && x.lane});
+}
+function paint(){cur=G.items[G.qi%G.items.length];lock=false;holdLane=null;holdWord=null;
+ $('prompt').textContent=cur.cue; $('hint').textContent='Hold lane ('+(cur.lane==='adj'?'need to be + adj':'need to + verb')+') + word';
+ ['lane-adj','lane-verb'].forEach(function(id){var el=$(id); if(el) el.classList.remove('held','ok','bad')});
+ var words=shuffle([cur.word].concat(pickN(BANK.map(function(x){return x.word}).filter(function(w,i,a){return a.indexOf(w)===i&&w!==cur.word}),5)));
+ var g=$('grid1'); g.innerHTML='';
+ words.forEach(function(w){var b=document.createElement('button');b.type='button';b.className='choice';b.textContent=w;
+  b.addEventListener('pointerdown',function(e){e.preventDefault();if(lock||!G.run)return;try{b.setPointerCapture(e.pointerId)}catch(err){}b.classList.add('held');
+   holdWord={w:w,el:b,side:e.clientX<window.innerWidth/2?1:2}; tryLock();});
+  b.addEventListener('pointerup',function(){b.classList.remove('held');holdWord=null}); g.appendChild(b)});
+ G.startTimer();
+}
+[['lane-adj','adj'],['lane-verb','verb']].forEach(function(pair){
+ var el=$(pair[0]); if(!el) return;
+ el.addEventListener('pointerdown',function(e){e.preventDefault();if(lock||!G.run)return;try{this.setPointerCapture(e.pointerId)}catch(err){}this.classList.add('held');holdLane={lane:pair[1],el:this};tryLock()});
+ el.addEventListener('pointerup',function(){this.classList.remove('held');holdLane=null});
+});
+function tryLock(){if(!holdLane||!holdWord||lock)return; lock=true;G.stop();
+ var ok=holdLane.lane===cur.lane && holdWord.w===cur.word;
+ if(ok){holdLane.el.classList.add('ok');holdWord.el.classList.add('ok');G.ok(holdWord.side); toast(cur.answer)}
+ else{holdLane.el.classList.add('bad');holdWord.el.classList.add('bad');G.bad()} setTimeout(next,750)}
+function next(){if(G.lives<=0)return;G.qi++;if(G.qi>=G.items.length)G.qi=0;paint()}
+function start(){G.run=true;$('start-overlay').style.display='none';G.qi=0;G.lives=G.max;G.streak=0;G.s1=0;G.s2=0;G.items=shuffle(BANK);paint()}
+function bootGame(items){
+  BANK=items; G=new GameShell({items:BANK,timerSec:18});
+  G.onTimeout=function(){G.bad();next()};
+  $('btn-start').onclick=$('btn-start2').onclick=start;
+  $('btn-reset').onclick=function(){G.reset()};
+  $('btn-next').onclick=function(){if(G.run)next()};
+  bootFx();G.hud();
+  var n=$('start-overlay').querySelector('.start-card p');
+  if(n) n.textContent='Need-to-be adj vs verb · bank '+BANK.length+'.';
+}
+loadFatBank('need-to-be.json', normalizeNeed, bootGame);
+
+</script>
+</body>
+</html>

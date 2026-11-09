@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P.6 1st Exam Vocabulary</title>
+<style>
+  :root {
+    --health: #0f766e;
+    --health-bg: #f0fdfa;
+    --habits: #7c3aed;
+    --habits-bg: #f5f3ff;
+    --disasters: #b45309;
+    --disasters-bg: #fff7ed;
+    --noun: #1d4ed8;
+    --adj: #7e22ce;
+    --verb: #c2410c;
+    --ink: #1f2937;
+    --muted: #4b5563;
+    --line: #e5e7eb;
+    --card: #ffffff;
+    --header-h: 0px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--ink);
+    background: #fafafa;
+    line-height: 1.45;
+  }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    border-bottom: 2px solid var(--line);
+    box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem 0.9rem;
+  }
+  .school {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0 0 0.15rem;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3vw, 1.9rem);
+    letter-spacing: 0.01em;
+  }
+  .howto {
+    margin: 0.45rem 0 0;
+    font-size: 1rem;
+    color: var(--muted);
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .legend {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .legend h2 {
+    margin: 0 0 0.55rem;
+    font-size: 1.15rem;
+  }
+  .legend-grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 720px) {
+    .legend-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .swatch-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.7rem;
+    align-items: center;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.98rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  .dot {
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .pos-badge {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .pos-n { background: var(--noun); }
+  .pos-adj { background: var(--adj); }
+  .pos-v { background: var(--verb); }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.9rem 0 1.2rem;
+  }
+  .jump a {
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: #111;
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .jump a:hover { border-color: #9ca3af; }
+  .section {
+    margin-bottom: 1.75rem;
+    scroll-margin-top: 7.5rem;
+  }
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.85rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+    border-left: 6px solid;
+  }
+  .section-head h2 {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+  .section-head.health { background: var(--health-bg); border-color: var(--health); color: var(--health); }
+  .section-head.habits { background: var(--habits-bg); border-color: var(--habits); color: var(--habits); }
+  .section-head.disasters { background: var(--disasters-bg); border-color: var(--disasters); color: var(--disasters); }
+  .cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 700px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 1040px) {
+    .cards { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    border-top: 5px solid;
+  }
+  .card.health { border-top-color: var(--health); background: linear-gradient(#fff, #fff), var(--health-bg); }
+  .card.habits { border-top-color: var(--habits); }
+  .card.disasters { border-top-color: var(--disasters); }
+  .card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    background: #f3f4f6;
+  }
+  .card-body {
+    padding: 0.85rem 0.95rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+  }
+  .word-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .word {
+    margin: 0;
+    font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+    line-height: 1.15;
+  }
+  .meaning {
+    margin: 0;
+    font-size: 1.02rem;
+    color: var(--muted);
+  }
+  .meaning strong { color: var(--ink); font-weight: normal; }
+  .example {
+    margin: 0.15rem 0 0;
+    font-size: 1.05rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 0.55rem 0.65rem;
+  }
+  .example .tw { font-weight: bold; }
+  .example .tw.health { color: var(--health); }
+  .example .tw.habits { color: var(--habits); }
+  .example .tw.disasters { color: var(--disasters); }
+  .footer-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+    padding: 1.5rem 0 2.5rem;
+  }
+  .back-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  }
+  @media print {
+    .sticky-header { position: static; box-shadow: none; }
+    .back-top, .jump { display: none; }
+    .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:60;background:#fff8f1;border-bottom:2px solid #e5e7eb;padding:.55rem 1rem;font-family:Trebuchet MS,Segoe UI,sans-serif;font-weight:800;">
+<a href="../index.html" style="color:#c2410c;text-decoration:none;">← P.6 Portal Hub</a>
+<span style="opacity:.5;margin:0 .6rem;">|</span>
+<a href="../games/" style="color:#4b5563;text-decoration:none;">Games</a>
+</div>
+
+<header class="sticky-header" id="top">
+  <div class="header-inner">
+    <p class="school">Tsuen Wan Public Ho Chuen Yiu Memorial Primary School</p>
+    <h1>P.6 1st Exam Vocabulary</h1>
+    <p class="howto">How to revise: learn the spelling and meaning of each word. These words may appear as fill-in-the-blanks without a word bank — take your time and practise calmly.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="legend" aria-label="Colour code legend">
+    <h2>Colour code</h2>
+    <div class="legend-grid">
+      <div>
+        <p style="margin:0 0 .35rem;"><strong>Theme colours</strong> (section + card accent)</p>
+        <div class="swatch-row">
+          <span class="chip"><span class="dot" style="background:#0f766e"></span> Health — teal</span>
+          <span class="chip"><span class="dot" style="background:#7c3aed"></span> Habits, character and chores — violet</span>
+          <span class="chip"><span class="dot" style="background:#b45309"></span> Disasters — amber / rust</span>
+        </div>
+      </div>
+      <div>
+        <p style="margin:0 0 .35rem;"><strong>Part of speech</strong> (badge on every card)</p>
+        <div class="swatch-row">
+          <span class="pos-badge pos-n">n.</span> <span>noun</span>
+          <span class="pos-badge pos-adj">adj.</span> <span>adjective</span>
+          <span class="pos-badge pos-v">v.</span> <span>verb</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="jump" aria-label="Jump to theme">
+    <a href="#health">Health (8)</a>
+    <a href="#habits">Habits, character and chores (11)</a>
+    <a href="#disasters">Disasters (6)</a>
+    <a href="#top">Back to top</a>
+  </nav>
+
+  <!-- HEALTH -->
+  <section class="section" id="health">
+    <div class="section-head health"><h2>Health</h2><span style="font-size:.95rem;opacity:.85;">8 words</span></div>
+    <div class="cards">
+
+      <article class="card health">
+        <img src="images/backache.png" alt="A child holding their lower back after taking off a heavy school backpack">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">backache</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a pain in your back</p>
+          <p class="example">After I carried the heavy school bag all day, I had a <span class="tw health">backache</span>.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/cough.png" alt="A child covering their mouth while coughing, with a parent offering warm water">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">cough</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a sudden noise you make when you push air out of your throat (often when you are ill)</p>
+          <p class="example">Sam has a bad <span class="tw health">cough</span>, so he drinks warm water.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/fever.png" alt="A child in bed with a thermometer, looking unwell, with a parent nearby">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">fever</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a high body temperature when you are ill</p>
+          <p class="example">Ada stayed in bed because she had a <span class="tw health">fever</span>.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/headache.png" alt="A child at a desk rubbing their temples after using a computer for too long">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">headache</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a pain in your head</p>
+          <p class="example">I got a <span class="tw health">headache</span> after I played computer games for too long.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/toothache.png" alt="A child holding their cheek near an apple they cannot bite">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">toothache</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a pain in a tooth</p>
+          <p class="example">Tom could not eat the apple because he had a <span class="tw health">toothache</span>.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/flu.png" alt="A child on a sofa with a blanket looking weak, with tissues nearby">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">flu</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> an illness like a bad cold that makes you feel weak and hot</p>
+          <p class="example">Several classmates caught the <span class="tw health">flu</span> and missed school this week.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/stomachache.png" alt="A child holding their tummy after eating sweets on a table">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">stomachache</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a pain in your stomach</p>
+          <p class="example">Lily had a <span class="tw health">stomachache</span> after she ate too many sweets.</p>
+        </div>
+      </article>
+
+      <article class="card health">
+        <img src="images/medicine.png" alt="A doctor handing a generic medicine bottle to a child with a parent beside them">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">medicine</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> something you take to help you get better when you are ill</p>
+          <p class="example">The doctor told me to take this <span class="tw health">medicine</span> after breakfast.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HABITS -->
+  <section class="section" id="habits">
+    <div class="section-head habits"><h2>Habits, character and chores</h2><span style="font-size:.95rem;opacity:.85;">11 words</span></div>
+    <div class="cards">
+
+      <article class="card habits">
+        <img src="images/punctual.png" alt="A child arriving at a school gate on time before the bell">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">punctual</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> arriving or doing something on time; not late</p>
+          <p class="example">A <span class="tw habits">punctual</span> student always arrives at school before the bell.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/regular.png" alt="A child at a weekly piano lesson with Wednesday marked on a calendar">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">regular</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> happening often in the same way, or at the same times</p>
+          <p class="example">She has <span class="tw habits">regular</span> piano lessons every Wednesday after school.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/housework.png" alt="A child washing dishes at a kitchen sink to help at home">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">housework</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> jobs you do at home, such as cleaning and washing</p>
+          <p class="example">Ben helps his mum with the <span class="tw habits">housework</span>, such as washing the dishes.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/clumsy.png" alt="A child dropping a water bottle with water spilling on the classroom floor">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">clumsy</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> moving in a careless way and often dropping or breaking things</p>
+          <p class="example">The <span class="tw habits">clumsy</span> boy dropped his water bottle on the floor.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/embarrassed.png" alt="A child blushing and looking shy after speaking to a teacher">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">embarrassed</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> feeling shy or uncomfortable because of something you did or said</p>
+          <p class="example">Amy felt <span class="tw habits">embarrassed</span> when she called her teacher the wrong name.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/responsible.png" alt="A child class monitor checking that classroom windows are closed">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">responsible</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> able to be trusted to do the right thing, or in charge of something</p>
+          <p class="example">A <span class="tw habits">responsible</span> class monitor checks that the windows are closed.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/healthy.png" alt="Children eating fruit and vegetables and looking strong and well">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">healthy</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> strong and well; not ill</p>
+          <p class="example">Eating fruit and vegetables every day helps us stay <span class="tw habits">healthy</span>.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/encourage.png" alt="A teacher smiling and cheering on a student trying a hard worksheet">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">encourage</h3><span class="pos-badge pos-v">v.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> to give someone hope or confidence so they keep trying</p>
+          <p class="example">Our teacher likes to <span class="tw habits">encourage</span> us when we find the work difficult.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/donation.png" alt="Children giving a box of old books at a community centre">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">donation</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> money or things that you give to help people or a charity</p>
+          <p class="example">The class made a <span class="tw habits">donation</span> of old books to the community centre.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/patient.png" alt="Children waiting calmly in a queue with a patient smile">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">patient</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> able to wait calmly without getting angry</p>
+          <p class="example">Please be <span class="tw habits">patient</span> and wait for your turn in the queue.</p>
+        </div>
+      </article>
+
+      <article class="card habits">
+        <img src="images/generous.png" alt="A child happily sharing snacks with friends">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">generous</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> happy to give money, time, or help to others</p>
+          <p class="example">The <span class="tw habits">generous</span> girl shared her snacks with her friends.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- DISASTERS -->
+  <section class="section" id="disasters">
+    <div class="section-head disasters"><h2>Disasters</h2><span style="font-size:.95rem;opacity:.85;">6 words</span></div>
+    <div class="cards">
+
+      <article class="card disasters">
+        <img src="images/typhoon.png" alt="A Hong Kong street in heavy rain and strong wind with umbrellas bending, viewed safely from a distance">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">typhoon</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a very strong tropical storm with heavy rain and strong wind</p>
+          <p class="example">A <span class="tw disasters">typhoon</span> brought heavy rain and strong wind to Hong Kong yesterday.</p>
+        </div>
+      </article>
+
+      <article class="card disasters">
+        <img src="images/flood.png" alt="A playground partly covered with rainwater after a long rain, empty and safe to view">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">flood</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a large amount of water that covers land that is usually dry</p>
+          <p class="example">After the long rain, there was a <span class="tw disasters">flood</span> on the playground.</p>
+        </div>
+      </article>
+
+      <article class="card disasters">
+        <img src="images/landslide.png" alt="A hillside road blocked by earth and rocks after rain, viewed from a distance">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">landslide</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> when a lot of earth and rocks slide down a hill or mountain</p>
+          <p class="example">The heavy rain caused a <span class="tw disasters">landslide</span> on the hillside road.</p>
+        </div>
+      </article>
+
+      <article class="card disasters">
+        <img src="images/drought.png" alt="Dry cracked farmland and wilted plants under a hot sun">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">drought</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a long time with little or no rain</p>
+          <p class="example">During the <span class="tw disasters">drought</span>, the farmers had little water for their plants.</p>
+        </div>
+      </article>
+
+      <article class="card disasters">
+        <img src="images/earthquake.png" alt="Indoor furniture slightly shaking while people walk outside calmly">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">earthquake</h3><span class="pos-badge pos-n">n.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> a sudden strong shaking of the ground</p>
+          <p class="example">People walked outside carefully when they felt the <span class="tw disasters">earthquake</span> shake the building.</p>
+        </div>
+      </article>
+
+      <article class="card disasters">
+        <img src="images/severe.png" alt="Dark storm clouds over a city with a school closed sign, dramatic but not terrifying">
+        <div class="card-body">
+          <div class="word-row"><h3 class="word">severe</h3><span class="pos-badge pos-adj">adj.</span></div>
+          <p class="meaning"><strong>Meaning:</strong> very bad or serious</p>
+          <p class="example">The city closed the schools because of the <span class="tw disasters">severe</span> storm.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <p class="footer-note">25 exam vocabulary words · scrolling teaching page · Times New Roman</p>
+</main>
+
+<a class="back-top" href="#top">↑ Top</a>
+</body>
+</html>

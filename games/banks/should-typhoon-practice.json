@@ -1,0 +1,1279 @@
+{
+  "meta": {
+    "bank": "should-typhoon-practice",
+    "skill": "should",
+    "count": 52,
+    "theme": "U3 Forces of nature — storm/typhoon safety (ORIGINAL)",
+    "primary_source": "P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx",
+    "also": [
+      "_targets.json",
+      "parallel-original",
+      "p6-conditionals.js",
+      "p6-u1-3-vocab.js"
+    ],
+    "exclude": "每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)",
+    "forbidden_exam_c_phrases": [
+      "stay indoors",
+      "go near the sea",
+      "watch the news",
+      "put away loose objects",
+      "open all the windows",
+      "play outside"
+    ],
+    "scrubbed": "2026-11-04 Asia/Hong_Kong — exam stems removed",
+    "item_schema": [
+      "id",
+      "prompt",
+      "choices",
+      "answer",
+      "distractors",
+      "unit",
+      "skill",
+      "difficulty",
+      "modal",
+      "phrase"
+    ]
+  },
+  "items": [
+    {
+      "id": "typhoon-01",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Ada / check the school app for suspension.",
+      "answer": "Ada should check the school app for suspension.",
+      "distractors": [
+        "Ada shouldn't check the school app for suspension.",
+        "Ada ought check the school app for suspension.",
+        "Ada must to check the school app for suspension."
+      ],
+      "choices": [
+        "Ada shouldn't check the school app for suspension.",
+        "Ada ought check the school app for suspension.",
+        "Ada must to check the school app for suspension.",
+        "Ada should check the school app for suspension."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "check the school app for suspension",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-02",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ben / stand on the balcony in strong wind.",
+      "answer": "Ben shouldn't stand on the balcony in strong wind.",
+      "distractors": [
+        "Ben should stand on the balcony in strong wind.",
+        "Ben ought stand on the balcony in strong wind.",
+        "Ben must to stand on the balcony in strong wind."
+      ],
+      "choices": [
+        "Ben should stand on the balcony in strong wind.",
+        "Ben ought stand on the balcony in strong wind.",
+        "Ben must to stand on the balcony in strong wind.",
+        "Ben shouldn't stand on the balcony in strong wind."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "stand on the balcony in strong wind",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-03",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Cora / bring hanging plants inside early.",
+      "answer": "Cora should bring hanging plants inside early.",
+      "distractors": [
+        "Cora shouldn't bring hanging plants inside early.",
+        "Cora ought bring hanging plants inside early.",
+        "Cora must to bring hanging plants inside early."
+      ],
+      "choices": [
+        "Cora must to bring hanging plants inside early.",
+        "Cora should bring hanging plants inside early.",
+        "Cora shouldn't bring hanging plants inside early.",
+        "Cora ought bring hanging plants inside early."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "bring hanging plants inside early",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-04",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Dan / go swimming at the beach in a storm.",
+      "answer": "Dan shouldn't go swimming at the beach in a storm.",
+      "distractors": [
+        "Dan should go swimming at the beach in a storm.",
+        "Dan ought go swimming at the beach in a storm.",
+        "Dan must to go swimming at the beach in a storm."
+      ],
+      "choices": [
+        "Dan should go swimming at the beach in a storm.",
+        "Dan ought go swimming at the beach in a storm.",
+        "Dan must to go swimming at the beach in a storm.",
+        "Dan shouldn't go swimming at the beach in a storm."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "go swimming at the beach in a storm",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-05",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Eve / charge your phone before the power dips.",
+      "answer": "Eve should charge your phone before the power dips.",
+      "distractors": [
+        "Eve shouldn't charge your phone before the power dips.",
+        "Eve ought charge your phone before the power dips.",
+        "Eve must to charge your phone before the power dips."
+      ],
+      "choices": [
+        "Eve shouldn't charge your phone before the power dips.",
+        "Eve ought charge your phone before the power dips.",
+        "Eve must to charge your phone before the power dips.",
+        "Eve should charge your phone before the power dips."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "charge your phone before the power dips",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-06",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Finn / ride a bike on flooded streets.",
+      "answer": "Finn shouldn't ride a bike on flooded streets.",
+      "distractors": [
+        "Finn should ride a bike on flooded streets.",
+        "Finn ought ride a bike on flooded streets.",
+        "Finn must to ride a bike on flooded streets."
+      ],
+      "choices": [
+        "Finn should ride a bike on flooded streets.",
+        "Finn ought ride a bike on flooded streets.",
+        "Finn must to ride a bike on flooded streets.",
+        "Finn shouldn't ride a bike on flooded streets."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "ride a bike on flooded streets",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-07",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Gigi / move planters away from the railing.",
+      "answer": "Gigi should move planters away from the railing.",
+      "distractors": [
+        "Gigi shouldn't move planters away from the railing.",
+        "Gigi ought move planters away from the railing.",
+        "Gigi must to move planters away from the railing."
+      ],
+      "choices": [
+        "Gigi must to move planters away from the railing.",
+        "Gigi should move planters away from the railing.",
+        "Gigi shouldn't move planters away from the railing.",
+        "Gigi ought move planters away from the railing."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "move planters away from the railing",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-08",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Hank / leave the balcony door wide open.",
+      "answer": "Hank shouldn't leave the balcony door wide open.",
+      "distractors": [
+        "Hank should leave the balcony door wide open.",
+        "Hank ought leave the balcony door wide open.",
+        "Hank must to leave the balcony door wide open."
+      ],
+      "choices": [
+        "Hank should leave the balcony door wide open.",
+        "Hank ought leave the balcony door wide open.",
+        "Hank must to leave the balcony door wide open.",
+        "Hank shouldn't leave the balcony door wide open."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "leave the balcony door wide open",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-09",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Ivy / listen to an adult about when to go out.",
+      "answer": "Ivy should listen to an adult about when to go out.",
+      "distractors": [
+        "Ivy shouldn't listen to an adult about when to go out.",
+        "Ivy ought listen to an adult about when to go out.",
+        "Ivy must to listen to an adult about when to go out."
+      ],
+      "choices": [
+        "Ivy shouldn't listen to an adult about when to go out.",
+        "Ivy ought listen to an adult about when to go out.",
+        "Ivy must to listen to an adult about when to go out.",
+        "Ivy should listen to an adult about when to go out."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "listen to an adult about when to go out",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-10",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Jon / fly a kite near the harbour in a gale.",
+      "answer": "Jon shouldn't fly a kite near the harbour in a gale.",
+      "distractors": [
+        "Jon should fly a kite near the harbour in a gale.",
+        "Jon ought fly a kite near the harbour in a gale.",
+        "Jon must to fly a kite near the harbour in a gale."
+      ],
+      "choices": [
+        "Jon should fly a kite near the harbour in a gale.",
+        "Jon ought fly a kite near the harbour in a gale.",
+        "Jon must to fly a kite near the harbour in a gale.",
+        "Jon shouldn't fly a kite near the harbour in a gale."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "fly a kite near the harbour in a gale",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-11",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Kim / keep a torch and spare batteries ready.",
+      "answer": "Kim should keep a torch and spare batteries ready.",
+      "distractors": [
+        "Kim shouldn't keep a torch and spare batteries ready.",
+        "Kim ought keep a torch and spare batteries ready.",
+        "Kim must to keep a torch and spare batteries ready."
+      ],
+      "choices": [
+        "Kim must to keep a torch and spare batteries ready.",
+        "Kim should keep a torch and spare batteries ready.",
+        "Kim shouldn't keep a torch and spare batteries ready.",
+        "Kim ought keep a torch and spare batteries ready."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "keep a torch and spare batteries ready",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-12",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Leo / touch fallen power lines after the rain.",
+      "answer": "Leo shouldn't touch fallen power lines after the rain.",
+      "distractors": [
+        "Leo should touch fallen power lines after the rain.",
+        "Leo ought touch fallen power lines after the rain.",
+        "Leo must to touch fallen power lines after the rain."
+      ],
+      "choices": [
+        "Leo should touch fallen power lines after the rain.",
+        "Leo ought touch fallen power lines after the rain.",
+        "Leo must to touch fallen power lines after the rain.",
+        "Leo shouldn't touch fallen power lines after the rain."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "touch fallen power lines after the rain",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-13",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Meg / fill clean bottles before shops close.",
+      "answer": "Meg should fill clean bottles before shops close.",
+      "distractors": [
+        "Meg shouldn't fill clean bottles before shops close.",
+        "Meg ought fill clean bottles before shops close.",
+        "Meg must to fill clean bottles before shops close."
+      ],
+      "choices": [
+        "Meg shouldn't fill clean bottles before shops close.",
+        "Meg ought fill clean bottles before shops close.",
+        "Meg must to fill clean bottles before shops close.",
+        "Meg should fill clean bottles before shops close."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "fill clean bottles before shops close",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-14",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ned / take photos under shaking trees.",
+      "answer": "Ned shouldn't take photos under shaking trees.",
+      "distractors": [
+        "Ned should take photos under shaking trees.",
+        "Ned ought take photos under shaking trees.",
+        "Ned must to take photos under shaking trees."
+      ],
+      "choices": [
+        "Ned should take photos under shaking trees.",
+        "Ned ought take photos under shaking trees.",
+        "Ned must to take photos under shaking trees.",
+        "Ned shouldn't take photos under shaking trees."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "take photos under shaking trees",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-15",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Oli / close and lock classroom windows before leaving.",
+      "answer": "Oli should close and lock classroom windows before leaving.",
+      "distractors": [
+        "Oli shouldn't close and lock classroom windows before leaving.",
+        "Oli ought close and lock classroom windows before leaving.",
+        "Oli must to close and lock classroom windows before leaving."
+      ],
+      "choices": [
+        "Oli shouldn't close and lock classroom windows before leaving.",
+        "Oli ought close and lock classroom windows before leaving.",
+        "Oli must to close and lock classroom windows before leaving.",
+        "Oli should close and lock classroom windows before leaving."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "close and lock classroom windows before leaving",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-16",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Pam / climb the school rooftop to feel the wind.",
+      "answer": "Pam shouldn't climb the school rooftop to feel the wind.",
+      "distractors": [
+        "Pam should climb the school rooftop to feel the wind.",
+        "Pam ought climb the school rooftop to feel the wind.",
+        "Pam must to climb the school rooftop to feel the wind."
+      ],
+      "choices": [
+        "Pam should climb the school rooftop to feel the wind.",
+        "Pam ought climb the school rooftop to feel the wind.",
+        "Pam must to climb the school rooftop to feel the wind.",
+        "Pam shouldn't climb the school rooftop to feel the wind."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "climb the school rooftop to feel the wind",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-17",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Quin / wipe wet floors so classmates do not slip.",
+      "answer": "Quin should wipe wet floors so classmates do not slip.",
+      "distractors": [
+        "Quin shouldn't wipe wet floors so classmates do not slip.",
+        "Quin ought wipe wet floors so classmates do not slip.",
+        "Quin must to wipe wet floors so classmates do not slip."
+      ],
+      "choices": [
+        "Quin must to wipe wet floors so classmates do not slip.",
+        "Quin should wipe wet floors so classmates do not slip.",
+        "Quin shouldn't wipe wet floors so classmates do not slip.",
+        "Quin ought wipe wet floors so classmates do not slip."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "wipe wet floors so classmates do not slip",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-18",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ray / ignore the teacher's safety talk.",
+      "answer": "Ray shouldn't ignore the teacher's safety talk.",
+      "distractors": [
+        "Ray should ignore the teacher's safety talk.",
+        "Ray ought ignore the teacher's safety talk.",
+        "Ray must to ignore the teacher's safety talk."
+      ],
+      "choices": [
+        "Ray must to ignore the teacher's safety talk.",
+        "Ray shouldn't ignore the teacher's safety talk.",
+        "Ray should ignore the teacher's safety talk.",
+        "Ray ought ignore the teacher's safety talk."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "ignore the teacher's safety talk",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-19",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Sky / wear sturdy shoes if you must walk outside later.",
+      "answer": "Sky should wear sturdy shoes if you must walk outside later.",
+      "distractors": [
+        "Sky shouldn't wear sturdy shoes if you must walk outside later.",
+        "Sky ought wear sturdy shoes if you must walk outside later.",
+        "Sky must to wear sturdy shoes if you must walk outside later."
+      ],
+      "choices": [
+        "Sky must to wear sturdy shoes if you must walk outside later.",
+        "Sky should wear sturdy shoes if you must walk outside later.",
+        "Sky shouldn't wear sturdy shoes if you must walk outside later.",
+        "Sky ought wear sturdy shoes if you must walk outside later."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "wear sturdy shoes if you must walk outside later",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-20",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Tess / push friends toward puddles near drains.",
+      "answer": "Tess shouldn't push friends toward puddles near drains.",
+      "distractors": [
+        "Tess should push friends toward puddles near drains.",
+        "Tess ought push friends toward puddles near drains.",
+        "Tess must to push friends toward puddles near drains."
+      ],
+      "choices": [
+        "Tess must to push friends toward puddles near drains.",
+        "Tess shouldn't push friends toward puddles near drains.",
+        "Tess should push friends toward puddles near drains.",
+        "Tess ought push friends toward puddles near drains."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "push friends toward puddles near drains",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-21",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Ada / help younger pupils line up calmly.",
+      "answer": "Ada should help younger pupils line up calmly.",
+      "distractors": [
+        "Ada shouldn't help younger pupils line up calmly.",
+        "Ada ought help younger pupils line up calmly.",
+        "Ada must to help younger pupils line up calmly."
+      ],
+      "choices": [
+        "Ada must to help younger pupils line up calmly.",
+        "Ada should help younger pupils line up calmly.",
+        "Ada shouldn't help younger pupils line up calmly.",
+        "Ada ought help younger pupils line up calmly."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "help younger pupils line up calmly",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-22",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ben / open the gym doors to 'feel the breeze'.",
+      "answer": "Ben shouldn't open the gym doors to 'feel the breeze'.",
+      "distractors": [
+        "Ben should open the gym doors to 'feel the breeze'.",
+        "Ben ought open the gym doors to 'feel the breeze'.",
+        "Ben must to open the gym doors to 'feel the breeze'."
+      ],
+      "choices": [
+        "Ben should open the gym doors to 'feel the breeze'.",
+        "Ben ought open the gym doors to 'feel the breeze'.",
+        "Ben must to open the gym doors to 'feel the breeze'.",
+        "Ben shouldn't open the gym doors to 'feel the breeze'."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "open the gym doors to 'feel the breeze'",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-23",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Cora / unplug computers if water drips near sockets.",
+      "answer": "Cora should unplug computers if water drips near sockets.",
+      "distractors": [
+        "Cora shouldn't unplug computers if water drips near sockets.",
+        "Cora ought unplug computers if water drips near sockets.",
+        "Cora must to unplug computers if water drips near sockets."
+      ],
+      "choices": [
+        "Cora shouldn't unplug computers if water drips near sockets.",
+        "Cora ought unplug computers if water drips near sockets.",
+        "Cora must to unplug computers if water drips near sockets.",
+        "Cora should unplug computers if water drips near sockets."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "unplug computers if water drips near sockets",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-24",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Dan / wait alone at the pier for big waves.",
+      "answer": "Dan shouldn't wait alone at the pier for big waves.",
+      "distractors": [
+        "Dan should wait alone at the pier for big waves.",
+        "Dan ought wait alone at the pier for big waves.",
+        "Dan must to wait alone at the pier for big waves."
+      ],
+      "choices": [
+        "Dan must to wait alone at the pier for big waves.",
+        "Dan shouldn't wait alone at the pier for big waves.",
+        "Dan should wait alone at the pier for big waves.",
+        "Dan ought wait alone at the pier for big waves."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "wait alone at the pier for big waves",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-25",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Eve / text home that you arrived safely.",
+      "answer": "Eve should text home that you arrived safely.",
+      "distractors": [
+        "Eve shouldn't text home that you arrived safely.",
+        "Eve ought text home that you arrived safely.",
+        "Eve must to text home that you arrived safely."
+      ],
+      "choices": [
+        "Eve shouldn't text home that you arrived safely.",
+        "Eve ought text home that you arrived safely.",
+        "Eve must to text home that you arrived safely.",
+        "Eve should text home that you arrived safely."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "text home that you arrived safely",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-26",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Finn / share fake storm rumours in the chat group.",
+      "answer": "Finn shouldn't share fake storm rumours in the chat group.",
+      "distractors": [
+        "Finn should share fake storm rumours in the chat group.",
+        "Finn ought share fake storm rumours in the chat group.",
+        "Finn must to share fake storm rumours in the chat group."
+      ],
+      "choices": [
+        "Finn should share fake storm rumours in the chat group.",
+        "Finn ought share fake storm rumours in the chat group.",
+        "Finn must to share fake storm rumours in the chat group.",
+        "Finn shouldn't share fake storm rumours in the chat group."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "share fake storm rumours in the chat group",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-27",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Gigi / pack a light snack if dismissal is delayed.",
+      "answer": "Gigi should pack a light snack if dismissal is delayed.",
+      "distractors": [
+        "Gigi shouldn't pack a light snack if dismissal is delayed.",
+        "Gigi ought pack a light snack if dismissal is delayed.",
+        "Gigi must to pack a light snack if dismissal is delayed."
+      ],
+      "choices": [
+        "Gigi shouldn't pack a light snack if dismissal is delayed.",
+        "Gigi ought pack a light snack if dismissal is delayed.",
+        "Gigi must to pack a light snack if dismissal is delayed.",
+        "Gigi should pack a light snack if dismissal is delayed."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "pack a light snack if dismissal is delayed",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-28",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Hank / run across the playground during lightning.",
+      "answer": "Hank shouldn't run across the playground during lightning.",
+      "distractors": [
+        "Hank should run across the playground during lightning.",
+        "Hank ought run across the playground during lightning.",
+        "Hank must to run across the playground during lightning."
+      ],
+      "choices": [
+        "Hank should run across the playground during lightning.",
+        "Hank ought run across the playground during lightning.",
+        "Hank must to run across the playground during lightning.",
+        "Hank shouldn't run across the playground during lightning."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "run across the playground during lightning",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-29",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Ivy / follow the indoor assembly route.",
+      "answer": "Ivy should follow the indoor assembly route.",
+      "distractors": [
+        "Ivy shouldn't follow the indoor assembly route.",
+        "Ivy ought follow the indoor assembly route.",
+        "Ivy must to follow the indoor assembly route."
+      ],
+      "choices": [
+        "Ivy must to follow the indoor assembly route.",
+        "Ivy should follow the indoor assembly route.",
+        "Ivy shouldn't follow the indoor assembly route.",
+        "Ivy ought follow the indoor assembly route."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "follow the indoor assembly route",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-30",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Jon / lean out of the school bus window.",
+      "answer": "Jon shouldn't lean out of the school bus window.",
+      "distractors": [
+        "Jon should lean out of the school bus window.",
+        "Jon ought lean out of the school bus window.",
+        "Jon must to lean out of the school bus window."
+      ],
+      "choices": [
+        "Jon should lean out of the school bus window.",
+        "Jon ought lean out of the school bus window.",
+        "Jon must to lean out of the school bus window.",
+        "Jon shouldn't lean out of the school bus window."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "lean out of the school bus window",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-31",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Kim / keep away from glass display cabinets.",
+      "answer": "Kim should keep away from glass display cabinets.",
+      "distractors": [
+        "Kim shouldn't keep away from glass display cabinets.",
+        "Kim ought keep away from glass display cabinets.",
+        "Kim must to keep away from glass display cabinets."
+      ],
+      "choices": [
+        "Kim shouldn't keep away from glass display cabinets.",
+        "Kim ought keep away from glass display cabinets.",
+        "Kim must to keep away from glass display cabinets.",
+        "Kim should keep away from glass display cabinets."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "keep away from glass display cabinets",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-32",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Leo / collect 'storm souvenirs' from the roadside.",
+      "answer": "Leo shouldn't collect 'storm souvenirs' from the roadside.",
+      "distractors": [
+        "Leo should collect 'storm souvenirs' from the roadside.",
+        "Leo ought collect 'storm souvenirs' from the roadside.",
+        "Leo must to collect 'storm souvenirs' from the roadside."
+      ],
+      "choices": [
+        "Leo should collect 'storm souvenirs' from the roadside.",
+        "Leo ought collect 'storm souvenirs' from the roadside.",
+        "Leo must to collect 'storm souvenirs' from the roadside.",
+        "Leo shouldn't collect 'storm souvenirs' from the roadside."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "collect 'storm souvenirs' from the roadside",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-33",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Meg / dry wet bags so books do not mould.",
+      "answer": "Meg should dry wet bags so books do not mould.",
+      "distractors": [
+        "Meg shouldn't dry wet bags so books do not mould.",
+        "Meg ought dry wet bags so books do not mould.",
+        "Meg must to dry wet bags so books do not mould."
+      ],
+      "choices": [
+        "Meg must to dry wet bags so books do not mould.",
+        "Meg should dry wet bags so books do not mould.",
+        "Meg shouldn't dry wet bags so books do not mould.",
+        "Meg ought dry wet bags so books do not mould."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "dry wet bags so books do not mould",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-34",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ned / dare friends to stand in the wind tunnel.",
+      "answer": "Ned shouldn't dare friends to stand in the wind tunnel.",
+      "distractors": [
+        "Ned should dare friends to stand in the wind tunnel.",
+        "Ned ought dare friends to stand in the wind tunnel.",
+        "Ned must to dare friends to stand in the wind tunnel."
+      ],
+      "choices": [
+        "Ned must to dare friends to stand in the wind tunnel.",
+        "Ned shouldn't dare friends to stand in the wind tunnel.",
+        "Ned should dare friends to stand in the wind tunnel.",
+        "Ned ought dare friends to stand in the wind tunnel."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "dare friends to stand in the wind tunnel",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-35",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Oli / thank staff who stay to keep everyone safe.",
+      "answer": "Oli should thank staff who stay to keep everyone safe.",
+      "distractors": [
+        "Oli shouldn't thank staff who stay to keep everyone safe.",
+        "Oli ought thank staff who stay to keep everyone safe.",
+        "Oli must to thank staff who stay to keep everyone safe."
+      ],
+      "choices": [
+        "Oli must to thank staff who stay to keep everyone safe.",
+        "Oli should thank staff who stay to keep everyone safe.",
+        "Oli shouldn't thank staff who stay to keep everyone safe.",
+        "Oli ought thank staff who stay to keep everyone safe."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "thank staff who stay to keep everyone safe",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-36",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Pam / block the corridor with wet umbrellas.",
+      "answer": "Pam shouldn't block the corridor with wet umbrellas.",
+      "distractors": [
+        "Pam should block the corridor with wet umbrellas.",
+        "Pam ought block the corridor with wet umbrellas.",
+        "Pam must to block the corridor with wet umbrellas."
+      ],
+      "choices": [
+        "Pam should block the corridor with wet umbrellas.",
+        "Pam ought block the corridor with wet umbrellas.",
+        "Pam must to block the corridor with wet umbrellas.",
+        "Pam shouldn't block the corridor with wet umbrellas."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "block the corridor with wet umbrellas",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-37",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Quin / read the class notice about make-up lessons.",
+      "answer": "Quin should read the class notice about make-up lessons.",
+      "distractors": [
+        "Quin shouldn't read the class notice about make-up lessons.",
+        "Quin ought read the class notice about make-up lessons.",
+        "Quin must to read the class notice about make-up lessons."
+      ],
+      "choices": [
+        "Quin must to read the class notice about make-up lessons.",
+        "Quin should read the class notice about make-up lessons.",
+        "Quin shouldn't read the class notice about make-up lessons.",
+        "Quin ought read the class notice about make-up lessons."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "read the class notice about make-up lessons",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-38",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ray / sneak out to film the harbour spray.",
+      "answer": "Ray shouldn't sneak out to film the harbour spray.",
+      "distractors": [
+        "Ray should sneak out to film the harbour spray.",
+        "Ray ought sneak out to film the harbour spray.",
+        "Ray must to sneak out to film the harbour spray."
+      ],
+      "choices": [
+        "Ray should sneak out to film the harbour spray.",
+        "Ray ought sneak out to film the harbour spray.",
+        "Ray must to sneak out to film the harbour spray.",
+        "Ray shouldn't sneak out to film the harbour spray."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "sneak out to film the harbour spray",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-39",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Sky / put damp clothes on a rack, not the heater.",
+      "answer": "Sky should put damp clothes on a rack, not the heater.",
+      "distractors": [
+        "Sky shouldn't put damp clothes on a rack, not the heater.",
+        "Sky ought put damp clothes on a rack, not the heater.",
+        "Sky must to put damp clothes on a rack, not the heater."
+      ],
+      "choices": [
+        "Sky must to put damp clothes on a rack, not the heater.",
+        "Sky should put damp clothes on a rack, not the heater.",
+        "Sky shouldn't put damp clothes on a rack, not the heater.",
+        "Sky ought put damp clothes on a rack, not the heater."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "put damp clothes on a rack, not the heater",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-40",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Tess / use the lift if the building warns of water risk.",
+      "answer": "Tess shouldn't use the lift if the building warns of water risk.",
+      "distractors": [
+        "Tess should use the lift if the building warns of water risk.",
+        "Tess ought use the lift if the building warns of water risk.",
+        "Tess must to use the lift if the building warns of water risk."
+      ],
+      "choices": [
+        "Tess should use the lift if the building warns of water risk.",
+        "Tess ought use the lift if the building warns of water risk.",
+        "Tess must to use the lift if the building warns of water risk.",
+        "Tess shouldn't use the lift if the building warns of water risk."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "use the lift if the building warns of water risk",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-41",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Ada / practise the class flood-route map.",
+      "answer": "Ada should practise the class flood-route map.",
+      "distractors": [
+        "Ada shouldn't practise the class flood-route map.",
+        "Ada ought practise the class flood-route map.",
+        "Ada must to practise the class flood-route map."
+      ],
+      "choices": [
+        "Ada must to practise the class flood-route map.",
+        "Ada should practise the class flood-route map.",
+        "Ada shouldn't practise the class flood-route map.",
+        "Ada ought practise the class flood-route map."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "practise the class flood-route map",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-42",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Ben / leave sports gear outside overnight in a gale.",
+      "answer": "Ben shouldn't leave sports gear outside overnight in a gale.",
+      "distractors": [
+        "Ben should leave sports gear outside overnight in a gale.",
+        "Ben ought leave sports gear outside overnight in a gale.",
+        "Ben must to leave sports gear outside overnight in a gale."
+      ],
+      "choices": [
+        "Ben should leave sports gear outside overnight in a gale.",
+        "Ben ought leave sports gear outside overnight in a gale.",
+        "Ben must to leave sports gear outside overnight in a gale.",
+        "Ben shouldn't leave sports gear outside overnight in a gale."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "leave sports gear outside overnight in a gale",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-43",
+      "prompt": "U3 Forces of nature — choose the best advice (good/safe): Cora / speak calmly if a classmate feels scared.",
+      "answer": "Cora should speak calmly if a classmate feels scared.",
+      "distractors": [
+        "Cora shouldn't speak calmly if a classmate feels scared.",
+        "Cora ought speak calmly if a classmate feels scared.",
+        "Cora must to speak calmly if a classmate feels scared."
+      ],
+      "choices": [
+        "Cora shouldn't speak calmly if a classmate feels scared.",
+        "Cora ought speak calmly if a classmate feels scared.",
+        "Cora must to speak calmly if a classmate feels scared.",
+        "Cora should speak calmly if a classmate feels scared."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "should",
+      "phrase": "speak calmly if a classmate feels scared",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-44",
+      "prompt": "U3 Forces of nature — choose the best advice (bad/unsafe): Dan / cheer when thunder cracks loudly indoors.",
+      "answer": "Dan shouldn't cheer when thunder cracks loudly indoors.",
+      "distractors": [
+        "Dan should cheer when thunder cracks loudly indoors.",
+        "Dan ought cheer when thunder cracks loudly indoors.",
+        "Dan must to cheer when thunder cracks loudly indoors."
+      ],
+      "choices": [
+        "Dan must to cheer when thunder cracks loudly indoors.",
+        "Dan shouldn't cheer when thunder cracks loudly indoors.",
+        "Dan should cheer when thunder cracks loudly indoors.",
+        "Dan ought cheer when thunder cracks loudly indoors."
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "mid",
+      "source": "parallel-U3-forces",
+      "modal": "shouldn't",
+      "phrase": "cheer when thunder cracks loudly indoors",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C typhoon paper items"
+    },
+    {
+      "id": "typhoon-45",
+      "prompt": "Before dismissal, you ____ read the class notice about make-up lessons.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "should",
+        "shouldn't",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-46",
+      "prompt": "You ____ film harbour spray for fun in a gale.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "shouldn't",
+        "should",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-47",
+      "prompt": "We ____ keep away from glass cabinets in strong wind.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "should",
+        "shouldn't",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-48",
+      "prompt": "Children ____ lean out of the school bus window.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "shouldn't",
+        "should",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-49",
+      "prompt": "You ____ charge your phone before the power dips.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "should",
+        "shouldn't",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-50",
+      "prompt": "You ____ touch fallen power lines after the rain.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "shouldn't",
+        "should",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-51",
+      "prompt": "We ____ follow the indoor assembly route.",
+      "answer": "should",
+      "distractors": [
+        "shouldn't",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "should",
+        "shouldn't",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    },
+    {
+      "id": "typhoon-52",
+      "prompt": "You ____ share fake storm rumours in the chat group.",
+      "answer": "shouldn't",
+      "distractors": [
+        "should",
+        "ought",
+        "must to"
+      ],
+      "choices": [
+        "must to",
+        "shouldn't",
+        "should",
+        "ought"
+      ],
+      "unit": "U3",
+      "skill": "should",
+      "difficulty": "easy",
+      "source": "parallel-U3-forces",
+      "form": "gap",
+      "theme": "forces-of-nature-safety",
+      "note": "ORIGINAL practice — NOT Exam C"
+    }
+  ]
+}

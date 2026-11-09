@@ -1,0 +1,1028 @@
+{
+  "meta": {
+    "bank": "ought-to",
+    "skill": "ought-to",
+    "count": 46,
+    "primary_source": "P6_English_Revision_Worksheets_1stTerm_2026-27_ref.docx",
+    "also": [
+      "_targets.json",
+      "p6-conditionals.js",
+      "p6-u1-3-vocab.js",
+      "parallel-original"
+    ],
+    "exclude": "每日一篇 / Daily News; ALL exam paper stems (Exam A–J / ExamC/E/F/H etc.)",
+    "item_schema": [
+      "id",
+      "prompt",
+      "choices|slots",
+      "answer",
+      "distractors",
+      "unit",
+      "skill",
+      "difficulty"
+    ],
+    "scrubbed": "2026-11-04 Asia/Hong_Kong — exam stems removed"
+  },
+  "items": [
+    {
+      "id": "ought-01",
+      "prompt": "Problem: Ben is talking loudly on his phone in the cinema. → Complete with ought to + phrase.",
+      "answer": "ought to turn off his mobile phone",
+      "distractors": [
+        "should to turn off his mobile phone",
+        "ought turn off his mobile phone",
+        "must to turn off his mobile phone"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to turn off his mobile phone",
+        "should to turn off his mobile phone",
+        "ought turn off his mobile phone",
+        "must to turn off his mobile phone"
+      ],
+      "source": "WS-A",
+      "problem": "Ben is talking loudly on his phone in the cinema.",
+      "advice": "turn off his mobile phone"
+    },
+    {
+      "id": "ought-02",
+      "prompt": "Problem: Mary watches too much TV. → Complete with ought to + phrase.",
+      "answer": "ought to do more exercise",
+      "distractors": [
+        "should to do more exercise",
+        "ought do more exercise",
+        "must to do more exercise"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to do more exercise",
+        "should to do more exercise",
+        "ought do more exercise",
+        "must to do more exercise"
+      ],
+      "source": "WS-A",
+      "problem": "Mary watches too much TV.",
+      "advice": "do more exercise"
+    },
+    {
+      "id": "ought-03",
+      "prompt": "Problem: Josephine's bedroom is messy. → Complete with ought to + phrase.",
+      "answer": "ought to tidy her bedroom",
+      "distractors": [
+        "should to tidy her bedroom",
+        "ought tidy her bedroom",
+        "must to tidy her bedroom"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to tidy her bedroom",
+        "should to tidy her bedroom",
+        "ought tidy her bedroom",
+        "must to tidy her bedroom"
+      ],
+      "source": "WS-A",
+      "problem": "Josephine's bedroom is messy.",
+      "advice": "tidy her bedroom"
+    },
+    {
+      "id": "ought-04",
+      "prompt": "Problem: Jack always has stomachaches. → Complete with ought to + phrase.",
+      "answer": "ought to eat his food slowly",
+      "distractors": [
+        "should to eat his food slowly",
+        "ought eat his food slowly",
+        "must to eat his food slowly"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to eat his food slowly",
+        "should to eat his food slowly",
+        "ought eat his food slowly",
+        "must to eat his food slowly"
+      ],
+      "source": "WS-A",
+      "problem": "Jack always has stomachaches.",
+      "advice": "eat his food slowly"
+    },
+    {
+      "id": "ought-05",
+      "prompt": "Problem: Ida's parents didn't know where she was. → Complete with ought to + phrase.",
+      "answer": "ought to phone her parents",
+      "distractors": [
+        "should to phone her parents",
+        "ought phone her parents",
+        "must to phone her parents"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to phone her parents",
+        "should to phone her parents",
+        "ought phone her parents",
+        "must to phone her parents"
+      ],
+      "source": "WS-A",
+      "problem": "Ida's parents didn't know where she was.",
+      "advice": "phone her parents"
+    },
+    {
+      "id": "ought-06",
+      "prompt": "Problem: Eric witnessed a crime. → Complete with ought to + phrase.",
+      "answer": "ought to call the police",
+      "distractors": [
+        "should to call the police",
+        "ought call the police",
+        "must to call the police"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to call the police",
+        "should to call the police",
+        "ought call the police",
+        "must to call the police"
+      ],
+      "source": "WS-A",
+      "problem": "Eric witnessed a crime.",
+      "advice": "call the police"
+    },
+    {
+      "id": "ought-07",
+      "prompt": "Problem: Ivan's hair is too long. → Complete with ought to + phrase.",
+      "answer": "ought to comb his hair every morning",
+      "distractors": [
+        "should to comb his hair every morning",
+        "ought comb his hair every morning",
+        "must to comb his hair every morning"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "should to comb his hair every morning",
+        "ought comb his hair every morning",
+        "must to comb his hair every morning",
+        "ought to comb his hair every morning"
+      ],
+      "source": "WS-B-rewritten",
+      "problem": "Ivan's hair is too long.",
+      "advice": "comb his hair every morning"
+    },
+    {
+      "id": "ought-08",
+      "prompt": "Problem: Doris falls asleep in class. → Complete with ought to + phrase.",
+      "answer": "ought to get enough sleep",
+      "distractors": [
+        "should to get enough sleep",
+        "ought get enough sleep",
+        "must to get enough sleep"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to get enough sleep",
+        "should to get enough sleep",
+        "ought get enough sleep",
+        "must to get enough sleep"
+      ],
+      "source": "WS-B",
+      "problem": "Doris falls asleep in class.",
+      "advice": "get enough sleep"
+    },
+    {
+      "id": "ought-09",
+      "prompt": "Problem: Jacky's bag is too heavy. → Complete with ought to + phrase.",
+      "answer": "ought to take out books he does not need",
+      "distractors": [
+        "should to take out books he does not need",
+        "ought take out books he does not need",
+        "must to take out books he does not need"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "should to take out books he does not need",
+        "ought take out books he does not need",
+        "must to take out books he does not need",
+        "ought to take out books he does not need"
+      ],
+      "source": "WS-B-rewritten",
+      "problem": "Jacky's bag is too heavy.",
+      "advice": "take out books he does not need"
+    },
+    {
+      "id": "ought-10",
+      "prompt": "Problem: Lily does not know the homework. → Complete with ought to + phrase.",
+      "answer": "ought to ask her teacher for help",
+      "distractors": [
+        "should to ask her teacher for help",
+        "ought ask her teacher for help",
+        "must to ask her teacher for help"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to ask her teacher for help",
+        "should to ask her teacher for help",
+        "ought ask her teacher for help",
+        "must to ask her teacher for help"
+      ],
+      "source": "WS-B",
+      "problem": "Lily does not know the homework.",
+      "advice": "ask her teacher for help"
+    },
+    {
+      "id": "ought-11",
+      "prompt": "Problem: Ella's uniform is dirty and smelly. → Complete with ought to + phrase.",
+      "answer": "ought to change her school uniform more often",
+      "distractors": [
+        "should to change her school uniform more often",
+        "ought change her school uniform more often",
+        "must to change her school uniform more often"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to change her school uniform more often",
+        "should to change her school uniform more often",
+        "ought change her school uniform more often",
+        "must to change her school uniform more often"
+      ],
+      "source": "WS-B",
+      "problem": "Ella's uniform is dirty and smelly.",
+      "advice": "change her school uniform more often"
+    },
+    {
+      "id": "ought-12",
+      "prompt": "Problem: Mike is late for school again. → Complete with ought to + phrase.",
+      "answer": "ought to set an alarm clock to wake himself up",
+      "distractors": [
+        "should to set an alarm clock to wake himself up",
+        "ought set an alarm clock to wake himself up",
+        "must to set an alarm clock to wake himself up"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "choices": [
+        "ought to set an alarm clock to wake himself up",
+        "should to set an alarm clock to wake himself up",
+        "ought set an alarm clock to wake himself up",
+        "must to set an alarm clock to wake himself up"
+      ],
+      "source": "WS-B",
+      "problem": "Mike is late for school again.",
+      "advice": "set an alarm clock to wake himself up"
+    },
+    {
+      "id": "ought-13",
+      "prompt": "Problem: Sam never brushes his teeth at night. → Complete with ought to + phrase.",
+      "answer": "ought to brush his teeth before bed",
+      "distractors": [
+        "should to brush his teeth before bed",
+        "ought brush his teeth before bed",
+        "must to brush his teeth before bed"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to brush his teeth before bed",
+        "should to brush his teeth before bed",
+        "ought brush his teeth before bed",
+        "must to brush his teeth before bed"
+      ],
+      "source": "parallel",
+      "problem": "Sam never brushes his teeth at night.",
+      "advice": "brush his teeth before bed"
+    },
+    {
+      "id": "ought-14",
+      "prompt": "Problem: Tina leaves wet towels on the bed. → Complete with ought to + phrase.",
+      "answer": "ought to hang up her towels",
+      "distractors": [
+        "should to hang up her towels",
+        "ought hang up her towels",
+        "must to hang up her towels"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to hang up her towels",
+        "should to hang up her towels",
+        "ought hang up her towels",
+        "must to hang up her towels"
+      ],
+      "source": "parallel",
+      "problem": "Tina leaves wet towels on the bed.",
+      "advice": "hang up her towels"
+    },
+    {
+      "id": "ought-15",
+      "prompt": "Problem: Hugo shouts in the library. → Complete with ought to + phrase.",
+      "answer": "ought to keep his voice down",
+      "distractors": [
+        "should to keep his voice down",
+        "ought keep his voice down",
+        "must to keep his voice down"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to keep his voice down",
+        "should to keep his voice down",
+        "ought keep his voice down",
+        "must to keep his voice down"
+      ],
+      "source": "parallel",
+      "problem": "Hugo shouts in the library.",
+      "advice": "keep his voice down"
+    },
+    {
+      "id": "ought-16",
+      "prompt": "Problem: Rita forgets her student card every day. → Complete with ought to + phrase.",
+      "answer": "ought to check her bag before leaving home",
+      "distractors": [
+        "should to check her bag before leaving home",
+        "ought check her bag before leaving home",
+        "must to check her bag before leaving home"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to check her bag before leaving home",
+        "should to check her bag before leaving home",
+        "ought check her bag before leaving home",
+        "must to check her bag before leaving home"
+      ],
+      "source": "parallel",
+      "problem": "Rita forgets her student card every day.",
+      "advice": "check her bag before leaving home"
+    },
+    {
+      "id": "ought-17",
+      "prompt": "Problem: Paul plays games until midnight. → Complete with ought to + phrase.",
+      "answer": "ought to go to bed earlier",
+      "distractors": [
+        "should to go to bed earlier",
+        "ought go to bed earlier",
+        "must to go to bed earlier"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to go to bed earlier",
+        "should to go to bed earlier",
+        "ought go to bed earlier",
+        "must to go to bed earlier"
+      ],
+      "source": "parallel",
+      "problem": "Paul plays games until midnight.",
+      "advice": "go to bed earlier"
+    },
+    {
+      "id": "ought-18",
+      "prompt": "Problem: Nora never helps at home. → Complete with ought to + phrase.",
+      "answer": "ought to help her parents with chores",
+      "distractors": [
+        "should to help her parents with chores",
+        "ought help her parents with chores",
+        "must to help her parents with chores"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to help her parents with chores",
+        "should to help her parents with chores",
+        "ought help her parents with chores",
+        "must to help her parents with chores"
+      ],
+      "source": "parallel",
+      "problem": "Nora never helps at home.",
+      "advice": "help her parents with chores"
+    },
+    {
+      "id": "ought-19",
+      "prompt": "Problem: Chris drops litter in the corridor. → Complete with ought to + phrase.",
+      "answer": "ought to put rubbish in the bin",
+      "distractors": [
+        "should to put rubbish in the bin",
+        "ought put rubbish in the bin",
+        "must to put rubbish in the bin"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to put rubbish in the bin",
+        "should to put rubbish in the bin",
+        "ought put rubbish in the bin",
+        "must to put rubbish in the bin"
+      ],
+      "source": "parallel",
+      "problem": "Chris drops litter in the corridor.",
+      "advice": "put rubbish in the bin"
+    },
+    {
+      "id": "ought-20",
+      "prompt": "Problem: Jade never revises for tests. → Complete with ought to + phrase.",
+      "answer": "ought to make a revision plan",
+      "distractors": [
+        "should to make a revision plan",
+        "ought make a revision plan",
+        "must to make a revision plan"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to make a revision plan",
+        "should to make a revision plan",
+        "ought make a revision plan",
+        "must to make a revision plan"
+      ],
+      "source": "parallel",
+      "problem": "Jade never revises for tests.",
+      "advice": "make a revision plan"
+    },
+    {
+      "id": "ought-21",
+      "prompt": "Problem: Omar skips breakfast and is hungry at recess. → Complete with ought to + phrase.",
+      "answer": "ought to eat breakfast every morning",
+      "distractors": [
+        "should to eat breakfast every morning",
+        "ought eat breakfast every morning",
+        "must to eat breakfast every morning"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to eat breakfast every morning",
+        "should to eat breakfast every morning",
+        "ought eat breakfast every morning",
+        "must to eat breakfast every morning"
+      ],
+      "source": "parallel",
+      "problem": "Omar skips breakfast and is hungry at recess.",
+      "advice": "eat breakfast every morning"
+    },
+    {
+      "id": "ought-22",
+      "prompt": "Problem: Vera's desk is covered with paper. → Complete with ought to + phrase.",
+      "answer": "ought to tidy her desk every day",
+      "distractors": [
+        "should to tidy her desk every day",
+        "ought tidy her desk every day",
+        "must to tidy her desk every day"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to tidy her desk every day",
+        "should to tidy her desk every day",
+        "ought tidy her desk every day",
+        "must to tidy her desk every day"
+      ],
+      "source": "parallel",
+      "problem": "Vera's desk is covered with paper.",
+      "advice": "tidy her desk every day"
+    },
+    {
+      "id": "ought-23",
+      "prompt": "Problem: Finn forgets to bring his PE kit. → Complete with ought to + phrase.",
+      "answer": "ought to pack his PE kit the night before",
+      "distractors": [
+        "should to pack his PE kit the night before",
+        "ought pack his PE kit the night before",
+        "must to pack his PE kit the night before"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to pack his PE kit the night before",
+        "should to pack his PE kit the night before",
+        "ought pack his PE kit the night before",
+        "must to pack his PE kit the night before"
+      ],
+      "source": "parallel",
+      "problem": "Finn forgets to bring his PE kit.",
+      "advice": "pack his PE kit the night before"
+    },
+    {
+      "id": "ought-24",
+      "prompt": "Problem: Lana talks during assembly. → Complete with ought to + phrase.",
+      "answer": "ought to be quiet in assembly",
+      "distractors": [
+        "should to be quiet in assembly",
+        "ought be quiet in assembly",
+        "must to be quiet in assembly"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to be quiet in assembly",
+        "should to be quiet in assembly",
+        "ought be quiet in assembly",
+        "must to be quiet in assembly"
+      ],
+      "source": "parallel",
+      "problem": "Lana talks during assembly.",
+      "advice": "be quiet in assembly"
+    },
+    {
+      "id": "ought-25",
+      "prompt": "Problem: Greg never washes fruit. → Complete with ought to + phrase.",
+      "answer": "ought to wash fruit before eating",
+      "distractors": [
+        "should to wash fruit before eating",
+        "ought wash fruit before eating",
+        "must to wash fruit before eating"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to wash fruit before eating",
+        "should to wash fruit before eating",
+        "ought wash fruit before eating",
+        "must to wash fruit before eating"
+      ],
+      "source": "parallel",
+      "problem": "Greg never washes fruit.",
+      "advice": "wash fruit before eating"
+    },
+    {
+      "id": "ought-26",
+      "prompt": "Problem: Helen shares drinks when she has a cold. → Complete with ought to + phrase.",
+      "answer": "ought to use her own bottle when she is sick",
+      "distractors": [
+        "should to use her own bottle when she is sick",
+        "ought use her own bottle when she is sick",
+        "must to use her own bottle when she is sick"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to use her own bottle when she is sick",
+        "should to use her own bottle when she is sick",
+        "ought use her own bottle when she is sick",
+        "must to use her own bottle when she is sick"
+      ],
+      "source": "parallel",
+      "problem": "Helen shares drinks when she has a cold.",
+      "advice": "use her own bottle when she is sick"
+    },
+    {
+      "id": "ought-27",
+      "prompt": "Problem: Ivan never says thank you. → Complete with ought to + phrase.",
+      "answer": "ought to thank people who help him",
+      "distractors": [
+        "should to thank people who help him",
+        "ought thank people who help him",
+        "must to thank people who help him"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to thank people who help him",
+        "should to thank people who help him",
+        "ought thank people who help him",
+        "must to thank people who help him"
+      ],
+      "source": "parallel",
+      "problem": "Ivan never says thank you.",
+      "advice": "thank people who help him"
+    },
+    {
+      "id": "ought-28",
+      "prompt": "Problem: Judy is rude to the lunch ladies. → Complete with ought to + phrase.",
+      "answer": "ought to speak politely to school staff",
+      "distractors": [
+        "should to speak politely to school staff",
+        "ought speak politely to school staff",
+        "must to speak politely to school staff"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to speak politely to school staff",
+        "should to speak politely to school staff",
+        "ought speak politely to school staff",
+        "must to speak politely to school staff"
+      ],
+      "source": "parallel",
+      "problem": "Judy is rude to the lunch ladies.",
+      "advice": "speak politely to school staff"
+    },
+    {
+      "id": "ought-29",
+      "prompt": "Problem: Karl never waters the class plants. → Complete with ought to + phrase.",
+      "answer": "ought to take turns watering the plants",
+      "distractors": [
+        "should to take turns watering the plants",
+        "ought take turns watering the plants",
+        "must to take turns watering the plants"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to take turns watering the plants",
+        "should to take turns watering the plants",
+        "ought take turns watering the plants",
+        "must to take turns watering the plants"
+      ],
+      "source": "parallel",
+      "problem": "Karl never waters the class plants.",
+      "advice": "take turns watering the plants"
+    },
+    {
+      "id": "ought-30",
+      "prompt": "Problem: Molly spends all her pocket money on snacks. → Complete with ought to + phrase.",
+      "answer": "ought to save some money each week",
+      "distractors": [
+        "should to save some money each week",
+        "ought save some money each week",
+        "must to save some money each week"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to save some money each week",
+        "should to save some money each week",
+        "ought save some money each week",
+        "must to save some money each week"
+      ],
+      "source": "parallel",
+      "problem": "Molly spends all her pocket money on snacks.",
+      "advice": "save some money each week"
+    },
+    {
+      "id": "ought-31",
+      "prompt": "Problem: Ned never looks both ways before crossing. → Complete with ought to + phrase.",
+      "answer": "ought to look carefully before crossing the road",
+      "distractors": [
+        "should to look carefully before crossing the road",
+        "ought look carefully before crossing the road",
+        "must to look carefully before crossing the road"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to look carefully before crossing the road",
+        "should to look carefully before crossing the road",
+        "ought look carefully before crossing the road",
+        "must to look carefully before crossing the road"
+      ],
+      "source": "parallel",
+      "problem": "Ned never looks both ways before crossing.",
+      "advice": "look carefully before crossing the road"
+    },
+    {
+      "id": "ought-32",
+      "prompt": "Problem: Olive leaves lights on when she leaves. → Complete with ought to + phrase.",
+      "answer": "ought to turn off the lights when she leaves",
+      "distractors": [
+        "should to turn off the lights when she leaves",
+        "ought turn off the lights when she leaves",
+        "must to turn off the lights when she leaves"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "ought to turn off the lights when she leaves",
+        "should to turn off the lights when she leaves",
+        "ought turn off the lights when she leaves",
+        "must to turn off the lights when she leaves"
+      ],
+      "source": "parallel",
+      "problem": "Olive leaves lights on when she leaves.",
+      "advice": "turn off the lights when she leaves"
+    },
+    {
+      "id": "ought-33",
+      "prompt": "Problem: Ben is noisy on his phone in the cinema. Choose the correct sentence.",
+      "answer": "He ought to turn off his mobile phone.",
+      "distractors": [
+        "He ought turn off his mobile phone.",
+        "He should to turn off his mobile phone.",
+        "He must to turn off his mobile phone."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "He ought turn off his mobile phone.",
+        "He should to turn off his mobile phone.",
+        "He must to turn off his mobile phone.",
+        "He ought to turn off his mobile phone."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-34",
+      "prompt": "Problem: Mary watches too much TV. Choose the correct sentence.",
+      "answer": "She ought to do more exercise.",
+      "distractors": [
+        "She ought do more exercise.",
+        "She should to do more exercise.",
+        "She must to do more exercise."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "She ought to do more exercise.",
+        "She ought do more exercise.",
+        "She should to do more exercise.",
+        "She must to do more exercise."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-35",
+      "prompt": "Problem: Mike is late again. Choose the correct sentence.",
+      "answer": "He ought to set an alarm clock to wake himself up.",
+      "distractors": [
+        "He ought set an alarm clock to wake himself up.",
+        "He should to set an alarm clock to wake himself up.",
+        "He must to set an alarm clock to wake himself up."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "He should to set an alarm clock to wake himself up.",
+        "He ought set an alarm clock to wake himself up.",
+        "He ought to set an alarm clock to wake himself up.",
+        "He must to set an alarm clock to wake himself up."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-36",
+      "prompt": "Problem: Ella's uniform smells bad. Choose the correct sentence.",
+      "answer": "She ought to change her school uniform more often.",
+      "distractors": [
+        "She ought change her school uniform more often.",
+        "She should to change her school uniform more often.",
+        "She must to change her school uniform more often."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "She must to change her school uniform more often.",
+        "She should to change her school uniform more often.",
+        "She ought change her school uniform more often.",
+        "She ought to change her school uniform more often."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-37",
+      "prompt": "Problem: Doris falls asleep in class. Choose the correct sentence.",
+      "answer": "She ought to get enough sleep.",
+      "distractors": [
+        "She ought get enough sleep.",
+        "She should to get enough sleep.",
+        "She must to get enough sleep."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "She must to get enough sleep.",
+        "She ought get enough sleep.",
+        "She ought to get enough sleep.",
+        "She should to get enough sleep."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-38",
+      "prompt": "Problem: Eric witnessed a crime. Choose the correct sentence.",
+      "answer": "He ought to call the police.",
+      "distractors": [
+        "He ought call the police.",
+        "He should to call the police.",
+        "He must to call the police."
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "choices": [
+        "He ought call the police.",
+        "He should to call the police.",
+        "He must to call the police.",
+        "He ought to call the police."
+      ],
+      "source": "full-sent"
+    },
+    {
+      "id": "ought-39",
+      "prompt": "Problem: Felix never labels his water bottle. → Complete with ought to + phrase.",
+      "answer": "ought to write his name on his bottle",
+      "distractors": [
+        "should to write his name on his bottle",
+        "ought write his name on his bottle",
+        "must to write his name on his bottle"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Felix never labels his water bottle.",
+      "advice": "write his name on his bottle",
+      "choices": [
+        "must to write his name on his bottle",
+        "ought to write his name on his bottle",
+        "should to write his name on his bottle",
+        "ought write his name on his bottle"
+      ]
+    },
+    {
+      "id": "ought-40",
+      "prompt": "Problem: Gina leaves art scraps on the floor. → Complete with ought to + phrase.",
+      "answer": "ought to tidy the art corner after craft",
+      "distractors": [
+        "should to tidy the art corner after craft",
+        "ought tidy the art corner after craft",
+        "must to tidy the art corner after craft"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Gina leaves art scraps on the floor.",
+      "advice": "tidy the art corner after craft",
+      "choices": [
+        "should to tidy the art corner after craft",
+        "ought tidy the art corner after craft",
+        "must to tidy the art corner after craft",
+        "ought to tidy the art corner after craft"
+      ]
+    },
+    {
+      "id": "ought-41",
+      "prompt": "Problem: Hank forgets to charge his tablet for class. → Complete with ought to + phrase.",
+      "answer": "ought to charge his tablet the night before",
+      "distractors": [
+        "should to charge his tablet the night before",
+        "ought charge his tablet the night before",
+        "must to charge his tablet the night before"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Hank forgets to charge his tablet for class.",
+      "advice": "charge his tablet the night before",
+      "choices": [
+        "must to charge his tablet the night before",
+        "ought to charge his tablet the night before",
+        "should to charge his tablet the night before",
+        "ought charge his tablet the night before"
+      ]
+    },
+    {
+      "id": "ought-42",
+      "prompt": "Problem: Ivy never returns library books on time. → Complete with ought to + phrase.",
+      "answer": "ought to note the return date in her diary",
+      "distractors": [
+        "should to note the return date in her diary",
+        "ought note the return date in her diary",
+        "must to note the return date in her diary"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "mid",
+      "source": "parallel",
+      "problem": "Ivy never returns library books on time.",
+      "advice": "note the return date in her diary",
+      "choices": [
+        "should to note the return date in her diary",
+        "ought note the return date in her diary",
+        "must to note the return date in her diary",
+        "ought to note the return date in her diary"
+      ]
+    },
+    {
+      "id": "ought-43",
+      "prompt": "Problem: Joel talks while others present. → Complete with ought to + phrase.",
+      "answer": "ought to listen quietly during presentations",
+      "distractors": [
+        "should to listen quietly during presentations",
+        "ought listen quietly during presentations",
+        "must to listen quietly during presentations"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Joel talks while others present.",
+      "advice": "listen quietly during presentations",
+      "choices": [
+        "should to listen quietly during presentations",
+        "ought listen quietly during presentations",
+        "must to listen quietly during presentations",
+        "ought to listen quietly during presentations"
+      ]
+    },
+    {
+      "id": "ought-44",
+      "prompt": "Problem: Kate's pencil case is sticky and dirty. → Complete with ought to + phrase.",
+      "answer": "ought to wipe her pencil case every week",
+      "distractors": [
+        "should to wipe her pencil case every week",
+        "ought wipe her pencil case every week",
+        "must to wipe her pencil case every week"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Kate's pencil case is sticky and dirty.",
+      "advice": "wipe her pencil case every week",
+      "choices": [
+        "should to wipe her pencil case every week",
+        "ought wipe her pencil case every week",
+        "must to wipe her pencil case every week",
+        "ought to wipe her pencil case every week"
+      ]
+    },
+    {
+      "id": "ought-45",
+      "prompt": "Problem: Liam never practises his recorder. → Complete with ought to + phrase.",
+      "answer": "ought to practise for ten minutes daily",
+      "distractors": [
+        "should to practise for ten minutes daily",
+        "ought practise for ten minutes daily",
+        "must to practise for ten minutes daily"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Liam never practises his recorder.",
+      "advice": "practise for ten minutes daily",
+      "choices": [
+        "must to practise for ten minutes daily",
+        "ought to practise for ten minutes daily",
+        "should to practise for ten minutes daily",
+        "ought practise for ten minutes daily"
+      ]
+    },
+    {
+      "id": "ought-46",
+      "prompt": "Problem: Nina rushes and spills soup often. → Complete with ought to + phrase.",
+      "answer": "ought to carry trays with both hands",
+      "distractors": [
+        "should to carry trays with both hands",
+        "ought carry trays with both hands",
+        "must to carry trays with both hands"
+      ],
+      "unit": "U2",
+      "skill": "ought-to",
+      "difficulty": "easy",
+      "source": "parallel",
+      "problem": "Nina rushes and spills soup often.",
+      "advice": "carry trays with both hands",
+      "choices": [
+        "should to carry trays with both hands",
+        "ought carry trays with both hands",
+        "must to carry trays with both hands",
+        "ought to carry trays with both hands"
+      ]
+    }
+  ]
+}
