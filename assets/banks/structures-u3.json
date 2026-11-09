@@ -1,0 +1,138 @@
+{
+  "unit": "u3",
+  "title": "Weather and Disasters",
+  "structures": [
+    {
+      "id": "zero-conditional",
+      "formula": "If + present, present (facts)",
+      "examples": [
+        {
+          "en": "If it rains heavily, streets flood quickly.",
+          "parts": {
+            "conn": [
+              "If"
+            ],
+            "v": [
+              "rains",
+              "flood"
+            ],
+            "obj": "streets"
+          }
+        },
+        {
+          "en": "If a typhoon comes near Hong Kong, schools close.",
+          "parts": {
+            "subj": "typhoon",
+            "conn": [
+              "If"
+            ],
+            "v": [
+              "comes",
+              "close"
+            ],
+            "obj": "schools"
+          }
+        },
+        {
+          "en": "If there is a long drought, plants die.",
+          "parts": {
+            "conn": [
+              "If"
+            ],
+            "v": [
+              "is",
+              "die"
+            ],
+            "obj": "drought"
+          }
+        }
+      ]
+    },
+    {
+      "id": "first-conditional",
+      "formula": "If + present, will + V",
+      "examples": [
+        {
+          "en": "If the rain keeps falling, there will be a landslide.",
+          "parts": {
+            "conn": [
+              "If",
+              "will"
+            ],
+            "v": [
+              "keeps",
+              "be"
+            ],
+            "obj": "landslide"
+          }
+        },
+        {
+          "en": "If Signal No. 8 is up tomorrow, we will stay at home.",
+          "parts": {
+            "conn": [
+              "If",
+              "will"
+            ],
+            "v": [
+              "is",
+              "stay"
+            ],
+            "obj": "home"
+          }
+        },
+        {
+          "en": "If the earthquake is severe, people will move to safer places.",
+          "parts": {
+            "subj": "earthquake",
+            "conn": [
+              "If",
+              "will"
+            ],
+            "v": [
+              "is",
+              "move"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "should-safety",
+      "formula": "should + V (typhoon safety)",
+      "examples": [
+        {
+          "en": "You should stay indoors during a typhoon.",
+          "parts": {
+            "subj": "You",
+            "conn": [
+              "should"
+            ],
+            "v": "stay indoors",
+            "obj": "typhoon"
+          }
+        },
+        {
+          "en": "We should close the windows before the storm.",
+          "parts": {
+            "subj": "We",
+            "conn": [
+              "should"
+            ],
+            "v": "close the windows"
+          }
+        },
+        {
+          "en": "Children should keep away from flooded streets.",
+          "parts": {
+            "subj": "Children",
+            "conn": [
+              "should"
+            ],
+            "v": "keep away",
+            "obj": "flooded streets"
+          }
+        }
+      ]
+    }
+  ]
+}

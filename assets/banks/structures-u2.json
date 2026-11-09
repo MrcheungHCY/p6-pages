@@ -1,0 +1,109 @@
+{
+  "unit": "u2",
+  "title": "Good Habits",
+  "structures": [
+    {
+      "id": "ought-should",
+      "formula": "ought to / should + V",
+      "examples": [
+        {
+          "en": "We ought to do housework every day.",
+          "parts": {
+            "subj": "We",
+            "conn": [
+              "ought to"
+            ],
+            "v": "do housework"
+          }
+        },
+        {
+          "en": "Students should be punctual for school.",
+          "parts": {
+            "subj": "Students",
+            "conn": [
+              "should"
+            ],
+            "v": "be punctual"
+          }
+        },
+        {
+          "en": "You should exercise regularly to stay healthy.",
+          "parts": {
+            "subj": "You",
+            "conn": [
+              "should"
+            ],
+            "obj": "healthy",
+            "v": "exercise regularly"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ing-subject",
+      "formula": "V-ing … + verb + …",
+      "examples": [
+        {
+          "en": "Doing housework helps the family.",
+          "parts": {
+            "ing": "Doing housework",
+            "v": "helps",
+            "obj": "the family"
+          }
+        },
+        {
+          "en": "Getting up early makes us more energetic.",
+          "parts": {
+            "ing": "Getting up early",
+            "v": "makes",
+            "obj": "us more energetic"
+          }
+        },
+        {
+          "en": "Sharing snacks shows that we are generous.",
+          "parts": {
+            "ing": "Sharing snacks",
+            "v": "shows",
+            "obj": "generous"
+          }
+        }
+      ]
+    },
+    {
+      "id": "need-to-be",
+      "formula": "need to be + adjective",
+      "examples": [
+        {
+          "en": "Class monitors need to be responsible.",
+          "parts": {
+            "subj": "Class monitors",
+            "conn": [
+              "need to be"
+            ],
+            "obj": "responsible"
+          }
+        },
+        {
+          "en": "We need to be patient when we wait in a queue.",
+          "parts": {
+            "subj": "We",
+            "conn": [
+              "need to be"
+            ],
+            "obj": "patient"
+          }
+        },
+        {
+          "en": "Clumsy friends need to be more careful with cups.",
+          "parts": {
+            "subj": "Clumsy friends",
+            "conn": [
+              "need to be"
+            ],
+            "obj": "more careful"
+          }
+        }
+      ]
+    }
+  ]
+}

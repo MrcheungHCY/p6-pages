@@ -1,0 +1,129 @@
+{
+  "unit": "u1",
+  "title": "Feeling Unwell",
+  "structures": [
+    {
+      "id": "told-to",
+      "formula": "told + someone + to + V",
+      "examples": [
+        {
+          "en": "The doctor told me to take the medicine.",
+          "parts": {
+            "subj": "doctor",
+            "conn": [
+              "told",
+              "to"
+            ],
+            "obj": "me",
+            "v": "take the medicine"
+          }
+        },
+        {
+          "en": "Mum told Tom to drink more water.",
+          "parts": {
+            "subj": "Mum",
+            "conn": [
+              "told",
+              "to"
+            ],
+            "obj": "Tom",
+            "v": "drink more water"
+          }
+        },
+        {
+          "en": "The teacher told us to rest at home.",
+          "parts": {
+            "subj": "teacher",
+            "conn": [
+              "told",
+              "to"
+            ],
+            "obj": "us",
+            "v": "rest at home"
+          }
+        }
+      ]
+    },
+    {
+      "id": "told-not-to",
+      "formula": "told + someone + not to + V",
+      "examples": [
+        {
+          "en": "The doctor told Amy not to eat ice cream.",
+          "parts": {
+            "subj": "doctor",
+            "conn": [
+              "told",
+              "not to"
+            ],
+            "obj": "Amy",
+            "v": "eat ice cream"
+          }
+        },
+        {
+          "en": "Dad told me not to play football today.",
+          "parts": {
+            "subj": "Dad",
+            "conn": [
+              "told",
+              "not to"
+            ],
+            "obj": "me",
+            "v": "play football"
+          }
+        },
+        {
+          "en": "The nurse told him not to touch the wound.",
+          "parts": {
+            "subj": "nurse",
+            "conn": [
+              "told",
+              "not to"
+            ],
+            "obj": "him",
+            "v": "touch the wound"
+          }
+        }
+      ]
+    },
+    {
+      "id": "should-ought",
+      "formula": "should / ought to + V",
+      "examples": [
+        {
+          "en": "You should see a doctor if you have a fever.",
+          "parts": {
+            "subj": "You",
+            "conn": [
+              "should"
+            ],
+            "obj": "fever",
+            "v": "see a doctor"
+          }
+        },
+        {
+          "en": "You ought to take a rest when you have a headache.",
+          "parts": {
+            "subj": "You",
+            "conn": [
+              "ought to"
+            ],
+            "obj": "headache",
+            "v": "take a rest"
+          }
+        },
+        {
+          "en": "Ken should drink warm water for his cough.",
+          "parts": {
+            "subj": "Ken",
+            "conn": [
+              "should"
+            ],
+            "obj": "cough",
+            "v": "drink warm water"
+          }
+        }
+      ]
+    }
+  ]
+}

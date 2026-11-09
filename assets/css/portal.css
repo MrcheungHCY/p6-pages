@@ -110,3 +110,116 @@ a.card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(31,41,5
   color: var(--muted); font-size: .9rem;
 }
 .note { font-size: .9rem; color: var(--muted); }
+
+/* --- Grammar colour tokens & structure cards (Unit enrich) --- */
+.tok-subj { color: #2563eb; font-weight: 800; }
+.tok-v { color: #0d9488; font-weight: 800; }
+.tok-obj { color: #ea580c; font-weight: 800; }
+.tok-conn { color: #c026d3; font-weight: 900; }
+.tok-ing { color: #7c3aed; font-weight: 800; }
+
+.formula {
+  display: flex; flex-wrap: wrap; gap: .35rem .55rem; align-items: center;
+  background: #fff; border: 2px solid var(--line); border-radius: 14px;
+  padding: .7rem .9rem; margin: .55rem 0 .85rem;
+  box-shadow: var(--shadow); font-size: 1.02rem; font-weight: 700;
+}
+.formula .eq { color: var(--muted); font-weight: 800; margin: 0 .15rem; }
+
+.ex-grid {
+  display: grid; gap: .75rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin: .6rem 0 1.1rem;
+}
+.ex-card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-left: 6px solid var(--accent);
+  border-radius: 14px;
+  padding: .75rem .9rem;
+  box-shadow: var(--shadow);
+  font-size: .98rem;
+}
+.ex-card .ex-label {
+  display: inline-block; font-size: .75rem; font-weight: 800;
+  letter-spacing: .03em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: .25rem;
+}
+body[data-unit="u1"] .ex-card { border-left-color: var(--u1); }
+body[data-unit="u2"] .ex-card { border-left-color: var(--u2); }
+body[data-unit="u3"] .ex-card { border-left-color: var(--u3); }
+body[data-unit="u4"] .ex-card { border-left-color: var(--u4); }
+
+.photo-row {
+  display: grid; gap: .65rem;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  margin: .6rem 0 1rem;
+}
+.photo-row figure {
+  margin: 0; text-align: center;
+}
+.photo-row img {
+  width: 100%; aspect-ratio: 1; object-fit: contain;
+  background: #fff; border: 2px solid var(--line); border-radius: 14px;
+  padding: .35rem; box-shadow: var(--shadow);
+}
+.photo-row figcaption {
+  font-size: .78rem; font-weight: 700; color: var(--muted); margin-top: .25rem;
+}
+
+.hero.u1 { border-color: var(--u1); border-left: 8px solid var(--u1); }
+.hero.u2 { border-color: var(--u2); border-left: 8px solid var(--u2); }
+.hero.u3 { border-color: var(--u3); border-left: 8px solid var(--u3); }
+.hero.u4 { border-color: var(--u4); border-left: 8px solid var(--u4); }
+
+body[data-unit="u1"] .section h2 { border-left-color: var(--u1); }
+body[data-unit="u2"] .section h2 { border-left-color: var(--u2); }
+body[data-unit="u3"] .section h2 { border-left-color: var(--u3); }
+body[data-unit="u4"] .section h2 { border-left-color: var(--u4); }
+
+.struct-block { margin: 1rem 0 1.4rem; }
+.struct-block h3 {
+  margin: 0 0 .4rem; font-size: 1.08rem; color: var(--ink);
+}
+.meme-slot.mini {
+  min-height: 72px; margin-top: .6rem; font-size: .9rem; padding: .7rem;
+}
+
+/* --- Notes character strip + compact 3D FX stage --- */
+.notes-chars { margin-top: .85rem; }
+.notes-chars-cap { margin: 0 0 .45rem; font-size: .9rem; color: var(--muted); }
+.char-strip {
+  display: grid; gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+}
+.char-strip figure { margin: 0; text-align: center; }
+.char-strip img {
+  width: 100%; aspect-ratio: 1; object-fit: contain;
+  background: #fff; border: 2px solid var(--line); border-radius: 14px;
+  padding: .25rem; box-shadow: var(--shadow);
+}
+.char-strip figcaption {
+  font-size: .72rem; font-weight: 700; color: var(--muted); margin-top: .2rem;
+  line-height: 1.2;
+}
+.fx-stage {
+  margin: .75rem 0 1rem;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  padding: .85rem 1rem;
+  box-shadow: var(--shadow);
+}
+.fx-label { margin: 0 0 .5rem; font-size: .95rem; }
+.fx-stage-inner {
+  display: flex; align-items: flex-end; justify-content: center;
+  min-height: 180px; max-height: 220px;
+  background: linear-gradient(180deg, #fff6fb, #e8f6ff);
+  border: 2px dashed var(--line); border-radius: 16px;
+  padding: .5rem .75rem .35rem;
+  overflow: hidden;
+}
+.fx-stage-inner .hcy-mascot-slot {
+  --hcy-mascot-size: clamp(120px, 28vh, 180px);
+  min-height: calc(var(--hcy-mascot-size) + 12px);
+}

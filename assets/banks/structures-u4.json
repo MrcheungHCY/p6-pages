@@ -1,0 +1,112 @@
+{
+  "unit": "u4",
+  "title": "Save the Earth",
+  "structures": [
+    {
+      "id": "unless",
+      "formula": "unless + clause (= if not)",
+      "examples": [
+        {
+          "en": "The beach will stay dirty unless we pick up the rubbish.",
+          "parts": {
+            "conn": [
+              "will",
+              "unless"
+            ],
+            "v": "pick up",
+            "obj": "rubbish"
+          }
+        },
+        {
+          "en": "Plants cannot grow well unless we save water.",
+          "parts": {
+            "conn": [
+              "cannot",
+              "unless"
+            ],
+            "v": "save",
+            "obj": "water"
+          }
+        },
+        {
+          "en": "We will use too many bags unless we bring our own.",
+          "parts": {
+            "conn": [
+              "will",
+              "unless"
+            ],
+            "v": "bring"
+          }
+        },
+        {
+          "en": "Air will stay smoky unless factories cut pollution.",
+          "parts": {
+            "conn": [
+              "will",
+              "unless"
+            ],
+            "v": "cut",
+            "obj": "pollution"
+          }
+        }
+      ]
+    },
+    {
+      "id": "so-that",
+      "formula": "… so that + clause (purpose)",
+      "examples": [
+        {
+          "en": "We turn off lights so that we can save electricity.",
+          "parts": {
+            "conn": [
+              "so that"
+            ],
+            "v": [
+              "turn off",
+              "can save"
+            ],
+            "obj": "electricity"
+          }
+        },
+        {
+          "en": "Class 6D makes a donation so that the park can buy new trees.",
+          "parts": {
+            "conn": [
+              "so that"
+            ],
+            "v": [
+              "makes",
+              "can buy"
+            ],
+            "obj": "donation"
+          }
+        },
+        {
+          "en": "Teachers encourage us so that we keep the classroom clean.",
+          "parts": {
+            "conn": [
+              "so that"
+            ],
+            "v": [
+              "encourage",
+              "keep"
+            ]
+          }
+        },
+        {
+          "en": "We reuse bottles so that less plastic goes into the sea.",
+          "parts": {
+            "conn": [
+              "so that"
+            ],
+            "v": [
+              "reuse",
+              "goes"
+            ],
+            "obj": "plastic"
+          }
+        }
+      ]
+    }
+  ]
+}
