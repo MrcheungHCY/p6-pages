@@ -18,7 +18,9 @@ Settings → Pages → Build and deployment:
 
 `.nojekyll` is in the root so Pages serves the HTML, `downloads/*.md`, and `assets/` as static files (Jekyll is off).
 
-The first deploy can take a minute after `main` updates. If Pages was not enabled by the API, use the settings above.
+`main` already has the site. GitHub's Pages API refused this agent's token (`403 Resource not accessible by integration`; the repo reports `has_pages: false`). Someone with admin on the repo needs to open **Settings → Pages** and save the branch / folder above once.
+
+Until that save, https://mrcheunghcy.github.io/p6-pages/ returns 404. After it is saved, the first deploy can take about a minute. Direct settings link: https://github.com/MrcheungHCY/p6-pages/settings/pages
 
 ## File tree
 
