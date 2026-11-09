@@ -38,8 +38,9 @@ assets/css/                portal.css
 assets/banks/              shared grammar banks
 assets/hcy-*.js / .css     speech, touch, deeplinks, teacher HUD
 assets/fx-kit/             Motion + Three.js FX kit and demo
-assets/fx-kit/styles/      16 style packs (part 1; some mascot PNGs still incoming)
-assets/character-library/  hcy-chars.js + png/ (reserved for art)
+assets/fx-kit/styles/      16 style packs (idle / happy / oops complete)
+assets/character-library/  README, index.csv, hcy-chars.js (chars 001–062)
+assets/character-library/png/   part 1 (41 of 82 PNGs)
 assets/ocr/                offline Tesseract bundle for Dictation Tug-of-War
 ```
 
@@ -50,8 +51,8 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 
 ## Still open
 
-- **Style packs (part 1) are in** `assets/fx-kit/styles/` (16 folders, READMEs, and a partial set of mascot / board / stamp PNGs). `07-us-comic-book` has idle, happy, and oops. The other packs are still missing at least one pose. The kit falls back when a PNG is absent. Part 2 should fill the rest.
-- **Character library** PNGs land in `assets/character-library/png/`. Games point at `char-026.png` and others; missing images hide themselves.
+- **Style packs are complete** in `assets/fx-kit/styles/`. All 16 packs now have idle, happy, and oops, plus the board and stamp images from both halves.
+- **Character library part 1 is in:** `README.md`, `index.csv`, `hcy-chars.js` (metadata for char-001–062), and 41 PNGs. Still missing from `png/` until part 2: the other 41 figures, including game scenes `char-031`, `char-063`, `char-068`, and `char-071`. Those images hide themselves until the files arrive. `index.csv` already lists the full 82.
 - **OCR is in** `assets/ocr/` (`hcy-ocr.js`, Tesseract 5.1.1, `eng.traineddata.gz`). Dictation Tug-of-War already points at that folder.
 - **Visuals:** each unit page has a Pictures & memes slot (`#pics`) waiting for art.
 - **Unit packs:** notes / 重點 / grammar sheets are short classroom prompts. Comprehension downloads are practice frames, not full passages. U4 is marked as scaffolding (unless / so that). U2 has notes but no separate unit-game folder yet.
