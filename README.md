@@ -38,9 +38,9 @@ assets/css/                portal.css
 assets/banks/              shared grammar banks
 assets/hcy-*.js / .css     speech, touch, deeplinks, teacher HUD
 assets/fx-kit/             Motion + Three.js FX kit and demo
-assets/fx-kit/styles/      style-pack art (reserved)
+assets/fx-kit/styles/      16 style packs (part 1; some mascot PNGs still incoming)
 assets/character-library/  hcy-chars.js + png/ (reserved for art)
-assets/ocr/                handwriting reader (reserved)
+assets/ocr/                offline Tesseract bundle for Dictation Tug-of-War
 ```
 
 Tenses practice lives on its own site: https://mrcheunghcy.github.io/6d-tenses-practice/
@@ -50,9 +50,9 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 
 ## Still open
 
-- **Style packs** land in `assets/fx-kit/styles/` (mascot PNGs per pack). The kit already falls back if a PNG is missing.
+- **Style packs (part 1) are in** `assets/fx-kit/styles/` (16 folders, READMEs, and a partial set of mascot / board / stamp PNGs). `07-us-comic-book` has idle, happy, and oops. The other packs are still missing at least one pose. The kit falls back when a PNG is absent. Part 2 should fill the rest.
 - **Character library** PNGs land in `assets/character-library/png/`. Games point at `char-026.png` and others; missing images hide themselves.
-- **OCR** scripts land in `assets/ocr/` for Dictation Tug-of-War. Until they arrive, typed answers still work.
+- **OCR is in** `assets/ocr/` (`hcy-ocr.js`, Tesseract 5.1.1, `eng.traineddata.gz`). Dictation Tug-of-War already points at that folder.
 - **Visuals:** each unit page has a Pictures & memes slot (`#pics`) waiting for art.
 - **Unit packs:** notes / 重點 / grammar sheets are short classroom prompts. Comprehension downloads are practice frames, not full passages. U4 is marked as scaffolding (unless / so that). U2 has notes but no separate unit-game folder yet.
 
