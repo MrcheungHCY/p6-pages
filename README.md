@@ -25,8 +25,11 @@ Until that save, https://mrcheunghcy.github.io/p6-pages/ returns 404. After it i
 ## File tree
 
 ```
-index.html                 hub (U1–U4, Exam Vocab, Games, tenses link)
-units/u1 … units/u4        scrolling unit pages
+index.html                 hub (U1–U3, Exam Vocab, Games, tenses link)
+units/u1 … units/u3        scrolling unit pages (no character-library strip)
+units/u4/index.html        student placeholder — U4 is not in this exam
+units/u4/teaching-page.restore.html
+                           full U4 page, kept for later, not linked
 downloads/u1 … u4          notes, 重點, grammar, comprehension (Word .docx)
 vocab/                     1st Exam Vocabulary (25 words + images)
 games/                     games hub
@@ -53,8 +56,8 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 - **Style packs are complete** in `assets/fx-kit/styles/`. All 16 packs now have idle, happy, and oops, plus the board and stamp images from both halves.
 - **Character library is complete:** `README.md`, `index.csv` (82 rows), `hcy-chars.js`, and `png/char-001.png` … `png/char-082.png`. Revision-game scene images (`char-026`, `031`, `033`, `063`, `065`–`068`, `071`) are on disk.
 - **OCR is in** `assets/ocr/` (`hcy-ocr.js`, Tesseract 5.1.1, `eng.traineddata.gz`). Dictation Tug-of-War already points at that folder.
-- **Visuals:** unit pages do not show a Pictures · 圖庫 bank. Vocab images stay on the Exam Vocab page; character strips stay inside Notes. Unit Games sections link out to the revision games and do not embed the default fx-kit classroom buddy.
-- **Unit packs:** notes / 重點 on each Unit page are English + Cantonese revision (colour-coded patterns and hidden traps). Matching Word files are `downloads/uN/notes.docx` and `zhongdian.docx`. Comprehension downloads are practice frames, not full passages. U4 teaches unless / so that. U2 has notes but no separate unit-game folder yet.
+- **Visuals:** unit pages do not show a Pictures · 圖庫 bank or the Notes “Character library” strip. Vocab images stay on the Exam Vocab page. The small trap avatar inside 隱藏陷阱 stays. Unit Games sections link out to the revision games and do not embed the default fx-kit classroom buddy. `assets/character-library/` and the FX demo stay in the repo.
+- **Unit packs:** notes / 重點 on U1–U3 are English + Cantonese revision (colour-coded patterns and hidden traps). Matching Word files are `downloads/uN/notes.docx` and `zhongdian.docx`. Comprehension downloads are practice frames, not full passages. U4 is hidden from the student portal (not in this exam). The full page is `units/u4/teaching-page.restore.html`; Word files stay in `downloads/u4/`. To show U4 again, replace `units/u4/index.html` with that file and put the U4 links back. U2 has notes but no separate unit-game folder yet.
 
 ## Hard rules
 
