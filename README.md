@@ -16,7 +16,7 @@ Settings → Pages → Build and deployment:
 - Branch: **main**
 - Folder: **/ (root)**
 
-`.nojekyll` is in the root so Pages serves the HTML, `downloads/*.md`, and `assets/` as static files (Jekyll is off).
+`.nojekyll` is in the root so Pages serves the HTML, `downloads/*.docx`, and `assets/` as static files (Jekyll is off).
 
 `main` already has the site. GitHub's Pages API refused this agent's token (`403 Resource not accessible by integration`; the repo reports `has_pages: false`). Someone with admin on the repo needs to open **Settings → Pages** and save the branch / folder above once.
 
@@ -27,7 +27,7 @@ Until that save, https://mrcheunghcy.github.io/p6-pages/ returns 404. After it i
 ```
 index.html                 hub (U1–U4, Exam Vocab, Games, tenses link)
 units/u1 … units/u4        scrolling unit pages
-downloads/u1 … u4          notes, 重點, grammar, comprehension packs
+downloads/u1 … u4          notes, 重點, grammar, comprehension (Word .docx)
 vocab/                     1st Exam Vocabulary (25 words + images)
 games/                     games hub
 games/exam-revision/01–10  Exam Revision Games (practice banks)
@@ -53,7 +53,7 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 - **Style packs are complete** in `assets/fx-kit/styles/`. All 16 packs now have idle, happy, and oops, plus the board and stamp images from both halves.
 - **Character library is complete:** `README.md`, `index.csv` (82 rows), `hcy-chars.js`, and `png/char-001.png` … `png/char-082.png`. Revision-game scene images (`char-026`, `031`, `033`, `063`, `065`–`068`, `071`) are on disk.
 - **OCR is in** `assets/ocr/` (`hcy-ocr.js`, Tesseract 5.1.1, `eng.traineddata.gz`). Dictation Tug-of-War already points at that folder.
-- **Visuals:** each unit page has a Pictures & memes slot (`#pics`) waiting for art.
+- **Visuals:** unit pages do not show a Pictures · 圖庫 bank. Vocab images stay on the Exam Vocab page; character strips stay inside Notes.
 - **Unit packs:** notes / 重點 / grammar sheets are short classroom prompts. Comprehension downloads are practice frames, not full passages. U4 is marked as scaffolding (unless / so that). U2 has notes but no separate unit-game folder yet.
 
 ## Hard rules
