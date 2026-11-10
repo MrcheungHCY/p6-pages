@@ -139,14 +139,7 @@
   <section class="section" id="games">
     <h2>Games · 3D / anime FX</h2>
     <div class="panel">
-      <p>Exam Revision Games direction: <strong>Three.js FX · more animations · character library</strong>. Programmer will keep upgrading these pages.</p>
-    <div class="fx-stage" id="fx-3d">
-      <p class="fx-label"><strong>3D FX (Three.js / 3json)</strong> · fx-kit · <a href="../../assets/fx-kit/demo.html">full demo ↗</a></p>
-      <div class="fx-stage-inner">
-        <div id="hcy-mascot-slot" class="hcy-mascot-slot" aria-label="HCY 3D mascot buddy"></div>
-      </div>
-      <p class="note">Tiny classroom buddy (kit default). If WebGL is off, this stage hides quietly.</p>
-    </div>
+      <p>These games use <strong>3D / anime FX</strong>.</p>
       <ul class="list">
         <li><a href="../../games/exam-revision/02-should-split-zones/">Should Split Zones (02)</a></li>
         <li><a href="../../games/exam-revision/03-ought-problem-advice/">Ought Problem↔Advice (03)</a></li>
@@ -172,36 +165,5 @@
 
   <p class="footer">Scrolling page (not flip-book) · P.6 Mr Cheung · for students only — no scores / name lists here.</p>
 </main>
-
-<link rel="stylesheet" href="../../assets/fx-kit/css/hcy-fx.css"/>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-<script src="../../assets/fx-kit/js/hcy-fx-motion.js"></script>
-<script src="../../assets/fx-kit/js/hcy-fx-audio.js"></script>
-<script src="../../assets/fx-kit/js/hcy-fx-three.js"></script>
-<script src="../../assets/fx-kit/js/hcy-fx-mascot.js"></script>
-<script src="../../assets/fx-kit/js/hcy-fx.js"></script>
-<script>
-(function () {
-  var stage = document.getElementById('fx-3d');
-  var slot = document.getElementById('hcy-mascot-slot');
-  if (!stage || !slot) return;
-  function hide() { stage.style.display = 'none'; }
-  try {
-    if (typeof THREE === 'undefined') { hide(); return; }
-    if (window.HcyFxMascot) {
-      window.HcyFxMascot.init({ mount: slot, mode: '3d', quality: 'soft' });
-    }
-    if (window.HcyFxThree && !window.HcyFxThree.isActive()) {
-      window.HcyFxThree.init({ quality: 'soft' });
-    }
-    // Degrade if WebGL never comes up
-    setTimeout(function () {
-      var ok = window.HcyFxThree && window.HcyFxThree.isActive();
-      var png = window.HcyFxMascot && window.HcyFxMascot.hasPng && window.HcyFxMascot.hasPng('idle');
-      if (!ok && !png) hide();
-    }, 1800);
-  } catch (e) { hide(); }
-})();
-</script>
 </body>
 </html>

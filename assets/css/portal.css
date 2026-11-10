@@ -185,7 +185,7 @@ body[data-unit="u4"] .section h2 { border-left-color: var(--u4); }
   min-height: 72px; margin-top: .6rem; font-size: .9rem; padding: .7rem;
 }
 
-/* --- Notes character strip + compact 3D FX stage --- */
+/* --- Notes character strip --- */
 .notes-chars { margin-top: .85rem; }
 .notes-chars-cap { margin: 0 0 .45rem; font-size: .9rem; color: var(--muted); }
 .char-strip {
@@ -201,25 +201,4 @@ body[data-unit="u4"] .section h2 { border-left-color: var(--u4); }
 .char-strip figcaption {
   font-size: .72rem; font-weight: 700; color: var(--muted); margin-top: .2rem;
   line-height: 1.2;
-}
-.fx-stage {
-  margin: .75rem 0 1rem;
-  background: var(--card);
-  border: 2px solid var(--line);
-  border-radius: 16px;
-  padding: .85rem 1rem;
-  box-shadow: var(--shadow);
-}
-.fx-label { margin: 0 0 .5rem; font-size: .95rem; }
-.fx-stage-inner {
-  display: flex; align-items: flex-end; justify-content: center;
-  min-height: 180px; max-height: 220px;
-  background: linear-gradient(180deg, #fff6fb, #e8f6ff);
-  border: 2px dashed var(--line); border-radius: 16px;
-  padding: .5rem .75rem .35rem;
-  overflow: hidden;
-}
-.fx-stage-inner .hcy-mascot-slot {
-  --hcy-mascot-size: clamp(120px, 28vh, 180px);
-  min-height: calc(var(--hcy-mascot-size) + 12px);
 }
