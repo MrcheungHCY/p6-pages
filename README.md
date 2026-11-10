@@ -54,7 +54,7 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 - **Character library is complete:** `README.md`, `index.csv` (82 rows), `hcy-chars.js`, and `png/char-001.png` … `png/char-082.png`. Revision-game scene images (`char-026`, `031`, `033`, `063`, `065`–`068`, `071`) are on disk.
 - **OCR is in** `assets/ocr/` (`hcy-ocr.js`, Tesseract 5.1.1, `eng.traineddata.gz`). Dictation Tug-of-War already points at that folder.
 - **Visuals:** unit pages do not show a Pictures · 圖庫 bank. Vocab images stay on the Exam Vocab page; character strips stay inside Notes.
-- **Unit packs:** notes / 重點 / grammar sheets are short classroom prompts. Comprehension downloads are practice frames, not full passages. U4 is marked as scaffolding (unless / so that). U2 has notes but no separate unit-game folder yet.
+- **Unit packs:** notes / 重點 on each Unit page are English + Cantonese revision (colour-coded patterns and hidden traps). Matching Word files are `downloads/uN/notes.docx` and `zhongdian.docx`. Comprehension downloads are practice frames, not full passages. U4 teaches unless / so that. U2 has notes but no separate unit-game folder yet.
 
 ## Hard rules
 
