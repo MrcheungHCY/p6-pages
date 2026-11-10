@@ -66,3 +66,5 @@ on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
 - No exam finals or drafts, and no exam-paper stems (games run `games/banks/no-exam-filter.js`)
 - No student names, emails, scores, or MasterScores
 - No Google Form IDs
+
+A Pages retry was needed after the real-3 bank merge (deploy run 42837483697 timed out on Deploy to GitHub Pages).
