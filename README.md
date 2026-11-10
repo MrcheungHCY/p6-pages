@@ -16,6 +16,8 @@ Settings → Pages → Build and deployment:
 - Branch: **main**
 - Folder: **/ (root)**
 
+A deploy that stays on `syncing_files` until the 10-minute job timeout is canceled, and the previous successful build stays live. Another commit on `main` starts a fresh deploy of the same branch.
+
 `.nojekyll` is in the root so Pages serves the HTML, `downloads/*.docx`, and `assets/` as static files (Jekyll is off).
 
 `main` already has the site. GitHub's Pages API refused this agent's token (`403 Resource not accessible by integration`; the repo reports `has_pages: false`). Someone with admin on the repo needs to open **Settings → Pages** and save the branch / folder above once.
