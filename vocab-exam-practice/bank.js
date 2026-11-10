@@ -1,7 +1,7 @@
 /* Bank data for offline / file:// loading. Keep in sync with bank.json. */
 window.CLOZE_BANK = {
   "meta": {
-    "label": "Vocabulary Exam Practice bank (real-2)",
+    "label": "Vocabulary Exam Practice bank (real-3)",
     "audience": "colleagues only (Maymay, Hilary, Fiona, Aaron)",
     "notExamContent": true,
     "notForStudents": true,
@@ -11,7 +11,7 @@ window.CLOZE_BANK = {
     "examplePerSet": 1,
     "blankMarker": "_____",
     "spelling": "British English",
-    "version": "real-2"
+    "version": "real-3"
   },
   "sets": [
     {
@@ -21,183 +21,183 @@ window.CLOZE_BANK = {
         "id": "set-001-ex",
         "code": "S001-EX",
         "tag": "example",
-        "sentence": "Maya was too _____ to stay on the easy path, so the leader let her try the steeper trail with a partner.",
-        "answer": "adventurous"
+        "sentence": "Ken’s back hurt after PE, so he told the teacher he had a _____.",
+        "answer": "backache"
       },
       "items": [
         {
           "id": "set-001-q01",
           "code": "S001-Q01",
           "tag": "habits",
-          "sentence": "Before a hard dictation, Miss Yam takes a minute to _____ us, saying we already know more than we think.",
+          "sentence": "Before the race, the teacher used kind words to _____ Ivan.",
           "answer": "encourage"
         },
         {
           "id": "set-001-q02",
           "code": "S001-Q02",
           "tag": "illness",
-          "sentence": "After the inter-school basketball final, Ken pressed a hand to the small of his back; he clearly had a _____.",
+          "sentence": "The low piano stool left Judy with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-001-q03",
           "code": "S001-Q03",
           "tag": "disasters",
-          "sentence": "The swelling in his knee was _____, so even two steps on the stairs made him stop and call for help.",
+          "sentence": "The pain in her knee was _____, so Lila could not walk to school.",
           "answer": "severe"
         },
         {
           "id": "set-001-q04",
           "code": "S001-Q04",
           "tag": "habits",
-          "sentence": "The choir director thanks anyone who is _____ enough to be in their seat before the first downbeat.",
+          "sentence": "At school, Sam is always _____ and never late for the morning bus.",
           "answer": "punctual"
         },
         {
           "id": "set-001-q05",
           "code": "S001-Q05",
           "tag": "illness",
-          "sentence": "From the back of the hall, a dry _____ interrupted the principal’s speech and made everyone turn.",
+          "sentence": "A dry _____ from the back of the class made Amy hold her throat.",
           "answer": "cough"
         },
         {
           "id": "set-001-q06",
           "code": "S001-Q06",
           "tag": "disasters",
-          "sentence": "The office issued a receipt after a parent brought a _____ of two thousand dollars for the school’s wheelchair ramp fund.",
+          "sentence": "At the park, Mum put a _____ of old clothes in the charity box.",
           "answer": "donation"
         },
         {
           "id": "set-001-q07",
           "code": "S001-Q07",
           "tag": "habits",
-          "sentence": "Lucy keeps a _____ swimming slot at eight every Saturday, always the same hour, week after week.",
+          "sentence": "Eva has a _____ swimming class at the same time every Saturday.",
           "answer": "regular"
         },
         {
           "id": "set-001-q08",
           "code": "S001-Q08",
           "tag": "illness",
-          "sentence": "The nurse checked the thermometer twice before confirming that Ruby had a high _____.",
+          "sentence": "The nurse checked the thermometer and said Hugo had a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-001-q09",
           "code": "S001-Q09",
           "tag": "disasters",
-          "sentence": "A _____ is a strong tropical cyclone, and last night its fierce wind bent the estate’s trees almost double.",
+          "sentence": "In the estate, the _____ brought strong wind, and school was closed the next day.",
           "answer": "typhoon"
         },
         {
           "id": "set-001-q10",
           "code": "S001-Q10",
           "tag": "habits",
-          "sentence": "On Sunday morning, Ken dusts the shelves and folds the laundry, two quiet jobs that count as _____.",
+          "sentence": "On Sunday, Joel dusted the shelves and folded the laundry as _____.",
           "answer": "housework"
         },
         {
           "id": "set-001-q11",
           "code": "S001-Q11",
           "tag": "illness",
-          "sentence": "The bright stage lights made Tina press her temples; she was getting a sharp _____.",
+          "sentence": "The bright lights made Nora press her head; she had a _____.",
           "answer": "headache"
         },
         {
           "id": "set-001-q12",
           "code": "S001-Q12",
           "tag": "disasters",
-          "sentence": "A _____ covered the usually dry football field, and only the tops of the goalposts showed above the water.",
+          "sentence": "At school, a _____ covered the football field in water; only the goalposts showed.",
           "answer": "flood"
         },
         {
           "id": "set-001-q13",
           "code": "S001-Q13",
           "tag": "habits",
-          "sentence": "The class elected a _____ monitor to be in charge of locking the science cupboard each afternoon.",
+          "sentence": "At night, the teacher chose a _____ pupil to lock the science cupboard.",
           "answer": "responsible"
         },
         {
           "id": "set-001-q14",
           "code": "S001-Q14",
           "tag": "illness",
-          "sentence": "A cracked filling made it painful for Hugh to bite the crust, and the dentist later named it a _____.",
+          "sentence": "Eric could not chew the toast because he had a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-001-q15",
           "code": "S001-Q15",
           "tag": "disasters",
-          "sentence": "A _____ sent a river of mud and rocks sliding down the hillside and across the mountain road.",
+          "sentence": "At home, a _____ sent mud and rocks down the hill and across the road.",
           "answer": "landslide"
         },
         {
           "id": "set-001-q16",
           "code": "S001-Q16",
           "tag": "habits",
-          "sentence": "Eating a variety of vegetables and going out to play each day helps the twins stay _____ and strong.",
+          "sentence": "Enough sleep and morning runs helped Carl look fit and _____.",
           "answer": "healthy"
         },
         {
           "id": "set-001-q17",
           "code": "S001-Q17",
           "tag": "illness",
-          "sentence": "By the third day, whole-body aches and a changing temperature made it clear that this was the _____, not a simple tired spell.",
+          "sentence": "Holly felt weak and achy all over, so Mum said she had the _____.",
           "answer": "flu"
         },
         {
           "id": "set-001-q18",
           "code": "S001-Q18",
           "tag": "disasters",
-          "sentence": "A long _____ left the reservoir so low that the old village steps, usually underwater, could be walked on.",
+          "sentence": "In town, the long _____ left the fields dry and cracked.",
           "answer": "drought"
         },
         {
           "id": "set-001-q19",
           "code": "S001-Q19",
           "tag": "habits",
-          "sentence": "At the busy post office, May stayed _____ in line, reading a book instead of sighing at the slow clerk.",
+          "sentence": "At the busy post office, Ruby stayed _____ and did not sigh.",
           "answer": "patient"
         },
         {
           "id": "set-001-q20",
           "code": "S001-Q20",
           "tag": "habits",
-          "sentence": "Uncle Ray is _____; he paid for every cousin’s ticket and would not take a coin back.",
+          "sentence": "At school, Uncle Ray was _____; he paid for every cousin’s ticket.",
           "answer": "generous"
         },
         {
           "id": "set-001-q21",
           "code": "S001-Q21",
           "tag": "disasters",
-          "sentence": "The hanging lamps drew wide circles when a short _____ ran under the hall, and several chairs scraped.",
+          "sentence": "At camp, the ground shook during an _____, and the lamps swung.",
           "answer": "earthquake"
         },
         {
           "id": "set-001-q22",
           "code": "S001-Q22",
           "tag": "habits",
-          "sentence": "Ben is so _____ that he knocked the display of paper cups with his elbow and sent them rolling.",
+          "sentence": "Pearl is so _____ that she knocked the cups off the table.",
           "answer": "clumsy"
         },
         {
           "id": "set-001-q23",
           "code": "S001-Q23",
           "tag": "illness",
-          "sentence": "After the rushed lunch before the spelling bee, a tight cramp in his midriff told Carl he had a _____.",
+          "sentence": "After lunch, Wade held his tummy and said he had a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-001-q24",
           "code": "S001-Q24",
           "tag": "habits",
-          "sentence": "Hugo felt _____ when his stomach rumbled loudly in the silent exam hall and several heads turned.",
+          "sentence": "Gary felt _____ when his stomach rumbled in the silent hall.",
           "answer": "embarrassed"
         },
         {
           "id": "set-001-q25",
           "code": "S001-Q25",
           "tag": "illness",
-          "sentence": "The pharmacist counted the tablets carefully and labelled the _____ with a clear time to take it.",
+          "sentence": "The chemist labelled the _____ and told Yuki when to take it.",
           "answer": "medicine"
         }
       ]
@@ -209,183 +209,183 @@ window.CLOZE_BANK = {
         "id": "set-002-ex",
         "code": "S002-EX",
         "tag": "example",
-        "sentence": "Please tie the _____ before you mix the batter, or the flour will cover your uniform.",
-        "answer": "apron"
+        "sentence": "A dry _____ from the back of the hall stopped the song.",
+        "answer": "cough"
       },
       "items": [
         {
           "id": "set-002-q01",
           "code": "S002-Q01",
           "tag": "illness",
-          "sentence": "After the cousin’s visit, two households caught the same _____ and stayed home for a week.",
+          "sentence": "Whole-body aches for three days showed that Mark had the _____.",
           "answer": "flu"
         },
         {
           "id": "set-002-q02",
           "code": "S002-Q02",
           "tag": "disasters",
-          "sentence": "After the river burst its banks, a _____ filled the low street and lapped at the shop steps.",
+          "sentence": "At home, after the river overflowed, a _____ covered the park path.",
           "answer": "flood"
         },
         {
           "id": "set-002-q03",
           "code": "S002-Q03",
           "tag": "habits",
-          "sentence": "After waving to a stranger she had mistaken for her aunt, Zoe walked on, thoroughly _____.",
+          "sentence": "Daisy’s face turned red, and she felt _____ after the wrong answer.",
           "answer": "embarrassed"
         },
         {
           "id": "set-002-q04",
           "code": "S002-Q04",
           "tag": "illness",
-          "sentence": "The ferris-wheel ride was abandoned when a rolling _____ made Nadia sit very still.",
+          "sentence": "Polly’s stomach hurt on the bus, so she sat still with a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-002-q05",
           "code": "S002-Q05",
           "tag": "disasters",
-          "sentence": "After days of rain, a _____ peeled a strip of slope away and left a brown scar above the village.",
+          "sentence": "In town, after days of rain, a _____ slid down the slope near the village.",
           "answer": "landslide"
         },
         {
           "id": "set-002-q06",
           "code": "S002-Q06",
           "tag": "habits",
-          "sentence": "The family left a _____ older cousin in charge of the toddlers for half an hour, with a phone and a clear limit.",
+          "sentence": "Otto is _____ and always counts the balls after PE.",
           "answer": "responsible"
         },
         {
           "id": "set-002-q07",
           "code": "S002-Q07",
           "tag": "illness",
-          "sentence": "Mum measured a spoonful of cherry-coloured _____ and waited until it was all swallowed.",
+          "sentence": "Mum poured a spoon of _____ from the bottle for Chris.",
           "answer": "medicine"
         },
         {
           "id": "set-002-q08",
           "code": "S002-Q08",
           "tag": "disasters",
-          "sentence": "Farmers watched a _____ crack the paddy soil into grey plates, and the young rice failed.",
+          "sentence": "At camp, there was little rain for months during the _____, so the well was low.",
           "answer": "drought"
         },
         {
           "id": "set-002-q09",
           "code": "S002-Q09",
           "tag": "habits",
-          "sentence": "A _____ lunch-box is one with fruit and grains, not only crisps and sweets.",
+          "sentence": "At school, the nurse said less junk food would help the class stay fit and _____.",
           "answer": "healthy"
         },
         {
           "id": "set-002-q10",
           "code": "S002-Q10",
           "tag": "habits",
-          "sentence": "A _____ photographer let the shy child settle before taking the picture, instead of rushing.",
+          "sentence": "At school, Ken was _____ and waited calmly for the printer to finish.",
           "answer": "patient"
         },
         {
           "id": "set-002-q11",
           "code": "S002-Q11",
           "tag": "disasters",
-          "sentence": "People walked outside carefully when they felt the _____ make the classroom floor tremble under their chairs.",
+          "sentence": "At lunch, a short _____ made the floor shake and the chairs rattle.",
           "answer": "earthquake"
         },
         {
           "id": "set-002-q12",
           "code": "S002-Q12",
           "tag": "habits",
-          "sentence": "A _____ waiter bumped the corner of the table and the water jug wobbled dangerously.",
+          "sentence": "The _____ child bumped the chair and spilled his juice.",
           "answer": "clumsy"
         },
         {
           "id": "set-002-q13",
           "code": "S002-Q13",
           "tag": "illness",
-          "sentence": "Grandpa covered his mouth as a sudden _____ escaped from his ticklish throat during supper.",
+          "sentence": "Leo’s throat hurt, and he let out a sharp _____.",
           "answer": "cough"
         },
         {
           "id": "set-002-q14",
           "code": "S002-Q14",
           "tag": "disasters",
-          "sentence": "The jam on the harbour tunnel last night was _____; taxis barely moved, and some drivers gave up after midnight.",
+          "sentence": "At the park, the storm last night was _____, and the path could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-002-q15",
           "code": "S002-Q15",
           "tag": "habits",
-          "sentence": "A _____ neighbour brought extra soup for the whole landing when Mum was ill, not only for us.",
+          "sentence": "Amy is _____ and packed an extra sandwich for a classmate.",
           "answer": "generous"
         },
         {
           "id": "set-002-q16",
           "code": "S002-Q16",
           "tag": "illness",
-          "sentence": "Mum felt my forehead, found it burning, and said the _____ had already begun.",
+          "sentence": "Tina’s forehead felt very hot, so Mum was sure she had a _____.",
           "answer": "fever"
         },
         {
           "id": "set-002-q17",
           "code": "S002-Q17",
           "tag": "disasters",
-          "sentence": "Year Six packed a _____ of rice sacks and coats, then drove it to the relief centre after the fire.",
+          "sentence": "In the estate, Dad made a _____ of two hundred dollars to the animal shelter.",
           "answer": "donation"
         },
         {
           "id": "set-002-q18",
           "code": "S002-Q18",
           "tag": "habits",
-          "sentence": "Please _____ your sister before the piano exam; tell her you believe she can play the piece.",
+          "sentence": "Dad told Faith to keep trying, because he wanted to _____ her.",
           "answer": "encourage"
         },
         {
           "id": "set-002-q19",
           "code": "S002-Q19",
           "tag": "illness",
-          "sentence": "After squinting at a cracked tablet screen all evening, Julian closed his eyes against a heavy _____.",
+          "sentence": "After the long test, Ted closed his eyes because of a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-002-q20",
           "code": "S002-Q20",
           "tag": "habits",
-          "sentence": "Because the school bus is _____, it pulls in at seven twenty and never leaves late.",
+          "sentence": "In town, the teacher thanked Lucy for being _____ and arriving on time.",
           "answer": "punctual"
         },
         {
           "id": "set-002-q21",
           "code": "S002-Q21",
           "tag": "habits",
-          "sentence": "The dentist reminds us that _____ brushing twice a day works better than a long clean once a week.",
+          "sentence": "Walking the dog at the same hour is Owen’s _____ morning habit.",
           "answer": "regular"
         },
         {
           "id": "set-002-q22",
           "code": "S002-Q22",
           "tag": "illness",
-          "sentence": "The left molar throbbed all through the dictation, so Ella asked to visit the nurse with a _____.",
+          "sentence": "One tooth hurt all night, so Cora told Mum about the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-002-q23",
           "code": "S002-Q23",
           "tag": "disasters",
-          "sentence": "When the Observatory hoisted Signal No. 8, we knew a _____ was close enough to close the schools.",
+          "sentence": "At school, when the storm signal went up, everyone knew a _____ was coming.",
           "answer": "typhoon"
         },
         {
           "id": "set-002-q24",
           "code": "S002-Q24",
           "tag": "habits",
-          "sentence": "After dinner, the twins take turns mopping the kitchen; they are sharing the evening _____.",
+          "sentence": "Iris mopped the kitchen floor to help Mum with the _____.",
           "answer": "housework"
         },
         {
           "id": "set-002-q25",
           "code": "S002-Q25",
           "tag": "illness",
-          "sentence": "Because she had slept on a folded towel at camp, Zoe woke up with a stiff _____.",
+          "sentence": "Maya could not stand for long because of a _____ in her back.",
           "answer": "backache"
         }
       ]
@@ -397,183 +397,183 @@ window.CLOZE_BANK = {
         "id": "set-003-ex",
         "code": "S003-EX",
         "tag": "example",
-        "sentence": "The whole school walked quietly into the hall for a special Monday _____.",
-        "answer": "assembly"
+        "sentence": "Tina felt hot in the taxi, and Mum said it looked like a _____.",
+        "answer": "fever"
       },
       "items": [
         {
           "id": "set-003-q01",
           "code": "S003-Q01",
           "tag": "disasters",
-          "sentence": "A midnight _____ woke the family as the cups rattled on the shelf and a picture tilted.",
+          "sentence": "At night, books fell off the desk when an _____ shook the classroom.",
           "answer": "earthquake"
         },
         {
           "id": "set-003-q02",
           "code": "S003-Q02",
           "tag": "habits",
-          "sentence": "Because Lila felt _____ in the new dance shoes, she stepped on her partner’s foot twice by accident.",
+          "sentence": "Sara dropped the rice bowl again, and Dad called her _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-003-q03",
           "code": "S003-Q03",
           "tag": "illness",
-          "sentence": "The smell of fresh paint in the new classroom gave several pupils a mild _____.",
+          "sentence": "Pearl held her temples and said the _____ was getting worse.",
           "answer": "headache"
         },
         {
           "id": "set-003-q04",
           "code": "S003-Q04",
           "tag": "disasters",
-          "sentence": "What began as Tina’s sniffle became _____, and she stayed in bed, too unwell even to watch a film.",
+          "sentence": "At school, the damage to the hall was _____, so the concert could not go on.",
           "answer": "severe"
         },
         {
           "id": "set-003-q05",
           "code": "S003-Q05",
           "tag": "habits",
-          "sentence": "The _____ girl packed two sandwiches every day, one to share with anyone who had forgotten lunch.",
+          "sentence": "Leo was _____ and shared his whole pack of stickers with us.",
           "answer": "generous"
         },
         {
           "id": "set-003-q06",
           "code": "S003-Q06",
           "tag": "illness",
-          "sentence": "After biting a hidden cherry stone, Frank held his cheek; a sharp _____ had started at once.",
+          "sentence": "The dentist looked at Gary’s cracked tooth and named it a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-003-q07",
           "code": "S003-Q07",
           "tag": "disasters",
-          "sentence": "Instead of selling her outgrown storybooks, Hana left them as a _____ for the Saturday reading tent.",
+          "sentence": "At school, the office wrote a receipt for a parent’s _____ to the ramp fund.",
           "answer": "donation"
         },
         {
           "id": "set-003-q08",
           "code": "S003-Q08",
           "tag": "habits",
-          "sentence": "The coach’s job is to _____ the team after a loss, not only to correct the mistakes.",
+          "sentence": "At the park, the coach tried to _____ the team, saying “You can do it!”",
           "answer": "encourage"
         },
         {
           "id": "set-003-q09",
           "code": "S003-Q09",
           "tag": "illness",
-          "sentence": "At thirty-nine degrees, the clinic chart showed clearly that Oscar was fighting a _____.",
+          "sentence": "The thermometer showed a high temperature, so Joel had a _____.",
           "answer": "fever"
         },
         {
           "id": "set-003-q10",
           "code": "S003-Q10",
           "tag": "habits",
-          "sentence": "Miss Ho is known as a _____ form teacher; the register is always taken as the bell rings, not after.",
+          "sentence": "Jack was _____ enough to be in his seat on time, before the first song.",
           "answer": "punctual"
         },
         {
           "id": "set-003-q11",
           "code": "S003-Q11",
           "tag": "habits",
-          "sentence": "After a week of early nights and fresh air, Ivo felt _____ again and ready for PE.",
+          "sentence": "At school, daily play and a good diet keep the twins _____ and strong.",
           "answer": "healthy"
         },
         {
           "id": "set-003-q12",
           "code": "S003-Q12",
           "tag": "illness",
-          "sentence": "The school nurse posted a notice: several classes had pupils off with the _____, so extra rest was advised.",
+          "sentence": "Judy stayed home, weak and shivering, because she had the _____.",
           "answer": "flu"
         },
         {
           "id": "set-003-q13",
           "code": "S003-Q13",
           "tag": "disasters",
-          "sentence": "Orange barriers now line the cutting, because a later _____ could still roll stones onto the bus lay-by.",
+          "sentence": "At lunch, rocks from the _____ blocked the mountain path above the school.",
           "answer": "landslide"
         },
         {
           "id": "set-003-q14",
           "code": "S003-Q14",
           "tag": "habits",
-          "sentence": "Please be _____ with the little ones tying their laces; hurried hands only make knots worse.",
+          "sentence": "Maya did not rush her little sister; she was quiet and _____.",
           "answer": "patient"
         },
         {
           "id": "set-003-q15",
           "code": "S003-Q15",
           "tag": "illness",
-          "sentence": "A carton of milk that smelt slightly “off” explained the sudden _____ that sent Ben to the nurse.",
+          "sentence": "Carl could not finish dinner because of a _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-003-q16",
           "code": "S003-Q16",
           "tag": "disasters",
-          "sentence": "During the _____, the river shrank to a chain of still pools, with dry stones in between.",
+          "sentence": "At lunch, the reservoir looked almost empty after a long _____.",
           "answer": "drought"
         },
         {
           "id": "set-003-q17",
           "code": "S003-Q17",
           "tag": "habits",
-          "sentence": "Our block has a _____ fire-drill day each term, always in the same month, so no one is surprised.",
+          "sentence": "At camp, the library club meets at a _____ time each Friday after lunch.",
           "answer": "regular"
         },
         {
           "id": "set-003-q18",
           "code": "S003-Q18",
           "tag": "illness",
-          "sentence": "A printed label on the bottle said the _____ should be shaken and taken after meals.",
+          "sentence": "At home, the nurse pointed to the dose on the _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-003-q19",
           "code": "S003-Q19",
           "tag": "disasters",
-          "sentence": "The evening bulletin traced a _____ still at sea, with its wind bands expected to brush the coast by dawn.",
+          "sentence": "At home, fierce wind from the _____ bent the estate trees almost double.",
           "answer": "typhoon"
         },
         {
           "id": "set-003-q20",
           "code": "S003-Q20",
           "tag": "habits",
-          "sentence": "Grandma keeps a short list on the fridge — wipe the table, water the plants — her daily _____.",
+          "sentence": "After dinner, Liam wiped the table and took out the bin as _____.",
           "answer": "housework"
         },
         {
           "id": "set-003-q21",
           "code": "S003-Q21",
           "tag": "illness",
-          "sentence": "The violin teacher told Hugo to lower his music stand, as leaning forward for an hour had given him a _____.",
+          "sentence": "The _____ in Sam’s back got worse during the film.",
           "answer": "backache"
         },
         {
           "id": "set-003-q22",
           "code": "S003-Q22",
           "tag": "disasters",
-          "sentence": "The underpass was closed because a _____ had turned the roadway into a brown, still lake.",
+          "sentence": "In town, water filled the underpass during the _____, so people turned back.",
           "answer": "flood"
         },
         {
           "id": "set-003-q23",
           "code": "S003-Q23",
           "tag": "habits",
-          "sentence": "The wrong score was read out first, and the pupil who stood too soon sat down looking _____.",
+          "sentence": "Ivan felt _____ because he wore two different socks to assembly.",
           "answer": "embarrassed"
         },
         {
           "id": "set-003-q24",
           "code": "S003-Q24",
           "tag": "illness",
-          "sentence": "The choir stopped mid-verse when a loud _____ from the alto row broke the quiet chord.",
+          "sentence": "Eva covered her mouth when a _____ broke the quiet room.",
           "answer": "cough"
         },
         {
           "id": "set-003-q25",
           "code": "S003-Q25",
           "tag": "habits",
-          "sentence": "A _____ prefect does not leave the lost-property box unlocked, even for “just a minute”.",
+          "sentence": "Lila is _____, and she was trusted to feed the class goldfish.",
           "answer": "responsible"
         }
       ]
@@ -585,183 +585,183 @@ window.CLOZE_BANK = {
         "id": "set-004-ex",
         "code": "S004-EX",
         "tag": "example",
-        "sentence": "Grandma keeps the old photo albums in the _____, up the narrow stairs above the bedrooms.",
-        "answer": "attic"
+        "sentence": "After helping pack the noisy hall, Tina needed quiet for a _____ in her head.",
+        "answer": "headache"
       },
       "items": [
         {
           "id": "set-004-q01",
           "code": "S004-Q01",
           "tag": "habits",
-          "sentence": "When the microphone was still on, a private remark went through the hall, and the speaker went scarlet and _____.",
+          "sentence": "Faith spoke the wrong line in the play and felt very _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-004-q02",
           "code": "S004-Q02",
           "tag": "illness",
-          "sentence": "The doctor wrote a short note so the pharmacy would prepare the right _____ for a child.",
+          "sentence": "In town, Dad bought the _____ at the chemist and read the label twice.",
           "answer": "medicine"
         },
         {
           "id": "set-004-q03",
           "code": "S004-Q03",
           "tag": "disasters",
-          "sentence": "During the _____, we stayed away from the windows, because flying objects in a tropical storm are dangerous.",
+          "sentence": "In town, during the _____, strong wind blew a sign across the estate road.",
           "answer": "typhoon"
         },
         {
           "id": "set-004-q04",
           "code": "S004-Q04",
           "tag": "habits",
-          "sentence": "The teacher chose a _____ pair to carry the trophy, because it could not be dropped or forgotten.",
+          "sentence": "The _____ pupil is in charge of the first-aid box each Friday.",
           "answer": "responsible"
         },
         {
           "id": "set-004-q05",
           "code": "S004-Q05",
           "tag": "illness",
-          "sentence": "While helping to shift the library shelves, Miss Ip stopped mid-step; a sharp _____ made it hard for her to bend.",
+          "sentence": "Lucy rubbed her back and told Miss Chan about the _____.",
           "answer": "backache"
         },
         {
           "id": "set-004-q06",
           "code": "S004-Q06",
           "tag": "disasters",
-          "sentence": "A sudden _____ in the basement car park left bumpers half under water and alarms ringing.",
+          "sentence": "At camp, the ground-floor shops were under water after a sudden _____.",
           "answer": "flood"
         },
         {
           "id": "set-004-q07",
           "code": "S004-Q07",
           "tag": "habits",
-          "sentence": "The nurse said a _____ habit is to drink water often, so the body stays well, not dry and tired.",
+          "sentence": "After drinking more water and skipping sweets, Tess felt _____.",
           "answer": "healthy"
         },
         {
           "id": "set-004-q08",
           "code": "S004-Q08",
           "tag": "illness",
-          "sentence": "The icy bus air left Mandy with a throat tickle, and by the interchange it had become a persistent _____.",
+          "sentence": "At lunch, the speaker had to pause after a sharp _____ from a sore throat.",
           "answer": "cough"
         },
         {
           "id": "set-004-q09",
           "code": "S004-Q09",
           "tag": "disasters",
-          "sentence": "A midnight _____ blocked the country-park trail with a wall of wet earth, higher than a person.",
+          "sentence": "At lunch, the hillside looked bare after a _____ of mud and soil.",
           "answer": "landslide"
         },
         {
           "id": "set-004-q10",
           "code": "S004-Q10",
           "tag": "habits",
-          "sentence": "The _____ tutor sat through three wrong answers, then smiled and asked the question another way.",
+          "sentence": "In town, the class stayed _____ and waited while the computer loaded the film.",
           "answer": "patient"
         },
         {
           "id": "set-004-q11",
           "code": "S004-Q11",
           "tag": "illness",
-          "sentence": "Grandad felt weak from head to toe, with hot and cold waves, and the doctor named it the _____.",
+          "sentence": "Every muscle in Otto’s body ached, and the nurse called it the _____.",
           "answer": "flu"
         },
         {
           "id": "set-004-q12",
           "code": "S004-Q12",
           "tag": "disasters",
-          "sentence": "A _____ of unused winter coats arrived at the shelter, tagged, counted, and gratefully signed for.",
+          "sentence": "In town, the class packed a _____ of toys for the hospital charity.",
           "answer": "donation"
         },
         {
           "id": "set-004-q13",
           "code": "S004-Q13",
           "tag": "habits",
-          "sentence": "A short note on the desk — “You can do this” — was enough to _____ a nervous writer.",
+          "sentence": "Mum smiled and used kind words to _____ Holly after her fall.",
           "answer": "encourage"
         },
         {
           "id": "set-004-q14",
           "code": "S004-Q14",
           "tag": "illness",
-          "sentence": "During the long car ride, twisting roads plus a heavy breakfast left Mum with a queasy _____.",
+          "sentence": "Rose pressed her stomach and asked to see the nurse about a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-004-q15",
           "code": "S004-Q15",
           "tag": "disasters",
-          "sentence": "A _____ of many rainless weeks turned the football field the colour of straw.",
+          "sentence": "Grandad said the soil was too dry after a long _____.",
           "answer": "drought"
         },
         {
           "id": "set-004-q16",
           "code": "S004-Q16",
           "tag": "habits",
-          "sentence": "A _____ guest arrived at the restaurant at noon exactly, so the table was ready and no one waited.",
+          "sentence": "At camp, Miss Chan likes pupils who are _____ and ready at eight sharp.",
           "answer": "punctual"
         },
         {
           "id": "set-004-q17",
           "code": "S004-Q17",
           "tag": "illness",
-          "sentence": "After midnight, sweat soaked Barry’s pillow; the _____ had risen again.",
+          "sentence": "Iris felt burning hot and had to rest at the clinic with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-004-q18",
           "code": "S004-Q18",
           "tag": "disasters",
-          "sentence": "In the science wing a shaking floorboard exhibit lets pupils feel a gentle _____, safely, for a few seconds.",
+          "sentence": "At the park, during an _____, the ground trembled and the windows rattled.",
           "answer": "earthquake"
         },
         {
           "id": "set-004-q19",
           "code": "S004-Q19",
           "tag": "habits",
-          "sentence": "A _____ bedtime at nine, followed every school night, helps Ken wake without a struggle.",
+          "sentence": "Sean keeps a _____ football practice every Tuesday, always the same hour.",
           "answer": "regular"
         },
         {
           "id": "set-004-q20",
           "code": "S004-Q20",
           "tag": "habits",
-          "sentence": "Dad vacuumed the sitting-room rug and emptied the bin, then ticked those two pieces of _____ off the board.",
+          "sentence": "Kate did the _____ quietly, ironing shirts in the living room.",
           "answer": "housework"
         },
         {
           "id": "set-004-q21",
           "code": "S004-Q21",
           "tag": "disasters",
-          "sentence": "The radio presenter’s tone was unusually _____, and families were told to treat the evening forecast as more than a casual update.",
+          "sentence": "Wade had _____ pain in his ear and could not sleep at all.",
           "answer": "severe"
         },
         {
           "id": "set-004-q22",
           "code": "S004-Q22",
           "tag": "habits",
-          "sentence": "The _____ lab partner tipped the dye tray, and a blue stain bloomed across the newspaper.",
+          "sentence": "Zack is _____, and he tipped the paint pot over the desk.",
           "answer": "clumsy"
         },
         {
           "id": "set-004-q23",
           "code": "S004-Q23",
           "tag": "illness",
-          "sentence": "A missed water bottle on the hot playground left Cora with a pounding _____ by lunch.",
+          "sentence": "The noisy hall gave Will a sharp _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-004-q24",
           "code": "S004-Q24",
           "tag": "habits",
-          "sentence": "A _____ prize-winner gave most of the book token to the class library, keeping only one book.",
+          "sentence": "At camp, Mrs Lam is _____; she bought snacks for the whole team.",
           "answer": "generous"
         },
         {
           "id": "set-004-q25",
           "code": "S004-Q25",
           "tag": "illness",
-          "sentence": "The school talk on dental care showed an X-ray of a hole that had caused a serious _____.",
+          "sentence": "Cold water made Daisy’s tooth hurt, and she had a _____.",
           "answer": "toothache"
         }
       ]
@@ -773,183 +773,183 @@ window.CLOZE_BANK = {
         "id": "set-005-ex",
         "code": "S005-EX",
         "tag": "example",
-        "sentence": "In _____, the sweet-gum trees along the estate turn red and gold before the leaves fall.",
-        "answer": "autumn"
+        "sentence": "Carl avoided the ice lolly, already feeling a _____ in a tooth.",
+        "answer": "toothache"
       },
       "items": [
         {
           "id": "set-005-q01",
           "code": "S005-Q01",
           "tag": "illness",
-          "sentence": "Warm soup felt fine, but a sip of iced lemon tea sent a lightning _____ up one tooth.",
+          "sentence": "Ivan held his cheek at dinner because of a _____ in one tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-005-q02",
           "code": "S005-Q02",
           "tag": "disasters",
-          "sentence": "The government limited garden hoses because a _____ had already lowered the city’s stored water.",
+          "sentence": "The _____ left the river bed pale and dry.",
           "answer": "drought"
         },
         {
           "id": "set-005-q03",
           "code": "S005-Q03",
           "tag": "habits",
-          "sentence": "The club posts a _____ newsletter on the first Friday of the month, without skipping.",
+          "sentence": "Rita is _____ about piano at home; it is always at the same hour after dinner.",
           "answer": "regular"
         },
         {
           "id": "set-005-q04",
           "code": "S005-Q04",
           "tag": "illness",
-          "sentence": "A winter outbreak of the _____ emptied the choir stalls for two rehearsals.",
+          "sentence": "Lila was weak, hot, and achey all over with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-005-q05",
           "code": "S005-Q05",
           "tag": "disasters",
-          "sentence": "During the drill, we practised “drop, cover, hold” in case a real _____ ever shook the school.",
+          "sentence": "The hanging lamps swung as the ground shook in an _____.",
           "answer": "earthquake"
         },
         {
           "id": "set-005-q06",
           "code": "S005-Q06",
           "tag": "habits",
-          "sentence": "The holiday plan includes a one-hour burst of _____, so the flat is tidy before guests arrive.",
+          "sentence": "Ryan vacuumed the sitting room, one of his usual _____ jobs.",
           "answer": "housework"
         },
         {
           "id": "set-005-q07",
           "code": "S005-Q07",
           "tag": "illness",
-          "sentence": "The cookery class’s too-rich cream sauce was tasty, but two pupils later reported a _____.",
+          "sentence": "A tight feeling in Hugh’s tummy meant a _____ was starting.",
           "answer": "stomachache"
         },
         {
           "id": "set-005-q08",
           "code": "S005-Q08",
           "tag": "habits",
-          "sentence": "A _____ moment with the glue stick left a shiny patch on Hugo’s sleeve and the desk.",
+          "sentence": "A _____ step made Vera bump the table, and the cups went flying.",
           "answer": "clumsy"
         },
         {
           "id": "set-005-q09",
           "code": "S005-Q09",
           "tag": "illness",
-          "sentence": "When the drums in the next room went on and on, Mr Kwok rubbed his forehead because of a _____.",
+          "sentence": "Sara asked for a quiet corner; the _____ in her head had started.",
           "answer": "headache"
         },
         {
           "id": "set-005-q10",
           "code": "S005-Q10",
           "tag": "habits",
-          "sentence": "The _____ stallholder added an extra orange to the bag and waved away thanks with a smile.",
+          "sentence": "Owen was _____ and would not take a coin back after paying.",
           "answer": "generous"
         },
         {
           "id": "set-005-q11",
           "code": "S005-Q11",
           "tag": "disasters",
-          "sentence": "A _____ storm closed the schools, and families stayed indoors until the wind dropped.",
+          "sentence": "The warning said the heat was _____, and outdoor PE was stopped.",
           "answer": "severe"
         },
         {
           "id": "set-005-q12",
           "code": "S005-Q12",
           "tag": "habits",
-          "sentence": "The debate team lost a point last year for being late, so this time every speaker was carefully _____.",
+          "sentence": "Ben left home early so he would be _____ for the photo.",
           "answer": "punctual"
         },
         {
           "id": "set-005-q13",
           "code": "S005-Q13",
           "tag": "illness",
-          "sentence": "On the ferry to Cheung Chau, Grandpa could not lean against the bench for long because a _____ ran down his spine.",
+          "sentence": "Jack sat down; he had a _____ in his back after climbing many stairs.",
           "answer": "backache"
         },
         {
           "id": "set-005-q14",
           "code": "S005-Q14",
           "tag": "disasters",
-          "sentence": "The class’s _____ of coins, counted on the mat, was enough to buy blankets for the animal home.",
+          "sentence": "A _____ of blankets went to the charity after the fire.",
           "answer": "donation"
         },
         {
           "id": "set-005-q15",
           "code": "S005-Q15",
           "tag": "habits",
-          "sentence": "A reply-all email to the whole year group made the prefect unusually quiet and _____ the next morning.",
+          "sentence": "Karl felt _____ after tripping on the stage step.",
           "answer": "embarrassed"
         },
         {
           "id": "set-005-q16",
           "code": "S005-Q16",
           "tag": "illness",
-          "sentence": "The nurse asked Leo to sip warm water whenever a night-time _____ woke the whole flat.",
+          "sentence": "Nina had to leave the library because of a loud _____.",
           "answer": "cough"
         },
         {
           "id": "set-005-q17",
           "code": "S005-Q17",
           "tag": "disasters",
-          "sentence": "A _____ named by the weather bureau brought two days of spinning wind over the South China Sea.",
+          "sentence": "The _____ tore at the estate trees with fierce wind all night.",
           "answer": "typhoon"
         },
         {
           "id": "set-005-q18",
           "code": "S005-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for the class hamster means logging the food and water, not only playing with it.",
+          "sentence": "Miss Chan trusted _____ Nell to feed the class goldfish.",
           "answer": "responsible"
         },
         {
           "id": "set-005-q19",
           "code": "S005-Q19",
           "tag": "illness",
-          "sentence": "The teacher sent Ivy to the medical room because her cheeks were flushed with a possible _____.",
+          "sentence": "Miss Chan felt Liam’s forehead and said the _____ was still high.",
           "answer": "fever"
         },
         {
           "id": "set-005-q20",
           "code": "S005-Q20",
           "tag": "habits",
-          "sentence": "Grandma’s _____ colour has come back; she is no longer pale after her long rest.",
+          "sentence": "Early nights and outdoor games made Victor look fit and _____ again.",
           "answer": "healthy"
         },
         {
           "id": "set-005-q21",
           "code": "S005-Q21",
           "tag": "habits",
-          "sentence": "A _____ angler can wait an hour for a bite without complaining or yanking the line.",
+          "sentence": "Lucy waited calmly at the water fountain and stayed _____.",
           "answer": "patient"
         },
         {
           "id": "set-005-q22",
           "code": "S005-Q22",
           "tag": "illness",
-          "sentence": "After the clinic visit, a small paper bag held the _____ and a leaflet about side effects.",
+          "sentence": "Ruby took the _____ after dinner, as the dose on the label said.",
           "answer": "medicine"
         },
         {
           "id": "set-005-q23",
           "code": "S005-Q23",
           "tag": "disasters",
-          "sentence": "Shopkeepers stacked sandbags, hoping to keep a night-time _____ from crossing the doorstep.",
+          "sentence": "A _____ turned the estate garden into a shallow lake.",
           "answer": "flood"
         },
         {
           "id": "set-005-q24",
           "code": "S005-Q24",
           "tag": "habits",
-          "sentence": "Parents _____ shy children to try one sentence in the assembly, and then praise the try.",
+          "sentence": "Miss Chan wrote a kind note to _____ Mark before the test.",
           "answer": "encourage"
         },
         {
           "id": "set-005-q25",
           "code": "S005-Q25",
           "tag": "disasters",
-          "sentence": "The geologist pointed to a cracked slope and said a _____ could start there after the next downpour.",
+          "sentence": "A _____ pushed a wall of mud over the country-park trail.",
           "answer": "landslide"
         }
       ]
@@ -961,183 +961,183 @@ window.CLOZE_BANK = {
         "id": "set-006-ex",
         "code": "S006-EX",
         "tag": "example",
-        "sentence": "We watched the Mid-Autumn lanterns from the _____, safely behind the rail, above the street.",
-        "answer": "balcony"
+        "sentence": "The _____, still weak, stole Sam’s appetite and his strength.",
+        "answer": "flu"
       },
       "items": [
         {
           "id": "set-006-q01",
           "code": "S006-Q01",
           "tag": "disasters",
-          "sentence": "The drought became _____ in the second month, when even the deep wells ran low.",
+          "sentence": "Carl’s cut looked _____, so the nurse would not let him go back to play.",
           "answer": "severe"
         },
         {
           "id": "set-006-q02",
           "code": "S006-Q02",
           "tag": "habits",
-          "sentence": "After singing a line from the wrong verse, the choir member smiled an _____ smile and found the place.",
+          "sentence": "Holly went red and _____ when her drawing was shown upside down.",
           "answer": "embarrassed"
         },
         {
           "id": "set-006-q03",
           "code": "S006-Q03",
           "tag": "illness",
-          "sentence": "During the story-telling contest, a small _____ forced Eva to pause and reach for her bottle.",
+          "sentence": "A _____ from Sean’s sore throat stopped the song.",
           "answer": "cough"
         },
         {
           "id": "set-006-q04",
           "code": "S006-Q04",
           "tag": "disasters",
-          "sentence": "A company sent a _____ of bottled water after the village well failed, with no brand speech attached.",
+          "sentence": "Pupils dropped coins into the _____ box for the school ramp fund.",
           "answer": "donation"
         },
         {
           "id": "set-006-q05",
           "code": "S006-Q05",
           "tag": "habits",
-          "sentence": "A _____ group leader checks that every member has a ticket before the class leaves the foyer.",
+          "sentence": "Wade does not leave a job half done, so people call him _____.",
           "answer": "responsible"
         },
         {
           "id": "set-006-q06",
           "code": "S006-Q06",
           "tag": "illness",
-          "sentence": "Grandma kept a cool cloth ready whenever a child’s _____ made the forehead feel hot.",
+          "sentence": "Kate looked flushed and hot, and the thermometer confirmed a _____.",
           "answer": "fever"
         },
         {
           "id": "set-006-q07",
           "code": "S006-Q07",
           "tag": "disasters",
-          "sentence": "The ferry company cancelled all sailings once the _____’s gales made the harbour unsafe.",
+          "sentence": "Windows rattled in the strong wind as the _____ passed.",
           "answer": "typhoon"
         },
         {
           "id": "set-006-q08",
           "code": "S006-Q08",
           "tag": "habits",
-          "sentence": "A _____ body needs movement, so the class walks to the park instead of sitting through the whole break.",
+          "sentence": "Yuki chose fruit at breakfast to stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-006-q09",
           "code": "S006-Q09",
           "tag": "illness",
-          "sentence": "The tight hair bun for the dance show was pretty, but it left Kylie with a tight _____.",
+          "sentence": "Bright sun on the walk home gave Zack a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-006-q10",
           "code": "S006-Q10",
           "tag": "habits",
-          "sentence": "When the computer updated slowly, a _____ user read a book instead of stabbing the keyboard.",
+          "sentence": "Jack was _____ and let the little boy finish his story.",
           "answer": "patient"
         },
         {
           "id": "set-006-q11",
           "code": "S006-Q11",
           "tag": "habits",
-          "sentence": "After supper Grandma keeps a _____ circuit of the estate, the same loop, almost without fail.",
+          "sentence": "A _____ visit to Grandma happens every Sunday at nine.",
           "answer": "regular"
         },
         {
           "id": "set-006-q12",
           "code": "S006-Q12",
           "tag": "illness",
-          "sentence": "After painting the classroom ceiling, the janitor climbed down slowly and complained of a _____.",
+          "sentence": "Because of a _____, Jane walked slowly and held her back.",
           "answer": "backache"
         },
         {
           "id": "set-006-q13",
           "code": "S006-Q13",
           "tag": "disasters",
-          "sentence": "A _____ of loose spoil from an old works site slid into the drainage channel and filled it with stones.",
+          "sentence": "The _____ dropped rocks onto the road below the cutting.",
           "answer": "landslide"
         },
         {
           "id": "set-006-q14",
           "code": "S006-Q14",
           "tag": "habits",
-          "sentence": "Zoe learned to sort the recycling and wipe the cooker, her first regular share of the family _____.",
+          "sentence": "Folding the laundry was the _____ Nora chose to finish first.",
           "answer": "housework"
         },
         {
           "id": "set-006-q15",
           "code": "S006-Q15",
           "tag": "illness",
-          "sentence": "Grandma booked the clinic when a night-time _____ kept her from sleeping on her usual side.",
+          "sentence": "A broken filling left Faith with a sharp _____.",
           "answer": "toothache"
         },
         {
           "id": "set-006-q16",
           "code": "S006-Q16",
           "tag": "disasters",
-          "sentence": "Unlike a single hot day, a _____ is a long failure of rain, measured in empty weeks, not hours.",
+          "sentence": "During the _____, the farm had to save every drop of rainwater.",
           "answer": "drought"
         },
         {
           "id": "set-006-q17",
           "code": "S006-Q17",
           "tag": "habits",
-          "sentence": "When the tray was too wide for the door, a _____ turn knocked the plant off the windowsill.",
+          "sentence": "Eric knocked the pencil pot off the desk in a _____ moment.",
           "answer": "clumsy"
         },
         {
           "id": "set-006-q18",
           "code": "S006-Q18",
           "tag": "illness",
-          "sentence": "The clinic leaflet listed muscle aches, feverish spells and tiredness as common signs of the _____.",
+          "sentence": "The _____ left Stan weak and tired in every limb for a week.",
           "answer": "flu"
         },
         {
           "id": "set-006-q19",
           "code": "S006-Q19",
           "tag": "disasters",
-          "sentence": "A light _____ in the next region was still enough to set off a few car alarms here.",
+          "sentence": "Mum told everyone to get under the table as an _____ shook the ground.",
           "answer": "earthquake"
         },
         {
           "id": "set-006-q20",
           "code": "S006-Q20",
           "tag": "habits",
-          "sentence": "A _____ relative paid the music-exam fee for a niece, quietly, without making a speech.",
+          "sentence": "A _____ friend, Nina gave her spare jacket to a wet classmate.",
           "answer": "generous"
         },
         {
           "id": "set-006-q21",
           "code": "S006-Q21",
           "tag": "illness",
-          "sentence": "After bolting three pineapple buns, Justin lay on the sofa holding the middle of his body with a _____.",
+          "sentence": "Tess curled up on the sofa, holding her stomach after a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-006-q22",
           "code": "S006-Q22",
           "tag": "disasters",
-          "sentence": "A _____ spread across the park lawn, covering benches that are normally well above any puddle.",
+          "sentence": "The usual walkway to the minibus stop disappeared under the _____ water.",
           "answer": "flood"
         },
         {
           "id": "set-006-q23",
           "code": "S006-Q23",
           "tag": "habits",
-          "sentence": "The captain paused the drill to _____ a teammate who was ready to give up the high jump.",
+          "sentence": "Friends stood by the track to _____ Judy with a loud cheer.",
           "answer": "encourage"
         },
         {
           "id": "set-006-q24",
           "code": "S006-Q24",
           "tag": "illness",
-          "sentence": "The school nurse cannot give a pupil any _____ unless a parent has sent written permission and the original box.",
+          "sentence": "The label on the _____ told Ken to take it twice a day.",
           "answer": "medicine"
         },
         {
           "id": "set-006-q25",
           "code": "S006-Q25",
           "tag": "habits",
-          "sentence": "On the platform, the _____ commuter stands at the door with the Octopus card already in hand as the train arrives on time.",
+          "sentence": "A _____ classmate is already at the bus stop, early, when it arrives.",
           "answer": "punctual"
         }
       ]
@@ -1149,183 +1149,183 @@ window.CLOZE_BANK = {
         "id": "set-007-ex",
         "code": "S007-EX",
         "tag": "example",
-        "sentence": "Mum packed a plain _____ and an apple, a small snack that would last until the end of the outing.",
-        "answer": "biscuit"
+        "sentence": "After skipping lunch, then eating fast, Carl got a _____ in his tummy.",
+        "answer": "stomachache"
       },
       "items": [
         {
           "id": "set-007-q01",
           "code": "S007-Q01",
           "tag": "habits",
-          "sentence": "Kind comments in the margins _____ a pupil more than a page of silent red marks.",
+          "sentence": "The teacher asked the class to _____ Otto with kind words and not give up.",
           "answer": "encourage"
         },
         {
           "id": "set-007-q02",
           "code": "S007-Q02",
           "tag": "illness",
-          "sentence": "A nervous oral exam can sit in the tummy as a flutter; this time it grew into a real _____.",
+          "sentence": "The nurse gave Victor warm water and a quiet bed for the _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-007-q03",
           "code": "S007-Q03",
           "tag": "disasters",
-          "sentence": "The village’s ground floors were emptied when a _____ rose from the swollen stream at dawn.",
+          "sentence": "A _____ of water stood in the school car park, halfway up the tyres.",
           "answer": "flood"
         },
         {
           "id": "set-007-q04",
           "code": "S007-Q04",
           "tag": "habits",
-          "sentence": "The drama rehearsal starts at four; only the _____ members are there for the opening note.",
+          "sentence": "Leo is _____; he was in the hall early, before the start time.",
           "answer": "punctual"
         },
         {
           "id": "set-007-q05",
           "code": "S007-Q05",
           "tag": "illness",
-          "sentence": "A small clock on Grandpa’s bedside table chimes for the evening heart _____, so the dose is not forgotten.",
+          "sentence": "Grandma shook the bottle of _____ before pouring a spoon.",
           "answer": "medicine"
         },
         {
           "id": "set-007-q06",
           "code": "S007-Q06",
           "tag": "disasters",
-          "sentence": "Villagers left the stilt huts when a _____ of mud began to creep towards the lower doors.",
+          "sentence": "A _____ buried part of the village fence in mud and earth.",
           "answer": "landslide"
         },
         {
           "id": "set-007-q07",
           "code": "S007-Q07",
           "tag": "habits",
-          "sentence": "The school runs _____ dictionary practice every Wednesday morning, always in period two.",
+          "sentence": "Tina waters the plants on a _____ schedule, every other morning.",
           "answer": "regular"
         },
         {
           "id": "set-007-q08",
           "code": "S007-Q08",
           "tag": "illness",
-          "sentence": "Iris sat out of the skipping-rope game in PE when a sudden _____ flared across her back.",
+          "sentence": "Ben missed the hike because the _____ in his back was too bad.",
           "answer": "backache"
         },
         {
           "id": "set-007-q09",
           "code": "S007-Q09",
           "tag": "disasters",
-          "sentence": "Cows were walked further each day in the _____, looking for a ditch that had not yet dried.",
+          "sentence": "The grass in the park turned yellow and dry in the _____.",
           "answer": "drought"
         },
         {
           "id": "set-007-q10",
           "code": "S007-Q10",
           "tag": "habits",
-          "sentence": "A rainy Saturday was spent on indoor _____: changing bedsheets and wiping the windowsills.",
+          "sentence": "Ted cleaned the bathroom and then ticked it off the _____ list.",
           "answer": "housework"
         },
         {
           "id": "set-007-q11",
           "code": "S007-Q11",
           "tag": "illness",
-          "sentence": "The doctor asked us to take the temperature every four hours until the _____ came down.",
+          "sentence": "Dad took Ryan’s temperature again; the _____ had not come down.",
           "answer": "fever"
         },
         {
           "id": "set-007-q12",
           "code": "S007-Q12",
           "tag": "disasters",
-          "sentence": "A _____ headache, already named, kept her in a dark room, far beyond an ordinary ache.",
+          "sentence": "The pain in Rose’s jaw was _____, and she could not chew at all.",
           "answer": "severe"
         },
         {
           "id": "set-007-q13",
           "code": "S007-Q13",
           "tag": "habits",
-          "sentence": "The scout is _____ for the first-aid kit on the hike and must know where it is at all times.",
+          "sentence": "A _____ monitor collected the homework folders on time.",
           "answer": "responsible"
         },
         {
           "id": "set-007-q14",
           "code": "S007-Q14",
           "tag": "illness",
-          "sentence": "After the long oral practice in a stuffy room, the first speaker sat down with a dull _____.",
+          "sentence": "Vera rubbed her forehead and asked to see the nurse about a _____.",
           "answer": "headache"
         },
         {
           "id": "set-007-q15",
           "code": "S007-Q15",
           "tag": "disasters",
-          "sentence": "The concert’s ticket money was turned into a _____ to the music scholarship, in one official cheque.",
+          "sentence": "A _____ of rice and oil was sent to the food-bank charity.",
           "answer": "donation"
         },
         {
           "id": "set-007-q16",
           "code": "S007-Q16",
           "tag": "habits",
-          "sentence": "The poster shows a _____ plate: half vegetables, some protein, and not too much fried food.",
+          "sentence": "A balanced diet and daily stretching keep Chris _____.",
           "answer": "healthy"
         },
         {
           "id": "set-007-q17",
           "code": "S007-Q17",
           "tag": "illness",
-          "sentence": "The brass player could not manage the mouthpiece comfortably because a _____ had flared overnight.",
+          "sentence": "Karl could not brush the back tooth without a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-007-q18",
           "code": "S007-Q18",
           "tag": "disasters",
-          "sentence": "Shopkeepers taped their glass when a _____ was forecast, fearing the tropical wind would shatter it.",
+          "sentence": "The _____ sent dustbins rolling in the fierce wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-007-q19",
           "code": "S007-Q19",
           "tag": "habits",
-          "sentence": "The _____ bus queue stayed in line even when the next bus was late, and no one pushed.",
+          "sentence": "Jane did not complain during the long wait at the shop; she was _____.",
           "answer": "patient"
         },
         {
           "id": "set-007-q20",
           "code": "S007-Q20",
           "tag": "habits",
-          "sentence": "The _____ captain bought spare water for the whole team, not just for himself.",
+          "sentence": "Sean left a bigger share of cake for the others, which was _____.",
           "answer": "generous"
         },
         {
           "id": "set-007-q21",
           "code": "S007-Q21",
           "tag": "disasters",
-          "sentence": "The news reported an _____ under the sea, and a tremor watch was issued for the coast.",
+          "sentence": "A sudden _____ shook the floor, and cups clinked in the cupboard.",
           "answer": "earthquake"
         },
         {
           "id": "set-007-q22",
           "code": "S007-Q22",
           "tag": "habits",
-          "sentence": "The _____ goalkeeper tripped over his own bootlaces and sat down before the ball arrived.",
+          "sentence": "Because Cora is _____ and may drop them, Mr Wong keeps the glass prizes high.",
           "answer": "clumsy"
         },
         {
           "id": "set-007-q23",
           "code": "S007-Q23",
           "tag": "illness",
-          "sentence": "When both parents were in bed with the _____, Auntie came over with soup and a shopping bag.",
+          "sentence": "All-over aches and a runny nose told Dad it was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-007-q24",
           "code": "S007-Q24",
           "tag": "habits",
-          "sentence": "The unzipped school bag spilled a stuffed toy in the corridor, and its owner felt suddenly _____.",
+          "sentence": "Mark felt _____ after waving at a stranger by mistake.",
           "answer": "embarrassed"
         },
         {
           "id": "set-007-q25",
           "code": "S007-Q25",
           "tag": "illness",
-          "sentence": "A dusty chalk cloud from the blackboard set off a short _____ in the front row.",
+          "sentence": "Miss Chan asked Rita to get water after a hoarse _____.",
           "answer": "cough"
         }
       ]
@@ -1337,183 +1337,183 @@ window.CLOZE_BANK = {
         "id": "set-008-ex",
         "code": "S008-EX",
         "tag": "example",
-        "sentence": "The first peach _____ opened on the rooftop tree, a pale sign that warmer days were coming.",
-        "answer": "blossom"
+        "sentence": "Ken asked the chemist how long the course of _____ would last.",
+        "answer": "medicine"
       },
       "items": [
         {
           "id": "set-008-q01",
           "code": "S008-Q01",
           "tag": "illness",
-          "sentence": "After the sweet bun at recess, a warning twinge became a steady _____ by the last lesson.",
+          "sentence": "Ice in the drink set off a _____ in Holly’s tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-008-q02",
           "code": "S008-Q02",
           "tag": "disasters",
-          "sentence": "When the ground rolled, not just once but in a wave, everyone knew it was an _____, not a passing lorry.",
+          "sentence": "The shop shelves rattled when an _____ ran under the street.",
           "answer": "earthquake"
         },
         {
           "id": "set-008-q03",
           "code": "S008-Q03",
           "tag": "habits",
-          "sentence": "A _____ donor of time, not only money, sat and read with the infant class every Friday.",
+          "sentence": "Rita paid for both tickets and smiled; everyone called her _____.",
           "answer": "generous"
         },
         {
           "id": "set-008-q04",
           "code": "S008-Q04",
           "tag": "illness",
-          "sentence": "After the crowded Lunar New Year gathering, a wave of _____ moved through the relatives.",
+          "sentence": "Wade could hardly get out of bed; the _____ had made him so weak.",
           "answer": "flu"
         },
         {
           "id": "set-008-q05",
           "code": "S008-Q05",
           "tag": "disasters",
-          "sentence": "The flooding was _____ in the lower village, with water up to the window-sills, not just the steps.",
+          "sentence": "The wind near the harbour was _____, and the path could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-008-q06",
           "code": "S008-Q06",
           "tag": "habits",
-          "sentence": "A _____ attempt to pour juice missed the cup and filled the saucer instead.",
+          "sentence": "Gary slipped in the canteen and, in a _____ way, hit the tray stand.",
           "answer": "clumsy"
         },
         {
           "id": "set-008-q07",
           "code": "S008-Q07",
           "tag": "illness",
-          "sentence": "Stepping from the icy classroom into midday heat, Polly felt a brief, fierce _____ start behind her eyes.",
+          "sentence": "The drums in the hall were so loud that Eric got a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-008-q08",
           "code": "S008-Q08",
           "tag": "disasters",
-          "sentence": "A _____ of toys, clean and complete, was the infant class’s Christmas project, not a clear-out of broken bits.",
+          "sentence": "Used uniforms went in as a _____ to the office box.",
           "answer": "donation"
         },
         {
           "id": "set-008-q09",
           "code": "S008-Q09",
           "tag": "habits",
-          "sentence": "When the teacher replayed the video, a face-pull at the back was visible, and its maker looked _____.",
+          "sentence": "Judy’s voice cracked in the song, and she felt _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-008-q10",
           "code": "S008-Q10",
           "tag": "habits",
-          "sentence": "A _____ borrower returns the library key to the hook, because others will need it after school.",
+          "sentence": "Carl was in charge of the attendance book, a _____ job.",
           "answer": "responsible"
         },
         {
           "id": "set-008-q11",
           "code": "S008-Q11",
           "tag": "disasters",
-          "sentence": "A severe season of _____ left the orchard’s leaves hanging, thin and dusty, with no fruit set.",
+          "sentence": "The village tanks were nearly empty after the _____ with little rain.",
           "answer": "drought"
         },
         {
           "id": "set-008-q12",
           "code": "S008-Q12",
           "tag": "habits",
-          "sentence": "After giving up late-night sugary drinks, Ken’s teeth and energy both felt more _____.",
+          "sentence": "The coach said enough sleep would help the team stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-008-q13",
           "code": "S008-Q13",
           "tag": "illness",
-          "sentence": "A hot, dry forehead and glassy eyes told Dad at once that this was a _____, not ordinary tiredness.",
+          "sentence": "Nora was too hot in class, so the nurse checked for a _____.",
           "answer": "fever"
         },
         {
           "id": "set-008-q14",
           "code": "S008-Q14",
           "tag": "disasters",
-          "sentence": "The circling wind of the _____ tore loose bamboo scaffolding from a building, not only the rain.",
+          "sentence": "The ferry stopped because of strong wind from the _____.",
           "answer": "typhoon"
         },
         {
           "id": "set-008-q15",
           "code": "S008-Q15",
           "tag": "habits",
-          "sentence": "A _____ science partner watches the liquid change, minute by minute, without shaking the jar.",
+          "sentence": "Ben stayed still and _____ while Grandma found her glasses.",
           "answer": "patient"
         },
         {
           "id": "set-008-q16",
           "code": "S008-Q16",
           "tag": "illness",
-          "sentence": "The camp’s chilli supper was famous, and so was the midnight _____ that followed for the unlucky.",
+          "sentence": "Yuki missed the second lesson because of a sudden _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-008-q17",
           "code": "S008-Q17",
           "tag": "disasters",
-          "sentence": "A blocked drain plus hours of rain produced a local _____ at the estate’s lowest courtyard.",
+          "sentence": "Water from the blocked drain left a _____ over the playground steps.",
           "answer": "flood"
         },
         {
           "id": "set-008-q18",
           "code": "S008-Q18",
           "tag": "habits",
-          "sentence": "The choir teacher used a smile and a nod to _____ the quiet alto into a fuller sound.",
+          "sentence": "Lila tried to _____ her little sister to keep going on the bike.",
           "answer": "encourage"
         },
         {
           "id": "set-008-q19",
           "code": "S008-Q19",
           "tag": "illness",
-          "sentence": "A sticky note on the fridge listed the hours for the cough syrup, which counted as the day’s _____.",
+          "sentence": "Sam made a face at the bitter _____ from the bottle but swallowed it.",
           "answer": "medicine"
         },
         {
           "id": "set-008-q20",
           "code": "S008-Q20",
           "tag": "habits",
-          "sentence": "A note in the student handbook says that a _____ class is one that is seated when the second bell finishes.",
+          "sentence": "The coach praised Eva for being _____ and on time at Saturday training.",
           "answer": "punctual"
         },
         {
           "id": "set-008-q21",
           "code": "S008-Q21",
           "tag": "habits",
-          "sentence": "On this route a _____ service leaves every twelve minutes, so you can plan without checking the board each time.",
+          "sentence": "The same weekday each week, Joel goes to art club as a _____ habit.",
           "answer": "regular"
         },
         {
           "id": "set-008-q22",
           "code": "S008-Q22",
           "tag": "illness",
-          "sentence": "The long coach ride to the science museum left Raymond with a dull _____ from sitting still.",
+          "sentence": "After a long car ride, Amy had a back _____ and sat down at once.",
           "answer": "backache"
         },
         {
           "id": "set-008-q23",
           "code": "S008-Q23",
           "tag": "disasters",
-          "sentence": "Rocks and mud slid down the hillside in a _____, and the lower path disappeared in minutes.",
+          "sentence": "Wet soil from the _____ slid down towards the school gate.",
           "answer": "landslide"
         },
         {
           "id": "set-008-q24",
           "code": "S008-Q24",
           "tag": "habits",
-          "sentence": "Uncle whistled while he ironed the school uniforms, a job he still treats as ordinary _____.",
+          "sentence": "Dad asked Pearl to share the _____, starting with dusting the fan.",
           "answer": "housework"
         },
         {
           "id": "set-008-q25",
           "code": "S008-Q25",
           "tag": "illness",
-          "sentence": "The baby’s soft _____ was enough to make Mum sit up and loosen the blanket.",
+          "sentence": "Hugo woke his baby cousin with a sudden _____ from his throat.",
           "answer": "cough"
         }
       ]
@@ -1525,183 +1525,183 @@ window.CLOZE_BANK = {
         "id": "set-009-ex",
         "code": "S009-EX",
         "tag": "example",
-        "sentence": "The museum handed each class a short _____ with a map and five questions to answer.",
-        "answer": "booklet"
+        "sentence": "Sam hates rushing in late, so he works hard to stay _____.",
+        "answer": "punctual"
       },
       "items": [
         {
           "id": "set-009-q01",
           "code": "S009-Q01",
           "tag": "disasters",
-          "sentence": "After Signal No. 3, the principal reminded us that a stronger _____ signal might come overnight.",
+          "sentence": "A _____ bent the basketball hoops in the strong wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-009-q02",
           "code": "S009-Q02",
           "tag": "habits",
-          "sentence": "Friends _____ one another with “one more try” before the last mathematics problem.",
+          "sentence": "Kind words from Miss Lee helped _____ Stan before the concert.",
           "answer": "encourage"
         },
         {
           "id": "set-009-q03",
           "code": "S009-Q03",
           "tag": "illness",
-          "sentence": "During choir practice, Lila could not stand on the riser any longer; a _____ forced her to sit down.",
+          "sentence": "Grandma told Leo to rest; the _____ in his back was clear.",
           "answer": "backache"
         },
         {
           "id": "set-009-q04",
           "code": "S009-Q04",
           "tag": "disasters",
-          "sentence": "Rescue boats, not buses, moved along the main road when the _____ made the tarmac disappear.",
+          "sentence": "The river burst its banks, and a _____ spread across the fields.",
           "answer": "flood"
         },
         {
           "id": "set-009-q05",
           "code": "S009-Q05",
           "tag": "habits",
-          "sentence": "Uncle’s workshop opens at nine, and because he is _____, the shutters go up as the clock strikes, not at nine ten.",
+          "sentence": "Owen set two alarms so he would stay _____ and never late all week.",
           "answer": "punctual"
         },
         {
           "id": "set-009-q06",
           "code": "S009-Q06",
           "tag": "illness",
-          "sentence": "When the class practised recorders, one pupil had to leave because a tight _____ would not settle.",
+          "sentence": "During the test, a dry _____ from Tina made heads turn.",
           "answer": "cough"
         },
         {
           "id": "set-009-q07",
           "code": "S009-Q07",
           "tag": "disasters",
-          "sentence": "The road to the monastery was closed after a _____ dropped trees and clay across both lanes.",
+          "sentence": "Workers cleared rocks after a _____ closed the hill road.",
           "answer": "landslide"
         },
         {
           "id": "set-009-q08",
           "code": "S009-Q08",
           "tag": "habits",
-          "sentence": "Uncle has a _____ chess evening with his brother every Thursday, rain or shine.",
+          "sentence": "Iris packs her bag at a _____ time each night, never last-minute.",
           "answer": "regular"
         },
         {
           "id": "set-009-q09",
           "code": "S009-Q09",
           "tag": "illness",
-          "sentence": "During the overnight camp, the first-aider woke the teacher when a scout’s _____ reached thirty-eight.",
+          "sentence": "A high _____ kept Ted in bed with a cool cloth on his forehead.",
           "answer": "fever"
         },
         {
           "id": "set-009-q10",
           "code": "S009-Q10",
           "tag": "habits",
-          "sentence": "The chore chart on the wall rotates who does which piece of _____ each weekday.",
+          "sentence": "Will wiped the windows and mopped the hall as his Saturday _____.",
           "answer": "housework"
         },
         {
           "id": "set-009-q11",
           "code": "S009-Q11",
           "tag": "habits",
-          "sentence": "Grandad is _____ with the new phone; he tries each step twice before asking for help.",
+          "sentence": "The teacher asked the class to be _____ and wait for the speaker.",
           "answer": "patient"
         },
         {
           "id": "set-009-q12",
           "code": "S009-Q12",
           "tag": "illness",
-          "sentence": "Grandma’s ginger tea was offered as soon as a dull _____ began after the oily takeaway.",
+          "sentence": "After the picnic, Chris walked slowly, holding his tummy with a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-009-q13",
           "code": "S009-Q13",
           "tag": "disasters",
-          "sentence": "The history book showed a _____ year when wells were dug deeper, and some still ran dry.",
+          "sentence": "A long _____ cracked the earth in the school garden.",
           "answer": "drought"
         },
         {
           "id": "set-009-q14",
           "code": "S009-Q14",
           "tag": "habits",
-          "sentence": "The _____ twins split their lucky-draw hamper with the neighbours, though the prize was theirs.",
+          "sentence": "Hugo brought extra pencils and handed them out without being asked; so _____.",
           "answer": "generous"
         },
         {
           "id": "set-009-q15",
           "code": "S009-Q15",
           "tag": "illness",
-          "sentence": "The travel kit included only the original packs of _____, never loose unmarked pills.",
+          "sentence": "The chemist counted the tablets and boxed the _____ carefully.",
           "answer": "medicine"
         },
         {
           "id": "set-009-q16",
           "code": "S009-Q16",
           "tag": "disasters",
-          "sentence": "The _____ was over in seconds, so we were glad we had already got under the table.",
+          "sentence": "Faith felt the ground shake in an _____ and held the door frame.",
           "answer": "earthquake"
         },
         {
           "id": "set-009-q17",
           "code": "S009-Q17",
           "tag": "habits",
-          "sentence": "Because he was _____ with the chopsticks at first, two dumplings made an escape towards the floor.",
+          "sentence": "The _____ pass from Daisy knocked over a water bottle on the bench.",
           "answer": "clumsy"
         },
         {
           "id": "set-009-q18",
           "code": "S009-Q18",
           "tag": "illness",
-          "sentence": "The maths contest was fair, yet staring at small print for two hours gifted Macy a _____.",
+          "sentence": "Cora could not finish the puzzle because a _____ filled her head.",
           "answer": "headache"
         },
         {
           "id": "set-009-q19",
           "code": "S009-Q19",
           "tag": "disasters",
-          "sentence": "A _____ delay at the airport left families sleeping on seats, because nothing lighter would describe it.",
+          "sentence": "Tess had _____ pain in her brow and could not look at the board.",
           "answer": "severe"
         },
         {
           "id": "set-009-q20",
           "code": "S009-Q20",
           "tag": "habits",
-          "sentence": "A “happy birthday” song for the wrong twin left the class amused and one child brightly _____.",
+          "sentence": "Otto felt _____ after walking into the wrong classroom.",
           "answer": "embarrassed"
         },
         {
           "id": "set-009-q21",
           "code": "S009-Q21",
           "tag": "illness",
-          "sentence": "The dentist tapped one tooth gently and nodded: that was the source of the _____.",
+          "sentence": "The dentist tapped one tooth, and Mark felt the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-009-q22",
           "code": "S009-Q22",
           "tag": "disasters",
-          "sentence": "The online page showed the _____, a number that grew as neighbours added what they could.",
+          "sentence": "Ken packed a _____ of crayons for the children’s ward.",
           "answer": "donation"
         },
         {
           "id": "set-009-q23",
           "code": "S009-Q23",
           "tag": "habits",
-          "sentence": "The school made a _____ pupil the fire-warden for the row, trusted to count heads in a drill.",
+          "sentence": "The class voted for a _____ leader to lock the science cupboard.",
           "answer": "responsible"
         },
         {
           "id": "set-009-q24",
           "code": "S009-Q24",
           "tag": "illness",
-          "sentence": "The PE teacher cancelled contact games that week, because the _____ was spreading in the year group.",
+          "sentence": "After the _____, Polly still felt weak when walking to the bus.",
           "answer": "flu"
         },
         {
           "id": "set-009-q25",
           "code": "S009-Q25",
           "tag": "habits",
-          "sentence": "A _____ choice at the stall is a grilled fish and corn, rather than a third fried snack.",
+          "sentence": "Wendy felt _____ after weeks of morning runs and good meals.",
           "answer": "healthy"
         }
       ]
@@ -1713,183 +1713,183 @@ window.CLOZE_BANK = {
         "id": "set-010-ex",
         "code": "S010-EX",
         "tag": "example",
-        "sentence": "A thin jade _____ slid down her wrist when she raised her hand to answer.",
-        "answer": "bracelet"
+        "sentence": "Lucy keeps a _____ journal habit, every night at nine.",
+        "answer": "regular"
       },
       "items": [
         {
           "id": "set-010-q01",
           "code": "S010-Q01",
           "tag": "habits",
-          "sentence": "The PE teacher reminds us that a _____ heart likes running and games, not only rest on the sofa.",
+          "sentence": "Lots of greens and a long walk are Ruby’s way to stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-010-q02",
           "code": "S010-Q02",
           "tag": "illness",
-          "sentence": "A child who is aching all over, hot, then shivery, is often starting the _____.",
+          "sentence": "Shivers and muscle aches kept Carl on the sofa with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-010-q03",
           "code": "S010-Q03",
           "tag": "disasters",
-          "sentence": "A _____ cracked the playground’s clay patch into a jigsaw that hurt bare feet.",
+          "sentence": "With little rain, the _____ made the reservoir steps easy to see.",
           "answer": "drought"
         },
         {
           "id": "set-010-q04",
           "code": "S010-Q04",
           "tag": "habits",
-          "sentence": "The _____ teacher let the stammering reader finish, and the room stayed kind and still.",
+          "sentence": "Leo was _____ with the slow computer and waited, not poking the keys.",
           "answer": "patient"
         },
         {
           "id": "set-010-q05",
           "code": "S010-Q05",
           "tag": "illness",
-          "sentence": "When the school picnic included too many snacks at once, the first-aid log listed more than one _____.",
+          "sentence": "Zoe put a hot-water bag on her stomach to ease the _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-010-q06",
           "code": "S010-Q06",
           "tag": "disasters",
-          "sentence": "The old walls showed a new crack after a night _____, and the engineer was called in the morning.",
+          "sentence": "An _____ made the hanging bags sway in the classroom.",
           "answer": "earthquake"
         },
         {
           "id": "set-010-q07",
           "code": "S010-Q07",
           "tag": "habits",
-          "sentence": "A _____ older pupil printed extra maps for anyone who had lost one, using his own paper.",
+          "sentence": "A _____ neighbour paid for the extra ice creams on a hot day.",
           "answer": "generous"
         },
         {
           "id": "set-010-q08",
           "code": "S010-Q08",
           "tag": "illness",
-          "sentence": "When the bottle was nearly empty, Dad booked a follow-up to ask if more _____ was needed.",
+          "sentence": "Mum set a timer so Jack would not miss a dose of _____.",
           "answer": "medicine"
         },
         {
           "id": "set-010-q09",
           "code": "S010-Q09",
           "tag": "habits",
-          "sentence": "The _____ stagehand bumped the light stand, and the teacher caught it just in time.",
+          "sentence": "Ivan tried to stack the bowls but was too _____ and dropped them.",
           "answer": "clumsy"
         },
         {
           "id": "set-010-q10",
           "code": "S010-Q10",
           "tag": "illness",
-          "sentence": "A loose baby tooth was one thing, but this adult molar’s _____ needed real treatment.",
+          "sentence": "Judy ate on one side only, trying to hide a _____ in one tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-010-q11",
           "code": "S010-Q11",
           "tag": "illness",
-          "sentence": "Uncle Tim blamed the spicy hotpot for the burning throat that ended in a noisy _____.",
+          "sentence": "Joel could not finish the sentence because of a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-010-q12",
           "code": "S010-Q12",
           "tag": "disasters",
-          "sentence": "The teacher’s warning was _____ : the cliff path was not merely wet, it was unsafe, today, for everyone.",
+          "sentence": "The cold that week was _____, and the sports day could not go on.",
           "answer": "severe"
         },
         {
           "id": "set-010-q13",
           "code": "S010-Q13",
           "tag": "habits",
-          "sentence": "A visiting athlete came to _____ the juniors, telling them that early falls are part of learning.",
+          "sentence": "The captain’s job was to _____ the team to keep going at the end.",
           "answer": "encourage"
         },
         {
           "id": "set-010-q14",
           "code": "S010-Q14",
           "tag": "illness",
-          "sentence": "The hospital sticker on the bed listed “watch the _____” in clear letters.",
+          "sentence": "The number on the thermometer told Mum it was a real _____.",
           "answer": "fever"
         },
         {
           "id": "set-010-q15",
           "code": "S010-Q15",
           "tag": "disasters",
-          "sentence": "A _____ in kind — rice, oil, and soap — was often more useful than a small, late cheque.",
+          "sentence": "The receipt showed a _____ of five hundred dollars to the shelter.",
           "answer": "donation"
         },
         {
           "id": "set-010-q16",
           "code": "S010-Q16",
           "tag": "habits",
-          "sentence": "The wedding car was _____, reaching the hall five minutes early rather than keeping the guests waiting.",
+          "sentence": "Because Nina is _____ and on time, the group never has to wait at the gate.",
           "answer": "punctual"
         },
         {
           "id": "set-010-q17",
           "code": "S010-Q17",
           "tag": "illness",
-          "sentence": "Grandma lowered the radio volume, saying the talk show had started a _____ in her head.",
+          "sentence": "A dull _____ sat behind Gary’s eyes after the long reading.",
           "answer": "headache"
         },
         {
           "id": "set-010-q18",
           "code": "S010-Q18",
           "tag": "disasters",
-          "sentence": "The radio repeated the _____ track, a tight spiral of wind moving towards the Pearl River Delta.",
+          "sentence": "Families stayed indoors during the _____ while the wind howled.",
           "answer": "typhoon"
         },
         {
           "id": "set-010-q19",
           "code": "S010-Q19",
           "tag": "habits",
-          "sentence": "The library offers _____ story time at eleven on Sundays, and the hour never changes.",
+          "sentence": "Mr Wong takes a _____ walk around the estate at the same hour.",
           "answer": "regular"
         },
         {
           "id": "set-010-q20",
           "code": "S010-Q20",
           "tag": "habits",
-          "sentence": "After the party, everyone stayed twenty minutes to bag rubbish and mop spills, a fair share of _____.",
+          "sentence": "The _____ was done before lunch: sheets folded, floors mopped.",
           "answer": "housework"
         },
         {
           "id": "set-010-q21",
           "code": "S010-Q21",
           "tag": "disasters",
-          "sentence": "A _____ left a line of mud on the walls, showing how high the water had climbed in the night.",
+          "sentence": "Rita saw a _____ around the ground-floor door handles.",
           "answer": "flood"
         },
         {
           "id": "set-010-q22",
           "code": "S010-Q22",
           "tag": "habits",
-          "sentence": "After calling the shop “Closed” when it was only dim, the tourist backed out, _____ and apologising.",
+          "sentence": "When her chair made a loud noise, Lila sat still and felt _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-010-q23",
           "code": "S010-Q23",
           "tag": "illness",
-          "sentence": "After weeding the rooftop planters all morning, Uncle Ko said a _____ was spreading across his back.",
+          "sentence": "Eva lay on the firm bed to ease a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-010-q24",
           "code": "S010-Q24",
           "tag": "disasters",
-          "sentence": "A small _____ in the school’s back slope, after a leak, was enough to bring in the engineers.",
+          "sentence": "Ryan saw a _____ of mud and stones where the slope had given way.",
           "answer": "landslide"
         },
         {
           "id": "set-010-q25",
           "code": "S010-Q25",
           "tag": "habits",
-          "sentence": "Being _____ with the cash box means counting it twice and writing the total in the book.",
+          "sentence": "Hugh accepted the duty with a nod; he is known to be _____.",
           "answer": "responsible"
         }
       ]
@@ -1901,183 +1901,183 @@ window.CLOZE_BANK = {
         "id": "set-011-ex",
         "code": "S011-EX",
         "tag": "example",
-        "sentence": "The new _____ on the ground floor serves rice and soup, and it is quieter than the old canteen corner.",
-        "answer": "cafeteria"
+        "sentence": "The laundry basket was empty, a good sign the _____ was complete.",
+        "answer": "housework"
       },
       "items": [
         {
           "id": "set-011-q01",
           "code": "S011-Q01",
           "tag": "illness",
-          "sentence": "After the football match, Tom was not just tired; his temperature showed a sudden _____.",
+          "sentence": "Will felt burning on his forehead and complained of a _____.",
           "answer": "fever"
         },
         {
           "id": "set-011-q02",
           "code": "S011-Q02",
           "tag": "disasters",
-          "sentence": "A _____ case of sunburn, already treated, taught the class why midday sport needs shade and cream.",
+          "sentence": "The swelling looked _____, so Yuki had to keep the leg up.",
           "answer": "severe"
         },
         {
           "id": "set-011-q03",
           "code": "S011-Q03",
           "tag": "habits",
-          "sentence": "The poster on the wall does not scold; it is there to _____ us to keep reading every night.",
+          "sentence": "The teacher would _____ Wade with a smile and a “Try again.”",
           "answer": "encourage"
         },
         {
           "id": "set-011-q04",
           "code": "S011-Q04",
           "tag": "illness",
-          "sentence": "During the ferry crossing, the engine throb and glare on the water gave Uncle a queasy _____.",
+          "sentence": "Daisy put her head on the desk; the _____ would not go.",
           "answer": "headache"
         },
         {
           "id": "set-011-q05",
           "code": "S011-Q05",
           "tag": "disasters",
-          "sentence": "The family made a yearly _____ to the same clinic, a habit of giving, written in the diary.",
+          "sentence": "A quiet _____ of coats arrived at the winter appeal.",
           "answer": "donation"
         },
         {
           "id": "set-011-q06",
           "code": "S011-Q06",
           "tag": "habits",
-          "sentence": "A _____ library volunteer has the counter ready at eight thirty, which is exactly when the doors should open.",
+          "sentence": "Sean walked in on time, calm and _____, just as planned.",
           "answer": "punctual"
         },
         {
           "id": "set-011-q07",
           "code": "S011-Q07",
           "tag": "illness",
-          "sentence": "When the school photographer asked for a wide smile, Miles could barely manage it because of a _____.",
+          "sentence": "A loose baby tooth gave Otto a short but painful _____.",
           "answer": "toothache"
         },
         {
           "id": "set-011-q08",
           "code": "S011-Q08",
           "tag": "disasters",
-          "sentence": "Windows rattled in their frames as the _____’s gusts funneled down our street.",
+          "sentence": "The radio talked about the _____ and the rising storm signal.",
           "answer": "typhoon"
         },
         {
           "id": "set-011-q09",
           "code": "S011-Q09",
           "tag": "habits",
-          "sentence": "A _____ check of the fish tank, done every morning, keeps the filter from clogging.",
+          "sentence": "Kate has _____ swimming slots, always at the same hour on Saturday.",
           "answer": "regular"
         },
         {
           "id": "set-011-q10",
           "code": "S011-Q10",
           "tag": "habits",
-          "sentence": "Mum was at the market, so Hugo did the _____ she had left: wiping the bathroom sink and hanging the towels.",
+          "sentence": "Zack put on music and got through the _____ faster, bin and all.",
           "answer": "housework"
         },
         {
           "id": "set-011-q11",
           "code": "S011-Q11",
           "tag": "disasters",
-          "sentence": "During the _____, the school asked pupils to report dripping taps, because every drop was counted.",
+          "sentence": "Eric learned that a _____ is a long time with almost no rain.",
           "answer": "drought"
         },
         {
           "id": "set-011-q12",
           "code": "S011-Q12",
           "tag": "habits",
-          "sentence": "A _____ backpack swing in the crowded corridor knocked a water bottle off a hook.",
+          "sentence": "A _____ swing of her bag bumped a classmate in the corridor.",
           "answer": "clumsy"
         },
         {
           "id": "set-011-q13",
           "code": "S011-Q13",
           "tag": "illness",
-          "sentence": "When the school photographer asked the class to hold a low squat, several pupils later reported a _____.",
+          "sentence": "During the long climb, Owen asked to rest; his back hurt with a _____.",
           "answer": "backache"
         },
         {
           "id": "set-011-q14",
           "code": "S011-Q14",
           "tag": "disasters",
-          "sentence": "An _____ shook the office building until the water in the cooler made little rings.",
+          "sentence": "The floor trembled, and Holly knew it was an _____.",
           "answer": "earthquake"
         },
         {
           "id": "set-011-q15",
           "code": "S011-Q15",
           "tag": "habits",
-          "sentence": "The trousers, a little short after the holidays, were noticed in PE, and Ken felt quietly _____.",
+          "sentence": "Stan felt _____ to see spinach on his teeth in the group photo.",
           "answer": "embarrassed"
         },
         {
           "id": "set-011-q16",
           "code": "S011-Q16",
           "tag": "illness",
-          "sentence": "A cold morning run left the athletics team with more than one light _____.",
+          "sentence": "The quiet hall jumped when a sharp _____ came from a throat.",
           "answer": "cough"
         },
         {
           "id": "set-011-q17",
           "code": "S011-Q17",
           "tag": "disasters",
-          "sentence": "The museum moved boxes upstairs after a warning that a river _____ might enter the street.",
+          "sentence": "After the _____, mud and water marked the walls of the lobby.",
           "answer": "flood"
         },
         {
           "id": "set-011-q18",
           "code": "S011-Q18",
           "tag": "habits",
-          "sentence": "A _____ lab partner stays until the gas tap is off, not until the lesson “feels finished”.",
+          "sentence": "Parents thanked the _____ pupil trusted to mind younger ones at the crossing.",
           "answer": "responsible"
         },
         {
           "id": "set-011-q19",
           "code": "S011-Q19",
           "tag": "illness",
-          "sentence": "The family calendar showed five crossed-out days, all lost to the same bout of _____.",
+          "sentence": "The doctor called it the _____, with whole-body aches, not a cold.",
           "answer": "flu"
         },
         {
           "id": "set-011-q20",
           "code": "S011-Q20",
           "tag": "habits",
-          "sentence": "Mum packs _____ snacks — apple slices and plain biscuits — instead of daily sweets.",
+          "sentence": "The poster shows how exercise and water help a body stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-011-q21",
           "code": "S011-Q21",
           "tag": "habits",
-          "sentence": "A _____ cook does not open the oven every two minutes, even though the cake smells ready.",
+          "sentence": "A _____ smile stayed on Eva’s face through the long rehearsal wait.",
           "answer": "patient"
         },
         {
           "id": "set-011-q22",
           "code": "S011-Q22",
           "tag": "illness",
-          "sentence": "A missed breakfast, then a huge canteen lunch, is a classic path to a mid-afternoon _____.",
+          "sentence": "A cramp in Wendy’s tummy made her sit down with a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-011-q23",
           "code": "S011-Q23",
           "tag": "disasters",
-          "sentence": "Catch-fences were added because a _____ of loose stones had already reached the footpath once.",
+          "sentence": "Orange nets went up on the slope after last year’s _____.",
           "answer": "landslide"
         },
         {
           "id": "set-011-q24",
           "code": "S011-Q24",
           "tag": "habits",
-          "sentence": "The _____ auntie never arrives empty-handed, and the bag is always bigger than necessary.",
+          "sentence": "Joel is _____ with time, too, and gave extra help to tidy the hall.",
           "answer": "generous"
         },
         {
           "id": "set-011-q25",
           "code": "S011-Q25",
           "tag": "illness",
-          "sentence": "The leaflet warned not to share this _____ with a sibling, even if the symptoms looked similar.",
+          "sentence": "The inhaler sat beside the other _____ on the bedside table.",
           "answer": "medicine"
         }
       ]
@@ -2089,183 +2089,183 @@ window.CLOZE_BANK = {
         "id": "set-012-ex",
         "code": "S012-EX",
         "tag": "example",
-        "sentence": "Please mark the Sports Day date on the family _____ so no one books a trip that weekend.",
-        "answer": "calendar"
+        "sentence": "A _____ and dropped it spin of the globe sent it off its stand.",
+        "answer": "clumsy"
       },
       "items": [
         {
           "id": "set-012-q01",
           "code": "S012-Q01",
           "tag": "disasters",
-          "sentence": "A _____ in the wet market aisle meant shoppers waded, and the fish tanks were the least of the water.",
+          "sentence": "People waded through the _____ to reach the higher path.",
           "answer": "flood"
         },
         {
           "id": "set-012-q02",
           "code": "S012-Q02",
           "tag": "habits",
-          "sentence": "When the chat message went to the class group instead of a friend, the writer was _____ all day.",
+          "sentence": "Nell turned pink and _____ after calling her classmate the wrong name.",
           "answer": "embarrassed"
         },
         {
           "id": "set-012-q03",
           "code": "S012-Q03",
           "tag": "illness",
-          "sentence": "A plastic dosing cup, not a kitchen spoon, was used to measure the liquid _____.",
+          "sentence": "Ben put the _____ back on the high shelf after the dose.",
           "answer": "medicine"
         },
         {
           "id": "set-012-q04",
           "code": "S012-Q04",
           "tag": "disasters",
-          "sentence": "A quiet crack on the slope was followed by a sudden rush of earth, and no one could outrun the _____.",
+          "sentence": "A small _____ left a fan of mud at the bottom of the hill.",
           "answer": "landslide"
         },
         {
           "id": "set-012-q05",
           "code": "S012-Q05",
           "tag": "habits",
-          "sentence": "The family asked the most _____ auntie to hold the passports on the trip.",
+          "sentence": "Victor checks the sports medals after each event, a _____ habit.",
           "answer": "responsible"
         },
         {
           "id": "set-012-q06",
           "code": "S012-Q06",
           "tag": "illness",
-          "sentence": "Marco winced as he unclipped his hiking rucksack; the weight had pulled at his shoulders and left him with a _____.",
+          "sentence": "Nina climbed the stairs slowly, holding her back because of a _____.",
           "answer": "backache"
         },
         {
           "id": "set-012-q07",
           "code": "S012-Q07",
           "tag": "disasters",
-          "sentence": "A _____ in the north meant the usual green hills looked like faded paper from the train window.",
+          "sentence": "The wells went low in the _____, and washing water was limited.",
           "answer": "drought"
         },
         {
           "id": "set-012-q08",
           "code": "S012-Q08",
           "tag": "habits",
-          "sentence": "A _____ lifestyle in P.6 still includes fun, but it also includes sleep, water and daily movement.",
+          "sentence": "Maya packed an apple and some nuts, a _____ snack for recess.",
           "answer": "healthy"
         },
         {
           "id": "set-012-q09",
           "code": "S012-Q09",
           "tag": "illness",
-          "sentence": "The radio host apologised on air after a sudden _____ cut through his weather report.",
+          "sentence": "Liam held his throat and tried to stop another _____.",
           "answer": "cough"
         },
         {
           "id": "set-012-q10",
           "code": "S012-Q10",
           "tag": "habits",
-          "sentence": "When the seedling did not show on day two, a _____ gardener watered it and waited until day five.",
+          "sentence": "Owen counted quietly, staying _____ and waiting until his name was called.",
           "answer": "patient"
         },
         {
           "id": "set-012-q11",
           "code": "S012-Q11",
           "tag": "habits",
-          "sentence": "The choir holds _____ sectionals each Tuesday, so the habit of extra practice is built in.",
+          "sentence": "Without skipping a week, Ryan keeps a _____ reading hour on Thursdays.",
           "answer": "regular"
         },
         {
           "id": "set-012-q12",
           "code": "S012-Q12",
           "tag": "illness",
-          "sentence": "A night of late revision under a bare bulb left the desk lamp and a stubborn _____ as souvenirs.",
+          "sentence": "The stuffy classroom gave several pupils a _____ in the head, including Ivan.",
           "answer": "headache"
         },
         {
           "id": "set-012-q13",
           "code": "S012-Q13",
           "tag": "disasters",
-          "sentence": "A _____ of blood is also a gift; the poster at the station used that word carefully, and proudly.",
+          "sentence": "The school thanked families for a large _____ of sports kit to the fund.",
           "answer": "donation"
         },
         {
           "id": "set-012-q14",
           "code": "S012-Q14",
           "tag": "habits",
-          "sentence": "A short burst of _____ before bedtime — cups in the sink, shoes on the rack — keeps the hall clear.",
+          "sentence": "Grandma showed Vera how to iron a shirt, a new bit of _____.",
           "answer": "housework"
         },
         {
           "id": "set-012-q15",
           "code": "S012-Q15",
           "tag": "illness",
-          "sentence": "The left gum felt swollen, and chewing on that side was impossible thanks to a stubborn _____.",
+          "sentence": "Lila woke early because the _____ in her tooth would not stop.",
           "answer": "toothache"
         },
         {
           "id": "set-012-q16",
           "code": "S012-Q16",
           "tag": "disasters",
-          "sentence": "A _____ warning means you should bring in hanging plants, because tropical winds will throw them.",
+          "sentence": "Strong wind from the _____ pulled at the hanging laundry.",
           "answer": "typhoon"
         },
         {
           "id": "set-012-q17",
           "code": "S012-Q17",
           "tag": "habits",
-          "sentence": "When she tried to pin the badge, a _____ thumb let it slip down the drain of the sink — almost.",
+          "sentence": "Karl is kind but _____, always dropping keys or coins.",
           "answer": "clumsy"
         },
         {
           "id": "set-012-q18",
           "code": "S012-Q18",
           "tag": "illness",
-          "sentence": "Vaccination day at school was explained as one way to lower the chance of a bad _____.",
+          "sentence": "Hugh missed three days of school while the _____ made him ache all over.",
           "answer": "flu"
         },
         {
           "id": "set-012-q19",
           "code": "S012-Q19",
           "tag": "disasters",
-          "sentence": "Seismographs in the science lab drew a sudden zigzag when a distant _____ sent a faint tremor through the city.",
+          "sentence": "During the drill, the class practised how to drop and cover in an _____.",
           "answer": "earthquake"
         },
         {
           "id": "set-012-q20",
           "code": "S012-Q20",
           "tag": "habits",
-          "sentence": "A _____ classmate lent his spare umbrella and walked home slightly wet, cheerfully.",
+          "sentence": "Iris’s _____ gift was a whole box of crayons, not just one or two.",
           "answer": "generous"
         },
         {
           "id": "set-012-q21",
           "code": "S012-Q21",
           "tag": "illness",
-          "sentence": "The dance rehearsal stopped so that Mei could sit out; a sudden _____ had folded her forward.",
+          "sentence": "Ruby shook her head at pudding; the _____ in her stomach was enough.",
           "answer": "stomachache"
         },
         {
           "id": "set-012-q22",
           "code": "S012-Q22",
           "tag": "disasters",
-          "sentence": "The drought’s _____ stage was the week the cattle were moved, not the first dry afternoon.",
+          "sentence": "A _____ warning kept boats in the harbour shelter all day.",
           "answer": "severe"
         },
         {
           "id": "set-012-q23",
           "code": "S012-Q23",
           "tag": "habits",
-          "sentence": "Grandad’s letters _____ me to finish the model, because he asks to see the next photograph.",
+          "sentence": "Polly needed someone to _____ her with kind words after the first low mark.",
           "answer": "encourage"
         },
         {
           "id": "set-012-q24",
           "code": "S012-Q24",
           "tag": "illness",
-          "sentence": "A cool bath was prepared because the baby’s _____ had made the little body too warm.",
+          "sentence": "After PE, Sara’s face was unusually hot, and the nurse found a _____.",
           "answer": "fever"
         },
         {
           "id": "set-012-q25",
           "code": "S012-Q25",
           "tag": "habits",
-          "sentence": "When the adjudicator is _____, the music festival keeps to its printed timetable.",
+          "sentence": "Mrs Lam wrote Rita a note for being _____ and on time every morning.",
           "answer": "punctual"
         }
       ]
@@ -2277,183 +2277,183 @@ window.CLOZE_BANK = {
         "id": "set-013-ex",
         "code": "S013-EX",
         "tag": "example",
-        "sentence": "The year group started a “bring your own bottle” _____ to cut the use of plastic cups.",
-        "answer": "campaign"
+        "sentence": "Nora went pink and _____ after calling a classmate the wrong name.",
+        "answer": "embarrassed"
       },
       "items": [
         {
           "id": "set-013-q01",
           "code": "S013-Q01",
           "tag": "habits",
-          "sentence": "The _____ juggler in the talent show dropped the first two scarves and laughed it off.",
+          "sentence": "During craft time, _____ Holly dropped the glue and stuck a finger to the paper.",
           "answer": "clumsy"
         },
         {
           "id": "set-013-q02",
           "code": "S013-Q02",
           "tag": "illness",
-          "sentence": "Uncle cancelled his business trip when the _____ left him too weak to pack a suitcase.",
+          "sentence": "Mum put an extra blanket on Tess, who was shivering with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-013-q03",
           "code": "S013-Q03",
           "tag": "disasters",
-          "sentence": "An _____ at rush hour is frightening because a moving train and a moving ground are two motions at once.",
+          "sentence": "A light _____ shook the bed and woke Judy at dawn.",
           "answer": "earthquake"
         },
         {
           "id": "set-013-q04",
           "code": "S013-Q04",
           "tag": "habits",
-          "sentence": "The _____ shopkeeper rounded the bill down for the child’s handful of coins, and smiled.",
+          "sentence": "Liam split his prize money and gave more than half away; that was _____.",
           "answer": "generous"
         },
         {
           "id": "set-013-q05",
           "code": "S013-Q05",
           "tag": "illness",
-          "sentence": "After the extra-spicy noodles from the night market, Dad drank yoghurt and complained of a _____.",
+          "sentence": "On the ferry, Ken’s stomach felt odd, and a _____ followed.",
           "answer": "stomachache"
         },
         {
           "id": "set-013-q06",
           "code": "S013-Q06",
           "tag": "disasters",
-          "sentence": "A _____ cough, already being treated, still kept him awake, which is how we knew it was more than a tickle.",
+          "sentence": "The burnt pan set off a _____ alarm, so the class could not stay.",
           "answer": "severe"
         },
         {
           "id": "set-013-q07",
           "code": "S013-Q07",
           "tag": "habits",
-          "sentence": "The debate coach stopped to _____ the first speaker, whose hands were shaking but whose points were good.",
+          "sentence": "A cheer from the side was enough to _____ the tired runners.",
           "answer": "encourage"
         },
         {
           "id": "set-013-q08",
           "code": "S013-Q08",
           "tag": "illness",
-          "sentence": "After the ice-lolly challenge, two friends regretted it; the cold had woken a sleeping _____.",
+          "sentence": "Mum booked a dentist visit after Stan’s _____ lasted two days.",
           "answer": "toothache"
         },
         {
           "id": "set-013-q09",
           "code": "S013-Q09",
           "tag": "disasters",
-          "sentence": "The jumble-sale’s profit, all of it, became a _____ to the school’s wheelchair fund.",
+          "sentence": "Jack put his old storybooks in the _____ bag for the hospital.",
           "answer": "donation"
         },
         {
           "id": "set-013-q10",
           "code": "S013-Q10",
           "tag": "habits",
-          "sentence": "The scout promise includes being _____ for parade, so no one has to wait in the sun.",
+          "sentence": "Hugo hates being late, so he works hard to stay _____.",
           "answer": "punctual"
         },
         {
           "id": "set-013-q11",
           "code": "S013-Q11",
           "tag": "illness",
-          "sentence": "The pharmacy clerk suggested a thermometer first, to be sure the _____ was real.",
+          "sentence": "Zack kicked off the blanket because the _____ made him so hot.",
           "answer": "fever"
         },
         {
           "id": "set-013-q12",
           "code": "S013-Q12",
           "tag": "disasters",
-          "sentence": "The airport delayed flights while a _____ passed, its fierce winds too dangerous for landing.",
+          "sentence": "Eva watched the _____ from inside; the trees leaned in the wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-013-q13",
           "code": "S013-Q13",
           "tag": "habits",
-          "sentence": "A late realisation that the uniform jumper was inside out produced a short, _____ trip to the bathroom.",
+          "sentence": "After the zip failed in PE, Wade hid behind a bag, face red, feeling _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-013-q14",
           "code": "S013-Q14",
           "tag": "illness",
-          "sentence": "The perfume counter was too strong, and Mum stepped outside to ease a rising _____.",
+          "sentence": "Faith squinted at the board, pressing her temples through a _____.",
           "answer": "headache"
         },
         {
           "id": "set-013-q15",
           "code": "S013-Q15",
           "tag": "disasters",
-          "sentence": "Low-lying fields became one sheet of water in the _____, and the paths could not be found.",
+          "sentence": "A sudden _____ covered the market street in brown water.",
           "answer": "flood"
         },
         {
           "id": "set-013-q16",
           "code": "S013-Q16",
           "tag": "habits",
-          "sentence": "A _____ duty student turns off the air-con and the lights, even if friends are already at the gate.",
+          "sentence": "Being _____ means Yuki does not leave before closing the art-room taps.",
           "answer": "responsible"
         },
         {
           "id": "set-013-q17",
           "code": "S013-Q17",
           "tag": "illness",
-          "sentence": "After the dentist’s visit, a short course of _____ was prescribed to settle the swelling.",
+          "sentence": "A clear syrup was the _____ the chemist chose for Amy.",
           "answer": "medicine"
         },
         {
           "id": "set-013-q18",
           "code": "S013-Q18",
           "tag": "disasters",
-          "sentence": "The news helicopter showed a _____ that had cut the road as cleanly as a brown waterfall, stopped.",
+          "sentence": "The bus turned back when a _____ of mud and rocks covered the road.",
           "answer": "landslide"
         },
         {
           "id": "set-013-q19",
           "code": "S013-Q19",
           "tag": "habits",
-          "sentence": "After the long illness, the first _____ sign was an appetite for ordinary rice and a short walk.",
+          "sentence": "Less fried food and more vegetables kept the family _____.",
           "answer": "healthy"
         },
         {
           "id": "set-013-q20",
           "code": "S013-Q20",
           "tag": "habits",
-          "sentence": "The _____ chess player did not hurry her opponent, though her own clock was running.",
+          "sentence": "Dad was _____ in the car park and waited while the barrier slowly lifted.",
           "answer": "patient"
         },
         {
           "id": "set-013-q21",
           "code": "S013-Q21",
           "tag": "disasters",
-          "sentence": "Fish died in a shrinking pond as a _____ pulled the water back week after week.",
+          "sentence": "Crops failed in the dry fields after a hard _____.",
           "answer": "drought"
         },
         {
           "id": "set-013-q22",
           "code": "S013-Q22",
           "tag": "habits",
-          "sentence": "Mum prefers _____ mealtimes at seven, one and seven, rather than eating at odd hours.",
+          "sentence": "The club wants _____ attendance, so members come on the same day weekly.",
           "answer": "regular"
         },
         {
           "id": "set-013-q23",
           "code": "S013-Q23",
           "tag": "illness",
-          "sentence": "After practising handstands against the gym wall, Polly felt a warning _____ and stopped at once.",
+          "sentence": "A long bus ride gave Sean a _____, and he kept rubbing his back.",
           "answer": "backache"
         },
         {
           "id": "set-013-q24",
           "code": "S013-Q24",
           "tag": "habits",
-          "sentence": "The student hostel poster lists “shared _____”: clean the microwave and sweep the corridor on Sundays.",
+          "sentence": "Eric hates leftover dishes, so he starts the _____ there, then dusts.",
           "answer": "housework"
         },
         {
           "id": "set-013-q25",
           "code": "S013-Q25",
           "tag": "illness",
-          "sentence": "In the library’s silent zone, even a polite _____ made Janice blush and hide behind a book.",
+          "sentence": "A tickle in Kate’s throat turned into a loud _____.",
           "answer": "cough"
         }
       ]
@@ -2465,183 +2465,183 @@ window.CLOZE_BANK = {
         "id": "set-014-ex",
         "code": "S014-EX",
         "tag": "example",
-        "sentence": "A long table in the _____ was reserved for the visiting choir, with extra jugs of water.",
-        "answer": "canteen"
+        "sentence": "The trusted, _____ pupil stayed to close the windows in the lab.",
+        "answer": "responsible"
       },
       "items": [
         {
           "id": "set-014-q01",
           "code": "S014-Q01",
           "tag": "illness",
-          "sentence": "After the dusty storeroom tidy-up, several helpers needed lozenges for a lingering _____.",
+          "sentence": "Mum heard the _____ from Ryan’s room and brought throat sweets.",
           "answer": "cough"
         },
         {
           "id": "set-014-q02",
           "code": "S014-Q02",
           "tag": "disasters",
-          "sentence": "During the peak of the _____, the trees in the playground were whipped in circles, not just dripped on.",
+          "sentence": "After the _____, snapped trees showed how fierce the wind had been.",
           "answer": "typhoon"
         },
         {
           "id": "set-014-q03",
           "code": "S014-Q03",
           "tag": "habits",
-          "sentence": "After praising a “new” haircut that was only bed-hair, the well-meaning friend felt _____.",
+          "sentence": "Polly felt _____ when the teacher played her wrong recording by accident.",
           "answer": "embarrassed"
         },
         {
           "id": "set-014-q04",
           "code": "S014-Q04",
           "tag": "illness",
-          "sentence": "When the digital beep sounded, the screen read a number that meant a definite _____.",
+          "sentence": "Mrs Lam wrote Vera’s temperature down and called it a _____.",
           "answer": "fever"
         },
         {
           "id": "set-014-q05",
           "code": "S014-Q05",
           "tag": "disasters",
-          "sentence": "A burst water main, not a river, still caused a _____ that closed two lanes of the road.",
+          "sentence": "The football boots floated in the _____ on the pitch.",
           "answer": "flood"
         },
         {
           "id": "set-014-q06",
           "code": "S014-Q06",
           "tag": "habits",
-          "sentence": "Being _____ for the noticeboard means taking down last week’s posters, not only pinning new ones.",
+          "sentence": "Chris was trusted with the lost-and-found key because he is _____.",
           "answer": "responsible"
         },
         {
           "id": "set-014-q07",
           "code": "S014-Q07",
           "tag": "illness",
-          "sentence": "After the class watched the 3D film, two pupils needed a dark corner for a spinning _____.",
+          "sentence": "After the long coach trip, Karl had a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-014-q08",
           "code": "S014-Q08",
           "tag": "disasters",
-          "sentence": "A _____ risk map marks the steep, bare cuts behind some estates, especially after wet weeks.",
+          "sentence": "Trees leaned over after a _____ pulled soil from their roots.",
           "answer": "landslide"
         },
         {
           "id": "set-014-q09",
           "code": "S014-Q09",
           "tag": "habits",
-          "sentence": "The dentist praised _____ gums, pink and firm, in the pupils who brushed and ate less sugar.",
+          "sentence": "Lucy jumped well in PE, looking fit and _____.",
           "answer": "healthy"
         },
         {
           "id": "set-014-q10",
           "code": "S014-Q10",
           "tag": "habits",
-          "sentence": "A _____ parent at the shoe shop let the child try both pairs, instead of deciding in the doorway.",
+          "sentence": "Sean did not snap at the delay; he stayed _____ and read a book.",
           "answer": "patient"
         },
         {
           "id": "set-014-q11",
           "code": "S014-Q11",
           "tag": "disasters",
-          "sentence": "The family emergency bag is by the door in case an _____ makes us leave the flat for a night.",
+          "sentence": "Pictures tilted on the wall after an _____ shook the flat.",
           "answer": "earthquake"
         },
         {
           "id": "set-014-q12",
           "code": "S014-Q12",
           "tag": "habits",
-          "sentence": "A _____ elbow at the art table sent a pot of brushes rolling towards the edge.",
+          "sentence": "Mark bumped the whiteboard stand, a _____ knock that made it wobble.",
           "answer": "clumsy"
         },
         {
           "id": "set-014-q13",
           "code": "S014-Q13",
           "tag": "illness",
-          "sentence": "A tight belt after a big dinner did not help; it only made the _____ feel sharper.",
+          "sentence": "Maya bent forward in the chair, quietly holding her tummy with a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-014-q14",
           "code": "S014-Q14",
           "tag": "disasters",
-          "sentence": "The damage after the wind was _____, with roofs opened and trees down, not only a few fallen leaves.",
+          "sentence": "Wendy’s pain was _____; even two steps on the stairs made her stop.",
           "answer": "severe"
         },
         {
           "id": "set-014-q15",
           "code": "S014-Q15",
           "tag": "habits",
-          "sentence": "A _____ family cooked a second tray of lasagne “just in case”, then sent it to the next door.",
+          "sentence": "The _____ host packed leftover buns for every guest, more than they needed.",
           "answer": "generous"
         },
         {
           "id": "set-014-q16",
           "code": "S014-Q16",
           "tag": "illness",
-          "sentence": "The clinic explained that finishing the course of _____ matters, even when you feel better halfway.",
+          "sentence": "The nurse wrote the dose on a card and handed Leo the _____.",
           "answer": "medicine"
         },
         {
           "id": "set-014-q17",
           "code": "S014-Q17",
           "tag": "disasters",
-          "sentence": "A silent _____ of an envelope, left at the office, still needed a note, so the thanks could be sent.",
+          "sentence": "A _____ of used balls was given as goods to the youth club.",
           "answer": "donation"
         },
         {
           "id": "set-014-q18",
           "code": "S014-Q18",
           "tag": "habits",
-          "sentence": "A classmate’s whisper, “You’re nearly there,” can _____ a tired runner more than a shout.",
+          "sentence": "Grandad used kind words to _____ Rose on the steep path.",
           "answer": "encourage"
         },
         {
           "id": "set-014-q19",
           "code": "S014-Q19",
           "tag": "illness",
-          "sentence": "The theatre club spent the afternoon stacking heavy chairs, and by dusk Mr Pang was holding his back with a _____.",
+          "sentence": "Rita could not help with the boxes; a _____ hurt her back.",
           "answer": "backache"
         },
         {
           "id": "set-014-q20",
           "code": "S014-Q20",
           "tag": "habits",
-          "sentence": "A _____ delivery driver rang the bell at the promised hour, and the cake was still cool.",
+          "sentence": "The booked clinic time was at two, and _____ Tina arrived on time at two.",
           "answer": "punctual"
         },
         {
           "id": "set-014-q21",
           "code": "S014-Q21",
           "tag": "habits",
-          "sentence": "A _____ watering of the rooftop herbs, every other day, is written on the planner.",
+          "sentence": "Ted does _____ skip practice daily, at the same spot in the playground.",
           "answer": "regular"
         },
         {
           "id": "set-014-q22",
           "code": "S014-Q22",
           "tag": "illness",
-          "sentence": "Mum packed a soft bun for lunch because a crunchy apple would only worsen the _____.",
+          "sentence": "Nell pointed to a back tooth and said the _____ was there.",
           "answer": "toothache"
         },
         {
           "id": "set-014-q23",
           "code": "S014-Q23",
           "tag": "disasters",
-          "sentence": "A _____ warning is issued when rainfall has been far below normal for a long period, not after one dry week.",
+          "sentence": "The _____ lasted all summer, and not a useful drop of rain fell.",
           "answer": "drought"
         },
         {
           "id": "set-014-q24",
           "code": "S014-Q24",
           "tag": "habits",
-          "sentence": "When the relatives visit, extra _____ appears: spare bedding to wash and the guest room to dust.",
+          "sentence": "A short list of _____ waited: vacuum the rug, wipe the fridge door.",
           "answer": "housework"
         },
         {
           "id": "set-014-q25",
           "code": "S014-Q25",
           "tag": "illness",
-          "sentence": "After sharing a cabin on the overnight ferry, two scouts went home with the same _____.",
+          "sentence": "Whole-body weakness made it clear that Victor had caught the _____.",
           "answer": "flu"
         }
       ]
@@ -2653,183 +2653,183 @@ window.CLOZE_BANK = {
         "id": "set-015-ex",
         "code": "S015-EX",
         "tag": "example",
-        "sentence": "Be _____ on the wet tiles; the warning sign is there because several people have already slipped.",
-        "answer": "cautious"
+        "sentence": "Ken drank water before asking for juice, a _____ rule at home.",
+        "answer": "healthy"
       },
       "items": [
         {
           "id": "set-015-q01",
           "code": "S015-Q01",
           "tag": "disasters",
-          "sentence": "The farmers’ meeting had one topic: how to share what was left in the canal during the _____.",
+          "sentence": "Families used less washing water in the long _____ with almost no rain.",
           "answer": "drought"
         },
         {
           "id": "set-015-q02",
           "code": "S015-Q02",
           "tag": "habits",
-          "sentence": "The clinic sends a _____ reminder every six months when a check-up is due.",
+          "sentence": "Mum likes a _____ market trip each Friday, always before lunch.",
           "answer": "regular"
         },
         {
           "id": "set-015-q03",
           "code": "S015-Q03",
           "tag": "illness",
-          "sentence": "The nurse asked whether the pain was in the tummy area, to confirm it was a _____ and not a side stitch from running.",
+          "sentence": "Mum asked if Sam’s tummy still hurt, and Sam nodded at the _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-015-q04",
           "code": "S015-Q04",
           "tag": "disasters",
-          "sentence": "A small _____ may feel like a dizzy spell, until the hanging plant gives it away by swinging.",
+          "sentence": "The teacher called “Drop, cover, and hold on!” in the _____.",
           "answer": "earthquake"
         },
         {
           "id": "set-015-q05",
           "code": "S015-Q05",
           "tag": "habits",
-          "sentence": "Clara timed herself and finished the Saturday _____ — bathrooms and floors — in under an hour.",
+          "sentence": "Gary and his brother split the _____; one dusted, one folded clothes.",
           "answer": "housework"
         },
         {
           "id": "set-015-q06",
           "code": "S015-Q06",
           "tag": "illness",
-          "sentence": "A locked box on the high shelf keeps all household _____ away from younger cousins.",
+          "sentence": "Eva had to finish all the _____, not just two days of tablets.",
           "answer": "medicine"
         },
         {
           "id": "set-015-q07",
           "code": "S015-Q07",
           "tag": "habits",
-          "sentence": "Because the tray was piled too high, a _____ step on the stairs cost us one bun, but luckily not more.",
+          "sentence": "Mum moved the vase after _____ Judy almost knocked it twice.",
           "answer": "clumsy"
         },
         {
           "id": "set-015-q08",
           "code": "S015-Q08",
           "tag": "illness",
-          "sentence": "Because the piano stool was far too low, Clara finished her exam piece with a nagging _____.",
+          "sentence": "After sitting on the hard floor, Hugo stood up with a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-015-q09",
           "code": "S015-Q09",
           "tag": "habits",
-          "sentence": "The _____ prefect spent his own break filling water bottles for the visiting team.",
+          "sentence": "Ryan offered his new markers to anyone who needed one, _____ and willing to share.",
           "answer": "generous"
         },
         {
           "id": "set-015-q10",
           "code": "S015-Q10",
           "tag": "illness",
-          "sentence": "The news report said this season’s _____ was making people tired and feverish for longer than usual.",
+          "sentence": "Yuki felt weak and sore in the legs, back, and arms; it was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-015-q11",
           "code": "S015-Q11",
           "tag": "habits",
-          "sentence": "The _____ librarian waited until the shy pupil found the words, then simply nodded.",
+          "sentence": "Being _____ helped Rita wait for the late bus without shouting.",
           "answer": "patient"
         },
         {
           "id": "set-015-q12",
           "code": "S015-Q12",
           "tag": "illness",
-          "sentence": "The marching band’s cymbals were exciting, but the front row paid with more than one _____.",
+          "sentence": "Holly missed the last game because of a strong _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-015-q13",
           "code": "S015-Q13",
           "tag": "disasters",
-          "sentence": "A _____ shortage of water meant the fountains were off and showers were timed, officially.",
+          "sentence": "The delay was _____, and several trains could not run that morning.",
           "answer": "severe"
         },
         {
           "id": "set-015-q14",
           "code": "S015-Q14",
           "tag": "habits",
-          "sentence": "The art teacher’s role is to _____ experiment, even when the first painting looks messy.",
+          "sentence": "The poster on the wall was meant to _____ pupils to keep trying.",
           "answer": "encourage"
         },
         {
           "id": "set-015-q15",
           "code": "S015-Q15",
           "tag": "illness",
-          "sentence": "The emergency dental chair was free at noon, luckily, for a pupil in tears over a sudden _____.",
+          "sentence": "Hot soup made the _____ in Wade’s tooth flare up again.",
           "answer": "toothache"
         },
         {
           "id": "set-015-q16",
           "code": "S015-Q16",
           "tag": "disasters",
-          "sentence": "The team’s old kits, washed and folded, were a _____ to a younger club that had none.",
+          "sentence": "The charity counted the money from the weekend _____.",
           "answer": "donation"
         },
         {
           "id": "set-015-q17",
           "code": "S015-Q17",
           "tag": "habits",
-          "sentence": "Because the referee was _____, the match kicked off at three o’clock sharp.",
+          "sentence": "Joel reached the library talk early and felt glad to be _____.",
           "answer": "punctual"
         },
         {
           "id": "set-015-q18",
           "code": "S015-Q18",
           "tag": "illness",
-          "sentence": "The drama teacher whispered her lines because a sore throat and a dry _____ would not let her project.",
+          "sentence": "Nora stepped outside so the _____ from her throat would not disturb class.",
           "answer": "cough"
         },
         {
           "id": "set-015-q19",
           "code": "S015-Q19",
           "tag": "disasters",
-          "sentence": "A summer _____ can last a night or two, with the wind changing direction as the centre moves.",
+          "sentence": "The _____ closed the schools, and the wind slammed the gates.",
           "answer": "typhoon"
         },
         {
           "id": "set-015-q20",
           "code": "S015-Q20",
           "tag": "habits",
-          "sentence": "The spelling of her own name, wrong on the board, was pointed out kindly, and she still felt _____.",
+          "sentence": "Carl dropped his script and felt _____ as the class waited.",
           "answer": "embarrassed"
         },
         {
           "id": "set-015-q21",
           "code": "S015-Q21",
           "tag": "illness",
-          "sentence": "Miss Cheng called home after noticing that Eric’s forehead was unusually hot, a sign of _____.",
+          "sentence": "Eric shivered, then felt very hot; it was the start of a _____.",
           "answer": "fever"
         },
         {
           "id": "set-015-q22",
           "code": "S015-Q22",
           "tag": "disasters",
-          "sentence": "The school hall’s floor was safe, but the playground had a shallow _____ around the drains.",
+          "sentence": "Liam could not enter the music room; _____ water sat on the corridor floor.",
           "answer": "flood"
         },
         {
           "id": "set-015-q23",
           "code": "S015-Q23",
           "tag": "habits",
-          "sentence": "The coach named a _____ captain to collect the bibs and report any damage the same day.",
+          "sentence": "The _____ team captain counted everyone on and off the coach.",
           "answer": "responsible"
         },
         {
           "id": "set-015-q24",
           "code": "S015-Q24",
           "tag": "disasters",
-          "sentence": "When the slope’s drains overflowed, a _____ of soil followed, and the playground fence leaned.",
+          "sentence": "The warning sign said the slope might have another _____.",
           "answer": "landslide"
         },
         {
           "id": "set-015-q25",
           "code": "S015-Q25",
           "tag": "habits",
-          "sentence": "A _____ breakfast of oats and fruit lasted until recess, unlike a bun made only of sugar.",
+          "sentence": "The dentist said a _____ diet is low in sweets and high in fruit.",
           "answer": "healthy"
         }
       ]
@@ -2841,183 +2841,183 @@ window.CLOZE_BANK = {
         "id": "set-016-ex",
         "code": "S016-EX",
         "tag": "example",
-        "sentence": "A _____ welcome from the librarian made the shy new pupil put the book bag down and stay.",
-        "answer": "cheerful"
+        "sentence": "Families booked no ferry rides until the _____ and its strong wind had fully passed.",
+        "answer": "typhoon"
       },
       "items": [
         {
           "id": "set-016-q01",
           "code": "S016-Q01",
           "tag": "habits",
-          "sentence": "When the recorded oral included a long, accidental pause, the playback made him _____.",
+          "sentence": "A typo on the board with Rose’s name left her red-faced, quiet and _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-016-q02",
           "code": "S016-Q02",
           "tag": "illness",
-          "sentence": "When the typography on the worksheet was tiny, even the diligent prefect ended up with a _____.",
+          "sentence": "Mum dimmed the lamp when Mark complained of a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-016-q03",
           "code": "S016-Q03",
           "tag": "disasters",
-          "sentence": "The child’s asthma attack was _____, so the nurse used the emergency plan, not a “sit and wait”.",
+          "sentence": "The teacher said the mistake was not _____ or dangerous, just a small slip.",
           "answer": "severe"
         },
         {
           "id": "set-016-q04",
           "code": "S016-Q04",
           "tag": "habits",
-          "sentence": "A _____ babysitter follows the bedtime the parents set, not a later time that seems “kinder”.",
+          "sentence": "Wendy keeps the first-aid box tidy; the teacher calls her _____ and trusted.",
           "answer": "responsible"
         },
         {
           "id": "set-016-q05",
           "code": "S016-Q05",
           "tag": "illness",
-          "sentence": "A dark spot on the back tooth had been ignored, and now a weekend _____ had arrived.",
+          "sentence": "Polly skipped the chewy snack because of a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-016-q06",
           "code": "S016-Q06",
           "tag": "disasters",
-          "sentence": "A _____ of time is real, but this box on the form is for money or goods; they ticked “goods”.",
+          "sentence": "Grandma made a _____ of knitting wool to the care-home charity.",
           "answer": "donation"
         },
         {
           "id": "set-016-q07",
           "code": "S016-Q07",
           "tag": "habits",
-          "sentence": "The camp menu was planned to be _____, with vegetables at every meal, not only at dinner.",
+          "sentence": "Jane drinks water at break because it helps her stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-016-q08",
           "code": "S016-Q08",
           "tag": "illness",
-          "sentence": "A whole-body heaviness, not just a sore throat, told Mum this illness was the _____.",
+          "sentence": "A bad week of aches and shivers was Chris’s bout of the _____.",
           "answer": "flu"
         },
         {
           "id": "set-016-q09",
           "code": "S016-Q09",
           "tag": "disasters",
-          "sentence": "The sea wall was closed to walkers because a _____ was sending high, wind-driven waves over the path.",
+          "sentence": "A high signal meant the _____ was near, and the wind grew louder.",
           "answer": "typhoon"
         },
         {
           "id": "set-016-q10",
           "code": "S016-Q10",
           "tag": "habits",
-          "sentence": "A _____ painter lets a layer dry, because touching it early spoils the work.",
+          "sentence": "Hugo let the younger pupils go first and waited, staying _____.",
           "answer": "patient"
         },
         {
           "id": "set-016-q11",
           "code": "S016-Q11",
           "tag": "illness",
-          "sentence": "A night on the hard classroom floor during the charity sleepover left Owen with a stubborn _____.",
+          "sentence": "Tina whispered that she had a _____ and could not bend her back.",
           "answer": "backache"
         },
         {
           "id": "set-016-q12",
           "code": "S016-Q12",
           "tag": "disasters",
-          "sentence": "After the _____, the teacher counted heads in the playground, the agreed meeting place.",
+          "sentence": "An _____ sent a rattle through the windows and desks.",
           "answer": "earthquake"
         },
         {
           "id": "set-016-q13",
           "code": "S016-Q13",
           "tag": "habits",
-          "sentence": "Mum did not finish the puzzle for him; she only sat nearby to _____ his next try.",
+          "sentence": "Tess wrote “You can do it” on a card to _____ a classmate.",
           "answer": "encourage"
         },
         {
           "id": "set-016-q14",
           "code": "S016-Q14",
           "tag": "illness",
-          "sentence": "On the Peak tram, a child’s sharp _____ echoed in the cabin and startled a tourist.",
+          "sentence": "The play paused because Ted had a sudden _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-016-q15",
           "code": "S016-Q15",
           "tag": "disasters",
-          "sentence": "A _____ warning for the north bank meant families carried valuables to the upper floor.",
+          "sentence": "The park pond overflowed, and a _____ crossed the lawn.",
           "answer": "flood"
         },
         {
           "id": "set-016-q16",
           "code": "S016-Q16",
           "tag": "habits",
-          "sentence": "The oral-exam waiting room rewards a _____ candidate; late arrivals may miss their slot.",
+          "sentence": "A _____ pupil has her books out on time, before the lesson begins.",
           "answer": "punctual"
         },
         {
           "id": "set-016-q17",
           "code": "S016-Q17",
           "tag": "illness",
-          "sentence": "The midnight check showed the _____ had dropped a little, so we let her sleep on.",
+          "sentence": "A cool pack on Cora’s forehead helped a little, but the _____ stayed.",
           "answer": "fever"
         },
         {
           "id": "set-016-q18",
           "code": "S016-Q18",
           "tag": "disasters",
-          "sentence": "A _____ buried the lower orchard in stones and mud, leaving only the higher trees visible.",
+          "sentence": "Mud and rocks from the _____ reached the first village house.",
           "answer": "landslide"
         },
         {
           "id": "set-016-q19",
           "code": "S016-Q19",
           "tag": "habits",
-          "sentence": "Dad does _____ stretching before work, ten minutes, five weekdays a week.",
+          "sentence": "Will writes in a diary as a _____ habit, every evening at nine.",
           "answer": "regular"
         },
         {
           "id": "set-016-q20",
           "code": "S016-Q20",
           "tag": "habits",
-          "sentence": "After the barbecue, outdoor chairs had to be washed as well, which still counted as the day’s _____.",
+          "sentence": "After the guests left, Daisy began the _____ by wiping cups and crumbs.",
           "answer": "housework"
         },
         {
           "id": "set-016-q21",
           "code": "S016-Q21",
           "tag": "disasters",
-          "sentence": "A _____ left the temple’s rain-fed cistern with a ring of pale stain, high above the water.",
+          "sentence": "The hill paths were dusty and dry right through the _____.",
           "answer": "drought"
         },
         {
           "id": "set-016-q22",
           "code": "S016-Q22",
           "tag": "habits",
-          "sentence": "The _____ new skater sat down on the ice twice before he had even pushed off.",
+          "sentence": "Otto tripped over the school bag and, being _____, knocked the chair.",
           "answer": "clumsy"
         },
         {
           "id": "set-016-q23",
           "code": "S016-Q23",
           "tag": "illness",
-          "sentence": "When the yoghurt lid had ballooned, we threw it away, but one curious sip still caused a _____.",
+          "sentence": "Lucy left the party early because a _____ had started in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-016-q24",
           "code": "S016-Q24",
           "tag": "habits",
-          "sentence": "A _____ gift from Grandad was two tickets, so a friend could come too, not one.",
+          "sentence": "Uncle Ray’s _____ habit is to pay the whole bill and wave away thanks.",
           "answer": "generous"
         },
         {
           "id": "set-016-q25",
           "code": "S016-Q25",
           "tag": "illness",
-          "sentence": "The pharmacist asked about allergies before handing over the packed _____.",
+          "sentence": "Dad kept the _____ in its labelled bottle, away from the baby.",
           "answer": "medicine"
         }
       ]
@@ -3029,183 +3029,183 @@ window.CLOZE_BANK = {
         "id": "set-017-ex",
         "code": "S017-EX",
         "tag": "example",
-        "sentence": "A thin line of smoke rose from the village _____, the only sign that someone was home and cooking.",
-        "answer": "chimney"
+        "sentence": "The _____ rose until water covered the first estate step.",
+        "answer": "flood"
       },
       "items": [
         {
           "id": "set-017-q01",
           "code": "S017-Q01",
           "tag": "illness",
-          "sentence": "After the hill-walk above Sai Kung, Wendy could not straighten up immediately; she had a sore _____.",
+          "sentence": "The nurse asked Joel to point to the pain; it was a _____ in the back.",
           "answer": "backache"
         },
         {
           "id": "set-017-q02",
           "code": "S017-Q02",
           "tag": "disasters",
-          "sentence": "After the reservoir overflowed the spillway, a controlled but serious _____ reached the lower village.",
+          "sentence": "Sandbags stood by the shop, ready for another _____ of water.",
           "answer": "flood"
         },
         {
           "id": "set-017-q03",
           "code": "S017-Q03",
           "tag": "habits",
-          "sentence": "The scout leader used a story of her own first camp to _____ the homesick cub to stay until morning.",
+          "sentence": "Dad came to watch and cheer, hoping to _____ Victor from the front row.",
           "answer": "encourage"
         },
         {
           "id": "set-017-q04",
           "code": "S017-Q04",
           "tag": "illness",
-          "sentence": "The swimming coach told us to get out if chlorine began to irritate a _____.",
+          "sentence": "From the back row, a rough _____ from a throat cut the speech.",
           "answer": "cough"
         },
         {
           "id": "set-017-q05",
           "code": "S017-Q05",
           "tag": "disasters",
-          "sentence": "The hiking group turned back after a fresh _____ had taken the path away, leaving a drop.",
+          "sentence": "Vera heard the _____ before she saw the soil sliding down.",
           "answer": "landslide"
         },
         {
           "id": "set-017-q06",
           "code": "S017-Q06",
           "tag": "habits",
-          "sentence": "A _____ prefect is already at the gate when the first pupils arrive, not rushing out after them.",
+          "sentence": "Liam caught the earlier minibus to stay _____ and on time for the test.",
           "answer": "punctual"
         },
         {
           "id": "set-017-q07",
           "code": "S017-Q07",
           "tag": "illness",
-          "sentence": "Sweaty sheets and a burning face left no doubt that a _____ had arrived in the night.",
+          "sentence": "The clinic clocked a high temperature and sent Gary home with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-017-q08",
           "code": "S017-Q08",
           "tag": "disasters",
-          "sentence": "The children learned to save water early, because the _____ had already lasted a whole season with almost no rain.",
+          "sentence": "A _____ left the lotus pond with only a ring of dry mud.",
           "answer": "drought"
         },
         {
           "id": "set-017-q09",
           "code": "S017-Q09",
           "tag": "habits",
-          "sentence": "Yearbook editors meet on a _____ Monday slot in Room 4, and they keep that hour free all term.",
+          "sentence": "A _____ bus at the same time, 7:15, is the one Sara catches each week.",
           "answer": "regular"
         },
         {
           "id": "set-017-q10",
           "code": "S017-Q10",
           "tag": "habits",
-          "sentence": "Grandad says light _____ such as polishing shoes and watering plants keeps him useful at home.",
+          "sentence": "Ivan wore old clothes for the messy _____ of cleaning the oven.",
           "answer": "housework"
         },
         {
           "id": "set-017-q11",
           "code": "S017-Q11",
           "tag": "disasters",
-          "sentence": "When the flag stood straight out and roared, even a child could tell a _____ had arrived.",
+          "sentence": "The _____ made the estate flags snap hard in the wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-017-q12",
           "code": "S017-Q12",
           "tag": "habits",
-          "sentence": "A _____ grab for the falling ruler knocked the pencil case after it, which was worse.",
+          "sentence": "The soup splash was from _____ Lila, who spilled it from the ladle.",
           "answer": "clumsy"
         },
         {
           "id": "set-017-q13",
           "code": "S017-Q13",
           "tag": "illness",
-          "sentence": "The flute exam was postponed when a _____ made every note feel like a tap on the nerve.",
+          "sentence": "The school dentist found a small hole and warned of a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-017-q14",
           "code": "S017-Q14",
           "tag": "disasters",
-          "sentence": "An _____ under the mountains can still be felt as a long, soft roll on the coast.",
+          "sentence": "Nell watched the water ripple in the glass as an _____ shook the table.",
           "answer": "earthquake"
         },
         {
           "id": "set-017-q15",
           "code": "S017-Q15",
           "tag": "habits",
-          "sentence": "A wave at the tram was meant for Dad, but a surprised neighbour waved back, and the child felt _____.",
+          "sentence": "Hugh felt _____ about the ink stain on his shirt all morning.",
           "answer": "embarrassed"
         },
         {
           "id": "set-017-q16",
           "code": "S017-Q16",
           "tag": "illness",
-          "sentence": "When the thermometer rose and the muscles ached together, the doctor wrote “likely _____” on the note.",
+          "sentence": "Zoe spoke in a weak voice and said the _____ had not gone.",
           "answer": "flu"
         },
         {
           "id": "set-017-q17",
           "code": "S017-Q17",
           "tag": "disasters",
-          "sentence": "A _____ frost, rare here, blackened the market’s outdoor plants overnight.",
+          "sentence": "The storm damage was _____, and the hall could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-017-q18",
           "code": "S017-Q18",
           "tag": "habits",
-          "sentence": "The choir relies on a _____ librarian of scores, who notices if a folder is missing.",
+          "sentence": "A _____ child, Ruby was trusted to ring home when she would be late from club.",
           "answer": "responsible"
         },
         {
           "id": "set-017-q19",
           "code": "S017-Q19",
           "tag": "illness",
-          "sentence": "A long drink of very cold water after the race sat badly and turned into a cramping _____.",
+          "sentence": "The bumpy road and a full lunch left Jack with a _____ in his stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-017-q20",
           "code": "S017-Q20",
           "tag": "habits",
-          "sentence": "A _____ spine likes a straight chair and a stretch, not a whole evening curled over a screen.",
+          "sentence": "Fresh air, sleep, and a good lunch left Ben feeling _____.",
           "answer": "healthy"
         },
         {
           "id": "set-017-q21",
           "code": "S017-Q21",
           "tag": "habits",
-          "sentence": "When the lift was stuck between floors for a short, safe wait, a _____ passenger talked quietly, not shouted.",
+          "sentence": "The long lift wait needed a _____ attitude, and Tina had one.",
           "answer": "patient"
         },
         {
           "id": "set-017-q22",
           "code": "S017-Q22",
           "tag": "illness",
-          "sentence": "A calendar tick marked every dose, so no one would take the _____ twice by mistake.",
+          "sentence": "The clinic sent Nina home with a small bottle of _____.",
           "answer": "medicine"
         },
         {
           "id": "set-017-q23",
           "code": "S017-Q23",
           "tag": "disasters",
-          "sentence": "The temple counted a _____ of rice bags at the door, and issued a list, not a boast.",
+          "sentence": "The envelope held a _____ for the animal hospital fund.",
           "answer": "donation"
         },
         {
           "id": "set-017-q24",
           "code": "S017-Q24",
           "tag": "habits",
-          "sentence": "The _____ artist left free postcards on the stall, more than anyone had asked for.",
+          "sentence": "Ted gave the bigger room to a guest, a _____ choice.",
           "answer": "generous"
         },
         {
           "id": "set-017-q25",
           "code": "S017-Q25",
           "tag": "illness",
-          "sentence": "A skipped lunch before the inter-house quiz left the captain light-headed and then with a _____.",
+          "sentence": "A tight band of pain around Judy’s head meant a _____.",
           "answer": "headache"
         }
       ]
@@ -3217,183 +3217,183 @@ window.CLOZE_BANK = {
         "id": "set-018-ex",
         "code": "S018-EX",
         "tag": "example",
-        "sentence": "If you cannot manage the _____, a fork is on the side, but most of the class wanted to try again.",
-        "answer": "chopsticks"
+        "sentence": "Families avoided the slope after news of the _____.",
+        "answer": "landslide"
       },
       "items": [
         {
           "id": "set-018-q01",
           "code": "S018-Q01",
           "tag": "disasters",
-          "sentence": "The app sent an alert a few seconds before a mild _____ arrived, enough time to step away from the window.",
+          "sentence": "The ground gave a short shake, a small _____ under the hall.",
           "answer": "earthquake"
         },
         {
           "id": "set-018-q02",
           "code": "S018-Q02",
           "tag": "habits",
-          "sentence": "A _____ busker gave half the afternoon’s coins to the animal charity box beside him.",
+          "sentence": "A _____ classmate gave extra pencils from her own tin, more than needed.",
           "answer": "generous"
         },
         {
           "id": "set-018-q03",
           "code": "S018-Q03",
           "tag": "illness",
-          "sentence": "The aeroplane’s take-off plus a fizzy drink left the little cousin with a trapped-wind _____.",
+          "sentence": "Jane held her belly on the bench and waited for the _____ to pass.",
           "answer": "stomachache"
         },
         {
           "id": "set-018-q04",
           "code": "S018-Q04",
           "tag": "disasters",
-          "sentence": "The traffic after the signal was _____, a crawl that turned a ten-minute trip into an hour.",
+          "sentence": "Sam had _____ bruising on his arm and could not write neatly.",
           "answer": "severe"
         },
         {
           "id": "set-018-q05",
           "code": "S018-Q05",
           "tag": "habits",
-          "sentence": "When the bus jerked, a _____ hold on the pole was not enough, and he bumped the passenger beside him.",
+          "sentence": "Stan laughed at his own _____ mistake when he dropped the books.",
           "answer": "clumsy"
         },
         {
           "id": "set-018-q06",
           "code": "S018-Q06",
           "tag": "illness",
-          "sentence": "The hospital discharge bag included a new _____ and a leaflet in both Chinese and English.",
+          "sentence": "Sean asked if the _____ from the bottle could be taken with milk.",
           "answer": "medicine"
         },
         {
           "id": "set-018-q07",
           "code": "S018-Q07",
           "tag": "disasters",
-          "sentence": "A memorial _____ was given in a grandparent’s name, to the charity they had already loved.",
+          "sentence": "Eva helped carry a _____ of tins to the charity collection van.",
           "answer": "donation"
         },
         {
           "id": "set-018-q08",
           "code": "S018-Q08",
           "tag": "habits",
-          "sentence": "After tripping on the exact same step twice, the visitor gave an _____ laugh and held the rail.",
+          "sentence": "Tess smiled a shy, _____ smile after falling in the dance step.",
           "answer": "embarrassed"
         },
         {
           "id": "set-018-q09",
           "code": "S018-Q09",
           "tag": "illness",
-          "sentence": "The class project was delayed because the group leader was in bed with the _____.",
+          "sentence": "The whole family felt weak and worn out after Wendy brought the _____ home.",
           "answer": "flu"
         },
         {
           "id": "set-018-q10",
           "code": "S018-Q10",
           "tag": "habits",
-          "sentence": "A _____ cyclist who is in charge of the younger riders waits at every turning until the last one appears.",
+          "sentence": "Ken is _____ enough to be trusted with the register to the office.",
           "answer": "responsible"
         },
         {
           "id": "set-018-q11",
           "code": "S018-Q11",
           "tag": "habits",
-          "sentence": "A _____ pocket-money day on Friday teaches the twins to wait, because the day does not move.",
+          "sentence": "Zack is _____ with his vitamin; he takes it at breakfast every day.",
           "answer": "regular"
         },
         {
           "id": "set-018-q12",
           "code": "S018-Q12",
           "tag": "illness",
-          "sentence": "The school form requires a parent to report any _____ above thirty-eight degrees.",
+          "sentence": "Daisy could not stop feeling hot, even after the _____ was found.",
           "answer": "fever"
         },
         {
           "id": "set-018-q13",
           "code": "S018-Q13",
           "tag": "disasters",
-          "sentence": "A _____ filled the subway entrance, and staff stood at the top with a “closed — water inside” sign.",
+          "sentence": "A _____ left fish from the nullah on the estate path.",
           "answer": "flood"
         },
         {
           "id": "set-018-q14",
           "code": "S018-Q14",
           "tag": "habits",
-          "sentence": "The family “ten-minute tidy” is official _____: everyone picks a room and resets it.",
+          "sentence": "Mum smiled when she saw the _____ already done, floors and all.",
           "answer": "housework"
         },
         {
           "id": "set-018-q15",
           "code": "S018-Q15",
           "tag": "illness",
-          "sentence": "The upstairs renovation banging through the ceiling gave the librarian a persistent _____.",
+          "sentence": "Otto whispered, because talking loudly made the _____ in his head worse.",
           "answer": "headache"
         },
         {
           "id": "set-018-q16",
           "code": "S018-Q16",
           "tag": "disasters",
-          "sentence": "A concrete covering on the slope is there to stop a _____ from starting in a heavy rain.",
+          "sentence": "A _____ on the hillside made the hiking trail unsafe.",
           "answer": "landslide"
         },
         {
           "id": "set-018-q17",
           "code": "S018-Q17",
           "tag": "habits",
-          "sentence": "After two weeks of skipping rope before school, Mina felt fitter and more _____.",
+          "sentence": "Mum cooks simple meals that keep everyone _____ and full of energy.",
           "answer": "healthy"
         },
         {
           "id": "set-018-q18",
           "code": "S018-Q18",
           "tag": "illness",
-          "sentence": "After forgetting to brush at camp for two nights, a dull _____ reminded Celine of the habit.",
+          "sentence": "Rose kept a hand on her jaw all morning with a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-018-q19",
           "code": "S018-Q19",
           "tag": "disasters",
-          "sentence": "Little spinning dust clouds in the afternoon were only a sign; the real problem was the months-long _____ with no rain.",
+          "sentence": "Holly saw cracked soil in the park, a sign of the _____.",
           "answer": "drought"
         },
         {
           "id": "set-018-q20",
           "code": "S018-Q20",
           "tag": "habits",
-          "sentence": "The _____ quizmaster repeated the question once and then waited, giving thinking time.",
+          "sentence": "Joel was _____ enough to let Mum finish her call before asking.",
           "answer": "patient"
         },
         {
           "id": "set-018-q21",
           "code": "S018-Q21",
           "tag": "illness",
-          "sentence": "The pottery lesson made Louis lean over the wheel for too long, and he went home with a _____.",
+          "sentence": "Iris skipped the outing because a _____ had started in her back.",
           "answer": "backache"
         },
         {
           "id": "set-018-q22",
           "code": "S018-Q22",
           "tag": "disasters",
-          "sentence": "A _____ signal on the school website is the reason we pack an extra day of homework, just in case.",
+          "sentence": "Mum taped the windows before the _____ and its strong wind arrived.",
           "answer": "typhoon"
         },
         {
           "id": "set-018-q23",
           "code": "S018-Q23",
           "tag": "habits",
-          "sentence": "We should _____ a friend who failed a test to make a new plan, not to laugh or to pity.",
+          "sentence": "The coach’s talk was short: praise, then a push to _____ them.",
           "answer": "encourage"
         },
         {
           "id": "set-018-q24",
           "code": "S018-Q24",
           "tag": "illness",
-          "sentence": "Grandma’s evening _____ always started with a tickle and then a burst of air from her throat.",
+          "sentence": "Will whispered with a sore throat after a long morning of _____.",
           "answer": "cough"
         },
         {
           "id": "set-018-q25",
           "code": "S018-Q25",
           "tag": "habits",
-          "sentence": "The ferry timetable is tight, so only _____ passengers make the 7:10 sailing without a dash.",
+          "sentence": "Even in heavy rain, Kate was _____ and not late for choir.",
           "answer": "punctual"
         }
       ]
@@ -3405,183 +3405,183 @@ window.CLOZE_BANK = {
         "id": "set-019-ex",
         "code": "S019-EX",
         "tag": "example",
-        "sentence": "A kind _____ saved a seat and explained the homework before the bell.",
-        "answer": "classmate"
+        "sentence": "During the long _____, the soil in the pot pulled away from the sides.",
+        "answer": "drought"
       },
       "items": [
         {
           "id": "set-019-q01",
           "code": "S019-Q01",
           "tag": "habits",
-          "sentence": "The sideline voices that _____ the team are the ones saying “keep going”, not only “win”.",
+          "sentence": "Chris spoke soft, kind words to _____ a shy friend before the speech.",
           "answer": "encourage"
         },
         {
           "id": "set-019-q02",
           "code": "S019-Q02",
           "tag": "illness",
-          "sentence": "The ear reading made Uncle frown; tonight’s _____ had climbed a little since the afternoon check.",
+          "sentence": "Mum kept checking the thermometer through the night of Ivan’s _____.",
           "answer": "fever"
         },
         {
           "id": "set-019-q03",
           "code": "S019-Q03",
           "tag": "disasters",
-          "sentence": "The rooftop door was locked before the _____, so no one would be caught in the tropical gale up there.",
+          "sentence": "A tropical storm, the _____ brought hours of fierce wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-019-q04",
           "code": "S019-Q04",
           "tag": "habits",
-          "sentence": "Mum likes a _____ piano tuner, one who arrives at the booked time and does not leave us waiting.",
+          "sentence": "The sign on the club door thanks members who are _____ and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-019-q05",
           "code": "S019-Q05",
           "tag": "illness",
-          "sentence": "After wearing tight swimming goggles for the whole gala, Ivo peeled them off and felt a _____.",
+          "sentence": "The nurse told Lila to rest in a dark room with her _____ in the head.",
           "answer": "headache"
         },
         {
           "id": "set-019-q06",
           "code": "S019-Q06",
           "tag": "disasters",
-          "sentence": "The campsite was evacuated when a _____ began to cover the grassy pitches beside the stream.",
+          "sentence": "The ground floor stayed closed until the _____ went down.",
           "answer": "flood"
         },
         {
           "id": "set-019-q07",
           "code": "S019-Q07",
           "tag": "habits",
-          "sentence": "The park’s _____ lawn-mowing is done each first Wednesday, and the noise is expected.",
+          "sentence": "The same routine, at the same time, keeps Vera’s days _____.",
           "answer": "regular"
         },
         {
           "id": "set-019-q08",
           "code": "S019-Q08",
           "tag": "illness",
-          "sentence": "The clinic pamphlet said a pain when biting hard food is often the start of a _____.",
+          "sentence": "After the fall, one tooth felt loose and brought a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-019-q09",
           "code": "S019-Q09",
           "tag": "disasters",
-          "sentence": "The _____ of hillside soil moved faster than it looked, so the valley sirens were sounded in time.",
+          "sentence": "The road cut was brown and raw after the _____ of soil and rocks.",
           "answer": "landslide"
         },
         {
           "id": "set-019-q10",
           "code": "S019-Q10",
           "tag": "habits",
-          "sentence": "A leaking detergent bottle made the laundry corner messy, so an extra piece of _____ was needed.",
+          "sentence": "Karl set a timer for twenty minutes of _____, starting with the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-019-q11",
           "code": "S019-Q11",
           "tag": "illness",
-          "sentence": "After the birthday cake and the ice cream and the sweets, the honoured guest was quiet with a _____.",
+          "sentence": "A cold drink too fast gave Ben a short _____ in the stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-019-q12",
           "code": "S019-Q12",
           "tag": "disasters",
-          "sentence": "A _____ warning from the Observatory means the situation is serious, not a casual change of plan.",
+          "sentence": "The heat in the playground was _____, so break could not last long.",
           "answer": "severe"
         },
         {
           "id": "set-019-q13",
           "code": "S019-Q13",
           "tag": "habits",
-          "sentence": "Being _____ for the class tablet includes handing it back charged, not empty.",
+          "sentence": "Mr Wong picked Maya for the duty roster because she is _____.",
           "answer": "responsible"
         },
         {
           "id": "set-019-q14",
           "code": "S019-Q14",
           "tag": "illness",
-          "sentence": "When the syrup tasted bitter, a small piece of fruit afterwards made the _____ easier to accept.",
+          "sentence": "Grandma measured the _____ with the little spoon from the box.",
           "answer": "medicine"
         },
         {
           "id": "set-019-q15",
           "code": "S019-Q15",
           "tag": "disasters",
-          "sentence": "The school fair’s lucky-draw money became a _____, announced on the board with a total and a thank-you.",
+          "sentence": "A small _____ of coins still helped the toy fund grow.",
           "answer": "donation"
         },
         {
           "id": "set-019-q16",
           "code": "S019-Q16",
           "tag": "habits",
-          "sentence": "A _____ lunch line at the canteen now offers salad and soup beside the noodles.",
+          "sentence": "Leo skipped the third packet of crisps to stay _____ and fit.",
           "answer": "healthy"
         },
         {
           "id": "set-019-q17",
           "code": "S019-Q17",
           "tag": "illness",
-          "sentence": "Grandma paused on the estate staircase, rubbing the middle of her back; the climb had triggered a _____.",
+          "sentence": "Mum saw Liam holding his back and knew it was a _____.",
           "answer": "backache"
         },
         {
           "id": "set-019-q18",
           "code": "S019-Q18",
           "tag": "disasters",
-          "sentence": "During the _____, even the ditches that usually held tadpoles were pale and empty.",
+          "sentence": "No rain for weeks turned a dry spell into a real _____.",
           "answer": "drought"
         },
         {
           "id": "set-019-q19",
           "code": "S019-Q19",
           "tag": "habits",
-          "sentence": "A _____ stitcher unpicked the line carefully, rather than pulling and tearing the cloth.",
+          "sentence": "Miss Lee praised Iris for being _____ and not rushing a classmate who read slowly.",
           "answer": "patient"
         },
         {
           "id": "set-019-q20",
           "code": "S019-Q20",
           "tag": "habits",
-          "sentence": "The _____ host piled the table so high that every guest was asked to take leftovers home.",
+          "sentence": "Will bought two books and left one in the box, quietly _____ and ready to share.",
           "answer": "generous"
         },
         {
           "id": "set-019-q21",
           "code": "S019-Q21",
           "tag": "disasters",
-          "sentence": "During the _____, the ground itself shook so hard that the classroom lights swung and books fell.",
+          "sentence": "After an _____, the class waited quietly for the ground to stop shaking.",
           "answer": "earthquake"
         },
         {
           "id": "set-019-q22",
           "code": "S019-Q22",
           "tag": "habits",
-          "sentence": "The _____ cook cracked an egg on the rim and lost half of it down the outside of the bowl.",
+          "sentence": "A _____ elbow knocked the display cards onto the floor.",
           "answer": "clumsy"
         },
         {
           "id": "set-019-q23",
           "code": "S019-Q23",
           "tag": "illness",
-          "sentence": "A poorly ventilated music practice room left the pianist with a bothersome _____.",
+          "sentence": "Sara put a hand over her mouth after a dry _____.",
           "answer": "cough"
         },
         {
           "id": "set-019-q24",
           "code": "S019-Q24",
           "tag": "habits",
-          "sentence": "The prize was handed over, then politely taken back — wrong name — and both pupils looked _____.",
+          "sentence": "When his secret plan was read out, Victor looked at the floor, shy and _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-019-q25",
           "code": "S019-Q25",
           "tag": "illness",
-          "sentence": "After the crowded concert, several neighbours texted that they had come down with the _____.",
+          "sentence": "Ruby drank soup slowly, still aching all over from the _____.",
           "answer": "flu"
         }
       ]
@@ -3593,183 +3593,183 @@ window.CLOZE_BANK = {
         "id": "set-020-ex",
         "code": "S020-EX",
         "tag": "example",
-        "sentence": "The scout checked the _____ twice before leading the group off the marked path.",
-        "answer": "compass"
+        "sentence": "A brief _____ as the ground shook made the hanging keys in the office clink.",
+        "answer": "earthquake"
       },
       "items": [
         {
           "id": "set-020-q01",
           "code": "S020-Q01",
           "tag": "illness",
-          "sentence": "The night dose of _____ was kept beside a glass of water and far from the vitamins.",
+          "sentence": "The pink liquid _____ in the bottle had a fruit taste, and Hugo took it.",
           "answer": "medicine"
         },
         {
           "id": "set-020-q02",
           "code": "S020-Q02",
           "tag": "disasters",
-          "sentence": "A _____ made the soil so hard that the spade rang, and planting had to wait for a promised rain.",
+          "sentence": "The _____ made the football pitch hard, pale and dry.",
           "answer": "drought"
         },
         {
           "id": "set-020-q03",
           "code": "S020-Q03",
           "tag": "habits",
-          "sentence": "The doctor was pleased with _____ blood-test results after the family changed their oil and salt habits.",
+          "sentence": "The clinic talk was about _____ hearts, daily walks, and less salt.",
           "answer": "healthy"
         },
         {
           "id": "set-020-q04",
           "code": "S020-Q04",
           "tag": "illness",
-          "sentence": "When Derek tried to pick up the fallen basketball, a sudden _____ stopped him halfway.",
+          "sentence": "Kate put a warm pack on her back to ease the _____.",
           "answer": "backache"
         },
         {
           "id": "set-020-q05",
           "code": "S020-Q05",
           "tag": "disasters",
-          "sentence": "Books stepped forward on the shelf during the _____, as if they had tried to walk.",
+          "sentence": "Books slid forward on the shelf when an _____ shook the library.",
           "answer": "earthquake"
         },
         {
           "id": "set-020-q06",
           "code": "S020-Q06",
           "tag": "habits",
-          "sentence": "The _____ first-aider kept the injured pupil still and calm until the adult arrived, without fuss.",
+          "sentence": "Liam sat _____ on the bench, waiting for his turn in the game.",
           "answer": "patient"
         },
         {
           "id": "set-020-q07",
           "code": "S020-Q07",
           "tag": "illness",
-          "sentence": "When pollen drifted across the football pitch, Ray had to leave the game after a fit of _____.",
+          "sentence": "The teacher stopped talking when a _____ from a throat came from the corridor.",
           "answer": "cough"
         },
         {
           "id": "set-020-q08",
           "code": "S020-Q08",
           "tag": "habits",
-          "sentence": "A _____ child emptied the whole coin jar into the disaster-relief box, and did not keep “just a little”.",
+          "sentence": "The _____ family cooked extra rice for the neighbours after the blackout.",
           "answer": "generous"
         },
         {
           "id": "set-020-q09",
           "code": "S020-Q09",
           "tag": "illness",
-          "sentence": "A lesson on reading food labels began with a story of a leftover prawn and a midnight _____.",
+          "sentence": "Amy could not do sit-ups in PE because of a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-020-q10",
           "code": "S020-Q10",
           "tag": "habits",
-          "sentence": "A _____ turn with the camera strap swept a cup towards the table’s edge.",
+          "sentence": "Wade put the tray down too fast and, in a _____ way, tipped it.",
           "answer": "clumsy"
         },
         {
           "id": "set-020-q11",
           "code": "S020-Q11",
           "tag": "disasters",
-          "sentence": "The toothache became _____ after midnight, and the emergency dentist was called, not delayed.",
+          "sentence": "A _____ storm warning went out, and outdoor clubs were cancelled.",
           "answer": "severe"
         },
         {
           "id": "set-020-q12",
           "code": "S020-Q12",
           "tag": "habits",
-          "sentence": "When a love of a “babyish” cartoon was discovered, the older cousin pretended not to be _____.",
+          "sentence": "Yuki felt _____ because she had waved at the wrong parent.",
           "answer": "embarrassed"
         },
         {
           "id": "set-020-q13",
           "code": "S020-Q13",
           "tag": "illness",
-          "sentence": "A week of aching legs, a changing temperature and no appetite is a typical course of the _____.",
+          "sentence": "Feverish shivers and all-over aches pointed to the _____.",
           "answer": "flu"
         },
         {
           "id": "set-020-q14",
           "code": "S020-Q14",
           "tag": "disasters",
-          "sentence": "A _____ of tinned food must still be in date; the volunteers checked every tin, kindly and firmly.",
+          "sentence": "The club organised a _____ of old instruments as a gift of help.",
           "answer": "donation"
         },
         {
           "id": "set-020-q15",
           "code": "S020-Q15",
           "tag": "habits",
-          "sentence": "A _____ neighbour was given the spare key, because everyone knew it would be used only when asked.",
+          "sentence": "Sam locked the music room and hung up the key, as a _____ helper should.",
           "answer": "responsible"
         },
         {
           "id": "set-020-q16",
           "code": "S020-Q16",
           "tag": "illness",
-          "sentence": "A flushed neck and a hot brow convinced the coach to bench the runner for a likely _____.",
+          "sentence": "Faith’s skin felt hot to the touch, a clear sign of a _____.",
           "answer": "fever"
         },
         {
           "id": "set-020-q17",
           "code": "S020-Q17",
           "tag": "disasters",
-          "sentence": "Fishermen came into port early, reading the sky for a _____ and trusting the official wind warning.",
+          "sentence": "During the _____, the wind was too strong for umbrellas.",
           "answer": "typhoon"
         },
         {
           "id": "set-020-q18",
           "code": "S020-Q18",
           "tag": "habits",
-          "sentence": "A teacher’s calm “try that again” can _____ a pupil who was about to put the pen down.",
+          "sentence": "Kind words at half-time helped _____ the team to try again.",
           "answer": "encourage"
         },
         {
           "id": "set-020-q19",
           "code": "S020-Q19",
           "tag": "illness",
-          "sentence": "The teacher dimmed the projector because the flicker was causing a _____ in the back row.",
+          "sentence": "Stan held his brow and waited for the _____ to fade.",
           "answer": "headache"
         },
         {
           "id": "set-020-q20",
           "code": "S020-Q20",
           "tag": "habits",
-          "sentence": "The science visit required a _____ group at the museum entrance, because the guide would not wait.",
+          "sentence": "Nora stood by the court at the promised time, as _____ as ever.",
           "answer": "punctual"
         },
         {
           "id": "set-020-q21",
           "code": "S020-Q21",
           "tag": "habits",
-          "sentence": "A _____ vocab quiz every Friday means no one can leave revision until the night before a test.",
+          "sentence": "Eric joined a _____ Saturday class that always keeps the same hour.",
           "answer": "regular"
         },
         {
           "id": "set-020-q22",
           "code": "S020-Q22",
           "tag": "illness",
-          "sentence": "Hot pot broth was tasty, yet the temperature change on one tooth set off a fierce _____.",
+          "sentence": "Tess could not sleep on that side because of a _____ in one tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-020-q23",
           "code": "S020-Q23",
           "tag": "disasters",
-          "sentence": "A night _____ in the old town left canoes tied where motorbikes are usually parked.",
+          "sentence": "Pearl watched the _____ creep towards the school gate in brown water.",
           "answer": "flood"
         },
         {
           "id": "set-020-q24",
           "code": "S020-Q24",
           "tag": "habits",
-          "sentence": "When the lift was out, carrying the washed clothes up the stairs became the hardest part of the _____.",
+          "sentence": "Taking out the bin and mopping the kitchen finished Holly’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-020-q25",
           "code": "S020-Q25",
           "tag": "disasters",
-          "sentence": "After the _____, workers cleared rocks one by one from the buried lane, for days.",
+          "sentence": "Engineers checked the slope the morning after the _____.",
           "answer": "landslide"
         }
       ]
@@ -3781,183 +3781,183 @@ window.CLOZE_BANK = {
         "id": "set-021-ex",
         "code": "S021-EX",
         "tag": "example",
-        "sentence": "It was _____ of Ken to go back for the younger child, even though he was tired too.",
-        "answer": "courageous"
+        "sentence": "Before the race, Miss Chan used kind words to _____ Ken.",
+        "answer": "encourage"
       },
       "items": [
         {
           "id": "set-021-q01",
           "code": "S021-Q01",
           "tag": "disasters",
-          "sentence": "A _____ shortage of rice in the story was a plot point, and also a picture of how serious “shortage” can be.",
+          "sentence": "The pain was so _____ that Jane could not finish the meal.",
           "answer": "severe"
         },
         {
           "id": "set-021-q02",
           "code": "S021-Q02",
           "tag": "habits",
-          "sentence": "The older prefect came back to _____ the juniors before their first oral, with a simple “you’re ready”.",
+          "sentence": "The teacher did not scold; she wanted to _____ Wendy with kind words instead.",
           "answer": "encourage"
         },
         {
           "id": "set-021-q03",
           "code": "S021-Q03",
           "tag": "illness",
-          "sentence": "When the class ate hard sweets in secret, one of them paid later with a midnight _____.",
+          "sentence": "A piece of popcorn stuck by the tooth and started a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-021-q04",
           "code": "S021-Q04",
           "tag": "disasters",
-          "sentence": "The pupil’s prize money, given on as a _____, was a choice the teacher quietly admired.",
+          "sentence": "A _____ in kind, not money, filled the goods box by the office.",
           "answer": "donation"
         },
         {
           "id": "set-021-q05",
           "code": "S021-Q05",
           "tag": "habits",
-          "sentence": "A _____ timekeeper started the stopwatch at the official signal, not “almost then”.",
+          "sentence": "Dad said being _____ and on time matters more than running in late.",
           "answer": "punctual"
         },
         {
           "id": "set-021-q06",
           "code": "S021-Q06",
           "tag": "illness",
-          "sentence": "The school office asked for a parent’s note if a child stayed home with the _____.",
+          "sentence": "Maya cancelled the sleepover because the _____ made her too weak.",
           "answer": "flu"
         },
         {
           "id": "set-021-q07",
           "code": "S021-Q07",
           "tag": "disasters",
-          "sentence": "Because a _____ was coming, the market shut at noon, and boards were already going up over the stalls.",
+          "sentence": "The roof sheets lifted a little in the wind of the _____.",
           "answer": "typhoon"
         },
         {
           "id": "set-021-q08",
           "code": "S021-Q08",
           "tag": "habits",
-          "sentence": "The tram on this line keeps a _____ two-minute gap at peak hours, train after train.",
+          "sentence": "Every morning, without fail, Cora does a _____ set of stretches.",
           "answer": "regular"
         },
         {
           "id": "set-021-q09",
           "code": "S021-Q09",
           "tag": "illness",
-          "sentence": "The trampoline was off limits for an hour, because bouncing would only worsen a fresh _____.",
+          "sentence": "After spicy noodles, Leo sat very still with a _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-021-q10",
           "code": "S021-Q10",
           "tag": "habits",
-          "sentence": "The cookery-club aprons were brought home to wash, an unexpected addition to the weekend _____.",
+          "sentence": "Mark prefers quiet _____, like folding towels in his room.",
           "answer": "housework"
         },
         {
           "id": "set-021-q11",
           "code": "S021-Q11",
           "tag": "habits",
-          "sentence": "A _____ listener lets a friend finish the story, even when the ending seems obvious.",
+          "sentence": "A _____ person, Kate did not hurry the old man at the ticket machine.",
           "answer": "patient"
         },
         {
           "id": "set-021-q12",
           "code": "S021-Q12",
           "tag": "illness",
-          "sentence": "After rowing at the harbour sports centre, Siu Ming lay on the mat because a _____ had settled in his lower back.",
+          "sentence": "At bedtime, Ryan could not get comfortable because of a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-021-q13",
           "code": "S021-Q13",
           "tag": "disasters",
-          "sentence": "Children were told not to walk through the _____, because moving water can hide a deep kerb.",
+          "sentence": "Chairs were lifted onto tables in case the _____ water reached the hall.",
           "answer": "flood"
         },
         {
           "id": "set-021-q14",
           "code": "S021-Q14",
           "tag": "habits",
-          "sentence": "The _____ teacher bought a spare set of colouring pencils for anyone who had none.",
+          "sentence": "Zack is _____ with praise, too, and always gives extra kind words.",
           "answer": "generous"
         },
         {
           "id": "set-021-q15",
           "code": "S021-Q15",
           "tag": "illness",
-          "sentence": "The overnight coach was quiet except for one passenger’s repeated _____.",
+          "sentence": "Vera’s throat felt tight, and each _____ sounded painful.",
           "answer": "cough"
         },
         {
           "id": "set-021-q16",
           "code": "S021-Q16",
           "tag": "disasters",
-          "sentence": "A hairline crack in the slope wall was photographed daily, in case a _____ was beginning.",
+          "sentence": "A night of rain loosened the hill, and a _____ followed.",
           "answer": "landslide"
         },
         {
           "id": "set-021-q17",
           "code": "S021-Q17",
           "tag": "habits",
-          "sentence": "Because the shoelace was undone, a _____ trip on the playground ended with grazed palms, not blame.",
+          "sentence": "The class gave _____ Polly more space in the lab so she would not knock things.",
           "answer": "clumsy"
         },
         {
           "id": "set-021-q18",
           "code": "S021-Q18",
           "tag": "illness",
-          "sentence": "After the wet walk in the rain, Katy went to bed early, and by dawn a _____ had set in.",
+          "sentence": "The teacher sent Karl to the nurse because his face looked hot with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-021-q19",
           "code": "S021-Q19",
           "tag": "disasters",
-          "sentence": "The city’s fountains were switched off as a visible sign that a _____ was being taken seriously.",
+          "sentence": "Farmers looked at the empty sky during the _____, hoping for rain.",
           "answer": "drought"
         },
         {
           "id": "set-021-q20",
           "code": "S021-Q20",
           "tag": "habits",
-          "sentence": "A loud yawn in the quiet concert was impossible to hide, and its owner sat very still and _____.",
+          "sentence": "The microphone was still on, and Chris felt _____ about the private remark.",
           "answer": "embarrassed"
         },
         {
           "id": "set-021-q21",
           "code": "S021-Q21",
           "tag": "illness",
-          "sentence": "A long queue in the noon sun outside the ticketing office produced a throbbing _____.",
+          "sentence": "Too much screen time at the shop window left Nell with a _____ in the head.",
           "answer": "headache"
         },
         {
           "id": "set-021-q22",
           "code": "S021-Q22",
           "tag": "disasters",
-          "sentence": "A historic _____ is marked on the city’s timeline, with a date and a remembered sway of buildings.",
+          "sentence": "The hanging light swung as an _____ shook the floor under the hall.",
           "answer": "earthquake"
         },
         {
           "id": "set-021-q23",
           "code": "S021-Q23",
           "tag": "habits",
-          "sentence": "The project needed a _____ timekeeper, trusted to stop the group and move to the next task.",
+          "sentence": "The _____ pupil, on duty, stayed until the last chair was stacked.",
           "answer": "responsible"
         },
         {
           "id": "set-021-q24",
           "code": "S021-Q24",
           "tag": "illness",
-          "sentence": "A reminder on Mum’s phone chimed at eight and at eight, evening, for the twice-daily _____.",
+          "sentence": "The teacher checked the expiry date on Tina’s labelled _____ before opening it.",
           "answer": "medicine"
         },
         {
           "id": "set-021-q25",
           "code": "S021-Q25",
           "tag": "habits",
-          "sentence": "A _____ colour in the cheeks after a walk is often a good sign, not a fever.",
+          "sentence": "Owen looked fit and _____ after the camp week of hiking and sleep.",
           "answer": "healthy"
         }
       ]
@@ -3969,183 +3969,183 @@ window.CLOZE_BANK = {
         "id": "set-022-ex",
         "code": "S022-EX",
         "tag": "example",
-        "sentence": "The spare paper is in the tall _____ beside the window, on the middle shelf, not on the floor.",
-        "answer": "cupboard"
+        "sentence": "The _____ pain after the fall meant Ken could not climb the stairs.",
+        "answer": "severe"
       },
       "items": [
         {
           "id": "set-022-q01",
           "code": "S022-Q01",
           "tag": "habits",
-          "sentence": "After mistaking the deputy head for a parent helper, the new pupil felt _____ for a full period.",
+          "sentence": "Zoe hid her red face, _____ after the unexpected compliment.",
           "answer": "embarrassed"
         },
         {
           "id": "set-022-q02",
           "code": "S022-Q02",
           "tag": "illness",
-          "sentence": "After forgetting his scarf on the windy pier, Harry woke with a rough _____ and a sore throat.",
+          "sentence": "A hoarse _____ forced Eric to sip water during the talk.",
           "answer": "cough"
         },
         {
           "id": "set-022-q03",
           "code": "S022-Q03",
           "tag": "disasters",
-          "sentence": "A _____ map on the news showed which streets were under water and which were only wet.",
+          "sentence": "A night of overflowing drains left a _____ in the basement car park.",
           "answer": "flood"
         },
         {
           "id": "set-022-q04",
           "code": "S022-Q04",
           "tag": "habits",
-          "sentence": "A _____ shop helper does not leave the till to chat, because that is the duty they accepted.",
+          "sentence": "Jack was in charge of watering the class plants, and he was _____.",
           "answer": "responsible"
         },
         {
           "id": "set-022-q05",
           "code": "S022-Q05",
           "tag": "illness",
-          "sentence": "The clinic poster showed how to read a thermometer if you suspect a _____.",
+          "sentence": "Holly drank water slowly, still burning with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-022-q06",
           "code": "S022-Q06",
           "tag": "disasters",
-          "sentence": "The village’s night watch is about fire, and also about listening for a _____ on the wet hill.",
+          "sentence": "Boulders from the _____ sat in the middle of the lane.",
           "answer": "landslide"
         },
         {
           "id": "set-022-q07",
           "code": "S022-Q07",
           "tag": "habits",
-          "sentence": "Grandad stays _____ by walking the estate and eating greens, even on busy days.",
+          "sentence": "A _____ lunch in the canteen means rice, vegetables, and some meat.",
           "answer": "healthy"
         },
         {
           "id": "set-022-q08",
           "code": "S022-Q08",
           "tag": "illness",
-          "sentence": "When the neighbour’s karaoke went past ten, Dad appeared in the corridor holding his head with a _____.",
+          "sentence": "Wade stopped reading; the small print had brought on a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-022-q09",
           "code": "S022-Q09",
           "tag": "disasters",
-          "sentence": "A _____ year is remembered by the date the reservoir first showed its “usually drowned” trees.",
+          "sentence": "After the _____, the first rain was a relief for the dry fields.",
           "answer": "drought"
         },
         {
           "id": "set-022-q10",
           "code": "S022-Q10",
           "tag": "habits",
-          "sentence": "When the website loaded slowly on camp Wi-Fi, only the _____ pupils did not hammer refresh.",
+          "sentence": "Ryan kept a _____ watch on the pot, waiting calmly, and did not rush the heat.",
           "answer": "patient"
         },
         {
           "id": "set-022-q11",
           "code": "S022-Q11",
           "tag": "illness",
-          "sentence": "The orthodontist loosened a wire that had been pressing and causing an unfair _____.",
+          "sentence": "Yuki asked for soft rice only; the _____ made chewing hard.",
           "answer": "toothache"
         },
         {
           "id": "set-022-q12",
           "code": "S022-Q12",
           "tag": "disasters",
-          "sentence": "When the chandelier ticked like a clock, it was the leftover motion of a passing _____.",
+          "sentence": "Hugh grabbed his little brother when the _____ shook the kitchen.",
           "answer": "earthquake"
         },
         {
           "id": "set-022-q13",
           "code": "S022-Q13",
           "tag": "habits",
-          "sentence": "Dad’s job on Sports Day is to _____, not to shout at a missed baton.",
+          "sentence": "A small clap and kind words from Mum were enough to _____ Ruby up the wall.",
           "answer": "encourage"
         },
         {
           "id": "set-022-q14",
           "code": "S022-Q14",
           "tag": "illness",
-          "sentence": "Grandma kept extra soup in the freezer each winter, ready for the first case of _____.",
+          "sentence": "Even lifting a book felt hard while Sam was weak with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-022-q15",
           "code": "S022-Q15",
           "tag": "disasters",
-          "sentence": "The storm surge was _____, pouring over the usual sea wall, which is why the front shops were empty.",
+          "sentence": "The leak looked _____; water could not be stopped with one cloth.",
           "answer": "severe"
         },
         {
           "id": "set-022-q16",
           "code": "S022-Q16",
           "tag": "habits",
-          "sentence": "When every member of the project group is _____, the meeting can begin as planned.",
+          "sentence": "Pearl checked the timetable twice and was _____ for the ferry on time.",
           "answer": "punctual"
         },
         {
           "id": "set-022-q17",
           "code": "S022-Q17",
           "tag": "illness",
-          "sentence": "When exam stress sat like a stone in her middle, the counsellor also asked about a possible _____.",
+          "sentence": "Eva’s stomach made a loud noise, then a real _____ began.",
           "answer": "stomachache"
         },
         {
           "id": "set-022-q18",
           "code": "S022-Q18",
           "tag": "disasters",
-          "sentence": "Even a small _____ of coins was listed on the board, because many small gifts still make a useful total.",
+          "sentence": "Mum wrote a cheque as a _____ to the library repair fund.",
           "answer": "donation"
         },
         {
           "id": "set-022-q19",
           "code": "S022-Q19",
           "tag": "habits",
-          "sentence": "Grandad writes a _____ journal page each night; the notebook has no missing dates this month.",
+          "sentence": "The library stamp shows Gary’s _____ Friday visits, week after week.",
           "answer": "regular"
         },
         {
           "id": "set-022-q20",
           "code": "S022-Q20",
           "tag": "habits",
-          "sentence": "Rita put on music and finished the ironing pile, her least favourite but fairest share of the _____.",
+          "sentence": "The Saturday plan was simple: homework first, then _____ like mopping.",
           "answer": "housework"
         },
         {
           "id": "set-022-q21",
           "code": "S022-Q21",
           "tag": "disasters",
-          "sentence": "The power flickered as the _____’s wind brought down a branch onto a line, not because of a flood.",
+          "sentence": "Liam heard the _____ warning and packed a torch before the wind rose.",
           "answer": "typhoon"
         },
         {
           "id": "set-022-q22",
           "code": "S022-Q22",
           "tag": "habits",
-          "sentence": "The _____ librarian’s assistant bumped the returns trolley into the doorframe, books sliding.",
+          "sentence": "Carl dropped his chopsticks twice and sighed at how _____ that looked.",
           "answer": "clumsy"
         },
         {
           "id": "set-022-q23",
           "code": "S022-Q23",
           "tag": "illness",
-          "sentence": "The doctor changed the _____ after the first kind made the child too sleepy.",
+          "sentence": "Joel packed the bottle of _____ in a zip bag for the overnight trip.",
           "answer": "medicine"
         },
         {
           "id": "set-022-q24",
           "code": "S022-Q24",
           "tag": "habits",
-          "sentence": "A _____ cousin shared the prize chocolates until the box was empty, happily.",
+          "sentence": "Vera gave away her last sticker, which felt especially _____.",
           "answer": "generous"
         },
         {
           "id": "set-022-q25",
           "code": "S022-Q25",
           "tag": "illness",
-          "sentence": "Miss Cheuk changed her office chair after a week of evening marking had given her a constant _____.",
+          "sentence": "Nora stopped sweeping; the _____ in her back had grown worse.",
           "answer": "backache"
         }
       ]
@@ -4157,183 +4157,183 @@ window.CLOZE_BANK = {
         "id": "set-023-ex",
         "code": "S023-EX",
         "tag": "example",
-        "sentence": "A _____ pupil asked how the machine worked, and the visit became a real lesson, not only a look.",
-        "answer": "curious"
+        "sentence": "A _____ of packed unused nappies went with other baby things.",
+        "answer": "donation"
       },
       "items": [
         {
           "id": "set-023-q01",
           "code": "S023-Q01",
           "tag": "illness",
-          "sentence": "A clearly printed expiry date meant last year’s leftover _____ had to go to the pharmacy bin, not the mouth.",
+          "sentence": "A note on the fridge listed the dose times for Iris’s _____.",
           "answer": "medicine"
         },
         {
           "id": "set-023-q02",
           "code": "S023-Q02",
           "tag": "disasters",
-          "sentence": "An _____ drill at home is as useful as one at school: know the table, know the meeting place.",
+          "sentence": "A longer _____ shook the ground, and people left the shop.",
           "answer": "earthquake"
         },
         {
           "id": "set-023-q03",
           "code": "S023-Q03",
           "tag": "habits",
-          "sentence": "A _____ pass of the serving spoon left rice on the tablecloth in a neat, unlucky line.",
+          "sentence": "A _____ turn in the aisle knocked a pile of exercise books.",
           "answer": "clumsy"
         },
         {
           "id": "set-023-q04",
           "code": "S023-Q04",
           "tag": "illness",
-          "sentence": "During the scout tent-pitching practice, Kelly twisted slightly and felt a sharp _____ across her back.",
+          "sentence": "After shopping, Ted sat on a bench; his back hurt with a _____.",
           "answer": "backache"
         },
         {
           "id": "set-023-q05",
           "code": "S023-Q05",
           "tag": "disasters",
-          "sentence": "A _____ allergic reaction is why the canteen keeps the emergency kit, and why labels matter.",
+          "sentence": "Amy stayed home because the pain was _____ and rest was needed.",
           "answer": "severe"
         },
         {
           "id": "set-023-q06",
           "code": "S023-Q06",
           "tag": "habits",
-          "sentence": "The _____ farmer left a crate of extra vegetables at the community fridge, unmarked.",
+          "sentence": "A _____ offer of a free lift home saved Eric a long walk.",
           "answer": "generous"
         },
         {
           "id": "set-023-q07",
           "code": "S023-Q07",
           "tag": "illness",
-          "sentence": "A sour smell from the lunch-box prawns should have been a warning; the _____ arrived at two o’clock.",
+          "sentence": "Owen asked to go home, pressing his tummy through a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-023-q08",
           "code": "S023-Q08",
           "tag": "disasters",
-          "sentence": "The company-matched _____ doubled what the staff had already put in the box.",
+          "sentence": "The poster asked for a _____ of warm socks for the shelter.",
           "answer": "donation"
         },
         {
           "id": "set-023-q09",
           "code": "S023-Q09",
           "tag": "habits",
-          "sentence": "The writing club exists to _____ new stories, especially the unfinished, brave ones.",
+          "sentence": "The class wrote kind notes to _____ the choir before the festival.",
           "answer": "encourage"
         },
         {
           "id": "set-023-q10",
           "code": "S023-Q10",
           "tag": "habits",
-          "sentence": "The morning assembly hymn sounds weaker if the _____ pupils are few and the late ones are still on the stairs.",
+          "sentence": "The class elected Will timekeeper because he is always _____ and on time.",
           "answer": "punctual"
         },
         {
           "id": "set-023-q11",
           "code": "S023-Q11",
           "tag": "disasters",
-          "sentence": "A _____ closed the tunnel approach when mud sloughed off the cutting and covered the verge.",
+          "sentence": "The farm wall broke when a _____ of earth hit it.",
           "answer": "landslide"
         },
         {
           "id": "set-023-q12",
           "code": "S023-Q12",
           "tag": "habits",
-          "sentence": "The swimming club bills a _____ fee on the first of the month, always the same date.",
+          "sentence": "Daisy and Dad have a _____ chess time each Sunday after lunch.",
           "answer": "regular"
         },
         {
           "id": "set-023-q13",
           "code": "S023-Q13",
           "tag": "illness",
-          "sentence": "The new glasses were slightly wrong, and a week of wearing them brought daily afternoon _____.",
+          "sentence": "A sudden _____ made Polly sit down and cover her head.",
           "answer": "headache"
         },
         {
           "id": "set-023-q14",
           "code": "S023-Q14",
           "tag": "disasters",
-          "sentence": "Farmers stored fodder early, fearing a _____ would leave the pastures bare by late summer.",
+          "sentence": "The city used less fountain water because of the dry _____.",
           "answer": "drought"
         },
         {
           "id": "set-023-q15",
           "code": "S023-Q15",
           "tag": "habits",
-          "sentence": "A spring-clean Saturday added curtain-washing to the usual _____, and the flat looked brighter.",
+          "sentence": "Otto soaked the dirty cloths before the rest of the _____, then mopped.",
           "answer": "housework"
         },
         {
           "id": "set-023-q16",
           "code": "S023-Q16",
           "tag": "illness",
-          "sentence": "A broken tooth from a football knock was cleaned, but a leftover _____ lasted two days.",
+          "sentence": "The brace wire scratched a tooth and left Chris with a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-023-q17",
           "code": "S023-Q17",
           "tag": "disasters",
-          "sentence": "During a _____, the MTR may keep running longer than the buses, whose high sides catch the wind.",
+          "sentence": "The park was empty; a _____ and its strong wind had closed it.",
           "answer": "typhoon"
         },
         {
           "id": "set-023-q18",
           "code": "S023-Q18",
           "tag": "habits",
-          "sentence": "The leftover price tag on the new shirt hung under the sleeve, and the wearer was _____ at recess.",
+          "sentence": "Wendy felt _____ when everyone laughed at her mix-up of the two words.",
           "answer": "embarrassed"
         },
         {
           "id": "set-023-q19",
           "code": "S023-Q19",
           "tag": "illness",
-          "sentence": "A sudden weakness in every limb, plus a hot brow, marked the start of his _____.",
+          "sentence": "The nurse sent Lucy home; whole-body aches meant the _____.",
           "answer": "flu"
         },
         {
           "id": "set-023-q20",
           "code": "S023-Q20",
           "tag": "habits",
-          "sentence": "Being _____ for watering the rooftop garden means doing it in the holidays too, or finding a deputy.",
+          "sentence": "Teachers sleep better when a _____ monitor has checked the taps and lights.",
           "answer": "responsible"
         },
         {
           "id": "set-023-q21",
           "code": "S023-Q21",
           "tag": "habits",
-          "sentence": "A _____ packed meal for the trip included rice, egg and fruit, not only packaged snacks.",
+          "sentence": "Sean wants to stay _____, so he exercises outside instead of sitting all evening.",
           "answer": "healthy"
         },
         {
           "id": "set-023-q22",
           "code": "S023-Q22",
           "tag": "illness",
-          "sentence": "The science experiment’s fine powder made the teacher warn us, and sure enough someone had a _____.",
+          "sentence": "Cora missed the chorus line because a _____ caught her throat.",
           "answer": "cough"
         },
         {
           "id": "set-023-q23",
           "code": "S023-Q23",
           "tag": "disasters",
-          "sentence": "The ground-floor library moved books in an afternoon, ahead of a forecast coastal _____.",
+          "sentence": "The farm path was lost under a wide _____.",
           "answer": "flood"
         },
         {
           "id": "set-023-q24",
           "code": "S023-Q24",
           "tag": "habits",
-          "sentence": "The _____ coach ran the drill again, calmly, until the team’s timing improved.",
+          "sentence": "The traffic was slow, but Nora stayed _____ and did not complain in the back seat.",
           "answer": "patient"
         },
         {
           "id": "set-023-q25",
           "code": "S023-Q25",
           "tag": "illness",
-          "sentence": "When the baby pushed away the blanket, Mum knew the _____ was making him too warm.",
+          "sentence": "By evening the _____ was lower, but Mark’s forehead was still warm.",
           "answer": "fever"
         }
       ]
@@ -4345,183 +4345,183 @@ window.CLOZE_BANK = {
         "id": "set-024-ex",
         "code": "S024-EX",
         "tag": "example",
-        "sentence": "We will _____ the hall with house colours the afternoon before the concert, not on the morning itself.",
-        "answer": "decorate"
+        "sentence": "The nurse liked how _____ Leo was, sitting still and calm.",
+        "answer": "patient"
       },
       "items": [
         {
           "id": "set-024-q01",
           "code": "S024-Q01",
           "tag": "disasters",
-          "sentence": "A tropical _____ does not care about our picnic; the Observatory’s cone is the only plan we follow.",
+          "sentence": "Street signs shook as the _____ pushed strong wind down the road.",
           "answer": "typhoon"
         },
         {
           "id": "set-024-q02",
           "code": "S024-Q02",
           "tag": "habits",
-          "sentence": "When the voice-note auto-sent before it was finished, the half-message left him _____.",
+          "sentence": "After singing the wrong verse, Ruby stood _____, shy and very quiet.",
           "answer": "embarrassed"
         },
         {
           "id": "set-024-q03",
           "code": "S024-Q03",
           "tag": "illness",
-          "sentence": "After the science museum’s loud planetarium show, several children asked to sit quietly with a _____.",
+          "sentence": "The strong smell in the art room gave Carl a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-024-q04",
           "code": "S024-Q04",
           "tag": "disasters",
-          "sentence": "A _____ after the long rain turned the car park into a lake in which tyres were no longer visible.",
+          "sentence": "Rescue boats moved slowly through the _____ water near the old pier.",
           "answer": "flood"
         },
         {
           "id": "set-024-q05",
           "code": "S024-Q05",
           "tag": "habits",
-          "sentence": "A _____ form captain tells the teacher if someone is hurt, even if the person says “I’m fine”.",
+          "sentence": "Ben signed the duty book, proud to be thought _____.",
           "answer": "responsible"
         },
         {
           "id": "set-024-q06",
           "code": "S024-Q06",
           "tag": "illness",
-          "sentence": "Grandad avoided the wind on that side of his face, because cold air woke his _____.",
+          "sentence": "Zoe rinsed with warm water, hoping the _____ in her tooth would calm down.",
           "answer": "toothache"
         },
         {
           "id": "set-024-q07",
           "code": "S024-Q07",
           "tag": "disasters",
-          "sentence": "Engineers drilled and pinned the slope after a _____ had shown that the old surface was tired.",
+          "sentence": "Karl and Dad waited; the hill road was closed after a _____.",
           "answer": "landslide"
         },
         {
           "id": "set-024-q08",
           "code": "S024-Q08",
           "tag": "habits",
-          "sentence": "The health talk said a _____ weight for a child is about growing well, not about looking thin.",
+          "sentence": "The nurse praised Rita’s _____ colour after the better sleep this week.",
           "answer": "healthy"
         },
         {
           "id": "set-024-q09",
           "code": "S024-Q09",
           "tag": "illness",
-          "sentence": "The after-school club closed for two days while a cluster of _____ cases settled.",
+          "sentence": "Jack slept most of the day, weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-024-q10",
           "code": "S024-Q10",
           "tag": "habits",
-          "sentence": "A _____ potter waits for the clay to stiffen a little before pulling up the walls.",
+          "sentence": "Ted was _____ as the art glue dried, and waited, not touching it early.",
           "answer": "patient"
         },
         {
           "id": "set-024-q11",
           "code": "S024-Q11",
           "tag": "habits",
-          "sentence": "A _____ uniform check is held every other Monday, so the habit stays, not just before photos.",
+          "sentence": "A _____ pocket-money day comes on the same Saturday each month.",
           "answer": "regular"
         },
         {
           "id": "set-024-q12",
           "code": "S024-Q12",
           "tag": "illness",
-          "sentence": "After the charity all-you-can-eat, even the careful eaters admitted a heavy _____.",
+          "sentence": "The clinic nurse felt Nina’s stomach gently and noted a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-024-q13",
           "code": "S024-Q13",
           "tag": "disasters",
-          "sentence": "A _____ of schoolbags, new, was sent to the flood-relief centre, each with a notebook inside.",
+          "sentence": "Tina watched the _____ box fill with packed rice bags.",
           "answer": "donation"
         },
         {
           "id": "set-024-q14",
           "code": "S024-Q14",
           "tag": "habits",
-          "sentence": "The chalkboard in the kitchen says, “_____ before screens,” and the children actually follow it.",
+          "sentence": "Dust rose as Lila cleaned the top shelves, part of today’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-024-q15",
           "code": "S024-Q15",
           "tag": "illness",
-          "sentence": "The school camp form asked families to hand any regular _____ to the first-aider, labelled.",
+          "sentence": "The chemist told Liam the _____ from the bottle would soon ease the pain.",
           "answer": "medicine"
         },
         {
           "id": "set-024-q16",
           "code": "S024-Q16",
           "tag": "disasters",
-          "sentence": "For weeks the sky stayed empty and the soil cracked, and the farmers spoke quietly about the _____.",
+          "sentence": "A long _____ left the country park streams silent and dry.",
           "answer": "drought"
         },
         {
           "id": "set-024-q17",
           "code": "S024-Q17",
           "tag": "habits",
-          "sentence": "When he tried to high-five and hold a drink, a _____ choice left the drink in mid-air.",
+          "sentence": "Hugh tried to catch the falling cup, but his _____ hands missed.",
           "answer": "clumsy"
         },
         {
           "id": "set-024-q18",
           "code": "S024-Q18",
           "tag": "illness",
-          "sentence": "The trampoline was fun until Gigi bounced awkwardly and ended up with a mild _____.",
+          "sentence": "Pearl told the nurse her back felt tight and she had a _____.",
           "answer": "backache"
         },
         {
           "id": "set-024-q19",
           "code": "S024-Q19",
           "tag": "disasters",
-          "sentence": "The zoo’s animals were restless before a light _____, or so the keepers later said, carefully.",
+          "sentence": "The train slowed because an _____ had shaken the tracks.",
           "answer": "earthquake"
         },
         {
           "id": "set-024-q20",
           "code": "S024-Q20",
           "tag": "habits",
-          "sentence": "A _____ winner of the raffle asked that the prize be given to the runner-up, who needed it more.",
+          "sentence": "Cora packed more fruit than she needed and shared it, _____, as always.",
           "answer": "generous"
         },
         {
           "id": "set-024-q21",
           "code": "S024-Q21",
           "tag": "illness",
-          "sentence": "In the middle of the dictation, a polite but stubborn _____ cost May two missed words.",
+          "sentence": "At the clinic, the nurse noted Gary’s dry _____ and sore throat.",
           "answer": "cough"
         },
         {
           "id": "set-024-q22",
           "code": "S024-Q22",
           "tag": "disasters",
-          "sentence": "The delay in the rescue was _____, and the report later asked why hours had been lost.",
+          "sentence": "The noise from the works was _____, and the windows could not stay open.",
           "answer": "severe"
         },
         {
           "id": "set-024-q23",
           "code": "S024-Q23",
           "tag": "habits",
-          "sentence": "A smile from the examiner was not a hint; it was meant to _____ a frozen candidate to begin.",
+          "sentence": "Maya stayed to _____ the last runner, shouting, “Keep going!”",
           "answer": "encourage"
         },
         {
           "id": "set-024-q24",
           "code": "S024-Q24",
           "tag": "illness",
-          "sentence": "A day of shivering then sudden heat is often how a _____ announces itself.",
+          "sentence": "Grandma said, “This heat is a _____. Keep the thermometer nearby.”",
           "answer": "fever"
         },
         {
           "id": "set-024-q25",
           "code": "S024-Q25",
           "tag": "habits",
-          "sentence": "A _____ guest speaker checked in ten minutes early and was ready at the exact advertised hour.",
+          "sentence": "Sara arrived at seven sharp, _____ for the morning duty.",
           "answer": "punctual"
         }
       ]
@@ -4533,183 +4533,183 @@ window.CLOZE_BANK = {
         "id": "set-025-ex",
         "code": "S025-EX",
         "tag": "example",
-        "sentence": "The unexpected visit from the old class bear, cleaned and mended, was a _____ surprise at the reunion.",
-        "answer": "delightful"
+        "sentence": "Carl was _____ and gave extra praise, noticing everyone’s small wins.",
+        "answer": "generous"
       },
       "items": [
         {
           "id": "set-025-q01",
           "code": "S025-Q01",
           "tag": "habits",
-          "sentence": "The science club’s _____ lab day is Thursday, and members plan their weeks around it.",
+          "sentence": "Faith keeps the fish tank on a _____ cleaning cycle, every two weeks.",
           "answer": "regular"
         },
         {
           "id": "set-025-q02",
           "code": "S025-Q02",
           "tag": "illness",
-          "sentence": "After carrying the sports-day trophies down from the hall loft, Mr Yuen moved stiffly and admitted he had a _____.",
+          "sentence": "The long wait on a hard chair gave Will a _____ in the back.",
           "answer": "backache"
         },
         {
           "id": "set-025-q03",
           "code": "S025-Q03",
           "tag": "disasters",
-          "sentence": "The science graph of rainfall had a long, low dip, and the teacher named that dip a _____.",
+          "sentence": "Wade wrote about the _____ and the cracked earth in his journal.",
           "answer": "drought"
         },
         {
           "id": "set-025-q04",
           "code": "S025-Q04",
           "tag": "habits",
-          "sentence": "After the wet market run, putting food away and wiping the bags was the last short _____ of the morning.",
+          "sentence": "Stan checked the _____ chart and saw that the bathroom was his job.",
           "answer": "housework"
         },
         {
           "id": "set-025-q05",
           "code": "S025-Q05",
           "tag": "illness",
-          "sentence": "The hotel air-con was icy, and by breakfast both cousins had a light _____.",
+          "sentence": "The baby slept on until Daisy’s loud _____ woke the room.",
           "answer": "cough"
         },
         {
           "id": "set-025-q06",
           "code": "S025-Q06",
           "tag": "disasters",
-          "sentence": "After the first _____, smaller after-shocks still shook the floor, so we waited a while before going back in.",
+          "sentence": "In an _____, the floor moved and the door rattled in its frame.",
           "answer": "earthquake"
         },
         {
           "id": "set-025-q07",
           "code": "S025-Q07",
           "tag": "habits",
-          "sentence": "The _____ potter pressed too hard and collapsed the little bowl she had just shaped.",
+          "sentence": "Even tying ribbons was hard for _____ Tess, who kept dropping them.",
           "answer": "clumsy"
         },
         {
           "id": "set-025-q08",
           "code": "S025-Q08",
           "tag": "illness",
-          "sentence": "The teacher kept a spare thermometer in the drawer for any pupil who might have a _____.",
+          "sentence": "Otto stayed out of the playground while the _____ made him so hot.",
           "answer": "fever"
         },
         {
           "id": "set-025-q09",
           "code": "S025-Q09",
           "tag": "habits",
-          "sentence": "The _____ librarian used her own stickers as rewards, week after week, without a fuss.",
+          "sentence": "A _____ stall holder added a free bun to every child’s bag.",
           "answer": "generous"
         },
         {
           "id": "set-025-q10",
           "code": "S025-Q10",
           "tag": "illness",
-          "sentence": "After the lab test, the clinic called to adjust the dose of the _____.",
+          "sentence": "Kate washed down the _____ tablets with a glass of water.",
           "answer": "medicine"
         },
         {
           "id": "set-025-q11",
           "code": "S025-Q11",
           "tag": "illness",
-          "sentence": "A cup of very strong tea on an empty stomach left Auntie with a tight _____ across the brow.",
+          "sentence": "Rose came late to lunch, still holding her head after a _____.",
           "answer": "headache"
         },
         {
           "id": "set-025-q12",
           "code": "S025-Q12",
           "tag": "disasters",
-          "sentence": "A _____ heatwave, already named, closed some outdoor work at noon, for safety.",
+          "sentence": "The coach called the injury _____, so Eva sat out the match.",
           "answer": "severe"
         },
         {
           "id": "set-025-q13",
           "code": "S025-Q13",
           "tag": "habits",
-          "sentence": "The camp rule is that a _____ tent leader knows who is in, who is out, and where the torch is.",
+          "sentence": "A _____ friend, Amy was trusted and returned the wallet to the office at once.",
           "answer": "responsible"
         },
         {
           "id": "set-025-q14",
           "code": "S025-Q14",
           "tag": "illness",
-          "sentence": "After the sticky toffee, floss helped, but a trapped bit still triggered a short _____.",
+          "sentence": "Grandma saw Wendy wince at the first bite and guessed a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-025-q15",
           "code": "S025-Q15",
           "tag": "disasters",
-          "sentence": "The art sale’s profits were a _____ to the hospital’s children’s corner, with a card signed by the class.",
+          "sentence": "The church listed last month’s _____ of food and goods on the noticeboard.",
           "answer": "donation"
         },
         {
           "id": "set-025-q16",
           "code": "S025-Q16",
           "tag": "habits",
-          "sentence": "After more sleep and fewer fizzy drinks, the headaches eased and she felt more _____.",
+          "sentence": "Sharing a fruit plate at break is one _____ choice the class likes.",
           "answer": "healthy"
         },
         {
           "id": "set-025-q17",
           "code": "S025-Q17",
           "tag": "illness",
-          "sentence": "When the baby’s older brother brought the _____ home, the flat became a quiet sick-bay.",
+          "sentence": "Aches from head to toe told Jane this was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-025-q18",
           "code": "S025-Q18",
           "tag": "disasters",
-          "sentence": "The old banyan lost a huge limb in the _____, torn by circling wind rather than by a rising river.",
+          "sentence": "The _____ passed at night, leaving leaves stuck to walls by the wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-025-q19",
           "code": "S025-Q19",
           "tag": "habits",
-          "sentence": "The _____ shop assistant let Grandma count her coins at her own speed.",
+          "sentence": "Waiting for results is hard, but Pearl stayed _____ until Friday.",
           "answer": "patient"
         },
         {
           "id": "set-025-q20",
           "code": "S025-Q20",
           "tag": "habits",
-          "sentence": "Friends _____ a nervous actor by learning the first line with them, then stepping back.",
+          "sentence": "Teachers _____ us when we want to stop, with hope and kind words.",
           "answer": "encourage"
         },
         {
           "id": "set-025-q21",
           "code": "S025-Q21",
           "tag": "disasters",
-          "sentence": "Farmers watched a _____ drown the newly planted rows, the green tips vanishing under brown water.",
+          "sentence": "The _____ water came up to the first step, then stopped.",
           "answer": "flood"
         },
         {
           "id": "set-025-q22",
           "code": "S025-Q22",
           "tag": "habits",
-          "sentence": "Because the taxi was _____, Grandma reached the clinic in time for her slot and did not need to rebook.",
+          "sentence": "Being _____ and early helped Zack get a good seat on the coach.",
           "answer": "punctual"
         },
         {
           "id": "set-025-q23",
           "code": "S025-Q23",
           "tag": "illness",
-          "sentence": "The bus bumps along Castle Peak Road were cruel to anyone already holding a _____.",
+          "sentence": "Sean skipped skipping practice; the _____ in his tummy was sharp.",
           "answer": "stomachache"
         },
         {
           "id": "set-025-q24",
           "code": "S025-Q24",
           "tag": "disasters",
-          "sentence": "After the rain, a _____ of mud slipped down the steep estate cutting and blocked the pavement.",
+          "sentence": "Soil, grass, and stones came down together in the _____.",
           "answer": "landslide"
         },
         {
           "id": "set-025-q25",
           "code": "S025-Q25",
           "tag": "habits",
-          "sentence": "A forgotten mute button on the video lesson caught a kitchen argument, and the pupil was _____.",
+          "sentence": "Ken felt _____ to realise he had been talking with rice on his chin.",
           "answer": "embarrassed"
         }
       ]
@@ -4721,183 +4721,183 @@ window.CLOZE_BANK = {
         "id": "set-026-ex",
         "code": "S026-EX",
         "tag": "example",
-        "sentence": "She wrote three honest lines in her _____ every night, and the little book grew heavier by June.",
-        "answer": "diary"
+        "sentence": "Lucy held her back on the stairs and said she had a _____.",
+        "answer": "backache"
       },
       "items": [
         {
           "id": "set-026-q01",
           "code": "S026-Q01",
           "tag": "illness",
-          "sentence": "A staff notice reminded teachers not to struggle into school if they had the _____.",
+          "sentence": "Ben’s body felt heavy, weak and sore all over, a typical sign of the _____.",
           "answer": "flu"
         },
         {
           "id": "set-026-q02",
           "code": "S026-Q02",
           "tag": "disasters",
-          "sentence": "The infection looked _____ to the doctor, so a stronger course was chosen, not a “wait and see”.",
+          "sentence": "The frost was _____, and the field could not be used for PE.",
           "answer": "severe"
         },
         {
           "id": "set-026-q03",
           "code": "S026-Q03",
           "tag": "habits",
-          "sentence": "After clapping between the movements of the music, the family received a look and felt _____.",
+          "sentence": "Maya gave a small, shy, _____ wave after entering the staff room by mistake.",
           "answer": "embarrassed"
         },
         {
           "id": "set-026-q04",
           "code": "S026-Q04",
           "tag": "illness",
-          "sentence": "A first sip of a very acidic juice on an empty stomach can wake a sharp _____.",
+          "sentence": "During the film, Rita leaned over with a sudden _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-026-q05",
           "code": "S026-Q05",
           "tag": "disasters",
-          "sentence": "A _____ left in a letterbox still needs the charity’s official channel, so it was taken to the office.",
+          "sentence": "A surprise _____ of new shoes arrived for the shelter.",
           "answer": "donation"
         },
         {
           "id": "set-026-q06",
           "code": "S026-Q06",
           "tag": "habits",
-          "sentence": "A _____ older brother, in charge of the gate, does not let the toddler into the car park alone.",
+          "sentence": "Leo did not leave the little ones until a teacher came; that was a _____ duty.",
           "answer": "responsible"
         },
         {
           "id": "set-026-q07",
           "code": "S026-Q07",
           "tag": "illness",
-          "sentence": "A small funnel helped pour the last of the _____ into a travel bottle for the weekend trip, still labelled.",
+          "sentence": "Mum stored the _____ in a cool cupboard, as the label said.",
           "answer": "medicine"
         },
         {
           "id": "set-026-q08",
           "code": "S026-Q08",
           "tag": "disasters",
-          "sentence": "When the cats hid and the bamboo clacked, Grandma said, “That is a _____ beginning.”",
+          "sentence": "Dad brought in the pots so the _____’s wind would not smash them.",
           "answer": "typhoon"
         },
         {
           "id": "set-026-q09",
           "code": "S026-Q09",
           "tag": "habits",
-          "sentence": "A _____ classroom habit is to stand and stretch, so our bodies do not stay stiff all morning.",
+          "sentence": "Tina felt light and _____ after swapping fizzy drinks for water.",
           "answer": "healthy"
         },
         {
           "id": "set-026-q10",
           "code": "S026-Q10",
           "tag": "habits",
-          "sentence": "A _____ bird-watcher can sit in a hide for a long time, quiet, until the kingfisher appears.",
+          "sentence": "Will practised being _____ by watering the seeds and waiting, not digging them up.",
           "answer": "patient"
         },
         {
           "id": "set-026-q11",
           "code": "S026-Q11",
           "tag": "disasters",
-          "sentence": "The museum’s display of a _____ includes a date, a rainfall number, and a rescued roadside shrine.",
+          "sentence": "A _____ left a brown scar down the green slope.",
           "answer": "landslide"
         },
         {
           "id": "set-026-q12",
           "code": "S026-Q12",
           "tag": "habits",
-          "sentence": "A _____ wave in the cramped lift caught someone’s umbrella and sent it clattering.",
+          "sentence": "Victor bumped into the open cupboard door, then muttered, “So _____.”",
           "answer": "clumsy"
         },
         {
           "id": "set-026-q13",
           "code": "S026-Q13",
           "tag": "illness",
-          "sentence": "A leaked air-con drip made Helen sleep in a draught, and she woke with a chilly _____.",
+          "sentence": "Sara needed help to stand up because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-026-q14",
           "code": "S026-Q14",
           "tag": "disasters",
-          "sentence": "A _____ in this region means cracked mud, thirsty trees, and a careful, shorter shower at home.",
+          "sentence": "The cattle stood by a low, dry pond, waiting out the _____.",
           "answer": "drought"
         },
         {
           "id": "set-026-q15",
           "code": "S026-Q15",
           "tag": "habits",
-          "sentence": "A _____ friend paid for two tram tickets when the Octopus card was empty, and said “next time” gently, without counting.",
+          "sentence": "Daisy let a younger child have the front seat, a small but _____ act of sharing.",
           "answer": "generous"
         },
         {
           "id": "set-026-q16",
           "code": "S026-Q16",
           "tag": "illness",
-          "sentence": "A crumb from the toast went the wrong way and caused a brief, harmless _____.",
+          "sentence": "Ivan turned away from the cake and let out a _____ from his throat.",
           "answer": "cough"
         },
         {
           "id": "set-026-q17",
           "code": "S026-Q17",
           "tag": "disasters",
-          "sentence": "The hanging keys on the hook chimed together, a small music, during a very small _____.",
+          "sentence": "Chris stayed away from windows while the ground shook in an _____.",
           "answer": "earthquake"
         },
         {
           "id": "set-026-q18",
           "code": "S026-Q18",
           "tag": "habits",
-          "sentence": "The science mentor’s notes _____ us to test a second idea when the first one fails.",
+          "sentence": "Lucy needed praise to _____ her through the hard part of the song.",
           "answer": "encourage"
         },
         {
           "id": "set-026-q19",
           "code": "S026-Q19",
           "tag": "illness",
-          "sentence": "Grandad’s cheeks were pink and his forehead was hot, so we treated it as a _____.",
+          "sentence": "The night felt long because Lila’s _____ kept her hot and restless.",
           "answer": "fever"
         },
         {
           "id": "set-026-q20",
           "code": "S026-Q20",
           "tag": "habits",
-          "sentence": "The sports-day march-in looks tidy only when the houses are _____ enough to be on their marks.",
+          "sentence": "Vera was first in line, _____ and early, before the doors opened.",
           "answer": "punctual"
         },
         {
           "id": "set-026-q21",
           "code": "S026-Q21",
           "tag": "habits",
-          "sentence": "A _____ bus pass is topped up on the same day each month, which stops a sudden zero balance.",
+          "sentence": "At the same hour each evening, Karl rings Grandma, a _____ call.",
           "answer": "regular"
         },
         {
           "id": "set-026-q22",
           "code": "S026-Q22",
           "tag": "illness",
-          "sentence": "The classroom clock’s tick seemed louder once a _____ had started behind my eyes.",
+          "sentence": "Cold air from the bus vent sat on Hugh’s forehead and started a _____.",
           "answer": "headache"
         },
         {
           "id": "set-026-q23",
           "code": "S026-Q23",
           "tag": "disasters",
-          "sentence": "A _____ in the pedestrian tunnel made the city open an above-ground detour for two days.",
+          "sentence": "Cora helped move books upstairs before the _____ water could reach them.",
           "answer": "flood"
         },
         {
           "id": "set-026-q24",
           "code": "S026-Q24",
           "tag": "habits",
-          "sentence": "The new vacuum made the sitting-room _____ faster, but the bathrooms still needed a hand wash.",
+          "sentence": "With the vacuum out, Nell could not pretend the _____ was finished.",
           "answer": "housework"
         },
         {
           "id": "set-026-q25",
           "code": "S026-Q25",
           "tag": "illness",
-          "sentence": "The nurse would not offer numbing gel as a long-term plan; a real dentist had to see the _____.",
+          "sentence": "Ruby’s gum felt sore around one tooth, and the _____ grew.",
           "answer": "toothache"
         }
       ]
@@ -4909,183 +4909,183 @@ window.CLOZE_BANK = {
         "id": "set-027-ex",
         "code": "S027-EX",
         "tag": "example",
-        "sentence": "If you do not know the word, check the class _____ on the window ledge before you guess in ink.",
-        "answer": "dictionary"
+        "sentence": "Ben’s throat hurt, and he let out a loud _____.",
+        "answer": "cough"
       },
       "items": [
         {
           "id": "set-027-q01",
           "code": "S027-Q01",
           "tag": "disasters",
-          "sentence": "The ground-floor café served from the step, because a _____ had claimed the indoor floor.",
+          "sentence": "Brown water from the _____ stained the white walls.",
           "answer": "flood"
         },
         {
           "id": "set-027-q02",
           "code": "S027-Q02",
           "tag": "habits",
-          "sentence": "We can _____ a shy singer by listening kindly, not by forcing a solo too soon.",
+          "sentence": "A smile, a thumbs-up and kind words can _____ a friend who feels stuck.",
           "answer": "encourage"
         },
         {
           "id": "set-027-q03",
           "code": "S027-Q03",
           "tag": "illness",
-          "sentence": "The bedtime story stopped halfway because the child’s _____ made her too uncomfortable to listen.",
+          "sentence": "A red, hot face and a high reading meant Stan had a _____.",
           "answer": "fever"
         },
         {
           "id": "set-027-q04",
           "code": "S027-Q04",
           "tag": "disasters",
-          "sentence": "A _____ warning for this range is issued when rain has already loaded the soil with too much water.",
+          "sentence": "The village path vanished under mud from the _____.",
           "answer": "landslide"
         },
         {
           "id": "set-027-q05",
           "code": "S027-Q05",
           "tag": "habits",
-          "sentence": "A _____ shopkeeper raises the roller shutter at ten, the hour printed on the door, every weekday.",
+          "sentence": "Miss Lee smiled when _____ Eric walked in early, before the others.",
           "answer": "punctual"
         },
         {
           "id": "set-027-q06",
           "code": "S027-Q06",
           "tag": "illness",
-          "sentence": "During the long coach tour, reading on a winding road was a sure way to earn a _____.",
+          "sentence": "Tess asked for water and a quiet seat because of a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-027-q07",
           "code": "S027-Q07",
           "tag": "disasters",
-          "sentence": "During the _____, the wildlife photographers found footprints at the last wet bend of the creek.",
+          "sentence": "Even the weeds looked tired and dry in the heat of the _____.",
           "answer": "drought"
         },
         {
           "id": "set-027-q08",
           "code": "S027-Q08",
           "tag": "habits",
-          "sentence": "The temple fair is a _____ event each Lunar New Year, returning as surely as the calendar.",
+          "sentence": "Holly prefers a _____ lunchtime, always at the same hour, twelve.",
           "answer": "regular"
         },
         {
           "id": "set-027-q09",
           "code": "S027-Q09",
           "tag": "illness",
-          "sentence": "A throbbing in time with her pulse told Yuki this _____ would not wait until Monday.",
+          "sentence": "Ken missed the singing practice because a _____ in a tooth had started.",
           "answer": "toothache"
         },
         {
           "id": "set-027-q10",
           "code": "S027-Q10",
           "tag": "habits",
-          "sentence": "A visiting cousin offered to wipe the dining table, a small, welcome piece of the evening _____.",
+          "sentence": "Wade hung the wet mop on the balcony after the _____.",
           "answer": "housework"
         },
         {
           "id": "set-027-q11",
           "code": "S027-Q11",
           "tag": "habits",
-          "sentence": "When the baby took a long time to finish the bottle, a _____ uncle did not sigh or bounce the chair.",
+          "sentence": "The baby dropped the spoon again, and _____ Sara just waited and picked it up.",
           "answer": "patient"
         },
         {
           "id": "set-027-q12",
           "code": "S027-Q12",
           "tag": "illness",
-          "sentence": "The school nurse kept honey-lemon tea ready for anyone whose _____ grew hoarse.",
+          "sentence": "A sudden _____ from her throat made Faith stop the recitation.",
           "answer": "cough"
         },
         {
           "id": "set-027-q13",
           "code": "S027-Q13",
           "tag": "disasters",
-          "sentence": "A _____ penalty in the match was given for a dangerous foul, not for a light touch.",
+          "sentence": "A _____ sunburn sent Nina to the shade; she could not stay out.",
           "answer": "severe"
         },
         {
           "id": "set-027-q14",
           "code": "S027-Q14",
           "tag": "habits",
-          "sentence": "The _____ class collected more used books than the poster had asked for, and still kept going.",
+          "sentence": "The _____ raffle prize came from a parent who gave more than needed.",
           "answer": "generous"
         },
         {
           "id": "set-027-q15",
           "code": "S027-Q15",
           "tag": "illness",
-          "sentence": "After the inter-school camp, the first-aid log listed three early cases of _____.",
+          "sentence": "Amy sat wrapped in a quilt, shivering through the _____.",
           "answer": "flu"
         },
         {
           "id": "set-027-q16",
           "code": "S027-Q16",
           "tag": "disasters",
-          "sentence": "The family’s _____ this year was a box of rice cookers, practical, and heavy to carry, gladly.",
+          "sentence": "The class vote chose the animal shelter for their _____.",
           "answer": "donation"
         },
         {
           "id": "set-027-q17",
           "code": "S027-Q17",
           "tag": "habits",
-          "sentence": "Because the lid was loose, a _____ twist of the jar sprinkled pepper across the hob.",
+          "sentence": "The new shoes felt big, and _____ Yuki bumped the step.",
           "answer": "clumsy"
         },
         {
           "id": "set-027-q18",
           "code": "S027-Q18",
           "tag": "illness",
-          "sentence": "The school nurse’s quiet room and a warm pack were enough for a mild, passing _____.",
+          "sentence": "Hugo sipped warm tea and kept a hand on his stomach for the _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-027-q19",
           "code": "S027-Q19",
           "tag": "disasters",
-          "sentence": "A _____ track map on the news showed the storm’s eye and the dangerous wind bands around it.",
+          "sentence": "A _____ warning kept the sports day from going ahead in that wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-027-q20",
           "code": "S027-Q20",
           "tag": "habits",
-          "sentence": "The “helpful” correction of a teacher’s date was wrong, and the corrector felt deeply _____.",
+          "sentence": "The late arrival made Sam feel _____ and shy as the whole class turned.",
           "answer": "embarrassed"
         },
         {
           "id": "set-027-q21",
           "code": "S027-Q21",
           "tag": "illness",
-          "sentence": "The pharmacist demonstrated how to use the inhaler, which counted as the asthma _____.",
+          "sentence": "The doctor’s letter listed a new bottle of _____ for Nora to take at night.",
           "answer": "medicine"
         },
         {
           "id": "set-027-q22",
           "code": "S027-Q22",
           "tag": "disasters",
-          "sentence": "An _____ at sea may be felt on a ferry as a strange, sudden shiver in the deck.",
+          "sentence": "The news spoke of an _____ that had shaken the city at noon.",
           "answer": "earthquake"
         },
         {
           "id": "set-027-q23",
           "code": "S027-Q23",
           "tag": "habits",
-          "sentence": "Being _____ with chemistry stains means reporting a spill at once, not hoping it will fade.",
+          "sentence": "The science tools were all back in the tray, thanks to _____ Eva on duty.",
           "answer": "responsible"
         },
         {
           "id": "set-027-q24",
           "code": "S027-Q24",
           "tag": "illness",
-          "sentence": "While tying his shoelaces on the changing-room bench, Ivan gasped; bending forward had stirred a _____.",
+          "sentence": "During assembly, Zack shifted in his seat because of a back _____.",
           "answer": "backache"
         },
         {
           "id": "set-027-q25",
           "code": "S027-Q25",
           "tag": "habits",
-          "sentence": "The family grew _____ herbs on the balcony and used them instead of extra salt.",
+          "sentence": "Good shoes and a safe stretch help a _____ runner stay that way.",
           "answer": "healthy"
         }
       ]
@@ -5097,183 +5097,183 @@ window.CLOZE_BANK = {
         "id": "set-028-ex",
         "code": "S028-EX",
         "tag": "example",
-        "sentence": "A _____ typist checked every name twice, which is why the programme had so few mistakes.",
-        "answer": "diligent"
+        "sentence": "Carl wanted the fan on all night because of a high _____.",
+        "answer": "fever"
       },
       "items": [
         {
           "id": "set-028-q01",
           "code": "S028-Q01",
           "tag": "habits",
-          "sentence": "A _____ cook made an extra gluten-free dish, so one guest would not feel like a problem.",
+          "sentence": "Faith filled the thank-you bag with extra sweets, being _____.",
           "answer": "generous"
         },
         {
           "id": "set-028-q02",
           "code": "S028-Q02",
           "tag": "illness",
-          "sentence": "The mural team painted along the corridor floor, and kneeling so long left Mabel with a _____.",
+          "sentence": "Vera left the game early, holding her back after a _____ started.",
           "answer": "backache"
         },
         {
           "id": "set-028-q03",
           "code": "S028-Q03",
           "tag": "disasters",
-          "sentence": "After the _____, some people felt sick, not from illness, but from the unusual motion of the floor.",
+          "sentence": "A small _____ rattled the cups but did no other harm.",
           "answer": "earthquake"
         },
         {
           "id": "set-028-q04",
           "code": "S028-Q04",
           "tag": "habits",
-          "sentence": "The _____ drummer knocked the stand with a knee, and the cymbal spoke out of turn.",
+          "sentence": "Chris is less _____ when he slows down and does not drop things.",
           "answer": "clumsy"
         },
         {
           "id": "set-028-q05",
           "code": "S028-Q05",
           "tag": "illness",
-          "sentence": "During the flute exam, a sudden _____ forced Sze to restart her scale.",
+          "sentence": "Dad said Karl’s throat needed rest after that rough _____.",
           "answer": "cough"
         },
         {
           "id": "set-028-q06",
           "code": "S028-Q06",
           "tag": "disasters",
-          "sentence": "The drought, already in the news, was called _____ when the reservoir fell below a fifth.",
+          "sentence": "The teacher kept Sean inside because the allergy looked _____ and dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-028-q07",
           "code": "S028-Q07",
           "tag": "habits",
-          "sentence": "When the birthday cake arrived and it was not, in fact, anyone’s birthday, the waiter looked _____.",
+          "sentence": "Lucy felt _____ about the loud ringtone that broke the test silence.",
           "answer": "embarrassed"
         },
         {
           "id": "set-028-q08",
           "code": "S028-Q08",
           "tag": "illness",
-          "sentence": "A written “take with food” line on the box saved a sore stomach from poorly timed _____.",
+          "sentence": "The new _____ came as tablets, and Ted learned the dose by heart.",
           "answer": "medicine"
         },
         {
           "id": "set-028-q09",
           "code": "S028-Q09",
           "tag": "disasters",
-          "sentence": "A _____ of used spectacles, cleaned and graded, went to a clinic that could pass them on.",
+          "sentence": "Dad carried the _____ of folded towels into the charity collection point.",
           "answer": "donation"
         },
         {
           "id": "set-028-q10",
           "code": "S028-Q10",
           "tag": "habits",
-          "sentence": "A _____ treasurer of the class fund keeps a book that any teacher can check.",
+          "sentence": "Owen is _____, so he double-checks that the cage door is shut.",
           "answer": "responsible"
         },
         {
           "id": "set-028-q11",
           "code": "S028-Q11",
           "tag": "illness",
-          "sentence": "The school concert solo was reassigned when the singer could not open her mouth widely for a _____.",
+          "sentence": "The dentist showed Maya the x-ray and explained the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-028-q12",
           "code": "S028-Q12",
           "tag": "disasters",
-          "sentence": "When the long _____ made the fields fail, food prices rose, and even the news talked about the missing rain.",
+          "sentence": "The _____ stretched on with little rain, and the water trucks came more often.",
           "answer": "drought"
         },
         {
           "id": "set-028-q13",
           "code": "S028-Q13",
           "tag": "habits",
-          "sentence": "The captain’s half-time talk was designed to _____, with reasons to believe the second half could change.",
+          "sentence": "Uncle Ray rang with kind words to _____ Jane the night before the match.",
           "answer": "encourage"
         },
         {
           "id": "set-028-q14",
           "code": "S028-Q14",
           "tag": "illness",
-          "sentence": "The doctor said rest, fluids and time were the main plan for an ordinary case of the _____.",
+          "sentence": "After the rainy outing, Leo got the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-028-q15",
           "code": "S028-Q15",
           "tag": "disasters",
-          "sentence": "School bags stayed packed by the door in case the _____ signal rose before morning.",
+          "sentence": "The harbour turned grey and wild under the _____ and its wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-028-q16",
           "code": "S028-Q16",
           "tag": "habits",
-          "sentence": "The choir’s recording session needed a _____ pianist, already seated when the red light came on.",
+          "sentence": "Cora practised leaving earlier, and now she is rarely late and more _____.",
           "answer": "punctual"
         },
         {
           "id": "set-028-q17",
           "code": "S028-Q17",
           "tag": "illness",
-          "sentence": "After swapping lunch boxes and trying three desserts, the experiment ended in a predictable _____.",
+          "sentence": "A heavy breakfast sat badly, and Tina soon had a _____ in her stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-028-q18",
           "code": "S028-Q18",
           "tag": "disasters",
-          "sentence": "A slow _____ from an overfull canal crept under doors, less dramatic than a wave, but just as wet.",
+          "sentence": "The underpass closed because a _____ had filled it again.",
           "answer": "flood"
         },
         {
           "id": "set-028-q19",
           "code": "S028-Q19",
           "tag": "habits",
-          "sentence": "Mum sets a _____ fruit break at three, a small habit at the same time each afternoon.",
+          "sentence": "The coach likes _____ training, same night, same hall, every week.",
           "answer": "regular"
         },
         {
           "id": "set-028-q20",
           "code": "S028-Q20",
           "tag": "habits",
-          "sentence": "When the air-con filter was dusty, cleaning it was added to Dad’s monthly list of _____.",
+          "sentence": "Old newspapers went out with the other _____, after the bins were cleaned.",
           "answer": "housework"
         },
         {
           "id": "set-028-q21",
           "code": "S028-Q21",
           "tag": "disasters",
-          "sentence": "Trees leaning at new angles can be a sign that a _____ is slowly starting under their roots.",
+          "sentence": "People kept off the hillside until the risk of a _____ was lower.",
           "answer": "landslide"
         },
         {
           "id": "set-028-q22",
           "code": "S028-Q22",
           "tag": "habits",
-          "sentence": "A _____ after-school plan mixes homework with a run in the park, not only more sitting.",
+          "sentence": "Iris put greens on her plate first, aiming to stay _____.",
           "answer": "healthy"
         },
         {
           "id": "set-028-q23",
           "code": "S028-Q23",
           "tag": "illness",
-          "sentence": "A note from the doctor said, “Rest at home until the _____ has gone for a full day.”",
+          "sentence": "Mr Wong would not let Nell go on the trip with that high _____.",
           "answer": "fever"
         },
         {
           "id": "set-028-q24",
           "code": "S028-Q24",
           "tag": "habits",
-          "sentence": "The _____ director let the actors try the scene twice, instead of snapping at the first mistake.",
+          "sentence": "Zack gave thinking time and stayed _____, not forcing or rushing an answer.",
           "answer": "patient"
         },
         {
           "id": "set-028-q25",
           "code": "S028-Q25",
           "tag": "illness",
-          "sentence": "The art room’s strong varnish smell sent one pupil to the window with a sudden _____.",
+          "sentence": "By the end of the concert, Victor had a _____ in his head.",
           "answer": "headache"
         }
       ]
@@ -5285,183 +5285,183 @@ window.CLOZE_BANK = {
         "id": "set-029-ex",
         "code": "S029-EX",
         "tag": "example",
-        "sentence": "A light _____ began as we left the library, not a real rain, but enough to darken the pavement.",
-        "answer": "drizzle"
+        "sentence": "Liam held his temples on the bus, riding out a _____.",
+        "answer": "headache"
       },
       "items": [
         {
           "id": "set-029-q01",
           "code": "S029-Q01",
           "tag": "illness",
-          "sentence": "After a year without a check-up, the first appointment found the cause of the on-and-off _____.",
+          "sentence": "Sam held a cold pack to his cheek to quiet the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-029-q02",
           "code": "S029-Q02",
           "tag": "disasters",
-          "sentence": "The patio furniture was lashed down, because a _____ will treat loose chairs as missiles.",
+          "sentence": "Sara could not sleep; the _____ kept slamming wind against the glass.",
           "answer": "typhoon"
         },
         {
           "id": "set-029-q03",
           "code": "S029-Q03",
           "tag": "habits",
-          "sentence": "A sticker is small, but a well-timed one can _____ a child who finally finished a hard page.",
+          "sentence": "The group paused to _____ the youngest child with kind words.",
           "answer": "encourage"
         },
         {
           "id": "set-029-q04",
           "code": "S029-Q04",
           "tag": "illness",
-          "sentence": "Aches in the back, legs and shoulders together made the illness feel like the _____, not a local pain.",
+          "sentence": "All-over muscle pain kept Eva off the sports field with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-029-q05",
           "code": "S029-Q05",
           "tag": "disasters",
-          "sentence": "The zoo moved animals from low pens when a _____ warning was issued for the riverside section.",
+          "sentence": "A shallow _____ covered the basketball court after the drain failed.",
           "answer": "flood"
         },
         {
           "id": "set-029-q06",
           "code": "S029-Q06",
           "tag": "habits",
-          "sentence": "After last term’s late marks, the class made a pact to be _____ for every first lesson.",
+          "sentence": "The notice asked everyone to be _____ and ready for the eight o’clock start.",
           "answer": "punctual"
         },
         {
           "id": "set-029-q07",
           "code": "S029-Q07",
           "tag": "illness",
-          "sentence": "A late, greasy burger on the way home from tutoring sat like lead and became a _____.",
+          "sentence": "Joel lay on his side, knees up, waiting for the _____ in his tummy to ease.",
           "answer": "stomachache"
         },
         {
           "id": "set-029-q08",
           "code": "S029-Q08",
           "tag": "disasters",
-          "sentence": "A _____ of boulders, loosened high up, bounced once and came to rest in a farmer’s upper field.",
+          "sentence": "The _____ stopped just short of the temple steps, in a heap of rock.",
           "answer": "landslide"
         },
         {
           "id": "set-029-q09",
           "code": "S029-Q09",
           "tag": "habits",
-          "sentence": "The school’s _____ newsletter cycle is fortnightly, so parents know when to look for news.",
+          "sentence": "Judy set a _____ reminder for library books, every second Wednesday.",
           "answer": "regular"
         },
         {
           "id": "set-029-q10",
           "code": "S029-Q10",
           "tag": "habits",
-          "sentence": "The weekend _____ was split: one child did bathrooms, the other did floors, and both were done by noon.",
+          "sentence": "Carl wiped the table twice; some _____ jobs need extra care.",
           "answer": "housework"
         },
         {
           "id": "set-029-q11",
           "code": "S029-Q11",
           "tag": "disasters",
-          "sentence": "The village’s old rule — do not waste a full bucket — returned during the _____.",
+          "sentence": "Dry soil blew across the road in the worst week of the _____.",
           "answer": "drought"
         },
         {
           "id": "set-029-q12",
           "code": "S029-Q12",
           "tag": "habits",
-          "sentence": "A _____ reach for a high book pulled two others down with it, like a small avalanche.",
+          "sentence": "A _____ kick sent the football into the drinks table and knocked a cup.",
           "answer": "clumsy"
         },
         {
           "id": "set-029-q13",
           "code": "S029-Q13",
           "tag": "illness",
-          "sentence": "After crying at the sad film, puffiness faded, but a leftover _____ stayed around the temples.",
+          "sentence": "Yuki’s temples throbbed, a sure sign of a _____.",
           "answer": "headache"
         },
         {
           "id": "set-029-q14",
           "code": "S029-Q14",
           "tag": "disasters",
-          "sentence": "A school in another country sent photos of an _____ drill, and we compared our own plan.",
+          "sentence": "The ground shook twice: first a short _____, then a weaker one.",
           "answer": "earthquake"
         },
         {
           "id": "set-029-q15",
           "code": "S029-Q15",
           "tag": "habits",
-          "sentence": "A tight handshake that was meant to be confident became sweaty, and the applicant felt _____.",
+          "sentence": "Jack pulled his cap lower, red and _____ after the missed catch.",
           "answer": "embarrassed"
         },
         {
           "id": "set-029-q16",
           "code": "S029-Q16",
           "tag": "illness",
-          "sentence": "Grandma sorts the week’s _____ into a labelled seven-day box every Sunday night.",
+          "sentence": "A sticker on the bottle reminded Pearl not to share the _____.",
           "answer": "medicine"
         },
         {
           "id": "set-029-q17",
           "code": "S029-Q17",
           "tag": "disasters",
-          "sentence": "A _____ scolding is rare from this teacher, and the class went very quiet, knowing it was earned.",
+          "sentence": "The delay at the pier was _____, and the last ferry could not wait.",
           "answer": "severe"
         },
         {
           "id": "set-029-q18",
           "code": "S029-Q18",
           "tag": "habits",
-          "sentence": "The museum visit needs a _____ buddy system, so every pair is accounted for at the exit.",
+          "sentence": "Being _____, Nina wrote a note when she had to pass the duty on.",
           "answer": "responsible"
         },
         {
           "id": "set-029-q19",
           "code": "S029-Q19",
           "tag": "illness",
-          "sentence": "After the Saturday farm visit, where we lifted baskets of oranges, several parents mentioned a _____.",
+          "sentence": "Grandad said Eric should rest the _____ in his back and not lift things.",
           "answer": "backache"
         },
         {
           "id": "set-029-q20",
           "code": "S029-Q20",
           "tag": "habits",
-          "sentence": "When the menu said “_____ option”, it meant grilled, not deep-fried, and fruit for pudding.",
+          "sentence": "The sports day warm-up is meant to keep pupils fit, _____ and ready.",
           "answer": "healthy"
         },
         {
           "id": "set-029-q21",
           "code": "S029-Q21",
           "tag": "habits",
-          "sentence": "A _____ puzzle-solver does not force a piece; they turn it and wait until the shape is clear.",
+          "sentence": "A _____ wait by the stage door ended with a wave from the actors.",
           "answer": "patient"
         },
         {
           "id": "set-029-q22",
           "code": "S029-Q22",
           "tag": "illness",
-          "sentence": "After hiking through dry grass, the Brownies sat and waited for a ticklish _____ to pass.",
+          "sentence": "In the changing room, a loud _____ echoed off the walls.",
           "answer": "cough"
         },
         {
           "id": "set-029-q23",
           "code": "S029-Q23",
           "tag": "disasters",
-          "sentence": "The concert programme listed a suggested _____, and most of the audience gave more than the suggestion.",
+          "sentence": "A thank-you letter came after the _____ of books for the hospital ward.",
           "answer": "donation"
         },
         {
           "id": "set-029-q24",
           "code": "S029-Q24",
           "tag": "habits",
-          "sentence": "The _____ senior bought the whole team a simple bun after training, from his own pocket.",
+          "sentence": "A _____ parent paid for new balls for the whole team.",
           "answer": "generous"
         },
         {
           "id": "set-029-q25",
           "code": "S029-Q25",
           "tag": "illness",
-          "sentence": "After the temperature check at the school gate, one visitor was asked to wait because of a possible _____.",
+          "sentence": "Wade put his hot cheek on the pillow and waited for the _____ to fall.",
           "answer": "fever"
         }
       ]
@@ -5473,183 +5473,183 @@ window.CLOZE_BANK = {
         "id": "set-030-ex",
         "code": "S030-EX",
         "tag": "example",
-        "sentence": "Please put the reply slip in the _____ and seal it, so it does not fall out of the school bag.",
-        "answer": "envelope"
+        "sentence": "A dull _____ in his tooth followed Ted all through music.",
+        "answer": "toothache"
       },
       "items": [
         {
           "id": "set-030-q01",
           "code": "S030-Q01",
           "tag": "disasters",
-          "sentence": "A _____ left the boat club with a pier in mid-air, the waterline far below the usual wet mark.",
+          "sentence": "When the _____ finally ended, rain returned and the first green shoots came.",
           "answer": "drought"
         },
         {
           "id": "set-030-q02",
           "code": "S030-Q02",
           "tag": "habits",
-          "sentence": "A _____ mouth after the check-up was the dentist’s way of saying “keep this up”.",
+          "sentence": "Grandad looks _____ for his age because he still walks every morning.",
           "answer": "healthy"
         },
         {
           "id": "set-030-q03",
           "code": "S030-Q03",
           "tag": "illness",
-          "sentence": "The puppy’s bark was cute, but Dad’s late-night _____ was far less popular.",
+          "sentence": "Mark could not hide the _____ from his sore throat in silent reading.",
           "answer": "cough"
         },
         {
           "id": "set-030-q04",
           "code": "S030-Q04",
           "tag": "disasters",
-          "sentence": "The first-aid talk included: after an _____, check for gas smells and broken glass before stepping.",
+          "sentence": "After the _____, Ken picked up the books that had fallen when the floor shook.",
           "answer": "earthquake"
         },
         {
           "id": "set-030-q05",
           "code": "S030-Q05",
           "tag": "habits",
-          "sentence": "The _____ ticket officer explained the form again, without a sharp voice, while the queue waited.",
+          "sentence": "Eric did not hurry the guest; he was _____ and poured tea slowly.",
           "answer": "patient"
         },
         {
           "id": "set-030-q06",
           "code": "S030-Q06",
           "tag": "illness",
-          "sentence": "The ice pack was wrapped in a towel and placed gently to comfort a forehead burning with _____.",
+          "sentence": "The school recorded a high temperature and marked Polly down with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-030-q07",
           "code": "S030-Q07",
           "tag": "habits",
-          "sentence": "A _____ little sister gave her best marble to a crying friend, not her least favourite one.",
+          "sentence": "Holly shared the whole bag of popcorn, not a few pieces, and looked _____.",
           "answer": "generous"
         },
         {
           "id": "set-030-q08",
           "code": "S030-Q08",
           "tag": "illness",
-          "sentence": "A hat that was too small for Sports Day looked smart and then quietly caused a _____.",
+          "sentence": "Chris kept his eyes closed on the sofa until the _____ in his head eased.",
           "answer": "headache"
         },
         {
           "id": "set-030-q09",
           "code": "S030-Q09",
           "tag": "habits",
-          "sentence": "When the dog ran past, a _____ sidestep knocked the standing sign in the pet-shop aisle.",
+          "sentence": "Wendy left a trail of dropped papers, typical of a _____ morning.",
           "answer": "clumsy"
         },
         {
           "id": "set-030-q10",
           "code": "S030-Q10",
           "tag": "illness",
-          "sentence": "Colin tried to stretch before assembly, because a dull _____ had been bothering his back since dawn.",
+          "sentence": "Cora winced when she bent down; the _____ in her back was sharp.",
           "answer": "backache"
         },
         {
           "id": "set-030-q11",
           "code": "S030-Q11",
           "tag": "habits",
-          "sentence": "A _____ tyre-pressure check every two weeks is on the garage wall chart.",
+          "sentence": "Family film night is a _____ event, always at the same time on Friday.",
           "answer": "regular"
         },
         {
           "id": "set-030-q12",
           "code": "S030-Q12",
           "tag": "illness",
-          "sentence": "The winter assembly was shorter this year, to keep a spreading _____ from worsening.",
+          "sentence": "Grandad had the same weak, aching feeling; it was also the _____.",
           "answer": "flu"
         },
         {
           "id": "set-030-q13",
           "code": "S030-Q13",
           "tag": "disasters",
-          "sentence": "The flooding of the underpass was _____, deep enough that a car could not be seen, only guessed at.",
+          "sentence": "Mum said the cut was not _____, but it still needed a clean dressing.",
           "answer": "severe"
         },
         {
           "id": "set-030-q14",
           "code": "S030-Q14",
           "tag": "habits",
-          "sentence": "A sock that escaped the laundry basket started a hunt that still counted, unofficially, as _____.",
+          "sentence": "By late morning the _____ was done, and the house looked tidy and clean.",
           "answer": "housework"
         },
         {
           "id": "set-030-q15",
           "code": "S030-Q15",
           "tag": "illness",
-          "sentence": "The hiking flask of unfiltered stream water was a bad idea, and a later _____ proved it.",
+          "sentence": "Grandma rubbed Iris’s tummy softly until the _____ felt smaller.",
           "answer": "stomachache"
         },
         {
           "id": "set-030-q16",
           "code": "S030-Q16",
           "tag": "disasters",
-          "sentence": "The office recorded each _____ of money in the book, not to shame anyone, but to keep the account honest.",
+          "sentence": "Nora added a handmade card to the _____ of toys.",
           "answer": "donation"
         },
         {
           "id": "set-030-q17",
           "code": "S030-Q17",
           "tag": "habits",
-          "sentence": "After walking into the wrong classroom mid-lesson, the latecomer backed out, scarlet and _____.",
+          "sentence": "A kind friend sat with Jane until the shy, _____ feeling faded.",
           "answer": "embarrassed"
         },
         {
           "id": "set-030-q18",
           "code": "S030-Q18",
           "tag": "illness",
-          "sentence": "The nurse checked the name on the bottle twice, to be sure the _____ belonged to the right child.",
+          "sentence": "Will thanked the chemist and put the _____ in his bag.",
           "answer": "medicine"
         },
         {
           "id": "set-030-q19",
           "code": "S030-Q19",
           "tag": "disasters",
-          "sentence": "A _____ in September is common here; the wind still surprises people who leave laundry out.",
+          "sentence": "By morning the _____ had gone, but the wind still felt strong.",
           "answer": "typhoon"
         },
         {
           "id": "set-030-q20",
           "code": "S030-Q20",
           "tag": "habits",
-          "sentence": "A _____ printer monitor does not waste paper, because that is part of the trust they were given.",
+          "sentence": "The school needs _____ pupils like Sean, trusted to look after shared things.",
           "answer": "responsible"
         },
         {
           "id": "set-030-q21",
           "code": "S030-Q21",
           "tag": "illness",
-          "sentence": "A sensitive tooth under an old crown announced itself as a sharp _____ on the lower right.",
+          "sentence": "Even a sip of milk on that tooth woke the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-030-q22",
           "code": "S030-Q22",
           "tag": "disasters",
-          "sentence": "A _____ left fish, briefly, in a playground that had been dry at breakfast.",
+          "sentence": "By lunch the _____ had gone, leaving wet mud on the path.",
           "answer": "flood"
         },
         {
           "id": "set-030-q23",
           "code": "S030-Q23",
           "tag": "habits",
-          "sentence": "The guest speaker’s story was not a boast; it was there to _____ anyone who had almost quit.",
+          "sentence": "Miss Chan told Amy, “Keep trying,” because she wanted to _____ her.",
           "answer": "encourage"
         },
         {
           "id": "set-030-q24",
           "code": "S030-Q24",
           "tag": "disasters",
-          "sentence": "The bus route was diverted for a month after a _____ made the usual bend unsafe.",
+          "sentence": "After the _____, the slope looked as if a giant had scraped it.",
           "answer": "landslide"
         },
         {
           "id": "set-030-q25",
           "code": "S030-Q25",
           "tag": "habits",
-          "sentence": "A _____ parcel service promised “before noon” and kept the promise, arriving at eleven forty.",
+          "sentence": "Daisy put her shoes by the door at night to stay _____ and not late.",
           "answer": "punctual"
         }
       ]
@@ -5661,183 +5661,183 @@ window.CLOZE_BANK = {
         "id": "set-031-ex",
         "code": "S031-EX",
         "tag": "example",
-        "sentence": "The art _____ in the lobby shows this term’s best paintings, with names in both languages.",
-        "answer": "exhibition"
+        "sentence": "Rita could finally finish a chapter, the first since the _____, still weak.",
+        "answer": "flu"
       },
       "items": [
         {
           "id": "set-031-q01",
           "code": "S031-Q01",
           "tag": "habits",
-          "sentence": "Parents who _____ effort, not only marks, raise children who will try again.",
+          "sentence": "A kind thumbs-up from Mum helped _____ Leo at the starting line.",
           "answer": "encourage"
         },
         {
           "id": "set-031-q02",
           "code": "S031-Q02",
           "tag": "illness",
-          "sentence": "When the baby pulled her knees up and cried, Mum guessed a windy _____ and walked her gently.",
+          "sentence": "After the school picnic, Liam held his tummy and said he had a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-031-q03",
           "code": "S031-Q03",
           "tag": "disasters",
-          "sentence": "A _____ drought in the history unit lasted two summers, which is why the village still tells the story.",
+          "sentence": "A _____ cut on Tina’s foot needed cleaning and a rest from PE.",
           "answer": "severe"
         },
         {
           "id": "set-031-q04",
           "code": "S031-Q04",
           "tag": "habits",
-          "sentence": "The theatre doors close as the show starts, so a _____ audience is already in its seats.",
+          "sentence": "Ivan caught the earlier tram to stay _____ and on time.",
           "answer": "punctual"
         },
         {
           "id": "set-031-q05",
           "code": "S031-Q05",
           "tag": "illness",
-          "sentence": "A bitter tablet was hidden in a spoon of jam, the only way the little one would take the _____.",
+          "sentence": "The chemist printed a large-print label for Sara’s _____.",
           "answer": "medicine"
         },
         {
           "id": "set-031-q06",
           "code": "S031-Q06",
           "tag": "disasters",
-          "sentence": "The club’s old instruments, repaired first, were a _____ that a music teacher in another school could use at once.",
+          "sentence": "The _____ of packed sports kit was cleaned before it was given.",
           "answer": "donation"
         },
         {
           "id": "set-031-q07",
           "code": "S031-Q07",
           "tag": "habits",
-          "sentence": "The debate team’s _____ warm-up questions start every session, in the same order, for calm.",
+          "sentence": "A _____ visit to the neighbour happens every Wednesday.",
           "answer": "regular"
         },
         {
           "id": "set-031-q08",
           "code": "S031-Q08",
           "tag": "illness",
-          "sentence": "The old sofa in the staff room sagged in the middle, and Miss Fung stood up with a groan and a _____.",
+          "sentence": "Gary asked for a softer chair because of a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-031-q09",
           "code": "S031-Q09",
           "tag": "disasters",
-          "sentence": "The harbour turned white with blown spray as the _____ closed in, a sign of wind, not of a river overflow.",
+          "sentence": "During the _____, no one hung washing; the strong wind would tear it.",
           "answer": "typhoon"
         },
         {
           "id": "set-031-q10",
           "code": "S031-Q10",
           "tag": "habits",
-          "sentence": "After Sports Day, muddy trainers had to be scrubbed, which turned the balcony into a _____ station.",
+          "sentence": "On Sunday, Hugh folded the sheets and wiped the windows as _____.",
           "answer": "housework"
         },
         {
           "id": "set-031-q11",
           "code": "S031-Q11",
           "tag": "illness",
-          "sentence": "When the class opened the old atlas, a puff of dust started a small wave of _____.",
+          "sentence": "The clinic waiting room heard Judy’s _____ in her throat before Judy was called.",
           "answer": "cough"
         },
         {
           "id": "set-031-q12",
           "code": "S031-Q12",
           "tag": "disasters",
-          "sentence": "Trees shed leaves in the wrong month as a _____ went on, trying to survive with less.",
+          "sentence": "During the _____, with little rain, the school garden used only collected water.",
           "answer": "drought"
         },
         {
           "id": "set-031-q13",
           "code": "S031-Q13",
           "tag": "habits",
-          "sentence": "Being _____ for the sports bag means checking names against a list, not guessing from memory.",
+          "sentence": "Ken is _____ enough to be trusted with the lost-and-found key.",
           "answer": "responsible"
         },
         {
           "id": "set-031-q14",
           "code": "S031-Q14",
           "tag": "illness",
-          "sentence": "When the number on the strip thermometer changed colour, we knew a _____ had started.",
+          "sentence": "Ice chips helped a little, but the high _____ kept Carl restless.",
           "answer": "fever"
         },
         {
           "id": "set-031-q15",
           "code": "S031-Q15",
           "tag": "disasters",
-          "sentence": "An _____ strong enough to sway high buildings may still be only a rattle in a low house.",
+          "sentence": "A light _____ still shook the hanging wind chime on the porch.",
           "answer": "earthquake"
         },
         {
           "id": "set-031-q16",
           "code": "S031-Q16",
           "tag": "habits",
-          "sentence": "After swapping the daily cake for yoghurt and banana, the children still felt full and more _____.",
+          "sentence": "A balanced diet and daily stretching helped Ryan look fit and _____.",
           "answer": "healthy"
         },
         {
           "id": "set-031-q17",
           "code": "S031-Q17",
           "tag": "illness",
-          "sentence": "The computer-lab session ran long, and the blue screens left half the group with a mild _____.",
+          "sentence": "The strong sun made Zoe press her head; she had a _____.",
           "answer": "headache"
         },
         {
           "id": "set-031-q18",
           "code": "S031-Q18",
           "tag": "disasters",
-          "sentence": "Drivers abandoned cars when the _____ reached the door handles on the dipped road.",
+          "sentence": "The _____ pushed water under the door, covering the mat.",
           "answer": "flood"
         },
         {
           "id": "set-031-q19",
           "code": "S031-Q19",
           "tag": "habits",
-          "sentence": "A _____ baker leaves the dough to rise, even when it seems easier to bake it early.",
+          "sentence": "Cora was _____ and waited calmly with the tangled wool, unpicking it slowly.",
           "answer": "patient"
         },
         {
           "id": "set-031-q20",
           "code": "S031-Q20",
           "tag": "habits",
-          "sentence": "The _____ shop next door put out a free water dispenser during the heat, no purchase needed.",
+          "sentence": "Ben shared extra time after school, a _____ help with the project.",
           "answer": "generous"
         },
         {
           "id": "set-031-q21",
           "code": "S031-Q21",
           "tag": "disasters",
-          "sentence": "A _____ net on the cutting looks ugly until the day it holds back a fall of stones.",
+          "sentence": "The _____ warning stayed up until the slope was checked.",
           "answer": "landslide"
         },
         {
           "id": "set-031-q22",
           "code": "S031-Q22",
           "tag": "habits",
-          "sentence": "The _____ intern stapled his own sleeve to the bulletin board and had to be rescued, smiling.",
+          "sentence": "Ted tried to carry too much, a _____ choice that ended in a spill.",
           "answer": "clumsy"
         },
         {
           "id": "set-031-q23",
           "code": "S031-Q23",
           "tag": "illness",
-          "sentence": "The soft-food menu at home — congee, tofu, yoghurt — was designed around Dad’s current _____.",
+          "sentence": "Jack could not chew the rice cracker because he had a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-031-q24",
           "code": "S031-Q24",
           "tag": "habits",
-          "sentence": "The group photo caught a mid-blink, mid-chew moment, and its subject was _____ when it was posted.",
+          "sentence": "Zack felt _____ after the wrong answer came out very loudly.",
           "answer": "embarrassed"
         },
         {
           "id": "set-031-q25",
           "code": "S031-Q25",
           "tag": "illness",
-          "sentence": "When the whole football team felt feverish and weak, the coach suspected a shared _____.",
+          "sentence": "The doctor was glad the _____, still weak, had not gone to Karl’s chest.",
           "answer": "flu"
         }
       ]
@@ -5849,183 +5849,183 @@ window.CLOZE_BANK = {
         "id": "set-032-ex",
         "code": "S032-EX",
         "tag": "example",
-        "sentence": "We took the _____ to the island, and the crossing was short, but the wind on deck was cold.",
-        "answer": "ferry"
+        "sentence": "On the ferry, Daisy held her tummy and sat still with a _____.",
+        "answer": "stomachache"
       },
       "items": [
         {
           "id": "set-032-q01",
           "code": "S032-Q01",
           "tag": "illness",
-          "sentence": "When the fire alarm was tested twice in one morning, Miss Poon finished the day with a _____.",
+          "sentence": "A _____ in her head made Wendy ask for a darker room.",
           "answer": "headache"
         },
         {
           "id": "set-032-q02",
           "code": "S032-Q02",
           "tag": "disasters",
-          "sentence": "Drivers took the flyover after a _____ made the dipped road impassable, with water at the door handles.",
+          "sentence": "A sudden _____ sent water covering the estate storeroom.",
           "answer": "flood"
         },
         {
           "id": "set-032-q03",
           "code": "S032-Q03",
           "tag": "habits",
-          "sentence": "When the joke landed badly and the room went quiet, the teller felt a hot, _____ silence.",
+          "sentence": "Amy went red and _____ after clapping at the wrong time.",
           "answer": "embarrassed"
         },
         {
           "id": "set-032-q04",
           "code": "S032-Q04",
           "tag": "illness",
-          "sentence": "When the tram jolted, the bitten tongue was not the problem; the real pain was a waiting _____.",
+          "sentence": "Jane kept her hand on her cheek in the minibus, a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-032-q05",
           "code": "S032-Q05",
           "tag": "disasters",
-          "sentence": "When the temple’s hillside steps disappeared under mud, the official word was a _____, not a flood.",
+          "sentence": "The _____ came after midnight, mud sliding towards the catch net.",
           "answer": "landslide"
         },
         {
           "id": "set-032-q06",
           "code": "S032-Q06",
           "tag": "habits",
-          "sentence": "A _____ night-duty prefect in the hostel stays awake enough to hear a problem and get an adult.",
+          "sentence": "Hugo was trusted to keep the art money box, a _____ task.",
           "answer": "responsible"
         },
         {
           "id": "set-032-q07",
           "code": "S032-Q07",
           "tag": "illness",
-          "sentence": "A “recovery timetable” on the fridge counted the days until the _____ might loosen its hold.",
+          "sentence": "Sean could not walk far, still weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-032-q08",
           "code": "S032-Q08",
           "tag": "disasters",
-          "sentence": "After weeks and months of missing rain, the village wells were almost empty, and people feared the _____.",
+          "sentence": "A _____ of many weeks meant little rain and dry, dusty paths.",
           "answer": "drought"
         },
         {
           "id": "set-032-q09",
           "code": "S032-Q09",
           "tag": "habits",
-          "sentence": "A _____ weekend includes outdoor play, not a whole two days of dark rooms and chips.",
+          "sentence": "A _____ evening snack was yoghurt, not another sweet bun.",
           "answer": "healthy"
         },
         {
           "id": "set-032-q10",
           "code": "S032-Q10",
           "tag": "habits",
-          "sentence": "When the rain delayed the match, a _____ team sat and played cards, instead of complaining loudly.",
+          "sentence": "Gary stayed _____ and waited calmly as the kettle boiled, and laid the cups ready.",
           "answer": "patient"
         },
         {
           "id": "set-032-q11",
           "code": "S032-Q11",
           "tag": "disasters",
-          "sentence": "A _____ of blankets, thick, was what the winter appeal had actually asked for, and what arrived.",
+          "sentence": "The club made a _____ of packed board games for the community room.",
           "answer": "donation"
         },
         {
           "id": "set-032-q12",
           "code": "S032-Q12",
           "tag": "habits",
-          "sentence": "A _____ slice missed the bread and left a notch in the cutting board instead.",
+          "sentence": "Nina mis-steered the trolley and, being _____ and dropped it, clipped a display.",
           "answer": "clumsy"
         },
         {
           "id": "set-032-q13",
           "code": "S032-Q13",
           "tag": "illness",
-          "sentence": "Miss Law stepped into the corridor rather than let a growing _____ disturb the test.",
+          "sentence": "Ryan asked Mum for a soft bun; toast had started a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-032-q14",
           "code": "S032-Q14",
           "tag": "disasters",
-          "sentence": "During the _____, we filled bottles and checked torches, following the tropical-cyclone family plan.",
+          "sentence": "Strong wind from the _____ pushed the rain under the door.",
           "answer": "typhoon"
         },
         {
           "id": "set-032-q15",
           "code": "S032-Q15",
           "tag": "habits",
-          "sentence": "A _____ uncle drove three extra children home, well out of his way, and would not be paid for petrol.",
+          "sentence": "A _____ uncle paid for an extra ride ticket for each cousin.",
           "answer": "generous"
         },
         {
           "id": "set-032-q16",
           "code": "S032-Q16",
           "tag": "illness",
-          "sentence": "Dad logged the readings in a notebook so the doctor could see how the _____ rose and fell.",
+          "sentence": "A dry mouth and a hot face pointed to a rising _____.",
           "answer": "fever"
         },
         {
           "id": "set-032-q17",
           "code": "S032-Q17",
           "tag": "disasters",
-          "sentence": "When the swimming-pool water sloshed by itself, the lifeguard guessed a distant _____, and was right.",
+          "sentence": "During an _____, the water in the glass rippled as the floor shook.",
           "answer": "earthquake"
         },
         {
           "id": "set-032-q18",
           "code": "S032-Q18",
           "tag": "habits",
-          "sentence": "The swimming teacher used a playful countdown to _____ the child to put her face in the water.",
+          "sentence": "A kind word from a neighbour helped _____ Eva to try again.",
           "answer": "encourage"
         },
         {
           "id": "set-032-q19",
           "code": "S032-Q19",
           "tag": "illness",
-          "sentence": "A food-allergy talk used a careful example of a tummy cramp that felt like a sudden _____.",
+          "sentence": "The air-con on full blast seemed to tighten Cora’s _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-032-q20",
           "code": "S032-Q20",
           "tag": "habits",
-          "sentence": "A _____ lab partner has the apron on and the book open when the experiment is due to begin.",
+          "sentence": "Miss Lee nodded at Faith, who walked in early and _____.",
           "answer": "punctual"
         },
         {
           "id": "set-032-q21",
           "code": "S032-Q21",
           "tag": "habits",
-          "sentence": "A _____ lights-out at ten in the hostel, kept every camp night, helps every cub know when the day is done.",
+          "sentence": "A _____ family video call is set every Sunday at four.",
           "answer": "regular"
         },
         {
           "id": "set-032-q22",
           "code": "S032-Q22",
           "tag": "illness",
-          "sentence": "The follow-up appointment was booked to see whether the _____ had done its work.",
+          "sentence": "Zack felt less tight in the chest after two days of the _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-032-q23",
           "code": "S032-Q23",
           "tag": "disasters",
-          "sentence": "The child’s fever was _____, thirty-nine and rising, so the clinic was not postponed until morning.",
+          "sentence": "The _____ cut needed stitches, so Ken missed the afternoon lesson.",
           "answer": "severe"
         },
         {
           "id": "set-032-q24",
           "code": "S032-Q24",
           "tag": "habits",
-          "sentence": "The school’s life-skills lesson practised simple _____: folding a shirt and wiping a table properly.",
+          "sentence": "Nora signed the family _____ chart with a small, proud flourish, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-032-q25",
           "code": "S032-Q25",
           "tag": "illness",
-          "sentence": "When the tram jerked to a halt, Auntie Pam grabbed the rail and later blamed the jolt for her _____.",
+          "sentence": "On the walk down the hill, Daisy’s back began to hurt with a _____.",
           "answer": "backache"
         }
       ]
@@ -6037,183 +6037,183 @@ window.CLOZE_BANK = {
         "id": "set-033-ex",
         "code": "S033-EX",
         "tag": "example",
-        "sentence": "The last _____ of the night opened like a gold tree above the harbour, then faded.",
-        "answer": "firework"
+        "sentence": "Lucy set a timer for the next dose of _____.",
+        "answer": "medicine"
       },
       "items": [
         {
           "id": "set-033-q01",
           "code": "S033-Q01",
           "tag": "disasters",
-          "sentence": "The _____ shook our street hard, even though the radio later said the number was not the highest.",
+          "sentence": "An _____ at lunch made the trays tremble, and talking stopped.",
           "answer": "earthquake"
         },
         {
           "id": "set-033-q02",
           "code": "S033-Q02",
           "tag": "habits",
-          "sentence": "Because the tray had no rim, a _____ tilt sent two cups sliding, though both were caught.",
+          "sentence": "The _____ and dropped it pass from Maya hit the drinks bottle on the bench.",
           "answer": "clumsy"
         },
         {
           "id": "set-033-q03",
           "code": "S033-Q03",
           "tag": "illness",
-          "sentence": "A mouthful of fizzy drink went down too quickly and ended in an awkward _____.",
+          "sentence": "Lila pointed to the water jug instead of speaking, mid-_____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-033-q04",
           "code": "S033-Q04",
           "tag": "disasters",
-          "sentence": "A _____ storm warning, with the word “storm” already on the board, told us the degree, not the type, of weather.",
+          "sentence": "The _____ damage after the wind meant the balcony could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-033-q05",
           "code": "S033-Q05",
           "tag": "habits",
-          "sentence": "The _____ author signed books past the end of the slot, so the last child in the queue was not missed.",
+          "sentence": "A _____ tray of extra buns went to the late-arriving team.",
           "answer": "generous"
         },
         {
           "id": "set-033-q06",
           "code": "S033-Q06",
           "tag": "illness",
-          "sentence": "A hot forehead after the long hike was enough for the leader to record a suspected _____.",
+          "sentence": "Hugh felt the pillow grow warm under a stubborn high _____.",
           "answer": "fever"
         },
         {
           "id": "set-033-q07",
           "code": "S033-Q07",
           "tag": "disasters",
-          "sentence": "The “leave a book, take a book” shelf is a kind of standing _____, renewed whenever a bag arrives.",
+          "sentence": "A _____ of packed rice cakes went with the tins.",
           "answer": "donation"
         },
         {
           "id": "set-033-q08",
           "code": "S033-Q08",
           "tag": "habits",
-          "sentence": "A kind email after the concert can _____ a musician who noticed only the one mistake.",
+          "sentence": "A kind message on the board helped _____ Hugo before the test.",
           "answer": "encourage"
         },
         {
           "id": "set-033-q09",
           "code": "S033-Q09",
           "tag": "illness",
-          "sentence": "After three hours of tablet revision at the dining table, Justin rubbed his back and complained of a _____.",
+          "sentence": "After the skipping contest, Ivan rubbed his back and said it was a _____.",
           "answer": "backache"
         },
         {
           "id": "set-033-q10",
           "code": "S033-Q10",
           "tag": "habits",
-          "sentence": "Because the coach was _____, the team was on the pitch for the warm-up, not still on the bus.",
+          "sentence": "Karl used two clocks in his room to stay _____ all week.",
           "answer": "punctual"
         },
         {
           "id": "set-033-q11",
           "code": "S033-Q11",
           "tag": "habits",
-          "sentence": "The nurse measured height and weight and smiled: a _____ growth pattern for the year.",
+          "sentence": "Liam kept a water bottle at the desk, a simple _____ habit.",
           "answer": "healthy"
         },
         {
           "id": "set-033-q12",
           "code": "S033-Q12",
           "tag": "illness",
-          "sentence": "After the airport delay in a crowded hall, the first symptom of the _____ appeared two days later.",
+          "sentence": "The _____ made Rita too weak to carry the school bag.",
           "answer": "flu"
         },
         {
           "id": "set-033-q13",
           "code": "S033-Q13",
           "tag": "disasters",
-          "sentence": "A raised _____ signal overnight meant the morning’s exam was postponed, officially.",
+          "sentence": "After the _____, the tropical storm had faded, but branches still blocked a lane.",
           "answer": "typhoon"
         },
         {
           "id": "set-033-q14",
           "code": "S033-Q14",
           "tag": "habits",
-          "sentence": "The _____ museum guide answered the same question from the next class as kindly as the first.",
+          "sentence": "A _____ wait in the post office ended with a kind thank you.",
           "answer": "patient"
         },
         {
           "id": "set-033-q15",
           "code": "S033-Q15",
           "tag": "illness",
-          "sentence": "After the extra portion of hotpot, Uncle loosened his belt and named the feeling a well-earned _____.",
+          "sentence": "A _____ in his tummy made Ryan leave the workshop before the messy bit.",
           "answer": "stomachache"
         },
         {
           "id": "set-033-q16",
           "code": "S033-Q16",
           "tag": "disasters",
-          "sentence": "The history museum has photos of a famous _____, when sampans were used in a city street.",
+          "sentence": "A _____ from heavy rain left water covering the garden beds.",
           "answer": "flood"
         },
         {
           "id": "set-033-q17",
           "code": "S033-Q17",
           "tag": "habits",
-          "sentence": "The bakery bakes a _____ batch of egg tarts at eleven and at four, every business day.",
+          "sentence": "Every weekday, without fail, Victor packs fruit, a _____ habit.",
           "answer": "regular"
         },
         {
           "id": "set-033-q18",
           "code": "S033-Q18",
           "tag": "illness",
-          "sentence": "A “no grapefruit” warning on the leaflet applied to this particular _____.",
+          "sentence": "Mum hid the _____ after the last dose, away from the toddler.",
           "answer": "medicine"
         },
         {
           "id": "set-033-q19",
           "code": "S033-Q19",
           "tag": "disasters",
-          "sentence": "A _____ of soil blocked the stream, and the water then built up as a second problem for the village below.",
+          "sentence": "The _____ sent wet soil over the steps to the lookout.",
           "answer": "landslide"
         },
         {
           "id": "set-033-q20",
           "code": "S033-Q20",
           "tag": "habits",
-          "sentence": "Grandma taught a proper way to wring a mop, because sloppy _____ only moves the dirt around.",
+          "sentence": "Wendy mopped the kitchen last, so footprints would not mark the _____.",
           "answer": "housework"
         },
         {
           "id": "set-033-q21",
           "code": "S033-Q21",
           "tag": "illness",
-          "sentence": "A stuffy minibus with closed windows made the last row complain of a heavy _____.",
+          "sentence": "Mum dimmed the lamp when Ruby named a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-033-q22",
           "code": "S033-Q22",
           "tag": "disasters",
-          "sentence": "During the _____, car-washing was discouraged, and the city praised dusty, responsible cars.",
+          "sentence": "A long _____ left the park grass dry and brown.",
           "answer": "drought"
         },
         {
           "id": "set-033-q23",
           "code": "S033-Q23",
           "tag": "habits",
-          "sentence": "A forgotten fly on a costume, noticed mid-scene, left the actor professional, but later _____.",
+          "sentence": "Leo sat _____, and he felt red and small when his secret was guessed.",
           "answer": "embarrassed"
         },
         {
           "id": "set-033-q24",
           "code": "S033-Q24",
           "tag": "illness",
-          "sentence": "A red, tender gum around one molar often travels with a developing _____.",
+          "sentence": "Jane could not blow the trumpet, stopped by a _____ in her tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-033-q25",
           "code": "S033-Q25",
           "tag": "habits",
-          "sentence": "The teacher thanked the _____ pupil who stayed to close the windows after a sudden rain.",
+          "sentence": "The _____ monitor ticked every name as they boarded.",
           "answer": "responsible"
         }
       ]
@@ -6225,183 +6225,183 @@ window.CLOZE_BANK = {
         "id": "set-034-ex",
         "code": "S034-EX",
         "tag": "example",
-        "sentence": "A shallow _____ in the courtyard is for looking, not for climbing, and the sign says so clearly.",
-        "answer": "fountain"
+        "sentence": "At the booking desk, _____ Lucy was called first, having arrived on time.",
+        "answer": "punctual"
       },
       "items": [
         {
           "id": "set-034-q01",
           "code": "S034-Q01",
           "tag": "habits",
-          "sentence": "After thanking the “chef” who was only delivering the boxes, the host felt a little _____.",
+          "sentence": "Eva felt _____ because she had practised the wrong poem.",
           "answer": "embarrassed"
         },
         {
           "id": "set-034-q02",
           "code": "S034-Q02",
           "tag": "illness",
-          "sentence": "The science lesson on viruses used the seasonal _____ as a careful, age-suitable example.",
+          "sentence": "The _____ brought shivers and aches all over for Hugo.",
           "answer": "flu"
         },
         {
           "id": "set-034-q03",
           "code": "S034-Q03",
           "tag": "disasters",
-          "sentence": "The hillside trees all leaned one way after the _____, a map of the strongest wind.",
+          "sentence": "The _____ closed the roof playground; no one could stand in that wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-034-q04",
           "code": "S034-Q04",
           "tag": "habits",
-          "sentence": "A _____ dog-walker, trusted with a neighbour’s lead, keeps to the agreed route and time.",
+          "sentence": "Tess did not ignore the leak; being trusted and _____, she told the office.",
           "answer": "responsible"
         },
         {
           "id": "set-034-q05",
           "code": "S034-Q05",
           "tag": "illness",
-          "sentence": "The roller coaster looked tempting, but a warning _____ after lunch made the queue a short one.",
+          "sentence": "The nurse checked she had no high temperature, only a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-034-q06",
           "code": "S034-Q06",
           "tag": "disasters",
-          "sentence": "A _____ behind the mall was pumped out all night, yet the water still covered the loading bay.",
+          "sentence": "After the _____, water still covered the basement lights’ switch.",
           "answer": "flood"
         },
         {
           "id": "set-034-q07",
           "code": "S034-Q07",
           "tag": "habits",
-          "sentence": "A _____ drink with lunch is water or milk, not a huge cup of sweet tea every day.",
+          "sentence": "The family fridge had fruit at the front, a _____ reminder.",
           "answer": "healthy"
         },
         {
           "id": "set-034-q08",
           "code": "S034-Q08",
           "tag": "illness",
-          "sentence": "When the dropper was used for the baby, the exact number of drops of _____ was counted aloud.",
+          "sentence": "A bitter _____ from the bottle made Cora drink water after.",
           "answer": "medicine"
         },
         {
           "id": "set-034-q09",
           "code": "S034-Q09",
           "tag": "disasters",
-          "sentence": "After the long rain, walkers were told to stay off the bare slopes, where a _____ risk was high.",
+          "sentence": "The _____ of mud on the slope moved a tree root down with the stones.",
           "answer": "landslide"
         },
         {
           "id": "set-034-q10",
           "code": "S034-Q10",
           "tag": "habits",
-          "sentence": "A _____ cat-sitter waits for the shy cat to come out, rather than dragging it from under the bed.",
+          "sentence": "A _____ friend let Jack think, and did not rush the answer.",
           "answer": "patient"
         },
         {
           "id": "set-034-q11",
           "code": "S034-Q11",
           "tag": "illness",
-          "sentence": "After the spelling test under bright white lights, the high scorer still asked for a break from a _____.",
+          "sentence": "After the loud fire drill, Ken had a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-034-q12",
           "code": "S034-Q12",
           "tag": "disasters",
-          "sentence": "The family practised getting under the dining table, because that is our plan for a night _____.",
+          "sentence": "A light _____ still shook the hanging coats on the hooks.",
           "answer": "earthquake"
         },
         {
           "id": "set-034-q13",
           "code": "S034-Q13",
           "tag": "habits",
-          "sentence": "The class agreed to _____, not tease, anyone who answered in English during the discussion.",
+          "sentence": "The helper’s kind words helped _____ Nina up the last hill.",
           "answer": "encourage"
         },
         {
           "id": "set-034-q14",
           "code": "S034-Q14",
           "tag": "illness",
-          "sentence": "After the rugby mouthguard was lost, a knock in training left a chipped tooth and a _____.",
+          "sentence": "The dentist put a little filling in, to stop the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-034-q15",
           "code": "S034-Q15",
           "tag": "disasters",
-          "sentence": "The damage to the school roof was _____, and lessons moved to the hall until repairs began.",
+          "sentence": "A _____ storm overnight left damage, and the lane could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-034-q16",
           "code": "S034-Q16",
           "tag": "habits",
-          "sentence": "The interview panel thanked the _____ applicant who arrived with time to breathe, not in a rush.",
+          "sentence": "Being _____, early and ready at Saturday practice earned Vera a nod from the coach.",
           "answer": "punctual"
         },
         {
           "id": "set-034-q17",
           "code": "S034-Q17",
           "tag": "illness",
-          "sentence": "The lifeguard told the children not to dive awkwardly; last week a boy had left the pool with a _____.",
+          "sentence": "Faith could not walk quickly because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-034-q18",
           "code": "S034-Q18",
           "tag": "disasters",
-          "sentence": "A _____ in a parent’s will, years later, still had a school library’s name on it, carefully.",
+          "sentence": "A _____ of packed noodles and sauce filled the last bag.",
           "answer": "donation"
         },
         {
           "id": "set-034-q19",
           "code": "S034-Q19",
           "tag": "habits",
-          "sentence": "A _____ revision slot from six to seven, kept most weekdays, beats a once-a-month panic.",
+          "sentence": "Wade changes the calendar page as a _____ first-of-month habit.",
           "answer": "regular"
         },
         {
           "id": "set-034-q20",
           "code": "S034-Q20",
           "tag": "habits",
-          "sentence": "A sticky patch of juice under the chair had been missed, so the evening _____ took a little longer.",
+          "sentence": "Yuki put music on and started the _____, beginning with laundry.",
           "answer": "housework"
         },
         {
           "id": "set-034-q21",
           "code": "S034-Q21",
           "tag": "disasters",
-          "sentence": "A _____ turned the nature trail’s marsh into a pale crust, with cracks wide enough for a hand.",
+          "sentence": "The _____, with little rain, dried the balcony plants, even in the shade.",
           "answer": "drought"
         },
         {
           "id": "set-034-q22",
           "code": "S034-Q22",
           "tag": "habits",
-          "sentence": "The _____ dancer’s bag, slung too loosely, knocked a water bottle off the studio bench.",
+          "sentence": "The soup splash was from _____ and dropped it Sam, who misjudged the ladle.",
           "answer": "clumsy"
         },
         {
           "id": "set-034-q23",
           "code": "S034-Q23",
           "tag": "illness",
-          "sentence": "The winter assembly was full of scarves, yet a lonely _____ still rang out during the hymn.",
+          "sentence": "Holly held a tissue ready each time the _____ hit her throat.",
           "answer": "cough"
         },
         {
           "id": "set-034-q24",
           "code": "S034-Q24",
           "tag": "habits",
-          "sentence": "A _____ classmate offered both spare erasers, not “one if I must”.",
+          "sentence": "A _____ stall added a free bookmark to every book sold.",
           "answer": "generous"
         },
         {
           "id": "set-034-q25",
           "code": "S034-Q25",
           "tag": "illness",
-          "sentence": "The air-con was turned a little cooler, not icy, because a _____ can make a room feel stifling.",
+          "sentence": "The doctor asked how long the high _____ had lasted already.",
           "answer": "fever"
         }
       ]
@@ -6413,183 +6413,183 @@ window.CLOZE_BANK = {
         "id": "set-035-ex",
         "code": "S035-EX",
         "tag": "example",
-        "sentence": "The _____ jasmine on the balcony filled the small kitchen every evening in May.",
-        "answer": "fragrant"
+        "sentence": "The plant-watering rota is _____ every week, and Ken never skips his day.",
+        "answer": "regular"
       },
       "items": [
         {
           "id": "set-035-q01",
           "code": "S035-Q01",
           "tag": "illness",
-          "sentence": "After a restless night, the morning reading still showed a mild but clear _____.",
+          "sentence": "Victor whispered that he felt ‘on fire’, describing a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-035-q02",
           "code": "S035-Q02",
           "tag": "disasters",
-          "sentence": "The cloud-seeding talk on the news was a sign of how serious the _____ had become.",
+          "sentence": "The _____ lasted into autumn, still with little rain.",
           "answer": "drought"
         },
         {
           "id": "set-035-q03",
           "code": "S035-Q03",
           "tag": "habits",
-          "sentence": "The community centre runs _____ yoga on Wednesday evenings, and the room is reserved all year.",
+          "sentence": "Polly meets the same group at a _____ every week Saturday breakfast hour.",
           "answer": "regular"
         },
         {
           "id": "set-035-q04",
           "code": "S035-Q04",
           "tag": "illness",
-          "sentence": "The choir’s overtone practice was beautiful, but standing in front of the speakers gave me a _____.",
+          "sentence": "A tight band of _____ sat on Maya’s brow all afternoon.",
           "answer": "headache"
         },
         {
           "id": "set-035-q05",
           "code": "S035-Q05",
           "tag": "disasters",
-          "sentence": "A mild _____ during the assembly made the hall go silent, then, after a breath, the drill words began.",
+          "sentence": "An _____ trembled through the estate, and a picture went crooked.",
           "answer": "earthquake"
         },
         {
           "id": "set-035-q06",
           "code": "S035-Q06",
           "tag": "habits",
-          "sentence": "The family donates old clothes after the seasonal _____, when cupboards are emptied and wiped.",
+          "sentence": "Chris wiped the glass door as part of Saturday’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-035-q07",
           "code": "S035-Q07",
           "tag": "illness",
-          "sentence": "The poster in the washroom reminds us that ignoring a small hole can grow into a _____.",
+          "sentence": "Leo cancelled the choir solo; a _____ in a tooth made singing hard.",
           "answer": "toothache"
         },
         {
           "id": "set-035-q08",
           "code": "S035-Q08",
           "tag": "habits",
-          "sentence": "A _____ flick of the paintbrush dotted the neighbour’s drawing with unexpected stars.",
+          "sentence": "Lucy tried to pour carefully, but a _____ tilt spilled a little.",
           "answer": "clumsy"
         },
         {
           "id": "set-035-q09",
           "code": "S035-Q09",
           "tag": "illness",
-          "sentence": "After shouting too hard at the football match, Kelvin paid with a raw throat and a rough _____.",
+          "sentence": "Nell missed the recording because a _____ kept catching her throat.",
           "answer": "cough"
         },
         {
           "id": "set-035-q10",
           "code": "S035-Q10",
           "tag": "habits",
-          "sentence": "The _____ grandparents quietly paid for the school camp of a neighbour’s child, and asked for no announcement.",
+          "sentence": "A _____ host packed extra sandwiches, enough for unexpected guests.",
           "answer": "generous"
         },
         {
           "id": "set-035-q11",
           "code": "S035-Q11",
           "tag": "disasters",
-          "sentence": "A _____ shortage of textbooks in the first week was solved, but it felt serious at the time.",
+          "sentence": "The _____ cut on Zack’s palm needed a clean bandage at once.",
           "answer": "severe"
         },
         {
           "id": "set-035-q12",
           "code": "S035-Q12",
           "tag": "habits",
-          "sentence": "A _____ dinner guest brings no stress; the food can come out of the oven at the moment it is ready.",
+          "sentence": "Even after a late night, Mark was _____ for the morning roll.",
           "answer": "punctual"
         },
         {
           "id": "set-035-q13",
           "code": "S035-Q13",
           "tag": "illness",
-          "sentence": "A missed dose of a usual dairy-intolerance habit led to a familiar, gurgling _____.",
+          "sentence": "Ted listened to a calm song, waiting for the _____ in his tummy to ease.",
           "answer": "stomachache"
         },
         {
           "id": "set-035-q14",
           "code": "S035-Q14",
           "tag": "disasters",
-          "sentence": "The bake-sale tin, emptied and counted twice, became a _____ with a dated receipt.",
+          "sentence": "A _____ of packed sports bottles, washed, went to the youth team.",
           "answer": "donation"
         },
         {
           "id": "set-035-q15",
           "code": "S035-Q15",
           "tag": "habits",
-          "sentence": "The auto-correct changed a polite message into a strange one, and the sender was _____ at lunch.",
+          "sentence": "Owen felt _____ when he walked into the staff tea room by mistake.",
           "answer": "embarrassed"
         },
         {
           "id": "set-035-q16",
           "code": "S035-Q16",
           "tag": "illness",
-          "sentence": "The family medicine cabinet was tidied, and out-of-date _____ was returned to the chemist.",
+          "sentence": "A new bottle of _____ came from the chemist on Friday.",
           "answer": "medicine"
         },
         {
           "id": "set-035-q17",
           "code": "S035-Q17",
           "tag": "disasters",
-          "sentence": "When the reporter stood in a roaring street, it was the _____’s gusts that took her voice away.",
+          "sentence": "A summer _____ closed the school, as the tropical storm neared.",
           "answer": "typhoon"
         },
         {
           "id": "set-035-q18",
           "code": "S035-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for the costume rail includes hanging every item, not leaving a pile “for later”.",
+          "sentence": "A trusted, _____ pupil, Iris never leaves library books on the bus.",
           "answer": "responsible"
         },
         {
           "id": "set-035-q19",
           "code": "S035-Q19",
           "tag": "illness",
-          "sentence": "Becky could not zip her dress easily, as a _____ made it painful to reach behind her.",
+          "sentence": "During the long ferry ride, Karl kept shifting to ease a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-035-q20",
           "code": "S035-Q20",
           "tag": "habits",
-          "sentence": "After the swimming term, several pupils looked fitter and said they felt more _____.",
+          "sentence": "Will kept to a _____ with fruit and water bedtime even after a late match.",
           "answer": "healthy"
         },
         {
           "id": "set-035-q21",
           "code": "S035-Q21",
           "tag": "habits",
-          "sentence": "The _____ exam invigilator waited until the last pencil was still, then collected the papers.",
+          "sentence": "Being _____ and waited calmly, Faith let the story reach its end without spoiling it.",
           "answer": "patient"
         },
         {
           "id": "set-035-q22",
           "code": "S035-Q22",
           "tag": "illness",
-          "sentence": "A child too weak to sit up for a story, and hot then cold, is often in the middle of the _____.",
+          "sentence": "The nurse said the _____ made Tina weak all over, not just tired.",
           "answer": "flu"
         },
         {
           "id": "set-035-q23",
           "code": "S035-Q23",
           "tag": "disasters",
-          "sentence": "Low apartments issued a _____ notice: move what you can, and do not sleep on the ground floor.",
+          "sentence": "A spring _____ left water covering the farm track for two days.",
           "answer": "flood"
         },
         {
           "id": "set-035-q24",
           "code": "S035-Q24",
           "tag": "habits",
-          "sentence": "A coach will _____ a careful runner to start, because waiting forever is also a kind of fear.",
+          "sentence": "The scout leader used kind words to _____ Gary on the night walk.",
           "answer": "encourage"
         },
         {
           "id": "set-035-q25",
           "code": "S035-Q25",
           "tag": "disasters",
-          "sentence": "A thin _____ of gravel slid onto the pavement from a small wall, a warning rather than a disaster.",
+          "sentence": "After the _____, a sign said the hillside path was closed.",
           "answer": "landslide"
         }
       ]
@@ -6601,183 +6601,183 @@ window.CLOZE_BANK = {
         "id": "set-036-ex",
         "code": "S036-EX",
         "tag": "example",
-        "sentence": "The class walked slowly through the _____, keeping a polite distance from the paintings.",
-        "answer": "gallery"
+        "sentence": "Lucy folded the tablecloths and stacked them, then ticked the _____.",
+        "answer": "housework"
       },
       "items": [
         {
           "id": "set-036-q01",
           "code": "S036-Q01",
           "tag": "disasters",
-          "sentence": "The pain after the sprain was _____, which is why crutches, not “walk it off”, were used.",
+          "sentence": "The _____ cut needed more than a plaster, so they went to the clinic.",
           "answer": "severe"
         },
         {
           "id": "set-036-q02",
           "code": "S036-Q02",
           "tag": "habits",
-          "sentence": "When he bowed to the wrong judge, the musician recovered, then felt privately _____.",
+          "sentence": "Nina felt _____ when she stood up too soon at the end of the song.",
           "answer": "embarrassed"
         },
         {
           "id": "set-036-q03",
           "code": "S036-Q03",
           "tag": "illness",
-          "sentence": "A spare copy of the prescription was kept in the file in case the _____ needed a refill while travelling.",
+          "sentence": "Gary swallowed the _____ with a big glass of water, as labelled.",
           "answer": "medicine"
         },
         {
           "id": "set-036-q04",
           "code": "S036-Q04",
           "tag": "disasters",
-          "sentence": "A _____ of unused nappies, unopened, was exactly what the shelter’s list had requested that week.",
+          "sentence": "A _____ of packed biscuits went with tea for the night shift.",
           "answer": "donation"
         },
         {
           "id": "set-036-q05",
           "code": "S036-Q05",
           "tag": "habits",
-          "sentence": "A _____ exam helper, in charge of extra paper, gives it fairly and records who took it.",
+          "sentence": "The teacher praised Liam for a trusted, _____ job on the register.",
           "answer": "responsible"
         },
         {
           "id": "set-036-q06",
           "code": "S036-Q06",
           "tag": "illness",
-          "sentence": "During the cub-scout hike, the steep descent jarred Nathan’s spine and left him with a _____.",
+          "sentence": "Holly leant on the railing, waiting for a _____ in her back to ease.",
           "answer": "backache"
         },
         {
           "id": "set-036-q07",
           "code": "S036-Q07",
           "tag": "disasters",
-          "sentence": "During the _____, a flying sign on a still-dry pavement nearly injured a passer-by; it was not only the rain that was dangerous.",
+          "sentence": "Dad brought the plants in before the _____ and its strong wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-036-q08",
           "code": "S036-Q08",
           "tag": "habits",
-          "sentence": "A _____ lunchbox rule in this family is “a colour you can see”, meaning real vegetables.",
+          "sentence": "Sara packed fruit, not crisps, hoping for a more _____ lunch.",
           "answer": "healthy"
         },
         {
           "id": "set-036-q09",
           "code": "S036-Q09",
           "tag": "illness",
-          "sentence": "The steamer at the dim-sum stall sent up a cloud, and one waiter turned away with a _____.",
+          "sentence": "Wade left the hot pot steam, which started a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-036-q10",
           "code": "S036-Q10",
           "tag": "habits",
-          "sentence": "A _____ young brother let the tadpoles be, though he wanted them to become frogs that week.",
+          "sentence": "A _____ wait at the ticket machine ended in a calm retry.",
           "answer": "patient"
         },
         {
           "id": "set-036-q11",
           "code": "S036-Q11",
           "tag": "habits",
-          "sentence": "A _____ roll-call at the start of each scout meeting is part of the group’s unchanging routine.",
+          "sentence": "Eric and his sister have a _____ every week Saturday baking hour.",
           "answer": "regular"
         },
         {
           "id": "set-036-q12",
           "code": "S036-Q12",
           "tag": "illness",
-          "sentence": "The medical-room bed is used whenever a pupil arrives with a hot brow and a likely _____.",
+          "sentence": "Yuki lost interest in snacks, typical during a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-036-q13",
           "code": "S036-Q13",
           "tag": "disasters",
-          "sentence": "Cracked road paint in a distant report was blamed on a last year’s _____, still in the ground’s memory.",
+          "sentence": "The _____ shook the hanging light in the kitchen.",
           "answer": "earthquake"
         },
         {
           "id": "set-036-q14",
           "code": "S036-Q14",
           "tag": "habits",
-          "sentence": "When both parents worked late, a simple plan of _____ — dishes and bins — kept the kitchen calm.",
+          "sentence": "Zoe cleaned the balcony rail, a dusty job on the _____ list.",
           "answer": "housework"
         },
         {
           "id": "set-036-q15",
           "code": "S036-Q15",
           "tag": "illness",
-          "sentence": "Grandad put away the crossword, saying the tiny clues had started a _____.",
+          "sentence": "The hot classroom gave Sam a _____ in his head by lunch.",
           "answer": "headache"
         },
         {
           "id": "set-036-q16",
           "code": "S036-Q16",
           "tag": "disasters",
-          "sentence": "A dip in the road that looked harmless on a dry day was swallowed by a _____ in less than an hour.",
+          "sentence": "The _____ rose in the village, water covering the low stone path.",
           "answer": "flood"
         },
         {
           "id": "set-036-q17",
           "code": "S036-Q17",
           "tag": "habits",
-          "sentence": "When she put the violin down in a hurry, a _____ angle let the bow roll off the chair.",
+          "sentence": "Jack put the lid on crooked, a small but _____ and dropped it finish.",
           "answer": "clumsy"
         },
         {
           "id": "set-036-q18",
           "code": "S036-Q18",
           "tag": "illness",
-          "sentence": "A late-night ache made him sit up with a glass of water, helpless against the _____.",
+          "sentence": "A tiny crack from a fall last week turned into a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-036-q19",
           "code": "S036-Q19",
           "tag": "disasters",
-          "sentence": "The science lesson used a tray of wet sand to show how a _____ begins when the slope is too wet.",
+          "sentence": "A _____ warning on the steep slope kept the afternoon walk indoors.",
           "answer": "landslide"
         },
         {
           "id": "set-036-q20",
           "code": "S036-Q20",
           "tag": "habits",
-          "sentence": "A _____ baker sent the unsold bread to the shelter at closing time, every closing time.",
+          "sentence": "A _____ and shared extra offer of a lift home included everyone’s heavy bags.",
           "answer": "generous"
         },
         {
           "id": "set-036-q21",
           "code": "S036-Q21",
           "tag": "illness",
-          "sentence": "The neighbour left a bag of fruit at the door rather than visit while our house had the _____.",
+          "sentence": "Joel felt sore when walking, still shaky from the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-036-q22",
           "code": "S036-Q22",
           "tag": "disasters",
-          "sentence": "One short shower did not end the _____; the soil swallowed the brief rain and stayed dry underneath.",
+          "sentence": "During the _____, with little rain, watering was allowed only in the evening.",
           "answer": "drought"
         },
         {
           "id": "set-036-q23",
           "code": "S036-Q23",
           "tag": "habits",
-          "sentence": "The postcard from a former pupil was sent to _____ this year’s class before the exams.",
+          "sentence": "The teacher used kind words to _____ Victor to read aloud again.",
           "answer": "encourage"
         },
         {
           "id": "set-036-q24",
           "code": "S036-Q24",
           "tag": "illness",
-          "sentence": "The class play’s first night nerves settled in the stomach as a fluttering _____.",
+          "sentence": "Pearl breathed out slowly, waiting for the _____ in her stomach to ease.",
           "answer": "stomachache"
         },
         {
           "id": "set-036-q25",
           "code": "S036-Q25",
           "tag": "habits",
-          "sentence": "The train to Hung Hom is useful only if you are _____ enough to meet it, because it will not hold the doors.",
+          "sentence": "The exam room clock and Ruby’s watch agreed, and she was _____ to the seat.",
           "answer": "punctual"
         }
       ]
@@ -6789,183 +6789,183 @@ window.CLOZE_BANK = {
         "id": "set-037-ex",
         "code": "S037-EX",
         "tag": "example",
-        "sentence": "The back of the textbook has a _____, a short list of key words with simple meanings.",
-        "answer": "glossary"
+        "sentence": "The _____ girl bumped the chair and spilled her juice.",
+        "answer": "clumsy"
       },
       "items": [
         {
           "id": "set-037-q01",
           "code": "S037-Q01",
           "tag": "habits",
-          "sentence": "We _____ younger cubs by clapping the attempt, even when the knot is still a tangle.",
+          "sentence": "Dad used kind words to _____ Hugo to start the model again.",
           "answer": "encourage"
         },
         {
           "id": "set-037-q02",
           "code": "S037-Q02",
           "tag": "illness",
-          "sentence": "The hygienist cleaned carefully around the sore spot so as not to worsen the _____.",
+          "sentence": "The dentist booked a short visit to settle the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-037-q03",
           "code": "S037-Q03",
           "tag": "disasters",
-          "sentence": "Trains turned back at the last dry platform after a _____ hid the rails under a brown sheet.",
+          "sentence": "A _____ in the estate left water covering the children’s sand pit.",
           "answer": "flood"
         },
         {
           "id": "set-037-q04",
           "code": "S037-Q04",
           "tag": "habits",
-          "sentence": "A _____ duty teacher is in the playground before the duty time printed on the roster.",
+          "sentence": "Otto set two alarms to be _____ and on time for the trip.",
           "answer": "punctual"
         },
         {
           "id": "set-037-q05",
           "code": "S037-Q05",
           "tag": "illness",
-          "sentence": "When lessons moved online for one pupil, the reason on the form was a confirmed _____.",
+          "sentence": "Cora sat wrapped in a quilt, barely talking, mid-_____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-037-q06",
           "code": "S037-Q06",
           "tag": "disasters",
-          "sentence": "A _____ scar, still pale years later, is visible from the opposite ridge, a memory in the land.",
+          "sentence": "A _____ left mud across the hillside road after the heavy rain.",
           "answer": "landslide"
         },
         {
           "id": "set-037-q07",
           "code": "S037-Q07",
           "tag": "habits",
-          "sentence": "The MTR posts _____ service updates at the same board times each morning.",
+          "sentence": "The debate club is _____ every week, always Monday in the library.",
           "answer": "regular"
         },
         {
           "id": "set-037-q08",
           "code": "S037-Q08",
           "tag": "illness",
-          "sentence": "After the super-sour sweets dare, two faces puckered, and one of them progressed to a real _____.",
+          "sentence": "Will curled on the bed, riding out a _____ in his belly.",
           "answer": "stomachache"
         },
         {
           "id": "set-037-q09",
           "code": "S037-Q09",
           "tag": "disasters",
-          "sentence": "Farmers pointed to a _____ and to empty irrigation channels, two views of the same problem.",
+          "sentence": "A summer _____, with little rain, left the estate plants drooping by midday.",
           "answer": "drought"
         },
         {
           "id": "set-037-q10",
           "code": "S037-Q10",
           "tag": "habits",
-          "sentence": "The balcony plants were watered and the rail was wiped, two outdoor bits of Saturday _____.",
+          "sentence": "Wendy swept the stairwell, a weekly bit of shared _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-037-q11",
           "code": "S037-Q11",
           "tag": "illness",
-          "sentence": "A dry lecture theatre and no water bottle left the visiting speaker fighting a _____.",
+          "sentence": "A _____ from her mouth came just as the class went quiet.",
           "answer": "cough"
         },
         {
           "id": "set-037-q12",
           "code": "S037-Q12",
           "tag": "disasters",
-          "sentence": "The scout camp was called off two days early because a _____ was forming in the heat of the sea.",
+          "sentence": "Strong wind from the _____ lifted light chairs on the balcony.",
           "answer": "typhoon"
         },
         {
           "id": "set-037-q13",
           "code": "S037-Q13",
           "tag": "habits",
-          "sentence": "The kitchen left a _____ cook in charge of the oven, with a timer and a clear finish time.",
+          "sentence": "Tina checked both exits, a _____ habit on trip days.",
           "answer": "responsible"
         },
         {
           "id": "set-037-q14",
           "code": "S037-Q14",
           "tag": "illness",
-          "sentence": "Mum cancelled the family dinner when she felt my temples and found a rising _____.",
+          "sentence": "Chris was flushed and hot, so Mum treated it as a _____.",
           "answer": "fever"
         },
         {
           "id": "set-037-q15",
           "code": "S037-Q15",
           "tag": "disasters",
-          "sentence": "After the _____ knocked loose objects off a high shelf, we moved the heavy things down low in our flat.",
+          "sentence": "The ground shook in an _____, enough to stop the spelling test.",
           "answer": "earthquake"
         },
         {
           "id": "set-037-q16",
           "code": "S037-Q16",
           "tag": "habits",
-          "sentence": "The poster “_____ bones” reminded us that milk, greens and play in daylight all help.",
+          "sentence": "Zack drank more water and slept earlier, feeling more _____.",
           "answer": "healthy"
         },
         {
           "id": "set-037-q17",
           "code": "S037-Q17",
           "tag": "illness",
-          "sentence": "A delayed dinner after the late rehearsal left the dancer shaky and then with a dull _____.",
+          "sentence": "Lucy paused on the stairs, waiting for a sudden _____ in her head to fade.",
           "answer": "headache"
         },
         {
           "id": "set-037-q18",
           "code": "S037-Q18",
           "tag": "disasters",
-          "sentence": "A _____ cold snap surprised the city, and extra shelters opened for the night.",
+          "sentence": "The _____ damage to the wooden bridge meant it could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-037-q19",
           "code": "S037-Q19",
           "tag": "habits",
-          "sentence": "When the new skill felt impossible, a _____ learner tried ten more quiet minutes, not a slammed book.",
+          "sentence": "Holly stayed _____, giving the shy speaker thinking time.",
           "answer": "patient"
         },
         {
           "id": "set-037-q20",
           "code": "S037-Q20",
           "tag": "habits",
-          "sentence": "The _____ team lent their spare kit to the other side, whose bag had gone missing.",
+          "sentence": "A _____ bag of extra pencils appeared on the desk for anyone.",
           "answer": "generous"
         },
         {
           "id": "set-037-q21",
           "code": "S037-Q21",
           "tag": "disasters",
-          "sentence": "The class counted a _____ of 312 coins, and then wrote the amount in dollars, neatly.",
+          "sentence": "Jane helped wheel a _____ of packed books to the waiting van.",
           "answer": "donation"
         },
         {
           "id": "set-037-q22",
           "code": "S037-Q22",
           "tag": "habits",
-          "sentence": "The _____ shopper’s trolley clipped a pyramid of tins, and a clerk stepped in quickly.",
+          "sentence": "A _____ reach for the last bun toppled the basket.",
           "answer": "clumsy"
         },
         {
           "id": "set-037-q23",
           "code": "S037-Q23",
           "tag": "illness",
-          "sentence": "The doctor stressed that this _____ was for the infection, not a treat to stop at the first improvement.",
+          "sentence": "Daisy asked the chemist whether juice was allowed with the _____.",
           "answer": "medicine"
         },
         {
           "id": "set-037-q24",
           "code": "S037-Q24",
           "tag": "habits",
-          "sentence": "A leftover bit of spinach on a tooth, kindly signalled, still left her _____ until it was gone.",
+          "sentence": "A typo of Sean’s name on the board left him red and _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-037-q25",
           "code": "S037-Q25",
           "tag": "illness",
-          "sentence": "After helping Dad change the water-tank filter in the tiny kitchen, I had a tight _____.",
+          "sentence": "Mark sat down; he had a _____ in his back after helping in the garden.",
           "answer": "backache"
         }
       ]
@@ -6977,183 +6977,183 @@ window.CLOZE_BANK = {
         "id": "set-038-ex",
         "code": "S038-EX",
         "tag": "example",
-        "sentence": "A short letter of _____ went with the gift, because thanks should be said, not only felt.",
-        "answer": "gratitude"
+        "sentence": "Lucy tripped on the stage step and felt _____ as people looked.",
+        "answer": "embarrassed"
       },
       "items": [
         {
           "id": "set-038-q01",
           "code": "S038-Q01",
           "tag": "illness",
-          "sentence": "A grey, tired face plus a burning forehead usually means a _____ is on the way.",
+          "sentence": "Mum kept the thermometer by the bed while Zoe’s _____ stayed high.",
           "answer": "fever"
         },
         {
           "id": "set-038-q02",
           "code": "S038-Q02",
           "tag": "disasters",
-          "sentence": "The science film showed an _____ as a rippling field, with people looking suddenly surprised, then organised.",
+          "sentence": "The _____ made the ground tremble, and a chair inched sideways.",
           "answer": "earthquake"
         },
         {
           "id": "set-038-q03",
           "code": "S038-Q03",
           "tag": "habits",
-          "sentence": "A _____ child at the fair spent the last tickets on a friend who had run out, not on himself.",
+          "sentence": "Polly shared her water with two thirsty runners, a _____ act.",
           "answer": "generous"
         },
         {
           "id": "set-038-q04",
           "code": "S038-Q04",
           "tag": "illness",
-          "sentence": "The weather changed from humid to windy in an hour, and Mum always gets a _____ when that happens.",
+          "sentence": "A _____ in his head arrived with the stuffy minibus air, and Jack sat still.",
           "answer": "headache"
         },
         {
           "id": "set-038-q05",
           "code": "S038-Q05",
           "tag": "disasters",
-          "sentence": "The drought’s effect on prices was _____, and families felt it in the market, not only in the fields.",
+          "sentence": "A _____ storm closed the school field, as the damage looked dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-038-q06",
           "code": "S038-Q06",
           "tag": "habits",
-          "sentence": "A _____ attempt to catch the falling hat knocked the glasses as well, which was unfortunate.",
+          "sentence": "A _____ and dropped it skip with the rope tangled Ben and a chair.",
           "answer": "clumsy"
         },
         {
           "id": "set-038-q07",
           "code": "S038-Q07",
           "tag": "illness",
-          "sentence": "The kindergarten nap room stayed dim, until a little _____ made the helper tiptoe over.",
+          "sentence": "Carl sipped lukewarm tea, hoping the _____ in his throat would stop.",
           "answer": "cough"
         },
         {
           "id": "set-038-q08",
           "code": "S038-Q08",
           "tag": "disasters",
-          "sentence": "The thank-you board listed one _____ only as “a friend”, because the giver had asked to stay anonymous.",
+          "sentence": "The school’s packed _____ of books filled two boxes.",
           "answer": "donation"
         },
         {
           "id": "set-038-q09",
           "code": "S038-Q09",
           "tag": "habits",
-          "sentence": "After mixing up two twins for a whole term, the teacher admitted it and they all felt briefly _____.",
+          "sentence": "Rita felt _____ when her bag spilled pencils in the aisle.",
           "answer": "embarrassed"
         },
         {
           "id": "set-038-q10",
           "code": "S038-Q10",
           "tag": "habits",
-          "sentence": "A _____ messenger does not open the sealed envelope that they were asked only to deliver.",
+          "sentence": "A _____ monitor, Ryan counted everyone onto the coach.",
           "answer": "responsible"
         },
         {
           "id": "set-038-q11",
           "code": "S038-Q11",
           "tag": "disasters",
-          "sentence": "A _____ left a sour smell in the shops for a week, after the water finally went down.",
+          "sentence": "After the _____, chalk marks showed how far water had covered the wall.",
           "answer": "flood"
         },
         {
           "id": "set-038-q12",
           "code": "S038-Q12",
           "tag": "habits",
-          "sentence": "A _____ start to the morning is a real breakfast, because an empty stomach makes the body struggle.",
+          "sentence": "The doctor praised Karl’s _____ mix of exercise and rest.",
           "answer": "healthy"
         },
         {
           "id": "set-038-q13",
           "code": "S038-Q13",
           "tag": "illness",
-          "sentence": "A February dip in attendance usually means the _____ has arrived in more than one class.",
+          "sentence": "The doctor checked Liam’s chest and said it was still the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-038-q14",
           "code": "S038-Q14",
           "tag": "disasters",
-          "sentence": "Rescuers used dogs to check a _____ of mixed earth and branches, moving carefully on the unstable pile.",
+          "sentence": "A _____ above the bus stop made the slope look bare and brown.",
           "answer": "landslide"
         },
         {
           "id": "set-038-q15",
           "code": "S038-Q15",
           "tag": "habits",
-          "sentence": "The _____ tailor measured twice and cut once, and did not rush the customer out.",
+          "sentence": "Mark waited calmly when the game loaded slowly, still _____.",
           "answer": "patient"
         },
         {
           "id": "set-038-q16",
           "code": "S038-Q16",
           "tag": "illness",
-          "sentence": "A warm water bottle on the midriff and a quiet room were the evening plan for a nagging _____.",
+          "sentence": "A _____ in her tummy made the car ride feel too long.",
           "answer": "stomachache"
         },
         {
           "id": "set-038-q17",
           "code": "S038-Q17",
           "tag": "disasters",
-          "sentence": "A _____ year in the records is often a year of careful queues at the remaining village tap.",
+          "sentence": "The _____, with little rain, made the farm track hard, with cracks along the side.",
           "answer": "drought"
         },
         {
           "id": "set-038-q18",
           "code": "S038-Q18",
           "tag": "habits",
-          "sentence": "The teacher’s “tell me more” is a way to _____ a short answer into a fuller one.",
+          "sentence": "A kind postcard helped _____ Tina while she was away at camp.",
           "answer": "encourage"
         },
         {
           "id": "set-038-q19",
           "code": "S038-Q19",
           "tag": "illness",
-          "sentence": "A cool, dry cupboard, not a steamy bathroom, is the right place for most _____.",
+          "sentence": "Dad read the side-effect list on the _____ bottle leaflet aloud.",
           "answer": "medicine"
         },
         {
           "id": "set-038-q20",
           "code": "S038-Q20",
           "tag": "habits",
-          "sentence": "When the photographer is _____, the class photo finishes before the next lesson, as scheduled.",
+          "sentence": "Lila checked the timetable twice, determined to be _____ and early.",
           "answer": "punctual"
         },
         {
           "id": "set-038-q21",
           "code": "S038-Q21",
           "tag": "habits",
-          "sentence": "A _____ plant-feeding on the first Sunday keeps the balcony lime tree on a clear cycle.",
+          "sentence": "A _____ stretch-and-drink habit starts Hugh’s homework time.",
           "answer": "regular"
         },
         {
           "id": "set-038-q22",
           "code": "S038-Q22",
           "tag": "illness",
-          "sentence": "The yoga instructor asked us to stop the cobra pose if anyone felt a _____.",
+          "sentence": "Judy could not put on her socks without help, thanks to a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-038-q23",
           "code": "S038-Q23",
           "tag": "disasters",
-          "sentence": "After the eye passed, the _____’s wind came back from the opposite side, which always startles people.",
+          "sentence": "After the tropical storm, the _____ left sand and leaves on the steps.",
           "answer": "typhoon"
         },
         {
           "id": "set-038-q24",
           "code": "S038-Q24",
           "tag": "habits",
-          "sentence": "A broken mop handle paused the _____ until Uncle found a spare in the storeroom.",
+          "sentence": "A bucket, a cloth, and a list: Ruby was ready for the _____, including the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-038-q25",
           "code": "S038-Q25",
           "tag": "illness",
-          "sentence": "After the sweet mango dessert, the twinge was a warning, and by bedtime it was a clear _____.",
+          "sentence": "A _____ in a tooth woke Nina at dawn, worse than the night before.",
           "answer": "toothache"
         }
       ]
@@ -7165,183 +7165,183 @@ window.CLOZE_BANK = {
         "id": "set-039-ex",
         "code": "S039-EX",
         "tag": "example",
-        "sentence": "She has _____ on Wednesday, so her bag holds a leotard and a water bottle, not a football.",
-        "answer": "gymnastics"
+        "sentence": "A _____ friend, Ken was trusted and returned the wallet at once.",
+        "answer": "responsible"
       },
       "items": [
         {
           "id": "set-039-q01",
           "code": "S039-Q01",
           "tag": "disasters",
-          "sentence": "A _____ warning flag at the pier is a clear “stay ashore” for anyone who can read the signals.",
+          "sentence": "The _____ passed slowly, and the wind still felt strong at dusk.",
           "answer": "typhoon"
         },
         {
           "id": "set-039-q02",
           "code": "S039-Q02",
           "tag": "habits",
-          "sentence": "A friend’s “I’ll wait at the end” can _____ a slow cyclist to finish the path.",
+          "sentence": "A kind message on the fridge helped _____ Joel in the morning.",
           "answer": "encourage"
         },
         {
           "id": "set-039-q03",
           "code": "S039-Q03",
           "tag": "illness",
-          "sentence": "When the leftover rice had been in the bag too long, the first forkful later became a _____.",
+          "sentence": "Zack could not blow up the party balloons, stopped by a _____ in his belly.",
           "answer": "stomachache"
         },
         {
           "id": "set-039-q04",
           "code": "S039-Q04",
           "tag": "disasters",
-          "sentence": "Volunteers filled sandbags in a line, hoping to turn a coming _____ away from the clinic door.",
+          "sentence": "Water covered the low bench by the pond in the spring _____.",
           "answer": "flood"
         },
         {
           "id": "set-039-q05",
           "code": "S039-Q05",
           "tag": "habits",
-          "sentence": "A _____ booking means you arrive at the booked hour; the salon cannot hold the chair otherwise.",
+          "sentence": "A _____ start to the picnic meant Stan was ready when the van came.",
           "answer": "punctual"
         },
         {
           "id": "set-039-q06",
           "code": "S039-Q06",
           "tag": "illness",
-          "sentence": "After the vaccination, only simple rest was needed; no extra _____ was suggested that day.",
+          "sentence": "Sam marked the last day of the _____ course on the bottle’s label.",
           "answer": "medicine"
         },
         {
           "id": "set-039-q07",
           "code": "S039-Q07",
           "tag": "disasters",
-          "sentence": "A _____ above the railway led to a night of slow, watched trains and a morning of engineering.",
+          "sentence": "A wet _____ left mud on the school’s back fence overnight.",
           "answer": "landslide"
         },
         {
           "id": "set-039-q08",
           "code": "S039-Q08",
           "tag": "habits",
-          "sentence": "The class has _____ silent reading after lunch on Tuesdays and Thursdays only, a fixed pattern.",
+          "sentence": "Tess does a _____ bag-pack every Sunday night, never skipping it.",
           "answer": "regular"
         },
         {
           "id": "set-039-q09",
           "code": "S039-Q09",
           "tag": "illness",
-          "sentence": "A wet PE kit had made the rucksack heavier than usual, and by home time Caleb’s brother was holding his back with a _____.",
+          "sentence": "A long session at the low craft table gave Otto a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-039-q10",
           "code": "S039-Q10",
           "tag": "habits",
-          "sentence": "After the Lunar New Year sweets, the table needed an extra wipe, a sweet but sticky piece of _____.",
+          "sentence": "The kitchen tiles needed a second pass, so Nell stayed on the _____, including the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-039-q11",
           "code": "S039-Q11",
           "tag": "habits",
-          "sentence": "A _____ ice-cream queue on a hot day stays calm if people keep their humour and their place.",
+          "sentence": "Jack was _____ with the tangled wool, waiting and unpicking slowly.",
           "answer": "patient"
         },
         {
           "id": "set-039-q12",
           "code": "S039-Q12",
           "tag": "illness",
-          "sentence": "A wisdom tooth coming through can feel like a wide, dull _____, as Uncle discovered.",
+          "sentence": "Sean kept ice off his drink, still sore from a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-039-q13",
           "code": "S039-Q13",
           "tag": "disasters",
-          "sentence": "A _____ warning light on the machine means stop, not “perhaps later”.",
+          "sentence": "The _____ storm damage closed the path, which could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-039-q14",
           "code": "S039-Q14",
           "tag": "habits",
-          "sentence": "The _____ host insisted the visiting cousins take the bigger room, and slept on the camp bed.",
+          "sentence": "Carl was _____ with his markers, leaving a pot in the middle for all to share.",
           "answer": "generous"
         },
         {
           "id": "set-039-q15",
           "code": "S039-Q15",
           "tag": "illness",
-          "sentence": "After the wedding banquet, three relatives sent the same message: they were down with the _____.",
+          "sentence": "Aches behind her knees and in her back marked the _____.",
           "answer": "flu"
         },
         {
           "id": "set-039-q16",
           "code": "S039-Q16",
           "tag": "disasters",
-          "sentence": "The company’s leftover stationery, still useful, was a _____ to the homework club, gratefully unpacked.",
+          "sentence": "The choir packed a _____ of biscuits for the night shelter.",
           "answer": "donation"
         },
         {
           "id": "set-039-q17",
           "code": "S039-Q17",
           "tag": "habits",
-          "sentence": "Because the path was narrow, a _____ swing of the umbrella sprinkled the person behind.",
+          "sentence": "Amy bumped the whiteboard rail, a _____ knock that made it wobble.",
           "answer": "clumsy"
         },
         {
           "id": "set-039-q18",
           "code": "S039-Q18",
           "tag": "illness",
-          "sentence": "When I tried to whistle the new school song, a tickle became a sudden _____.",
+          "sentence": "A _____ in her throat on the stage microphone startled the whole hall.",
           "answer": "cough"
         },
         {
           "id": "set-039-q19",
           "code": "S039-Q19",
           "tag": "disasters",
-          "sentence": "During the _____, the school garden survived on saved washing-up water, drop by drop.",
+          "sentence": "The _____, with little rain, made people share watering times on the estate.",
           "answer": "drought"
         },
         {
           "id": "set-039-q20",
           "code": "S039-Q20",
           "tag": "habits",
-          "sentence": "The victory dance was performed before the replay showed a foul, and the dancer looked _____.",
+          "sentence": "Hugo felt _____ when he walked the wrong way in the dance.",
           "answer": "embarrassed"
         },
         {
           "id": "set-039-q21",
           "code": "S039-Q21",
           "tag": "illness",
-          "sentence": "The pharmacist asked whether the _____ had gone above thirty-nine before suggesting a next step.",
+          "sentence": "Maya slept poorly, tossing and hot, because of a _____.",
           "answer": "fever"
         },
         {
           "id": "set-039-q22",
           "code": "S039-Q22",
           "tag": "disasters",
-          "sentence": "An _____ warning of after-shocks kept the playground closed for the afternoon, even when all seemed still.",
+          "sentence": "An _____ made the books tremble on the edge of the desk.",
           "answer": "earthquake"
         },
         {
           "id": "set-039-q23",
           "code": "S039-Q23",
           "tag": "habits",
-          "sentence": "Being _____ for the lunch boxes on the trip means counting them onto the bus and off again.",
+          "sentence": "Teachers rest easier when a _____ monitor has checked the lights.",
           "answer": "responsible"
         },
         {
           "id": "set-039-q24",
           "code": "S039-Q24",
           "tag": "illness",
-          "sentence": "After the virtual-reality demo, one brave volunteer needed a chair and a dark room for a _____.",
+          "sentence": "Lila asked Mum to speak softly; the _____ in her head made voices feel loud.",
           "answer": "headache"
         },
         {
           "id": "set-039-q25",
           "code": "S039-Q25",
           "tag": "habits",
-          "sentence": "After the family reduced salty snacks, Dad’s check-up was more _____, to his relief.",
+          "sentence": "The canteen added a _____ option: rice, greens, and steamed fish.",
           "answer": "healthy"
         }
       ]
@@ -7353,183 +7353,183 @@ window.CLOZE_BANK = {
         "id": "set-040-ex",
         "code": "S040-EX",
         "tag": "example",
-        "sentence": "He pulled a small _____ from his pocket and played a thin, cheerful tune at the campfire.",
-        "answer": "harmonica"
+        "sentence": "Hugo packed grapes and bread, a _____ with fruit and water bag for camp.",
+        "answer": "healthy"
       },
       "items": [
         {
           "id": "set-040-q01",
           "code": "S040-Q01",
           "tag": "habits",
-          "sentence": "A _____ PE month includes games that make us breathe deeper, not only standing and watching.",
+          "sentence": "Cora felt _____ when her PE scores improved after better sleep.",
           "answer": "healthy"
         },
         {
           "id": "set-040-q02",
           "code": "S040-Q02",
           "tag": "illness",
-          "sentence": "The library’s fluorescent lights hummed, and a long research hour ended in a quiet _____.",
+          "sentence": "A windy walk with no hat left Ben with a cold _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-040-q03",
           "code": "S040-Q03",
           "tag": "disasters",
-          "sentence": "The _____ was worse in the second year, because the wells had not had time to refill after so little rain.",
+          "sentence": "The _____ cracked a line across the empty planter box.",
           "answer": "drought"
         },
         {
           "id": "set-040-q04",
           "code": "S040-Q04",
           "tag": "habits",
-          "sentence": "The _____ science teacher let the crystals grow overnight, and would not let us poke them early.",
+          "sentence": "Being _____, Otto did not rush, and waited for Grandma’s story to end.",
           "answer": "patient"
         },
         {
           "id": "set-040-q05",
           "code": "S040-Q05",
           "tag": "illness",
-          "sentence": "The class experiment with disclosing tablets was funny, until one pupil remembered his _____ and sat out.",
+          "sentence": "A _____ in a tooth made the school photo smile look tight and small.",
           "answer": "toothache"
         },
         {
           "id": "set-040-q06",
           "code": "S040-Q06",
           "tag": "disasters",
-          "sentence": "When the cat ran under the sofa and the light began to swing, we did not need a news alert to name the _____.",
+          "sentence": "The ground shook in a short _____, enough to stop the song.",
           "answer": "earthquake"
         },
         {
           "id": "set-040-q07",
           "code": "S040-Q07",
           "tag": "habits",
-          "sentence": "A _____ donor doubled the online amount when the appeal was short, without a name on the page.",
+          "sentence": "A _____ plate of home biscuits went round the whole staff room.",
           "answer": "generous"
         },
         {
           "id": "set-040-q08",
           "code": "S040-Q08",
           "tag": "illness",
-          "sentence": "The school’s health talk distinguished a short cough from the all-over illness we call the _____.",
+          "sentence": "Ryan sat in the garden for air, then came in aching from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-040-q09",
           "code": "S040-Q09",
           "tag": "habits",
-          "sentence": "The _____ science-fair helper taped his own fingers together and had to be cut free, laughing.",
+          "sentence": "Leo left a trail of dropped pencils, typical of a _____ morning.",
           "answer": "clumsy"
         },
         {
           "id": "set-040-q10",
           "code": "S040-Q10",
           "tag": "illness",
-          "sentence": "During the flu season assembly, the nurse reminded us that a sudden _____ should be checked, not ignored.",
+          "sentence": "Jack stayed in light clothes, too hot, until the _____ came down.",
           "answer": "fever"
         },
         {
           "id": "set-040-q11",
           "code": "S040-Q11",
           "tag": "illness",
-          "sentence": "The label’s tiny print listed times, and Dad used a marker to make the _____ schedule clearer.",
+          "sentence": "The bitter _____ went down better with a spoon of jam, the chemist said.",
           "answer": "medicine"
         },
         {
           "id": "set-040-q12",
           "code": "S040-Q12",
           "tag": "disasters",
-          "sentence": "The flooding in the fields was _____, with the crop lost, not merely delayed.",
+          "sentence": "The _____ cut along Eric’s thumb looked dangerous and needed a plaster.",
           "answer": "severe"
         },
         {
           "id": "set-040-q13",
           "code": "S040-Q13",
           "tag": "habits",
-          "sentence": "The mentor did not correct every note; she paused first to _____ the courage of the performance.",
+          "sentence": "Friends stood by the court to _____ Zack with kind cheers.",
           "answer": "encourage"
         },
         {
           "id": "set-040-q14",
           "code": "S040-Q14",
           "tag": "illness",
-          "sentence": "When the school play required bowing twenty times, the lead actor developed a theatrical but very real _____.",
+          "sentence": "After the skipping contest, Lila had a back _____ and sat down at once.",
           "answer": "backache"
         },
         {
           "id": "set-040-q15",
           "code": "S040-Q15",
           "tag": "disasters",
-          "sentence": "A _____ of rice after a typhoon is a practical kindness, boxed, labelled, and driven, not only promised.",
+          "sentence": "A packed _____ of warm socks went into the collection box.",
           "answer": "donation"
         },
         {
           "id": "set-040-q16",
           "code": "S040-Q16",
           "tag": "habits",
-          "sentence": "The orchestra’s first violin is expected to be _____, already tuned when the conductor lifts the baton.",
+          "sentence": "Nell ran the last flight of stairs, still hoping to be _____ and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-040-q17",
           "code": "S040-Q17",
           "tag": "illness",
-          "sentence": "The dusty loft above the hall was off limits after two caretakers came down with a _____.",
+          "sentence": "Hugh could not blow out the candles; a _____ in his throat kept interrupting.",
           "answer": "cough"
         },
         {
           "id": "set-040-q18",
           "code": "S040-Q18",
           "tag": "disasters",
-          "sentence": "The glass balcony door hummed as the _____ pressed against it, a long, low note of wind.",
+          "sentence": "The _____ grew overnight, and by morning the wind was howling.",
           "answer": "typhoon"
         },
         {
           "id": "set-040-q19",
           "code": "S040-Q19",
           "tag": "habits",
-          "sentence": "A _____ savings transfer leaves the account every payday, automatically, month after month.",
+          "sentence": "Family soup night is a _____ Friday plan, every week after six.",
           "answer": "regular"
         },
         {
           "id": "set-040-q20",
           "code": "S040-Q20",
           "tag": "habits",
-          "sentence": "The twins raced to finish their shares of the _____, but the rule was “done well”, not only “done first”.",
+          "sentence": "A soapy bucket and a song got Ted through the bathroom _____.",
           "answer": "housework"
         },
         {
           "id": "set-040-q21",
           "code": "S040-Q21",
           "tag": "disasters",
-          "sentence": "A _____ in the school’s basement store ruined paper, though the classrooms above stayed dry.",
+          "sentence": "A _____ in town left water covering the ground-floor bookshop step.",
           "answer": "flood"
         },
         {
           "id": "set-040-q22",
           "code": "S040-Q22",
           "tag": "habits",
-          "sentence": "When a private nickname was used on the loudspeaker, its owner went pink and _____.",
+          "sentence": "Tina felt _____ because she had the only different uniform ribbon.",
           "answer": "embarrassed"
         },
         {
           "id": "set-040-q23",
           "code": "S040-Q23",
           "tag": "illness",
-          "sentence": "The swimming teacher forbade diving after a heavy snack, to avoid a cramping _____.",
+          "sentence": "The nurse let Vera lie on her side until the _____ in her tummy eased.",
           "answer": "stomachache"
         },
         {
           "id": "set-040-q24",
           "code": "S040-Q24",
           "tag": "disasters",
-          "sentence": "The estate’s slope inspection is boring until you remember the last _____, two streets away.",
+          "sentence": "Rocks from a small _____ sat in the playground’s far drain.",
           "answer": "landslide"
         },
         {
           "id": "set-040-q25",
           "code": "S040-Q25",
           "tag": "habits",
-          "sentence": "A _____ IT helper reports a broken cable, because leaving it could be unsafe for the next class.",
+          "sentence": "Miss Chan trusted _____ Pearl to collect the sports medals.",
           "answer": "responsible"
         }
       ]
@@ -7541,183 +7541,183 @@ window.CLOZE_BANK = {
         "id": "set-041-ex",
         "code": "S041-EX",
         "tag": "example",
-        "sentence": "The school garden’s first _____ of tomatoes went into a salad that the growers actually finished.",
-        "answer": "harvest"
+        "sentence": "The _____ and its tropical storm delayed the ferry until the next day.",
+        "answer": "typhoon"
       },
       "items": [
         {
           "id": "set-041-q01",
           "code": "S041-Q01",
           "tag": "illness",
-          "sentence": "After assembling the new bunk bed, Uncle Frank sat on the floor and laughed about his unexpected _____.",
+          "sentence": "The teacher told Stan to rest; the _____ in his back was clear.",
           "answer": "backache"
         },
         {
           "id": "set-041-q02",
           "code": "S041-Q02",
           "tag": "disasters",
-          "sentence": "A _____ case of flu, already diagnosed, kept the whole family at home, because it was more than a sniffle.",
+          "sentence": "The _____ pain after PE made the stairs feel too far.",
           "answer": "severe"
         },
         {
           "id": "set-041-q03",
           "code": "S041-Q03",
           "tag": "habits",
-          "sentence": "Family video messages were recorded to _____ the team before they left for the contest.",
+          "sentence": "Friends used kind words to _____ Liam after the first mistake.",
           "answer": "encourage"
         },
         {
           "id": "set-041-q04",
           "code": "S041-Q04",
           "tag": "illness",
-          "sentence": "After the incense at the temple, Auntie quietly excused herself because of a tight _____.",
+          "sentence": "The recording had to restart because of Lila’s sudden _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-041-q05",
           "code": "S041-Q05",
           "tag": "disasters",
-          "sentence": "The charity’s rule is simple: a _____ of goods must be clean, safe, and actually needed.",
+          "sentence": "The PTA packed a _____ of rice bags for the centre’s box.",
           "answer": "donation"
         },
         {
           "id": "set-041-q06",
           "code": "S041-Q06",
           "tag": "habits",
-          "sentence": "A _____ school secretary has the office window open at the official start of the day.",
+          "sentence": "A _____, early and ready pupil, Wade had his books out before the first slide.",
           "answer": "punctual"
         },
         {
           "id": "set-041-q07",
           "code": "S041-Q07",
           "tag": "illness",
-          "sentence": "The baby’s bottle was refused, and the forehead felt hot; the _____ was the reason.",
+          "sentence": "A flushed neck and a hot brow told Dad it was a _____.",
           "answer": "fever"
         },
         {
           "id": "set-041-q08",
           "code": "S041-Q08",
           "tag": "disasters",
-          "sentence": "During a strong _____, even the pigeons vanish, and the sky looks busy with racing cloud.",
+          "sentence": "After the _____, broken twigs showed how hard the wind had blown.",
           "answer": "typhoon"
         },
         {
           "id": "set-041-q09",
           "code": "S041-Q09",
           "tag": "habits",
-          "sentence": "The radio programme is _____; it has been on at six thirty every weekday for years.",
+          "sentence": "Yuki writes thank-you notes as a _____ habit, every time after a gift.",
           "answer": "regular"
         },
         {
           "id": "set-041-q10",
           "code": "S041-Q10",
           "tag": "habits",
-          "sentence": "A list with pictures helps the younger child join the _____ without needing a long explanation.",
+          "sentence": "Sam swept the lift lobby with a neighbour, shared _____, including the laundry in the estate.",
           "answer": "housework"
         },
         {
           "id": "set-041-q11",
           "code": "S041-Q11",
           "tag": "disasters",
-          "sentence": "The news drone showed a _____ that had made islands of the raised flower beds.",
+          "sentence": "After the _____, mud and water still covered the football pitch.",
           "answer": "flood"
         },
         {
           "id": "set-041-q12",
           "code": "S041-Q12",
           "tag": "habits",
-          "sentence": "A _____ pour from the large kettle hit the counter first and the cup second.",
+          "sentence": "Faith stacked the bowls too fast and, being _____ and dropped it, let them tumble.",
           "answer": "clumsy"
         },
         {
           "id": "set-041-q13",
           "code": "S041-Q13",
           "tag": "illness",
-          "sentence": "When I hung upside down on the climbing frame too long, the blood rush became a warning _____.",
+          "sentence": "After helping at the loud stall, Amy walked home with a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-041-q14",
           "code": "S041-Q14",
           "tag": "disasters",
-          "sentence": "A _____ of wet clay can look slow and still be heavy enough to push a parked car sideways.",
+          "sentence": "After the _____, the slope’s net had caught most of the rocks.",
           "answer": "landslide"
         },
         {
           "id": "set-041-q15",
           "code": "S041-Q15",
           "tag": "habits",
-          "sentence": "A forgotten bow at the end of the piano piece was added late, and the pianist felt _____.",
+          "sentence": "Joel felt _____ after his hiccups started in the speech.",
           "answer": "embarrassed"
         },
         {
           "id": "set-041-q16",
           "code": "S041-Q16",
           "tag": "illness",
-          "sentence": "When cold wind hit the cracked tooth on the walk to school, the _____ arrived before the bell.",
+          "sentence": "Hugo practised speaking with smaller bites of air, easing a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-041-q17",
           "code": "S041-Q17",
           "tag": "disasters",
-          "sentence": "The cracked mud of the lake bed became a path, a strange gift of the _____, and a warning.",
+          "sentence": "After a long _____, the first short rain barely wet the dry dust.",
           "answer": "drought"
         },
         {
           "id": "set-041-q18",
           "code": "S041-Q18",
           "tag": "habits",
-          "sentence": "The choir trip needs a _____ adult on each carriage, trusted to know the headcount.",
+          "sentence": "Cora checked the taps in the toilets, a quiet _____ duty.",
           "answer": "responsible"
         },
         {
           "id": "set-041-q19",
           "code": "S041-Q19",
           "tag": "illness",
-          "sentence": "Aches behind the eyes, heavy arms and a changing temperature pointed to the _____ at once.",
+          "sentence": "Polly felt heavy-headed and heavy-limbed, deep in the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-041-q20",
           "code": "S041-Q20",
           "tag": "habits",
-          "sentence": "The canteen’s _____ week replaced fried dumplings with steamed ones and added cut fruit.",
+          "sentence": "Mark felt more _____ with fruit and water when he stopped skipping breakfast.",
           "answer": "healthy"
         },
         {
           "id": "set-041-q21",
           "code": "S041-Q21",
           "tag": "habits",
-          "sentence": "A _____ caller stayed on hold and read the posters, instead of hanging up after one minute.",
+          "sentence": "Tina waited calmly at the crossing, _____ until the last pupil passed.",
           "answer": "patient"
         },
         {
           "id": "set-041-q22",
           "code": "S041-Q22",
           "tag": "illness",
-          "sentence": "A long assembly on a folded-up tummy, breakfast skipped, ended in a low, complaining _____.",
+          "sentence": "Pearl sat forward on the chair, easing a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-041-q23",
           "code": "S041-Q23",
           "tag": "disasters",
-          "sentence": "An _____ in a story may last a chapter; a real one may last less than a minute and change a day.",
+          "sentence": "An _____ made the hanging lantern swing in the hall.",
           "answer": "earthquake"
         },
         {
           "id": "set-041-q24",
           "code": "S041-Q24",
           "tag": "habits",
-          "sentence": "The _____ music teacher gave free extra minutes to anyone who had no piano at home.",
+          "sentence": "Hugh gave a _____ handful of stickers, enough for every desk.",
           "answer": "generous"
         },
         {
           "id": "set-041-q25",
           "code": "S041-Q25",
           "tag": "illness",
-          "sentence": "A missed morning dose was not doubled at night; we rang the clinic to ask about the _____.",
+          "sentence": "Mum split the week’s _____ bottle into a simple seven-day box.",
           "answer": "medicine"
         }
       ]
@@ -7729,183 +7729,183 @@ window.CLOZE_BANK = {
         "id": "set-042-ex",
         "code": "S042-EX",
         "tag": "example",
-        "sentence": "The Saturday _____ to the reservoir is six kilometres, with a rest at the pavilion halfway.",
-        "answer": "hike"
+        "sentence": "A sudden _____ sent water covering the estate’s ground-floor storeroom.",
+        "answer": "flood"
       },
       "items": [
         {
           "id": "set-042-q01",
           "code": "S042-Q01",
           "tag": "disasters",
-          "sentence": "A _____ warning cancelled the riverside walk; the path was already under a moving sheet of water.",
+          "sentence": "The _____ overflowed the nullah, and water covered the footpath.",
           "answer": "flood"
         },
         {
           "id": "set-042-q02",
           "code": "S042-Q02",
           "tag": "habits",
-          "sentence": "After waving from the stage to an empty seat, the actor stayed in character but felt _____.",
+          "sentence": "Iris felt _____ because the compliment was given in front of everyone.",
           "answer": "embarrassed"
         },
         {
           "id": "set-042-q03",
           "code": "S042-Q03",
           "tag": "illness",
-          "sentence": "The family delayed the hillside picnic until everyone was clear of the _____.",
+          "sentence": "Even smiling felt like work at the worst of Ted’s _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-042-q04",
           "code": "S042-Q04",
           "tag": "disasters",
-          "sentence": "After the works, a _____ risk was lowered, but the signs still tell walkers not to linger under the cut.",
+          "sentence": "Rocks from the _____ clicked as they settled on the path.",
           "answer": "landslide"
         },
         {
           "id": "set-042-q05",
           "code": "S042-Q05",
           "tag": "habits",
-          "sentence": "A _____ pupil in charge of recycling stops the wrong plastic from going in, even if it takes longer.",
+          "sentence": "A trusted, _____ watch on the gate was Will’s job at the fair.",
           "answer": "responsible"
         },
         {
           "id": "set-042-q06",
           "code": "S042-Q06",
           "tag": "illness",
-          "sentence": "After the cheese-laden pizza night, even the fans admitted a midnight _____.",
+          "sentence": "Cora asked to be last in line, moving slowly with a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-042-q07",
           "code": "S042-Q07",
           "tag": "disasters",
-          "sentence": "A _____ left bees with fewer flowers, and the beekeeper’s boxes felt light.",
+          "sentence": "The _____ left little rain, and the potted herbs drooped.",
           "answer": "drought"
         },
         {
           "id": "set-042-q08",
           "code": "S042-Q08",
           "tag": "habits",
-          "sentence": "A _____ night of sleep is part of health, as much as the food we choose in the day.",
+          "sentence": "A _____ lunchtime walk around the field woke Daisy up.",
           "answer": "healthy"
         },
         {
           "id": "set-042-q09",
           "code": "S042-Q09",
           "tag": "illness",
-          "sentence": "The hospital pharmacist came to the ward to explain how the new _____ should be taken at home.",
+          "sentence": "Mark packed a copy of the _____ label in his travel folder.",
           "answer": "medicine"
         },
         {
           "id": "set-042-q10",
           "code": "S042-Q10",
           "tag": "habits",
-          "sentence": "When the toddler buttoned the coat slowly, a _____ grandpa praised the effort and did not take over.",
+          "sentence": "Stan waited in the post office queue, _____ and quiet.",
           "answer": "patient"
         },
         {
           "id": "set-042-q11",
           "code": "S042-Q11",
           "tag": "habits",
-          "sentence": "A _____ window-clean on the last Saturday is how the shop keeps the glass clear all year.",
+          "sentence": "Chris feeds the cat at the same time every evening, a _____ habit.",
           "answer": "regular"
         },
         {
           "id": "set-042-q12",
           "code": "S042-Q12",
           "tag": "illness",
-          "sentence": "The recorder lesson ended early when half the group could not play through a shared _____.",
+          "sentence": "The doctor listened to Victor’s chest after hearing the _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-042-q13",
           "code": "S042-Q13",
           "tag": "disasters",
-          "sentence": "The engineer’s report after a mild _____ was short: no new cracks of concern, and a date for a re-check.",
+          "sentence": "During a light _____, the hanging bells in the music room swung.",
           "answer": "earthquake"
         },
         {
           "id": "set-042-q14",
           "code": "S042-Q14",
           "tag": "habits",
-          "sentence": "When the dryer ended, folding became the last, warm piece of the night’s _____.",
+          "sentence": "Lucy cleaned the toothbrush cup, then smiled: the bathroom _____ was done.",
           "answer": "housework"
         },
         {
           "id": "set-042-q15",
           "code": "S042-Q15",
           "tag": "illness",
-          "sentence": "After PE, most pupils cooled down, but one boy stayed flushed, and the thermometer confirmed a _____.",
+          "sentence": "Maya felt cold one minute and burning the next, in a _____.",
           "answer": "fever"
         },
         {
           "id": "set-042-q16",
           "code": "S042-Q16",
           "tag": "disasters",
-          "sentence": "The head teacher’s tone was _____ for once, and even the corridor went still.",
+          "sentence": "A _____ injury to Sara’s toe meant new shoes had to wait.",
           "answer": "severe"
         },
         {
           "id": "set-042-q17",
           "code": "S042-Q17",
           "tag": "habits",
-          "sentence": "When the class passed the globe, a _____ grip let it slip, but a friend caught the stand.",
+          "sentence": "The lunch box lid flipped off in Owen’s _____ and dropped it hands.",
           "answer": "clumsy"
         },
         {
           "id": "set-042-q18",
           "code": "S042-Q18",
           "tag": "illness",
-          "sentence": "A tight swimming cap added to the goggles problem and produced a post-race _____.",
+          "sentence": "After the oral exam, Kate sat in a corner with a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-042-q19",
           "code": "S042-Q19",
           "tag": "disasters",
-          "sentence": "A _____ made in a grandparent’s memory was announced at the assembly, briefly, with respect.",
+          "sentence": "A packed _____ of story CDs went to the hospital children’s box.",
           "answer": "donation"
         },
         {
           "id": "set-042-q20",
           "code": "S042-Q20",
           "tag": "habits",
-          "sentence": "A _____ stall at the fair had a “pay what you can” box, and still offered the same food to all.",
+          "sentence": "Nina gave a _____ share of the window seat, taking turns all the way.",
           "answer": "generous"
         },
         {
           "id": "set-042-q21",
           "code": "S042-Q21",
           "tag": "illness",
-          "sentence": "The dentist’s waiting-room magazine was unread; the patient could think only of the _____.",
+          "sentence": "The pain was low all day, then a _____ in a tooth flared at dinner.",
           "answer": "toothache"
         },
         {
           "id": "set-042-q22",
           "code": "S042-Q22",
           "tag": "disasters",
-          "sentence": "A _____ names list is issued each year; we only remember the one that closed our school.",
+          "sentence": "During the _____, strong wind howled down the empty street.",
           "answer": "typhoon"
         },
         {
           "id": "set-042-q23",
           "code": "S042-Q23",
           "tag": "habits",
-          "sentence": "A quiet “I liked your idea” can _____ a pupil who rarely raises a hand.",
+          "sentence": "A kind look from Mum helped _____ Otto onto the stage steps.",
           "answer": "encourage"
         },
         {
           "id": "set-042-q24",
           "code": "S042-Q24",
           "tag": "illness",
-          "sentence": "The ice-skating session was short because Maggie’s _____ grew worse every time she leaned forward.",
+          "sentence": "The bumpy village road woke a _____ in Hugh’s back.",
           "answer": "backache"
         },
         {
           "id": "set-042-q25",
           "code": "S042-Q25",
           "tag": "habits",
-          "sentence": "Because the minibus was _____, the hikers met the park ranger at the agreed time.",
+          "sentence": "Polly reached the hall five minutes early, _____ for rehearsal.",
           "answer": "punctual"
         }
       ]
@@ -7917,183 +7917,183 @@ window.CLOZE_BANK = {
         "id": "set-043-ex",
         "code": "S043-EX",
         "tag": "example",
-        "sentence": "An _____ answer, even if it is “I forgot”, is better than a clever story that is not true.",
-        "answer": "honest"
+        "sentence": "Mud slid in a small _____ and closed the upper garden steps.",
+        "answer": "landslide"
       },
       "items": [
         {
           "id": "set-043-q01",
           "code": "S043-Q01",
           "tag": "habits",
-          "sentence": "The _____ tailor dropped a box of pins and then stepped very, very carefully afterwards.",
+          "sentence": "A _____ and dropped it turn with a long bag swept a cup off the shelf.",
           "answer": "clumsy"
         },
         {
           "id": "set-043-q02",
           "code": "S043-Q02",
           "tag": "illness",
-          "sentence": "The debate room had no window, and two hours of argument thickened into a shared _____.",
+          "sentence": "A _____ in her head arrived just as the assembly drums began, so Eva stepped back.",
           "answer": "headache"
         },
         {
           "id": "set-043-q03",
           "code": "S043-Q03",
           "tag": "disasters",
-          "sentence": "An _____ felt like a lorry hitting the building, until we saw that no lorry was there.",
+          "sentence": "A light _____ swung the hanging decorations in the hall.",
           "answer": "earthquake"
         },
         {
           "id": "set-043-q04",
           "code": "S043-Q04",
           "tag": "habits",
-          "sentence": "The _____ older brother let his sister choose first, and again, and did not complain.",
+          "sentence": "Victor gave a _____ share of the taxi fare, more than his half.",
           "answer": "generous"
         },
         {
           "id": "set-043-q05",
           "code": "S043-Q05",
           "tag": "illness",
-          "sentence": "After switching to a soft-bristle brush, the gums felt better, but the deep _____ needed a filling.",
+          "sentence": "The hygienist praised Joel’s brushing, then checked the _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-043-q06",
           "code": "S043-Q06",
           "tag": "disasters",
-          "sentence": "A _____ delay to the exam, caused by a city-wide outage, was announced officially, not rumoured.",
+          "sentence": "A _____ pain in Wendy’s knee made kneeling in art impossible.",
           "answer": "severe"
         },
         {
           "id": "set-043-q07",
           "code": "S043-Q07",
           "tag": "habits",
-          "sentence": "The running club’s rule is to _____ the last runner as loudly as the first.",
+          "sentence": "The class made a kind banner to _____ Karl before Sports Day.",
           "answer": "encourage"
         },
         {
           "id": "set-043-q08",
           "code": "S043-Q08",
           "tag": "illness",
-          "sentence": "A written “temperature record” on the fridge door tracked last night’s _____.",
+          "sentence": "The clinic scales and the thermometer both worried them: a _____.",
           "answer": "fever"
         },
         {
           "id": "set-043-q09",
           "code": "S043-Q09",
           "tag": "disasters",
-          "sentence": "The swimming club’s old hats and goggles, still good, were a _____ to a junior squad.",
+          "sentence": "A _____ of packed jumpers went into the lost-and-found box, once free.",
           "answer": "donation"
         },
         {
           "id": "set-043-q10",
           "code": "S043-Q10",
           "tag": "habits",
-          "sentence": "The contest rules state that a _____ team is seated when the quizmaster begins, or the round starts without them.",
+          "sentence": "The nurse liked pupils who were _____, on time and not late for their clinic slots.",
           "answer": "punctual"
         },
         {
           "id": "set-043-q11",
           "code": "S043-Q11",
           "tag": "illness",
-          "sentence": "When the overnight sweat and morning weakness arrived together, we stopped guessing and treated it as the _____.",
+          "sentence": "Pearl packed tissues and rest plans before the _____, still weak, fully arrived.",
           "answer": "flu"
         },
         {
           "id": "set-043-q12",
           "code": "S043-Q12",
           "tag": "disasters",
-          "sentence": "A crack along the footpath above the village was the first evidence that a _____ might follow.",
+          "sentence": "The _____ left wet soil on the slope behind the sports hall.",
           "answer": "landslide"
         },
         {
           "id": "set-043-q13",
           "code": "S043-Q13",
           "tag": "habits",
-          "sentence": "The “quiet” snack packet was not quiet, and the cinema row turned; she felt _____.",
+          "sentence": "Liam felt _____ after his voice echoed too loudly in the stairwell.",
           "answer": "embarrassed"
         },
         {
           "id": "set-043-q14",
           "code": "S043-Q14",
           "tag": "illness",
-          "sentence": "The science experiment on digestion came with a joke about eating too fast and earning a _____.",
+          "sentence": "Warm water and a quiet corner were all Will wanted for the _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-043-q15",
           "code": "S043-Q15",
           "tag": "disasters",
-          "sentence": "During the long _____, even the mosquitoes were fewer, which no one celebrated without thinking of the cost.",
+          "sentence": "During the _____, the school saved water, as rain stayed away.",
           "answer": "drought"
         },
         {
           "id": "set-043-q16",
           "code": "S043-Q16",
           "tag": "habits",
-          "sentence": "Being _____ with someone else’s instrument means putting it back in the case, not “just resting” it.",
+          "sentence": "Sara put the chemicals back in the tray, exactly, being trusted and _____.",
           "answer": "responsible"
         },
         {
           "id": "set-043-q17",
           "code": "S043-Q17",
           "tag": "illness",
-          "sentence": "A child-proof cap delayed us for a minute, which is exactly why the _____ bottle has one.",
+          "sentence": "Judy asked if the _____ could be crushed, but the chemist said no.",
           "answer": "medicine"
         },
         {
           "id": "set-043-q18",
           "code": "S043-Q18",
           "tag": "disasters",
-          "sentence": "The bus company stopped the open-top tour when a _____’s first gales arrived.",
+          "sentence": "The tropical storm of the _____ tore leaves from the hillside trees.",
           "answer": "typhoon"
         },
         {
           "id": "set-043-q19",
           "code": "S043-Q19",
           "tag": "habits",
-          "sentence": "After eating slowly and stopping when full, the heavy feeling was gone and he felt more _____.",
+          "sentence": "Zoe walked to school, a _____ habit three days a week.",
           "answer": "healthy"
         },
         {
           "id": "set-043-q20",
           "code": "S043-Q20",
           "tag": "habits",
-          "sentence": "The _____ photographer of wildlife will miss a shot rather than startle the birds.",
+          "sentence": "Mark stayed _____ as Grandma looked for her glasses, and waited.",
           "answer": "patient"
         },
         {
           "id": "set-043-q21",
           "code": "S043-Q21",
           "tag": "disasters",
-          "sentence": "After the sluice was opened too late, a _____ spread through the lower market with little warning.",
+          "sentence": "The _____ made the underpass unsafe, water covering the tiles.",
           "answer": "flood"
         },
         {
           "id": "set-043-q22",
           "code": "S043-Q22",
           "tag": "habits",
-          "sentence": "The school photographer comes on a _____ cycle, once each official year, always in late October.",
+          "sentence": "The running club is _____ : same park, same hour, each week.",
           "answer": "regular"
         },
         {
           "id": "set-043-q23",
           "code": "S043-Q23",
           "tag": "illness",
-          "sentence": "Sitting on the floor for the story-time circle left the student teacher with a surprising _____.",
+          "sentence": "During the hike, Wade asked to rest; his back hurt with a _____.",
           "answer": "backache"
         },
         {
           "id": "set-043-q24",
           "code": "S043-Q24",
           "tag": "habits",
-          "sentence": "The neighbour’s kind loan of a steam cleaner made the festival _____ much quicker.",
+          "sentence": "Jack dusted the shelves, then mopped, finishing the _____.",
           "answer": "housework"
         },
         {
           "id": "set-043-q25",
           "code": "S043-Q25",
           "tag": "illness",
-          "sentence": "A sip of ice water after the run shocked my throat and set off a short _____.",
+          "sentence": "Yuki tapped her chest after a deep _____ from her throat.",
           "answer": "cough"
         }
       ]
@@ -8105,183 +8105,183 @@ window.CLOZE_BANK = {
         "id": "set-044-ex",
         "code": "S044-EX",
         "tag": "example",
-        "sentence": "The scout _____ has bunk beds, a drying room, and a rule about shoes off at the door.",
-        "answer": "hostel"
+        "sentence": "A month-long _____ left the balcony tomatoes small and dry.",
+        "answer": "drought"
       },
       "items": [
         {
           "id": "set-044-q01",
           "code": "S044-Q01",
           "tag": "illness",
-          "sentence": "When two bottles looked alike, the colour of the cap and the name stopped a mix-up of _____.",
+          "sentence": "Otto reminded Dad, this time, that the _____ dose was after breakfast.",
           "answer": "medicine"
         },
         {
           "id": "set-044-q02",
           "code": "S044-Q02",
           "tag": "disasters",
-          "sentence": "Loose flowerpots are a danger in a _____, because tropical wind lifts what rain alone would not.",
+          "sentence": "During the _____, the strong wind made the lift lobby doors bang.",
           "answer": "typhoon"
         },
         {
           "id": "set-044-q03",
           "code": "S044-Q03",
           "tag": "habits",
-          "sentence": "When the translation app said something rude by accident, the user apologised, thoroughly _____.",
+          "sentence": "Kate felt _____ about the ink stain that lasted all morning.",
           "answer": "embarrassed"
         },
         {
           "id": "set-044-q04",
           "code": "S044-Q04",
           "tag": "illness",
-          "sentence": "Patrick delayed his swimming badge test; a _____ along his back made the start dive unwise.",
+          "sentence": "After the hill walk to the lookout, Polly lay down with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-044-q05",
           "code": "S044-Q05",
           "tag": "disasters",
-          "sentence": "The _____ was only knee-high, but the water was already strong enough to move a parked car.",
+          "sentence": "The _____ filled the basement, water covering the parked bicycles.",
           "answer": "flood"
         },
         {
           "id": "set-044-q06",
           "code": "S044-Q06",
           "tag": "habits",
-          "sentence": "A _____ lost-and-found officer logs items on the day they appear, not “when there is time”.",
+          "sentence": "The trusted, _____ helper stacked the mats in the right order.",
           "answer": "responsible"
         },
         {
           "id": "set-044-q07",
           "code": "S044-Q07",
           "tag": "illness",
-          "sentence": "The videographer had to cut the take because a student’s _____ was caught on the microphone.",
+          "sentence": "Chris nodded instead of answering, mid-_____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-044-q08",
           "code": "S044-Q08",
           "tag": "disasters",
-          "sentence": "The country park closed a section when a _____ took a picnic table down the slope, empty, luckily.",
+          "sentence": "The _____ pushed rocks against the roadside barrier.",
           "answer": "landslide"
         },
         {
           "id": "set-044-q09",
           "code": "S044-Q09",
           "tag": "habits",
-          "sentence": "A _____ picnic can still be fun: sandwiches, fruit, and a run, not a bag of sweets only.",
+          "sentence": "The teacher said a _____ mix of sleep, fruit, and walks helps.",
           "answer": "healthy"
         },
         {
           "id": "set-044-q10",
           "code": "S044-Q10",
           "tag": "habits",
-          "sentence": "A _____ student of handwriting retraces the letter neatly, not faster and sloppier.",
+          "sentence": "A _____ child, Wade waited and did not complain about the delay.",
           "answer": "patient"
         },
         {
           "id": "set-044-q11",
           "code": "S044-Q11",
           "tag": "disasters",
-          "sentence": "A _____ of money was transferred, and the screenshot of the receipt went into the class file.",
+          "sentence": "Carl packed a _____ of snacks in a box for the long drive.",
           "answer": "donation"
         },
         {
           "id": "set-044-q12",
           "code": "S044-Q12",
           "tag": "habits",
-          "sentence": "A _____ kick under the table (meant to be a stretch) toppled a school bag with a thump.",
+          "sentence": "The plant pot wobbled after _____ and dropped it Sean backed into the stand.",
           "answer": "clumsy"
         },
         {
           "id": "set-044-q13",
           "code": "S044-Q13",
           "tag": "illness",
-          "sentence": "A second wave of _____ in late winter surprised the year group after a quiet January.",
+          "sentence": "Will had aches all over and missed the Saturday match, the _____.",
           "answer": "flu"
         },
         {
           "id": "set-044-q14",
           "code": "S044-Q14",
           "tag": "disasters",
-          "sentence": "A _____ notice in the lift asked residents to shorten showers and to delay filling baths.",
+          "sentence": "The _____ left the fountain off, saving water through the dry weeks.",
           "answer": "drought"
         },
         {
           "id": "set-044-q15",
           "code": "S044-Q15",
           "tag": "habits",
-          "sentence": "A _____ prize was split into four small gifts, so every helper, not only the winner, went home happy.",
+          "sentence": "A _____ plate of extra cake went to every helper, not just a few.",
           "answer": "generous"
         },
         {
           "id": "set-044-q16",
           "code": "S044-Q16",
           "tag": "illness",
-          "sentence": "A nervous “butterflies” feeling before the contest is normal; a gripping _____ is a reason to sit down.",
+          "sentence": "Lucy chose plain bread only, still sore from a morning _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-044-q17",
           "code": "S044-Q17",
           "tag": "disasters",
-          "sentence": "After the _____, phone lines were busy with the same question: “Did you feel it too?”",
+          "sentence": "An _____ made the hanging bag on the hook swing twice.",
           "answer": "earthquake"
         },
         {
           "id": "set-044-q18",
           "code": "S044-Q18",
           "tag": "habits",
-          "sentence": "Teachers _____ us to ask a question when we are lost, because silence helps no one.",
+          "sentence": "A kind note on the locker helped _____ Nora before the match.",
           "answer": "encourage"
         },
         {
           "id": "set-044-q19",
           "code": "S044-Q19",
           "tag": "illness",
-          "sentence": "When the forehead was cooler at last, we were glad the _____ had begun to ease.",
+          "sentence": "A late-evening spike in the high _____ worried Dad.",
           "answer": "fever"
         },
         {
           "id": "set-044-q20",
           "code": "S044-Q20",
           "tag": "habits",
-          "sentence": "A _____ parent at the school gate at three ten, the finishing time, saves a child from waiting alone.",
+          "sentence": "The morning announcement praised classes that were _____, on time and not late to assembly.",
           "answer": "punctual"
         },
         {
           "id": "set-044-q21",
           "code": "S044-Q21",
           "tag": "habits",
-          "sentence": "A _____ water-change for the classroom hamster, every Friday, is on the roster.",
+          "sentence": "A _____ every week family video call is set for Sunday at four.",
           "answer": "regular"
         },
         {
           "id": "set-044-q22",
           "code": "S044-Q22",
           "tag": "illness",
-          "sentence": "After smelling the durian stall for too long, even the fans admitted a mild _____.",
+          "sentence": "Owen held his bag over his brow, shielding a _____.",
           "answer": "headache"
         },
         {
           "id": "set-044-q23",
           "code": "S044-Q23",
           "tag": "disasters",
-          "sentence": "The storm’s effect on the islands was _____, with power off and boats still in harbour a day later.",
+          "sentence": "A _____ storm’s damage meant the outdoor stairs could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-044-q24",
           "code": "S044-Q24",
           "tag": "habits",
-          "sentence": "After the science project, glitter had to be vacuumed, which felt like _____, and probably was.",
+          "sentence": "The weekly _____ included mopping, and Iris did that first.",
           "answer": "housework"
         },
         {
           "id": "set-044-q25",
           "code": "S044-Q25",
           "tag": "illness",
-          "sentence": "A bitten ice cube at the party was a dare, and the dare ended in a spectacular _____.",
+          "sentence": "Jane winced at the first bite, a _____ in a tooth.",
           "answer": "toothache"
         }
       ]
@@ -8293,183 +8293,183 @@ window.CLOZE_BANK = {
         "id": "set-045-ex",
         "code": "S045-EX",
         "tag": "example",
-        "sentence": "The air was so _____ before the rain that our uniforms felt damp, though no drop had fallen yet.",
-        "answer": "humid"
+        "sentence": "During an _____, the class practised drop, cover, and hold as the floor shook.",
+        "answer": "earthquake"
       },
       "items": [
         {
           "id": "set-045-q01",
           "code": "S045-Q01",
           "tag": "disasters",
-          "sentence": "The farmer’s almanac had no comfort; it only confirmed that a _____ of this length was rare, and real.",
+          "sentence": "The _____, with little rain, dried the class beans, which needed water twice a day.",
           "answer": "drought"
         },
         {
           "id": "set-045-q02",
           "code": "S045-Q02",
           "tag": "habits",
-          "sentence": "Uncle’s _____ haircut is the second Saturday; the barber pencils him in without being asked.",
+          "sentence": "A _____ brush-and-floss habit ends Ben’s day, every night.",
           "answer": "regular"
         },
         {
           "id": "set-045-q03",
           "code": "S045-Q03",
           "tag": "illness",
-          "sentence": "The school trip packed noodles for one child, whose _____ made sandwiches impossible.",
+          "sentence": "The filling felt odd, and then a _____ started in the tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-045-q04",
           "code": "S045-Q04",
           "tag": "disasters",
-          "sentence": "A school trip to the observatory included a talk on how an _____ is recorded, not predicted exactly.",
+          "sentence": "An _____ made the fish tank water slosh as the stand trembled.",
           "answer": "earthquake"
         },
         {
           "id": "set-045-q05",
           "code": "S045-Q05",
           "tag": "habits",
-          "sentence": "A Sunday “reset” of the shoe cabinet is a small, regular piece of family _____.",
+          "sentence": "Changing the sheets was the soft, quick part of Ken’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-045-q06",
           "code": "S045-Q06",
           "tag": "illness",
-          "sentence": "The clinic’s waiting room had a separate queue for anyone who might have the _____.",
+          "sentence": "The _____ kept Sara from the trip, still aching all over.",
           "answer": "flu"
         },
         {
           "id": "set-045-q07",
           "code": "S045-Q07",
           "tag": "habits",
-          "sentence": "Because the lid of the lunch box sprang up, a _____ catch sent a cherry tomato rolling.",
+          "sentence": "Rita is _____ and dropped it with scissors too, always nicking the wrong edge.",
           "answer": "clumsy"
         },
         {
           "id": "set-045-q08",
           "code": "S045-Q08",
           "tag": "illness",
-          "sentence": "When the spicy snack stall used extra chilli oil, the next hour’s walk included a building _____.",
+          "sentence": "Ivan asked to walk, not run, because of a _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-045-q09",
           "code": "S045-Q09",
           "tag": "habits",
-          "sentence": "The _____ neighbour waters the plants of three flats during a holiday, and refuses payment.",
+          "sentence": "A _____ family cooked extra soup and sent bowls to the neighbours.",
           "answer": "generous"
         },
         {
           "id": "set-045-q10",
           "code": "S045-Q10",
           "tag": "illness",
-          "sentence": "The early train at dawn, combined with little sleep, sat behind my eyes as a grey _____.",
+          "sentence": "The bright beach glare the day before seemed to leave a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-045-q11",
           "code": "S045-Q11",
           "tag": "habits",
-          "sentence": "The _____ ferry staff kept explaining the delay, calmly, as more passengers arrived.",
+          "sentence": "Tess was _____ with the little ones, giving them thinking time.",
           "answer": "patient"
         },
         {
           "id": "set-045-q12",
           "code": "S045-Q12",
           "tag": "illness",
-          "sentence": "After the weekend move into a new flat, Mum stacked fewer boxes and asked for a heat pack for her _____.",
+          "sentence": "A long spelling test in a hard chair woke a _____ in Carl’s back.",
           "answer": "backache"
         },
         {
           "id": "set-045-q13",
           "code": "S045-Q13",
           "tag": "disasters",
-          "sentence": "A _____ shortage of beds in the story made the characters share, which was the point of that chapter.",
+          "sentence": "The _____ injury to Zoe’s thumb meant she could not hold the rope.",
           "answer": "severe"
         },
         {
           "id": "set-045-q14",
           "code": "S045-Q14",
           "tag": "habits",
-          "sentence": "A parent’s job at the recital is to _____ with a face in the audience, not a lecture in the interval.",
+          "sentence": "The teacher used kind words to _____ the class after a hard paper.",
           "answer": "encourage"
         },
         {
           "id": "set-045-q15",
           "code": "S045-Q15",
           "tag": "illness",
-          "sentence": "During the overnight campfire, wood smoke drifted into the circle and caused more than one _____.",
+          "sentence": "Ryan avoided the smoky barbecue stall, guarding his _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-045-q16",
           "code": "S045-Q16",
           "tag": "disasters",
-          "sentence": "The harvest of the school garden, boxed, was a _____ to the nearby home, with a note of what was inside.",
+          "sentence": "The class packed a _____ of blankets for the winter drive.",
           "answer": "donation"
         },
         {
           "id": "set-045-q17",
           "code": "S045-Q17",
           "tag": "habits",
-          "sentence": "The night ferry will leave; only _____ passengers hear the first whistle from their seats.",
+          "sentence": "Being _____, on time and not late at the pier meant Hugh got the first tickets.",
           "answer": "punctual"
         },
         {
           "id": "set-045-q18",
           "code": "S045-Q18",
           "tag": "illness",
-          "sentence": "The hotel left a complimentary thermometer in the room, useful when a travel _____ appears.",
+          "sentence": "Dad felt Jack’s back and found it as hot as his _____.",
           "answer": "fever"
         },
         {
           "id": "set-045-q19",
           "code": "S045-Q19",
           "tag": "disasters",
-          "sentence": "The family group chat shared the latest _____ signal, not rumours, as the official source.",
+          "sentence": "The _____ warning asked boats to return, as the strong wind rose.",
           "answer": "typhoon"
         },
         {
           "id": "set-045-q20",
           "code": "S045-Q20",
           "tag": "habits",
-          "sentence": "A hole in the sock, visible only when the shoes came off at the temple, felt hugely _____.",
+          "sentence": "Faith felt _____ when her drawing was shown upside down.",
           "answer": "embarrassed"
         },
         {
           "id": "set-045-q21",
           "code": "S045-Q21",
           "tag": "illness",
-          "sentence": "The teacher kept a logged inhaler for one pupil, because that _____ might be needed in PE.",
+          "sentence": "The chemist stuck a new label on Kate’s _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-045-q22",
           "code": "S045-Q22",
           "tag": "disasters",
-          "sentence": "The ground-floor lift was locked out, because a _____ had reached the shaft and the sensors.",
+          "sentence": "Water covered the lower car park in the overnight _____.",
           "answer": "flood"
         },
         {
           "id": "set-045-q23",
           "code": "S045-Q23",
           "tag": "habits",
-          "sentence": "The science fair needs a _____ pupil at the power point, in charge of switching it off at the end.",
+          "sentence": "Jane is trusted with the class snail, and is _____ about its food.",
           "answer": "responsible"
         },
         {
           "id": "set-045-q24",
           "code": "S045-Q24",
           "tag": "disasters",
-          "sentence": "The _____ left a mix of soil, roots and stones across the hill path, just as the slope had been holding them.",
+          "sentence": "The _____ snapped a small tree as rocks slid past.",
           "answer": "landslide"
         },
         {
           "id": "set-045-q25",
           "code": "S045-Q25",
           "tag": "habits",
-          "sentence": "The science lesson on hearts ended with one clear idea: a _____ heart is a moving heart.",
+          "sentence": "Lucy walked to school three days a week, a _____ habit.",
           "answer": "healthy"
         }
       ]
@@ -8481,183 +8481,183 @@ window.CLOZE_BANK = {
         "id": "set-046-ex",
         "code": "S046-EX",
         "tag": "example",
-        "sentence": "Please _____ your story with one clear picture, so a younger reader can follow the scene.",
-        "answer": "illustrate"
+        "sentence": "A kind note in the lunchbox helped _____ Lucy on a hard day.",
+        "answer": "encourage"
       },
       "items": [
         {
           "id": "set-046-q01",
           "code": "S046-Q01",
           "tag": "habits",
-          "sentence": "After praising last year’s drawing as “this year’s best”, the judge corrected it, a little _____.",
+          "sentence": "Nora spoke too loudly in the library, then felt _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-046-q02",
           "code": "S046-Q02",
           "tag": "illness",
-          "sentence": "Grandad switched from a hard pillow after a dry bedroom _____ kept waking him.",
+          "sentence": "Wendy turned the page of the book and let out a small _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-046-q03",
           "code": "S046-Q03",
           "tag": "disasters",
-          "sentence": "The pain in her ear was _____, and the night clinic, not a morning wait, was the only kind plan.",
+          "sentence": "The _____ damage to the roof meant the classroom could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-046-q04",
           "code": "S046-Q04",
           "tag": "habits",
-          "sentence": "A _____ key-holder does not lend the storeroom key onward, because the trust was given to them alone.",
+          "sentence": "Eric is trusted to keep the lost-and-found key, and is _____.",
           "answer": "responsible"
         },
         {
           "id": "set-046-q05",
           "code": "S046-Q05",
           "tag": "illness",
-          "sentence": "A child who is hot to the touch and unusually quiet often has a developing _____.",
+          "sentence": "Mum kept the curtains half drawn to ease Jane’s high _____.",
           "answer": "fever"
         },
         {
           "id": "set-046-q06",
           "code": "S046-Q06",
           "tag": "disasters",
-          "sentence": "The _____ of goods was not huge, but it arrived on time and matched the list the shelter had asked for.",
+          "sentence": "The family’s _____ of unused clothes filled one tidy bag.",
           "answer": "donation"
         },
         {
           "id": "set-046-q07",
           "code": "S046-Q07",
           "tag": "habits",
-          "sentence": "A _____ skin glow after a hike is often just good blood flow, and a reason to go again.",
+          "sentence": "A _____ drink is water or milk, not a huge sweet cup.",
           "answer": "healthy"
         },
         {
           "id": "set-046-q08",
           "code": "S046-Q08",
           "tag": "illness",
-          "sentence": "A bounced ball hit the floor loudly beside me, and the shock seemed to spark a short _____.",
+          "sentence": "Sean missed the last lesson, sent home with a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-046-q09",
           "code": "S046-Q09",
           "tag": "disasters",
-          "sentence": "Even after the _____ weakened over land, the remaining wind still snapped umbrellas as if they were toys.",
+          "sentence": "A morning _____ warning, and the strong wind, meant packed lunches stayed in the fridge.",
           "answer": "typhoon"
         },
         {
           "id": "set-046-q10",
           "code": "S046-Q10",
           "tag": "habits",
-          "sentence": "A _____ chess parent does not hint; they let the child sit with the problem.",
+          "sentence": "Carl was _____ with the slow computer, and tried again calmly.",
           "answer": "patient"
         },
         {
           "id": "set-046-q11",
           "code": "S046-Q11",
           "tag": "illness",
-          "sentence": "The drumline rehearsal involved a heavy bass drum, and Kim finished with aching shoulders and a _____.",
+          "sentence": "Rose could not sit cross-legged on the floor because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-046-q12",
           "code": "S046-Q12",
           "tag": "disasters",
-          "sentence": "Drivers were waved past a fresh _____ that had stopped just short of the slow lane.",
+          "sentence": "Mud from the _____ reached the first row of parked bikes.",
           "answer": "landslide"
         },
         {
           "id": "set-046-q13",
           "code": "S046-Q13",
           "tag": "habits",
-          "sentence": "The older sister did not pull the child up the wall; she stayed below to _____ each foothold.",
+          "sentence": "The team used kind cheers to _____ Pearl after a fall.",
           "answer": "encourage"
         },
         {
           "id": "set-046-q14",
           "code": "S046-Q14",
           "tag": "illness",
-          "sentence": "A grey look on one tooth in the mirror explained last night’s mysterious _____.",
+          "sentence": "A _____ in her braces area made the dentist visit urgent.",
           "answer": "toothache"
         },
         {
           "id": "set-046-q15",
           "code": "S046-Q15",
           "tag": "disasters",
-          "sentence": "A _____ makes a green place look older, as if a summer had been stretched too far.",
+          "sentence": "After a _____ of weeks, a short drizzle hardly counted as rain.",
           "answer": "drought"
         },
         {
           "id": "set-046-q16",
           "code": "S046-Q16",
           "tag": "habits",
-          "sentence": "A _____ register, taken on time, helps the office know who is missing before the second lesson.",
+          "sentence": "Eva left early to stay _____, even when the lift was slow.",
           "answer": "punctual"
         },
         {
           "id": "set-046-q17",
           "code": "S046-Q17",
           "tag": "illness",
-          "sentence": "After the drama festival, the lead’s understudy had to perform because the lead caught the _____.",
+          "sentence": "The doctor told Zack to rest; the _____ had made every muscle ache.",
           "answer": "flu"
         },
         {
           "id": "set-046-q18",
           "code": "S046-Q18",
           "tag": "disasters",
-          "sentence": "The picture frames were straightened that evening, a quiet end to a short daytime _____.",
+          "sentence": "The ground shook in an _____, and the class counted slowly.",
           "answer": "earthquake"
         },
         {
           "id": "set-046-q19",
           "code": "S046-Q19",
           "tag": "habits",
-          "sentence": "A _____ scale practice, fifteen minutes before breakfast, is how the pianist keeps her fingers ready.",
+          "sentence": "The same evening slot is reserved for Victor’s _____ every week reading.",
           "answer": "regular"
         },
         {
           "id": "set-046-q20",
           "code": "S046-Q20",
           "tag": "habits",
-          "sentence": "Mum asked only for the bathrooms today; the rest of the _____ could wait until tomorrow.",
+          "sentence": "Amy hung the wet mop out, a sign the _____ was done.",
           "answer": "housework"
         },
         {
           "id": "set-046-q21",
           "code": "S046-Q21",
           "tag": "disasters",
-          "sentence": "A _____ of muddy water crossed the basketball court, and the white lines vanished.",
+          "sentence": "After the _____, water still covered the football pitch.",
           "answer": "flood"
         },
         {
           "id": "set-046-q22",
           "code": "S046-Q22",
           "tag": "habits",
-          "sentence": "The _____ photographer backed up for the shot and met a chair that was already there.",
+          "sentence": "Hugo is kind but _____, always dropping coins at the shop.",
           "answer": "clumsy"
         },
         {
           "id": "set-046-q23",
           "code": "S046-Q23",
           "tag": "illness",
-          "sentence": "A sip of very fizzy cream soda just before the test was an error, and a bubbling _____ followed.",
+          "sentence": "Faith could not start the craft, stopped by a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-046-q24",
           "code": "S046-Q24",
           "tag": "habits",
-          "sentence": "A _____ child poured the rest of the bubble mixture for the younger ones, though some was left for later.",
+          "sentence": "A _____ surprise from Mum was an extra sandwich for Karl’s friend.",
           "answer": "generous"
         },
         {
           "id": "set-046-q25",
           "code": "S046-Q25",
           "tag": "illness",
-          "sentence": "A short course after the ear infection was counted down on a sticker chart beside the _____.",
+          "sentence": "Yuki set her phone alarm for the evening dose of _____.",
           "answer": "medicine"
         }
       ]
@@ -8669,183 +8669,183 @@ window.CLOZE_BANK = {
         "id": "set-047-ex",
         "code": "S047-EX",
         "tag": "example",
-        "sentence": "Choose one _____ for the concert, and practise it enough that the first notes are steady.",
-        "answer": "instrument"
+        "sentence": "A _____ cut from the tin needed a nurse’s clean dressing.",
+        "answer": "severe"
       },
       "items": [
         {
           "id": "set-047-q01",
           "code": "S047-Q01",
           "tag": "illness",
-          "sentence": "After the farm’s fresh milk, richer than supermarket milk, one city cousin discovered a _____.",
+          "sentence": "A _____ in his tummy made Karl decline the extra dumpling.",
           "answer": "stomachache"
         },
         {
           "id": "set-047-q02",
           "code": "S047-Q02",
           "tag": "disasters",
-          "sentence": "Families in the stilt houses know the _____ marks of past years, painted quietly on a post.",
+          "sentence": "After the _____, water still covered the school field at dawn.",
           "answer": "flood"
         },
         {
           "id": "set-047-q03",
           "code": "S047-Q03",
           "tag": "habits",
-          "sentence": "We should _____ a classmate who is learning Cantonese or English, and never mock an accent.",
+          "sentence": "A kind letter from Aunt Sue helped _____ Will during a hard week.",
           "answer": "encourage"
         },
         {
           "id": "set-047-q04",
           "code": "S047-Q04",
           "tag": "illness",
-          "sentence": "The chemist asked us to finish today’s _____ at home and come back if a rash appeared.",
+          "sentence": "The chemist put a warning sticker on Nell’s _____ : with food.",
           "answer": "medicine"
         },
         {
           "id": "set-047-q05",
           "code": "S047-Q05",
           "tag": "disasters",
-          "sentence": "A _____ drill in the hillside village is about going out and sideways, never up into the moving earth.",
+          "sentence": "A night of rain and a _____ left mud on the school’s back steps.",
           "answer": "landslide"
         },
         {
           "id": "set-047-q06",
           "code": "S047-Q06",
           "tag": "habits",
-          "sentence": "When the visiting author is _____, the book-talk can keep the tight library slot.",
+          "sentence": "Victor walked faster after the delay, still hoping to be _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-047-q07",
           "code": "S047-Q07",
           "tag": "illness",
-          "sentence": "When the class tried calligraphy at low tables, several pupils later said they had a mild _____.",
+          "sentence": "After the museum tour with much standing, Hugh felt a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-047-q08",
           "code": "S047-Q08",
           "tag": "disasters",
-          "sentence": "During the _____, the hillside graves were dry and pale, and the usual wet-season grass did not come.",
+          "sentence": "During the _____, there was little rain, and the pond shrank.",
           "answer": "drought"
         },
         {
           "id": "set-047-q09",
           "code": "S047-Q09",
           "tag": "habits",
-          "sentence": "The estate holds _____ recycling days every other Tuesday, and the boxes appear like clockwork.",
+          "sentence": "The same cookery class hour is _____ every week for Maya all term.",
           "answer": "regular"
         },
         {
           "id": "set-047-q10",
           "code": "S047-Q10",
           "tag": "habits",
-          "sentence": "The holiday rental’s checkout required a basic _____: bins, dishes, and folded blankets.",
+          "sentence": "Leo set a twenty-minute timer and raced through the _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-047-q11",
           "code": "S047-Q11",
           "tag": "disasters",
-          "sentence": "A _____ frost warning for the farms meant fires in the orchards, a rare sight here.",
+          "sentence": "A _____ storm at the weekend left the pitch in a dangerous state.",
           "answer": "severe"
         },
         {
           "id": "set-047-q12",
           "code": "S047-Q12",
           "tag": "habits",
-          "sentence": "A _____ toss of the keys into the bowl missed, and they rang against the tile.",
+          "sentence": "Tina stepped on her own lace and, being _____, dropped the file.",
           "answer": "clumsy"
         },
         {
           "id": "set-047-q13",
           "code": "S047-Q13",
           "tag": "illness",
-          "sentence": "The doctor’s note for school named a _____ as the reason for two days of absence.",
+          "sentence": "A sudden _____ made Ben feel hot during the film, so he left early.",
           "answer": "fever"
         },
         {
           "id": "set-047-q14",
           "code": "S047-Q14",
           "tag": "disasters",
-          "sentence": "The locked box at the fair was for a _____, and it was opened in front of two teachers, for fairness.",
+          "sentence": "The PTA’s _____ of packed rice bags arrived at the centre on Friday.",
           "answer": "donation"
         },
         {
           "id": "set-047-q15",
           "code": "S047-Q15",
           "tag": "habits",
-          "sentence": "The rain had made the hairstyle collapse, and the class photo still went ahead; she felt _____.",
+          "sentence": "Ted felt _____ after using the wrong locker in a hurry.",
           "answer": "embarrassed"
         },
         {
           "id": "set-047-q16",
           "code": "S047-Q16",
           "tag": "illness",
-          "sentence": "When the class tried calligraphy with strong ink smell, one artist had to stop because of a _____.",
+          "sentence": "Rita asked for the front seat, hoping to ease a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-047-q17",
           "code": "S047-Q17",
           "tag": "disasters",
-          "sentence": "When the school’s metal gate rattled like a drum, we knew the _____ was at its noisiest.",
+          "sentence": "The _____ brought a tropical storm, and buses stopped early.",
           "answer": "typhoon"
         },
         {
           "id": "set-047-q18",
           "code": "S047-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for a younger reading partner means actually listening, not only sitting nearby.",
+          "sentence": "A _____ child, Cora was trusted to ring home if she would be late.",
           "answer": "responsible"
         },
         {
           "id": "set-047-q19",
           "code": "S047-Q19",
           "tag": "illness",
-          "sentence": "When the anaesthetic wore off after the filling, a mild leftover _____ was expected for a day.",
+          "sentence": "A night _____ in a tooth made Ryan sit up and sip water.",
           "answer": "toothache"
         },
         {
           "id": "set-047-q20",
           "code": "S047-Q20",
           "tag": "habits",
-          "sentence": "After less screen time before bed, the mornings felt clearer and more _____.",
+          "sentence": "Mark cut back on sweets, hoping to stay _____ with fruit and water this term.",
           "answer": "healthy"
         },
         {
           "id": "set-047-q21",
           "code": "S047-Q21",
           "tag": "habits",
-          "sentence": "When the glue needed an hour, a _____ model-maker went to read, instead of testing it every five minutes.",
+          "sentence": "A _____ wait for the late ferry did not spoil Rose’s mood.",
           "answer": "patient"
         },
         {
           "id": "set-047-q22",
           "code": "S047-Q22",
           "tag": "illness",
-          "sentence": "A “please rest” card from classmates arrived when I had already spent four days with the _____.",
+          "sentence": "Mum made broth and extra rest plans for Vera’s _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-047-q23",
           "code": "S047-Q23",
           "tag": "disasters",
-          "sentence": "After the _____ made a hanging train cable sway, the service paused for a safety check before the cars ran again.",
+          "sentence": "The ground shook in a brief _____, and the choir went quiet.",
           "answer": "earthquake"
         },
         {
           "id": "set-047-q24",
           "code": "S047-Q24",
           "tag": "habits",
-          "sentence": "The _____ club paid for an extra coach seat so a late-joining member could still come.",
+          "sentence": "Daisy was _____ with her time on Saturday, staying extra to help pack boxes.",
           "answer": "generous"
         },
         {
           "id": "set-047-q25",
           "code": "S047-Q25",
           "tag": "illness",
-          "sentence": "The chemistry lab rule is clear: if fumes make you start a _____, move to the window at once.",
+          "sentence": "Jack kept his chin down, hoping no one heard the _____ in his throat.",
           "answer": "cough"
         }
       ]
@@ -8857,183 +8857,183 @@ window.CLOZE_BANK = {
         "id": "set-048-ex",
         "code": "S048-EX",
         "tag": "example",
-        "sentence": "The challenge is to _____ a simple tool that can pick up litter without a long handle.",
-        "answer": "invent"
+        "sentence": "The _____ of first-aid supplies was checked, then packed.",
+        "answer": "donation"
       },
       "items": [
         {
           "id": "set-048-q01",
           "code": "S048-Q01",
           "tag": "disasters",
-          "sentence": "When the water in the bowl made rings and the floor felt unsure, Mum said, “_____ — under the table.”",
+          "sentence": "The ground shook in the _____, and the clock’s pendulum skipped.",
           "answer": "earthquake"
         },
         {
           "id": "set-048-q02",
           "code": "S048-Q02",
           "tag": "habits",
-          "sentence": "A _____ relative always brings home-made dumplings in a bag that is “too many, please share”.",
+          "sentence": "Zack was _____ and printed extra maps so no pair went without.",
           "answer": "generous"
         },
         {
           "id": "set-048-q03",
           "code": "S048-Q03",
           "tag": "illness",
-          "sentence": "The marching-band trumpet part was too much while a _____ made every high note vibrate painfully.",
+          "sentence": "Nora asked for noodles, not toast, to avoid a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-048-q04",
           "code": "S048-Q04",
           "tag": "disasters",
-          "sentence": "The flooding was called _____ when more than one estate’s ground floor was lost to the water.",
+          "sentence": "A _____ storm closed the hill road, which could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-048-q05",
           "code": "S048-Q05",
           "tag": "habits",
-          "sentence": "When he bowed too low, a _____ bump of the music stand moved the score to the floor.",
+          "sentence": "Joel waved too wide and, being _____ and dropped it, hit the hanging sign.",
           "answer": "clumsy"
         },
         {
           "id": "set-048-q06",
           "code": "S048-Q06",
           "tag": "illness",
-          "sentence": "The doctor warned that returning to football too soon after the _____ would delay recovery.",
+          "sentence": "Eric walked as if his legs were sandbags, weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-048-q07",
           "code": "S048-Q07",
           "tag": "disasters",
-          "sentence": "A _____ of warm socks, new, was the unusual, perfect answer to that week’s posted need.",
+          "sentence": "The school’s _____ of packed musical instruments was tuned first.",
           "answer": "donation"
         },
         {
           "id": "set-048-q08",
           "code": "S048-Q08",
           "tag": "habits",
-          "sentence": "When a parent clapped at the wrong cue, the child on stage gave a tiny, _____ glance.",
+          "sentence": "Pearl felt _____ after her chair tipped in the quiet hall.",
           "answer": "embarrassed"
         },
         {
           "id": "set-048-q09",
           "code": "S048-Q09",
           "tag": "illness",
-          "sentence": "The hilltop wind was cold on my ears, and by the time we descended I had a tight _____.",
+          "sentence": "Hugo could not look at the sunlit window, thanks to a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-048-q10",
           "code": "S048-Q10",
           "tag": "habits",
-          "sentence": "A _____ event helper, in charge of allergies, reads the labels before any food is served.",
+          "sentence": "Gary double-checks that the cage door is shut, because he is _____.",
           "answer": "responsible"
         },
         {
           "id": "set-048-q11",
           "code": "S048-Q11",
           "tag": "habits",
-          "sentence": "A _____ password change every term is the computer club’s unexciting but firm habit.",
+          "sentence": "The photography club is _____ every week, always the last Saturday morning.",
           "answer": "regular"
         },
         {
           "id": "set-048-q12",
           "code": "S048-Q12",
           "tag": "illness",
-          "sentence": "After the evening sponge-down, the _____ fell half a degree, which encouraged us.",
+          "sentence": "A high _____ kept Amy from the choir trip, as she still felt too hot.",
           "answer": "fever"
         },
         {
           "id": "set-048-q13",
           "code": "S048-Q13",
           "tag": "disasters",
-          "sentence": "Because of the last _____, some families now keep a drum of clean water, filled in the rainy months, not in a panic.",
+          "sentence": "During the _____, farmers waited for rain that did not come.",
           "answer": "drought"
         },
         {
           "id": "set-048-q14",
           "code": "S048-Q14",
           "tag": "habits",
-          "sentence": "A faded stain on the sofa needed a careful dab, a fussy item on the weekend _____ list.",
+          "sentence": "Ryan paired the gloves from the radiator, a winter _____ job, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-048-q15",
           "code": "S048-Q15",
           "tag": "illness",
-          "sentence": "The duty teacher let a pupil lie down when a sudden _____ made sitting upright difficult.",
+          "sentence": "Holly held her tummy in the queue, hoping the _____ would wait.",
           "answer": "stomachache"
         },
         {
           "id": "set-048-q16",
           "code": "S048-Q16",
           "tag": "disasters",
-          "sentence": "A pre-_____ checklist in our kitchen includes tape, water, and bringing in the drying rack.",
+          "sentence": "A late _____ in the season still brought a fierce tropical storm.",
           "answer": "typhoon"
         },
         {
           "id": "set-048-q17",
           "code": "S048-Q17",
           "tag": "habits",
-          "sentence": "A _____ shopping list in this house starts with vegetables, then rice, then a small treat.",
+          "sentence": "Faith felt _____ after trading late snacks for an earlier dinner.",
           "answer": "healthy"
         },
         {
           "id": "set-048-q18",
           "code": "S048-Q18",
           "tag": "illness",
-          "sentence": "A travel letter from the doctor listed the _____ we were carrying through the airport.",
+          "sentence": "Mum lined up the breakfast glass and the _____ spoon together.",
           "answer": "medicine"
         },
         {
           "id": "set-048-q19",
           "code": "S048-Q19",
           "tag": "disasters",
-          "sentence": "A _____ overnight turned the cycling path into a canal, and helmets were no use at all.",
+          "sentence": "The _____ filled the playground drain, water covering the hopscotch.",
           "answer": "flood"
         },
         {
           "id": "set-048-q20",
           "code": "S048-Q20",
           "tag": "habits",
-          "sentence": "The _____ help-desk person repeated the steps slowly, and did not sound tired of the question.",
+          "sentence": "A _____ and waited calmly smile helped the lost visitor feel less hurried.",
           "answer": "patient"
         },
         {
           "id": "set-048-q21",
           "code": "S048-Q21",
           "tag": "illness",
-          "sentence": "Grandad’s fishing trip on the pier meant hours of bending over the bucket, so he came home with a _____.",
+          "sentence": "Tess paused on the library steps, a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-048-q22",
           "code": "S048-Q22",
           "tag": "disasters",
-          "sentence": "When the retaining wall bulged, the engineers treated it as a possible start of a _____.",
+          "sentence": "Workers bagged the loose stones after the _____ of mud on the slope.",
           "answer": "landslide"
         },
         {
           "id": "set-048-q23",
           "code": "S048-Q23",
           "tag": "habits",
-          "sentence": "The coach’s clipboard had a list of names to _____ personally, not only a list of scores.",
+          "sentence": "Friends used kind words to _____ Eva to join the choir.",
           "answer": "encourage"
         },
         {
           "id": "set-048-q24",
           "code": "S048-Q24",
           "tag": "illness",
-          "sentence": "After laughing too hard at the comedy skit, Mia needed a minute for her _____ to settle.",
+          "sentence": "A _____ in his throat made Ken miss the high note.",
           "answer": "cough"
         },
         {
           "id": "set-048-q25",
           "code": "S048-Q25",
           "tag": "habits",
-          "sentence": "The camp lights-out is at ten; a _____ cabin is quiet by then, not still unpacking.",
+          "sentence": "The teacher counted _____, on time and not late pupils already in their seats, including Leo.",
           "answer": "punctual"
         }
       ]
@@ -9045,183 +9045,183 @@ window.CLOZE_BANK = {
         "id": "set-049-ex",
         "code": "S049-EX",
         "tag": "example",
-        "sentence": "The small _____ has no cars, only bicycles and a shop that closes at six.",
-        "answer": "island"
+        "sentence": "A _____ wait for a late teammate did not bring a complaint.",
+        "answer": "patient"
       },
       "items": [
         {
           "id": "set-049-q01",
           "code": "S049-Q01",
           "tag": "habits",
-          "sentence": "A kind audience can _____ a forgotten line into a recovery, by staying still and warm.",
+          "sentence": "A kind squeeze of the hand helped _____ Zack before the song.",
           "answer": "encourage"
         },
         {
           "id": "set-049-q02",
           "code": "S049-Q02",
           "tag": "illness",
-          "sentence": "After the charity walk around the reservoir, Elaine used the railing and admitted she had a _____.",
+          "sentence": "Victor chose a soft chair in the hall, guarding a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-049-q03",
           "code": "S049-Q03",
           "tag": "disasters",
-          "sentence": "The weather app’s cone showed the _____ passing just south, which still meant violent wind here.",
+          "sentence": "The _____ flipped a sign, then the wind pushed it down the road.",
           "answer": "typhoon"
         },
         {
           "id": "set-049-q04",
           "code": "S049-Q04",
           "tag": "habits",
-          "sentence": "A _____ dentist’s clinic calls the next patient at the appointment time, so the waiting room stays calm.",
+          "sentence": "Otto caught an earlier tram to stay _____, early and ready for the museum booking.",
           "answer": "punctual"
         },
         {
           "id": "set-049-q05",
           "code": "S049-Q05",
           "tag": "illness",
-          "sentence": "The packed lift was silent until someone’s muffled _____ made everyone smile politely.",
+          "sentence": "Maya felt a tickle, then a _____ left her mouth in class.",
           "answer": "cough"
         },
         {
           "id": "set-049-q06",
           "code": "S049-Q06",
           "tag": "disasters",
-          "sentence": "The fire service pumped a _____ from an underground walkway until the tiles could be seen again.",
+          "sentence": "The _____ left water covering the lower bike racks overnight.",
           "answer": "flood"
         },
         {
           "id": "set-049-q07",
           "code": "S049-Q07",
           "tag": "habits",
-          "sentence": "The canteen’s _____ dim-sum steamers come out at eleven, a daily rhythm the regulars know.",
+          "sentence": "The running club is _____ : same park, same hour, every week.",
           "answer": "regular"
         },
         {
           "id": "set-049-q08",
           "code": "S049-Q08",
           "tag": "illness",
-          "sentence": "The first-aid talk taught us never to guess; always measure if you think there is a _____.",
+          "sentence": "Leo kicked at the sheet, then pulled it back over a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-049-q09",
           "code": "S049-Q09",
           "tag": "disasters",
-          "sentence": "Hours after the rain eased, a _____ still came down, because water was still moving inside the slope.",
+          "sentence": "Rocks from the _____ blocked the narrow road above the village.",
           "answer": "landslide"
         },
         {
           "id": "set-049-q10",
           "code": "S049-Q10",
           "tag": "habits",
-          "sentence": "When the water was cut for an hour, the planned _____ had to pause, buckets half-filled.",
+          "sentence": "Owen folded the dishcloths in a neat stack, closing the _____.",
           "answer": "housework"
         },
         {
           "id": "set-049-q11",
           "code": "S049-Q11",
           "tag": "illness",
-          "sentence": "A forgotten, shaken yoghurt in a warm bag was not lunch; it was the start of a _____.",
+          "sentence": "Mark kept a spare shirt in his bag, worried by a sudden _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-049-q12",
           "code": "S049-Q12",
           "tag": "disasters",
-          "sentence": "The satellite picture was brown where it should have been green, a portrait of the _____.",
+          "sentence": "During the long _____, the class measured how dry the soil had become.",
           "answer": "drought"
         },
         {
           "id": "set-049-q13",
           "code": "S049-Q13",
           "tag": "habits",
-          "sentence": "The family made the most _____ sibling responsible for charging the shared camera each night.",
+          "sentence": "The teacher left Daisy in charge of the line, calling her _____.",
           "answer": "responsible"
         },
         {
           "id": "set-049-q14",
           "code": "S049-Q14",
           "tag": "illness",
-          "sentence": "After the blood test, a vitamin was added, but it was kept separate from the main _____.",
+          "sentence": "The new _____ came as a chewable tablet, which Jane preferred.",
           "answer": "medicine"
         },
         {
           "id": "set-049-q15",
           "code": "S049-Q15",
           "tag": "disasters",
-          "sentence": "A historic plaque marks an _____ year, and a rebuilt street that no longer looks afraid.",
+          "sentence": "An _____ shook the staircase lightly, and pupils held the rail.",
           "answer": "earthquake"
         },
         {
           "id": "set-049-q16",
           "code": "S049-Q16",
           "tag": "habits",
-          "sentence": "The doctor called the new routine _____ because it included both better food and daily walks.",
+          "sentence": "Amy packed oats for the trip, a _____ with fruit and water breakfast away from home.",
           "answer": "healthy"
         },
         {
           "id": "set-049-q17",
           "code": "S049-Q17",
           "tag": "illness",
-          "sentence": "After the overnight essay, coffee was not allowed, so I faced the morning with a tired _____.",
+          "sentence": "After too little sleep, Tina came in with a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-049-q18",
           "code": "S049-Q18",
           "tag": "disasters",
-          "sentence": "A _____ drought measure was the official ban on filling private pools, posted in the lifts.",
+          "sentence": "A _____ storm left the roof terrace in a state that could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-049-q19",
           "code": "S049-Q19",
           "tag": "habits",
-          "sentence": "A _____ gardener of orchids knows some blooms take a season, and does not throw the plant away.",
+          "sentence": "Rose stayed _____ and waited calmly in a long canteen line, chatting quietly.",
           "answer": "patient"
         },
         {
           "id": "set-049-q20",
           "code": "S049-Q20",
           "tag": "habits",
-          "sentence": "The _____ referee bought a replacement ball when the official one burst, from his own wallet.",
+          "sentence": "Polly was _____ and offered her spare raincoat without being asked.",
           "answer": "generous"
         },
         {
           "id": "set-049-q21",
           "code": "S049-Q21",
           "tag": "disasters",
-          "sentence": "The yearbook listed last term’s _____ total, and the name of the charity, and nothing else boastful.",
+          "sentence": "A _____ of packed children’s shoes, cleaned and paired, went in one carton.",
           "answer": "donation"
         },
         {
           "id": "set-049-q22",
           "code": "S049-Q22",
           "tag": "habits",
-          "sentence": "The _____ cake decorator’s sleeve found the icing, and a white streak appeared on the cuff.",
+          "sentence": "The ice tray slipped in Nora’s _____ hands at the freezer.",
           "answer": "clumsy"
         },
         {
           "id": "set-049-q23",
           "code": "S049-Q23",
           "tag": "illness",
-          "sentence": "After months of chewing only on the right, the left side finally complained with a loud _____.",
+          "sentence": "A _____ made the cold wind feel worse on Sean’s cheek.",
           "answer": "toothache"
         },
         {
           "id": "set-049-q24",
           "code": "S049-Q24",
           "tag": "habits",
-          "sentence": "A lunch order said “no onions” and arrived as “only onions”, and the complaint felt oddly _____.",
+          "sentence": "Will looked at the floor, shy and _____, when his plan was read out.",
           "answer": "embarrassed"
         },
         {
           "id": "set-049-q25",
           "code": "S049-Q25",
           "tag": "illness",
-          "sentence": "Whole-body tiredness that does not fade after one night’s sleep often belongs to the _____.",
+          "sentence": "The nurse booked a follow-up if the _____ kept Cora weak.",
           "answer": "flu"
         }
       ]
@@ -9233,183 +9233,183 @@ window.CLOZE_BANK = {
         "id": "set-050-ex",
         "code": "S050-EX",
         "tag": "example",
-        "sentence": "He can _____ three beanbags, but the fourth one still ends on the floor, and he laughs and tries again.",
-        "answer": "juggle"
+        "sentence": "Ken was _____ and shared extra sandwiches with everyone at the table.",
+        "answer": "generous"
       },
       "items": [
         {
           "id": "set-050-q01",
           "code": "S050-Q01",
           "tag": "illness",
-          "sentence": "Ken stayed in bed all weekend, weak and aching all over, until the doctor said he had the _____.",
+          "sentence": "Shivers in the daytime told Dad the _____ had not finished.",
           "answer": "flu"
         },
         {
           "id": "set-050-q02",
           "code": "S050-Q02",
           "tag": "disasters",
-          "sentence": "The village well went dry after months with almost no rain, and people began to worry about the _____.",
+          "sentence": "The _____ cracked the soil around the playground tree.",
           "answer": "drought"
         },
         {
           "id": "set-050-q03",
           "code": "S050-Q03",
           "tag": "habits",
-          "sentence": "Grandma says a _____ lunch should include fruit and vegetables, not only snacks from the tuck shop.",
+          "sentence": "The PE teacher said a _____ pupil still rests after a hard run.",
           "answer": "healthy"
         },
         {
           "id": "set-050-q04",
           "code": "S050-Q04",
           "tag": "illness",
-          "sentence": "After I ran around right after a big lunch, a sharp _____ in my tummy made me sit down in the shade.",
+          "sentence": "The smell of eggs that morning started a _____ in Judy’s tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-050-q05",
           "code": "S050-Q05",
           "tag": "disasters",
-          "sentence": "When the ground began to shake during assembly, we quickly got under our desks for the _____.",
+          "sentence": "The ground shook in the _____, and dust fell from a high shelf.",
           "answer": "earthquake"
         },
         {
           "id": "set-050-q06",
           "code": "S050-Q06",
           "tag": "habits",
-          "sentence": "Sam was _____ enough to wait calmly at the back of the long canteen queue, without pushing.",
+          "sentence": "Victor was _____ and waited calmly when the radio crackled, and listened again.",
           "answer": "patient"
         },
         {
           "id": "set-050-q07",
           "code": "S050-Q07",
           "tag": "illness",
-          "sentence": "The night light in the kitchen was left on so the late dose of _____ would not be forgotten.",
+          "sentence": "Mum kept a spare box of _____, with a spoon, in the weekend bag.",
           "answer": "medicine"
         },
         {
           "id": "set-050-q08",
           "code": "S050-Q08",
           "tag": "habits",
-          "sentence": "A _____ classmate shared her whole pack of coloured pencils, not just one, when mine had run out.",
+          "sentence": "A _____ offer from Daisy paid for an extra ice for each teammate.",
           "answer": "generous"
         },
         {
           "id": "set-050-q09",
           "code": "S050-Q09",
           "tag": "illness",
-          "sentence": "A warm salt rinse soothed the gum, but the _____ still made it hard for Ken to chew on that side.",
+          "sentence": "Pearl slept a little more upright, trying to calm a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-050-q10",
           "code": "S050-Q10",
           "tag": "habits",
-          "sentence": "I felt _____ when I knocked the water bottle off the desk and it splashed across my worksheet.",
+          "sentence": "Liam clipped the noticeboard with his bag, a daily _____ and dropped it risk.",
           "answer": "clumsy"
         },
         {
           "id": "set-050-q11",
           "code": "S050-Q11",
           "tag": "disasters",
-          "sentence": "The child’s burn looked _____ and unusually serious, so an ambulance was called at once.",
+          "sentence": "The _____ damage to the fence made the side gate too dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-050-q12",
           "code": "S050-Q12",
           "tag": "habits",
-          "sentence": "After I tripped on the hall step in front of the class, my face went red and I felt _____.",
+          "sentence": "Sara felt _____ to find rice still on her chin in the photo.",
           "answer": "embarrassed"
         },
         {
           "id": "set-050-q13",
           "code": "S050-Q13",
           "tag": "illness",
-          "sentence": "Dust from the storeroom left the office staff with a dry _____ that would not stop.",
+          "sentence": "Otto spoke in a whisper, afraid of another _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-050-q14",
           "code": "S050-Q14",
           "tag": "disasters",
-          "sentence": "A _____ of old phones, wiped and boxed, went to a workshop that could still use the parts.",
+          "sentence": "A kind _____ of packed fruit was added at the last minute.",
           "answer": "donation"
         },
         {
           "id": "set-050-q15",
           "code": "S050-Q15",
           "tag": "habits",
-          "sentence": "The teacher chose a _____ pupil to lock the science lab and return the key after the last club meeting.",
+          "sentence": "Ivan was trusted to charge the class tablets, and was _____.",
           "answer": "responsible"
         },
         {
           "id": "set-050-q16",
           "code": "S050-Q16",
           "tag": "illness",
-          "sentence": "Auntie felt Ken’s warm forehead, then checked the thermometer and found a high _____.",
+          "sentence": "Eva looked bright-eyed and overheated, typical of a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-050-q17",
           "code": "S050-Q17",
           "tag": "disasters",
-          "sentence": "When the _____ signal went up, the fierce wind tore at the football nets and outdoor PE was cancelled.",
+          "sentence": "A night _____ rattled the pipes and sent a tropical storm against the glass.",
           "answer": "typhoon"
         },
         {
           "id": "set-050-q18",
           "code": "S050-Q18",
           "tag": "habits",
-          "sentence": "The head teacher’s assembly was meant to _____ the year group after a difficult week, with hope, not blame.",
+          "sentence": "The captain’s kind cheer helped _____ a shy runner at the start.",
           "answer": "encourage"
         },
         {
           "id": "set-050-q19",
           "code": "S050-Q19",
           "tag": "illness",
-          "sentence": "The noisy video call with everyone talking at once left Grandpa holding his temples and complaining of a _____.",
+          "sentence": "A _____ in his head started during the long exam, so Joel paused.",
           "answer": "headache"
         },
         {
           "id": "set-050-q20",
           "code": "S050-Q20",
           "tag": "habits",
-          "sentence": "Because the courier was _____, the costumes arrived the morning they were promised, not the next day.",
+          "sentence": "The morning duty started at seven, and _____, on time and not late Zoe was there.",
           "answer": "punctual"
         },
         {
           "id": "set-050-q21",
           "code": "S050-Q21",
           "tag": "habits",
-          "sentence": "The art teacher sets a _____ reminder every thirty minutes so she remembers to stand and stretch.",
+          "sentence": "The choir’s _____ rehearsal never changes, every week in the same hall.",
           "answer": "regular"
         },
         {
           "id": "set-050-q22",
           "code": "S050-Q22",
           "tag": "illness",
-          "sentence": "Because his locker was too low, tall Leo kept bending and soon had a pain in his back, a daily _____.",
+          "sentence": "Yuki missed the hill walk, kept home by a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-050-q23",
           "code": "S050-Q23",
           "tag": "disasters",
-          "sentence": "After the drain outside Block 3 overflowed, a _____ covered the ground-floor path in dirty water.",
+          "sentence": "After the _____, fans were used where water had covered the hall floor.",
           "answer": "flood"
         },
         {
           "id": "set-050-q24",
           "code": "S050-Q24",
           "tag": "habits",
-          "sentence": "After the party, we spent the evening on _____, sweeping up cake crumbs and taking down balloons.",
+          "sentence": "A damp cloth wiped the TV stand and ended the sitting-room _____.",
           "answer": "housework"
         },
         {
           "id": "set-050-q25",
           "code": "S050-Q25",
           "tag": "disasters",
-          "sentence": "The old hillside footpath was closed after a _____ left loose mud and rocks across the track.",
+          "sentence": "The _____ closed the hiking trail, as rocks still sat on the steps.",
           "answer": "landslide"
         }
       ]
@@ -9421,183 +9421,183 @@ window.CLOZE_BANK = {
         "id": "set-051-ex",
         "code": "S051-EX",
         "tag": "example",
-        "sentence": "A family _____ night at home is loud, kind, and limited to eight o’clock on a school night.",
-        "answer": "karaoke"
+        "sentence": "Sam’s back felt tight after moving a cupboard, a real _____.",
+        "answer": "backache"
       },
       "items": [
         {
           "id": "set-051-q01",
           "code": "S051-Q01",
           "tag": "disasters",
-          "sentence": "A _____ storm at sea, already named as a storm, kept the fishing fleet in for four days.",
+          "sentence": "A _____ pain behind Holly’s eyes made Holly stop reading.",
           "answer": "severe"
         },
         {
           "id": "set-051-q02",
           "code": "S051-Q02",
           "tag": "habits",
-          "sentence": "A handwritten “keep going” in a birthday card can _____ a cousin through a hard term.",
+          "sentence": "The group used kind words to _____ Eric to try a new part.",
           "answer": "encourage"
         },
         {
           "id": "set-051-q03",
           "code": "S051-Q03",
           "tag": "illness",
-          "sentence": "The class was told to stay home at the first sign of a high _____, not to “push through”.",
+          "sentence": "Owen could not focus on a cartoon, dazed by a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-051-q04",
           "code": "S051-Q04",
           "tag": "disasters",
-          "sentence": "The family chose a _____ instead of party bags, and the birthday child was proud of the choice.",
+          "sentence": "Jack carried a _____ of packed rice down to the lobby box.",
           "answer": "donation"
         },
         {
           "id": "set-051-q05",
           "code": "S051-Q05",
           "tag": "habits",
-          "sentence": "A _____ fire drill begins at the stated minute, which is the only way the timing can be practised.",
+          "sentence": "Otto arrived as the shop shutter rose, _____ for the early opening.",
           "answer": "punctual"
         },
         {
           "id": "set-051-q06",
           "code": "S051-Q06",
           "tag": "illness",
-          "sentence": "A pair of headphones at full volume during the commute was a poor idea; the _____ proved it.",
+          "sentence": "The sweet smell of glue in craft time started a _____ in her head for Iris.",
           "answer": "headache"
         },
         {
           "id": "set-051-q07",
           "code": "S051-Q07",
           "tag": "disasters",
-          "sentence": "As the _____ strengthened, the Observatory raised the wind signals step by step.",
+          "sentence": "The _____ and its strong wind kept the school bus in the depot all morning.",
           "answer": "typhoon"
         },
         {
           "id": "set-051-q08",
           "code": "S051-Q08",
           "tag": "habits",
-          "sentence": "The wildlife group does a _____ bird count on the first Sunday, rain or shine, all year.",
+          "sentence": "Jane and Mum have a _____ market hour each Saturday morning.",
           "answer": "regular"
         },
         {
           "id": "set-051-q09",
           "code": "S051-Q09",
           "tag": "illness",
-          "sentence": "The family cancelled the steak dinner and chose fish, out of kindness to Mum’s _____.",
+          "sentence": "Karl pressed a clean finger to the gum beside the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-051-q10",
           "code": "S051-Q10",
           "tag": "habits",
-          "sentence": "The older cousin showed how to deslime the sink, a useful if unglamorous bit of _____.",
+          "sentence": "Sean wrung the mop hard, then stood it to dry after the _____.",
           "answer": "housework"
         },
         {
           "id": "set-051-q11",
           "code": "S051-Q11",
           "tag": "habits",
-          "sentence": "A _____ language-learner listens to the same recording again, without calling it “useless” after once.",
+          "sentence": "A _____ and waited calmly pause before answering made Yuki’s idea clearer.",
           "answer": "patient"
         },
         {
           "id": "set-051-q12",
           "code": "S051-Q12",
           "tag": "illness",
-          "sentence": "The costume team sewed on the floor all Saturday, and by evening both helpers reported a _____.",
+          "sentence": "After carrying the baby for the queue, Chris felt a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-051-q13",
           "code": "S051-Q13",
           "tag": "disasters",
-          "sentence": "During the _____, the cattle market was quiet, because no one wanted to feed an extra animal.",
+          "sentence": "During the long _____, with little rain, pupils brought empty bottles only if needed.",
           "answer": "drought"
         },
         {
           "id": "set-051-q14",
           "code": "S051-Q14",
           "tag": "habits",
-          "sentence": "The _____ family set an extra place as a habit, in case someone dropped by hungry.",
+          "sentence": "A _____ and shared extra neighbour lent tools and stayed to help everyone finish.",
           "answer": "generous"
         },
         {
           "id": "set-051-q15",
           "code": "S051-Q15",
           "tag": "illness",
-          "sentence": "When the tram windows were shut on a humid day, a child’s persistent _____ filled the car.",
+          "sentence": "A dry _____ woke Lucy twice in the night.",
           "answer": "cough"
         },
         {
           "id": "set-051-q16",
           "code": "S051-Q16",
           "tag": "disasters",
-          "sentence": "An _____ at 3 a.m. is remembered as a strange half-dream of a moving bed and a ticking cupboard.",
+          "sentence": "The _____ made the ground tremble, and a bottle walked to the edge.",
           "answer": "earthquake"
         },
         {
           "id": "set-051-q17",
           "code": "S051-Q17",
           "tag": "habits",
-          "sentence": "Because the corridor was busy, a _____ turn with a long tube of paper poked a locker door.",
+          "sentence": "During craft, _____ Kate glued a finger to the paper, then dropped the cap.",
           "answer": "clumsy"
         },
         {
           "id": "set-051-q18",
           "code": "S051-Q18",
           "tag": "illness",
-          "sentence": "A winter coat and a scarf cannot always stop a crowded-bus case of the _____.",
+          "sentence": "Daisy sat on the floor of the shower, too weak to stand long, mid-_____.",
           "answer": "flu"
         },
         {
           "id": "set-051-q19",
           "code": "S051-Q19",
           "tag": "disasters",
-          "sentence": "Shop mannequins stood in a _____ up to their knees, an odd, still parade in the arcade.",
+          "sentence": "A _____ after the drain blocked left water covering the back court.",
           "answer": "flood"
         },
         {
           "id": "set-051-q20",
           "code": "S051-Q20",
           "tag": "habits",
-          "sentence": "The wrong national anthem clip was started, then stopped, and the technician looked _____.",
+          "sentence": "Zack felt _____ when everyone laughed at his mix-up of the dates.",
           "answer": "embarrassed"
         },
         {
           "id": "set-051-q21",
           "code": "S051-Q21",
           "tag": "illness",
-          "sentence": "The Mid-Autumn barbecue’s sixth skewer was the one that tipped Uncle into a quiet _____.",
+          "sentence": "After the long market walk, Maya wanted a bench and a quiet _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-051-q22",
           "code": "S051-Q22",
           "tag": "disasters",
-          "sentence": "A net of sensors on the big slope is there to give minutes of warning if a _____ begins to move.",
+          "sentence": "A _____ near the hillside path covered the stones with mud.",
           "answer": "landslide"
         },
         {
           "id": "set-051-q23",
           "code": "S051-Q23",
           "tag": "habits",
-          "sentence": "Being _____ for the first-aid log means writing what was given and when, in clear ink.",
+          "sentence": "Gary signed for the sports shirts, a _____, trusted and careful job.",
           "answer": "responsible"
         },
         {
           "id": "set-051-q24",
           "code": "S051-Q24",
           "tag": "illness",
-          "sentence": "A spoon in a different colour from the soup spoons was reserved only for the liquid _____.",
+          "sentence": "A note on the kitchen door said “_____ bottle after dinner.”",
           "answer": "medicine"
         },
         {
           "id": "set-051-q25",
           "code": "S051-Q25",
           "tag": "habits",
-          "sentence": "After the sports club term, even the quieter pupils said they felt stronger and more _____.",
+          "sentence": "Stan chose a _____ meal of soup, rice, and vegetables.",
           "answer": "healthy"
         }
       ]
@@ -9609,183 +9609,183 @@ window.CLOZE_BANK = {
         "id": "set-052-ex",
         "code": "S052-EX",
         "tag": "example",
-        "sentence": "Each child carried a paper _____ in the parade, with a small, safe light inside.",
-        "answer": "lantern"
+        "sentence": "Maya covered her mouth when a sudden _____ broke the quiet test.",
+        "answer": "cough"
       },
       "items": [
         {
           "id": "set-052-q01",
           "code": "S052-Q01",
           "tag": "habits",
-          "sentence": "When the dog stole the show during the video call, its owner felt proud and also _____.",
+          "sentence": "Vera felt _____ after answering a question meant for another class.",
           "answer": "embarrassed"
         },
         {
           "id": "set-052-q02",
           "code": "S052-Q02",
           "tag": "illness",
-          "sentence": "The clinic’s text message reminded us to collect the _____ before four o’clock.",
+          "sentence": "The school office stored Hugh’s _____ in a locked box, labelled.",
           "answer": "medicine"
         },
         {
           "id": "set-052-q03",
           "code": "S052-Q03",
           "tag": "disasters",
-          "sentence": "A _____ risk map is now on the estate noticeboard, with the lowest block marked clearly.",
+          "sentence": "The _____ made the footbridge approach wet, water covering the ramp.",
           "answer": "flood"
         },
         {
           "id": "set-052-q04",
           "code": "S052-Q04",
           "tag": "habits",
-          "sentence": "A _____ bus captain checks the last row for leftover bags before telling the driver all is clear.",
+          "sentence": "Karl closed the garden gate and checked it, because he is _____.",
           "answer": "responsible"
         },
         {
           "id": "set-052-q05",
           "code": "S052-Q05",
           "tag": "illness",
-          "sentence": "During the high-jump practice, one awkward landing gave Chris a cautious, sore _____.",
+          "sentence": "A _____ in her back started when Zoe reached under the bed.",
           "answer": "backache"
         },
         {
           "id": "set-052-q06",
           "code": "S052-Q06",
           "tag": "disasters",
-          "sentence": "After the _____, the stream ran brown and thick with the hill’s soil for a week.",
+          "sentence": "Workers pinned the slope after the _____, adding a new net.",
           "answer": "landslide"
         },
         {
           "id": "set-052-q07",
           "code": "S052-Q07",
           "tag": "habits",
-          "sentence": "A _____ lunch from home beat a daily oily takeaway, and the difference showed in energy.",
+          "sentence": "The school poster showed a _____, a good meal plate: veg, rice, and a little meat.",
           "answer": "healthy"
         },
         {
           "id": "set-052-q08",
           "code": "S052-Q08",
           "tag": "illness",
-          "sentence": "The debate final paused so that the first speaker could recover from a sudden _____.",
+          "sentence": "Jack kept a bottle of water for the _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-052-q09",
           "code": "S052-Q09",
           "tag": "disasters",
-          "sentence": "A _____ left the dam’s “100 per cent” mark as a high, faintly comic, line in the air.",
+          "sentence": "A long _____ and little rain made the trees drop earlier than usual.",
           "answer": "drought"
         },
         {
           "id": "set-052-q10",
           "code": "S052-Q10",
           "tag": "habits",
-          "sentence": "When the painter’s “wet oil” sign was up, a _____ visitor looked from a distance and did not touch.",
+          "sentence": "Chris was _____ in the rain queue for the tram, hood up, still calm.",
           "answer": "patient"
         },
         {
           "id": "set-052-q11",
           "code": "S052-Q11",
           "tag": "illness",
-          "sentence": "The canteen’s clatter at peak hour sent the duty teacher out for air and a moment’s peace from a _____.",
+          "sentence": "The busy wet market noise started a _____ in Liam’s head.",
           "answer": "headache"
         },
         {
           "id": "set-052-q12",
           "code": "S052-Q12",
           "tag": "disasters",
-          "sentence": "Each month a quiet _____ of money left the bank book for the charity, as useful as any one-day appeal.",
+          "sentence": "A _____ of packed leftover fair cakes, still fresh, went to the centre.",
           "answer": "donation"
         },
         {
           "id": "set-052-q13",
           "code": "S052-Q13",
           "tag": "habits",
-          "sentence": "The club captains met to _____ one another before speaking to their houses, exchanging steady looks.",
+          "sentence": "A kind joke from Dad helped _____ Cora to try the dive once more.",
           "answer": "encourage"
         },
         {
           "id": "set-052-q14",
           "code": "S052-Q14",
           "tag": "illness",
-          "sentence": "A tiny stone in the leftover rice cracked against a tooth and started an immediate _____.",
+          "sentence": "A little swelling by the tooth told Mum it was a real _____.",
           "answer": "toothache"
         },
         {
           "id": "set-052-q15",
           "code": "S052-Q15",
           "tag": "disasters",
-          "sentence": "The park was closed so that no one would sit under trees while a _____ shook the branches.",
+          "sentence": "The _____ signal changed twice, as the wind rose and then eased.",
           "answer": "typhoon"
         },
         {
           "id": "set-052-q16",
           "code": "S052-Q16",
           "tag": "habits",
-          "sentence": "The morning tram is packed, so a _____ rider is at the stop early enough to board without a sprint.",
+          "sentence": "Tina kept a small timetable in her pocket to stay _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-052-q17",
           "code": "S052-Q17",
           "tag": "illness",
-          "sentence": "After the study camp in a shared dorm, five bunks were empty the next week because of the _____.",
+          "sentence": "Ivan felt weak all over and stayed in bed with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-052-q18",
           "code": "S052-Q18",
           "tag": "disasters",
-          "sentence": "After a light _____, some people went back to sleep; others sat up and checked the news, equally reasonably.",
+          "sentence": "During a mild _____, the floor trembled, and the teacher waited.",
           "answer": "earthquake"
         },
         {
           "id": "set-052-q19",
           "code": "S052-Q19",
           "tag": "habits",
-          "sentence": "A _____ flute lesson at four on Mondays is already printed on next term’s timetable.",
+          "sentence": "Ben reviews spelling on a _____ nightly cycle, ten minutes only.",
           "answer": "regular"
         },
         {
           "id": "set-052-q20",
           "code": "S052-Q20",
           "tag": "habits",
-          "sentence": "A ten-item checklist on the fridge turns vague “help at home” into clear, shared _____.",
+          "sentence": "Shared _____ with Dad meant Rita did floors while he did windows.",
           "answer": "housework"
         },
         {
           "id": "set-052-q21",
           "code": "S052-Q21",
           "tag": "disasters",
-          "sentence": "The delay to the operation was _____, and the family was given a clear, serious reason.",
+          "sentence": "A _____ storm made the hillside path too dangerous that day.",
           "answer": "severe"
         },
         {
           "id": "set-052-q22",
           "code": "S052-Q22",
           "tag": "habits",
-          "sentence": "The _____ puppeteer tangled the strings and, for a moment, the dragon walked backwards.",
+          "sentence": "A _____ grab at the falling ruler knocked the pencil pot too.",
           "answer": "clumsy"
         },
         {
           "id": "set-052-q23",
           "code": "S052-Q23",
           "tag": "illness",
-          "sentence": "A travel sickness tablet was not needed this time; the pain was a food-related _____, not motion.",
+          "sentence": "A cramp, a real _____, made Lila curl up on the sick-room bed.",
           "answer": "stomachache"
         },
         {
           "id": "set-052-q24",
           "code": "S052-Q24",
           "tag": "habits",
-          "sentence": "A _____ winner of concert tickets gave the second seat to a classmate who had never been.",
+          "sentence": "A _____ surprise was extra fruit cups for the whole choir.",
           "answer": "generous"
         },
         {
           "id": "set-052-q25",
           "code": "S052-Q25",
           "tag": "illness",
-          "sentence": "When the reading stayed high at bedtime, Mum planned a clinic visit for the stubborn _____.",
+          "sentence": "Mum kept a glass and a cloth ready through Nina’s high _____.",
           "answer": "fever"
         }
       ]
@@ -9797,183 +9797,183 @@ window.CLOZE_BANK = {
         "id": "set-053-ex",
         "code": "S053-EX",
         "tag": "example",
-        "sentence": "The _____ on the rack was brought in before the signal rose, still slightly damp, but safe.",
-        "answer": "laundry"
+        "sentence": "The clinic advised rest and fluids until the high _____ broke.",
+        "answer": "fever"
       },
       "items": [
         {
           "id": "set-053-q01",
           "code": "S053-Q01",
           "tag": "illness",
-          "sentence": "The radio doctor reminded listeners that the _____ is more than a slightly sore throat.",
+          "sentence": "A week of _____ left Faith aching all over, even in the morning.",
           "answer": "flu"
         },
         {
           "id": "set-053-q02",
           "code": "S053-Q02",
           "tag": "disasters",
-          "sentence": "We still practise the _____ drill every term, because a tremor can come in any month, not only in one season.",
+          "sentence": "An _____ made the floor tremble, so the class got under desks.",
           "answer": "earthquake"
         },
         {
           "id": "set-053-q03",
           "code": "S053-Q03",
           "tag": "habits",
-          "sentence": "A _____ reach across the candles was stopped just in time, which was a relief to everyone.",
+          "sentence": "The experiment survived until _____ and dropped it Tess nudged the stand.",
           "answer": "clumsy"
         },
         {
           "id": "set-053-q04",
           "code": "S053-Q04",
           "tag": "illness",
-          "sentence": "When the canteen’s curry was hotter than usual, several trays came back with leftovers and a later _____.",
+          "sentence": "Stan could not finish the bun, stopped by a _____ in his stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-053-q05",
           "code": "S053-Q05",
           "tag": "disasters",
-          "sentence": "A _____ warning about the thin ice was written on the park’s board, underlined, not polite.",
+          "sentence": "The _____ pain in Judy’s calf made walking too uncomfortable.",
           "answer": "severe"
         },
         {
           "id": "set-053-q06",
           "code": "S053-Q06",
           "tag": "habits",
-          "sentence": "The _____ art room is full of leftover paper offered freely, because the teacher is that kind of person.",
+          "sentence": "A _____ and shared extra cousin brought more chairs than the party list showed.",
           "answer": "generous"
         },
         {
           "id": "set-053-q07",
           "code": "S053-Q07",
           "tag": "illness",
-          "sentence": "The dental van at the fair offered free checks, and three pupils left with notes about early _____.",
+          "sentence": "The filling was old, and a _____ had started at its edge.",
           "answer": "toothache"
         },
         {
           "id": "set-053-q08",
           "code": "S053-Q08",
           "tag": "disasters",
-          "sentence": "The scout post collected a _____ of unused tents, and checked every peg, because a gift should work.",
+          "sentence": "A packed _____ of unused toys went to the children’s shelter.",
           "answer": "donation"
         },
         {
           "id": "set-053-q09",
           "code": "S053-Q09",
           "tag": "habits",
-          "sentence": "Friends _____ a would-be volunteer to sign the form, because the first tick is the hardest.",
+          "sentence": "Dad used kind words to _____ Zoe through a rainy practice.",
           "answer": "encourage"
         },
         {
           "id": "set-053-q10",
           "code": "S053-Q10",
           "tag": "habits",
-          "sentence": "A _____ committee secretary has the minutes printed before the meeting’s official start.",
+          "sentence": "Ken walked the route once on Sunday, so Monday could be _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-053-q11",
           "code": "S053-Q11",
           "tag": "disasters",
-          "sentence": "After the last _____, the estate replaced several roof tiles that the wind had lifted.",
+          "sentence": "The _____ signal stayed up, and the ferry was cancelled.",
           "answer": "typhoon"
         },
         {
           "id": "set-053-q12",
           "code": "S053-Q12",
           "tag": "habits",
-          "sentence": "The council sends a _____ rates reminder in the same month each year, as sure as the calendar.",
+          "sentence": "The homework club is _____ every week, always Wednesday in Room 6.",
           "answer": "regular"
         },
         {
           "id": "set-053-q13",
           "code": "S053-Q13",
           "tag": "illness",
-          "sentence": "A sudden shiver followed by a hot face is a textbook start to a _____.",
+          "sentence": "Sean even felt his hair was too warm during the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-053-q14",
           "code": "S053-Q14",
           "tag": "disasters",
-          "sentence": "The football final was moved, because a _____ had left the pitch as a brown mirror.",
+          "sentence": "A short _____ still left water covering the basement store.",
           "answer": "flood"
         },
         {
           "id": "set-053-q15",
           "code": "S053-Q15",
           "tag": "habits",
-          "sentence": "The rainy-day film was delayed until the morning _____ — dusting and mopping — was honestly done.",
+          "sentence": "Hugo folded towels and wiped the sink, then signed the _____.",
           "answer": "housework"
         },
         {
           "id": "set-053-q16",
           "code": "S053-Q16",
           "tag": "illness",
-          "sentence": "After squinting through a smeared bus window all the way to school, I arrived with a faint _____.",
+          "sentence": "After the long photo day under lights, Victor needed rest for a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-053-q17",
           "code": "S053-Q17",
           "tag": "disasters",
-          "sentence": "A _____ of fill, poorly compacted years ago, failed in a place that had looked tidy and green.",
+          "sentence": "The _____ sent mud towards the catch pit, which did its job.",
           "answer": "landslide"
         },
         {
           "id": "set-053-q18",
           "code": "S053-Q18",
           "tag": "habits",
-          "sentence": "A leftover stage moustache in the supermarket afterwards caused a brief, _____ double-take.",
+          "sentence": "Eric felt _____ because he had practised a smile that looked odd.",
           "answer": "embarrassed"
         },
         {
           "id": "set-053-q19",
           "code": "S053-Q19",
           "tag": "illness",
-          "sentence": "When the tablet was large, the pharmacist showed a safe way to split the _____ if the doctor allowed it.",
+          "sentence": "Holly put the _____ bottle back on the high shelf.",
           "answer": "medicine"
         },
         {
           "id": "set-053-q20",
           "code": "S053-Q20",
           "tag": "habits",
-          "sentence": "The teacher can leave the room for a minute when a truly _____ class monitor is in charge of the task.",
+          "sentence": "A trusted, _____ pupil, Nora puts tools back even if no one is watching.",
           "answer": "responsible"
         },
         {
           "id": "set-053-q21",
           "code": "S053-Q21",
           "tag": "habits",
-          "sentence": "The “five-a-day” board in the classroom lists water, fruit, play and enough sleep as _____ habits.",
+          "sentence": "Wade felt _____ when he could run without getting tired quickly.",
           "answer": "healthy"
         },
         {
           "id": "set-053-q22",
           "code": "S053-Q22",
           "tag": "illness",
-          "sentence": "After mopping the long corridor, the cleaner stretched backwards to ease a growing _____.",
+          "sentence": "While hanging wet sheets, Wendy felt a sudden _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-053-q23",
           "code": "S053-Q23",
           "tag": "disasters",
-          "sentence": "Teachers used the _____ to teach about saving water, without wasting the lesson on blame.",
+          "sentence": "The _____ dried the balcony plants, with no rain for days.",
           "answer": "drought"
         },
         {
           "id": "set-053-q24",
           "code": "S053-Q24",
           "tag": "habits",
-          "sentence": "The _____ scout leader let the knot be untied and tried again, rather than doing it for the cub.",
+          "sentence": "A _____ smile stayed on Rita’s face as she waited for the lift.",
           "answer": "patient"
         },
         {
           "id": "set-053-q25",
           "code": "S053-Q25",
           "tag": "illness",
-          "sentence": "After trying a strong mint, Owen’s eyes watered and a surprising _____ followed.",
+          "sentence": "A night _____ kept Jane awake and left her throat raw.",
           "answer": "cough"
         }
       ]
@@ -9985,183 +9985,183 @@ window.CLOZE_BANK = {
         "id": "set-054-ex",
         "code": "S054-EX",
         "tag": "example",
-        "sentence": "Ask the _____ if you cannot find the book; she knows the shelves better than the computer does.",
-        "answer": "librarian"
+        "sentence": "The smell of fresh paint in the hall started a _____ in her head for Nora.",
+        "answer": "headache"
       },
       "items": [
         {
           "id": "set-054-q01",
           "code": "S054-Q01",
           "tag": "disasters",
-          "sentence": "A tropical cyclone, or _____, is the storm we practise for in our June safety lesson.",
+          "sentence": "The _____ kept the airport quiet; no planes would fly in that wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-054-q02",
           "code": "S054-Q02",
           "tag": "habits",
-          "sentence": "After using the formal title for a teacher who prefers a short name, the pupil felt mildly _____.",
+          "sentence": "Cora felt _____ after mixing up the two twins’ names again.",
           "answer": "embarrassed"
         },
         {
           "id": "set-054-q03",
           "code": "S054-Q03",
           "tag": "illness",
-          "sentence": "The school play’s fog machine was turned down when it triggered a _____ in the front row.",
+          "sentence": "Smoke from the next-door incense set off Ben’s _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-054-q04",
           "code": "S054-Q04",
           "tag": "disasters",
-          "sentence": "A _____ of irrigation water, escaped from a broken bank, still counted as a flood to the next farm.",
+          "sentence": "During the _____, water covered the outdoor seats at the café.",
           "answer": "flood"
         },
         {
           "id": "set-054-q05",
           "code": "S054-Q05",
           "tag": "habits",
-          "sentence": "A _____ plant monitor notices a dry pot in time, because that is the job they accepted.",
+          "sentence": "Ted is _____ with the class camera, and always checks the strap.",
           "answer": "responsible"
         },
         {
           "id": "set-054-q06",
           "code": "S054-Q06",
           "tag": "illness",
-          "sentence": "The overnight duty nurse woke the family only when the child’s _____ climbed again.",
+          "sentence": "The doctor said the _____ was still high, so Zoe should rest at home.",
           "answer": "fever"
         },
         {
           "id": "set-054-q07",
           "code": "S054-Q07",
           "tag": "disasters",
-          "sentence": "The hiking app now marks a last year’s _____ so that no one follows a path that is no longer there.",
+          "sentence": "The _____ made the slope above the car park look bare and brown.",
           "answer": "landslide"
         },
         {
           "id": "set-054-q08",
           "code": "S054-Q08",
           "tag": "habits",
-          "sentence": "A _____ snack after training is a banana or milk, which helps the body recover.",
+          "sentence": "Polly felt _____ with fruit and water after a month of skipping late-night screens.",
           "answer": "healthy"
         },
         {
           "id": "set-054-q09",
           "code": "S054-Q09",
           "tag": "illness",
-          "sentence": "The science test’s last page, printed too faintly, forced us to lean in and later produced a _____.",
+          "sentence": "After the windy rooftop duty, Ryan came in with a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-054-q10",
           "code": "S054-Q10",
           "tag": "habits",
-          "sentence": "A _____ reader of long books turns the page and continues, even when the middle is slow.",
+          "sentence": "Wendy waited still in the rain queue, calm and _____.",
           "answer": "patient"
         },
         {
           "id": "set-054-q11",
           "code": "S054-Q11",
           "tag": "habits",
-          "sentence": "A _____ stretching break after the second lesson is now a school-wide, twice-daily habit.",
+          "sentence": "Chris writes the week’s plan every Sunday, a _____ habit.",
           "answer": "regular"
         },
         {
           "id": "set-054-q12",
           "code": "S054-Q12",
           "tag": "illness",
-          "sentence": "A tight waistband on the dance costume plus a pre-show snack created an unhelpful _____.",
+          "sentence": "Nell skipped the sweet stall, already feeling a _____ in her belly.",
           "answer": "stomachache"
         },
         {
           "id": "set-054-q13",
           "code": "S054-Q13",
           "tag": "disasters",
-          "sentence": "The hanging map in Room 6 became a pendulum during the _____, then hung still, slightly crooked.",
+          "sentence": "The _____ made the ground tremble, and a pencil rolled off.",
           "answer": "earthquake"
         },
         {
           "id": "set-054-q14",
           "code": "S054-Q14",
           "tag": "habits",
-          "sentence": "Grandad still polishes the door handles once a week, a tiny, shining piece of his _____.",
+          "sentence": "Tina put the mop away, _____ finished, floor still damp.",
           "answer": "housework"
         },
         {
           "id": "set-054-q15",
           "code": "S054-Q15",
           "tag": "illness",
-          "sentence": "A written allergy to penicillin was boxed in red on the file before any _____ was chosen.",
+          "sentence": "The spoon for the _____ stayed clean in a cup by the sink.",
           "answer": "medicine"
         },
         {
           "id": "set-054-q16",
           "code": "S054-Q16",
           "tag": "disasters",
-          "sentence": "The drought became news beyond the farms when the city’s supply looked _____, not merely low.",
+          "sentence": "A _____ storm tore a roof corner, and the room could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-054-q17",
           "code": "S054-Q17",
           "tag": "habits",
-          "sentence": "When the tram doors opened, a _____ step caught the edge, and a kind hand steadied him.",
+          "sentence": "Faith dropped the attendance book, then picked it up, red and _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-054-q18",
           "code": "S054-Q18",
           "tag": "illness",
-          "sentence": "The overnight train berth was narrow, and Auntie May arrived in Guangzhou complaining of a _____.",
+          "sentence": "The nurse wrote “_____ in the lower back” on Ruby’s slip.",
           "answer": "backache"
         },
         {
           "id": "set-054-q19",
           "code": "S054-Q19",
           "tag": "disasters",
-          "sentence": "A _____ of reading lamps, with bulbs, arrived for the homework club, and the room changed at once.",
+          "sentence": "A packed _____ of toys went with a kind note in the box.",
           "answer": "donation"
         },
         {
           "id": "set-054-q20",
           "code": "S054-Q20",
           "tag": "habits",
-          "sentence": "A _____ child opened the whole pack of stickers and let everyone choose, not “two each, I keep the rest”.",
+          "sentence": "Jane gave more time than needed, a _____ hour of extra help.",
           "answer": "generous"
         },
         {
           "id": "set-054-q21",
           "code": "S054-Q21",
           "tag": "illness",
-          "sentence": "After the Halloween chocolates, even the careful ones felt a warning; one boy had a real _____.",
+          "sentence": "Vera could not blow up a balloon for art, stopped by a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-054-q22",
           "code": "S054-Q22",
           "tag": "disasters",
-          "sentence": "A _____ that follows a wet year can still surprise people who thought the tanks would last.",
+          "sentence": "After weeks of _____ and little rain, the river stones showed.",
           "answer": "drought"
         },
         {
           "id": "set-054-q23",
           "code": "S054-Q23",
           "tag": "habits",
-          "sentence": "The piano teacher’s last sentence was always used to _____ : “Tomorrow we will make it even clearer.”",
+          "sentence": "A kind card from the class helped _____ Daisy in hospital.",
           "answer": "encourage"
         },
         {
           "id": "set-054-q24",
           "code": "S054-Q24",
           "tag": "illness",
-          "sentence": "A household rota for soup and laundry appeared on the wall during our week of _____.",
+          "sentence": "Karl felt weak from head to toe, and Mum called it the _____.",
           "answer": "flu"
         },
         {
           "id": "set-054-q25",
           "code": "S054-Q25",
           "tag": "habits",
-          "sentence": "When the exam invigilator is _____, papers can be given out as soon as the clock shows nine.",
+          "sentence": "Maya jogged the last block to stay _____ for the eight o’clock start.",
           "answer": "punctual"
         }
       ]
@@ -10173,183 +10173,183 @@ window.CLOZE_BANK = {
         "id": "set-055-ex",
         "code": "S055-EX",
         "tag": "example",
-        "sentence": "The old _____ on the headland still flashes, even though most ships now use a screen as well.",
-        "answer": "lighthouse"
+        "sentence": "Will could not enjoy the toffee, stopped by a _____ in a tooth.",
+        "answer": "toothache"
       },
       "items": [
         {
           "id": "set-055-q01",
           "code": "S055-Q01",
           "tag": "habits",
-          "sentence": "The ferry company keeps a _____ night sailing at 11:30, even when few passengers ride.",
+          "sentence": "Eva keeps a _____ every week water-the-herbs reminder on the fridge, twice a week.",
           "answer": "regular"
         },
         {
           "id": "set-055-q02",
           "code": "S055-Q02",
           "tag": "illness",
-          "sentence": "After the “finish everything on your plate” reminder at the banquet, the polite guests paid with a _____.",
+          "sentence": "A _____ in his belly made Wade say no to the running race.",
           "answer": "stomachache"
         },
         {
           "id": "set-055-q03",
           "code": "S055-Q03",
           "tag": "disasters",
-          "sentence": "During the _____, the festival’s water lanterns were cancelled, out of respect for the empty river.",
+          "sentence": "The _____, with little rain, left tap notices in the toilets: short showers only.",
           "answer": "drought"
         },
         {
           "id": "set-055-q04",
           "code": "S055-Q04",
           "tag": "habits",
-          "sentence": "After the wet umbrellas dripped in the hall, an extra mop was added to the evening _____.",
+          "sentence": "Joel wiped the cooker hob carefully, the last of the _____.",
           "answer": "housework"
         },
         {
           "id": "set-055-q05",
           "code": "S055-Q05",
           "tag": "illness",
-          "sentence": "The first-aid talk said never to take someone else’s _____, even from a kind neighbour.",
+          "sentence": "The chemist explained how to shake the bottle of _____ first.",
           "answer": "medicine"
         },
         {
           "id": "set-055-q06",
           "code": "S055-Q06",
           "tag": "disasters",
-          "sentence": "The _____ felt like a long roll under our feet, and cups rattled across the draining board.",
+          "sentence": "A mild _____ still sent a tremble through the wooden stage.",
           "answer": "earthquake"
         },
         {
           "id": "set-055-q07",
           "code": "S055-Q07",
           "tag": "habits",
-          "sentence": "The _____ typist’s mug was too close to the keyboard, and a small flood was only just prevented.",
+          "sentence": "A _____ and dropped it elbow sent the display cards onto the floor.",
           "answer": "clumsy"
         },
         {
           "id": "set-055-q08",
           "code": "S055-Q08",
           "tag": "illness",
-          "sentence": "When Rita carried her little brother up the hill path, she paid for it later with a _____.",
+          "sentence": "Ken asked to sit out of the relay; his back had a _____.",
           "answer": "backache"
         },
         {
           "id": "set-055-q09",
           "code": "S055-Q09",
           "tag": "habits",
-          "sentence": "The _____ taxi driver rounded down and wished the students luck, waving away the coins.",
+          "sentence": "At the park, Mrs Wong was _____ and paid for the whole table’s drinks.",
           "answer": "generous"
         },
         {
           "id": "set-055-q10",
           "code": "S055-Q10",
           "tag": "illness",
-          "sentence": "When muscle aches and a see-saw temperature last several days, think of the _____.",
+          "sentence": "Holly slept most of the afternoon, beaten by the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-055-q11",
           "code": "S055-Q11",
           "tag": "illness",
-          "sentence": "A sudden storm dropped the pressure, and Auntie, who feels weather in her head, named it a _____.",
+          "sentence": "Kate chose the shaded path home, already fighting a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-055-q12",
           "code": "S055-Q12",
           "tag": "disasters",
-          "sentence": "A _____ headache after the bump was a reason for a hospital check, not a quiet lie-down only.",
+          "sentence": "A _____ cut on Lila’s heel needed a nurse, and PE was stopped.",
           "answer": "severe"
         },
         {
           "id": "set-055-q13",
           "code": "S055-Q13",
           "tag": "habits",
-          "sentence": "Being _____ with a password for a club account means not sharing it in a chat.",
+          "sentence": "Judy is _____, so she counts the balls twice after PE.",
           "answer": "responsible"
         },
         {
           "id": "set-055-q14",
           "code": "S055-Q14",
           "tag": "illness",
-          "sentence": "A crooked bite from an old fall had worn one tooth, and now a weather-sensitive _____ had begun.",
+          "sentence": "Eric pointed to his cheek, showing where the _____ sat.",
           "answer": "toothache"
         },
         {
           "id": "set-055-q15",
           "code": "S055-Q15",
           "tag": "disasters",
-          "sentence": "The appeal’s last day still received a _____, late and welcome, and the total was updated in pencil.",
+          "sentence": "A packed _____ of reading lamps went in a box to the club.",
           "answer": "donation"
         },
         {
           "id": "set-055-q16",
           "code": "S055-Q16",
           "tag": "habits",
-          "sentence": "After the family started walking to the market, everyone felt a little more _____ by the weekend.",
+          "sentence": "A _____ sleep chart on the fridge helped Tina stick to nine o’clock.",
           "answer": "healthy"
         },
         {
           "id": "set-055-q17",
           "code": "S055-Q17",
           "tag": "illness",
-          "sentence": "A late snack of crackers in bed left crumbs and, later, a midnight _____.",
+          "sentence": "The drama teacher asked Amy to mime, to rest the _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-055-q18",
           "code": "S055-Q18",
           "tag": "disasters",
-          "sentence": "The tram paused at the terminus when a _____ made the overhead wires dance too much.",
+          "sentence": "The _____ hit at rush hour, and the strong wind emptied the street.",
           "answer": "typhoon"
         },
         {
           "id": "set-055-q19",
           "code": "S055-Q19",
           "tag": "habits",
-          "sentence": "The _____ canteen staff waited while a child counted money, and did not wave them aside.",
+          "sentence": "A _____ minute of waiting helped Ruby stay calm at the gate.",
           "answer": "patient"
         },
         {
           "id": "set-055-q20",
           "code": "S055-Q20",
           "tag": "habits",
-          "sentence": "A sibling who says “try it your way” can _____ a child more than one who takes over.",
+          "sentence": "Mum used kind words to _____ Mark when the puzzle looked huge.",
           "answer": "encourage"
         },
         {
           "id": "set-055-q21",
           "code": "S055-Q21",
           "tag": "disasters",
-          "sentence": "The bus terminus moved to higher ground while a _____ sat in the usual parking bays.",
+          "sentence": "During the _____, water covered the path by the football field.",
           "answer": "flood"
         },
         {
           "id": "set-055-q22",
           "code": "S055-Q22",
           "tag": "habits",
-          "sentence": "A _____ birthday child was at the park hut at eleven, the time printed on the invitation.",
+          "sentence": "A _____ pupil, Sam was in his seat as the register began.",
           "answer": "punctual"
         },
         {
           "id": "set-055-q23",
           "code": "S055-Q23",
           "tag": "illness",
-          "sentence": "After the rainy picnic, two cousins had hot foreheads, and both thermometers showed a _____.",
+          "sentence": "The thermometer beeped; Hugo’s _____ was still too high for school.",
           "answer": "fever"
         },
         {
           "id": "set-055-q24",
           "code": "S055-Q24",
           "tag": "disasters",
-          "sentence": "A child-sized _____ in the sandpit after a watering can was a joke; the real hill is not.",
+          "sentence": "A steep _____ left stones in the drain at the foot of the hill.",
           "answer": "landslide"
         },
         {
           "id": "set-055-q25",
           "code": "S055-Q25",
           "tag": "habits",
-          "sentence": "The “secret” birthday plan was spoilt by a loud whisper, and the whisperer was _____.",
+          "sentence": "Nell was _____, and she felt red about the loud ringtone that broke the test silence.",
           "answer": "embarrassed"
         }
       ]
@@ -10361,183 +10361,183 @@ window.CLOZE_BANK = {
         "id": "set-056-ex",
         "code": "S056-EX",
         "tag": "example",
-        "sentence": "Please label every piece of _____, because three black cases already look the same on the carousel.",
-        "answer": "luggage"
+        "sentence": "Mum felt Owen’s arms and found them sore, typical of the _____, still weak.",
+        "answer": "flu"
       },
       "items": [
         {
           "id": "set-056-q01",
           "code": "S056-Q01",
           "tag": "illness",
-          "sentence": "When the dance music in the hall next door thumped through the wall, our writing lesson ended in a _____.",
+          "sentence": "Ted asked for a later start on homework, waiting out a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-056-q02",
           "code": "S056-Q02",
           "tag": "disasters",
-          "sentence": "The damage to the archive was _____, because water had reached paper that cannot be replaced.",
+          "sentence": "A _____ injury kept Jack off the team until the swelling went down.",
           "answer": "severe"
         },
         {
           "id": "set-056-q03",
           "code": "S056-Q03",
           "tag": "habits",
-          "sentence": "When two people said “you go first” for too long at the door, both felt a little _____.",
+          "sentence": "Daisy felt _____ about the hole in her sock during assembly.",
           "answer": "embarrassed"
         },
         {
           "id": "set-056-q04",
           "code": "S056-Q04",
           "tag": "illness",
-          "sentence": "The teacher allowed a short corridor walk when sitting still made the _____ feel worse.",
+          "sentence": "The sweet drink was a mistake, and a _____ hit her tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-056-q05",
           "code": "S056-Q05",
           "tag": "disasters",
-          "sentence": "A _____ of canned soup must not be rusty; the volunteers’ job is kindness and a careful eye.",
+          "sentence": "The winter packed _____ of coats filled a box in the hall.",
           "answer": "donation"
         },
         {
           "id": "set-056-q06",
           "code": "S056-Q06",
           "tag": "habits",
-          "sentence": "A _____ stage manager, trusted with the cue book, stays until the last light is off.",
+          "sentence": "A trusted, _____ pupil, Otto reported the cracked tile at once.",
           "answer": "responsible"
         },
         {
           "id": "set-056-q07",
           "code": "S056-Q07",
           "tag": "illness",
-          "sentence": "The school trip deposit was postponed for one family while their child recovered from the _____.",
+          "sentence": "Mark could not carry his own bag, still weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-056-q08",
           "code": "S056-Q08",
           "tag": "disasters",
-          "sentence": "When the curtains stood out from the window, even behind glass, the _____ was leaning on the building.",
+          "sentence": "A wild _____ and its strong wind kept even the bravest dog from its evening walk.",
           "answer": "typhoon"
         },
         {
           "id": "set-056-q09",
           "code": "S056-Q09",
           "tag": "habits",
-          "sentence": "A _____ breakfast skip is not a diet; it usually makes the morning harder and the body less well.",
+          "sentence": "The poster showed a _____ plate: greens, rice, and a little meat.",
           "answer": "healthy"
         },
         {
           "id": "set-056-q10",
           "code": "S056-Q10",
           "tag": "habits",
-          "sentence": "A _____ astronomer (even a young one) waits for the cloud to move, instead of packing up at once.",
+          "sentence": "Ken was _____ with the class pet, waiting for it to come close.",
           "answer": "patient"
         },
         {
           "id": "set-056-q11",
           "code": "S056-Q11",
           "tag": "disasters",
-          "sentence": "When the teacher said “now”, in the drill, we already knew the shape of a pretend _____, and our places.",
+          "sentence": "An _____ at dusk swung the hanging basket on the balcony.",
           "answer": "earthquake"
         },
         {
           "id": "set-056-q12",
           "code": "S056-Q12",
           "tag": "habits",
-          "sentence": "A _____ attempt to fold the map in the wind left one corner in a puddle.",
+          "sentence": "Will set the cake down hard, a _____ and dropped it thud that shook the icing.",
           "answer": "clumsy"
         },
         {
           "id": "set-056-q13",
           "code": "S056-Q13",
           "tag": "illness",
-          "sentence": "The science fair boards were taller than expected, and lifting them onto the stage left Mr Shum with a _____.",
+          "sentence": "Maya told Miss Lee her back felt tight and she had a _____.",
           "answer": "backache"
         },
         {
           "id": "set-056-q14",
           "code": "S056-Q14",
           "tag": "disasters",
-          "sentence": "A _____ left a film of silt on every low step, a grey signature of the water’s visit.",
+          "sentence": "The _____ made the alley a river, water covering the bins’ bases.",
           "answer": "flood"
         },
         {
           "id": "set-056-q15",
           "code": "S056-Q15",
           "tag": "habits",
-          "sentence": "A _____ cousin sent a box of books “for anyone in the building”, not only for us.",
+          "sentence": "A _____ cousin brought extra board games for everyone to try.",
           "answer": "generous"
         },
         {
           "id": "set-056-q16",
           "code": "S056-Q16",
           "tag": "illness",
-          "sentence": "The hiking trail was dry and sandy, and the leader handed out water at the first sound of a _____.",
+          "sentence": "During the film, Leo’s _____ in his throat made several people jump.",
           "answer": "cough"
         },
         {
           "id": "set-056-q17",
           "code": "S056-Q17",
           "tag": "disasters",
-          "sentence": "The village relocated two houses when a _____ risk could not be reduced enough with walls.",
+          "sentence": "The _____, mud on the slope made the steep path too risky for the walk home.",
           "answer": "landslide"
         },
         {
           "id": "set-056-q18",
           "code": "S056-Q18",
           "tag": "habits",
-          "sentence": "The radio message from the expedition was short, and its only job was to _____ the team at base.",
+          "sentence": "The captain used kind words to _____ Faith to take a second try.",
           "answer": "encourage"
         },
         {
           "id": "set-056-q19",
           "code": "S056-Q19",
           "tag": "illness",
-          "sentence": "The sticker chart on the wall marked every hour that we checked the _____.",
+          "sentence": "Tina lay in a T-shirt only, still too hot from a _____.",
           "answer": "fever"
         },
         {
           "id": "set-056-q20",
           "code": "S056-Q20",
           "tag": "habits",
-          "sentence": "The science fair judges thanked the _____ groups that were at their boards when the tour began.",
+          "sentence": "Lucy stood _____ at the clinic door, early for the booked slot.",
           "answer": "punctual"
         },
         {
           "id": "set-056-q21",
           "code": "S056-Q21",
           "tag": "habits",
-          "sentence": "A _____ dusting of the piano keys each Sunday keeps the instrument ready for Monday’s class.",
+          "sentence": "Tess keeps a _____ every week Tuesday call with Uncle Ray, always at seven.",
           "answer": "regular"
         },
         {
           "id": "set-056-q22",
           "code": "S056-Q22",
           "tag": "illness",
-          "sentence": "The nurse distinguished a side stitch from a central _____ by asking where a hand wanted to rest.",
+          "sentence": "Polly lay on the sofa after school, waiting out a _____ in her stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-056-q23",
           "code": "S056-Q23",
           "tag": "disasters",
-          "sentence": "By the tenth week of an empty sky, the _____ was clear to everyone, even though no single hour had looked dramatic.",
+          "sentence": "The _____ turned the field a dull colour, dry underfoot.",
           "answer": "drought"
         },
         {
           "id": "set-056-q24",
           "code": "S056-Q24",
           "tag": "habits",
-          "sentence": "The family agreed that cooking dinner is separate; washing up afterwards is part of the _____.",
+          "sentence": "Iris folded fitted sheets as best she could, laughing through the _____.",
           "answer": "housework"
         },
         {
           "id": "set-056-q25",
           "code": "S056-Q25",
           "tag": "illness",
-          "sentence": "After the operation, a pain-relief _____ was timed with the clock, not “whenever it hurts a bit”.",
+          "sentence": "Wade practised opening the child-safe cap on the _____ bottle.",
           "answer": "medicine"
         }
       ]
@@ -10549,183 +10549,183 @@ window.CLOZE_BANK = {
         "id": "set-057-ex",
         "code": "S057-EX",
         "tag": "example",
-        "sentence": "He finished a science _____ in the waiting room and learned a fact he later used in the project.",
-        "answer": "magazine"
+        "sentence": "After the ferris-wheel turns, Hugo needed a bench and a quiet _____ in his tummy.",
+        "answer": "stomachache"
       },
       "items": [
         {
           "id": "set-057-q01",
           "code": "S057-Q01",
           "tag": "disasters",
-          "sentence": "Children’s inflatable toys were not a joke that day; a real _____ had made the lane a channel.",
+          "sentence": "Water covered the low path during the _____, so walkers turned back.",
           "answer": "flood"
         },
         {
           "id": "set-057-q02",
           "code": "S057-Q02",
           "tag": "habits",
-          "sentence": "We _____ new members by learning their names on the first day and asking them to join a game.",
+          "sentence": "A kind smile from the teacher helped _____ Ted to keep going.",
           "answer": "encourage"
         },
         {
           "id": "set-057-q03",
           "code": "S057-Q03",
           "tag": "illness",
-          "sentence": "After the folk-dance rehearsal, spinning and bending, Hana pressed her back and named it a _____.",
+          "sentence": "Sam held the wall while putting on shoes, slowed by a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-057-q04",
           "code": "S057-Q04",
           "tag": "disasters",
-          "sentence": "A _____ blocked the sunrise view and the road, with equal completeness, in one brown heap.",
+          "sentence": "After the _____, pupils used the front gate, away from the slope.",
           "answer": "landslide"
         },
         {
           "id": "set-057-q05",
           "code": "S057-Q05",
           "tag": "habits",
-          "sentence": "A _____ swimming-lane booking is useless if you arrive late; the lane is already given away.",
+          "sentence": "A _____, on time and not late habit kept Jack from missing the school minibus again.",
           "answer": "punctual"
         },
         {
           "id": "set-057-q06",
           "code": "S057-Q06",
           "tag": "illness",
-          "sentence": "During prayers in the quiet hall, even a tiny _____ seemed enormous.",
+          "sentence": "Eva asked for a new partner in the dialogue, because of a _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-057-q07",
           "code": "S057-Q07",
           "tag": "disasters",
-          "sentence": "The farmer’s hands, breaking a clod, showed the _____ better than any chart: the soil was powder.",
+          "sentence": "The _____ left a ring of dry mud where the puddle had been.",
           "answer": "drought"
         },
         {
           "id": "set-057-q08",
           "code": "S057-Q08",
           "tag": "habits",
-          "sentence": "The scout calendar shows _____ camps in April and November, a pattern that rarely changes.",
+          "sentence": "Nina visits the library on a _____ cycle, every second Thursday.",
           "answer": "regular"
         },
         {
           "id": "set-057-q09",
           "code": "S057-Q09",
           "tag": "illness",
-          "sentence": "A cool flannel helped, but only a lower reading would prove the _____ was leaving.",
+          "sentence": "Joel could not wear his hoodie; the high _____ made it unbearable.",
           "answer": "fever"
         },
         {
           "id": "set-057-q10",
           "code": "S057-Q10",
           "tag": "habits",
-          "sentence": "A new bin with two lids made the recycling part of the _____ slightly more interesting.",
+          "sentence": "Liam polished the little mirror in the hall, a last _____ touch, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-057-q11",
           "code": "S057-Q11",
           "tag": "habits",
-          "sentence": "When the class vote was being counted twice, a _____ room stayed seated and quiet.",
+          "sentence": "A _____ class waited, giving the shy speaker a little more time.",
           "answer": "patient"
         },
         {
           "id": "set-057-q12",
           "code": "S057-Q12",
           "tag": "illness",
-          "sentence": "When the floss finally reached the tight gap, a hidden bit of popcorn came out, and the sharp _____ eased at once.",
+          "sentence": "Gary chose the other side for every bite, guarding a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-057-q13",
           "code": "S057-Q13",
           "tag": "disasters",
-          "sentence": "A _____ night is a night for staying indoors, listening to official radio, not for taking storm photos.",
+          "sentence": "The _____ arrived with a tropical storm, and the market shut at noon.",
           "answer": "typhoon"
         },
         {
           "id": "set-057-q14",
           "code": "S057-Q14",
           "tag": "habits",
-          "sentence": "The _____ cook of the stall added an extra skewer “for growing”, and would not put it on the bill.",
+          "sentence": "Nora was _____ and shared extra and stayed late to tutor anyone who wanted help.",
           "answer": "generous"
         },
         {
           "id": "set-057-q15",
           "code": "S057-Q15",
           "tag": "illness",
-          "sentence": "After hugging at the airport, the visiting cousin left us a farewell gift: the _____.",
+          "sentence": "Aches in her hands and feet told Judy the _____ was back.",
           "answer": "flu"
         },
         {
           "id": "set-057-q16",
           "code": "S057-Q16",
           "tag": "disasters",
-          "sentence": "An _____ safety poster has three verbs, and they are not “run, shout, film”.",
+          "sentence": "A night _____ shook the ground, and the wardrobe door clicked.",
           "answer": "earthquake"
         },
         {
           "id": "set-057-q17",
           "code": "S057-Q17",
           "tag": "habits",
-          "sentence": "Because both hands were full, a _____ chin-try at the lift button missed and hit the alarm, briefly.",
+          "sentence": "A _____ salute in the play knocked the paper crown off.",
           "answer": "clumsy"
         },
         {
           "id": "set-057-q18",
           "code": "S057-Q18",
           "tag": "illness",
-          "sentence": "A new vitamin gummy, eaten by the handful, was far too many, and a complaining _____ followed.",
+          "sentence": "After a rushed breakfast, Carl felt a tight _____ in his tummy start.",
           "answer": "stomachache"
         },
         {
           "id": "set-057-q19",
           "code": "S057-Q19",
           "tag": "disasters",
-          "sentence": "A _____ shortage of bus service after the signal left a long, tired, serious queue.",
+          "sentence": "The _____ cut was not deep, but the swelling looked dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-057-q20",
           "code": "S057-Q20",
           "tag": "habits",
-          "sentence": "A forgotten line was covered by a kind partner, and the grateful actor was still _____.",
+          "sentence": "Ivan felt _____ because his lunchbox stickers looked very babyish.",
           "answer": "embarrassed"
         },
         {
           "id": "set-057-q21",
           "code": "S057-Q21",
           "tag": "illness",
-          "sentence": "A small ice pack soothed the arm, while the prescribed _____ worked on the infection itself.",
+          "sentence": "The dose cup that came with the _____ made measuring easy for Mark.",
           "answer": "medicine"
         },
         {
           "id": "set-057-q22",
           "code": "S057-Q22",
           "tag": "disasters",
-          "sentence": "The class wrote a letter with their _____, so the gift would have voices, not only a number.",
+          "sentence": "A packed _____ of rice cakes went in the box with the tins.",
           "answer": "donation"
         },
         {
           "id": "set-057-q23",
           "code": "S057-Q23",
           "tag": "habits",
-          "sentence": "The hiking club needs a _____ map-holder who does not wander off with the only copy.",
+          "sentence": "A _____ habit of Lila is to count the walkers before leaving.",
           "answer": "responsible"
         },
         {
           "id": "set-057-q24",
           "code": "S057-Q24",
           "tag": "illness",
-          "sentence": "The new whiteboard glare bounced into my eyes, and by the third period I had a sharp _____.",
+          "sentence": "A tight _____ behind his eyes made Hugh stop the homework.",
           "answer": "headache"
         },
         {
           "id": "set-057-q25",
           "code": "S057-Q25",
           "tag": "habits",
-          "sentence": "The dentist and the PE teacher agreed on one point: less sugar helps a _____ body in two ways.",
+          "sentence": "Ken felt more _____ after a week of early nights and fruit.",
           "answer": "healthy"
         }
       ]
@@ -10737,183 +10737,183 @@ window.CLOZE_BANK = {
         "id": "set-058-ex",
         "code": "S058-EX",
         "tag": "example",
-        "sentence": "The view from the Peak, after the cloud lifted, was _____, a whole harbour suddenly clear.",
-        "answer": "magnificent"
+        "sentence": "Faith held her nose for the first sip of the strong _____ bottle.",
+        "answer": "medicine"
       },
       "items": [
         {
           "id": "set-058-q01",
           "code": "S058-Q01",
           "tag": "habits",
-          "sentence": "A _____ classmate stayed behind to help pack, long after the duty list had ended, of his own will.",
+          "sentence": "Eva shared her last rubber, a _____ act in the middle of a test.",
           "answer": "generous"
         },
         {
           "id": "set-058-q02",
           "code": "S058-Q02",
           "tag": "illness",
-          "sentence": "After the long fast before a late lunch, the first huge plateful sat badly and became a _____.",
+          "sentence": "The nurse let Rose lie down for twenty minutes with the _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-058-q03",
           "code": "S058-Q03",
           "tag": "disasters",
-          "sentence": "The old well’s water was said to have been cloudy after an _____, a story the village still tells.",
+          "sentence": "A brief _____ shook the ground, and the dog hid under a chair.",
           "answer": "earthquake"
         },
         {
           "id": "set-058-q04",
           "code": "S058-Q04",
           "tag": "habits",
-          "sentence": "The _____ badminton player’s follow-through tapped a water bottle off the bench.",
+          "sentence": "A _____ slip with the tray left juice on the lunch table.",
           "answer": "clumsy"
         },
         {
           "id": "set-058-q05",
           "code": "S058-Q05",
           "tag": "illness",
-          "sentence": "The family shared a photo of the labelled bottle so the after-school carer would give the right _____.",
+          "sentence": "Dad shook the bottle of _____ in time with a little song Wendy liked.",
           "answer": "medicine"
         },
         {
           "id": "set-058-q06",
           "code": "S058-Q06",
           "tag": "disasters",
-          "sentence": "The infection in the story was _____, and the character’s recovery was slow, which the class discussed.",
+          "sentence": "A _____ injury kept Wade from the swimming race that Saturday.",
           "answer": "severe"
         },
         {
           "id": "set-058-q07",
           "code": "S058-Q07",
           "tag": "habits",
-          "sentence": "After wearing house colours on the wrong house day, the badge felt suddenly, brightly _____.",
+          "sentence": "Maya felt _____ when her old nickname was used in the play script.",
           "answer": "embarrassed"
         },
         {
           "id": "set-058-q08",
           "code": "S058-Q08",
           "tag": "illness",
-          "sentence": "A PE report marked “absent — recovering from _____” was a common line in March.",
+          "sentence": "Aches all over kept Otto home, a clear case of _____.",
           "answer": "flu"
         },
         {
           "id": "set-058-q09",
           "code": "S058-Q09",
           "tag": "disasters",
-          "sentence": "A _____ in the form of a scholarship is still a gift of money, named, and meant to last a year.",
+          "sentence": "The club’s _____ of packed footballs was left at the youth centre.",
           "answer": "donation"
         },
         {
           "id": "set-058-q10",
           "code": "S058-Q10",
           "tag": "habits",
-          "sentence": "A _____ canteen helper in charge of tokens does not give extras to friends.",
+          "sentence": "Stan reported the missing cone at once, being trusted and _____.",
           "answer": "responsible"
         },
         {
           "id": "set-058-q11",
           "code": "S058-Q11",
           "tag": "illness",
-          "sentence": "The PE teacher would not let anyone with a suspected _____ join the warm-up.",
+          "sentence": "Iris rinsed her face, but the heat of the high _____ came back.",
           "answer": "fever"
         },
         {
           "id": "set-058-q12",
           "code": "S058-Q12",
           "tag": "disasters",
-          "sentence": "When the _____ went down, it left rubbish in trees that are usually high and dry.",
+          "sentence": "The _____ reached the goalposts, water covering the grass.",
           "answer": "flood"
         },
         {
           "id": "set-058-q13",
           "code": "S058-Q13",
           "tag": "habits",
-          "sentence": "The teacher did not lower the bar; she stayed to _____ the climb to the real one.",
+          "sentence": "Sis used kind words to _____ Holly before the music exam.",
           "answer": "encourage"
         },
         {
           "id": "set-058-q14",
           "code": "S058-Q14",
           "tag": "illness",
-          "sentence": "After the long museum audio-guide, one earpiece sat badly and left me with a one-sided _____.",
+          "sentence": "A _____ in his forehead made the reading test feel too long.",
           "answer": "headache"
         },
         {
           "id": "set-058-q15",
           "code": "S058-Q15",
           "tag": "disasters",
-          "sentence": "Workers in hard hats picked at a _____ that had swallowed a barrier and a sign, both still inside.",
+          "sentence": "The _____ of mud on the slope dropped stones onto the catch fence above the shops.",
           "answer": "landslide"
         },
         {
           "id": "set-058-q16",
           "code": "S058-Q16",
           "tag": "habits",
-          "sentence": "Because the choir bus was _____, we reached the city hall with time to warm up.",
+          "sentence": "Jane learned the short-cut, not to run, but to stay _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-058-q17",
           "code": "S058-Q17",
           "tag": "illness",
-          "sentence": "A swollen cheek in the class photo was later explained as an abscess starting as a _____.",
+          "sentence": "The pain shot up to Daisy’s ear from a deep _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-058-q18",
           "code": "S058-Q18",
           "tag": "disasters",
-          "sentence": "During the _____, animals came down to the last water, so the ranger closed one trail to give them space.",
+          "sentence": "A summer _____ with little rain made the hillside look grey.",
           "answer": "drought"
         },
         {
           "id": "set-058-q19",
           "code": "S058-Q19",
           "tag": "habits",
-          "sentence": "A _____ review of the lost-property box every Friday afternoon is the prefects’ quiet ritual.",
+          "sentence": "The same Saturday morning slot is Sara’s _____ every week swimming time.",
           "answer": "regular"
         },
         {
           "id": "set-058-q20",
           "code": "S058-Q20",
           "tag": "habits",
-          "sentence": "When the vacuum bag was full, emptying it was the least popular minute of the day’s _____.",
+          "sentence": "Clean glasses on the shelf showed the _____ had been thorough.",
           "answer": "housework"
         },
         {
           "id": "set-058-q21",
           "code": "S058-Q21",
           "tag": "disasters",
-          "sentence": "The hiking trails were closed ahead of the _____, because wind on ridges is worse than in the streets.",
+          "sentence": "The _____ and its strong wind blew so hard that the rain seemed to travel sideways.",
           "answer": "typhoon"
         },
         {
           "id": "set-058-q22",
           "code": "S058-Q22",
           "tag": "habits",
-          "sentence": "A _____ colour on the lunch tray — green, orange, red — is a simple family game that works.",
+          "sentence": "A _____ evening is a short walk, then lights out on time.",
           "answer": "healthy"
         },
         {
           "id": "set-058-q23",
           "code": "S058-Q23",
           "tag": "illness",
-          "sentence": "A broken lift in Block C meant twelve flights on foot, and Mrs Lai reached her door with a _____.",
+          "sentence": "After sweeping the balcony, Lucy leant on the broom with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-058-q24",
           "code": "S058-Q24",
           "tag": "habits",
-          "sentence": "The _____ violin teacher allowed a second tuning, calmly, before the scale began.",
+          "sentence": "Sam stayed _____ and waited calmly as the rain delayed the match, and did not fuss.",
           "answer": "patient"
         },
         {
           "id": "set-058-q25",
           "code": "S058-Q25",
           "tag": "illness",
-          "sentence": "After the swimming gala in a chilly indoor pool, two relay members developed a light _____.",
+          "sentence": "A _____ in his throat in the lift made strangers glance at Owen.",
           "answer": "cough"
         }
       ]
@@ -10925,183 +10925,183 @@ window.CLOZE_BANK = {
         "id": "set-059-ex",
         "code": "S059-EX",
         "tag": "example",
-        "sentence": "A charity _____ is not a race you must win; it is a long, organised run for a cause.",
-        "answer": "marathon"
+        "sentence": "Ken checked the lift time in the estate, planning to stay _____, early and ready.",
+        "answer": "punctual"
       },
       "items": [
         {
           "id": "set-059-q01",
           "code": "S059-Q01",
           "tag": "illness",
-          "sentence": "Grandma believed a bare foot on a cold floor was unwise if a _____ had just gone down.",
+          "sentence": "Liam turned the pillow to the cool side again, mid-_____, still too hot.",
           "answer": "fever"
         },
         {
           "id": "set-059-q02",
           "code": "S059-Q02",
           "tag": "disasters",
-          "sentence": "The _____ brought heavy rain, but the first thing we checked in Hong Kong was the wind signal.",
+          "sentence": "The _____ left a trail of leaves, a sign of the strong wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-059-q03",
           "code": "S059-Q03",
           "tag": "habits",
-          "sentence": "A neighbour’s “your tomatoes are coming!” was enough to _____ the young gardener through a dry week.",
+          "sentence": "Mum’s kind words helped _____ Ivan to pack and go to camp.",
           "answer": "encourage"
         },
         {
           "id": "set-059-q04",
           "code": "S059-Q04",
           "tag": "illness",
-          "sentence": "A missed breakfast plus a nervous oral exam was a classic recipe for a morning _____.",
+          "sentence": "Sara counted slowly, hoping the _____ in her head would ease.",
           "answer": "headache"
         },
         {
           "id": "set-059-q05",
           "code": "S059-Q05",
           "tag": "disasters",
-          "sentence": "The hotel’s lobby tiles were covered by a _____ that had come up through the drains, not the door.",
+          "sentence": "A _____ from the blocked drain left water covering the back stairs.",
           "answer": "flood"
         },
         {
           "id": "set-059-q06",
           "code": "S059-Q06",
           "tag": "habits",
-          "sentence": "A _____ clerk stamps the form at the counter the moment the office hour begins.",
+          "sentence": "Being _____, Mark was at the stop five minutes early, never late.",
           "answer": "punctual"
         },
         {
           "id": "set-059-q07",
           "code": "S059-Q07",
           "tag": "illness",
-          "sentence": "After the long flight, cabin dryness and a known weak tooth combined into a travel _____.",
+          "sentence": "The throbbing _____ in a tooth was worse when Tina lowered her head.",
           "answer": "toothache"
         },
         {
           "id": "set-059-q08",
           "code": "S059-Q08",
           "tag": "disasters",
-          "sentence": "A _____ warning is taken more seriously now, after a year when several slopes moved in one night.",
+          "sentence": "A morning _____ closed the hill road for a few hours.",
           "answer": "landslide"
         },
         {
           "id": "set-059-q09",
           "code": "S059-Q09",
           "tag": "habits",
-          "sentence": "The app sends a _____ practice reminder at five, and turning it off would break the streak.",
+          "sentence": "The school newsletter goes out on a _____ Friday cycle.",
           "answer": "regular"
         },
         {
           "id": "set-059-q10",
           "code": "S059-Q10",
           "tag": "habits",
-          "sentence": "After moving house, the first week’s _____ was mostly unpacking and wiping new shelves.",
+          "sentence": "Ryan wiped the cooker clock, which had been sticky, in the _____.",
           "answer": "housework"
         },
         {
           "id": "set-059-q11",
           "code": "S059-Q11",
           "tag": "disasters",
-          "sentence": "A winter cold, already named, was called _____ because it was unusually bad and lasted a fortnight.",
+          "sentence": "The _____ swelling after the bump made Jack hold an ice pack still.",
           "answer": "severe"
         },
         {
           "id": "set-059-q12",
           "code": "S059-Q12",
           "tag": "habits",
-          "sentence": "A _____ swing of a raincoat sleeve cleared a row of hanging tickets from a stall hook.",
+          "sentence": "The class gave _____ Hugo a little more space so he would not knock things.",
           "answer": "clumsy"
         },
         {
           "id": "set-059-q13",
           "code": "S059-Q13",
           "tag": "illness",
-          "sentence": "The amusement park’s spin ride was postponed when a warning _____ appeared at the gate.",
+          "sentence": "Will walked with small steps, hoping not to wake the _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-059-q14",
           "code": "S059-Q14",
           "tag": "disasters",
-          "sentence": "The “white elephant” stall’s leftovers, if still good, became a second _____ the next morning.",
+          "sentence": "Last year’s leavers sent a packed _____ of schoolbags to the office.",
           "answer": "donation"
         },
         {
           "id": "set-059-q15",
           "code": "S059-Q15",
           "tag": "habits",
-          "sentence": "The automatic doors opened the wrong way, and the guest had to step back, face red and _____.",
+          "sentence": "Karl stood _____, and he felt red and very quiet after forgetting the next line.",
           "answer": "embarrassed"
         },
         {
           "id": "set-059-q16",
           "code": "S059-Q16",
           "tag": "illness",
-          "sentence": "A “shake well” line was easy to miss, so we wrote it again in large letters on the _____ pack.",
+          "sentence": "Ruby read the label twice, then took the _____ with a spoon.",
           "answer": "medicine"
         },
         {
           "id": "set-059-q17",
           "code": "S059-Q17",
           "tag": "disasters",
-          "sentence": "During the _____, laundry was done less often, and no one commented on a slightly crumpled shirt.",
+          "sentence": "The _____, with little rain, dried the herb boxes on the roof, week after week.",
           "answer": "drought"
         },
         {
           "id": "set-059-q18",
           "code": "S059-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for the class pet includes booking a holiday home for it, not hoping someone else will.",
+          "sentence": "The _____ helper counted the balls twice after PE.",
           "answer": "responsible"
         },
         {
           "id": "set-059-q19",
           "code": "S059-Q19",
           "tag": "illness",
-          "sentence": "The canoe session on the calm pond still tired their cores, and two pupils mentioned a light _____.",
+          "sentence": "Polly could not kneel to tie the banner because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-059-q20",
           "code": "S059-Q20",
           "tag": "habits",
-          "sentence": "After climbing the estate stairs on purpose, Grandma said her legs felt more _____.",
+          "sentence": "A _____ weekend was a long walk and a home-cooked meal.",
           "answer": "healthy"
         },
         {
           "id": "set-059-q21",
           "code": "S059-Q21",
           "tag": "habits",
-          "sentence": "A _____ friend at the hospital can sit in the waiting room without asking “how much longer” every minute.",
+          "sentence": "Being _____ and waited calmly, Vera did not push past the slower walkers.",
           "answer": "patient"
         },
         {
           "id": "set-059-q22",
           "code": "S059-Q22",
           "tag": "illness",
-          "sentence": "The old heater dried the air so much that Mum’s evening _____ became a nightly habit.",
+          "sentence": "The science experiment’s fine powder made Amy start a _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-059-q23",
           "code": "S059-Q23",
           "tag": "disasters",
-          "sentence": "An _____ in the next country can still move a hanging lamp here, a long, faint reminder.",
+          "sentence": "The _____ shook the ground under the canteen, and trays stilled.",
           "answer": "earthquake"
         },
         {
           "id": "set-059-q24",
           "code": "S059-Q24",
           "tag": "habits",
-          "sentence": "The _____ aunt paid for the group photo prints, so no child would be left out if money was short.",
+          "sentence": "Leo was _____ with his time, staying to help and give extra support.",
           "answer": "generous"
         },
         {
           "id": "set-059-q25",
           "code": "S059-Q25",
           "tag": "illness",
-          "sentence": "The teacher recorded a short video lesson so that pupils with the _____ would not fall behind.",
+          "sentence": "Lila felt weak when climbing the stairs, still in the _____.",
           "answer": "flu"
         }
       ]
@@ -11113,183 +11113,183 @@ window.CLOZE_BANK = {
         "id": "set-060-ex",
         "code": "S060-EX",
         "tag": "example",
-        "sentence": "The new school song has a simple _____, easy to remember after two morning practices.",
-        "answer": "melody"
+        "sentence": "Ryan keeps a _____ every week lights-out time, always 9:30 on school nights.",
+        "answer": "regular"
       },
       "items": [
         {
           "id": "set-060-q01",
           "code": "S060-Q01",
           "tag": "disasters",
-          "sentence": "A _____ year taught the children the sound of a dry well bucket, hitting something that was not water.",
+          "sentence": "The _____ left the pond’s edge dry, a ring of cracked mud.",
           "answer": "drought"
         },
         {
           "id": "set-060-q02",
           "code": "S060-Q02",
           "tag": "habits",
-          "sentence": "A _____ packed dinner before the concert was rice and vegetables, eaten in time to settle.",
+          "sentence": "A _____ snack of banana and milk kept Nina going until dinner.",
           "answer": "healthy"
         },
         {
           "id": "set-060-q03",
           "code": "S060-Q03",
           "tag": "illness",
-          "sentence": "The doctor drew a simple clock on the paper to show when the _____ should be taken.",
+          "sentence": "A weekend chart on the fridge kept the _____ bottle times clear.",
           "answer": "medicine"
         },
         {
           "id": "set-060-q04",
           "code": "S060-Q04",
           "tag": "disasters",
-          "sentence": "After the _____, we opened the door and stood in the frame, then went to the playground as practised.",
+          "sentence": "During an _____, the hanging lamp swung as the ground shook.",
           "answer": "earthquake"
         },
         {
           "id": "set-060-q05",
           "code": "S060-Q05",
           "tag": "habits",
-          "sentence": "The _____ potter’s glaze needed a full firing; no one opened the kiln early.",
+          "sentence": "The class practised being _____, waiting with hands down until called.",
           "answer": "patient"
         },
         {
           "id": "set-060-q06",
           "code": "S060-Q06",
           "tag": "illness",
-          "sentence": "Because his desk was too high, Stanley leaned and finished the dictation with a faint _____.",
+          "sentence": "After hanging the classroom charts, Jane rubbed a tired _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-060-q07",
           "code": "S060-Q07",
           "tag": "habits",
-          "sentence": "A _____ friend split the last dumpling in half, then gave the larger half away.",
+          "sentence": "A _____ share of Lucy’s crayons went around the whole table.",
           "answer": "generous"
         },
         {
           "id": "set-060-q08",
           "code": "S060-Q08",
           "tag": "illness",
-          "sentence": "A feather from the costume shop tickled Nora’s throat and ended in a comic _____.",
+          "sentence": "A loud _____ from Sean’s throat stopped the story for a moment.",
           "answer": "cough"
         },
         {
           "id": "set-060-q09",
           "code": "S060-Q09",
           "tag": "habits",
-          "sentence": "When she set the tray down too fast, a _____ bump made the jelly tremble and then lean.",
+          "sentence": "Eric dropped the ticket, then trod on it, fully _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-060-q10",
           "code": "S060-Q10",
           "tag": "illness",
-          "sentence": "A carton labelled yesterday’s date should have stayed in the bin; the _____ was a clear lesson.",
+          "sentence": "After the science trip in the heat, Tess felt a low _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-060-q11",
           "code": "S060-Q11",
           "tag": "habits",
-          "sentence": "A _____ oil change every five thousand kilometres is written in the car booklet.",
+          "sentence": "Nell practises skipping at a _____ every week hour, always before breakfast.",
           "answer": "regular"
         },
         {
           "id": "set-060-q12",
           "code": "S060-Q12",
           "tag": "illness",
-          "sentence": "A child who is hot, shivery and aching in every limb should be treated as having the _____ until seen.",
+          "sentence": "Wendy stayed on the sofa, weak, while the _____ ran its course.",
           "answer": "flu"
         },
         {
           "id": "set-060-q13",
           "code": "S060-Q13",
           "tag": "disasters",
-          "sentence": "The flooding of the playing field was _____, with the goalposts standing in a brown lake for a week.",
+          "sentence": "The _____ cut on Iris’s hand needed a nurse at once.",
           "answer": "severe"
         },
         {
           "id": "set-060-q14",
           "code": "S060-Q14",
           "tag": "habits",
-          "sentence": "The weekend plan mixed homework and _____, so neither was left entirely for Sunday night.",
+          "sentence": "Sunday _____ began with the laundry and ended with the bins.",
           "answer": "housework"
         },
         {
           "id": "set-060-q15",
           "code": "S060-Q15",
           "tag": "illness",
-          "sentence": "The school app message asked parents to keep children at home while a _____ lasted.",
+          "sentence": "Kate could not sit close to friends, as her _____ was still high.",
           "answer": "fever"
         },
         {
           "id": "set-060-q16",
           "code": "S060-Q16",
           "tag": "disasters",
-          "sentence": "A _____ of bicycles, serviced, was a complicated, wonderful gift, and the keys were labelled.",
+          "sentence": "A _____ of packed toys went with a kind note to the home.",
           "answer": "donation"
         },
         {
           "id": "set-060-q17",
           "code": "S060-Q17",
           "tag": "habits",
-          "sentence": "When a compliment was meant for the next painting, the painter had already said thanks and felt _____.",
+          "sentence": "Holly felt _____ when the class saw her baby photo in the slides.",
           "answer": "embarrassed"
         },
         {
           "id": "set-060-q18",
           "code": "S060-Q18",
           "tag": "illness",
-          "sentence": "The bakery’s very sweet smell, in a closed shop, surprisingly brought on a mild _____.",
+          "sentence": "Zack sat under the tree, shading a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-060-q19",
           "code": "S060-Q19",
           "tag": "disasters",
-          "sentence": "The school’s outdoor prize-giving was moved indoors as soon as a _____ watch was issued.",
+          "sentence": "After the tropical storm, the _____ had left a broken umbrella in the drain.",
           "answer": "typhoon"
         },
         {
           "id": "set-060-q20",
           "code": "S060-Q20",
           "tag": "habits",
-          "sentence": "A _____ photographer of the day returns the school camera with the card still inside it.",
+          "sentence": "The _____ captain checked that no kit was left behind.",
           "answer": "responsible"
         },
         {
           "id": "set-060-q21",
           "code": "S060-Q21",
           "tag": "illness",
-          "sentence": "The album of “before” smiles at the dentist included one grimace caused by a memorable _____.",
+          "sentence": "Yuki spat out the ice lolly at once; it set off a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-060-q22",
           "code": "S060-Q22",
           "tag": "disasters",
-          "sentence": "A _____ siren in the riverside village is practised each spring, before the wet season begins.",
+          "sentence": "A _____ after the long rain left water covering the market lane.",
           "answer": "flood"
         },
         {
           "id": "set-060-q23",
           "code": "S060-Q23",
           "tag": "habits",
-          "sentence": "The captain’s text the night before was not a tactic talk; it was there to _____ tired legs to arrive.",
+          "sentence": "A kind drawing from a friend helped _____ Judy in the sick room.",
           "answer": "encourage"
         },
         {
           "id": "set-060-q24",
           "code": "S060-Q24",
           "tag": "disasters",
-          "sentence": "The temple bell was found downhill after a _____, muddy but still whole, a story the monks still tell.",
+          "sentence": "The _____ risk rose after days of rain on the bare slope.",
           "answer": "landslide"
         },
         {
           "id": "set-060-q25",
           "code": "S060-Q25",
           "tag": "habits",
-          "sentence": "The hiking leader waits three minutes, not fifteen; after that, only the _____ walkers are in the group.",
+          "sentence": "Mum praised Amy for a _____ week, on time every morning.",
           "answer": "punctual"
         }
       ]
@@ -11301,183 +11301,183 @@ window.CLOZE_BANK = {
         "id": "set-061-ex",
         "code": "S061-EX",
         "tag": "example",
-        "sentence": "We stood quietly at the _____, reading the names, and no one treated it as a playground.",
-        "answer": "memorial"
+        "sentence": "Sam put music on and started the _____, beginning with the laundry.",
+        "answer": "housework"
       },
       "items": [
         {
           "id": "set-061-q01",
           "code": "S061-Q01",
           "tag": "habits",
-          "sentence": "Parents _____ a careful child to climb the first easy step, then they step back.",
+          "sentence": "The group used kind cheers to _____ Otto on the last hill.",
           "answer": "encourage"
         },
         {
           "id": "set-061-q02",
           "code": "S061-Q02",
           "tag": "illness",
-          "sentence": "A chipped corner from opening a bottle the wrong way (never wise) left a sharp edge and a _____.",
+          "sentence": "Karl took the stairs slowly, as each step shook the _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-061-q03",
           "code": "S061-Q03",
           "tag": "disasters",
-          "sentence": "The principal issued a _____ weather warning for the picnic, already cancelled, because the forecast was unusually serious.",
+          "sentence": "The _____ swelling around Rose’s eye looked dangerous, so Mum came.",
           "answer": "severe"
         },
         {
           "id": "set-061-q04",
           "code": "S061-Q04",
           "tag": "habits",
-          "sentence": "The radio show begins at eight; a _____ caller is already on the line when the host greets the audience.",
+          "sentence": "Leo was not late to the music exam, calm and _____, ten minutes early.",
           "answer": "punctual"
         },
         {
           "id": "set-061-q05",
           "code": "S061-Q05",
           "tag": "illness",
-          "sentence": "When the chess club’s chairs sat empty, the notice on the door said “session paused — _____ week”.",
+          "sentence": "All-over muscle pain and a runny nose pointed to the _____.",
           "answer": "flu"
         },
         {
           "id": "set-061-q06",
           "code": "S061-Q06",
           "tag": "disasters",
-          "sentence": "The temple’s rice _____ is counted in sacks, and the number is written where everyone can see it.",
+          "sentence": "A _____ of packed story CDs went to the children’s corner.",
           "answer": "donation"
         },
         {
           "id": "set-061-q07",
           "code": "S061-Q07",
           "tag": "habits",
-          "sentence": "The art club’s _____ still-life sessions on alternate Fridays give everyone a known rhythm.",
+          "sentence": "Tina keeps the same breakfast hour, a _____ every week start to school days.",
           "answer": "regular"
         },
         {
           "id": "set-061-q08",
           "code": "S061-Q08",
           "tag": "illness",
-          "sentence": "When pre-exam nerves and a skipped meal met, the result in the hall was a hollow _____.",
+          "sentence": "After the spicy crisps, Victor needed water and a still _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-061-q09",
           "code": "S061-Q09",
           "tag": "disasters",
-          "sentence": "During the _____, the dog sat in the corridor, away from the shaking glass.",
+          "sentence": "The _____ left puddles and snapped twigs from the strong wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-061-q10",
           "code": "S061-Q10",
           "tag": "habits",
-          "sentence": "A spilled bag of rice on the kitchen floor created an unplanned, crunchy piece of _____.",
+          "sentence": "After guests left, Ted cleared crumbs and began the _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-061-q11",
           "code": "S061-Q11",
           "tag": "illness",
-          "sentence": "After hanging Lunar New Year decorations along the ceiling, Dad came down the ladder holding a _____.",
+          "sentence": "Ben used a cushion at dinner to ease a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-061-q12",
           "code": "S061-Q12",
           "tag": "disasters",
-          "sentence": "After the storm drain overflowed, a quick _____ crossed the junction and then, slowly, sank.",
+          "sentence": "A sudden _____ at lunch left water covering the outdoor dining tables.",
           "answer": "flood"
         },
         {
           "id": "set-061-q13",
           "code": "S061-Q13",
           "tag": "habits",
-          "sentence": "The office trusts a _____ runner to take the attendance folder, and to come straight back.",
+          "sentence": "Judy locked the music room and hung the key, as a _____ helper should.",
           "answer": "responsible"
         },
         {
           "id": "set-061-q14",
           "code": "S061-Q14",
           "tag": "illness",
-          "sentence": "When the class tried beetroot juice, its earthy taste made one boy cough, then laugh, then _____ again.",
+          "sentence": "Carl stayed out of the choir circle because of a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-061-q15",
           "code": "S061-Q15",
           "tag": "disasters",
-          "sentence": "A _____ of loose shale rattled down after a heavy lorry passed, and the cutting was closed for a check.",
+          "sentence": "A _____ of mud on the slope above the school car park was cleared by lunch.",
           "answer": "landslide"
         },
         {
           "id": "set-061-q16",
           "code": "S061-Q16",
           "tag": "habits",
-          "sentence": "The health app’s only job, in this house, is to remind us to stand; a _____ day is not a seated day.",
+          "sentence": "Chris skipped a second dessert, a small _____ with fruit and water choice.",
           "answer": "healthy"
         },
         {
           "id": "set-061-q17",
           "code": "S061-Q17",
           "tag": "illness",
-          "sentence": "A bright red face in the group photo was later explained as the start of a _____.",
+          "sentence": "A high _____ at noon sent Ryan home, flushed and tired.",
           "answer": "fever"
         },
         {
           "id": "set-061-q18",
           "code": "S061-Q18",
           "tag": "disasters",
-          "sentence": "The city’s “odd-even” watering rule was a _____ measure, fair and slightly annoying, and necessary.",
+          "sentence": "A _____ with almost no rain made the hill look dusty at noon.",
           "answer": "drought"
         },
         {
           "id": "set-061-q19",
           "code": "S061-Q19",
           "tag": "habits",
-          "sentence": "A _____ writer of stories leaves a draft overnight, because rushing the ending often spoils it.",
+          "sentence": "Jane was _____ and waited calmly with the slow printer in the library, staying in line.",
           "answer": "patient"
         },
         {
           "id": "set-061-q20",
           "code": "S061-Q20",
           "tag": "habits",
-          "sentence": "The _____ school-gate bakers left unsold buns on a table labelled “please take”, every Friday.",
+          "sentence": "A _____ share of the prize biscuits went to the whole team.",
           "answer": "generous"
         },
         {
           "id": "set-061-q21",
           "code": "S061-Q21",
           "tag": "disasters",
-          "sentence": "A child’s drawing of an _____ is often a zigzag under a house, which is not a bad first model.",
+          "sentence": "The ground shook in an _____, and the lift paused between floors.",
           "answer": "earthquake"
         },
         {
           "id": "set-061-q22",
           "code": "S061-Q22",
           "tag": "habits",
-          "sentence": "The _____ model-maker glued a finger to the tiny chair and had to wait, patiently, for advice.",
+          "sentence": "Eva tripped the cable and, being _____, grabbed the wrong table.",
           "answer": "clumsy"
         },
         {
           "id": "set-061-q23",
           "code": "S061-Q23",
           "tag": "illness",
-          "sentence": "During the chess final, the long silence and fierce concentration ended with a polite request to pause for a _____.",
+          "sentence": "Skipping breakfast left Vera with a hollow _____ in her head by recess.",
           "answer": "headache"
         },
         {
           "id": "set-061-q24",
           "code": "S061-Q24",
           "tag": "habits",
-          "sentence": "A pocket that tore mid-assembly, very quietly, still felt loud to its _____ owner.",
+          "sentence": "Mark felt _____ after bowing too early, before the music ended.",
           "answer": "embarrassed"
         },
         {
           "id": "set-061-q25",
           "code": "S061-Q25",
           "tag": "illness",
-          "sentence": "When the syrup stained the bib, we still made sure every millilitre of _____ went in.",
+          "sentence": "The nurse ticked the time of the _____ dose on a small card.",
           "answer": "medicine"
         }
       ]
@@ -11489,183 +11489,183 @@ window.CLOZE_BANK = {
         "id": "set-062-ex",
         "code": "S062-EX",
         "tag": "example",
-        "sentence": "Our _____ on the same floor waters the plants when we are away, and we do the same in return.",
-        "answer": "neighbour"
+        "sentence": "Ken laughed at his own _____ and dropped it mistake when the books slid down.",
+        "answer": "clumsy"
       },
       "items": [
         {
           "id": "set-062-q01",
           "code": "S062-Q01",
           "tag": "illness",
-          "sentence": "The busker on the street corner had to stop mid-song because a sudden _____ stole his breath.",
+          "sentence": "Hugo sat near the window so the _____ from his mouth drifted out.",
           "answer": "cough"
         },
         {
           "id": "set-062-q02",
           "code": "S062-Q02",
           "tag": "disasters",
-          "sentence": "A _____ in the car lift pit stopped the whole tower from moving vehicles for a day.",
+          "sentence": "A sudden _____ sent water over the path and into the ground-floor shops.",
           "answer": "flood"
         },
         {
           "id": "set-062-q03",
           "code": "S062-Q03",
           "tag": "habits",
-          "sentence": "After the voice cracked on a high note, the singer finished well, then hid an _____ grin.",
+          "sentence": "Judy felt _____ because a window showed her dance practice to the street.",
           "answer": "embarrassed"
         },
         {
           "id": "set-062-q04",
           "code": "S062-Q04",
           "tag": "illness",
-          "sentence": "After midnight medicines, we still measured again to see whether the _____ had changed.",
+          "sentence": "After a nap, Nora still felt burning with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-062-q05",
           "code": "S062-Q05",
           "tag": "disasters",
-          "sentence": "After the plants were put back on the repaired slope, everyone hoped this would be the last _____ here.",
+          "sentence": "After the _____, the slope was checked twice before the path opened.",
           "answer": "landslide"
         },
         {
           "id": "set-062-q06",
           "code": "S062-Q06",
           "tag": "habits",
-          "sentence": "A _____ lifeguard-in-training, on poolside duty, keeps eyes on the water, not on a phone.",
+          "sentence": "Carl kept the permission slips in order, a trusted bit of _____ work.",
           "answer": "responsible"
         },
         {
           "id": "set-062-q07",
           "code": "S062-Q07",
           "tag": "illness",
-          "sentence": "After the class photo under noon sun without a hat, several smiles hid a developing _____.",
+          "sentence": "After counting coins for a long time, Eric felt a dull _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-062-q08",
           "code": "S062-Q08",
           "tag": "disasters",
-          "sentence": "A _____ left salt crusts on the edge of a shrinking inland pool, white in the sun.",
+          "sentence": "The _____ lasted weeks, and the lawn turned dry and yellow.",
           "answer": "drought"
         },
         {
           "id": "set-062-q09",
           "code": "S062-Q09",
           "tag": "habits",
-          "sentence": "A _____ soup with many vegetables replaced a creamy, heavy one, and no one complained for long.",
+          "sentence": "Mum cooked a _____ dinner with greens, rice, and fish.",
           "answer": "healthy"
         },
         {
           "id": "set-062-q10",
           "code": "S062-Q10",
           "tag": "habits",
-          "sentence": "When the slow reader was still on paragraph two, a _____ partner waited and did not grab the book.",
+          "sentence": "Being _____ and waited calmly, Ben did not finish the sentence for a struggling friend.",
           "answer": "patient"
         },
         {
           "id": "set-062-q11",
           "code": "S062-Q11",
           "tag": "disasters",
-          "sentence": "The museum’s shaken table made a safe, small _____, and several pupils still held on tightly.",
+          "sentence": "An _____ at break made the benches tremble, and games paused.",
           "answer": "earthquake"
         },
         {
           "id": "set-062-q12",
           "code": "S062-Q12",
           "tag": "habits",
-          "sentence": "A _____ toss meant for the bin hit the rim and invited a short, bouncing chase.",
+          "sentence": "Eva missed the hook and, being _____, let the coat fall.",
           "answer": "clumsy"
         },
         {
           "id": "set-062-q13",
           "code": "S062-Q13",
           "tag": "illness",
-          "sentence": "The morning assembly felt endless to anyone whose _____ throbbed in time with the anthem.",
+          "sentence": "Holly kept her mouth a little open in the cold, protecting a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-062-q14",
           "code": "S062-Q14",
           "tag": "disasters",
-          "sentence": "The pain was _____, and no one suggested “be brave and play”; the match went on without him.",
+          "sentence": "A _____ storm’s damage meant the market stalls could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-062-q15",
           "code": "S062-Q15",
           "tag": "habits",
-          "sentence": "A _____ donor of instruments lent a violin for a whole term, and said there was no hurry to return it.",
+          "sentence": "A _____ offer from Rita was an extra ticket for a classmate left out.",
           "answer": "generous"
         },
         {
           "id": "set-062-q16",
           "code": "S062-Q16",
           "tag": "illness",
-          "sentence": "A late-winter _____ left Dad’s voice weak and his legs unsteady on the stairs.",
+          "sentence": "Yuki needed a nap before dinner, still weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-062-q17",
           "code": "S062-Q17",
           "tag": "disasters",
-          "sentence": "A _____ should never be forced; the box is open, and the thanks are the same for a coin or a bag.",
+          "sentence": "The _____ of packed leftover fair food went to a nearby kitchen, still fresh.",
           "answer": "donation"
         },
         {
           "id": "set-062-q18",
           "code": "S062-Q18",
           "tag": "habits",
-          "sentence": "The yearbook quote was chosen to _____ next year’s class: “Begin, even if you are nervous.”",
+          "sentence": "The class used kind cheers to _____ the last speaker of the day.",
           "answer": "encourage"
         },
         {
           "id": "set-062-q19",
           "code": "S062-Q19",
           "tag": "illness",
-          "sentence": "After the cheesy hotdog and a bag of crisps at the stall, the film’s first half was lost to a _____.",
+          "sentence": "Nina asked to leave the circle, pressing her belly; it was a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-062-q20",
           "code": "S062-Q20",
           "tag": "habits",
-          "sentence": "A _____ stage manager has the curtain ready at 7:30, the time in the programme, not “fashionably late”.",
+          "sentence": "Pearl arrived at the studio at the promised time, calmly _____.",
           "answer": "punctual"
         },
         {
           "id": "set-062-q21",
           "code": "S062-Q21",
           "tag": "habits",
-          "sentence": "A _____ check of the first-aid box each month is initialled on the inside of the lid.",
+          "sentence": "Hugh and Mum have a _____ market hour every Saturday morning.",
           "answer": "regular"
         },
         {
           "id": "set-062-q22",
           "code": "S062-Q22",
           "tag": "illness",
-          "sentence": "A leftover tablet from last winter was not used; a new prescription of _____ was fetched instead.",
+          "sentence": "Sean packed the _____ bottle in the clear pouch for the school trip.",
           "answer": "medicine"
         },
         {
           "id": "set-062-q23",
           "code": "S062-Q23",
           "tag": "disasters",
-          "sentence": "A _____ in the South China Sea can change course, which is why we keep checking the Observatory.",
+          "sentence": "The _____ brought strong wind, and the estate lights flickered.",
           "answer": "typhoon"
         },
         {
           "id": "set-062-q24",
           "code": "S062-Q24",
           "tag": "habits",
-          "sentence": "The children’s jobs include wiping switches and handles, often-forgotten corners of the _____.",
+          "sentence": "The oven door was sticky, so Ted left extra time in the _____, including the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-062-q25",
           "code": "S062-Q25",
           "tag": "illness",
-          "sentence": "The netball shoot-around was stopped when the captain felt a sudden _____ and sat out.",
+          "sentence": "Amy slept on her side, hoping the _____ in her back would ease.",
           "answer": "backache"
         }
       ]
@@ -11677,183 +11677,183 @@ window.CLOZE_BANK = {
         "id": "set-063-ex",
         "code": "S063-EX",
         "tag": "example",
-        "sentence": "The school _____ needs more low instruments, so a cello would be especially welcome.",
-        "answer": "orchestra"
+        "sentence": "Ken felt _____ after noticing two different socks at assembly.",
+        "answer": "embarrassed"
       },
       "items": [
         {
           "id": "set-063-q01",
           "code": "S063-Q01",
           "tag": "disasters",
-          "sentence": "A mild _____ tremor stopped the sports race, and the teachers said that was the right decision.",
+          "sentence": "An _____ at night shook the bed a little, then went still.",
           "answer": "earthquake"
         },
         {
           "id": "set-063-q02",
           "code": "S063-Q02",
           "tag": "habits",
-          "sentence": "Because the dog lead was looped wrongly, a _____ step almost turned into a hopscotch of ankles.",
+          "sentence": "Daisy missed the pocket and dropped the coins, typically _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-063-q03",
           "code": "S063-Q03",
           "tag": "illness",
-          "sentence": "The school office logged the time a parent came in to give a midday dose of _____.",
+          "sentence": "The chemist swapped the large bottle for a travel-size _____.",
           "answer": "medicine"
         },
         {
           "id": "set-063-q04",
           "code": "S063-Q04",
           "tag": "disasters",
-          "sentence": "A _____ drought, already in its second month, was the reason the fountains stayed off.",
+          "sentence": "A _____ storm left the courtyard in a state that could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-063-q05",
           "code": "S063-Q05",
           "tag": "habits",
-          "sentence": "The _____ captain poured the last of his water into a teammate’s bottle in the heat.",
+          "sentence": "A _____ and shared extra gift of spare hats went to pupils who had forgotten theirs.",
           "answer": "generous"
         },
         {
           "id": "set-063-q06",
           "code": "S063-Q06",
           "tag": "illness",
-          "sentence": "On Sports Day, the helpers who bent to place cones for an hour later queued at the first-aid tent with a _____.",
+          "sentence": "Leo could not lift the cello case, stopped by a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-063-q07",
           "code": "S063-Q07",
           "tag": "disasters",
-          "sentence": "The company’s matched gift turned a small class _____ into a sum that could buy the requested cot.",
+          "sentence": "A kind _____ of packed plant pots went to the community garden.",
           "answer": "donation"
         },
         {
           "id": "set-063-q08",
           "code": "S063-Q08",
           "tag": "habits",
-          "sentence": "A friend’s practice audience of three can _____ a speaker more than an empty room.",
+          "sentence": "The nurse used kind words to _____ a worried child in the waiting room.",
           "answer": "encourage"
         },
         {
           "id": "set-063-q09",
           "code": "S063-Q09",
           "tag": "illness",
-          "sentence": "A gentle walk, not a lie-down, sometimes eases a mild, gassy _____, as the nurse explained.",
+          "sentence": "The nurse felt Chris’s tummy and said it was a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-063-q10",
           "code": "S063-Q10",
           "tag": "habits",
-          "sentence": "Because the tutor is _____, the lesson starts at five as booked, and ends on time as well.",
+          "sentence": "Owen checked the classroom clock against his watch, keen to stay _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-063-q11",
           "code": "S063-Q11",
           "tag": "habits",
-          "sentence": "After a week of fruit at recess, the sweet stall was less tempting and energy felt more _____.",
+          "sentence": "A _____ choice at the stall was steamed corn, not fried snacks.",
           "answer": "healthy"
         },
         {
           "id": "set-063-q12",
           "code": "S063-Q12",
           "tag": "illness",
-          "sentence": "The upstairs tennis court sent regular thumps, and the tutor below finally admitted a _____.",
+          "sentence": "Cora chose a seat away from the speaker, guarding a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-063-q13",
           "code": "S063-Q13",
           "tag": "disasters",
-          "sentence": "A _____ risk rises when people cut a hill too steeply and leave the soil with nothing to hold it.",
+          "sentence": "The _____ dropped mud onto the path pupils use after school.",
           "answer": "landslide"
         },
         {
           "id": "set-063-q14",
           "code": "S063-Q14",
           "tag": "habits",
-          "sentence": "The _____ customs officer let the elderly couple find the form, and did not snap.",
+          "sentence": "Iris stayed _____ and waited calmly as Grandma looked for her glasses, again.",
           "answer": "patient"
         },
         {
           "id": "set-063-q15",
           "code": "S063-Q15",
           "tag": "illness",
-          "sentence": "After the sweetened soya milk, a late brush was skipped, and a dull _____ arrived before dawn.",
+          "sentence": "Victor kept his head still in the car, because bumps shook the _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-063-q16",
           "code": "S063-Q16",
           "tag": "disasters",
-          "sentence": "During the _____, the usual frogs were missing from the night, a silence that was not peaceful.",
+          "sentence": "A _____ with almost no rain left the estate lawn crunchy.",
           "answer": "drought"
         },
         {
           "id": "set-063-q17",
           "code": "S063-Q17",
           "tag": "habits",
-          "sentence": "The language exchange is _____ — same café, same Sunday hour, all term.",
+          "sentence": "Maya practises the piano at a _____ every week time, always after homework.",
           "answer": "regular"
         },
         {
           "id": "set-063-q18",
           "code": "S063-Q18",
           "tag": "illness",
-          "sentence": "After the packed Lunar market, the first feverish ache of the _____ arrived on the third morning.",
+          "sentence": "The _____, still weak, made even a short phone call tiring for Polly.",
           "answer": "flu"
         },
         {
           "id": "set-063-q19",
           "code": "S063-Q19",
           "tag": "disasters",
-          "sentence": "The construction site’s cranes were tied down before the _____, a rule written after past wind damage.",
+          "sentence": "The _____ peeled a corner of the banner with one strong gust.",
           "answer": "typhoon"
         },
         {
           "id": "set-063-q20",
           "code": "S063-Q20",
           "tag": "habits",
-          "sentence": "After the humid week, wiping mildew from the window rubber joined the usual _____.",
+          "sentence": "Rita wiped the table legs, not just the top, during the _____.",
           "answer": "housework"
         },
         {
           "id": "set-063-q21",
           "code": "S063-Q21",
           "tag": "illness",
-          "sentence": "After the chalk-art workshop in the covered playground, several artists needed water for a dusty _____.",
+          "sentence": "Tina asked for a lozenge to quiet the _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-063-q22",
           "code": "S063-Q22",
           "tag": "disasters",
-          "sentence": "The photography club’s “before and after” showed a dry square, then a _____ with only lamp-posts standing.",
+          "sentence": "The _____ left water covering the school’s lower courtyard.",
           "answer": "flood"
         },
         {
           "id": "set-063-q23",
           "code": "S063-Q23",
           "tag": "habits",
-          "sentence": "The “live” stream had been recording the floor for a minute, and the host felt _____.",
+          "sentence": "When the chair squeaked, Otto sat frozen and _____, and he felt red.",
           "answer": "embarrassed"
         },
         {
           "id": "set-063-q24",
           "code": "S063-Q24",
           "tag": "illness",
-          "sentence": "The travel first-aid kit includes a digital thermometer exactly for a sudden _____.",
+          "sentence": "Dad opened the window a little to help with the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-063-q25",
           "code": "S063-Q25",
           "tag": "habits",
-          "sentence": "Being _____ for leftover cake means storing it safely, not leaving it in a warm bag.",
+          "sentence": "Wendy is trusted and _____ with younger pupils, and they stay close.",
           "answer": "responsible"
         }
       ]
@@ -11865,183 +11865,183 @@ window.CLOZE_BANK = {
         "id": "set-064-ex",
         "code": "S064-EX",
         "tag": "example",
-        "sentence": "Check that the _____ is still valid before you book, because a renewal can take weeks.",
-        "answer": "passport"
+        "sentence": "Lucy accepted the duty with a nod, proud to be thought _____.",
+        "answer": "responsible"
       },
       "items": [
         {
           "id": "set-064-q01",
           "code": "S064-Q01",
           "tag": "habits",
-          "sentence": "When the suitcase popped open on the carousel, a row of socks appeared, and the traveller was _____.",
+          "sentence": "Lila went scarlet and _____ after dropping her script.",
           "answer": "embarrassed"
         },
         {
           "id": "set-064-q02",
           "code": "S064-Q02",
           "tag": "illness",
-          "sentence": "A travel adaptor that buzzed all night left the hotel guest with a morning _____.",
+          "sentence": "After reading in bed too late, Gary woke with a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-064-q03",
           "code": "S064-Q03",
           "tag": "disasters",
-          "sentence": "When the rainbow appeared, someone hoped the _____ was over, but the second wind band was still coming.",
+          "sentence": "A fierce _____ kept everyone indoors while the wind roared.",
           "answer": "typhoon"
         },
         {
           "id": "set-064-q04",
           "code": "S064-Q04",
           "tag": "habits",
-          "sentence": "A _____ group editor, in charge of the final file, checks names are spelled correctly.",
+          "sentence": "A _____ watch on the gate was Owen’s trusted job at the fair.",
           "answer": "responsible"
         },
         {
           "id": "set-064-q05",
           "code": "S064-Q05",
           "tag": "illness",
-          "sentence": "A sports mouthguard, finally replaced, stopped the knocks that had been waking a _____.",
+          "sentence": "A _____ in her gum kept Judy from the chewy sweets.",
           "answer": "toothache"
         },
         {
           "id": "set-064-q06",
           "code": "S064-Q06",
           "tag": "disasters",
-          "sentence": "A _____ warning for king tides plus rain meant the harbour front shops raised their goods early.",
+          "sentence": "After the _____, the team checked where water had covered the electrics.",
           "answer": "flood"
         },
         {
           "id": "set-064-q07",
           "code": "S064-Q07",
           "tag": "habits",
-          "sentence": "A _____ growth spurt still needs food, sleep and play, not skipped meals to “stay light”.",
+          "sentence": "Ruby stretched after homework, a short _____ with fruit and water habit.",
           "answer": "healthy"
         },
         {
           "id": "set-064-q08",
           "code": "S064-Q08",
           "tag": "illness",
-          "sentence": "The clinic leaflet said most healthy children recover from the _____ with rest, but still need care.",
+          "sentence": "Carl felt better sitting in fresh air, then the aches of the _____ returned.",
           "answer": "flu"
         },
         {
           "id": "set-064-q09",
           "code": "S064-Q09",
           "tag": "disasters",
-          "sentence": "The school’s back gate was locked when a small _____ appeared above it after a burst pipe.",
+          "sentence": "After heavy rain, a _____ of mud on the slope risk kept the trail closed.",
           "answer": "landslide"
         },
         {
           "id": "set-064-q10",
           "code": "S064-Q10",
           "tag": "habits",
-          "sentence": "A _____ kiter waits for a steady wind, rather than yanking the line in a dead calm.",
+          "sentence": "Joel stayed _____ and waited calmly when his turn in the game came late.",
           "answer": "patient"
         },
         {
           "id": "set-064-q11",
           "code": "S064-Q11",
           "tag": "illness",
-          "sentence": "The cookery club’s experimental durian pastry won a prize and also caused at least one _____.",
+          "sentence": "Zoe missed the second game, sitting out with a _____ in her stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-064-q12",
           "code": "S064-Q12",
           "tag": "disasters",
-          "sentence": "A _____ of winter quilts, new, filled the shelter’s storeroom to the line they had hoped for.",
+          "sentence": "A kind _____ of packed storybooks was left in a trolley by the office.",
           "answer": "donation"
         },
         {
           "id": "set-064-q13",
           "code": "S064-Q13",
           "tag": "habits",
-          "sentence": "The mentor’s question, “What would you try next?”, is a way to _____ thinking, not to hand over an answer.",
+          "sentence": "Dad used kind words to _____ Nell when the model kept falling.",
           "answer": "encourage"
         },
         {
           "id": "set-064-q14",
           "code": "S064-Q14",
           "tag": "illness",
-          "sentence": "After the pharmacist’s counsel, we stored the _____ upright, cap tight, out of the sun.",
+          "sentence": "The chemist put the _____ in a brown bag, out of the sun.",
           "answer": "medicine"
         },
         {
           "id": "set-064-q15",
           "code": "S064-Q15",
           "tag": "disasters",
-          "sentence": "Rain finally returned after the _____, but the first storms ran off the hard, baked soil instead of soaking in.",
+          "sentence": "A long _____, with little rain, left dusty shoes after every walk in the park.",
           "answer": "drought"
         },
         {
           "id": "set-064-q16",
           "code": "S064-Q16",
           "tag": "habits",
-          "sentence": "A _____ class monitor has opened the windows and is waiting when the teacher arrives on the bell.",
+          "sentence": "Iris arrived at the studio before the teacher, quietly _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-064-q17",
           "code": "S064-Q17",
           "tag": "illness",
-          "sentence": "A thin camping mattress on stony ground gave the whole scout patrol a shared complaint: _____.",
+          "sentence": "Eva could not fold the spare blankets; a _____ caught her back.",
           "answer": "backache"
         },
         {
           "id": "set-064-q18",
           "code": "S064-Q18",
           "tag": "disasters",
-          "sentence": "When the train slowed “for a safety check after a tremor”, we knew an _____ had been felt along the line.",
+          "sentence": "During an _____, the floor shook, and no one ran for the stairs.",
           "answer": "earthquake"
         },
         {
           "id": "set-064-q19",
           "code": "S064-Q19",
           "tag": "habits",
-          "sentence": "A _____ bin-collection on Monday, Wednesday and Friday is printed on the estate notice.",
+          "sentence": "Liam keeps his _____ every week football night, always Thursday at six.",
           "answer": "regular"
         },
         {
           "id": "set-064-q20",
           "code": "S064-Q20",
           "tag": "habits",
-          "sentence": "A “visitor-ready” hour of _____ was all that was needed before Auntie arrived at four.",
+          "sentence": "Cora dusted the picture frames, careful and slow, mid-_____.",
           "answer": "housework"
         },
         {
           "id": "set-064-q21",
           "code": "S064-Q21",
           "tag": "disasters",
-          "sentence": "The delay at the border was _____, and travellers were advised, officially, to expect a long night.",
+          "sentence": "A _____ storm left damage that meant the pier could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-064-q22",
           "code": "S064-Q22",
           "tag": "habits",
-          "sentence": "The _____ waiter’s first day included one saved glass and one that, sadly, was not.",
+          "sentence": "Ivan walked into the open cupboard door and muttered, “So _____ and dropped it.”",
           "answer": "clumsy"
         },
         {
           "id": "set-064-q23",
           "code": "S064-Q23",
           "tag": "illness",
-          "sentence": "The baby monitor picked up a little _____ just after midnight, so Dad went in with warm water.",
+          "sentence": "Faith changed seats so her _____ in her throat would not bother the singer.",
           "answer": "cough"
         },
         {
           "id": "set-064-q24",
           "code": "S064-Q24",
           "tag": "habits",
-          "sentence": "A _____ child chose the smallest bun so that a visitor could have the larger one.",
+          "sentence": "Rita gave a _____ portion of her fruit to the younger ones.",
           "answer": "generous"
         },
         {
           "id": "set-064-q25",
           "code": "S064-Q25",
           "tag": "illness",
-          "sentence": "When the puppy was not ill but the child was burning hot, we knew the _____ belonged to the child.",
+          "sentence": "A breeze from the fan was the only comfort in the high _____.",
           "answer": "fever"
         }
       ]
@@ -12053,183 +12053,183 @@ window.CLOZE_BANK = {
         "id": "set-065-ex",
         "code": "S065-EX",
         "tag": "example",
-        "sentence": "Walk on the _____, not in the cycle lane, and keep the younger children on the inside.",
-        "answer": "pavement"
+        "sentence": "A _____ start to the term: early nights and a fruit bowl at home.",
+        "answer": "healthy"
       },
       "items": [
         {
           "id": "set-065-q01",
           "code": "S065-Q01",
           "tag": "illness",
-          "sentence": "After the brass-band practice, the tuba player joked that the instrument’s weight had gifted him a _____.",
+          "sentence": "After helping in the storeroom, Owen rubbed his back and said it was a _____.",
           "answer": "backache"
         },
         {
           "id": "set-065-q02",
           "code": "S065-Q02",
           "tag": "disasters",
-          "sentence": "The museum’s “_____ years” cabinet holds old ration notices, yellow, and still easy to read.",
+          "sentence": "A _____ of many dry days left little rain in the school gauge.",
           "answer": "drought"
         },
         {
           "id": "set-065-q03",
           "code": "S065-Q03",
           "tag": "habits",
-          "sentence": "The school bell follows a _____ pattern of periods, so no class is left guessing the length.",
+          "sentence": "The class plants are measured on a _____ every week Friday science slot.",
           "answer": "regular"
         },
         {
           "id": "set-065-q04",
           "code": "S065-Q04",
           "tag": "illness",
-          "sentence": "A poorly timed _____ ruined the class photo, and we had to take it again.",
+          "sentence": "Iris left the choir practice early, undone by a hoarse _____.",
           "answer": "cough"
         },
         {
           "id": "set-065-q05",
           "code": "S065-Q05",
           "tag": "disasters",
-          "sentence": "An _____ bag in our house includes shoes, because broken glass is a common, sharp surprise.",
+          "sentence": "The ground shook in a short _____, then the all-clear felt quiet.",
           "answer": "earthquake"
         },
         {
           "id": "set-065-q06",
           "code": "S065-Q06",
           "tag": "habits",
-          "sentence": "When the washing machine finished at the same time as the oven, the _____ suddenly felt busy.",
+          "sentence": "Zack ironed the school shirts, the _____ he liked least.",
           "answer": "housework"
         },
         {
           "id": "set-065-q07",
           "code": "S065-Q07",
           "tag": "illness",
-          "sentence": "A dry, hot forehead with no sweat yet can still mean an early _____.",
+          "sentence": "Will held an ice pack to his hot forehead until the _____ eased.",
           "answer": "fever"
         },
         {
           "id": "set-065-q08",
           "code": "S065-Q08",
           "tag": "habits",
-          "sentence": "A _____ close of the drawer caught a scarf, which then dragged a comb onto the floor.",
+          "sentence": "The menu stand fell when _____ and dropped it Faith brushed past.",
           "answer": "clumsy"
         },
         {
           "id": "set-065-q09",
           "code": "S065-Q09",
           "tag": "illness",
-          "sentence": "A two-language label helped Grandma read the _____ instructions without guessing.",
+          "sentence": "Mum kept a small torch by the bed for night-time _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-065-q10",
           "code": "S065-Q10",
           "tag": "habits",
-          "sentence": "The _____ workshop tutor brought spare tools from home, more than the school had asked for.",
+          "sentence": "A _____ shopkeeper added an extra apple to the smallest bag.",
           "answer": "generous"
         },
         {
           "id": "set-065-q11",
           "code": "S065-Q11",
           "tag": "disasters",
-          "sentence": "A _____ shortage of drinking water on the trip would have been dangerous; the leaders had packed extra, because the risk was serious.",
+          "sentence": "The _____ pain made Holly skip the choir, as singing hurt her ribs.",
           "answer": "severe"
         },
         {
           "id": "set-065-q12",
           "code": "S065-Q12",
           "tag": "habits",
-          "sentence": "The airport meeting point works only if both families are _____ enough to be there at the said hour.",
+          "sentence": "Cora arrived early, _____ as always, and helped set the chairs.",
           "answer": "punctual"
         },
         {
           "id": "set-065-q13",
           "code": "S065-Q13",
           "tag": "illness",
-          "sentence": "When the projector remote failed, we squinted at a dim image and paid with a shared _____.",
+          "sentence": "A _____ in her head followed the sneeze-filled bus ride, and Daisy went to bed early.",
           "answer": "headache"
         },
         {
           "id": "set-065-q14",
           "code": "S065-Q14",
           "tag": "disasters",
-          "sentence": "The music exam’s leftover fees, by agreement, went as a _____ to the instrument-loan fund.",
+          "sentence": "The class packed a _____ of blankets in a box for the hospital.",
           "answer": "donation"
         },
         {
           "id": "set-065-q15",
           "code": "S065-Q15",
           "tag": "habits",
-          "sentence": "A wrong number on the oral-exam board sent the wrong child in, and both children looked _____.",
+          "sentence": "Stan felt _____ after his thank-you was said to the wrong helper.",
           "answer": "embarrassed"
         },
         {
           "id": "set-065-q16",
           "code": "S065-Q16",
           "tag": "illness",
-          "sentence": "The clinic’s x-ray lit up a deep cavity, the obvious home of the week-long _____.",
+          "sentence": "The cold wind on her cheek woke a sharp _____.",
           "answer": "toothache"
         },
         {
           "id": "set-065-q17",
           "code": "S065-Q17",
           "tag": "disasters",
-          "sentence": "A _____ drill in class is about signals, indoor shelter, and staying away from the shore.",
+          "sentence": "After the _____, the tropical storm had left puddles in every driveway.",
           "answer": "typhoon"
         },
         {
           "id": "set-065-q18",
           "code": "S065-Q18",
           "tag": "habits",
-          "sentence": "The trip requires a _____ adult to hold the tickets, and a second to know where they are.",
+          "sentence": "The _____ monitor took the lost jumper straight to the office.",
           "answer": "responsible"
         },
         {
           "id": "set-065-q19",
           "code": "S065-Q19",
           "tag": "illness",
-          "sentence": "A shared water bottle at training was later blamed, perhaps unfairly, for a cluster of _____.",
+          "sentence": "The nurse said the aches all over looked like the _____.",
           "answer": "flu"
         },
         {
           "id": "set-065-q20",
           "code": "S065-Q20",
           "tag": "habits",
-          "sentence": "The school garden’s first harvest went into a _____ salad that the growers actually finished.",
+          "sentence": "Ken packed fruit and water, hoping for a more _____ lunch.",
           "answer": "healthy"
         },
         {
           "id": "set-065-q21",
           "code": "S065-Q21",
           "tag": "habits",
-          "sentence": "The _____ drama coach let the shy actor try the line after a breath, not after a scolding.",
+          "sentence": "The teacher praised Eva for a _____ wait, with no sighing.",
           "answer": "patient"
         },
         {
           "id": "set-065-q22",
           "code": "S065-Q22",
           "tag": "illness",
-          "sentence": "After drinking iced lemon tea too quickly, a cramp in the middle announced a short _____.",
+          "sentence": "The class plant trip was too much, and Wendy got a _____ in her stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-065-q23",
           "code": "S065-Q23",
           "tag": "disasters",
-          "sentence": "Loose furniture floats in a _____, which is why the chairs were brought inside before the water rose.",
+          "sentence": "A sudden _____ sent water over the steps and into the shops.",
           "answer": "flood"
         },
         {
           "id": "set-065-q24",
           "code": "S065-Q24",
           "tag": "habits",
-          "sentence": "We should _____ a teammate who missed a catch, because the next ball is coming.",
+          "sentence": "A kind wave from the bench helped _____ Amy to keep swimming.",
           "answer": "encourage"
         },
         {
           "id": "set-065-q25",
           "code": "S065-Q25",
           "tag": "disasters",
-          "sentence": "The _____ did not roar; it was a slow slide of wet earth that would not stay on the hill.",
+          "sentence": "The _____ tore bushes from the bank as the rocks slid.",
           "answer": "landslide"
         }
       ]
@@ -12241,183 +12241,183 @@ window.CLOZE_BANK = {
         "id": "set-066-ex",
         "code": "S066-EX",
         "tag": "example",
-        "sentence": "A simple _____ on the grass — sandwiches, fruit, and a cloth — was better than a crowded restaurant.",
-        "answer": "picnic"
+        "sentence": "The _____ signal rose, and strong wind pushed the rain sideways.",
+        "answer": "typhoon"
       },
       "items": [
         {
           "id": "set-066-q01",
           "code": "S066-Q01",
           "tag": "disasters",
-          "sentence": "The storm damage to the pier was _____, with boards missing, not only seaweed thrown up.",
+          "sentence": "The _____ swelling made Chris’s shoe too tight, and walking hurt.",
           "answer": "severe"
         },
         {
           "id": "set-066-q02",
           "code": "S066-Q02",
           "tag": "habits",
-          "sentence": "After a very formal bow in a casual shop, the visitor felt culturally careful and slightly _____.",
+          "sentence": "After singing the wrong verse, Nell stood shy, quiet and _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-066-q03",
           "code": "S066-Q03",
           "tag": "illness",
-          "sentence": "When I could not lift my school bag without my arms aching, the _____ was clearly in charge.",
+          "sentence": "Hugh was feverish and weak, and Dad said it was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-066-q04",
           "code": "S066-Q04",
           "tag": "disasters",
-          "sentence": "The _____ was recorded in two languages on the receipt, so the giver and the office both knew the sum.",
+          "sentence": "A winter _____ of packed blankets filled the lobby box.",
           "answer": "donation"
         },
         {
           "id": "set-066-q05",
           "code": "S066-Q05",
           "tag": "habits",
-          "sentence": "A _____ textbook monitor notices a missing book on the day, not at the end of term.",
+          "sentence": "The teacher said trusted, _____ pupils like Victor make trips safer.",
           "answer": "responsible"
         },
         {
           "id": "set-066-q06",
           "code": "S066-Q06",
           "tag": "illness",
-          "sentence": "A food diary for the week showed that very oily takeaways often arrived with a late _____.",
+          "sentence": "A tight _____ in her tummy made Ruby leave the party before the cake.",
           "answer": "stomachache"
         },
         {
           "id": "set-066-q07",
           "code": "S066-Q07",
           "tag": "disasters",
-          "sentence": "The market’s awnings were rolled in, because a _____ would have turned them into sails.",
+          "sentence": "The _____ drove rain against the glass with a strong, steady wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-066-q08",
           "code": "S066-Q08",
           "tag": "habits",
-          "sentence": "A _____ choice on a hot day is water first, then food, so the body does not run dry.",
+          "sentence": "Maya chose brown bread, trying to keep meals more _____.",
           "answer": "healthy"
         },
         {
           "id": "set-066-q09",
           "code": "S066-Q09",
           "tag": "illness",
-          "sentence": "The clinic asked us to bring the actual box of _____ to the review, not just the name from memory.",
+          "sentence": "Ben did not skip the night dose of _____, as the chemist said.",
           "answer": "medicine"
         },
         {
           "id": "set-066-q10",
           "code": "S066-Q10",
           "tag": "habits",
-          "sentence": "The _____ chess clock still runs, but a good player does not rush the other person, and stays calm.",
+          "sentence": "Being _____, Owen gave thinking time and did not finish the sentence.",
           "answer": "patient"
         },
         {
           "id": "set-066-q11",
           "code": "S066-Q11",
           "tag": "habits",
-          "sentence": "A _____ gratitude sentence in the diary each night has filled three notebooks already.",
+          "sentence": "A _____ every week visit to the playground follows Mark’s Saturday lunch.",
           "answer": "regular"
         },
         {
           "id": "set-066-q12",
           "code": "S066-Q12",
           "tag": "illness",
-          "sentence": "When the art class carved pumpkins on a low bench, Miss Mok ended the lesson early because of her _____.",
+          "sentence": "Nina could not carry the water bottles because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-066-q13",
           "code": "S066-Q13",
           "tag": "disasters",
-          "sentence": "Maps of old _____ sites help planners decide where not to build a new block.",
+          "sentence": "After rain, a small _____ left mud on the lower slope only.",
           "answer": "landslide"
         },
         {
           "id": "set-066-q14",
           "code": "S066-Q14",
           "tag": "habits",
-          "sentence": "The school holiday is not a holiday from _____; the chore chart still has weekday boxes.",
+          "sentence": "Vera wiped the fridge door and mopped the tiles, finishing the _____.",
           "answer": "housework"
         },
         {
           "id": "set-066-q15",
           "code": "S066-Q15",
           "tag": "illness",
-          "sentence": "The library volunteer kept a box of tissues ready whenever a visitor arrived with a dry _____.",
+          "sentence": "A dry _____ followed every laugh, so Liam stayed quiet.",
           "answer": "cough"
         },
         {
           "id": "set-066-q16",
           "code": "S066-Q16",
           "tag": "disasters",
-          "sentence": "A _____ made the pine trees drop extra needles, a rusty carpet that crackled underfoot.",
+          "sentence": "A long _____ turned the football pitch dry, pale, and hard.",
           "answer": "drought"
         },
         {
           "id": "set-066-q17",
           "code": "S066-Q17",
           "tag": "habits",
-          "sentence": "When the ball came back too fast, a _____ fumble sent it into the wet-paint sign.",
+          "sentence": "Because Karl is _____ and dropped it, the glass prizes stay on a high shelf.",
           "answer": "clumsy"
         },
         {
           "id": "set-066-q18",
           "code": "S066-Q18",
           "tag": "illness",
-          "sentence": "The clinic queue moved slowly, and we watched the clock because the _____ made waiting tiring.",
+          "sentence": "Sara asked for a cooler room; the high _____ made her sweat.",
           "answer": "fever"
         },
         {
           "id": "set-066-q19",
           "code": "S066-Q19",
           "tag": "disasters",
-          "sentence": "The teacher’s calm voice during a real, light _____ was as useful as the table we sat under.",
+          "sentence": "The _____, as things swung made the water in the vase shiver, then spill a little.",
           "answer": "earthquake"
         },
         {
           "id": "set-066-q20",
           "code": "S066-Q20",
           "tag": "habits",
-          "sentence": "A _____ family offered their spare room to a cousin’s friend who had missed the last train.",
+          "sentence": "A _____ neighbour shared leftover dumplings with the whole floor.",
           "answer": "generous"
         },
         {
           "id": "set-066-q21",
           "code": "S066-Q21",
           "tag": "illness",
-          "sentence": "The swimming pool’s echo made instructions hard to hear and, for me, started a damp, echoing _____.",
+          "sentence": "After the fireworks ended, Wade walked home with a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-066-q22",
           "code": "S066-Q22",
           "tag": "disasters",
-          "sentence": "A _____ left the ground-floor electrics safely switched off, by plan, and the dark was better than a spark.",
+          "sentence": "The _____ pushed water under the door, covering the welcome mat.",
           "answer": "flood"
         },
         {
           "id": "set-066-q23",
           "code": "S066-Q23",
           "tag": "habits",
-          "sentence": "The visiting writer’s workshop was designed to _____ first drafts, messy and alive.",
+          "sentence": "The teacher used kind words to _____ Lila before the race.",
           "answer": "encourage"
         },
         {
           "id": "set-066-q24",
           "code": "S066-Q24",
           "tag": "illness",
-          "sentence": "When the school canteen served very cold grass jelly, one pupil pushed it aside because of a _____.",
+          "sentence": "Daisy could not bite the corn off the cob because of a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-066-q25",
           "code": "S066-Q25",
           "tag": "habits",
-          "sentence": "A _____ night-market stallholder is ready for the first customers at the stall’s advertised opening.",
+          "sentence": "The coach thanked Tina for being _____ and ready at the start time.",
           "answer": "punctual"
         }
       ]
@@ -12429,183 +12429,183 @@ window.CLOZE_BANK = {
         "id": "set-067-ex",
         "code": "S067-EX",
         "tag": "example",
-        "sentence": "Please join the back of the _____ for tickets; pushing forward is not faster, only ruder.",
-        "answer": "queue"
+        "sentence": "During the _____, water covered the ground-floor shop’s welcome mat.",
+        "answer": "flood"
       },
       "items": [
         {
           "id": "set-067-q01",
           "code": "S067-Q01",
           "tag": "habits",
-          "sentence": "A parent who sits at the back of the hall can _____ just by being clearly present.",
+          "sentence": "The tutor used kind words to _____ Carl through the next sum.",
           "answer": "encourage"
         },
         {
           "id": "set-067-q02",
           "code": "S067-Q02",
           "tag": "illness",
-          "sentence": "After the temperature fell to normal, the doctor still asked us to watch for a returning _____.",
+          "sentence": "Zack spoke in a slow, hot voice, worn out by a _____.",
           "answer": "fever"
         },
         {
           "id": "set-067-q03",
           "code": "S067-Q03",
           "tag": "disasters",
-          "sentence": "The village boat, usually decorative, was actually used when a _____ isolated the last houses.",
+          "sentence": "The _____ reached the estate garden, water covering the flower beds.",
           "answer": "flood"
         },
         {
           "id": "set-067-q04",
           "code": "S067-Q04",
           "tag": "habits",
-          "sentence": "When the school fair is due to open at ten, only a _____ team has the booth set before the gates move.",
+          "sentence": "Hugo wrote “leave at 7:10” on a card, a plan to stay _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-067-q05",
           "code": "S067-Q05",
           "tag": "illness",
-          "sentence": "After rearranging a messy timetable on a small phone screen, the prefect rubbed her brow over a _____.",
+          "sentence": "A sudden _____ in her head made Faith leave the playground.",
           "answer": "headache"
         },
         {
           "id": "set-067-q06",
           "code": "S067-Q06",
           "tag": "disasters",
-          "sentence": "A _____ onto the cycle track left a ramp of mud that no tyre could climb, and no one tried.",
+          "sentence": "A small _____ of mud on the slope still frightened the dogs in the estate.",
           "answer": "landslide"
         },
         {
           "id": "set-067-q07",
           "code": "S067-Q07",
           "tag": "habits",
-          "sentence": "The pool reserves a _____ lane for the club at six in the morning, weekdays only.",
+          "sentence": "Family soup night is a _____ every week Friday plan, always after six.",
           "answer": "regular"
         },
         {
           "id": "set-067-q08",
           "code": "S067-Q08",
           "tag": "illness",
-          "sentence": "A grinding habit in sleep, said the dentist, can wear enamel and invite a morning _____.",
+          "sentence": "The hygienist cleaned gently around the tooth with the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-067-q09",
           "code": "S067-Q09",
           "tag": "disasters",
-          "sentence": "During the _____, a leaking pipe was a scandal, and also a sudden, wasted treasure.",
+          "sentence": "After weeks of _____, the first rain smell was a relief.",
           "answer": "drought"
         },
         {
           "id": "set-067-q10",
           "code": "S067-Q10",
           "tag": "habits",
-          "sentence": "A soft cloth and a spray are enough for the TV stand, a five-minute item of light _____.",
+          "sentence": "Ironing the school shirts was the _____ Eric liked least, but he did it.",
           "answer": "housework"
         },
         {
           "id": "set-067-q11",
           "code": "S067-Q11",
           "tag": "illness",
-          "sentence": "After running against the winter wind, the cross-country team reported a shared, light _____.",
+          "sentence": "After the dusty storeroom job, Kate could not stop the _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-067-q12",
           "code": "S067-Q12",
           "tag": "disasters",
-          "sentence": "A _____ warning from the doctor — rest, or it will worsen — was written down, not half-heard.",
+          "sentence": "A _____ pain in Tess’s lower back made sitting hard.",
           "answer": "severe"
         },
         {
           "id": "set-067-q13",
           "code": "S067-Q13",
           "tag": "habits",
-          "sentence": "Being _____ with borrowed jewellery for the play means putting it in the labelled box at once.",
+          "sentence": "Ken stayed with the lost child until help came, truly _____ on duty.",
           "answer": "responsible"
         },
         {
           "id": "set-067-q14",
           "code": "S067-Q14",
           "tag": "illness",
-          "sentence": "The family WhatsApp group changed from jokes to temperature charts during the _____ week.",
+          "sentence": "Rose felt her legs tremble, still weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-067-q15",
           "code": "S067-Q15",
           "tag": "disasters",
-          "sentence": "The food-bank’s Saturday _____ was a table that filled, slowly, then suddenly, then enough.",
+          "sentence": "Sean helped load a packed _____ of books into the van box.",
           "answer": "donation"
         },
         {
           "id": "set-067-q16",
           "code": "S067-Q16",
           "tag": "habits",
-          "sentence": "After the jump-rope challenge, even tired legs felt like part of a _____, used body.",
+          "sentence": "The poster said a _____ day needs water, fruit, and rest.",
           "answer": "healthy"
         },
         {
           "id": "set-067-q17",
           "code": "S067-Q17",
           "tag": "illness",
-          "sentence": "When the school pet was fine, but the child was curled on the bed, the _____ belonged to the child.",
+          "sentence": "Otto breathed slowly, riding out a _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-067-q18",
           "code": "S067-Q18",
           "tag": "disasters",
-          "sentence": "After a direct _____, some rural villages lose power from wind-thrown trees across the lines.",
+          "sentence": "A late-night _____ brought strong wind and a power cut in the estate.",
           "answer": "typhoon"
         },
         {
           "id": "set-067-q19",
           "code": "S067-Q19",
           "tag": "habits",
-          "sentence": "When the bus driver asked for a moment to change the sign, a _____ queue gave him that moment.",
+          "sentence": "Ryan was _____ backstage, waiting still during the costume change.",
           "answer": "patient"
         },
         {
           "id": "set-067-q20",
           "code": "S067-Q20",
           "tag": "habits",
-          "sentence": "The _____ prize-giver always seems to have “one more” certificate, so no helper is forgotten.",
+          "sentence": "A _____ aunt sent extra books, more than the class had asked for.",
           "answer": "generous"
         },
         {
           "id": "set-067-q21",
           "code": "S067-Q21",
           "tag": "disasters",
-          "sentence": "The _____ did not knock any buildings down; it was only a rattle of windows and a story at dinner.",
+          "sentence": "A short _____ trembled through the shop, and tins inched forward.",
           "answer": "earthquake"
         },
         {
           "id": "set-067-q22",
           "code": "S067-Q22",
           "tag": "habits",
-          "sentence": "The _____ courier’s tablet slipped, but the harness caught it, which was lucky for the screen.",
+          "sentence": "Wade caught the wall, not the ball, in a _____ and dropped it reach.",
           "answer": "clumsy"
         },
         {
           "id": "set-067-q23",
           "code": "S067-Q23",
           "tag": "illness",
-          "sentence": "When a mild rash appeared, we stopped the _____ and called the advice line at once.",
+          "sentence": "The nurse drew a sun and a moon on the _____ bottle for the times.",
           "answer": "medicine"
         },
         {
           "id": "set-067-q24",
           "code": "S067-Q24",
           "tag": "habits",
-          "sentence": "The class laugh was kind, but the typo on the big screen still left the typist _____.",
+          "sentence": "Hugh felt _____ when his chair pulled the tablecloth a little.",
           "answer": "embarrassed"
         },
         {
           "id": "set-067-q25",
           "code": "S067-Q25",
           "tag": "illness",
-          "sentence": "The supermarket run with two full reusable bags left Grandma pausing by the lift, rubbing a _____.",
+          "sentence": "Daisy could not bow in the play because of a _____ in her back.",
           "answer": "backache"
         }
       ]
@@ -12617,183 +12617,183 @@ window.CLOZE_BANK = {
         "id": "set-068-ex",
         "code": "S068-EX",
         "tag": "example",
-        "sentence": "We _____ clean plastic and paper in the two bins by the gate, and the truck comes on Tuesdays.",
-        "answer": "recycle"
+        "sentence": "After the _____, mud covered the slope beside the school fence.",
+        "answer": "landslide"
       },
       "items": [
         {
           "id": "set-068-q01",
           "code": "S068-Q01",
           "tag": "illness",
-          "sentence": "After the school musical’s long dress rehearsal, the choreographer sat on a stool to ease her _____.",
+          "sentence": "A heavy rucksack on one shoulder left Rita with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-068-q02",
           "code": "S068-Q02",
           "tag": "disasters",
-          "sentence": "After the _____, some birds were unusually quiet, or so we thought, standing in the yard.",
+          "sentence": "The _____ made the hanging sign swing above the shop.",
           "answer": "earthquake"
         },
         {
           "id": "set-068-q03",
           "code": "S068-Q03",
           "tag": "habits",
-          "sentence": "A _____ stallholder replaced a dropped ice cream at once, and would not let the child pay twice.",
+          "sentence": "Kate was _____ and shared extra and let the younger group use the new cones first.",
           "answer": "generous"
         },
         {
           "id": "set-068-q04",
           "code": "S068-Q04",
           "tag": "illness",
-          "sentence": "The new perfume in the staff room was strong enough to set off Miss Hui’s polite _____.",
+          "sentence": "Ryan waved away the offer to read aloud, citing a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-068-q05",
           "code": "S068-Q05",
           "tag": "disasters",
-          "sentence": "The flooding after the burst main was _____, closing three streets, which is more than a puddle.",
+          "sentence": "A _____ storm made standing on the open terrace dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-068-q06",
           "code": "S068-Q06",
           "tag": "habits",
-          "sentence": "A _____ twirl in the new skirt knocked a standing menu from a café table.",
+          "sentence": "Mark bumped the easel and, being _____, sent the paper flying.",
           "answer": "clumsy"
         },
         {
           "id": "set-068-q07",
           "code": "S068-Q07",
           "tag": "illness",
-          "sentence": "A dosing syringe for the baby replaced the cup, so the _____ amount could be exact.",
+          "sentence": "Leo asked why the _____ bottle had to be taken after meals.",
           "answer": "medicine"
         },
         {
           "id": "set-068-q08",
           "code": "S068-Q08",
           "tag": "disasters",
-          "sentence": "A _____ of unused art paper, still wrapped, made the infant class’s term brighter and cheaper.",
+          "sentence": "A packed _____ of fruit was added to the hospital box.",
           "answer": "donation"
         },
         {
           "id": "set-068-q09",
           "code": "S068-Q09",
           "tag": "habits",
-          "sentence": "When the umbrella inverted on a windless day (it was just old), the owner felt unfairly _____.",
+          "sentence": "Polly felt _____ when her sock colour did not match the uniform rule.",
           "answer": "embarrassed"
         },
         {
           "id": "set-068-q10",
           "code": "S068-Q10",
           "tag": "habits",
-          "sentence": "A _____ fire-marshal for the floor can point to both exits without thinking.",
+          "sentence": "Chris was in charge of the plants, and he was _____.",
           "answer": "responsible"
         },
         {
           "id": "set-068-q11",
           "code": "S068-Q11",
           "tag": "disasters",
-          "sentence": "A _____ in the grain region is a national story, because bread and rice begin in those fields.",
+          "sentence": "After the _____, a light rain still left the soil thirsty.",
           "answer": "drought"
         },
         {
           "id": "set-068-q12",
           "code": "S068-Q12",
           "tag": "habits",
-          "sentence": "A _____ lunchtime means sitting to eat, then playing, not eating while running.",
+          "sentence": "Faith packed no sweets for camp, a _____ with fruit and water rule she had chosen.",
           "answer": "healthy"
         },
         {
           "id": "set-068-q13",
           "code": "S068-Q13",
           "tag": "illness",
-          "sentence": "After the picnic’s hard nuts, a warning click in one tooth became an evening _____.",
+          "sentence": "Nell asked to see the dentist after school about the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-068-q14",
           "code": "S068-Q14",
           "tag": "disasters",
-          "sentence": "Only a _____ regularly brings a numbered wind signal and a school-closure notice in our city.",
+          "sentence": "The radio named the _____ and warned of a tropical storm at night.",
           "answer": "typhoon"
         },
         {
           "id": "set-068-q15",
           "code": "S068-Q15",
           "tag": "habits",
-          "sentence": "The _____ lab timer was set for fifteen minutes, and no one lifted the lid at fourteen.",
+          "sentence": "Sean stayed _____ as the bus came late, and did not complain.",
           "answer": "patient"
         },
         {
           "id": "set-068-q16",
           "code": "S068-Q16",
           "tag": "illness",
-          "sentence": "A cancelled music exam was disappointing, yet sitting it with the _____ would have been unwise.",
+          "sentence": "Victor needed two pillows and a quilt against the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-068-q17",
           "code": "S068-Q17",
           "tag": "disasters",
-          "sentence": "A _____ of clear reservoir water, spilled in a test, still closed the path until it drained.",
+          "sentence": "The _____ rose in the park, water covering the lower benches.",
           "answer": "flood"
         },
         {
           "id": "set-068-q18",
           "code": "S068-Q18",
           "tag": "habits",
-          "sentence": "The teacher’s feedback began with a strength, in order to _____ the next attempt.",
+          "sentence": "Mum’s kind note helped _____ Rose to keep trying at piano.",
           "answer": "encourage"
         },
         {
           "id": "set-068-q19",
           "code": "S068-Q19",
           "tag": "illness",
-          "sentence": "A second helping of fried rice at the family lunch was followed, an hour later, by a quiet _____.",
+          "sentence": "Maya drew a small circle on the nurse’s form to show the _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-068-q20",
           "code": "S068-Q20",
           "tag": "habits",
-          "sentence": "A _____ cyclist left home at the planned minute and met the group at the reservoir on time.",
+          "sentence": "The library talk had a start time, and _____ Tina took a front seat.",
           "answer": "punctual"
         },
         {
           "id": "set-068-q21",
           "code": "S068-Q21",
           "tag": "habits",
-          "sentence": "A _____ software backup every Sunday evening has already saved one lost project.",
+          "sentence": "Ted writes thank-you notes as a _____ habit, the day after a gift.",
           "answer": "regular"
         },
         {
           "id": "set-068-q22",
           "code": "S068-Q22",
           "tag": "illness",
-          "sentence": "A feverish glitter in the eyes plus a hot brow told the babysitter to call home about a _____.",
+          "sentence": "The family skipped the barbecue, staying in with Vera’s high _____.",
           "answer": "fever"
         },
         {
           "id": "set-068-q23",
           "code": "S068-Q23",
           "tag": "disasters",
-          "sentence": "The morning after, a _____ looked smaller than in the dark, but it still owned the road.",
+          "sentence": "After the _____, the slope looked raw, with mud and loose stones.",
           "answer": "landslide"
         },
         {
           "id": "set-068-q24",
           "code": "S068-Q24",
           "tag": "habits",
-          "sentence": "After the craft afternoon, glue on the table meant the _____ began with warm water, not a rush.",
+          "sentence": "Fresh newspaper went under the shoe rack in Cora’s _____, after she wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-068-q25",
           "code": "S068-Q25",
           "tag": "illness",
-          "sentence": "A tight collar on the new uniform shirt looked neat and then quietly caused a _____ at the back of the head.",
+          "sentence": "Karl rubbed his forehead on the ferry, quiet with a _____.",
           "answer": "headache"
         }
       ]
@@ -12805,183 +12805,183 @@ window.CLOZE_BANK = {
         "id": "set-069-ex",
         "code": "S069-EX",
         "tag": "example",
-        "sentence": "The dress _____ on Friday is the last chance to fix the lighting before the real audience arrives.",
-        "answer": "rehearsal"
+        "sentence": "The _____ meant no rain for a month, so watering was limited.",
+        "answer": "drought"
       },
       "items": [
         {
           "id": "set-069-q01",
           "code": "S069-Q01",
           "tag": "disasters",
-          "sentence": "The balcony plants, forgotten, were found on the next floor after the _____’s lifting wind.",
+          "sentence": "A long _____ and its strong wind kept the playground shut for two wet, windy days.",
           "answer": "typhoon"
         },
         {
           "id": "set-069-q02",
           "code": "S069-Q02",
           "tag": "habits",
-          "sentence": "Friends _____ one another to enter the contest, promising to come and watch, not promising a prize.",
+          "sentence": "A kind text from a friend helped _____ Hugh before the talk.",
           "answer": "encourage"
         },
         {
           "id": "set-069-q03",
           "code": "S069-Q03",
           "tag": "illness",
-          "sentence": "The left incisor looked fine, but cold air on the walk home proved it was the seat of the _____.",
+          "sentence": "Wade could not hum on the bus; the vibration woke a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-069-q04",
           "code": "S069-Q04",
           "tag": "disasters",
-          "sentence": "The classroom model of a _____ showed how water chooses the lowest street first.",
+          "sentence": "Water covered the school gate step in the morning _____.",
           "answer": "flood"
         },
         {
           "id": "set-069-q05",
           "code": "S069-Q05",
           "tag": "habits",
-          "sentence": "The community centre lock-up is at nine; a _____ last class has left, not still packing, when the caretaker arrives.",
+          "sentence": "A _____ habit kept Joel ready, with his seat saved, not late.",
           "answer": "punctual"
         },
         {
           "id": "set-069-q06",
           "code": "S069-Q06",
           "tag": "illness",
-          "sentence": "After the open-day crowd in the hall, the volunteer team reported two early cases of _____.",
+          "sentence": "Yuki needed a slow walk only, after days of the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-069-q07",
           "code": "S069-Q07",
           "tag": "disasters",
-          "sentence": "A priest blessed the repaired slope, and the engineers, more practically, drained it to prevent a new _____.",
+          "sentence": "The _____ was slow, mud oozing rather than crashing down.",
           "answer": "landslide"
         },
         {
           "id": "set-069-q08",
           "code": "S069-Q08",
           "tag": "habits",
-          "sentence": "The choir’s _____ mid-term concert is always in the seventh week, a date families can plan around.",
+          "sentence": "Sam has a _____ call with Aunt Sue each Tuesday after dinner.",
           "answer": "regular"
         },
         {
           "id": "set-069-q09",
           "code": "S069-Q09",
           "tag": "illness",
-          "sentence": "The tram’s sudden stops did not help a passenger who was already nursing a delicate _____.",
+          "sentence": "Nora asked for a bucket just in case, during a strong _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-069-q10",
           "code": "S069-Q10",
           "tag": "habits",
-          "sentence": "The family donates time, not only money: one Saturday of _____ at Grandma’s flat is a gift.",
+          "sentence": "A fresh bin liner and a wiped lid closed the kitchen _____.",
           "answer": "housework"
         },
         {
           "id": "set-069-q11",
           "code": "S069-Q11",
           "tag": "habits",
-          "sentence": "A _____ younger sister held the nail still while her brother aimed, and did not wiggle.",
+          "sentence": "A _____ and waited calmly look from Holly helped a classmate finish the sum.",
           "answer": "patient"
         },
         {
           "id": "set-069-q12",
           "code": "S069-Q12",
           "tag": "illness",
-          "sentence": "The fragrant mosquito coil in a small room was too much, and Dad stepped out with a _____.",
+          "sentence": "Eric lay on the nurse’s couch with a cool pack for a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-069-q13",
           "code": "S069-Q13",
           "tag": "disasters",
-          "sentence": "The children drew the reservoir as a puddle, honestly, during the peak of the _____.",
+          "sentence": "The _____ made washing cars a wasted idea, with so little rain.",
           "answer": "drought"
         },
         {
           "id": "set-069-q14",
           "code": "S069-Q14",
           "tag": "habits",
-          "sentence": "The _____ choir teacher bought spare water for the long rehearsal, from her own bag.",
+          "sentence": "Ryan was _____ with his new paints, putting them in the middle for all to share.",
           "answer": "generous"
         },
         {
           "id": "set-069-q15",
           "code": "S069-Q15",
           "tag": "illness",
-          "sentence": "The science lesson on safe storage used an empty, cleaned bottle as a model, never real _____.",
+          "sentence": "Leo wrote the times in his homework diary for the _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-069-q16",
           "code": "S069-Q16",
           "tag": "disasters",
-          "sentence": "An _____ drill for families includes a note of an out-of-area contact, because local lines may be busy.",
+          "sentence": "An _____ at night made the hanging coat swing in the dark.",
           "answer": "earthquake"
         },
         {
           "id": "set-069-q17",
           "code": "S069-Q17",
           "tag": "habits",
-          "sentence": "Because the stairs were uneven, a _____ misjudgement of the last step was saved by the rail.",
+          "sentence": "A _____ and dropped it step back landed Judy on someone’s toe.",
           "answer": "clumsy"
         },
         {
           "id": "set-069-q18",
           "code": "S069-Q18",
           "tag": "illness",
-          "sentence": "A sudden stop on the minibus threw Tony forward against the seat in front, and he later felt a _____.",
+          "sentence": "Hugo sat down; he had a _____ in his back after tidying the book room.",
           "answer": "backache"
         },
         {
           "id": "set-069-q19",
           "code": "S069-Q19",
           "tag": "disasters",
-          "sentence": "A _____ case of homesickness at camp was taken seriously, and a call home was arranged, not dismissed.",
+          "sentence": "The _____ damage after the storm meant the hall could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-069-q20",
           "code": "S069-Q20",
           "tag": "habits",
-          "sentence": "A leftover price alarm at the shop door went off by mistake, and the innocent shopper felt _____.",
+          "sentence": "Carl felt _____ after noticing his shirt was inside out.",
           "answer": "embarrassed"
         },
         {
           "id": "set-069-q21",
           "code": "S069-Q21",
           "tag": "illness",
-          "sentence": "During the violin solo, the accompanist turned a page and then hid a small _____.",
+          "sentence": "Victor covered his mouth as a dry _____ broke the quiet.",
           "answer": "cough"
         },
         {
           "id": "set-069-q22",
           "code": "S069-Q22",
           "tag": "disasters",
-          "sentence": "The family photograph of a _____ being handed over was later used only with permission, and kindly.",
+          "sentence": "The school’s _____ of packed books filled two cartons for the library.",
           "answer": "donation"
         },
         {
           "id": "set-069-q23",
           "code": "S069-Q23",
           "tag": "habits",
-          "sentence": "The club elected a _____ secretary to keep the register honest, even when friends forget to sign.",
+          "sentence": "A trusted, _____ helper, Iris stacked the traffic cones without being told twice.",
           "answer": "responsible"
         },
         {
           "id": "set-069-q24",
           "code": "S069-Q24",
           "tag": "illness",
-          "sentence": "The lesson on body temperature included a demonstration of how to record a _____.",
+          "sentence": "The teacher sent Ted to the sick room; his forehead was hot with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-069-q25",
           "code": "S069-Q25",
           "tag": "habits",
-          "sentence": "The family swapped the deep-fryer for a steamer and called it a _____ change, not a punishment.",
+          "sentence": "A _____ with fruit and water lunchbox had an apple, a bun, and no sweets.",
           "answer": "healthy"
         }
       ]
@@ -12993,183 +12993,183 @@ window.CLOZE_BANK = {
         "id": "set-070-ex",
         "code": "S070-EX",
         "tag": "example",
-        "sentence": "Please _____ me to take the permission slip, or I will walk out with my bag and leave it on the table.",
-        "answer": "remind"
+        "sentence": "An _____ at dawn shook the cups in the kitchen cupboard.",
+        "answer": "earthquake"
       },
       "items": [
         {
           "id": "set-070-q01",
           "code": "S070-Q01",
           "tag": "habits",
-          "sentence": "A _____ smile at the dentist is one with clean teeth and gums that do not bleed.",
+          "sentence": "Mum packed a _____ snack of carrot sticks for the trip.",
           "answer": "healthy"
         },
         {
           "id": "set-070-q02",
           "code": "S070-Q02",
           "tag": "illness",
-          "sentence": "A sip of soup that was too hot made me gasp, and a brief _____ followed.",
+          "sentence": "Ted sipped water, hoping the _____ in his throat would ease.",
           "answer": "cough"
         },
         {
           "id": "set-070-q03",
           "code": "S070-Q03",
           "tag": "disasters",
-          "sentence": "People feared the _____ would last into a second dry winter, because the wet season had already failed twice.",
+          "sentence": "The _____ meant no rain on sports day, but the grass was already dry.",
           "answer": "drought"
         },
         {
           "id": "set-070-q04",
           "code": "S070-Q04",
           "tag": "habits",
-          "sentence": "The _____ radio host let the guest find a word, and did not jump in to finish the sentence.",
+          "sentence": "A _____ and waited calmly pause gave Hugo’s friend time to find the right word.",
           "answer": "patient"
         },
         {
           "id": "set-070-q05",
           "code": "S070-Q05",
           "tag": "illness",
-          "sentence": "When both siblings had hot foreheads, Mum used two thermometers and found a _____ in each.",
+          "sentence": "Tina looked flushed in the lunch line, and it was a _____.",
           "answer": "fever"
         },
         {
           "id": "set-070-q06",
           "code": "S070-Q06",
           "tag": "disasters",
-          "sentence": "The science club built a jelly “city” and shook the tray, a playful _____ with a serious point.",
+          "sentence": "During an _____, the water cooler shook, and a cup tipped.",
           "answer": "earthquake"
         },
         {
           "id": "set-070-q07",
           "code": "S070-Q07",
           "tag": "habits",
-          "sentence": "A _____ classmate offered a whole pack of tissues, not two, when a nosebleed began.",
+          "sentence": "Rose gave a _____ share of her snacks, keeping only one.",
           "answer": "generous"
         },
         {
           "id": "set-070-q08",
           "code": "S070-Q08",
           "tag": "illness",
-          "sentence": "After the brass ensemble in the tiny practice room, even the conductor needed fresh air for a _____.",
+          "sentence": "The long queue in the sun gave Mark a pounding _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-070-q09",
           "code": "S070-Q09",
           "tag": "habits",
-          "sentence": "The _____ florist leaned to smell a bloom and tipped a small vase with a sleeve.",
+          "sentence": "A _____ and dropped it nod almost head-butted the cupboard door.",
           "answer": "clumsy"
         },
         {
           "id": "set-070-q10",
           "code": "S070-Q10",
           "tag": "illness",
-          "sentence": "The community garden’s compost bags were heavier than they looked, and the volunteers finished with more than one _____.",
+          "sentence": "Moving the fish tank with Dad gave Tess a lasting _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-070-q11",
           "code": "S070-Q11",
           "tag": "illness",
-          "sentence": "The difference between a local sore throat and the _____ is the all-over weakness that follows.",
+          "sentence": "Chris put a tick on the calendar for each day of the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-070-q12",
           "code": "S070-Q12",
           "tag": "disasters",
-          "sentence": "The drought’s hold on the region was _____, and aid, not only advice, was being planned.",
+          "sentence": "A _____ storm at night made the road too dangerous for buses.",
           "answer": "severe"
         },
         {
           "id": "set-070-q13",
           "code": "S070-Q13",
           "tag": "habits",
-          "sentence": "The coach clapped a small improvement, to _____ the habit of noticing progress.",
+          "sentence": "A kind email from the teacher helped _____ Leo over the weekend.",
           "answer": "encourage"
         },
         {
           "id": "set-070-q14",
           "code": "S070-Q14",
           "tag": "illness",
-          "sentence": "After the sports-day stall’s sweet pancakes, one helper sat behind the tent with a _____.",
+          "sentence": "After laughing hard, Wade paid with a stitch-like _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-070-q15",
           "code": "S070-Q15",
           "tag": "disasters",
-          "sentence": "The teacher said a _____ of money is a gift, not a purchase, so no one should expect a favour in return.",
+          "sentence": "A _____ of packed storybooks from the class went to the children’s ward.",
           "answer": "donation"
         },
         {
           "id": "set-070-q16",
           "code": "S070-Q16",
           "tag": "habits",
-          "sentence": "A _____ applicant clicked “join” a minute before the online interview, so there was no frantic login.",
+          "sentence": "Iris put the travel card out, so the gate would not make her late, staying _____.",
           "answer": "punctual"
         },
         {
           "id": "set-070-q17",
           "code": "S070-Q17",
           "tag": "illness",
-          "sentence": "After the dentist’s extraction, a short, labelled course of _____ went home in a paper bag.",
+          "sentence": "Owen put a tick in the app each time he took the _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-070-q18",
           "code": "S070-Q18",
           "tag": "disasters",
-          "sentence": "During the worst hour of the _____, conversation stopped, because the wind was louder than voices.",
+          "sentence": "During the _____, the tropical storm made the corridor windows stream.",
           "answer": "typhoon"
         },
         {
           "id": "set-070-q19",
           "code": "S070-Q19",
           "tag": "habits",
-          "sentence": "A _____ tea break at ten and at three structures the office day more than any memo.",
+          "sentence": "The community choir is a _____ every week Thursday, and Jack never misses it.",
           "answer": "regular"
         },
         {
           "id": "set-070-q20",
           "code": "S070-Q20",
           "tag": "habits",
-          "sentence": "A squeaky floor was not dirt, but the mop still went over it during the weekly _____.",
+          "sentence": "Ruby set the chairs back, the room ready after the _____; the floor was wiped.",
           "answer": "housework"
         },
         {
           "id": "set-070-q21",
           "code": "S070-Q21",
           "tag": "disasters",
-          "sentence": "A _____ mark, dated, is kept on the warehouse wall as a practical warning, not a souvenir only.",
+          "sentence": "The _____ pushed water into the lift pit, covering the lower doors.",
           "answer": "flood"
         },
         {
           "id": "set-070-q22",
           "code": "S070-Q22",
           "tag": "habits",
-          "sentence": "After mistaking a rehearsal for the real performance, the early clapper felt _____.",
+          "sentence": "Daisy felt _____ about the smudge of sauce on her homework.",
           "answer": "embarrassed"
         },
         {
           "id": "set-070-q23",
           "code": "S070-Q23",
           "tag": "illness",
-          "sentence": "A child who stops eating favourite crunchy snacks may be hiding a quiet _____.",
+          "sentence": "Polly avoided the swimming pool’s cold shower because of a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-070-q24",
           "code": "S070-Q24",
           "tag": "disasters",
-          "sentence": "When the slope’s little drains ran clear again, the fear of a _____ eased, a little.",
+          "sentence": "After a _____, workers cleared mud from the lower hill drain.",
           "answer": "landslide"
         },
         {
           "id": "set-070-q25",
           "code": "S070-Q25",
           "tag": "habits",
-          "sentence": "A _____ cooker of the camp meal does not leave the stove, because that was the duty chosen.",
+          "sentence": "The trusted, _____ leader made sure no one was left in the changing room.",
           "answer": "responsible"
         }
       ]
@@ -13181,183 +13181,183 @@ window.CLOZE_BANK = {
         "id": "set-071-ex",
         "code": "S071-EX",
         "tag": "example",
-        "sentence": "The harbour staff practised a water _____, pulling a dummy to the side in under a minute.",
-        "answer": "rescue"
+        "sentence": "Friends used kind words to _____ Eric when the score was low.",
+        "answer": "encourage"
       },
       "items": [
         {
           "id": "set-071-q01",
           "code": "S071-Q01",
           "tag": "illness",
-          "sentence": "A missed water habit and a very salty snack left a tight, unhappy _____ by late afternoon.",
+          "sentence": "After the treasure-hunt run, Jack needed shade and rest for a _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-071-q02",
           "code": "S071-Q02",
           "tag": "disasters",
-          "sentence": "The wind damage was _____, with scaffolding down, not only a few loose flyers in the street.",
+          "sentence": "A _____ injury after the collision meant Maya watched from the bench.",
           "answer": "severe"
         },
         {
           "id": "set-071-q03",
           "code": "S071-Q03",
           "tag": "habits",
-          "sentence": "A kind voice on the phone can _____ a grandparent to try the new video app once more.",
+          "sentence": "The helper used kind words to _____ Victor up the climbing wall.",
           "answer": "encourage"
         },
         {
           "id": "set-071-q04",
           "code": "S071-Q04",
           "tag": "illness",
-          "sentence": "A kitchen timer on the table marked the four-hour gap between doses of the _____.",
+          "sentence": "The new bottle of _____ had a pump, which Leo found easier.",
           "answer": "medicine"
         },
         {
           "id": "set-071-q05",
           "code": "S071-Q05",
           "tag": "disasters",
-          "sentence": "The club’s leftover camp food, sealed and in date, was a _____ that the next group could actually eat.",
+          "sentence": "A kind _____ of packed reading lamps went to the homework club.",
           "answer": "donation"
         },
         {
           "id": "set-071-q06",
           "code": "S071-Q06",
           "tag": "habits",
-          "sentence": "Because the tram timetable is strict, a _____ commuter is already at the stop, not waving from the stairs.",
+          "sentence": "Liam left a little earlier in the rain, determined to stay _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-071-q07",
           "code": "S071-Q07",
           "tag": "illness",
-          "sentence": "During exam week, hunched over past papers until midnight, Sylvia woke with a stiff _____.",
+          "sentence": "The wooden church bench left Joel shifting all through a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-071-q08",
           "code": "S071-Q08",
           "tag": "disasters",
-          "sentence": "A summer of several _____ warnings still feels unusual, and each one is treated seriously.",
+          "sentence": "Mum cooked extra rice before the _____ and its strong wind, in case the shops closed.",
           "answer": "typhoon"
         },
         {
           "id": "set-071-q09",
           "code": "S071-Q09",
           "tag": "habits",
-          "sentence": "The weather club logs a _____ rainfall reading at eight each morning, including holidays.",
+          "sentence": "A _____ bus at the same time is the one Sara trusts every week.",
           "answer": "regular"
         },
         {
           "id": "set-071-q10",
           "code": "S071-Q10",
           "tag": "habits",
-          "sentence": "When the cat’s litter area was cleaned, that too was written, fairly, on the _____ board.",
+          "sentence": "Ben shook the doormat, then swept the floor, starting the _____.",
           "answer": "housework"
         },
         {
           "id": "set-071-q11",
           "code": "S071-Q11",
           "tag": "disasters",
-          "sentence": "During the _____, the school’s science club measured the tank’s drop, a sad but clear experiment.",
+          "sentence": "The _____, with little rain, dried the football lines into the hard ground.",
           "answer": "drought"
         },
         {
           "id": "set-071-q12",
           "code": "S071-Q12",
           "tag": "habits",
-          "sentence": "A _____ unwrapping of the pastry let the filling escape in one tidy, unfortunate lump.",
+          "sentence": "A _____ and dropped it kick sent the football into the drinks table.",
           "answer": "clumsy"
         },
         {
           "id": "set-071-q13",
           "code": "S071-Q13",
           "tag": "illness",
-          "sentence": "The attic museum tour was interesting, but the old paper smell started a _____ in our group.",
+          "sentence": "Ted pointed to his throat, then let out a rough _____.",
           "answer": "cough"
         },
         {
           "id": "set-071-q14",
           "code": "S071-Q14",
           "tag": "disasters",
-          "sentence": "An _____ at mealtime is remembered by the way the soup moved, a ring that should not have been there.",
+          "sentence": "An _____ made the window bars tremble for a few seconds.",
           "answer": "earthquake"
         },
         {
           "id": "set-071-q15",
           "code": "S071-Q15",
           "tag": "habits",
-          "sentence": "The dog-eared “secret” diary was found, unread, and still the finder and the owner felt _____.",
+          "sentence": "Hugh felt _____ when he walked into a classroom mid-test by mistake.",
           "answer": "embarrassed"
         },
         {
           "id": "set-071-q16",
           "code": "S071-Q16",
           "tag": "illness",
-          "sentence": "The night bus felt freezing to everyone else, but a passenger with a _____ kept asking for air.",
+          "sentence": "Dad wrote the readings in a notebook to track the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-071-q17",
           "code": "S071-Q17",
           "tag": "disasters",
-          "sentence": "After the bund was raised, the next _____ stayed in the river, which was the whole point.",
+          "sentence": "Water covered the ground-floor lobby after the evening _____.",
           "answer": "flood"
         },
         {
           "id": "set-071-q18",
           "code": "S071-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for the whiteboard pens includes putting the lids back, or the next class has none.",
+          "sentence": "Wade is trusted and _____ when it rains, too, bringing the charts in.",
           "answer": "responsible"
         },
         {
           "id": "set-071-q19",
           "code": "S071-Q19",
           "tag": "illness",
-          "sentence": "A day of switching between two pairs of cheap sunglasses left me with a confused _____.",
+          "sentence": "The flickering classroom light seemed to feed Judy’s _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-071-q20",
           "code": "S071-Q20",
           "tag": "habits",
-          "sentence": "After more outdoor play, the children slept better and woke looking more _____.",
+          "sentence": "A _____ lunch left Ruby full, not sleepy.",
           "answer": "healthy"
         },
         {
           "id": "set-071-q21",
           "code": "S071-Q21",
           "tag": "habits",
-          "sentence": "A _____ beetle-watcher in the garden stays still, because sudden hands make the beetle leave.",
+          "sentence": "A _____ wait for the results did not make Cora tap the desk.",
           "answer": "patient"
         },
         {
           "id": "set-071-q22",
           "code": "S071-Q22",
           "tag": "illness",
-          "sentence": "The emergency weekend number on the fridge was used when a sudden _____ would not fade.",
+          "sentence": "Carl left the crust, stopped by a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-071-q23",
           "code": "S071-Q23",
           "tag": "disasters",
-          "sentence": "After enough rain, a _____ took the path, a small shrine and the bus stop in the same minute.",
+          "sentence": "The _____ left muddy footprints of stones down the hill.",
           "answer": "landslide"
         },
         {
           "id": "set-071-q24",
           "code": "S071-Q24",
           "tag": "habits",
-          "sentence": "The _____ host packed a bag of leftovers for every departing guest, and still had a little more.",
+          "sentence": "A _____ and shared extra aunt knitted more scarves than the list required.",
           "answer": "generous"
         },
         {
           "id": "set-071-q25",
           "code": "S071-Q25",
           "tag": "illness",
-          "sentence": "A second pillow and dim lights were all I wanted while the _____ made every joint complain.",
+          "sentence": "Polly cancelled the sleepover, too weak from the _____.",
           "answer": "flu"
         }
       ]
@@ -13369,183 +13369,183 @@ window.CLOZE_BANK = {
         "id": "set-072-ex",
         "code": "S072-EX",
         "tag": "example",
-        "sentence": "We will _____ the irregular verbs tonight, a short, honest review, not a first look at the list.",
-        "answer": "revise"
+        "sentence": "The _____ pain in Nina’s shoulder made lifting the bag dangerous.",
+        "answer": "severe"
       },
       "items": [
         {
           "id": "set-072-q01",
           "code": "S072-Q01",
           "tag": "disasters",
-          "sentence": "A _____ in the subway made staff walk the rails with lamps, looking for trapped water, not trains.",
+          "sentence": "The _____ pushed water over the kerb, covering the bus-stop bench.",
           "answer": "flood"
         },
         {
           "id": "set-072-q02",
           "code": "S072-Q02",
           "tag": "habits",
-          "sentence": "When a parent used a baby name in the school lobby, the P.6 pupil was instantly _____.",
+          "sentence": "Tess slipped on the wet floor in the corridor and felt _____.",
           "answer": "embarrassed"
         },
         {
           "id": "set-072-q03",
           "code": "S072-Q03",
           "tag": "illness",
-          "sentence": "The long queue for the book fair, standing still under lights, produced a slow, growing _____.",
+          "sentence": "Otto used a soft voice on the phone, easing a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-072-q04",
           "code": "S072-Q04",
           "tag": "disasters",
-          "sentence": "The field trip stood at a safe viewpoint to see a last season’s _____, already greening at the edges.",
+          "sentence": "The _____ made a raw patch on the slope behind the shops.",
           "answer": "landslide"
         },
         {
           "id": "set-072-q05",
           "code": "S072-Q05",
           "tag": "habits",
-          "sentence": "A _____ hour-monitor, trusted to ring the practice bell, does it at the real time, not “almost”.",
+          "sentence": "Ken was in charge of the attendance book, a _____ task.",
           "answer": "responsible"
         },
         {
           "id": "set-072-q06",
           "code": "S072-Q06",
           "tag": "illness",
-          "sentence": "After the filling, a high spot on the bite was adjusted so that a new _____ would not start.",
+          "sentence": "The dentist’s note said the _____ needed a longer visit.",
           "answer": "toothache"
         },
         {
           "id": "set-072-q07",
           "code": "S072-Q07",
           "tag": "disasters",
-          "sentence": "A _____ left boats sitting on their keel in mud, waiting for a lake that had gone away.",
+          "sentence": "After a long _____, the first short rain barely wet the dust.",
           "answer": "drought"
         },
         {
           "id": "set-072-q08",
           "code": "S072-Q08",
           "tag": "habits",
-          "sentence": "A _____ packed snack for the hike was nuts and fruit, which lasted longer than chocolate alone.",
+          "sentence": "A _____ choice at the stall was fruit, not fried snacks.",
           "answer": "healthy"
         },
         {
           "id": "set-072-q09",
           "code": "S072-Q09",
           "tag": "illness",
-          "sentence": "When the school bus ran half empty on a Monday, the driver guessed it was a _____ Monday.",
+          "sentence": "The whole-body ache returned on day four of the _____.",
           "answer": "flu"
         },
         {
           "id": "set-072-q10",
           "code": "S072-Q10",
           "tag": "habits",
-          "sentence": "When the lift filled slowly with a pram, a _____ crowd shifted back and waited.",
+          "sentence": "Joel was _____ and waited calmly during the long speech, hands still in his lap.",
           "answer": "patient"
         },
         {
           "id": "set-072-q11",
           "code": "S072-Q11",
           "tag": "habits",
-          "sentence": "A _____ wardrobe check at the start of each season stops a last-minute uniform hunt.",
+          "sentence": "The same hour each Sunday, Zack rings Grandpa, a _____ call.",
           "answer": "regular"
         },
         {
           "id": "set-072-q12",
           "code": "S072-Q12",
           "tag": "illness",
-          "sentence": "After yelling “house” at the bingo night, Uncle still had a leftover _____ on the way home.",
+          "sentence": "Will stopped mid-song, a dry _____ stealing the next line.",
           "answer": "cough"
         },
         {
           "id": "set-072-q13",
           "code": "S072-Q13",
           "tag": "disasters",
-          "sentence": "A _____ of chairs, ugly and strong, was exactly what the community hall had quietly wanted.",
+          "sentence": "Maya packed a _____ of snacks for the long drive to the centre.",
           "answer": "donation"
         },
         {
           "id": "set-072-q14",
           "code": "S072-Q14",
           "tag": "habits",
-          "sentence": "After the typhoon warning week, forgotten laundry was finally washed, a delayed piece of _____.",
+          "sentence": "Faith wiped both sides of the glass door as part of the _____.",
           "answer": "housework"
         },
         {
           "id": "set-072-q15",
           "code": "S072-Q15",
           "tag": "illness",
-          "sentence": "A written reading of 38.6 degrees left no argument: this was a _____.",
+          "sentence": "The night light showed Daisy’s cheeks still red from a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-072-q16",
           "code": "S072-Q16",
           "tag": "disasters",
-          "sentence": "The football posts were taken down before the _____, so the wind would have nothing tall to catch.",
+          "sentence": "Dad taped the letterbox before the _____, expecting a tropical storm.",
           "answer": "typhoon"
         },
         {
           "id": "set-072-q17",
           "code": "S072-Q17",
           "tag": "habits",
-          "sentence": "When he hung the blazer, a _____ hook-miss left it on the floor, hanger still in the collar.",
+          "sentence": "Stan is _____ when excited, waving arms and knocking cups.",
           "answer": "clumsy"
         },
         {
           "id": "set-072-q18",
           "code": "S072-Q18",
           "tag": "illness",
-          "sentence": "The first-aid talk said a sudden, strong _____ after unusual food is a reason to tell an adult.",
+          "sentence": "A _____ woke Eric after midnight, and he held his belly.",
           "answer": "stomachache"
         },
         {
           "id": "set-072-q19",
           "code": "S072-Q19",
           "tag": "disasters",
-          "sentence": "When the high building’s fire alarm was checked after an _____, we waited outside, bored and grateful.",
+          "sentence": "The _____ made the ground tremble under the playground.",
           "answer": "earthquake"
         },
         {
           "id": "set-072-q20",
           "code": "S072-Q20",
           "tag": "habits",
-          "sentence": "A _____ older pupil paid a lost library fine for a younger one, and asked for a careful promise only.",
+          "sentence": "Pearl gave a _____ amount of leftover birthday cake to every table.",
           "answer": "generous"
         },
         {
           "id": "set-072-q21",
           "code": "S072-Q21",
           "tag": "illness",
-          "sentence": "The parent meeting included a reminder: send _____ in original packaging, with the child’s name.",
+          "sentence": "The label warned Sean not to take a double dose of _____.",
           "answer": "medicine"
         },
         {
           "id": "set-072-q22",
           "code": "S072-Q22",
           "tag": "disasters",
-          "sentence": "A _____ frost killed the first market tomatoes, a loss that was serious for those stalls.",
+          "sentence": "A _____ injury kept Hugo in a sling, so writing was slow.",
           "answer": "severe"
         },
         {
           "id": "set-072-q23",
           "code": "S072-Q23",
           "tag": "habits",
-          "sentence": "The class wrote short notes to _____ the infant pupils before their first concert.",
+          "sentence": "A kind sentence from the teacher helped _____ a quiet writer.",
           "answer": "encourage"
         },
         {
           "id": "set-072-q24",
           "code": "S072-Q24",
           "tag": "illness",
-          "sentence": "After helping at the book-fair till, standing and twisting to reach high shelves, Mr Ip admitted a _____.",
+          "sentence": "After lifting rice bags, Iris had a back _____ and sat down at once.",
           "answer": "backache"
         },
         {
           "id": "set-072-q25",
           "code": "S072-Q25",
           "tag": "habits",
-          "sentence": "A _____ prize-giving starts with the first award at the printed time, which respects everyone’s evening.",
+          "sentence": "The test paper turned at nine, and _____, early and ready Kate had been sitting still.",
           "answer": "punctual"
         }
       ]
@@ -13557,183 +13557,183 @@ window.CLOZE_BANK = {
         "id": "set-073-ex",
         "code": "S073-EX",
         "tag": "example",
-        "sentence": "The last _____ on the worksheet made the class groan, then laugh, when the answer was “an umbrella”.",
-        "answer": "riddle"
+        "sentence": "A _____ of packed soup tins completed the box.",
+        "answer": "donation"
       },
       "items": [
         {
           "id": "set-073-q01",
           "code": "S073-Q01",
           "tag": "habits",
-          "sentence": "The _____ stage actor’s prop sword caught a curtain and produced an unplanned rustle.",
+          "sentence": "A _____ slip on the smooth floor sent Nell into the bench.",
           "answer": "clumsy"
         },
         {
           "id": "set-073-q02",
           "code": "S073-Q02",
           "tag": "illness",
-          "sentence": "The air on the plane was dry, and both children needed lozenges for a bothersome _____.",
+          "sentence": "Cold air at the bus door started a _____ in Sara’s throat.",
           "answer": "cough"
         },
         {
           "id": "set-073-q03",
           "code": "S073-Q03",
           "tag": "disasters",
-          "sentence": "The _____ felt stronger on the tenth floor than on the ground, and the hanging lamps swayed for a long time.",
+          "sentence": "During an _____, the hanging map swung as the wall trembled.",
           "answer": "earthquake"
         },
         {
           "id": "set-073-q04",
           "code": "S073-Q04",
           "tag": "habits",
-          "sentence": "The _____ gardener of the estate shares cuttings with anyone who asks, and often with those who do not.",
+          "sentence": "Will shared a _____ pile of old comics with anyone who asked.",
           "answer": "generous"
         },
         {
           "id": "set-073-q05",
           "code": "S073-Q05",
           "tag": "illness",
-          "sentence": "After the cool shower, the forehead felt better, yet the meter still showed a slight _____.",
+          "sentence": "Even a short walk to the bathroom felt hard in the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-073-q06",
           "code": "S073-Q06",
           "tag": "disasters",
-          "sentence": "The pain of the toothache was _____, and the emergency slot, not tomorrow, was booked.",
+          "sentence": "A _____ injury from the slip meant Ted used the lift all week.",
           "answer": "severe"
         },
         {
           "id": "set-073-q07",
           "code": "S073-Q07",
           "tag": "habits",
-          "sentence": "The leader’s job on a hard hike is to _____ the tired with a true, reachable “we’re nearly there”.",
+          "sentence": "A kind smile from Dad was enough to _____ Tina on the hard page.",
           "answer": "encourage"
         },
         {
           "id": "set-073-q08",
           "code": "S073-Q08",
           "tag": "illness",
-          "sentence": "The indoor climbing wall was exciting until Mia came down early, holding her back because of a _____.",
+          "sentence": "Liam chose the lift at the mall, protecting a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-073-q09",
           "code": "S073-Q09",
           "tag": "disasters",
-          "sentence": "The appeal ended when the _____ reached the number on the poster, and the poster was taken down, smiling.",
+          "sentence": "Owen packed a _____ of clothes that no longer fitted, still good.",
           "answer": "donation"
         },
         {
           "id": "set-073-q10",
           "code": "S073-Q10",
           "tag": "habits",
-          "sentence": "The bakery’s fresh batch is out at eleven; a _____ customer is there then, not guessing at noon.",
+          "sentence": "Ryan set a second alarm for weekends, still wanting to be _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-073-q11",
           "code": "S073-Q11",
           "tag": "illness",
-          "sentence": "A spring picnic was delayed because two cousins were still shaking off the _____.",
+          "sentence": "All-over tiredness lasted into the weekend after the _____.",
           "answer": "flu"
         },
         {
           "id": "set-073-q12",
           "code": "S073-Q12",
           "tag": "disasters",
-          "sentence": "When the official hoisted the highest signal, everyone understood that a dangerous _____ was in the area.",
+          "sentence": "The class stayed home when the _____ signal reached a high number.",
           "answer": "typhoon"
         },
         {
           "id": "set-073-q13",
           "code": "S073-Q13",
           "tag": "habits",
-          "sentence": "A forgotten zip on a stage costume was fixed in the wings, but the memory stayed _____.",
+          "sentence": "Victor felt _____ when his joke was explained and still no one laughed.",
           "answer": "embarrassed"
         },
         {
           "id": "set-073-q14",
           "code": "S073-Q14",
           "tag": "illness",
-          "sentence": "After the midnight birthday noodles, a tradition met a modern problem: a two-in-the-morning _____.",
+          "sentence": "Ben walked slowly along the corridor, holding a _____ in his belly.",
           "answer": "stomachache"
         },
         {
           "id": "set-073-q15",
           "code": "S073-Q15",
           "tag": "disasters",
-          "sentence": "The playground’s “ship” climbing frame looked, for one afternoon, as if it were in a real _____ .",
+          "sentence": "The _____ overflowed the drain, and water covered the footpath.",
           "answer": "flood"
         },
         {
           "id": "set-073-q16",
           "code": "S073-Q16",
           "tag": "habits",
-          "sentence": "The library leaves a _____ pupil in charge of the quiet-room door during study week.",
+          "sentence": "Maya is trusted and _____ with the class camera, and always returns the strap.",
           "answer": "responsible"
         },
         {
           "id": "set-073-q17",
           "code": "S073-Q17",
           "tag": "illness",
-          "sentence": "When the bottle hissed as we opened it, we checked the seal had been proper on the new _____.",
+          "sentence": "Rita felt sleepy after the night-time _____, as the chemist warned.",
           "answer": "medicine"
         },
         {
           "id": "set-073-q18",
           "code": "S073-Q18",
           "tag": "disasters",
-          "sentence": "A _____ net inspection is a quiet job until a stone is found, freshly caught, in the mesh.",
+          "sentence": "The _____ dropped soil onto the bike trail, closing it.",
           "answer": "landslide"
         },
         {
           "id": "set-073-q19",
           "code": "S073-Q19",
           "tag": "habits",
-          "sentence": "The lesson said a _____ body is not a perfect body; it is a body that is cared for.",
+          "sentence": "Sam ate more greens and less junk, aiming to be _____.",
           "answer": "healthy"
         },
         {
           "id": "set-073-q20",
           "code": "S073-Q20",
           "tag": "habits",
-          "sentence": "The _____ calligraphy ink had to be ground properly, and the teacher would not let us hurry it.",
+          "sentence": "Zoe was _____ and waited calmly with the class pet, letting it come to her hand.",
           "answer": "patient"
         },
         {
           "id": "set-073-q21",
           "code": "S073-Q21",
           "tag": "disasters",
-          "sentence": "The prayer for rain is old; the _____ that causes it is older, and also this year’s.",
+          "sentence": "A _____ with little rain made the camp cancel the water games.",
           "answer": "drought"
         },
         {
           "id": "set-073-q22",
           "code": "S073-Q22",
           "tag": "habits",
-          "sentence": "The bus company added a _____ late service on Fridays, now part of the weekly pattern.",
+          "sentence": "Cora keeps a _____ every week run on Mondays, same path, same start.",
           "answer": "regular"
         },
         {
           "id": "set-073-q23",
           "code": "S073-Q23",
           "tag": "illness",
-          "sentence": "When the neighbour drilled shelves at seven in the morning, our flat woke to irritation and a _____.",
+          "sentence": "After standing in the choir stalls, Hugh sat quickly with a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-073-q24",
           "code": "S073-Q24",
           "tag": "habits",
-          "sentence": "The twins now change their own bedsheets, a proud new item on their share of the _____.",
+          "sentence": "The weekly _____ included shaking the cushions, and Karl wiped the floor first.",
           "answer": "housework"
         },
         {
           "id": "set-073-q25",
           "code": "S073-Q25",
           "tag": "illness",
-          "sentence": "A sour pickle, loved by Grandpa, was paused this week out of respect for his _____.",
+          "sentence": "Lucy left the crunchy biscuit, stopped by a sharp _____ in a tooth.",
           "answer": "toothache"
         }
       ]
@@ -13745,183 +13745,183 @@ window.CLOZE_BANK = {
         "id": "set-074-ex",
         "code": "S074-EX",
         "tag": "example",
-        "sentence": "A cheese _____ in greaseproof paper travelled better than a soft bun on a hot bus.",
-        "answer": "sandwich"
+        "sentence": "Lucy was _____ during roll call, waiting with hands quietly down.",
+        "answer": "patient"
       },
       "items": [
         {
           "id": "set-074-q01",
           "code": "S074-Q01",
           "tag": "illness",
-          "sentence": "After the overnight temperature swings, the morning test at the clinic supported a diagnosis of _____.",
+          "sentence": "Ken had almost no voice, and every muscle ached from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-074-q02",
           "code": "S074-Q02",
           "tag": "disasters",
-          "sentence": "After a hot, still morning, a sudden wild sky warned us that a _____ was arriving, and no one ignored it.",
+          "sentence": "The tropical storm from the _____ filled the drains faster than usual.",
           "answer": "typhoon"
         },
         {
           "id": "set-074-q03",
           "code": "S074-Q03",
           "tag": "habits",
-          "sentence": "After answering a question meant for the other team, the quizzer sat down with a red face, clearly _____.",
+          "sentence": "Yuki felt _____ when her joke landed in silence.",
           "answer": "embarrassed"
         },
         {
           "id": "set-074-q04",
           "code": "S074-Q04",
           "tag": "illness",
-          "sentence": "A nervous swallow of air before the solo can bloat the stomach and feel like a mild _____.",
+          "sentence": "Amy drank only water, waiting for the _____ in her belly to fade.",
           "answer": "stomachache"
         },
         {
           "id": "set-074-q05",
           "code": "S074-Q05",
           "tag": "disasters",
-          "sentence": "Because a _____ can arrive at night, some families already keep a bag of essentials above the ground floor.",
+          "sentence": "The _____ came after midnight, water covering the basement ramp.",
           "answer": "flood"
         },
         {
           "id": "set-074-q06",
           "code": "S074-Q06",
           "tag": "habits",
-          "sentence": "A _____ medicine-box helper at camp (under an adult) does not guess a dose, but fetches the first-aider.",
+          "sentence": "A _____ monitor, Jack keeps the lost-and-found tidy each Friday.",
           "answer": "responsible"
         },
         {
           "id": "set-074-q07",
           "code": "S074-Q07",
           "tag": "illness",
-          "sentence": "A “may cause drowsiness” line meant no cycling until we knew how the _____ felt.",
+          "sentence": "Dad clicked the cap until it locked, then put the _____ bottle away.",
           "answer": "medicine"
         },
         {
           "id": "set-074-q08",
           "code": "S074-Q08",
           "tag": "disasters",
-          "sentence": "After the emergency wall was built, the next rain did not become a _____, which was the test.",
+          "sentence": "A _____ at dawn left mud across the only road to the village.",
           "answer": "landslide"
         },
         {
           "id": "set-074-q09",
           "code": "S074-Q09",
           "tag": "habits",
-          "sentence": "A _____ drink refill station in the playground made water the easy choice.",
+          "sentence": "Eva walked Grandma home, a _____ bit of movement after tea.",
           "answer": "healthy"
         },
         {
           "id": "set-074-q10",
           "code": "S074-Q10",
           "tag": "habits",
-          "sentence": "A _____ friend let the apology be said in full, without saying “it’s fine” too quickly to end it.",
+          "sentence": "Liam stayed _____ on the phone hold, and did not complain once.",
           "answer": "patient"
         },
         {
           "id": "set-074-q11",
           "code": "S074-Q11",
           "tag": "disasters",
-          "sentence": "The quiet after a short _____ is a particular quiet, full of people listening for a second movement.",
+          "sentence": "The ground shook twice in the _____, then everything went quiet.",
           "answer": "earthquake"
         },
         {
           "id": "set-074-q12",
           "code": "S074-Q12",
           "tag": "habits",
-          "sentence": "A _____ pass of the salt shaker was more of a slide, and the lid chose that moment to loosen.",
+          "sentence": "A _____ goodnight wave knocked the bedside lamp’s shade.",
           "answer": "clumsy"
         },
         {
           "id": "set-074-q13",
           "code": "S074-Q13",
           "tag": "illness",
-          "sentence": "A very sour sweet, eaten too fast, made my forehead wrinkle and then pulse with a short _____.",
+          "sentence": "Stan asked for the top bunk to be swapped; climbing worsened the _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-074-q14",
           "code": "S074-Q14",
           "tag": "disasters",
-          "sentence": "A _____ delay to the results was announced because the system had failed, a serious, official problem.",
+          "sentence": "The _____ cut on Maya’s knee was cleaned, but running was unwise.",
           "answer": "severe"
         },
         {
           "id": "set-074-q15",
           "code": "S074-Q15",
           "tag": "habits",
-          "sentence": "A _____ child at the picnic opened the large bag of crisps and passed it first, not last.",
+          "sentence": "A _____ surprise from the class was an extra book for the new pupil.",
           "answer": "generous"
         },
         {
           "id": "set-074-q16",
           "code": "S074-Q16",
           "tag": "illness",
-          "sentence": "The health talk showed how sugar left on teeth overnight can wake you with a _____.",
+          "sentence": "After the mouthguard night, Tess still woke with a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-074-q17",
           "code": "S074-Q17",
           "tag": "disasters",
-          "sentence": "A _____ of time went on a different form; this page was only for goods, and they ticked the rice.",
+          "sentence": "The _____ of packed schoolbags came from last year’s leavers.",
           "answer": "donation"
         },
         {
           "id": "set-074-q18",
           "code": "S074-Q18",
           "tag": "habits",
-          "sentence": "A teacher may _____ a quiet idea by repeating it to the class, with the pupil’s name attached.",
+          "sentence": "Grandad used kind words to _____ Zoe to ask for help.",
           "answer": "encourage"
         },
         {
           "id": "set-074-q19",
           "code": "S074-Q19",
           "tag": "illness",
-          "sentence": "A drafty window behind his bed left Kevin waking often, and by morning he had a chilly _____.",
+          "sentence": "Kate could not finish the dance because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-074-q20",
           "code": "S074-Q20",
           "tag": "habits",
-          "sentence": "A _____ lab technician has the samples ready when the lesson, scheduled for period three, actually begins.",
+          "sentence": "Nora whispered a sorry once, then stayed _____, on time and not late every day after.",
           "answer": "punctual"
         },
         {
           "id": "set-074-q21",
           "code": "S074-Q21",
           "tag": "habits",
-          "sentence": "A _____ vocabulary box, five new cards every school day, sits by the breakfast cups.",
+          "sentence": "Eric sends a kind text to Grandma on a _____ every week Sunday morning.",
           "answer": "regular"
         },
         {
           "id": "set-074-q22",
           "code": "S074-Q22",
           "tag": "illness",
-          "sentence": "When the rice cooker lid lifted, a burst of steam made Grandma turn aside with a _____.",
+          "sentence": "A crumb in his drink set off a short _____ in his throat at lunch.",
           "answer": "cough"
         },
         {
           "id": "set-074-q23",
           "code": "S074-Q23",
           "tag": "disasters",
-          "sentence": "A _____ notice is not an excuse for dirty hands; it is a reason to use a basin, not a running tap.",
+          "sentence": "The _____ cracked the dry soil in the class planter.",
           "answer": "drought"
         },
         {
           "id": "set-074-q24",
           "code": "S074-Q24",
           "tag": "habits",
-          "sentence": "A cupboard “edit” — taking things out, wiping, putting back — is slow but satisfying _____.",
+          "sentence": "Joel put the cleaning things back in the bucket, _____ finished.",
           "answer": "housework"
         },
         {
           "id": "set-074-q25",
           "code": "S074-Q25",
           "tag": "illness",
-          "sentence": "The granny flat kept a paper fan ready for any night when a _____ made sleep difficult.",
+          "sentence": "Pearl was too hot to wear a jumper, and the reading showed a _____.",
           "answer": "fever"
         }
       ]
@@ -13933,183 +13933,183 @@ window.CLOZE_BANK = {
         "id": "set-075-ex",
         "code": "S075-EX",
         "tag": "example",
-        "sentence": "The _____ along the coastal path — cliffs, sea, and a distant island — made the slow walk feel short.",
-        "answer": "scenery"
+        "sentence": "A _____ and shared extra offer of spare seats meant no one stood in the aisle.",
+        "answer": "generous"
       },
       "items": [
         {
           "id": "set-075-q01",
           "code": "S075-Q01",
           "tag": "disasters",
-          "sentence": "During the _____, even the weeds looked tired, which is how you know it has gone far.",
+          "sentence": "The long _____ left the village well low, with little rain still.",
           "answer": "drought"
         },
         {
           "id": "set-075-q02",
           "code": "S075-Q02",
           "tag": "habits",
-          "sentence": "The museum’s _____ free morning on the first Wednesday is marked on many family calendars.",
+          "sentence": "Rose waters the plants on a _____ schedule, every other day.",
           "answer": "regular"
         },
         {
           "id": "set-075-q03",
           "code": "S075-Q03",
           "tag": "illness",
-          "sentence": "A child who kicks off the quilt and still feels hot often has a climbing _____.",
+          "sentence": "The school office rang home as soon as they saw the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-075-q04",
           "code": "S075-Q04",
           "tag": "disasters",
-          "sentence": "An _____ safety rule is to stay away from windows, because glass can become a moving object.",
+          "sentence": "An _____ shook the science stand, and the class held the tray.",
           "answer": "earthquake"
         },
         {
           "id": "set-075-q05",
           "code": "S075-Q05",
           "tag": "habits",
-          "sentence": "The evening _____ is shorter if the afternoon one was honest; postponed crumbs only grow.",
+          "sentence": "Dusting the piano counted as _____, and Mark did it slowly.",
           "answer": "housework"
         },
         {
           "id": "set-075-q06",
           "code": "S075-Q06",
           "tag": "illness",
-          "sentence": "After mapping the field-trip route on a glowing laptop in bed, I deserved the late _____.",
+          "sentence": "Nell drank water slowly, waiting for the _____ in her head to fade.",
           "answer": "headache"
         },
         {
           "id": "set-075-q07",
           "code": "S075-Q07",
           "tag": "habits",
-          "sentence": "Because the suitcase was overfilled, a _____ zip-pull sent a sock onto the hotel carpet.",
+          "sentence": "Polly is _____ in crowds, always knocking someone’s elbow.",
           "answer": "clumsy"
         },
         {
           "id": "set-075-q08",
           "code": "S075-Q08",
           "tag": "illness",
-          "sentence": "When the class counted teeth on a model, one pupil pointed to the exact place of his own _____.",
+          "sentence": "Victor chose mashed potato, not roast bits, because of a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-075-q09",
           "code": "S075-Q09",
           "tag": "habits",
-          "sentence": "The _____ club treasurer found a way to cover one member’s fee, quietly, from a small surplus.",
+          "sentence": "A _____ neighbour shared extra umbrellas when the rain began.",
           "answer": "generous"
         },
         {
           "id": "set-075-q10",
           "code": "S075-Q10",
           "tag": "illness",
-          "sentence": "The morning broadcast paused for a second after the prefect’s unexpected _____.",
+          "sentence": "Vera kept a water bottle close all morning for the _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-075-q11",
           "code": "S075-Q11",
           "tag": "habits",
-          "sentence": "The _____ swimming teacher waited until the child was ready to float, and did not force the moment.",
+          "sentence": "The helper stayed _____, waiting and showing the step again.",
           "answer": "patient"
         },
         {
           "id": "set-075-q12",
           "code": "S075-Q12",
           "tag": "illness",
-          "sentence": "When the leftover sushi had travelled without an ice pack, we did not need the later _____ to know it was unwise.",
+          "sentence": "Leo sat very still after the bumpy tram ride, holding his tummy through a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-075-q13",
           "code": "S075-Q13",
           "tag": "disasters",
-          "sentence": "The flooding risk was rated _____, which is why the lower floors were emptied in the afternoon.",
+          "sentence": "A _____ injury to Maya’s hand meant she could not hold the racket.",
           "answer": "severe"
         },
         {
           "id": "set-075-q14",
           "code": "S075-Q14",
           "tag": "habits",
-          "sentence": "Family members _____ a recovering relative with visits and hopeful talk, not with sighs only.",
+          "sentence": "Dad’s kind whistle from the side helped _____ Faith to keep running.",
           "answer": "encourage"
         },
         {
           "id": "set-075-q15",
           "code": "S075-Q15",
           "tag": "illness",
-          "sentence": "The hospital app showed the next refill date for the long-term _____.",
+          "sentence": "Tina waited for the _____ to settle in the spoon before taking it.",
           "answer": "medicine"
         },
         {
           "id": "set-075-q16",
           "code": "S075-Q16",
           "tag": "disasters",
-          "sentence": "The school’s annual _____ drive has a list, a date, and a promise that leftovers will also be usefully sent.",
+          "sentence": "A packed _____ of clothes went out in a box after Saturday.",
           "answer": "donation"
         },
         {
           "id": "set-075-q17",
           "code": "S075-Q17",
           "tag": "habits",
-          "sentence": "When the baby’s clinic slot is 2:40, a _____ parent is in the chair then, not still parking at 2:50.",
+          "sentence": "Ted packed his bag at night so mornings could stay _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-075-q18",
           "code": "S075-Q18",
           "tag": "illness",
-          "sentence": "When the class sat on the hall floor for the talk, some pupils stood at the back to avoid a _____.",
+          "sentence": "During the market trip, Ryan asked to rest; his back hurt with a _____.",
           "answer": "backache"
         },
         {
           "id": "set-075-q19",
           "code": "S075-Q19",
           "tag": "disasters",
-          "sentence": "The science lesson used a satellite photo of a _____’s eye, a clear circle in a swirl of cloud.",
+          "sentence": "The _____ siren on the news, and the strong wind, made Dad check the window locks.",
           "answer": "typhoon"
         },
         {
           "id": "set-075-q20",
           "code": "S075-Q20",
           "tag": "habits",
-          "sentence": "The “silent” alarm clock chose the quiet exam hall to be tested, and its owner was _____.",
+          "sentence": "Chris felt _____ when his stomach was louder than the piano.",
           "answer": "embarrassed"
         },
         {
           "id": "set-075-q21",
           "code": "S075-Q21",
           "tag": "illness",
-          "sentence": "The staff-room kettle worked overtime while three teachers recovered from the same _____.",
+          "sentence": "Will shivered under two blankets, weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-075-q22",
           "code": "S075-Q22",
           "tag": "disasters",
-          "sentence": "Shopkeepers wrung out their floor mats after a short _____, grateful it had only been ankle-deep.",
+          "sentence": "After the _____, shoes were left to dry where water had covered the lobby.",
           "answer": "flood"
         },
         {
           "id": "set-075-q23",
           "code": "S075-Q23",
           "tag": "habits",
-          "sentence": "Being _____ for a shared locker means not leaving someone else’s things on the floor.",
+          "sentence": "Iris locked the music room, as a _____ helper should.",
           "answer": "responsible"
         },
         {
           "id": "set-075-q24",
           "code": "S075-Q24",
           "tag": "disasters",
-          "sentence": "A _____ of garden soil from a failed planter wall is small, but it teaches the same idea: wet earth moves down.",
+          "sentence": "A _____ of mud on the slope on the country path made the walk unsafe.",
           "answer": "landslide"
         },
         {
           "id": "set-075-q25",
           "code": "S075-Q25",
           "tag": "habits",
-          "sentence": "After less salt on the table, the food still tasted good, and the check-up was more _____.",
+          "sentence": "Nora felt _____ after cutting junk food for a month.",
           "answer": "healthy"
         }
       ]
@@ -14121,183 +14121,183 @@ window.CLOZE_BANK = {
         "id": "set-076-ex",
         "code": "S076-EX",
         "tag": "example",
-        "sentence": "A metal _____ of a fish stands in the courtyard, and we are not to climb it, however tempting.",
-        "answer": "sculpture"
+        "sentence": "Jane asked for help with her shoes; a _____ in her back made bending hard.",
+        "answer": "backache"
       },
       "items": [
         {
           "id": "set-076-q01",
           "code": "S076-Q01",
           "tag": "habits",
-          "sentence": "When two identical coats were swapped, the mix-up was found at home, and both families felt _____.",
+          "sentence": "Zoe felt _____ after saying ‘Mum’ to the teacher by accident.",
           "answer": "embarrassed"
         },
         {
           "id": "set-076-q02",
           "code": "S076-Q02",
           "tag": "illness",
-          "sentence": "After a careful swallow with plenty of water, the tablet form of the _____ was gone.",
+          "sentence": "A second dose of _____ was due after lunch, said the label.",
           "answer": "medicine"
         },
         {
           "id": "set-076-q03",
           "code": "S076-Q03",
           "tag": "disasters",
-          "sentence": "A _____ shortage of staff at the clinic meant only urgent cases, a grim and clear notice.",
+          "sentence": "A _____ storm’s damage meant the outdoor canteen could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-076-q04",
           "code": "S076-Q04",
           "tag": "habits",
-          "sentence": "A _____ head-counter at the aquarium entrance gives the same number twice before the group moves.",
+          "sentence": "Jack locked the storeroom, then showed the teacher, being _____.",
           "answer": "responsible"
         },
         {
           "id": "set-076-q05",
           "code": "S076-Q05",
           "tag": "illness",
-          "sentence": "After packing the storeroom with leftover Sports Day water, the prefects moved slowly, one of them holding a _____.",
+          "sentence": "The hard stadium seat woke a _____ in Carl’s back.",
           "answer": "backache"
         },
         {
           "id": "set-076-q06",
           "code": "S076-Q06",
           "tag": "disasters",
-          "sentence": "A _____ of unused uniform, washed and mended, is one of the kindest gifts a leavers’ class can give.",
+          "sentence": "The choir packed a _____ of warm socks into two boxes.",
           "answer": "donation"
         },
         {
           "id": "set-076-q07",
           "code": "S076-Q07",
           "tag": "habits",
-          "sentence": "A _____ evening is earlier lights and no heavy meal at ten, so the body can rest.",
+          "sentence": "Nina joined the morning stretch, a simple _____ with fruit and water start.",
           "answer": "healthy"
         },
         {
           "id": "set-076-q08",
           "code": "S076-Q08",
           "tag": "illness",
-          "sentence": "A dry throat before the oral exam brought a nervous _____, so the teacher offered water first.",
+          "sentence": "The morning assembly went quiet after Eric’s sudden _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-076-q09",
           "code": "S076-Q09",
           "tag": "disasters",
-          "sentence": "Loose bamboo, left on a roof, became a spear in the last _____, so now it is stored inside.",
+          "sentence": "A warning for the _____ went out as the wind grew stronger.",
           "answer": "typhoon"
         },
         {
           "id": "set-076-q10",
           "code": "S076-Q10",
           "tag": "habits",
-          "sentence": "A _____ stamp-collector checks both sides slowly, rather than tearing a page in excitement.",
+          "sentence": "The nurse liked how Ryan waited, still and _____, not rushing her.",
           "answer": "patient"
         },
         {
           "id": "set-076-q11",
           "code": "S076-Q11",
           "tag": "illness",
-          "sentence": "The school office logged the time we collected him, noting a suspected _____ at noon.",
+          "sentence": "Hot palms and a dull stare marked the start of a _____.",
           "answer": "fever"
         },
         {
           "id": "set-076-q12",
           "code": "S076-Q12",
           "tag": "disasters",
-          "sentence": "After a mild _____, the school’s message to parents was sent within minutes: all well, drill used.",
+          "sentence": "The ground shook twice, a short _____ that rattled the letterboxes.",
           "answer": "earthquake"
         },
         {
           "id": "set-076-q13",
           "code": "S076-Q13",
           "tag": "habits",
-          "sentence": "The club’s message board is used to _____ members who missed a session to come to the next one.",
+          "sentence": "The coach used kind words to _____ the team at half time.",
           "answer": "encourage"
         },
         {
           "id": "set-076-q14",
           "code": "S076-Q14",
           "tag": "illness",
-          "sentence": "The indoor market’s mix of fried food and stuffy air sent us to the exit with more than one _____.",
+          "sentence": "A tight _____ in his head made Wade stop halfway through the worksheet.",
           "answer": "headache"
         },
         {
           "id": "set-076-q15",
           "code": "S076-Q15",
           "tag": "disasters",
-          "sentence": "A _____ risk rises when the tide is high and the rain has nowhere to go but the street.",
+          "sentence": "Water covered the tram stop in the _____, and people waited higher up.",
           "answer": "flood"
         },
         {
           "id": "set-076-q16",
           "code": "S076-Q16",
           "tag": "habits",
-          "sentence": "A _____ choir accompanist is on the bench before the choir files in, so the first note is not delayed.",
+          "sentence": "Sean treated the start time as a promise, and so stayed _____.",
           "answer": "punctual"
         },
         {
           "id": "set-076-q17",
           "code": "S076-Q17",
           "tag": "illness",
-          "sentence": "A cracked enamel line, barely visible, still managed to cause a surprising _____.",
+          "sentence": "A _____ in a tooth made the metal water bottle feel too cold on Yuki’s lip.",
           "answer": "toothache"
         },
         {
           "id": "set-076-q18",
           "code": "S076-Q18",
           "tag": "disasters",
-          "sentence": "The village’s WhatsApp group has a photo folder only for cracks, because cracks can grow into a _____.",
+          "sentence": "After the _____, orange mesh covered the muddy hill beside the field.",
           "answer": "landslide"
         },
         {
           "id": "set-076-q19",
           "code": "S076-Q19",
           "tag": "habits",
-          "sentence": "A _____ stitch-and-chat evening, first Thursday, keeps the craft group together all year.",
+          "sentence": "A _____ every week vitamin time is fixed at breakfast for Gary.",
           "answer": "regular"
         },
         {
           "id": "set-076-q20",
           "code": "S076-Q20",
           "tag": "habits",
-          "sentence": "After the fruit snack, a sticky table was wiped at once, which made the later _____ lighter.",
+          "sentence": "A short burst of _____ before lunch left the kitchen shining and the floor wiped.",
           "answer": "housework"
         },
         {
           "id": "set-076-q21",
           "code": "S076-Q21",
           "tag": "disasters",
-          "sentence": "The _____ was local: one valley was dry and cracked, but the next was still green after rain.",
+          "sentence": "A summer _____, with little rain, left the playground fountain switched off.",
           "answer": "drought"
         },
         {
           "id": "set-076-q22",
           "code": "S076-Q22",
           "tag": "habits",
-          "sentence": "The _____ lab student palmed the stopper and then watched it roll under the bench.",
+          "sentence": "The tray tipped because _____ Zack turned too quickly.",
           "answer": "clumsy"
         },
         {
           "id": "set-076-q23",
           "code": "S076-Q23",
           "tag": "illness",
-          "sentence": "A child who falls asleep at ten in the morning, aching and hot, is often in the grip of the _____.",
+          "sentence": "Hot and cold turns, plus aches all over, showed the _____.",
           "answer": "flu"
         },
         {
           "id": "set-076-q24",
           "code": "S076-Q24",
           "tag": "habits",
-          "sentence": "A _____ neighbour’s Wi-Fi password, shared during a month of broken service, was given with a smile.",
+          "sentence": "Sara was _____ and shared extra and offered her last sticker to a disappointed child.",
           "answer": "generous"
         },
         {
           "id": "set-076-q25",
           "code": "S076-Q25",
           "tag": "illness",
-          "sentence": "The PE warm-up was changed to gentle stretches for anyone who arrived already holding a _____.",
+          "sentence": "The bus’s stop-start motion brought back Polly’s _____ in her tummy.",
           "answer": "stomachache"
         }
       ]
@@ -14309,183 +14309,183 @@ window.CLOZE_BANK = {
         "id": "set-077-ex",
         "code": "S077-EX",
         "tag": "example",
-        "sentence": "A bold _____ stole a bun from the pier rail and was gone before anyone could shout.",
-        "answer": "seagull"
+        "sentence": "The dry air in the hall started a _____ in Tess’s throat.",
+        "answer": "cough"
       },
       "items": [
         {
           "id": "set-077-q01",
           "code": "S077-Q01",
           "tag": "illness",
-          "sentence": "After the choir’s long rehearsal, a dry mouth and a known weak tooth combined into a mild _____.",
+          "sentence": "A _____ in a tooth started when Joel yawned too wide in the lesson.",
           "answer": "toothache"
         },
         {
           "id": "set-077-q02",
           "code": "S077-Q02",
           "tag": "disasters",
-          "sentence": "Herds were driven up the ridge as soon as a _____ began to swallow the lower grass.",
+          "sentence": "The _____ left water covering the school’s back gate all morning.",
           "answer": "flood"
         },
         {
           "id": "set-077-q03",
           "code": "S077-Q03",
           "tag": "habits",
-          "sentence": "A smile across the exam hall is not allowed; a smile the day before can still _____ a friend.",
+          "sentence": "The tutor used kind words to _____ Ken when a page looked long.",
           "answer": "encourage"
         },
         {
           "id": "set-077-q04",
           "code": "S077-Q04",
           "tag": "illness",
-          "sentence": "When last year’s _____ returned to the news, Grandma checked our rest and soup supplies.",
+          "sentence": "The first day back at school, Lucy still felt weak after the _____.",
           "answer": "flu"
         },
         {
           "id": "set-077-q05",
           "code": "S077-Q05",
           "tag": "disasters",
-          "sentence": "A _____ closed the school for a day, not for rain on the roof, but for mud on the only road in.",
+          "sentence": "A _____ after the storm left rocks beside the village shop.",
           "answer": "landslide"
         },
         {
           "id": "set-077-q06",
           "code": "S077-Q06",
           "tag": "habits",
-          "sentence": "The last MTR train will not wait; only _____ travellers are through the gate in time.",
+          "sentence": "Will kept his shoes by the door, a small trick to stay _____, early and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-077-q07",
           "code": "S077-Q07",
           "tag": "illness",
-          "sentence": "After the sweet mango sticky rice and a fizzy drink, the combination sat as a heavy _____.",
+          "sentence": "A _____ in his tummy followed the greasy pastry, and Owen drank warm tea.",
           "answer": "stomachache"
         },
         {
           "id": "set-077-q08",
           "code": "S077-Q08",
           "tag": "disasters",
-          "sentence": "The farmer sold the second pump, unused, in a wet year, and regretted it in the _____.",
+          "sentence": "During the _____, the news talked about little rain and careful use.",
           "answer": "drought"
         },
         {
           "id": "set-077-q09",
           "code": "S077-Q09",
           "tag": "habits",
-          "sentence": "The science lab’s _____ equipment audit is the last Friday of every month, never skipped.",
+          "sentence": "Carl has a _____ seat on the early bus, week after week.",
           "answer": "regular"
         },
         {
           "id": "set-077-q10",
           "code": "S077-Q10",
           "tag": "habits",
-          "sentence": "A borrowed ladder helped with the high shelves, the only dramatic moment of Saturday’s _____.",
+          "sentence": "The balcony plants were dripped on when Otto mopped, mid-_____.",
           "answer": "housework"
         },
         {
           "id": "set-077-q11",
           "code": "S077-Q11",
           "tag": "disasters",
-          "sentence": "A _____ report includes wave height at sea, because ships feel the wind long before the city does.",
+          "sentence": "The _____ tore a flag, and the tropical storm soaked the field.",
           "answer": "typhoon"
         },
         {
           "id": "set-077-q12",
           "code": "S077-Q12",
           "tag": "habits",
-          "sentence": "A _____ high-five after the goal met a water bottle on the wall hook instead.",
+          "sentence": "Rose knocked the glue stick off the desk in a _____ moment.",
           "answer": "clumsy"
         },
         {
           "id": "set-077-q13",
           "code": "S077-Q13",
           "tag": "illness",
-          "sentence": "After the sandcastle competition, fine sand on the wind gave more than one family a light _____.",
+          "sentence": "Judy wrote a note instead of speaking, saving her throat from a _____.",
           "answer": "cough"
         },
         {
           "id": "set-077-q14",
           "code": "S077-Q14",
           "tag": "disasters",
-          "sentence": "The _____ was not a flood or a windstorm; the ground itself shook and would not stay still.",
+          "sentence": "A short _____ shook the playground, and the skippers stopped.",
           "answer": "earthquake"
         },
         {
           "id": "set-077-q15",
           "code": "S077-Q15",
           "tag": "habits",
-          "sentence": "A kind correction of “sir” to “miss” was accepted with an _____ nod.",
+          "sentence": "Wendy felt _____ when a photo of her baby curls appeared on screen.",
           "answer": "embarrassed"
         },
         {
           "id": "set-077-q16",
           "code": "S077-Q16",
           "tag": "illness",
-          "sentence": "When the second reading matched the first, we stopped hoping it was a mistake and treated the _____.",
+          "sentence": "Mark drank slowly, still hot, waiting for the _____ to ease.",
           "answer": "fever"
         },
         {
           "id": "set-077-q17",
           "code": "S077-Q17",
           "tag": "disasters",
-          "sentence": "The storm was already on the map; what changed was the word _____, when the gusts passed a higher mark.",
+          "sentence": "A _____ damage bill meant the old changing rooms could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-077-q18",
           "code": "S077-Q18",
           "tag": "habits",
-          "sentence": "The play needs a _____ props lead who knows if a cup is on stage or still in the wings.",
+          "sentence": "The trusted, _____ team made a rota, and Jane kept to her day.",
           "answer": "responsible"
         },
         {
           "id": "set-077-q19",
           "code": "S077-Q19",
           "tag": "illness",
-          "sentence": "A forgotten pair of reading glasses meant leaning close to the script, and the actor paid with a _____.",
+          "sentence": "The bump on the bus and the noise together started a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-077-q20",
           "code": "S077-Q20",
           "tag": "habits",
-          "sentence": "The “try one new vegetable” game made the week’s dinners more interesting and more _____.",
+          "sentence": "The class grew beans and talked about _____ with fruit and water food from the garden.",
           "answer": "healthy"
         },
         {
           "id": "set-077-q21",
           "code": "S077-Q21",
           "tag": "habits",
-          "sentence": "When the results were due “after four”, a _____ class packed up and waited, instead of crowding the office at 3:50.",
+          "sentence": "Nora was _____ and waited calmly on the phone hold, humming rather than sighing.",
           "answer": "patient"
         },
         {
           "id": "set-077-q22",
           "code": "S077-Q22",
           "tag": "illness",
-          "sentence": "A spare bottle was not kept “just in case” at school without the nurse’s written plan for that _____.",
+          "sentence": "The label said to finish all the _____, even if Chris felt better.",
           "answer": "medicine"
         },
         {
           "id": "set-077-q23",
           "code": "S077-Q23",
           "tag": "disasters",
-          "sentence": "The receipt was small, pink, and important, because a _____ should be traceable, not lost in a story.",
+          "sentence": "A _____ of packed warm socks went into the collection bag at the gate.",
           "answer": "donation"
         },
         {
           "id": "set-077-q24",
           "code": "S077-Q24",
           "tag": "habits",
-          "sentence": "The _____ cook doubled the soup “because soup should be plenty”, and it was.",
+          "sentence": "A _____ gift of extra tickets went to classmates who had none.",
           "answer": "generous"
         },
         {
           "id": "set-077-q25",
           "code": "S077-Q25",
           "tag": "illness",
-          "sentence": "The wheelchair-access ramp practice meant long walks in a slight stoop, and the helper finished with a _____.",
+          "sentence": "Ted left the bowling early, holding a _____ in his back.",
           "answer": "backache"
         }
       ]
@@ -14497,183 +14497,183 @@ window.CLOZE_BANK = {
         "id": "set-078-ex",
         "code": "S078-EX",
         "tag": "example",
-        "sentence": "If the rain thickens, use the bus _____, not a tree, and wait for a message from the leader.",
-        "answer": "shelter"
+        "sentence": "Iris felt burning hot and stayed at the clinic with a _____.",
+        "answer": "fever"
       },
       "items": [
         {
           "id": "set-078-q01",
           "code": "S078-Q01",
           "tag": "disasters",
-          "sentence": "The hanging bicycle in the shop window swung, a slightly comic sign of a very small _____.",
+          "sentence": "During an _____, people stood in doorways as the floor shook.",
           "answer": "earthquake"
         },
         {
           "id": "set-078-q02",
           "code": "S078-Q02",
           "tag": "habits",
-          "sentence": "A _____ gift of time was the whole Saturday spent helping a classmate catch up, without a boast.",
+          "sentence": "A _____ and shared extra gift of spare raincoats appeared just as the sky darkened.",
           "answer": "generous"
         },
         {
           "id": "set-078-q03",
           "code": "S078-Q03",
           "tag": "illness",
-          "sentence": "A warm neck and a flushed chest accompanied the _____ that kept her out of the picnic.",
+          "sentence": "The thermometer case sat by the bed through Judy’s _____.",
           "answer": "fever"
         },
         {
           "id": "set-078-q04",
           "code": "S078-Q04",
           "tag": "disasters",
-          "sentence": "A _____ warning about the damaged stairs was taped to the door, red, not a polite suggestion.",
+          "sentence": "A _____ pain in Leo’s wrist made the test writing too hard.",
           "answer": "severe"
         },
         {
           "id": "set-078-q05",
           "code": "S078-Q05",
           "tag": "habits",
-          "sentence": "When the cat wove between her feet, a _____ freeze still ended with a bumped stool.",
+          "sentence": "Hugh sat on his own hat, then sighed at the _____ and dropped it crumple.",
           "answer": "clumsy"
         },
         {
           "id": "set-078-q06",
           "code": "S078-Q06",
           "tag": "illness",
-          "sentence": "The hill bus’s sharp turns made reading unwise, and soon I was holding my temples with a _____.",
+          "sentence": "Carl kept his eyes on the floor, dodging bright light and a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-078-q07",
           "code": "S078-Q07",
           "tag": "disasters",
-          "sentence": "A _____ of mosquito nets, in their packs, went north, with a letter that listed the exact number.",
+          "sentence": "The winter _____ of packed coats filled the hall before they were taken.",
           "answer": "donation"
         },
         {
           "id": "set-078-q08",
           "code": "S078-Q08",
           "tag": "habits",
-          "sentence": "After tripping on a cable that everyone else had noticed, the speaker stood, smiled, and felt _____.",
+          "sentence": "Ruby felt _____ after a burp in the quiet moment of the play.",
           "answer": "embarrassed"
         },
         {
           "id": "set-078-q09",
           "code": "S078-Q09",
           "tag": "illness",
-          "sentence": "The choir’s high notes were risky for anyone with even a hint of a _____.",
+          "sentence": "The PE teacher sent Gary to rest after a string of _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-078-q10",
           "code": "S078-Q10",
           "tag": "habits",
-          "sentence": "A _____ yearbook editor, in charge of captions, checks they match the right faces.",
+          "sentence": "Ben was trusted with the register, a clearly _____ job.",
           "answer": "responsible"
         },
         {
           "id": "set-078-q11",
           "code": "S078-Q11",
           "tag": "habits",
-          "sentence": "A _____ breathing exercise at the start of choir, every single rehearsal, settles the room.",
+          "sentence": "The running group is _____, same hill, same dawn, every Saturday.",
           "answer": "regular"
         },
         {
           "id": "set-078-q12",
           "code": "S078-Q12",
           "tag": "illness",
-          "sentence": "The choir’s high notes would have to wait; half the altos were at home with the _____.",
+          "sentence": "The _____, still weak, faded slowly, leaving Jack tired but less achy.",
           "answer": "flu"
         },
         {
           "id": "set-078-q13",
           "code": "S078-Q13",
           "tag": "disasters",
-          "sentence": "A _____ under the flyover is common in this dip, and the city now posts a depth marker there.",
+          "sentence": "The _____ made the lane a stream, water covering the kerb.",
           "answer": "flood"
         },
         {
           "id": "set-078-q14",
           "code": "S078-Q14",
           "tag": "habits",
-          "sentence": "When guests cooked, the hosts still did the floors, a polite division of the remaining _____.",
+          "sentence": "A Saturday _____ began with the bathroom tiles and ended at the bins.",
           "answer": "housework"
         },
         {
           "id": "set-078-q15",
           "code": "S078-Q15",
           "tag": "illness",
-          "sentence": "A new spicy sauce from the shop was labelled “extra hot”, and the first brave try ended in a _____.",
+          "sentence": "A low _____ in her tummy stayed after the long car park walk, so Nina sat.",
           "answer": "stomachache"
         },
         {
           "id": "set-078-q16",
           "code": "S078-Q16",
           "tag": "disasters",
-          "sentence": "Engineers prefer a drained, planted slope to a bare one, because roots and drains fight a _____.",
+          "sentence": "A night _____ sent mud over the catch fence at the hill’s foot.",
           "answer": "landslide"
         },
         {
           "id": "set-078-q17",
           "code": "S078-Q17",
           "tag": "habits",
-          "sentence": "A _____ return after illness starts with light food and a short walk, not a huge feast and a race.",
+          "sentence": "Grandma said a _____ life needs sleep, fruit, and fresh air.",
           "answer": "healthy"
         },
         {
           "id": "set-078-q18",
           "code": "S078-Q18",
           "tag": "illness",
-          "sentence": "The chemist’s paper bag was folded twice, to keep the _____ private on the bus home.",
+          "sentence": "The inhaler sat beside the _____ syrup, both clearly labelled.",
           "answer": "medicine"
         },
         {
           "id": "set-078-q19",
           "code": "S078-Q19",
           "tag": "disasters",
-          "sentence": "A _____ makes historians look up old diaries, to see how a great-grandparent managed a similar sky.",
+          "sentence": "After a long _____ with little rain, the soil in the pot cracked.",
           "answer": "drought"
         },
         {
           "id": "set-078-q20",
           "code": "S078-Q20",
           "tag": "habits",
-          "sentence": "The _____ chef rested the meat, though the table was hungry, because cutting early would spoil it.",
+          "sentence": "A _____ helper waited while a classmate counted the coins again.",
           "answer": "patient"
         },
         {
           "id": "set-078-q21",
           "code": "S078-Q21",
           "tag": "illness",
-          "sentence": "Because the guitar strap was too long, Ryan hunched over the strings and paid with a _____.",
+          "sentence": "The nurse had Pearl lie on her side to check the _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-078-q22",
           "code": "S078-Q22",
           "tag": "disasters",
-          "sentence": "The estate manager locked the roof access as soon as the _____ watch began.",
+          "sentence": "The school posted a _____ holiday as the tropical storm came closer.",
           "answer": "typhoon"
         },
         {
           "id": "set-078-q23",
           "code": "S078-Q23",
           "tag": "habits",
-          "sentence": "The drama teacher’s warm-up includes a line to _____ anyone whose voice feels small that morning.",
+          "sentence": "The club used kind cheers to _____ every runner, not just the first.",
           "answer": "encourage"
         },
         {
           "id": "set-078-q24",
           "code": "S078-Q24",
           "tag": "illness",
-          "sentence": "The soft pillow could not help; lying on that side only made the _____ in his tooth feel worse.",
+          "sentence": "Rita asked for a soft bun, protecting a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-078-q25",
           "code": "S078-Q25",
           "tag": "habits",
-          "sentence": "A _____ workshop tutor starts the demo at the minute written on the door sign.",
+          "sentence": "The choir began at eight sharp, and _____ Sara was already standing.",
           "answer": "punctual"
         }
       ]
@@ -14685,183 +14685,183 @@ window.CLOZE_BANK = {
         "id": "set-079-ex",
         "code": "S079-EX",
         "tag": "example",
-        "sentence": "A _____ of umbrellas at the gate meant three pupils shared, and the office now keeps a spare box.",
-        "answer": "shortage"
+        "sentence": "Ryan used both palms at his temples, breathing through a _____.",
+        "answer": "headache"
       },
       "items": [
         {
           "id": "set-079-q01",
           "code": "S079-Q01",
           "tag": "habits",
-          "sentence": "We _____ a nervous prefect by walking the route with them once, then letting them lead.",
+          "sentence": "A kind sticker on the page helped _____ Sam to write more.",
           "answer": "encourage"
         },
         {
           "id": "set-079-q02",
           "code": "S079-Q02",
           "tag": "illness",
-          "sentence": "The quiet room next to the office has a bed exactly for moments when a _____ makes class impossible.",
+          "sentence": "Sean asked Grandma to rub his tummy, as she used to, for the _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-079-q03",
           "code": "S079-Q03",
           "tag": "disasters",
-          "sentence": "During a _____, we do not stand at the shore “to see the waves”; the wind can take a person off the rocks.",
+          "sentence": "Strong wind in the _____ bent the young trees almost flat.",
           "answer": "typhoon"
         },
         {
           "id": "set-079-q04",
           "code": "S079-Q04",
           "tag": "habits",
-          "sentence": "Because the substitute teacher was _____, the class did not lose the first ten minutes of the lesson.",
+          "sentence": "The visitor noticed how _____, on time and not late the class monitors were, including Rita.",
           "answer": "punctual"
         },
         {
           "id": "set-079-q05",
           "code": "S079-Q05",
           "tag": "illness",
-          "sentence": "When two children were ill with different problems, their _____ stayed on different shelves.",
+          "sentence": "Tina thanked the chemist and checked the bag for the _____ twice.",
           "answer": "medicine"
         },
         {
           "id": "set-079-q06",
           "code": "S079-Q06",
           "tag": "disasters",
-          "sentence": "After the river burst its banks and brown water entered the lane, the radio warned everyone about the _____.",
+          "sentence": "After the _____, water still covered the basement lights.",
           "answer": "flood"
         },
         {
           "id": "set-079-q07",
           "code": "S079-Q07",
           "tag": "habits",
-          "sentence": "The dairy delivers a _____ milk order on Tuesdays and Fridays, the same two bottles each time.",
+          "sentence": "The scout meeting is _____, always the same hall and hour.",
           "answer": "regular"
         },
         {
           "id": "set-079-q08",
           "code": "S079-Q08",
           "tag": "illness",
-          "sentence": "After the family hike to the Peak via the back path, even the fittest cousin asked for a patch for his _____.",
+          "sentence": "The plastic stool in the canteen started a _____ in his back for Will.",
           "answer": "backache"
         },
         {
           "id": "set-079-q09",
           "code": "S079-Q09",
           "tag": "disasters",
-          "sentence": "A _____ in the news is often a brown triangle on a green hill, ugly and very exact.",
+          "sentence": "The _____ of mud on the slope risk kept the hiking club off the steep route.",
           "answer": "landslide"
         },
         {
           "id": "set-079-q10",
           "code": "S079-Q10",
           "tag": "habits",
-          "sentence": "The life-skills badge includes two weeks of logged _____, signed by a parent each time.",
+          "sentence": "The hallway floor dried after Stan mopped, ending the _____.",
           "answer": "housework"
         },
         {
           "id": "set-079-q11",
           "code": "S079-Q11",
           "tag": "illness",
-          "sentence": "A first-aid ice pack on the cheek was only a short comfort for the deep _____.",
+          "sentence": "Ken held a warm mug to his cheek to soothe a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-079-q12",
           "code": "S079-Q12",
           "tag": "disasters",
-          "sentence": "The drought, in its _____ phase, had already emptied the smaller reservoirs, which was the official phrase.",
+          "sentence": "The _____ swelling in Otto’s knee looked dangerous, so he sat out.",
           "answer": "severe"
         },
         {
           "id": "set-079-q13",
           "code": "S079-Q13",
           "tag": "habits",
-          "sentence": "Being _____ with the class fund’s password and the book is a pair of duties, not a prize.",
+          "sentence": "Amy is trusted and _____ about the goldfish on weekends, too, not just at school.",
           "answer": "responsible"
         },
         {
           "id": "set-079-q14",
           "code": "S079-Q14",
           "tag": "illness",
-          "sentence": "A written “return after _____” date on the calendar became the family’s short-term goal.",
+          "sentence": "Jane shivered under two blankets, worn out by the _____.",
           "answer": "flu"
         },
         {
           "id": "set-079-q15",
           "code": "S079-Q15",
           "tag": "disasters",
-          "sentence": "The grandparents’ _____ was a quietly large cheque, and the thank-you was a letter, not a ceremony, at their request.",
+          "sentence": "Maya helped sort a _____ of clothes by size on the hall floor.",
           "answer": "donation"
         },
         {
           "id": "set-079-q16",
           "code": "S079-Q16",
           "tag": "habits",
-          "sentence": "After the sports day training, water and fruit at the stall kept the helpers _____.",
+          "sentence": "Hugo packed a _____ with fruit and water box: cucumber, rice balls, and an apple.",
           "answer": "healthy"
         },
         {
           "id": "set-079-q17",
           "code": "S079-Q17",
           "tag": "illness",
-          "sentence": "A mouthful of sparkling water at the wedding banquet set off a polite but stubborn _____.",
+          "sentence": "The class waited while Daisy got through a long _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-079-q18",
           "code": "S079-Q18",
           "tag": "disasters",
-          "sentence": "During the _____, the city’s grass was left to yellow, a public, honest choice.",
+          "sentence": "The _____ and the lack of rain made the river crossing easy, and sad.",
           "answer": "drought"
         },
         {
           "id": "set-079-q19",
           "code": "S079-Q19",
           "tag": "habits",
-          "sentence": "A _____ puzzle club has a rule: no one spoils the solution; you wait and let others think.",
+          "sentence": "The choir stayed _____ and waited calmly while the pianist found the right page.",
           "answer": "patient"
         },
         {
           "id": "set-079-q20",
           "code": "S079-Q20",
           "tag": "habits",
-          "sentence": "The _____ ticket-holder gave the better view to a shorter friend, and sat behind cheerfully.",
+          "sentence": "Gary gave more stickers than needed, a _____ surprise for the team.",
           "answer": "generous"
         },
         {
           "id": "set-079-q21",
           "code": "S079-Q21",
           "tag": "disasters",
-          "sentence": "During the _____, the shaking floor made us feel seasick even though we were on dry land.",
+          "sentence": "A short _____ trembled through the ground, then the news app buzzed.",
           "answer": "earthquake"
         },
         {
           "id": "set-079-q22",
           "code": "S079-Q22",
           "tag": "habits",
-          "sentence": "The _____ calligrapher’s wide sleeve, not the brush, made the extra mark on the scroll.",
+          "sentence": "Tess stacked cups too high, a _____ and dropped it plan that ended badly.",
           "answer": "clumsy"
         },
         {
           "id": "set-079-q23",
           "code": "S079-Q23",
           "tag": "illness",
-          "sentence": "The doctor explained that a _____ is the body’s temperature rising to fight illness.",
+          "sentence": "The midnight check showed the high _____ had climbed again.",
           "answer": "fever"
         },
         {
           "id": "set-079-q24",
           "code": "S079-Q24",
           "tag": "habits",
-          "sentence": "The leftover confetti in the hair the next day, in the classroom, felt festive and _____.",
+          "sentence": "Jack gave a tight, _____ smile after mixing up the two words, and he felt red.",
           "answer": "embarrassed"
         },
         {
           "id": "set-079-q25",
           "code": "S079-Q25",
           "tag": "illness",
-          "sentence": "After the inter-school singing contest’s long wait backstage, the lights and nerves became a _____.",
+          "sentence": "The long spelling list left Rose with a _____ in her head.",
           "answer": "headache"
         }
       ]
@@ -14873,183 +14873,183 @@ window.CLOZE_BANK = {
         "id": "set-080-ex",
         "code": "S080-EX",
         "tag": "example",
-        "sentence": "The morning was for _____, with a list of three places and a promise to be back before three.",
-        "answer": "sightseeing"
+        "sentence": "Zoe said little at lunch, speaking softly because of a _____ in a tooth.",
+        "answer": "toothache"
       },
       "items": [
         {
           "id": "set-080-q01",
           "code": "S080-Q01",
           "tag": "illness",
-          "sentence": "A single mosquito’s whine around the ear all night was enough to greet dawn with a _____.",
+          "sentence": "Hugh pressed his brow; the _____ in his head was still there.",
           "answer": "headache"
         },
         {
           "id": "set-080-q02",
           "code": "S080-Q02",
           "tag": "disasters",
-          "sentence": "After the last _____, some farms began to keep special seed that can still grow with very little rain.",
+          "sentence": "A long _____, with little rain, left the rooftop garden needing careful, small drinks.",
           "answer": "drought"
         },
         {
           "id": "set-080-q03",
           "code": "S080-Q03",
           "tag": "habits",
-          "sentence": "A _____ lunchbox photo on the class board was there to share ideas, not to judge.",
+          "sentence": "Yuki and Mum cooked more greens, aiming for _____ week-night dinners.",
           "answer": "healthy"
         },
         {
           "id": "set-080-q04",
           "code": "S080-Q04",
           "tag": "illness",
-          "sentence": "When braces were tightened that afternoon, a wide ache felt like a general _____, though it would pass.",
+          "sentence": "A _____ in a tooth made Ruby skip the crunchy salad topping.",
           "answer": "toothache"
         },
         {
           "id": "set-080-q05",
           "code": "S080-Q05",
           "tag": "disasters",
-          "sentence": "After the _____, we did not use the lift, as the poster had always said, even though the power was on.",
+          "sentence": "A light _____ still made the hanging plants swing.",
           "answer": "earthquake"
         },
         {
           "id": "set-080-q06",
           "code": "S080-Q06",
           "tag": "habits",
-          "sentence": "The _____ infant-class teacher retied a bow three times, with the same kind face each time.",
+          "sentence": "Will stayed _____ and waited calmly during a slow group project, and kept kind.",
           "answer": "patient"
         },
         {
           "id": "set-080-q07",
           "code": "S080-Q07",
           "tag": "illness",
-          "sentence": "After the crowded MTR ride in raincoats, the first sign of the _____ was a sudden all-over ache.",
+          "sentence": "Ivan lost two days of school to the _____, aching from head to foot.",
           "answer": "flu"
         },
         {
           "id": "set-080-q08",
           "code": "S080-Q08",
           "tag": "habits",
-          "sentence": "A _____ parent bought two extra workbooks for the class, so nobody would share uncomfortably.",
+          "sentence": "A _____ family sent extra blankets, more than the drive had asked for.",
           "answer": "generous"
         },
         {
           "id": "set-080-q09",
           "code": "S080-Q09",
           "tag": "illness",
-          "sentence": "After breakfast, the forehead felt cooler, and we celebrated a lower _____ on the chart.",
+          "sentence": "A _____ came on quickly; Lila was hot by the end of maths.",
           "answer": "fever"
         },
         {
           "id": "set-080-q10",
           "code": "S080-Q10",
           "tag": "habits",
-          "sentence": "A _____ down-put of the tray on an unseen spoon made a short, bright clatter.",
+          "sentence": "Victor is less _____ and dropped it when he holds things with both hands.",
           "answer": "clumsy"
         },
         {
           "id": "set-080-q11",
           "code": "S080-Q11",
           "tag": "disasters",
-          "sentence": "A _____ cold snap closed the outdoor swimming pool, and the notice said “until further notice”, seriously.",
+          "sentence": "The _____ storm damage meant the roof playground could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-080-q12",
           "code": "S080-Q12",
           "tag": "habits",
-          "sentence": "When the “private” practice of a pop song was overheard, the singer was _____ but kept going.",
+          "sentence": "Maya felt _____ when she entered from the wrong side of the stage.",
           "answer": "embarrassed"
         },
         {
           "id": "set-080-q13",
           "code": "S080-Q13",
           "tag": "illness",
-          "sentence": "A highlighted line said “after food”, so the evening meal came first and the _____ followed.",
+          "sentence": "Ryan took the tablet of _____ with a full glass of water.",
           "answer": "medicine"
         },
         {
           "id": "set-080-q14",
           "code": "S080-Q14",
           "tag": "disasters",
-          "sentence": "A _____ was given to the charity in Grandma’s name, with her name on the card and the money going to the real work.",
+          "sentence": "The school’s _____ of packed old storybooks found a new shelf.",
           "answer": "donation"
         },
         {
           "id": "set-080-q15",
           "code": "S080-Q15",
           "tag": "habits",
-          "sentence": "A _____ weather-watcher for Sports Day is trusted to tell a teacher at once if the sky changes.",
+          "sentence": "The trusted, _____ pupil waited until the last parent had come.",
           "answer": "responsible"
         },
         {
           "id": "set-080-q16",
           "code": "S080-Q16",
           "tag": "illness",
-          "sentence": "The clay tiles for the model village were lifted in stacks, and the group’s teacher later mentioned a _____.",
+          "sentence": "After winding up fairy lights, Sara had a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-080-q17",
           "code": "S080-Q17",
           "tag": "disasters",
-          "sentence": "A _____ name, once retired after terrible damage, is a reminder written in the weather records.",
+          "sentence": "The _____ passed the harbour, and waves slapped the wall in the wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-080-q18",
           "code": "S080-Q18",
           "tag": "habits",
-          "sentence": "The science judge’s comment was written to _____ further work, not to close the project down.",
+          "sentence": "A kind clap from the class helped _____ Kate to the last line.",
           "answer": "encourage"
         },
         {
           "id": "set-080-q19",
           "code": "S080-Q19",
           "tag": "illness",
-          "sentence": "The classroom plants were watered from above, and a drip on the radiator filled the air with a smell that started a _____.",
+          "sentence": "The first word of the speech was lost in a sudden _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-080-q20",
           "code": "S080-Q20",
           "tag": "habits",
-          "sentence": "A _____ table reservation is honoured when the guests sit down at the hour they booked.",
+          "sentence": "The teacher ticked Vera as _____, in her seat and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-080-q21",
           "code": "S080-Q21",
           "tag": "habits",
-          "sentence": "A _____ shoe-polish on Sunday night is how the twins keep their school shoes ready.",
+          "sentence": "Karl does a _____ ten-minute tidy each evening at eight.",
           "answer": "regular"
         },
         {
           "id": "set-080-q22",
           "code": "S080-Q22",
           "tag": "illness",
-          "sentence": "After eating too close to bedtime, a night-time _____ made the clock seem very loud.",
+          "sentence": "Rita could not finish the bun, stopped by a sudden _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-080-q23",
           "code": "S080-Q23",
           "tag": "disasters",
-          "sentence": "A _____ of bath-warm rainwater, dirty and slow, is still a reason not to play in it.",
+          "sentence": "During the _____, water covered the car-park lines completely.",
           "answer": "flood"
         },
         {
           "id": "set-080-q24",
           "code": "S080-Q24",
           "tag": "habits",
-          "sentence": "A quiet podcast makes the ironing pile feel shorter, though the _____ is the same size.",
+          "sentence": "A pile of clean towels meant the laundry part of the _____ was over.",
           "answer": "housework"
         },
         {
           "id": "set-080-q25",
           "code": "S080-Q25",
           "tag": "disasters",
-          "sentence": "When the path’s outer edge crumbled, walkers were sent down a long way, ahead of a possible _____.",
+          "sentence": "The _____ sent a mix of mud and roots down the track.",
           "answer": "landslide"
         }
       ]
@@ -15061,183 +15061,183 @@ window.CLOZE_BANK = {
         "id": "set-081-ex",
         "code": "S081-EX",
         "tag": "example",
-        "sentence": "Make a quick _____ of the plant first, then add the labels, so the science page stays clear.",
-        "answer": "sketch"
+        "sentence": "Mum kept the house quiet so Pearl could sleep off the _____, still weak.",
+        "answer": "flu"
       },
       "items": [
         {
           "id": "set-081-q01",
           "code": "S081-Q01",
           "tag": "disasters",
-          "sentence": "The pain after the fall was _____, so no one moved the pupil until the first-aider arrived.",
+          "sentence": "The _____ swelling after the bee sting made Nina’s hand too stiff.",
           "answer": "severe"
         },
         {
           "id": "set-081-q02",
           "code": "S081-Q02",
           "tag": "habits",
-          "sentence": "A parent’s “I saw you try” can _____ a child who came last and still finished.",
+          "sentence": "The class clapped in a kind way to _____ Jack onto the stage.",
           "answer": "encourage"
         },
         {
           "id": "set-081-q03",
           "code": "S081-Q03",
           "tag": "illness",
-          "sentence": "A rainy day of board games on the floor sounded cosy until everyone’s backs ached; Tina had the worst _____.",
+          "sentence": "Zack asked for the front minibus seat to ease a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-081-q04",
           "code": "S081-Q04",
           "tag": "disasters",
-          "sentence": "The science club sold old batteries to a recycler, and even that small sum became a _____ to the garden fund.",
+          "sentence": "A _____ of packed unused craft kits went to the Saturday club.",
           "answer": "donation"
         },
         {
           "id": "set-081-q05",
           "code": "S081-Q05",
           "tag": "habits",
-          "sentence": "The school’s late desk would be quieter if more pupils were _____ in the first place.",
+          "sentence": "The booked slot was at four, and _____, early and ready Hugh stood outside at four.",
           "answer": "punctual"
         },
         {
           "id": "set-081-q06",
           "code": "S081-Q06",
           "tag": "illness",
-          "sentence": "During the silent reading period, I buried my face in my sleeve to hide a sudden _____.",
+          "sentence": "Laughing at the cartoon turned into a painful _____ in her throat for Faith.",
           "answer": "cough"
         },
         {
           "id": "set-081-q07",
           "code": "S081-Q07",
           "tag": "disasters",
-          "sentence": "The classroom map of last year’s _____ tracks looks like a handful of strings across the sea.",
+          "sentence": "The _____ closed the hill path; strong wind made walking unsafe.",
           "answer": "typhoon"
         },
         {
           "id": "set-081-q08",
           "code": "S081-Q08",
           "tag": "habits",
-          "sentence": "The library wipes the computers on a _____ after-school rota, one short clean every weekday.",
+          "sentence": "The art club is a _____ event every Tuesday, always at four.",
           "answer": "regular"
         },
         {
           "id": "set-081-q09",
           "code": "S081-Q09",
           "tag": "illness",
-          "sentence": "The camp rule is simple: report a hot forehead at once so a _____ can be checked.",
+          "sentence": "The reading dropped a little, but the high _____ had not gone.",
           "answer": "fever"
         },
         {
           "id": "set-081-q10",
           "code": "S081-Q10",
           "tag": "habits",
-          "sentence": "After the ink spill, blotting and then mopping became an emergency item of _____.",
+          "sentence": "Wade swept under the sofa and found a lost sock in the _____, including the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-081-q11",
           "code": "S081-Q11",
           "tag": "habits",
-          "sentence": "A _____ sky-watcher stayed for the moon to clear the roof, and was rewarded.",
+          "sentence": "The class was _____ and waited calmly, giving the shy speaker a little more time.",
           "answer": "patient"
         },
         {
           "id": "set-081-q12",
           "code": "S081-Q12",
           "tag": "illness",
-          "sentence": "The classroom heater sat under my desk, too warm, and a sluggish _____ arrived by recess.",
+          "sentence": "Tess left the carnival early, a _____ in her head from the noise.",
           "answer": "headache"
         },
         {
           "id": "set-081-q13",
           "code": "S081-Q13",
           "tag": "disasters",
-          "sentence": "The school’s ground-floor storeroom is now on shelves, after a _____ once ruined the lowest boxes.",
+          "sentence": "A short _____ still left water covering the basement store room.",
           "answer": "flood"
         },
         {
           "id": "set-081-q14",
           "code": "S081-Q14",
           "tag": "habits",
-          "sentence": "The _____ student emptied the pencil case onto the table and said, “Take what you need.”",
+          "sentence": "A _____ and shared extra gift of spare scarves went to anyone who felt cold.",
           "answer": "generous"
         },
         {
           "id": "set-081-q15",
           "code": "S081-Q15",
           "tag": "illness",
-          "sentence": "After the sweet pineapple bun and no water, the afternoon lesson was lost to a growing _____.",
+          "sentence": "The dentist used a gentle numbing gel before treating the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-081-q16",
           "code": "S081-Q16",
           "tag": "disasters",
-          "sentence": "A _____ of wet soil can bury a drain and then, later, make a flood; the first problem is still the slope.",
+          "sentence": "A hillside _____ left soil on the only path to the lookout.",
           "answer": "landslide"
         },
         {
           "id": "set-081-q17",
           "code": "S081-Q17",
           "tag": "habits",
-          "sentence": "Because two people turned in one narrow aisle, a _____ basket-bump sent an orange travelling.",
+          "sentence": "The shopkeeper smiled as _____ Lila almost toppled a tin tower.",
           "answer": "clumsy"
         },
         {
           "id": "set-081-q18",
           "code": "S081-Q18",
           "tag": "illness",
-          "sentence": "The health announcement asked families not to send children to school in the early days of the _____.",
+          "sentence": "A sudden _____ left Maya weak and aching by the afternoon.",
           "answer": "flu"
         },
         {
           "id": "set-081-q19",
           "code": "S081-Q19",
           "tag": "disasters",
-          "sentence": "The well’s rope had a new, lower knot, tied during the _____, and no one untied it later, for a while.",
+          "sentence": "The _____, with little rain, dried the clay in the art yard until it crumbled.",
           "answer": "drought"
         },
         {
           "id": "set-081-q20",
           "code": "S081-Q20",
           "tag": "habits",
-          "sentence": "A formal thanks to the “organising teacher” named the wrong teacher, and the speaker felt _____.",
+          "sentence": "Sam felt _____ to see spinach on his teeth in the group shot.",
           "answer": "embarrassed"
         },
         {
           "id": "set-081-q21",
           "code": "S081-Q21",
           "tag": "illness",
-          "sentence": "A “slow down and chew” poster in the canteen is there because rushed meals often lead to a _____.",
+          "sentence": "Hugo breathed slowly in the sick room, a _____ in his stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-081-q22",
           "code": "S081-Q22",
           "tag": "disasters",
-          "sentence": "An _____ recorded as “light” can still drop a vase, which is why the vase now lives on the floor.",
+          "sentence": "During an _____, the floor shook, and the lights shivered.",
           "answer": "earthquake"
         },
         {
           "id": "set-081-q23",
           "code": "S081-Q23",
           "tag": "habits",
-          "sentence": "The hostel’s _____ lights monitor turns the common room off at the agreed time, even mid-game.",
+          "sentence": "Cora stayed until the last chair was stacked, a _____ duty.",
           "answer": "responsible"
         },
         {
           "id": "set-081-q24",
           "code": "S081-Q24",
           "tag": "illness",
-          "sentence": "The follow-up blood test would show whether this _____ needed a change of dose.",
+          "sentence": "The nurse watched Nora take the first dose of _____ correctly.",
           "answer": "medicine"
         },
         {
           "id": "set-081-q25",
           "code": "S081-Q25",
           "tag": "habits",
-          "sentence": "The doctor said “keep being _____” and meant the walks, the greens, and the sleep together.",
+          "sentence": "The nurse said a _____ body needs both food and movement.",
           "answer": "healthy"
         }
       ]
@@ -15249,183 +15249,183 @@ window.CLOZE_BANK = {
         "id": "set-082-ex",
         "code": "S082-EX",
         "tag": "example",
-        "sentence": "A small _____ from the trip — a postcard, not a huge toy — fitted in the bag and pleased Grandma.",
-        "answer": "souvenir"
+        "sentence": "Judy lay on her side at home, knees up, easing a _____ in her tummy.",
+        "answer": "stomachache"
       },
       "items": [
         {
           "id": "set-082-q01",
           "code": "S082-Q01",
           "tag": "habits",
-          "sentence": "After a very enthusiastic air-guitar in a suddenly quiet room, the enthusiast was _____.",
+          "sentence": "Lucy felt _____ when her bag unzipped itself in the queue.",
           "answer": "embarrassed"
         },
         {
           "id": "set-082-q02",
           "code": "S082-Q02",
           "tag": "illness",
-          "sentence": "A heavy-headed, heavy-legged Wednesday was later explained as day two of the _____.",
+          "sentence": "Leo could barely lift a spoon, so weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-082-q03",
           "code": "S082-Q03",
           "tag": "disasters",
-          "sentence": "A _____ escaped from a burst uphill pipe and still behaved like any flood: it found the basement first.",
+          "sentence": "After the _____, mud showed where water had covered the pitch.",
           "answer": "flood"
         },
         {
           "id": "set-082-q04",
           "code": "S082-Q04",
           "tag": "habits",
-          "sentence": "A _____ buddy at the swimming gala stays with the assigned swimmer until they are with a coach.",
+          "sentence": "A trusted, _____ choice: Owen stayed to help wipe the boards.",
           "answer": "responsible"
         },
         {
           "id": "set-082-q05",
           "code": "S082-Q05",
           "tag": "illness",
-          "sentence": "When the ferry rolled and lunch had been huge, a queasy _____ sent us out to the deck.",
+          "sentence": "A sudden _____ in her tummy made Tina miss the second half of the film.",
           "answer": "stomachache"
         },
         {
           "id": "set-082-q06",
           "code": "S082-Q06",
           "tag": "disasters",
-          "sentence": "The memorial plaque by the road names a year and a _____, and asks drivers to respect the barriers.",
+          "sentence": "A _____ of mud on the slope near the country-park path closed the short cut.",
           "answer": "landslide"
         },
         {
           "id": "set-082-q07",
           "code": "S082-Q07",
           "tag": "habits",
-          "sentence": "A _____ alternative to the daily cupcake was a homemade oat bar, still a treat, but kinder.",
+          "sentence": "A _____ with fruit and water habit, Otto stretches before sitting down to games.",
           "answer": "healthy"
         },
         {
           "id": "set-082-q08",
           "code": "S082-Q08",
           "tag": "illness",
-          "sentence": "A small card in the wallet listed emergency _____ for the allergy, with the clinic number.",
+          "sentence": "Dad checked the expiry date before opening the new _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-082-q09",
           "code": "S082-Q09",
           "tag": "disasters",
-          "sentence": "During the _____, some families moved for a season to a place where a river still ran.",
+          "sentence": "The _____ dried the school garden, as no rain came for weeks.",
           "answer": "drought"
         },
         {
           "id": "set-082-q10",
           "code": "S082-Q10",
           "tag": "habits",
-          "sentence": "When the form was long, a _____ clerk sat with the family until the last box was clear.",
+          "sentence": "A _____ friend waited at the corner and did not ring twice.",
           "answer": "patient"
         },
         {
           "id": "set-082-q11",
           "code": "S082-Q11",
           "tag": "illness",
-          "sentence": "After the incense coil in the corridor, the security guard stepped outside to clear a _____.",
+          "sentence": "The football cheer died in Karl’s throat and became a _____.",
           "answer": "cough"
         },
         {
           "id": "set-082-q12",
           "code": "S082-Q12",
           "tag": "disasters",
-          "sentence": "When the teacher’s cup made a small journey across the desk, the class named it, correctly, an _____.",
+          "sentence": "During a short _____, the chairs trembled, then sat still.",
           "answer": "earthquake"
         },
         {
           "id": "set-082-q13",
           "code": "S082-Q13",
           "tag": "habits",
-          "sentence": "The team circle before kick-off is there to _____, with names and reasons, not only with shouts.",
+          "sentence": "A kind cheer from the bench helped _____ Jane to take the shot.",
           "answer": "encourage"
         },
         {
           "id": "set-082-q14",
           "code": "S082-Q14",
           "tag": "illness",
-          "sentence": "A sticky back and a burning brow in the small hours pointed to a midnight _____.",
+          "sentence": "The morning reading was lower, yet the high _____ still lingered.",
           "answer": "fever"
         },
         {
           "id": "set-082-q15",
           "code": "S082-Q15",
           "tag": "disasters",
-          "sentence": "A _____ storm warning, with the type of weather already stated, told us only how serious the next hours would be.",
+          "sentence": "The _____ swelling behind Hugh’s knee looked worse by the afternoon.",
           "answer": "severe"
         },
         {
           "id": "set-082-q16",
           "code": "S082-Q16",
           "tag": "habits",
-          "sentence": "A _____ weather report on the radio begins at six fifty, and this presenter always does, not a minute later.",
+          "sentence": "A _____, early and ready pupil, Cora never made the group wait at the gate.",
           "answer": "punctual"
         },
         {
           "id": "set-082-q17",
           "code": "S082-Q17",
           "tag": "illness",
-          "sentence": "After the chemistry experiment’s sharp smell, the windows were opened, but a leftover _____ remained.",
+          "sentence": "Victor sat with his head in his hands at the canteen, mid-_____.",
           "answer": "headache"
         },
         {
           "id": "set-082-q18",
           "code": "S082-Q18",
           "tag": "disasters",
-          "sentence": "A _____ of board games, complete, with all the pieces, was a harder, better gift than a broken heap.",
+          "sentence": "Iris labelled a packed _____ of tins in the collection box.",
           "answer": "donation"
         },
         {
           "id": "set-082-q19",
           "code": "S082-Q19",
           "tag": "habits",
-          "sentence": "A _____ family video call at six on Sundays is the one appointment Grandma never misses.",
+          "sentence": "Mark returns library books on a _____ every week day, always Friday.",
           "answer": "regular"
         },
         {
           "id": "set-082-q20",
           "code": "S082-Q20",
           "tag": "habits",
-          "sentence": "The morning _____ is only cups and the hob; the heavier jobs wait for the weekend slot.",
+          "sentence": "Sara cleaned the fan cover, then ticked that _____ box with a smile.",
           "answer": "housework"
         },
         {
           "id": "set-082-q21",
           "code": "S082-Q21",
           "tag": "disasters",
-          "sentence": "When the pressure dropped quickly, Grandpa said a _____ was tightening, and he was right.",
+          "sentence": "A sudden _____ warning, plus the strong wind, sent families home from the park.",
           "answer": "typhoon"
         },
         {
           "id": "set-082-q22",
           "code": "S082-Q22",
           "tag": "habits",
-          "sentence": "The _____ intern labelled the wrong lid and then dropped the correct one, just to complete the morning.",
+          "sentence": "Chris dropped his chopsticks, sighed, and called himself _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-082-q23",
           "code": "S082-Q23",
           "tag": "illness",
-          "sentence": "A family history of weak enamel made the dentist extra firm about treating this _____ early.",
+          "sentence": "Mum booked the dentist when Maya’s _____ lasted two days.",
           "answer": "toothache"
         },
         {
           "id": "set-082-q24",
           "code": "S082-Q24",
           "tag": "habits",
-          "sentence": "A _____ landlord of the shop below the school still lets the choir store boxes, rent-free, in a corner.",
+          "sentence": "Faith was _____ and shared extra and passed her spare umbrella along the queue, unasked.",
           "answer": "generous"
         },
         {
           "id": "set-082-q25",
           "code": "S082-Q25",
           "tag": "illness",
-          "sentence": "When the fire-drill had us crouch along the corridor, one teacher stood up carefully because of a _____.",
+          "sentence": "The long violin practice on a stool left Vera with a _____ in her back.",
           "answer": "backache"
         }
       ]
@@ -15437,183 +15437,183 @@ window.CLOZE_BANK = {
         "id": "set-083-ex",
         "code": "S083-EX",
         "tag": "example",
-        "sentence": "The new music room is _____, with space for the drums and still a path to the door.",
-        "answer": "spacious"
+        "sentence": "Joel kept the _____ on a tray with a spoon and a cup.",
+        "answer": "medicine"
       },
       "items": [
         {
           "id": "set-083-q01",
           "code": "S083-Q01",
           "tag": "illness",
-          "sentence": "A tight ponytail for the gymnastics ribbon routine looked clean and then announced itself as a _____.",
+          "sentence": "Yuki put her homework away early, beaten by a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-083-q02",
           "code": "S083-Q02",
           "tag": "disasters",
-          "sentence": "An _____ plan that lives only in a drawer is not a plan; ours is practised, a little badly, twice a year.",
+          "sentence": "An _____ made the library shelves tremble, but the books stayed.",
           "answer": "earthquake"
         },
         {
           "id": "set-083-q03",
           "code": "S083-Q03",
           "tag": "habits",
-          "sentence": "A _____ kick to close the car door caught a bag strap and pulled a book onto the road, almost.",
+          "sentence": "Daisy bumped the door frame with the box, a classic _____ move.",
           "answer": "clumsy"
         },
         {
           "id": "set-083-q04",
           "code": "S083-Q04",
           "tag": "illness",
-          "sentence": "The bus ride over speed bumps was unusually cruel to anyone with a bouncing _____.",
+          "sentence": "The nurse sent Sam home, agreeing it was a _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-083-q05",
           "code": "S083-Q05",
           "tag": "disasters",
-          "sentence": "The flooding of the archives was _____, a cultural loss, not only a mopping job.",
+          "sentence": "The _____ pain in Rita’s elbow meant the serve had to stop.",
           "answer": "severe"
         },
         {
           "id": "set-083-q06",
           "code": "S083-Q06",
           "tag": "habits",
-          "sentence": "The _____ birthday child asked for donations to the animal shelter instead of more toys, and smiled about it.",
+          "sentence": "A _____ and shared extra gift of spare jumpers warmed pupils who had forgotten theirs.",
           "answer": "generous"
         },
         {
           "id": "set-083-q07",
           "code": "S083-Q07",
           "tag": "illness",
-          "sentence": "The visiting nurse used a non-contact thermometer and nodded: a mild _____ was present.",
+          "sentence": "Mum compared both cheeks and said Wade’s high _____ was still up.",
           "answer": "fever"
         },
         {
           "id": "set-083-q08",
           "code": "S083-Q08",
           "tag": "disasters",
-          "sentence": "The class agreed that a _____ should be counted in the open, so that trust, as well as kindness, would remain.",
+          "sentence": "The school packed a _____ of unused instruments in a marked box.",
           "answer": "donation"
         },
         {
           "id": "set-083-q09",
           "code": "S083-Q09",
           "tag": "habits",
-          "sentence": "Friends _____ a classmate to apologise, and then they go with them, which is also a kind of courage.",
+          "sentence": "A kind phrase from the judge helped _____ Ben after a small slip.",
           "answer": "encourage"
         },
         {
           "id": "set-083-q10",
           "code": "S083-Q10",
           "tag": "habits",
-          "sentence": "When the judge said “time”, the _____ timekeeper’s clock already matched, because it had started on the signal.",
+          "sentence": "The early bus made _____ Gary even earlier, in his seat first.",
           "answer": "punctual"
         },
         {
           "id": "set-083-q11",
           "code": "S083-Q11",
           "tag": "disasters",
-          "sentence": "A _____ risk talk in assembly used photographs, not to frighten, but to explain why some gates stay locked in rain.",
+          "sentence": "The _____ warning meant no PE on the hill-side courts.",
           "answer": "landslide"
         },
         {
           "id": "set-083-q12",
           "code": "S083-Q12",
           "tag": "habits",
-          "sentence": "The school’s _____ evacuation map check happens each September, year after year.",
+          "sentence": "A _____ every week trip to the bookshop is Judy’s first-Saturday treat.",
           "answer": "regular"
         },
         {
           "id": "set-083-q13",
           "code": "S083-Q13",
           "tag": "illness",
-          "sentence": "When the dog was lively but every human in the flat was in bed, the _____ had visited the people only.",
+          "sentence": "Eva felt tearful and tired, as some people do with the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-083-q14",
           "code": "S083-Q14",
           "tag": "disasters",
-          "sentence": "During the _____, a child asked whether the sea could be used, and the answer was a long, careful science lesson.",
+          "sentence": "The _____, with little rain, kept the sprinklers off, even as the grass yellowed.",
           "answer": "drought"
         },
         {
           "id": "set-083-q15",
           "code": "S083-Q15",
           "tag": "habits",
-          "sentence": "A faded chore chart was redrawn, because a clear list is how shared _____ stays fair.",
+          "sentence": "The bin bags went down, and that finished Nell’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-083-q16",
           "code": "S083-Q16",
           "tag": "illness",
-          "sentence": "After the bake-sale brownies, sampled too freely by the bakers, the committee admitted a shared _____.",
+          "sentence": "Kate sat out of the dance, holding her tummy through a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-083-q17",
           "code": "S083-Q17",
           "tag": "disasters",
-          "sentence": "The older windows still have shutters built for a _____’s wind, not just for decoration.",
+          "sentence": "The _____ shook the window bars as the tropical storm peaked.",
           "answer": "typhoon"
         },
         {
           "id": "set-083-q18",
           "code": "S083-Q18",
           "tag": "habits",
-          "sentence": "The wrong language on the greeting card was noticed mid-handover, and both friends felt _____.",
+          "sentence": "Jack felt _____ after calling out an answer that was last week’s.",
           "answer": "embarrassed"
         },
         {
           "id": "set-083-q19",
           "code": "S083-Q19",
           "tag": "illness",
-          "sentence": "After we counted the remaining tablets, we knew the _____ would last until Friday only.",
+          "sentence": "Pearl packed cotton wool around the _____ bottle in her bag.",
           "answer": "medicine"
         },
         {
           "id": "set-083-q20",
           "code": "S083-Q20",
           "tag": "habits",
-          "sentence": "Being _____ for leftover paint means sealing the pots, because dried paint helps no one.",
+          "sentence": "Maya told the truth about the broken beaker, as a trusted, _____ pupil would.",
           "answer": "responsible"
         },
         {
           "id": "set-083-q21",
           "code": "S083-Q21",
           "tag": "habits",
-          "sentence": "After the family limited takeaway to twice a month, energy in the mornings felt more _____.",
+          "sentence": "A _____ week included two rest days and plenty of fruit.",
           "answer": "healthy"
         },
         {
           "id": "set-083-q22",
           "code": "S083-Q22",
           "tag": "illness",
-          "sentence": "After installing the classroom projector, the technician held his back and took the lift, because of a _____.",
+          "sentence": "A _____ in his back made Eric leave the shopping early.",
           "answer": "backache"
         },
         {
           "id": "set-083-q23",
           "code": "S083-Q23",
           "tag": "disasters",
-          "sentence": "The boardwalk disappeared under a _____, and only the lamp posts marked where to walk later.",
+          "sentence": "After the _____, helpers swept where water had covered the hall.",
           "answer": "flood"
         },
         {
           "id": "set-083-q24",
           "code": "S083-Q24",
           "tag": "habits",
-          "sentence": "The _____ film director asked for one more quiet take, and the crew stayed still.",
+          "sentence": "Vera waited calmly in the long queue, staying _____ until her turn.",
           "answer": "patient"
         },
         {
           "id": "set-083-q25",
           "code": "S083-Q25",
           "tag": "illness",
-          "sentence": "The sports commentator had to pass the microphone when a live _____ interrupted the goal call.",
+          "sentence": "A loud _____ made Holly step out of the quiet museum room.",
           "answer": "cough"
         }
       ]
@@ -15625,183 +15625,183 @@ window.CLOZE_BANK = {
         "id": "set-084-ex",
         "code": "S084-EX",
         "tag": "example",
-        "sentence": "The inter-school final will be in the city _____, so we will need a longer travel time than usual.",
-        "answer": "stadium"
+        "sentence": "Mark was already lining up when the whistle went, calmly _____, on time and not late.",
+        "answer": "punctual"
       },
       "items": [
         {
           "id": "set-084-q01",
           "code": "S084-Q01",
           "tag": "disasters",
-          "sentence": "The school bell was hard to hear in the first gusts of the _____, even before the official signal rose.",
+          "sentence": "The _____ passed at night, strong wind rattling the letterboxes.",
           "answer": "typhoon"
         },
         {
           "id": "set-084-q02",
           "code": "S084-Q02",
           "tag": "habits",
-          "sentence": "When the chair gave a loud squeak in the silent library, its sitter felt briefly _____.",
+          "sentence": "Jane felt _____ after her voice came out as a squeak.",
           "answer": "embarrassed"
         },
         {
           "id": "set-084-q03",
           "code": "S084-Q03",
           "tag": "illness",
-          "sentence": "The nurse practised the spray technique with a trainer device before the real _____ was used.",
+          "sentence": "The leaflet said the _____ bottle might taste of berries, and it did.",
           "answer": "medicine"
         },
         {
           "id": "set-084-q04",
           "code": "S084-Q04",
           "tag": "disasters",
-          "sentence": "A _____ siren test is loud, but not as loud as the day the water really crossed the bank.",
+          "sentence": "A night _____ left water covering the playground tiles.",
           "answer": "flood"
         },
         {
           "id": "set-084-q05",
           "code": "S084-Q05",
           "tag": "habits",
-          "sentence": "A _____ trip-form collector does not submit a pile until every name is ticked.",
+          "sentence": "Sean returned the spare key at once, as a trusted, _____ pupil should.",
           "answer": "responsible"
         },
         {
           "id": "set-084-q06",
           "code": "S084-Q06",
           "tag": "illness",
-          "sentence": "The dragon-boat paddle warm-up on land already hinted at tomorrow’s _____ for anyone with a weak back.",
+          "sentence": "Cora rubbed her spine after a _____ started in the garden.",
           "answer": "backache"
         },
         {
           "id": "set-084-q07",
           "code": "S084-Q07",
           "tag": "disasters",
-          "sentence": "After the pumps and the nets, the slope looked engineered, and everyone hoped the next rain would not start a _____.",
+          "sentence": "The _____ was heard as a low rumble, then mud appeared.",
           "answer": "landslide"
         },
         {
           "id": "set-084-q08",
           "code": "S084-Q08",
           "tag": "habits",
-          "sentence": "A _____ posture habit — shoulders easy, feet on the floor — is part of a well body too.",
+          "sentence": "A _____ evening is a short walk, then sleep on time.",
           "answer": "healthy"
         },
         {
           "id": "set-084-q09",
           "code": "S084-Q09",
           "tag": "illness",
-          "sentence": "A dusty fan blown towards the desks sent a wave of _____ through the back row.",
+          "sentence": "Dust from the chalk set off a _____ in Iris’s throat.",
           "answer": "cough"
         },
         {
           "id": "set-084-q10",
           "code": "S084-Q10",
           "tag": "habits",
-          "sentence": "A _____ tea-maker lets the leaves steep the full time, not a restless half minute.",
+          "sentence": "Being _____ and waited calmly, Eric let the elderly neighbour take the first lift.",
           "answer": "patient"
         },
         {
           "id": "set-084-q11",
           "code": "S084-Q11",
           "tag": "habits",
-          "sentence": "A _____ ten-minute tidy at 4:00 p.m. in the art room keeps the sinks clear all term.",
+          "sentence": "Sam practises the piano at a _____ time, every day after homework.",
           "answer": "regular"
         },
         {
           "id": "set-084-q12",
           "code": "S084-Q12",
           "tag": "illness",
-          "sentence": "A delayed birthday tea was rebooked for the week after the _____ had gone.",
+          "sentence": "The _____ left Owen weak, with aches all over his body.",
           "answer": "flu"
         },
         {
           "id": "set-084-q13",
           "code": "S084-Q13",
           "tag": "disasters",
-          "sentence": "A _____ of fresh fruit, the same day, was difficult to organise and worth it, for the home’s kitchen.",
+          "sentence": "Nora helped sort a packed _____ of clothes by size, then boxed them.",
           "answer": "donation"
         },
         {
           "id": "set-084-q14",
           "code": "S084-Q14",
           "tag": "habits",
-          "sentence": "When the vacuum died, a broom and a dustpan still finished the floor part of the _____.",
+          "sentence": "Rose folded the ironing board away, the last click of the _____.",
           "answer": "housework"
         },
         {
           "id": "set-084-q15",
           "code": "S084-Q15",
           "tag": "illness",
-          "sentence": "A lactose-free plan was forgotten at the ice-cream queue, and a familiar _____ returned.",
+          "sentence": "Leo declined the extra lap, holding his stomach after a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-084-q16",
           "code": "S084-Q16",
           "tag": "disasters",
-          "sentence": "A _____ left the stepping-stones high and dry, a path that was once a crossing and was now a curiosity.",
+          "sentence": "A _____, with little rain, dried the school’s veg patch to a pale brown.",
           "answer": "drought"
         },
         {
           "id": "set-084-q17",
           "code": "S084-Q17",
           "tag": "habits",
-          "sentence": "When the music ended, a _____ bow at the wrong time met another dancer’s shoulder, softly.",
+          "sentence": "The chair tipped because _____ Wendy sat down half off it.",
           "answer": "clumsy"
         },
         {
           "id": "set-084-q18",
           "code": "S084-Q18",
           "tag": "illness",
-          "sentence": "When the number finally read normal twice in a row, we knew the _____ had gone.",
+          "sentence": "Mum put a chart on the fridge to log the high _____.",
           "answer": "fever"
         },
         {
           "id": "set-084-q19",
           "code": "S084-Q19",
           "tag": "disasters",
-          "sentence": "The news showed a far-away _____ as a ring of numbers on a map, and a city that had felt the jolt.",
+          "sentence": "A brief _____ made the hanging medals swing on their hooks.",
           "answer": "earthquake"
         },
         {
           "id": "set-084-q20",
           "code": "S084-Q20",
           "tag": "habits",
-          "sentence": "A _____ teammate handed over the last energy bar without being asked, in the final kilometre.",
+          "sentence": "A _____ and shared extra class collected more warm socks than the box could hold.",
           "answer": "generous"
         },
         {
           "id": "set-084-q21",
           "code": "S084-Q21",
           "tag": "illness",
-          "sentence": "The documentary was fascinating, yet the tiny subtitles forced a squint and a closing _____.",
+          "sentence": "Chris put a cool bottle against his brow to quiet a _____.",
           "answer": "headache"
         },
         {
           "id": "set-084-q22",
           "code": "S084-Q22",
           "tag": "disasters",
-          "sentence": "A _____ shortage of power after the storm left the estate dark for a night, which felt serious enough to log.",
+          "sentence": "A _____ pain in Judy’s shoulder stopped Judy from carrying the box.",
           "answer": "severe"
         },
         {
           "id": "set-084-q23",
           "code": "S084-Q23",
           "tag": "habits",
-          "sentence": "The teacher left a voice note to _____ a sick pupil: “Your place is here when you are ready, and you will catch up.”",
+          "sentence": "The teacher used kind words to _____ Amy after a shaky start.",
           "answer": "encourage"
         },
         {
           "id": "set-084-q24",
           "code": "S084-Q24",
           "tag": "illness",
-          "sentence": "After losing a crown on a toffee, the exposed tooth met the air with a spectacular _____.",
+          "sentence": "Lucy kept a hand near her jaw in the film, ready for a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-084-q25",
           "code": "S084-Q25",
           "tag": "habits",
-          "sentence": "A _____ pickup at six means the car is at the kerb at six, and the child is not left looking up the road.",
+          "sentence": "A _____ plan, with an early alarm, kept Daisy on time all week.",
           "answer": "punctual"
         }
       ]
@@ -15813,183 +15813,183 @@ window.CLOZE_BANK = {
         "id": "set-085-ex",
         "code": "S085-EX",
         "tag": "example",
-        "sentence": "The class _____ box holds rulers, spare pencils, and a stapler, and it must be returned complete.",
-        "answer": "stationery"
+        "sentence": "Ben walks the same loop at a _____ every week time, rain or shine.",
+        "answer": "regular"
       },
       "items": [
         {
           "id": "set-085-q01",
           "code": "S085-Q01",
           "tag": "habits",
-          "sentence": "The hiking club’s _____ first-Saturday walk is on the website, rain date included.",
+          "sentence": "A _____ thank-you to the crossing guard is Lila’s Friday habit.",
           "answer": "regular"
         },
         {
           "id": "set-085-q02",
           "code": "S085-Q02",
           "tag": "illness",
-          "sentence": "A careful diet of lukewarm food was the only comfortable plan during the week of _____.",
+          "sentence": "After flossing too hard, Jack felt a short, sharp _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-085-q03",
           "code": "S085-Q03",
           "tag": "disasters",
-          "sentence": "The red fire-risk flag stayed up, because a _____ made the country park a tinder box.",
+          "sentence": "A _____ with almost no rain left the estate lawn dry and crunchy.",
           "answer": "drought"
         },
         {
           "id": "set-085-q04",
           "code": "S085-Q04",
           "tag": "habits",
-          "sentence": "After the Mid-Autumn lanterns came down, packing them neatly was the last festive _____.",
+          "sentence": "Taking out the bins ended Hugh’s share of the _____.",
           "answer": "housework"
         },
         {
           "id": "set-085-q05",
           "code": "S085-Q05",
           "tag": "illness",
-          "sentence": "After the debate tournament in a packed hall, one team had to forfeit later because of the _____.",
+          "sentence": "After the rainy match, Nina felt weak all over with the _____.",
           "answer": "flu"
         },
         {
           "id": "set-085-q06",
           "code": "S085-Q06",
           "tag": "disasters",
-          "sentence": "An _____ at the swimming pool means get out, because a moving edge and wet tiles are a poor pair.",
+          "sentence": "An _____ at night swung the hanging plant and woke Ruby.",
           "answer": "earthquake"
         },
         {
           "id": "set-085-q07",
           "code": "S085-Q07",
           "tag": "habits",
-          "sentence": "The _____ breakfast cook flipped a pancake onto the hob, then onto the plate, in that order.",
+          "sentence": "The lid of the tin bounced away after a _____ and dropped it opening.",
           "answer": "clumsy"
         },
         {
           "id": "set-085-q08",
           "code": "S085-Q08",
           "tag": "illness",
-          "sentence": "The doctor asked whether the pain sat high or low in the tummy to understand the _____.",
+          "sentence": "A _____ in his tummy woke Liam after the late snack.",
           "answer": "stomachache"
         },
         {
           "id": "set-085-q09",
           "code": "S085-Q09",
           "tag": "habits",
-          "sentence": "The _____ typist copied the notes again, in neater writing, for a friend who had been away, unasked.",
+          "sentence": "Vera was _____ with her packed lunch, splitting extra without a fuss.",
           "answer": "generous"
         },
         {
           "id": "set-085-q10",
           "code": "S085-Q10",
           "tag": "illness",
-          "sentence": "When three alarm clocks rang in turn, the household started the day already on the edge of a _____.",
+          "sentence": "Zoe sat with a cold cloth on her forehead for the _____.",
           "answer": "headache"
         },
         {
           "id": "set-085-q11",
           "code": "S085-Q11",
           "tag": "illness",
-          "sentence": "Grandma’s new mattress was too soft, and she said the first night had given her a surprising _____.",
+          "sentence": "Gary sat tall in class, trying not to wake a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-085-q12",
           "code": "S085-Q12",
           "tag": "disasters",
-          "sentence": "The delay was _____, and the airline’s board used a strong word, which matched the twelve-hour wait.",
+          "sentence": "A _____ pain in Tina’s heel meant she could not finish the hike.",
           "answer": "severe"
         },
         {
           "id": "set-085-q13",
           "code": "S085-Q13",
           "tag": "habits",
-          "sentence": "The lab is only opened when a _____ teacher is present and in charge; that is the safety rule.",
+          "sentence": "The trusted, _____ captain wrote a report after the fair, as asked.",
           "answer": "responsible"
         },
         {
           "id": "set-085-q14",
           "code": "S085-Q14",
           "tag": "illness",
-          "sentence": "When I tried to finish the long sentence in one breath, I failed and ended with a _____.",
+          "sentence": "A surprise _____ in her throat mid-sentence made Judy blush and pause.",
           "answer": "cough"
         },
         {
           "id": "set-085-q15",
           "code": "S085-Q15",
           "tag": "disasters",
-          "sentence": "The last box in the hall was a late _____, and someone stayed to label it, rather than leave it anonymous and unclear.",
+          "sentence": "Ted helped load a packed _____ of water bottles into the hall box.",
           "answer": "donation"
         },
         {
           "id": "set-085-q16",
           "code": "S085-Q16",
           "tag": "habits",
-          "sentence": "The canteen’s steamed fish day became popular, a quietly _____ favourite.",
+          "sentence": "Maya packed leftover veg rice, a _____ with fruit and water and cheap lunch.",
           "answer": "healthy"
         },
         {
           "id": "set-085-q17",
           "code": "S085-Q17",
           "tag": "illness",
-          "sentence": "A folded towel under the head made the hot brow a little more comfortable during the _____.",
+          "sentence": "Carl put the thermometer under his tongue; it was a _____.",
           "answer": "fever"
         },
         {
           "id": "set-085-q18",
           "code": "S085-Q18",
           "tag": "disasters",
-          "sentence": "After the _____, the flag was in ribbons, a small, clear sign of what the wind had done.",
+          "sentence": "A short but fierce _____ and its strong wind still cancelled the outdoor concert.",
           "answer": "typhoon"
         },
         {
           "id": "set-085-q19",
           "code": "S085-Q19",
           "tag": "habits",
-          "sentence": "The _____ senior in the computer room let the new pupil try, fail, and try again, without taking the mouse.",
+          "sentence": "Being _____ and waited calmly, Cora stood aside so a parent with a pram could pass.",
           "answer": "patient"
         },
         {
           "id": "set-085-q20",
           "code": "S085-Q20",
           "tag": "habits",
-          "sentence": "A visiting alumna came only to _____ this year’s choir, saying, “I was terrified too, and I sang.”",
+          "sentence": "Friends used kind words to _____ Sara to share the poem.",
           "answer": "encourage"
         },
         {
           "id": "set-085-q21",
           "code": "S085-Q21",
           "tag": "disasters",
-          "sentence": "After the pumps won, the _____ became a shallow shine, then a stain, then a memory with a date.",
+          "sentence": "The _____ reached the classroom block, water covering the lower corridor.",
           "answer": "flood"
         },
         {
           "id": "set-085-q22",
           "code": "S085-Q22",
           "tag": "habits",
-          "sentence": "The weekend hike’s “depart at 8:15” was real; only the _____ families were on the coach.",
+          "sentence": "The sports trials started on time, and _____ Ivan was on the line.",
           "answer": "punctual"
         },
         {
           "id": "set-085-q23",
           "code": "S085-Q23",
           "tag": "illness",
-          "sentence": "A “do not crush” instruction on the slow-release _____ was underlined in the leaflet.",
+          "sentence": "Ryan carried the _____ bottle carefully to the sick room.",
           "answer": "medicine"
         },
         {
           "id": "set-085-q24",
           "code": "S085-Q24",
           "tag": "disasters",
-          "sentence": "Everyone knew the steep, wet, bare slope was at risk, but no one could say the exact minute of the _____.",
+          "sentence": "After the _____, engineers looked at the slope above the estate.",
           "answer": "landslide"
         },
         {
           "id": "set-085-q25",
           "code": "S085-Q25",
           "tag": "habits",
-          "sentence": "A leftover stage name-tag in the street afterwards caused a curious look and an _____ walk.",
+          "sentence": "Wendy felt _____ when the slow-motion replay showed her slip.",
           "answer": "embarrassed"
         }
       ]
@@ -16001,183 +16001,183 @@ window.CLOZE_BANK = {
         "id": "set-086-ex",
         "code": "S086-EX",
         "tag": "example",
-        "sentence": "A _____ zip will not open if you pull harder; a little care, and perhaps a teacher, is wiser.",
-        "answer": "stubborn"
+        "sentence": "Jane scraped dried sauce from a plate, then finished the _____ and wiped the floor.",
+        "answer": "housework"
       },
       "items": [
         {
           "id": "set-086-q01",
           "code": "S086-Q01",
           "tag": "illness",
-          "sentence": "The overnight ferry cabin was stuffy, and a neighbour’s repeated _____ kept us half awake.",
+          "sentence": "Otto could not finish the toast; it scratched and brought a _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-086-q02",
           "code": "S086-Q02",
           "tag": "disasters",
-          "sentence": "A farm drought, called _____ in the news, had already lasted long enough to empty the small reservoirs.",
+          "sentence": "A _____ injury to Lucy’s finger meant she could not hold the bat.",
           "answer": "severe"
         },
         {
           "id": "set-086-q03",
           "code": "S086-Q03",
           "tag": "habits",
-          "sentence": "After mispronouncing a simple word in the oral, the rest of the talk was fine, but the feeling was _____.",
+          "sentence": "Amy hid her hands, _____, and she felt red after the ink had stained them blue.",
           "answer": "embarrassed"
         },
         {
           "id": "set-086-q04",
           "code": "S086-Q04",
           "tag": "illness",
-          "sentence": "After the stormy sports day, one helper felt strangely hot, and the first-aid tent confirmed a _____.",
+          "sentence": "A shaky hand and a hot brow showed the _____ was back.",
           "answer": "fever"
         },
         {
           "id": "set-086-q05",
           "code": "S086-Q05",
           "tag": "disasters",
-          "sentence": "In some families a _____ to charity is written into the budget, a line like rice or rent, and they keep it every month.",
+          "sentence": "The class sent a _____ of drawings and a box of pencils.",
           "answer": "donation"
         },
         {
           "id": "set-086-q06",
           "code": "S086-Q06",
           "tag": "habits",
-          "sentence": "A _____ keeper of the spare glasses case returns it to the owner the same day, not “soon”.",
+          "sentence": "Hugo was in charge of the first-aid bag on the walk, a _____ role.",
           "answer": "responsible"
         },
         {
           "id": "set-086-q07",
           "code": "S086-Q07",
           "tag": "illness",
-          "sentence": "A long telephone wait with the same tune playing made Auntie hang up, pressing her temples because of a rising _____.",
+          "sentence": "After the long choir practice, Wendy wanted darkness for a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-086-q08",
           "code": "S086-Q08",
           "tag": "disasters",
-          "sentence": "A tropical _____ may pass in a night, but the fallen branches can take a week to clear.",
+          "sentence": "Shop signs swung wildly in the _____, a tropical storm at work.",
           "answer": "typhoon"
         },
         {
           "id": "set-086-q09",
           "code": "S086-Q09",
           "tag": "habits",
-          "sentence": "A _____ holiday still has ice cream; it also has swimming, fruit, and a real bedtime.",
+          "sentence": "Nora felt _____ with fruit and water after cutting fizzy drinks for a month.",
           "answer": "healthy"
         },
         {
           "id": "set-086-q10",
           "code": "S086-Q10",
           "tag": "habits",
-          "sentence": "A _____ holiday-maker in the photo queue kept a smile, even when the camera failed once.",
+          "sentence": "A _____ smile at the crossing waited for the last pupil.",
           "answer": "patient"
         },
         {
           "id": "set-086-q11",
           "code": "S086-Q11",
           "tag": "disasters",
-          "sentence": "The farmer planted vetiver on the cut, a grass known for holding soil against a _____.",
+          "sentence": "After the _____, orange tape kept people off the muddy slope.",
           "answer": "landslide"
         },
         {
           "id": "set-086-q12",
           "code": "S086-Q12",
           "tag": "habits",
-          "sentence": "A _____ tug on the stuck drawer brought it out all at once, with a rattle of cutlery.",
+          "sentence": "A _____ and dropped it turn in the aisle sent a pile of books sliding.",
           "answer": "clumsy"
         },
         {
           "id": "set-086-q13",
           "code": "S086-Q13",
           "tag": "illness",
-          "sentence": "After rearranging the music stands, the orchestra helpers left the room slowly, one complaining of a _____.",
+          "sentence": "After rolling up the picnic mat, Daisy felt a _____ in her back start.",
           "answer": "backache"
         },
         {
           "id": "set-086-q14",
           "code": "S086-Q14",
           "tag": "disasters",
-          "sentence": "The _____ was measured not only in missing rain, but in cattle lost and trees that would not recover.",
+          "sentence": "The _____, with little rain, dried the clay court until it powdered underfoot.",
           "answer": "drought"
         },
         {
           "id": "set-086-q15",
           "code": "S086-Q15",
           "tag": "habits",
-          "sentence": "A _____ market seller slipped a free herb bunch into the bag “for the soup”, every week.",
+          "sentence": "Judy was _____ with space at the table, making extra room for two more.",
           "answer": "generous"
         },
         {
           "id": "set-086-q16",
           "code": "S086-Q16",
           "tag": "illness",
-          "sentence": "The school nurse’s ice pack and a parent call were the afternoon’s answer to a sudden _____.",
+          "sentence": "The dentist pointed to one tooth and named the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-086-q17",
           "code": "S086-Q17",
           "tag": "disasters",
-          "sentence": "After a night _____, some children asked if the building could “do that again”, and the honest answer was “possibly, more softly”.",
+          "sentence": "The _____ trembled through the ground, and a mug walked to the edge.",
           "answer": "earthquake"
         },
         {
           "id": "set-086-q18",
           "code": "S086-Q18",
           "tag": "habits",
-          "sentence": "The last page of the workbook has a box to _____ a friend, in one kind sentence, before the test.",
+          "sentence": "A kind chant from the class helped _____ the last team on.",
           "answer": "encourage"
         },
         {
           "id": "set-086-q19",
           "code": "S086-Q19",
           "tag": "illness",
-          "sentence": "The doctor’s sick-leave note named the _____ and recommended five full days of rest.",
+          "sentence": "Sean asked for the softest pillow, sore-necked from the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-086-q20",
           "code": "S086-Q20",
           "tag": "habits",
-          "sentence": "A _____ newsletter goes to the printer on the day promised, so parents receive it when they expect it.",
+          "sentence": "A _____ arrival put Faith in the front seat, ready and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-086-q21",
           "code": "S086-Q21",
           "tag": "habits",
-          "sentence": "A _____ battery test on the smoke alarm, first day of each month, takes only a minute.",
+          "sentence": "A _____ visit to the barber comes every four weeks for Stan.",
           "answer": "regular"
         },
         {
           "id": "set-086-q22",
           "code": "S086-Q22",
           "tag": "illness",
-          "sentence": "After the long hike, a very cold sports drink in one gulp cramping the middle became a short _____.",
+          "sentence": "After the greasy snack, Kate paid with a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-086-q23",
           "code": "S086-Q23",
           "tag": "disasters",
-          "sentence": "A _____ in a subway is frightening because the water has so few places to go.",
+          "sentence": "A night _____ left water covering the ground-floor storeroom boxes.",
           "answer": "flood"
         },
         {
           "id": "set-086-q24",
           "code": "S086-Q24",
           "tag": "habits",
-          "sentence": "The children’s “own rooms” rule still counts as _____, because beds and floors do not tidy themselves.",
+          "sentence": "A second cloth, just for glass, helped Tess finish the _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-086-q25",
           "code": "S086-Q25",
           "tag": "illness",
-          "sentence": "When the flavour was berry, the child took the _____ more calmly than the bitter kind.",
+          "sentence": "Joel used a timer on the tablet so the _____ was not late.",
           "answer": "medicine"
         }
       ]
@@ -16189,183 +16189,183 @@ window.CLOZE_BANK = {
         "id": "set-087-ex",
         "code": "S087-EX",
         "tag": "example",
-        "sentence": "Pack one small _____, because we carry our own bags from the station to the hostel.",
-        "answer": "suitcase"
+        "sentence": "A _____ and dropped it flick of the cloth sent crumbs onto the clean floor.",
+        "answer": "clumsy"
       },
       "items": [
         {
           "id": "set-087-q01",
           "code": "S087-Q01",
           "tag": "disasters",
-          "sentence": "The ground-floor clinic moved patients upstairs as a precaution when a _____ warning was raised.",
+          "sentence": "A _____ on the hillside road left water covering the lower bend.",
           "answer": "flood"
         },
         {
           "id": "set-087-q02",
           "code": "S087-Q02",
           "tag": "habits",
-          "sentence": "We should _____ questions in class, because a asked question helps more than a hidden confusion.",
+          "sentence": "Miss Chan’s kind words helped _____ Liam after a low mark.",
           "answer": "encourage"
         },
         {
           "id": "set-087-q03",
           "code": "S087-Q03",
           "tag": "illness",
-          "sentence": "A plate of fried squid at the pier was delicious, and also the official cause of that evening’s _____.",
+          "sentence": "Ryan bent over the desk, waiting for a _____ in his tummy to pass.",
           "answer": "stomachache"
         },
         {
           "id": "set-087-q04",
           "code": "S087-Q04",
           "tag": "disasters",
-          "sentence": "A _____ of rocks, dry and sudden, can still follow a small shake or a failed root; we stay from under the cut.",
+          "sentence": "The _____ tore a strip of grass from the upper slope.",
           "answer": "landslide"
         },
         {
           "id": "set-087-q05",
           "code": "S087-Q05",
           "tag": "habits",
-          "sentence": "Because the pianist was _____, the bride did not have to walk in silence waiting for the first chord.",
+          "sentence": "Karl stood by the lab at the booked hour, _____ and ready.",
           "answer": "punctual"
         },
         {
           "id": "set-087-q06",
           "code": "S087-Q06",
           "tag": "illness",
-          "sentence": "The family asked the doctor whether a vitamin drink would clash with the prescribed _____.",
+          "sentence": "A bright sticker on the cap said “shake the _____ bottle”.",
           "answer": "medicine"
         },
         {
           "id": "set-087-q07",
           "code": "S087-Q07",
           "tag": "disasters",
-          "sentence": "During the _____, neighbours shared washing water for plants, a kindness measured in jugs.",
+          "sentence": "A _____ late in the year still brought little rain to the fields.",
           "answer": "drought"
         },
         {
           "id": "set-087-q08",
           "code": "S087-Q08",
           "tag": "habits",
-          "sentence": "The canteen rotates a _____ Friday pasta, which pupils now expect without reading the board.",
+          "sentence": "A _____ walk around the block follows dinner every evening.",
           "answer": "regular"
         },
         {
           "id": "set-087-q09",
           "code": "S087-Q09",
           "tag": "illness",
-          "sentence": "The wet-market trolley had a stuck wheel, and pushing it uphill left Uncle Shing with a _____.",
+          "sentence": "After helping to shift the piano bench, Ivan had a sharp _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-087-q10",
           "code": "S087-Q10",
           "tag": "habits",
-          "sentence": "A lemon rind in the bin helped the smell after the fish, a small trick learned during _____.",
+          "sentence": "A list on the fridge lost ticks as Victor moved through the _____, including the laundry.",
           "answer": "housework"
         },
         {
           "id": "set-087-q11",
           "code": "S087-Q11",
           "tag": "habits",
-          "sentence": "When the seed packet said “fourteen days”, a _____ planter waited fourteen, not four.",
+          "sentence": "Being _____, Daisy waited and let the little ones finish first.",
           "answer": "patient"
         },
         {
           "id": "set-087-q12",
           "code": "S087-Q12",
           "tag": "illness",
-          "sentence": "The family group chat received a photo of the thermometer, proof of last night’s _____.",
+          "sentence": "A high _____ overnight made Hugh miss the Saturday football match.",
           "answer": "fever"
         },
         {
           "id": "set-087-q13",
           "code": "S087-Q13",
           "tag": "disasters",
-          "sentence": "The storm’s turn was _____, and the sudden drop in the forecast made the outdoor event impossible.",
+          "sentence": "The _____ swelling in Iris’s ankle looked dangerous after the twist.",
           "answer": "severe"
         },
         {
           "id": "set-087-q14",
           "code": "S087-Q14",
           "tag": "habits",
-          "sentence": "The _____ class voted to give the prize money to the infant library, and clapped for the idea.",
+          "sentence": "A _____ friend shared headphones and a spare seat on the bus.",
           "answer": "generous"
         },
         {
           "id": "set-087-q15",
           "code": "S087-Q15",
           "tag": "illness",
-          "sentence": "After the pottery kiln room’s heat, we drank water, but one classmate still felt a throbbing _____.",
+          "sentence": "Ruby felt the _____ start at her brow and spread back.",
           "answer": "headache"
         },
         {
           "id": "set-087-q16",
           "code": "S087-Q16",
           "tag": "disasters",
-          "sentence": "The pupil who gave a _____ of his prize books kept one, and the rest went to the class shelf, labelled.",
+          "sentence": "The PTA sent a _____ of packed fruit and a crate of water.",
           "answer": "donation"
         },
         {
           "id": "set-087-q17",
           "code": "S087-Q17",
           "tag": "habits",
-          "sentence": "Because the helmet strap dangled, a _____ catch of it in a buckle delayed the whole group.",
+          "sentence": "A _____ wave in the corridor knocked someone’s hat.",
           "answer": "clumsy"
         },
         {
           "id": "set-087-q18",
           "code": "S087-Q18",
           "tag": "illness",
-          "sentence": "When the wind cut across a tiny crack, even a walk to the gate became a lesson in _____.",
+          "sentence": "Ben pointed to the left side; the _____ in a tooth was all there.",
           "answer": "toothache"
         },
         {
           "id": "set-087-q19",
           "code": "S087-Q19",
           "tag": "disasters",
-          "sentence": "The news split the screen: a _____ map on one side, and a list of closed services on the other.",
+          "sentence": "Strong wind from the _____ tore a banner off the estate shop.",
           "answer": "typhoon"
         },
         {
           "id": "set-087-q20",
           "code": "S087-Q20",
           "tag": "habits",
-          "sentence": "The “hidden” present was in a bag that was sadly see-through, and the giver felt _____.",
+          "sentence": "Cora felt _____ after her stomach app beeped in the silent hall.",
           "answer": "embarrassed"
         },
         {
           "id": "set-087-q21",
           "code": "S087-Q21",
           "tag": "illness",
-          "sentence": "A winter assembly slide showed how hand-washing can lower the spread of the _____.",
+          "sentence": "Jack missed the outing, still aching and weak from the _____.",
           "answer": "flu"
         },
         {
           "id": "set-087-q22",
           "code": "S087-Q22",
           "tag": "disasters",
-          "sentence": "During the _____, we hid under the table while the floor shook and chairs slid across the room.",
+          "sentence": "The _____ shook the ground, and the ceiling fan wobbled.",
           "answer": "earthquake"
         },
         {
           "id": "set-087-q23",
           "code": "S087-Q23",
           "tag": "habits",
-          "sentence": "Being _____ for the choir’s attendance means marking a late arrival honestly.",
+          "sentence": "Holly reported the leak at once, as a trusted, _____ pupil would.",
           "answer": "responsible"
         },
         {
           "id": "set-087-q24",
           "code": "S087-Q24",
           "tag": "illness",
-          "sentence": "After the paprika spice-tasting, two pupils needed water and a minute to stop a _____.",
+          "sentence": "After shouting for the team, Lila paid with a hoarse _____.",
           "answer": "cough"
         },
         {
           "id": "set-087-q25",
           "code": "S087-Q25",
           "tag": "habits",
-          "sentence": "After swapping juice for water at dinner, the children’s dentist visit was more _____.",
+          "sentence": "Wendy chose grilled fish, a _____ with fruit and water plate at the food court.",
           "answer": "healthy"
         }
       ]
@@ -16377,183 +16377,183 @@ window.CLOZE_BANK = {
         "id": "set-088-ex",
         "code": "S088-EX",
         "tag": "example",
-        "sentence": "We can buy the picnic fruit at the _____ near the station, which is cheaper than the tourist stalls.",
-        "answer": "supermarket"
+        "sentence": "Maya felt _____ after knocking on the already-open door.",
+        "answer": "embarrassed"
       },
       "items": [
         {
           "id": "set-088-q01",
           "code": "S088-Q01",
           "tag": "habits",
-          "sentence": "A _____ cousin met the school bus with spare umbrellas, enough for four, not one.",
+          "sentence": "Lila packed two extra drinks, a _____ thought for hot weather.",
           "answer": "generous"
         },
         {
           "id": "set-088-q02",
           "code": "S088-Q02",
           "tag": "illness",
-          "sentence": "A bedtime story could not compete with the pulse of a late _____.",
+          "sentence": "Amy packed a note for the teacher about her _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-088-q03",
           "code": "S088-Q03",
           "tag": "disasters",
-          "sentence": "The librarian’s first act after the drill _____ was to check the tall shelves, then to smile, then to reshelve.",
+          "sentence": "An _____ shook the ground under the car park, then stopped.",
           "answer": "earthquake"
         },
         {
           "id": "set-088-q04",
           "code": "S088-Q04",
           "tag": "habits",
-          "sentence": "The _____ painter stepped back to look, and a heel found the palette on the floor.",
+          "sentence": "The name-sticker sheet tore in Sam’s _____ and dropped it hurry.",
           "answer": "clumsy"
         },
         {
           "id": "set-088-q05",
           "code": "S088-Q05",
           "tag": "illness",
-          "sentence": "When my back, legs and arms all ached together, I stopped calling it “just tiredness” and accepted the _____.",
+          "sentence": "Hugo felt his skin hurt to the touch, all over, in the _____.",
           "answer": "flu"
         },
         {
           "id": "set-088-q06",
           "code": "S088-Q06",
           "tag": "disasters",
-          "sentence": "A _____ warning on the medicine leaflet means stop and call, not “wait and see if it fades”.",
+          "sentence": "A _____ pain after the jump meant Liam did not try a second time.",
           "answer": "severe"
         },
         {
           "id": "set-088-q07",
           "code": "S088-Q07",
           "tag": "habits",
-          "sentence": "When a formal email opened with the wrong first name, the sender followed it with an _____ apology.",
+          "sentence": "Eva felt _____ when her hat fell off in the middle of the line.",
           "answer": "embarrassed"
         },
         {
           "id": "set-088-q08",
           "code": "S088-Q08",
           "tag": "illness",
-          "sentence": "The exam hall’s silence made my own pulse loud, and a tense _____ crept in during the last section.",
+          "sentence": "Ken could not join the riddle game; the _____ in his head took his focus.",
           "answer": "headache"
         },
         {
           "id": "set-088-q09",
           "code": "S088-Q09",
           "tag": "disasters",
-          "sentence": "A _____ of raincoats, in mixed sizes, arrived before the wet season, which was perfect timing, not luck only.",
+          "sentence": "The packed _____ of sports clothes was cleaned, then boxed.",
           "answer": "donation"
         },
         {
           "id": "set-088-q10",
           "code": "S088-Q10",
           "tag": "habits",
-          "sentence": "A _____ pack-leader, trusted with the tent list, notices a missing peg before the site is left.",
+          "sentence": "A _____ check of the windows was Joel’s last job each day.",
           "answer": "responsible"
         },
         {
           "id": "set-088-q11",
           "code": "S088-Q11",
           "tag": "illness",
-          "sentence": "A quiet, heavy child with a burning forehead should be checked for a _____ before school.",
+          "sentence": "Tess declined the outing, still flushed with a _____.",
           "answer": "fever"
         },
         {
           "id": "set-088-q12",
           "code": "S088-Q12",
           "tag": "disasters",
-          "sentence": "Photographs of the _____ showed huge skies and gold grass, but in the village it was a slow disaster with no rain.",
+          "sentence": "The _____ made the hillside look faded, dry from the lack of rain.",
           "answer": "drought"
         },
         {
           "id": "set-088-q13",
           "code": "S088-Q13",
           "tag": "habits",
-          "sentence": "The captain made a point of stopping to _____ the reserve players, who also needed to hear their names.",
+          "sentence": "The class used kind cheers to _____ a nervous first speaker.",
           "answer": "encourage"
         },
         {
           "id": "set-088-q14",
           "code": "S088-Q14",
           "tag": "illness",
-          "sentence": "When exam week and irregular meals arrived together, more than one pupil mentioned a nervous _____.",
+          "sentence": "After the rich sauce at lunch, Nora needed a quiet _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-088-q15",
           "code": "S088-Q15",
           "tag": "disasters",
-          "sentence": "We cancelled the outdoor concert because of the coming _____, whose fierce wind would have made the stage unsafe.",
+          "sentence": "During the _____, strong wind made the lifts stop, so neighbours lit candles.",
           "answer": "typhoon"
         },
         {
           "id": "set-088-q16",
           "code": "S088-Q16",
           "tag": "habits",
-          "sentence": "A _____ student is in the exam hall seat when the clock reaches the start time, bag already parked.",
+          "sentence": "Holly was already at the gate when it opened, as _____, early and ready as usual.",
           "answer": "punctual"
         },
         {
           "id": "set-088-q17",
           "code": "S088-Q17",
           "tag": "illness",
-          "sentence": "A locked drawer in the staff first-aid room holds only logged, named _____ for named pupils.",
+          "sentence": "Eric wrinkled his nose at the taste, but finished the _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-088-q18",
           "code": "S088-Q18",
           "tag": "disasters",
-          "sentence": "A _____ left crayons floating in the infant room, a strangely bright sign of how far the water had come.",
+          "sentence": "The _____ overflowed a roadside drain, water covering the zebra crossing.",
           "answer": "flood"
         },
         {
           "id": "set-088-q19",
           "code": "S088-Q19",
           "tag": "habits",
-          "sentence": "A _____ handwriting line in the morning book, every day of the week, shows steady progress.",
+          "sentence": "A _____ park visit follows lunch every other Sunday.",
           "answer": "regular"
         },
         {
           "id": "set-088-q20",
           "code": "S088-Q20",
           "tag": "habits",
-          "sentence": "When both children did twenty minutes, the sitting room was finished, proof that shared _____ works.",
+          "sentence": "Sara cleaned the kettle’s outside, a small extra in the _____.",
           "answer": "housework"
         },
         {
           "id": "set-088-q21",
           "code": "S088-Q21",
           "tag": "disasters",
-          "sentence": "The bus stopped short when the driver saw a fresh _____, no bigger than a lorry, already enough.",
+          "sentence": "The _____ pushed a bench sideways as mud slid under it.",
           "answer": "landslide"
         },
         {
           "id": "set-088-q22",
           "code": "S088-Q22",
           "tag": "habits",
-          "sentence": "A _____ snack stall at the fair offered corn and fruit beside the usual sweets, and both sold.",
+          "sentence": "Dad and Victor made a _____ plan: fruit after dinner, not cake.",
           "answer": "healthy"
         },
         {
           "id": "set-088-q23",
           "code": "S088-Q23",
           "tag": "illness",
-          "sentence": "During the long graduation photo, holding a smile and a stiff pose, several teachers later mentioned a _____.",
+          "sentence": "After carrying the water for the plants, Faith sat with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-088-q24",
           "code": "S088-Q24",
           "tag": "habits",
-          "sentence": "The _____ debate judge allowed thinking time after the question, and did not fill the silence.",
+          "sentence": "A _____ wait at the ticket machine ended in a calm second try.",
           "answer": "patient"
         },
         {
           "id": "set-088-q25",
           "code": "S088-Q25",
           "tag": "illness",
-          "sentence": "The school hamster’s sawdust bedding was changed more often once it had caused a _____ in class.",
+          "sentence": "The nurse noted a loud _____ and a sore throat on the slip.",
           "answer": "cough"
         }
       ]
@@ -16565,183 +16565,183 @@ window.CLOZE_BANK = {
         "id": "set-089-ex",
         "code": "S089-EX",
         "tag": "example",
-        "sentence": "The youth _____ played a short piece, and even the restless row went still in the second minute.",
-        "answer": "symphony"
+        "sentence": "The _____ boy is in charge of the first-aid box each Friday.",
+        "answer": "responsible"
       },
       "items": [
         {
           "id": "set-089-q01",
           "code": "S089-Q01",
           "tag": "illness",
-          "sentence": "After the skip-a-thon fundraiser, Janice iced her shoulders and also treated a stubborn _____.",
+          "sentence": "After stacking chairs in the hall, Karl stretched a tight _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-089-q02",
           "code": "S089-Q02",
           "tag": "disasters",
-          "sentence": "A _____ safety card in the lift reminds residents: stay away from windows, and listen for signals.",
+          "sentence": "Mum cancelled the picnic when the _____ signal appeared.",
           "answer": "typhoon"
         },
         {
           "id": "set-089-q03",
           "code": "S089-Q03",
           "tag": "habits",
-          "sentence": "A neighbour’s cheer from a balcony can _____ a tired charity walker up the last hill.",
+          "sentence": "A kind clap from Dad helped _____ Amy at the end of the piece.",
           "answer": "encourage"
         },
         {
           "id": "set-089-q04",
           "code": "S089-Q04",
           "tag": "illness",
-          "sentence": "A cold drink straight from the fridge shocked my throat after the run and produced a sharp _____.",
+          "sentence": "Tess missed the last line of the poem because a _____ in her throat broke in.",
           "answer": "cough"
         },
         {
           "id": "set-089-q05",
           "code": "S089-Q05",
           "tag": "disasters",
-          "sentence": "Drivers were fined later for driving through a _____, because the wake can push water into shops.",
+          "sentence": "During the _____, water covered the ground-floor post boxes.",
           "answer": "flood"
         },
         {
           "id": "set-089-q06",
           "code": "S089-Q06",
           "tag": "habits",
-          "sentence": "The museum tour is timed; a _____ class is at the statue when the guide begins, not still at the cloakroom.",
+          "sentence": "A _____, early and ready arrival let Eric help set the chairs before the others came.",
           "answer": "punctual"
         },
         {
           "id": "set-089-q07",
           "code": "S089-Q07",
           "tag": "illness",
-          "sentence": "The winter flyer reminded us that a sudden _____ plus aches deserves a rest day.",
+          "sentence": "The digital thermometer beeped, showing Victor still had a _____.",
           "answer": "fever"
         },
         {
           "id": "set-089-q08",
           "code": "S089-Q08",
           "tag": "disasters",
-          "sentence": "A _____ warning plus a night of rain means this village sleeps in the community hall, not under the hill.",
+          "sentence": "Mud and rocks slid down the slope in the _____, closing the path.",
           "answer": "landslide"
         },
         {
           "id": "set-089-q09",
           "code": "S089-Q09",
           "tag": "habits",
-          "sentence": "The council’s _____ street-wash in this road is 5 a.m. on Thursdays; residents know the hiss.",
+          "sentence": "A _____ bus at 7:20 is the one Polly trusts, week after week.",
           "answer": "regular"
         },
         {
           "id": "set-089-q10",
           "code": "S089-Q10",
           "tag": "habits",
-          "sentence": "After the plant repotting, soil on the tiles added a muddy extra line to the day’s _____.",
+          "sentence": "A bucket and a cloth meant Chris was ready for the _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-089-q11",
           "code": "S089-Q11",
           "tag": "disasters",
-          "sentence": "The last green place was the treatment works’ outflow, a strange oasis in the _____, not a comfort exactly.",
+          "sentence": "A summer _____ and little rain made the market spray the greens often.",
           "answer": "drought"
         },
         {
           "id": "set-089-q12",
           "code": "S089-Q12",
           "tag": "habits",
-          "sentence": "A _____ set-down of the chessboard folded two pawns into the next square.",
+          "sentence": "The chalk broke in Pearl’s _____ and dropped it grip and rolled away.",
           "answer": "clumsy"
         },
         {
           "id": "set-089-q13",
           "code": "S089-Q13",
           "tag": "illness",
-          "sentence": "After the hotpot’s tenth slice of fatty beef, even the champion eater leaned back with a _____.",
+          "sentence": "Ted sat forward on the chair, easing a _____ in his stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-089-q14",
           "code": "S089-Q14",
           "tag": "disasters",
-          "sentence": "The _____ was a long, rolling motion rather than a single shock, but we still held on under the desks as the floor shook.",
+          "sentence": "During an _____, the hall floor trembled, and the play paused.",
           "answer": "earthquake"
         },
         {
           "id": "set-089-q15",
           "code": "S089-Q15",
           "tag": "habits",
-          "sentence": "A sudden hiccup mid-sentence, in the prize speech, left the speaker smiling and _____.",
+          "sentence": "Owen felt _____ after his water bottle rolled the full length of the aisle.",
           "answer": "embarrassed"
         },
         {
           "id": "set-089-q16",
           "code": "S089-Q16",
           "tag": "illness",
-          "sentence": "After the late clinic, the night pharmacy in the mall was still open to dispense the _____.",
+          "sentence": "The night dose of _____ was smaller, according to the doctor’s letter.",
           "answer": "medicine"
         },
         {
           "id": "set-089-q17",
           "code": "S089-Q17",
           "tag": "disasters",
-          "sentence": "The flooding was _____ along the old canal, with steps fully under, a serious, measured depth.",
+          "sentence": "The _____ cut on Sam’s shin looked dangerous and needed a wash.",
           "answer": "severe"
         },
         {
           "id": "set-089-q18",
           "code": "S089-Q18",
           "tag": "habits",
-          "sentence": "The office made a _____ senior the delivery person for exam papers, sealed and counted.",
+          "sentence": "The trusted, _____ captain made a list so no kit was left behind.",
           "answer": "responsible"
         },
         {
           "id": "set-089-q19",
           "code": "S089-Q19",
           "tag": "illness",
-          "sentence": "A bright snow scene on the huge cinema screen was beautiful and briefly painful; I had a glare _____.",
+          "sentence": "Maya squinted at the whiteboard through a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-089-q20",
           "code": "S089-Q20",
           "tag": "habits",
-          "sentence": "The science club measured pulse before and after a run, a simple picture of a _____ heart at work.",
+          "sentence": "Otto skipped the late snack, trying to keep a _____ routine.",
           "answer": "healthy"
         },
         {
           "id": "set-089-q21",
           "code": "S089-Q21",
           "tag": "habits",
-          "sentence": "A _____ dog-trainer waits for the sit, then treats, and does not shout if the first try is slow.",
+          "sentence": "Lucy was _____ and waited calmly during the long rehearsal, never sighing out loud.",
           "answer": "patient"
         },
         {
           "id": "set-089-q22",
           "code": "S089-Q22",
           "tag": "illness",
-          "sentence": "After the dental cleaning, a previously quiet tooth announced a hidden _____ that needed a closer look.",
+          "sentence": "A sudden _____ in a tooth at bedtime sent Leo to find Mum.",
           "answer": "toothache"
         },
         {
           "id": "set-089-q23",
           "code": "S089-Q23",
           "tag": "disasters",
-          "sentence": "The appeal’s QR code made a _____ easy, and a teacher still printed a receipt list at the end of the day.",
+          "sentence": "A packed _____ of garden tools went in a box to the community plot.",
           "answer": "donation"
         },
         {
           "id": "set-089-q24",
           "code": "S089-Q24",
           "tag": "habits",
-          "sentence": "The _____ chef of the charity dinner cooked a second sitting’s worth, so late volunteers could eat too.",
+          "sentence": "Tina was _____ and left her best brushes in the shared pot.",
           "answer": "generous"
         },
         {
           "id": "set-089-q25",
           "code": "S089-Q25",
           "tag": "illness",
-          "sentence": "The school canteen spent a quiet week while a wave of _____ kept many at home.",
+          "sentence": "Whole-body shivers and a heavy feeling meant Wendy had the _____.",
           "answer": "flu"
         }
       ]
@@ -16753,183 +16753,183 @@ window.CLOZE_BANK = {
         "id": "set-090-ex",
         "code": "S090-EX",
         "tag": "example",
-        "sentence": "The nurse placed the _____ under his tongue and waited, quietly, for the beep.",
-        "answer": "thermometer"
+        "sentence": "A _____ start is a good breakfast, then a short walk.",
+        "answer": "healthy"
       },
       "items": [
         {
           "id": "set-090-q01",
           "code": "S090-Q01",
           "tag": "disasters",
-          "sentence": "A _____ ended, at last, with a night of rain that people went outside to smell, quietly.",
+          "sentence": "After the long _____, cracks showed in the dry football field.",
           "answer": "drought"
         },
         {
           "id": "set-090-q02",
           "code": "S090-Q02",
           "tag": "habits",
-          "sentence": "A _____ lunch is finished sitting down; a rushed bun on the stairs is a poorer plan.",
+          "sentence": "Leo drank water at break, a small _____ choice.",
           "answer": "healthy"
         },
         {
           "id": "set-090-q03",
           "code": "S090-Q03",
           "tag": "illness",
-          "sentence": "A cousin’s voice-note sounded weak and hoarse, the typical soundtrack of the _____.",
+          "sentence": "Aches, shivers, and a heavy head told the nurse it was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-090-q04",
           "code": "S090-Q04",
           "tag": "disasters",
-          "sentence": "When the hanging light and the hanging plant disagreed, slightly, about when to stop, the _____ was already over.",
+          "sentence": "An _____ made the hanging medals clink as they swung.",
           "answer": "earthquake"
         },
         {
           "id": "set-090-q05",
           "code": "S090-Q05",
           "tag": "habits",
-          "sentence": "The _____ artist of layered paper let each glue line dry, though the project took days.",
+          "sentence": "Karl stayed _____ as the teacher marked, and waited for the next group.",
           "answer": "patient"
         },
         {
           "id": "set-090-q06",
           "code": "S090-Q06",
           "tag": "illness",
-          "sentence": "A forgotten banana, brown and soft in the bag, should not have been eaten; soon I had a painful _____ in my tummy.",
+          "sentence": "A sudden _____ in her tummy sent Pearl to the nearest seat.",
           "answer": "stomachache"
         },
         {
           "id": "set-090-q07",
           "code": "S090-Q07",
           "tag": "habits",
-          "sentence": "A _____ child offered the window seat and the better pillow, and meant both offers.",
+          "sentence": "A _____ bag of leftover party sweets went to the whole corridor.",
           "answer": "generous"
         },
         {
           "id": "set-090-q08",
           "code": "S090-Q08",
           "tag": "illness",
-          "sentence": "A paper measuring spoon, thrown away after the course, had been packed with the liquid _____.",
+          "sentence": "Gary checked the label colour before taking the evening _____.",
           "answer": "medicine"
         },
         {
           "id": "set-090-q09",
           "code": "S090-Q09",
           "tag": "habits",
-          "sentence": "When she waved from the bus, a _____ hold on the rail was let go a second too soon, and she bumped the seat.",
+          "sentence": "Jack set the violin down at an angle, a _____ near-miss.",
           "answer": "clumsy"
         },
         {
           "id": "set-090-q10",
           "code": "S090-Q10",
           "tag": "illness",
-          "sentence": "The smile in the yearbook was closed-lipped that year, thanks to a photograph-day _____.",
+          "sentence": "Jane counted slowly to wait out a wave of _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-090-q11",
           "code": "S090-Q11",
           "tag": "habits",
-          "sentence": "A _____ seed-watering at dawn, daily in the science planter, is on the class duty list.",
+          "sentence": "The class has a _____ every week fire-drill month, always in the first week.",
           "answer": "regular"
         },
         {
           "id": "set-090-q12",
           "code": "S090-Q12",
           "tag": "illness",
-          "sentence": "The theatre’s old curtains released a puff of dust, and the first actor left the stage with a _____.",
+          "sentence": "Wade slept sitting up, hoping it would ease the night _____ in his throat.",
           "answer": "cough"
         },
         {
           "id": "set-090-q13",
           "code": "S090-Q13",
           "tag": "disasters",
-          "sentence": "A _____ case of missed lessons after the illness was handled with a plan, because falling behind had become serious.",
+          "sentence": "The _____ injury looked dangerous, so the coach called a parent.",
           "answer": "severe"
         },
         {
           "id": "set-090-q14",
           "code": "S090-Q14",
           "tag": "habits",
-          "sentence": "The Sunday _____ ends with a walk around each room, just to catch what was missed.",
+          "sentence": "Ken and his brother split the _____ : one vacuumed, one wiped.",
           "answer": "housework"
         },
         {
           "id": "set-090-q15",
           "code": "S090-Q15",
           "tag": "illness",
-          "sentence": "After the evening reading dropped, Dad still set an alarm to recheck the _____ at two.",
+          "sentence": "A second reading at noon confirmed the high _____ was real.",
           "answer": "fever"
         },
         {
           "id": "set-090-q16",
           "code": "S090-Q16",
           "tag": "disasters",
-          "sentence": "A _____ of unused nappies, unopened and in date, sat beside a sign that said “thank you, this is what we needed”.",
+          "sentence": "A packed _____ of unused towels went in a box to the shelter.",
           "answer": "donation"
         },
         {
           "id": "set-090-q17",
           "code": "S090-Q17",
           "tag": "habits",
-          "sentence": "After walking the wrong way on the moving walkway, the visitor turned, _____ and quicker.",
+          "sentence": "Nina felt _____ when the teacher played her wrong recording.",
           "answer": "embarrassed"
         },
         {
           "id": "set-090-q18",
           "code": "S090-Q18",
           "tag": "illness",
-          "sentence": "When I wore last year’s helmet for the cycle ride, the tight fit gifted me a post-ride _____.",
+          "sentence": "After the coach trip, Sam needed a rest for a _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-090-q19",
           "code": "S090-Q19",
           "tag": "disasters",
-          "sentence": "The fishing boats, all in at once, were a picture of a _____ warning taken seriously.",
+          "sentence": "The _____ made a tropical storm all afternoon, so PE was cancelled.",
           "answer": "typhoon"
         },
         {
           "id": "set-090-q20",
           "code": "S090-Q20",
           "tag": "habits",
-          "sentence": "A _____ waste-monitor stops food from going into the paper bin, because that is the job.",
+          "sentence": "Liam is trusted to open the hall, and is always _____.",
           "answer": "responsible"
         },
         {
           "id": "set-090-q21",
           "code": "S090-Q21",
           "tag": "illness",
-          "sentence": "A low car seat on the way to the picnic made it hard for Auntie Betty to get out, thanks to a _____.",
+          "sentence": "A _____ in his back started after Sean moved the plant pots.",
           "answer": "backache"
         },
         {
           "id": "set-090-q22",
           "code": "S090-Q22",
           "tag": "disasters",
-          "sentence": "Drivers were fined later for driving through a _____, because the wake can push water into nearby shops.",
+          "sentence": "Water covered the market floor in the _____, and stalls closed.",
           "answer": "flood"
         },
         {
           "id": "set-090-q23",
           "code": "S090-Q23",
           "tag": "habits",
-          "sentence": "The mentor’s story of a failed first experiment was told to _____ us to start our own.",
+          "sentence": "The coach used kind words to _____ Rita to try a new position.",
           "answer": "encourage"
         },
         {
           "id": "set-090-q24",
           "code": "S090-Q24",
           "tag": "disasters",
-          "sentence": "When the slope’s concrete “jacket” cracked, the repair was urgent, because a _____ does not wait for tenders.",
+          "sentence": "A _____ of rocks and soil blocked the estate’s back hill path.",
           "answer": "landslide"
         },
         {
           "id": "set-090-q25",
           "code": "S090-Q25",
           "tag": "habits",
-          "sentence": "A _____ goods train is not early or late; it passes the crossing at the minute in the schedule.",
+          "sentence": "Being _____, Judy had her costume ready, early for the call.",
           "answer": "punctual"
         }
       ]
@@ -16941,183 +16941,183 @@ window.CLOZE_BANK = {
         "id": "set-091-ex",
         "code": "S091-EX",
         "tag": "example",
-        "sentence": "A _____ check of the lost-property box found the watch in a coat pocket, not on the shelf.",
-        "answer": "thorough"
+        "sentence": "Mum cooked extra rice before the _____, expecting a strong wind.",
+        "answer": "typhoon"
       },
       "items": [
         {
           "id": "set-091-q01",
           "code": "S091-Q01",
           "tag": "habits",
-          "sentence": "Parents _____ a first bike ride with words at the gate, then they let go of the saddle.",
+          "sentence": "Sis used kind words to _____ Hugo through a long homework night.",
           "answer": "encourage"
         },
         {
           "id": "set-091-q02",
           "code": "S091-Q02",
           "tag": "illness",
-          "sentence": "The clinic’s waiting-room poster showed happy faces only after a _____ had returned to normal.",
+          "sentence": "Dad checked the thermometer twice; the _____ was still high.",
           "answer": "fever"
         },
         {
           "id": "set-091-q03",
           "code": "S091-Q03",
           "tag": "disasters",
-          "sentence": "The pain was no longer mild; the doctor used the word _____ and changed the treatment at once.",
+          "sentence": "The _____ pain in Nora’s instep meant she could not finish the walk.",
           "answer": "severe"
         },
         {
           "id": "set-091-q04",
           "code": "S091-Q04",
           "tag": "habits",
-          "sentence": "When the Zoom host is _____, the lesson password screen is already open at four o’clock exactly.",
+          "sentence": "The booking said 2:00, and _____ Otto pressed the bell at 2:00.",
           "answer": "punctual"
         },
         {
           "id": "set-091-q05",
           "code": "S091-Q05",
           "tag": "illness",
-          "sentence": "The group project argument went in circles, and by the end even the peacemaker had a _____.",
+          "sentence": "Lucy asked to leave the music room; the drums had started a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-091-q06",
           "code": "S091-Q06",
           "tag": "disasters",
-          "sentence": "The choir’s concert, ticketed, had a _____ line on the poster, and the money was counted in the office, twice.",
+          "sentence": "Rita labelled a _____ of packed tins so the dates were easy to see.",
           "answer": "donation"
         },
         {
           "id": "set-091-q07",
           "code": "S091-Q07",
           "tag": "habits",
-          "sentence": "The band’s _____ marching practice is Wednesday dusk, and the field is reserved for that hour.",
+          "sentence": "The art club is a _____ every week Tuesday event, always at four.",
           "answer": "regular"
         },
         {
           "id": "set-091-q08",
           "code": "S091-Q08",
           "tag": "illness",
-          "sentence": "A knocked tooth from the trampoline was checked, and a delayed _____ appeared the next morning.",
+          "sentence": "A _____ along his gum made brushing very careful.",
           "answer": "toothache"
         },
         {
           "id": "set-091-q09",
           "code": "S091-Q09",
           "tag": "disasters",
-          "sentence": "During the _____, a loose sheet of tin on a distant roof kept time like a drum in the wind.",
+          "sentence": "A second _____ in a month still brought a serious tropical storm.",
           "answer": "typhoon"
         },
         {
           "id": "set-091-q10",
           "code": "S091-Q10",
           "tag": "habits",
-          "sentence": "A “no shoes in the house” habit has already cut the floor part of the weekly _____ in half.",
+          "sentence": "Wiping the fan remote was a tiny job Wendy still put on the _____.",
           "answer": "housework"
         },
         {
           "id": "set-091-q11",
           "code": "S091-Q11",
           "tag": "illness",
-          "sentence": "When the class tried planks in PE, the teacher warned that poor form could cause a _____.",
+          "sentence": "Mark moved slowly down the aisle, careful with a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-091-q12",
           "code": "S091-Q12",
           "tag": "disasters",
-          "sentence": "During the worst week of the _____, the reservoir’s percentage was a number everyone knew, like a score.",
+          "sentence": "The _____ cracked the soil in the class planter, which needed water.",
           "answer": "drought"
         },
         {
           "id": "set-091-q13",
           "code": "S091-Q13",
           "tag": "habits",
-          "sentence": "Being _____ with a friend’s secret means not passing it on, even as a “funny story”.",
+          "sentence": "Eric rang the office when the coach was late, a trusted, _____ call.",
           "answer": "responsible"
         },
         {
           "id": "set-091-q14",
           "code": "S091-Q14",
           "tag": "illness",
-          "sentence": "During the spelling bee, a sudden _____ made the contestant ask to hear the word again.",
+          "sentence": "A _____ in his throat hid the punchline, and Joel had to tell the joke again.",
           "answer": "cough"
         },
         {
           "id": "set-091-q15",
           "code": "S091-Q15",
           "tag": "disasters",
-          "sentence": "We watched the _____ safety video again, because it is easy to forget until the floor actually starts to shake.",
+          "sentence": "An _____ at supper made the spoons tremble on the table.",
           "answer": "earthquake"
         },
         {
           "id": "set-091-q16",
           "code": "S091-Q16",
           "tag": "habits",
-          "sentence": "After the vegetable-tasting lesson, even the sceptics had found one _____ favourite.",
+          "sentence": "Zack chose the stairs twice a day, a little _____ with fruit and water change.",
           "answer": "healthy"
         },
         {
           "id": "set-091-q17",
           "code": "S091-Q17",
           "tag": "illness",
-          "sentence": "After the exam period, several pupils finally let themselves fall ill with a postponed _____.",
+          "sentence": "Muscle aches and a weak feeling told Iris it was the _____.",
           "answer": "flu"
         },
         {
           "id": "set-091-q18",
           "code": "S091-Q18",
           "tag": "disasters",
-          "sentence": "The old photo of a tram in a _____ is brought out whenever someone says, “It cannot happen here.”",
+          "sentence": "A short, sharp _____ still left water covering the lift lobby mats.",
           "answer": "flood"
         },
         {
           "id": "set-091-q19",
           "code": "S091-Q19",
           "tag": "habits",
-          "sentence": "A _____ child in the magic show did not shout the secret, and let the trick finish.",
+          "sentence": "The captain was _____ and waited calmly, giving the new player time to learn the call.",
           "answer": "patient"
         },
         {
           "id": "set-091-q20",
           "code": "S091-Q20",
           "tag": "habits",
-          "sentence": "The _____ bookshop let the class use a corner for a reading, and provided water, without a fee.",
+          "sentence": "A _____ and shared extra plate of cut fruit appeared in the middle of the table.",
           "answer": "generous"
         },
         {
           "id": "set-091-q21",
           "code": "S091-Q21",
           "tag": "disasters",
-          "sentence": "A _____ took the hillside shrine’s steps, and the shrine, luckily, stayed on a higher ledge.",
+          "sentence": "The _____ left rocks on the football field’s far corner.",
           "answer": "landslide"
         },
         {
           "id": "set-091-q22",
           "code": "S091-Q22",
           "tag": "habits",
-          "sentence": "The _____ mechanic’s tray of nuts tipped when the stool rolled, and a quiet counting began.",
+          "sentence": "Jane bumped the pause button, then the pile of books, fully _____.",
           "answer": "clumsy"
         },
         {
           "id": "set-091-q23",
           "code": "S091-Q23",
           "tag": "illness",
-          "sentence": "The school trip rule — no huge sweets just before the coach — exists to prevent a travel _____.",
+          "sentence": "The fizzy drink was a mistake, and a _____ hit his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-091-q24",
           "code": "S091-Q24",
           "tag": "habits",
-          "sentence": "The class mascot costume’s zip failed, kindly, offstage, and the wearer was later _____.",
+          "sentence": "Sean felt _____ when his old nickname was read from the list.",
           "answer": "embarrassed"
         },
         {
           "id": "set-091-q25",
           "code": "S091-Q25",
           "tag": "illness",
-          "sentence": "The doctor’s handwriting was typed out by the pharmacist so the _____ name would be clear.",
+          "sentence": "Wade kept the _____ away from the bathroom steam, as labelled.",
           "answer": "medicine"
         }
       ]
@@ -17129,183 +17129,183 @@ window.CLOZE_BANK = {
         "id": "set-092-ex",
         "code": "S092-EX",
         "tag": "example",
-        "sentence": "If you lose your _____, a spare copy is on the class board, and the times have not changed.",
-        "answer": "timetable"
+        "sentence": "During the _____, water covered the last row of outdoor lockers.",
+        "answer": "flood"
       },
       "items": [
         {
           "id": "set-092-q01",
           "code": "S092-Q01",
           "tag": "illness",
-          "sentence": "When the child travelled to Grandma’s, a copy of the schedule travelled with the _____.",
+          "sentence": "Ivan counted the remaining spoons of _____ with Dad.",
           "answer": "medicine"
         },
         {
           "id": "set-092-q02",
           "code": "S092-Q02",
           "tag": "disasters",
-          "sentence": "A _____ barrier, ugly on a dry day, is beautiful when it is the only thing holding the street’s water back.",
+          "sentence": "During the _____, water covered the path parents use at pick-up.",
           "answer": "flood"
         },
         {
           "id": "set-092-q03",
           "code": "S092-Q03",
           "tag": "habits",
-          "sentence": "When a parent posted the recital video with a funny mid-face still, the pianist felt _____.",
+          "sentence": "Rita felt _____ when her name card had a spelling joke on it.",
           "answer": "embarrassed"
         },
         {
           "id": "set-092-q04",
           "code": "S092-Q04",
           "tag": "illness",
-          "sentence": "After stacking textbooks for the inventory, the librarian sat down carefully, easing a mild _____.",
+          "sentence": "After stacking the sports cones, Judy complained of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-092-q05",
           "code": "S092-Q05",
           "tag": "disasters",
-          "sentence": "After the heavy rain, a _____ of mud and rocks blocked the hillside road, and no one could use that path.",
+          "sentence": "Mud and roots came down in the _____, just short of the bike shed.",
           "answer": "landslide"
         },
         {
           "id": "set-092-q06",
           "code": "S092-Q06",
           "tag": "habits",
-          "sentence": "A _____ on-call prefect for the fair stays at the post until the relief person actually arrives.",
+          "sentence": "Ryan was trusted to take the register to the office, a clearly _____ job.",
           "answer": "responsible"
         },
         {
           "id": "set-092-q07",
           "code": "S092-Q07",
           "tag": "illness",
-          "sentence": "After the hilltop picnic, dry grass seeds in the air left Uncle with a lingering _____.",
+          "sentence": "The nurse heard a dry _____ and gave Carl a cup of warm water.",
           "answer": "cough"
         },
         {
           "id": "set-092-q08",
           "code": "S092-Q08",
           "tag": "disasters",
-          "sentence": "The _____ was not only about the heat; it was the long stretch of failing rain that dried the fields.",
+          "sentence": "During the _____, with little rain, Grandma saved washing-up water for the plants.",
           "answer": "drought"
         },
         {
           "id": "set-092-q09",
           "code": "S092-Q09",
           "tag": "habits",
-          "sentence": "A _____ packed tea for the match was rice balls and orange slices, which fuelled the second half.",
+          "sentence": "A _____ with fruit and water breakfast of eggs and toast beat a bag of crisps.",
           "answer": "healthy"
         },
         {
           "id": "set-092-q10",
           "code": "S092-Q10",
           "tag": "habits",
-          "sentence": "When the slow Wi-Fi tested everyone, the _____ group used the time to plan on paper.",
+          "sentence": "Being _____, Mark did not hurry the elderly man at the ATM.",
           "answer": "patient"
         },
         {
           "id": "set-092-q11",
           "code": "S092-Q11",
           "tag": "disasters",
-          "sentence": "A _____ should be useful; a bag of broken toys is a burden, which is why the list said “complete only”.",
+          "sentence": "The family’s _____ of unused kitchenware filled a small box.",
           "answer": "donation"
         },
         {
           "id": "set-092-q12",
           "code": "S092-Q12",
           "tag": "habits",
-          "sentence": "A _____ flourish with a napkin knocked a spoon into a water glass, which rang like a bell.",
+          "sentence": "A _____ and dropped it spin in the dance sent Iris into the curtain.",
           "answer": "clumsy"
         },
         {
           "id": "set-092-q13",
           "code": "S092-Q13",
           "tag": "illness",
-          "sentence": "After a day of translating tiny footnotes, the student teacher closed the book on a scholarly _____.",
+          "sentence": "Jack leaned his head on the cool window to soothe a _____.",
           "answer": "headache"
         },
         {
           "id": "set-092-q14",
           "code": "S092-Q14",
           "tag": "disasters",
-          "sentence": "The _____ soaked the city, but years later the sound people still remembered was the fierce wind.",
+          "sentence": "A weekend _____ kept families in, watching the tropical storm on the news.",
           "answer": "typhoon"
         },
         {
           "id": "set-092-q15",
           "code": "S092-Q15",
           "tag": "habits",
-          "sentence": "A _____ leftover-cake rule in this family is “take it to school to share”, not “hide it”.",
+          "sentence": "Polly gave a _____ share of her packed grapes to the team.",
           "answer": "generous"
         },
         {
           "id": "set-092-q16",
           "code": "S092-Q16",
           "tag": "illness",
-          "sentence": "The holiday barbecue’s grilled corn was skipped by the cousin nursing a cautious _____.",
+          "sentence": "A _____ started near a new adult tooth that was coming through.",
           "answer": "toothache"
         },
         {
           "id": "set-092-q17",
           "code": "S092-Q17",
           "tag": "disasters",
-          "sentence": "After the _____, a neighbour knocked, not with news, but with the simple question that matters: “Are you all right?”",
+          "sentence": "An _____ made the noticeboard tremble, and a pin slipped.",
           "answer": "earthquake"
         },
         {
           "id": "set-092-q18",
           "code": "S092-Q18",
           "tag": "habits",
-          "sentence": "The teacher’s “have another go, I’m listening” is a sentence designed to _____.",
+          "sentence": "Mum used kind words to _____ Tina to try the new bus route.",
           "answer": "encourage"
         },
         {
           "id": "set-092-q19",
           "code": "S092-Q19",
           "tag": "illness",
-          "sentence": "The first-aid cupboard was checked, not for a miracle cure, but for comfort items during the _____.",
+          "sentence": "Zoe drank slowly, aching all over from the lingering _____.",
           "answer": "flu"
         },
         {
           "id": "set-092-q20",
           "code": "S092-Q20",
           "tag": "habits",
-          "sentence": "A _____ dinner seating at the banquet saves the kitchen; the soup can be served as planned.",
+          "sentence": "The teacher chose Lila as timekeeper because she is so _____, on time and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-092-q21",
           "code": "S092-Q21",
           "tag": "habits",
-          "sentence": "A _____ reading log, three pages a night, is more useful than a long read once a month.",
+          "sentence": "A _____ every week bus ride together is how Hugh and Dad start Saturday.",
           "answer": "regular"
         },
         {
           "id": "set-092-q22",
           "code": "S092-Q22",
           "tag": "illness",
-          "sentence": "After the creamy pasta and garlic bread, a walk was suggested to ease a building _____.",
+          "sentence": "After the milk, which did not sit well, Ruby had a _____ in her stomach.",
           "answer": "stomachache"
         },
         {
           "id": "set-092-q23",
           "code": "S092-Q23",
           "tag": "disasters",
-          "sentence": "A _____ storm night, with the storm already named, is remembered by the degree of the damage, not only by the rain.",
+          "sentence": "The _____ storm closed the ferry; the pier could not be used safely.",
           "answer": "severe"
         },
         {
           "id": "set-092-q24",
           "code": "S092-Q24",
           "tag": "habits",
-          "sentence": "When the helper had a day off, the family found they still knew every step of the usual _____.",
+          "sentence": "A clean fridge shelf was Owen’s proud bit of Saturday _____.",
           "answer": "housework"
         },
         {
           "id": "set-092-q25",
           "code": "S092-Q25",
           "tag": "illness",
-          "sentence": "When his forehead felt hot, we did not argue; we used the thermometer and found a clear _____.",
+          "sentence": "A high _____ kept Eva out of the swimming lesson that afternoon.",
           "answer": "fever"
         }
       ]
@@ -17317,183 +17317,183 @@ window.CLOZE_BANK = {
         "id": "set-093-ex",
         "code": "S093-EX",
         "tag": "example",
-        "sentence": "It is a school _____ to plant a tree for each leavers’ class, and this year’s sapling is already labelled.",
-        "answer": "tradition"
+        "sentence": "A warning of a _____ kept families off the steep hillside path.",
+        "answer": "landslide"
       },
       "items": [
         {
           "id": "set-093-q01",
           "code": "S093-Q01",
           "tag": "disasters",
-          "sentence": "The _____ did not last long, but it lasted long enough for us to get under the desks as we had practised.",
+          "sentence": "The ground shook in a mild _____, enough to rattle the windows.",
           "answer": "earthquake"
         },
         {
           "id": "set-093-q02",
           "code": "S093-Q02",
           "tag": "habits",
-          "sentence": "Because the path stones were loose, a _____ hop to avoid one landed on another.",
+          "sentence": "The puzzle pieces slid off because _____ Amy bumped the table.",
           "answer": "clumsy"
         },
         {
           "id": "set-093-q03",
           "code": "S093-Q03",
           "tag": "illness",
-          "sentence": "A “get well” banner on the class board listed first names of those home with the _____.",
+          "sentence": "Kate was weak and shivering, so Mum named it the _____.",
           "answer": "flu"
         },
         {
           "id": "set-093-q04",
           "code": "S093-Q04",
           "tag": "disasters",
-          "sentence": "The delay to the hospital opening was _____, and the official apology used a word that meant “this is serious”.",
+          "sentence": "A _____ storm at dusk made the open car park too dangerous.",
           "answer": "severe"
         },
         {
           "id": "set-093-q05",
           "code": "S093-Q05",
           "tag": "habits",
-          "sentence": "The _____ senior printed colour copies for everyone, though black-and-white would have been enough for him.",
+          "sentence": "A _____ and shared extra gift of spare tickets went to classmates who had none.",
           "answer": "generous"
         },
         {
           "id": "set-093-q06",
           "code": "S093-Q06",
           "tag": "illness",
-          "sentence": "A sudden cramp during the assembly made it hard to stand, so a teacher led the pupil out with a _____.",
+          "sentence": "A _____ in his tummy made the canteen smell unwelcome, so Zack sat outside.",
           "answer": "stomachache"
         },
         {
           "id": "set-093-q07",
           "code": "S093-Q07",
           "tag": "disasters",
-          "sentence": "The family’s _____ this winter was a sack of rice and a smaller, quieter envelope, both needed.",
+          "sentence": "A kind _____ of blankets left the hall just after lunch.",
           "answer": "donation"
         },
         {
           "id": "set-093-q08",
           "code": "S093-Q08",
           "tag": "habits",
-          "sentence": "Friends _____ a shy dancer by learning the first eight beats with her, then giving her the floor.",
+          "sentence": "The choir teacher used kind words to _____ a shy singer.",
           "answer": "encourage"
         },
         {
           "id": "set-093-q09",
           "code": "S093-Q09",
           "tag": "illness",
-          "sentence": "After two days of pointing to the same upper tooth, there was no mystery about the _____.",
+          "sentence": "A _____ in his tooth made Sean chew on the other side.",
           "answer": "toothache"
         },
         {
           "id": "set-093-q10",
           "code": "S093-Q10",
           "tag": "habits",
-          "sentence": "The scout flag is raised at eight; a _____ troop is in line then, not still tying scarves.",
+          "sentence": "Being _____, Stan finished lining up early, not late for assembly.",
           "answer": "punctual"
         },
         {
           "id": "set-093-q11",
           "code": "S093-Q11",
           "tag": "habits",
-          "sentence": "The family’s “colour rule” made dinner look brighter and, over time, more _____.",
+          "sentence": "Tess packed a _____ picnic: fruit, bread, and a water bottle.",
           "answer": "healthy"
         },
         {
           "id": "set-093-q12",
           "code": "S093-Q12",
           "tag": "illness",
-          "sentence": "A spare set of pyjamas was needed because the _____ had made the first set damp with sweat.",
+          "sentence": "Maya dreamed odd dreams, as she often did with a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-093-q13",
           "code": "S093-Q13",
           "tag": "disasters",
-          "sentence": "The principal’s message was short: if the _____ signal is No. 8 at 5:30 a.m., do not come in.",
+          "sentence": "A sudden _____ warning sent families home, as the wind rose.",
           "answer": "typhoon"
         },
         {
           "id": "set-093-q14",
           "code": "S093-Q14",
           "tag": "habits",
-          "sentence": "The _____ museum queue for the popular room moved, eventually, and those who waited saw it properly.",
+          "sentence": "The class stayed _____, waiting calmly for the guest to find the slide.",
           "answer": "patient"
         },
         {
           "id": "set-093-q15",
           "code": "S093-Q15",
           "tag": "illness",
-          "sentence": "A windy rooftop duty without a cap left my ears cold and my forehead tight with a _____.",
+          "sentence": "Leo sat out the last dance, protecting a rising _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-093-q16",
           "code": "S093-Q16",
           "tag": "disasters",
-          "sentence": "After the sluice was cleared, the next rain did not become a _____, which felt like a small victory.",
+          "sentence": "Water covered the indoor car lift in the _____, so it was switched off.",
           "answer": "flood"
         },
         {
           "id": "set-093-q17",
           "code": "S093-Q17",
           "tag": "habits",
-          "sentence": "The clinic’s _____ weigh-in for the baby is the same weekday every month, easily remembered.",
+          "sentence": "A _____ every week ferry trip to Grandma’s happens the first Sunday.",
           "answer": "regular"
         },
         {
           "id": "set-093-q18",
           "code": "S093-Q18",
           "tag": "illness",
-          "sentence": "A sticker with a sun and a moon showed morning and night doses of the same _____.",
+          "sentence": "Zoe waited ten minutes after the _____ bottle before lying down.",
           "answer": "medicine"
         },
         {
           "id": "set-093-q19",
           "code": "S093-Q19",
           "tag": "disasters",
-          "sentence": "A _____ of building spoil, illegally dumped, failed in the first serious rain, as the officers had feared.",
+          "sentence": "A small _____ of mud on the slope still closed the upper playground for a day.",
           "answer": "landslide"
         },
         {
           "id": "set-093-q20",
           "code": "S093-Q20",
           "tag": "habits",
-          "sentence": "After the pancake breakfast, the hob needed a proper soak, the stickiest piece of the morning _____.",
+          "sentence": "Ken wiped the table and folded the sheets, proud of the _____.",
           "answer": "housework"
         },
         {
           "id": "set-093-q21",
           "code": "S093-Q21",
           "tag": "illness",
-          "sentence": "The wind-band’s marching practice on hard playground ground left the drum major with a _____.",
+          "sentence": "After dragging the recycling bin, Otto rubbed a fierce _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-093-q22",
           "code": "S093-Q22",
           "tag": "disasters",
-          "sentence": "The farmer’s calendar had empty rain columns, a hand-drawn _____ in little boxes of zero.",
+          "sentence": "During the _____, a cloud would pass, still with no real rain.",
           "answer": "drought"
         },
         {
           "id": "set-093-q23",
           "code": "S093-Q23",
           "tag": "habits",
-          "sentence": "A leftover rehearsal script in the hand during the real play was noticed, and the actor felt _____.",
+          "sentence": "Pearl felt _____ because she had waved with a very messy hand.",
           "answer": "embarrassed"
         },
         {
           "id": "set-093-q24",
           "code": "S093-Q24",
           "tag": "illness",
-          "sentence": "The new classroom carpet still smelt of glue, and one sensitive pupil developed a light _____.",
+          "sentence": "Rose sat at the back, muffling a _____ in her throat.",
           "answer": "cough"
         },
         {
           "id": "set-093-q25",
           "code": "S093-Q25",
           "tag": "habits",
-          "sentence": "The family appointed a _____ list-maker for the trip, in charge of passports, medicines and tickets.",
+          "sentence": "Nora accepted the weekend plant duty, calm and _____.",
           "answer": "responsible"
         }
       ]
@@ -17505,183 +17505,183 @@ window.CLOZE_BANK = {
         "id": "set-094-ex",
         "code": "S094-EX",
         "tag": "example",
-        "sentence": "The beach “_____ hunt” was only painted shells, but the map and the search were the real fun.",
-        "answer": "treasure"
+        "sentence": "Grandad pointed at the dry, cracked soil after a long _____.",
+        "answer": "drought"
       },
       "items": [
         {
           "id": "set-094-q01",
           "code": "S094-Q01",
           "tag": "habits",
-          "sentence": "After thanking the bus driver of an empty, parked bus, the well-mannered child felt _____.",
+          "sentence": "Tina felt _____ after hugging the wrong cousin at the gathering.",
           "answer": "embarrassed"
         },
         {
           "id": "set-094-q02",
           "code": "S094-Q02",
           "tag": "illness",
-          "sentence": "A laugh, a sip, and a poorly timed _____ made the joke even funnier at the family table.",
+          "sentence": "Mark asked to get water mid-lesson, stopped by a dry _____.",
           "answer": "cough"
         },
         {
           "id": "set-094-q03",
           "code": "S094-Q03",
           "tag": "disasters",
-          "sentence": "When the clouds began to race, even without rain yet, some of us already said, “_____ weather.”",
+          "sentence": "The tropical storm and _____ knocked a pot from a neighbour’s ledge.",
           "answer": "typhoon"
         },
         {
           "id": "set-094-q04",
           "code": "S094-Q04",
           "tag": "habits",
-          "sentence": "A _____ camera-club treasurer, trusted with the repair money, keeps every receipt.",
+          "sentence": "The teacher can leave the room briefly, trusting _____ Hugo with the duty.",
           "answer": "responsible"
         },
         {
           "id": "set-094-q05",
           "code": "S094-Q05",
           "tag": "illness",
-          "sentence": "The teacher’s handbook says a pupil with a possible _____ must wait in the medical room.",
+          "sentence": "Ruby could not eat much soup, weakened by a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-094-q06",
           "code": "S094-Q06",
           "tag": "disasters",
-          "sentence": "The _____ was slow and almost silent, a rising line of water on the step that we kept watching.",
+          "sentence": "During the _____, water overflowed the drain and covered the alley.",
           "answer": "flood"
         },
         {
           "id": "set-094-q07",
           "code": "S094-Q07",
           "tag": "habits",
-          "sentence": "A _____ start after the holidays was an early night and a walk, before the timetable even began.",
+          "sentence": "A _____ after-school plan was fruit first, then a short run.",
           "answer": "healthy"
         },
         {
           "id": "set-094-q08",
           "code": "S094-Q08",
           "tag": "illness",
-          "sentence": "The leftover smell of bleach after the floor wash was clean, but it also started a short _____.",
+          "sentence": "Ben pressed his fingers to his head after the loud fire drill; it was a _____.",
           "answer": "headache"
         },
         {
           "id": "set-094-q09",
           "code": "S094-Q09",
           "tag": "disasters",
-          "sentence": "After the trees were replanted in a grid, the slope looked less likely to start a _____, at least in hope.",
+          "sentence": "A late _____ in the wet season still closed the hill road.",
           "answer": "landslide"
         },
         {
           "id": "set-094-q10",
           "code": "S094-Q10",
           "tag": "habits",
-          "sentence": "A _____ repairer of clocks works with small tools and does not force a stuck wheel.",
+          "sentence": "Vera waited for her late turn in the game, still _____.",
           "answer": "patient"
         },
         {
           "id": "set-094-q11",
           "code": "S094-Q11",
           "tag": "illness",
-          "sentence": "When the homemade pickle was still too new and strong, a cautious nibble still woke a _____.",
+          "sentence": "A _____ in his tummy made the classroom clock feel slow, so Ivan sat very still.",
           "answer": "stomachache"
         },
         {
           "id": "set-094-q12",
           "code": "S094-Q12",
           "tag": "disasters",
-          "sentence": "The school’s _____ assembly is held in a calm month, on purpose, so that fear is not the only teacher.",
+          "sentence": "An _____ made the floor tremble under the morning assembly.",
           "answer": "earthquake"
         },
         {
           "id": "set-094-q13",
           "code": "S094-Q13",
           "tag": "habits",
-          "sentence": "The club wrote postcards to _____ members who had not come for a month, without a scolding line.",
+          "sentence": "The team used kind words to _____ Iris after a missed catch.",
           "answer": "encourage"
         },
         {
           "id": "set-094-q14",
           "code": "S094-Q14",
           "tag": "illness",
-          "sentence": "After a tummy upset from taking it dry, we always offered a yoghurt with that _____ thereafter.",
+          "sentence": "Polly packed the _____ and the spoon for the weekend at Grandma’s.",
           "answer": "medicine"
         },
         {
           "id": "set-094-q15",
           "code": "S094-Q15",
           "tag": "disasters",
-          "sentence": "A _____ shortage of shade on Sports Day would have been dangerous; extra tents were brought, because the heat was already serious.",
+          "sentence": "The _____ pain after the long walk made Will rest at the gate.",
           "answer": "severe"
         },
         {
           "id": "set-094-q16",
           "code": "S094-Q16",
           "tag": "habits",
-          "sentence": "A _____ parcel locker pickup happens within the stated window, so the box does not return to the depot.",
+          "sentence": "Rita was _____ at the clinic, early for the booked time.",
           "answer": "punctual"
         },
         {
           "id": "set-094-q17",
           "code": "S094-Q17",
           "tag": "illness",
-          "sentence": "Because the bunk-bed ladder was missing a rung, Sam twisted as he climbed and felt a sharp _____.",
+          "sentence": "The low sandpit wall made Lila stoop, and a _____ in her back followed.",
           "answer": "backache"
         },
         {
           "id": "set-094-q18",
           "code": "S094-Q18",
           "tag": "disasters",
-          "sentence": "A _____ of school shoes, cleaned and paired, took an afternoon to sort, and saved several parents a worry.",
+          "sentence": "A packed _____ of unused art paper went in a box next door.",
           "answer": "donation"
         },
         {
           "id": "set-094-q19",
           "code": "S094-Q19",
           "tag": "habits",
-          "sentence": "A _____ lock-check of the music cupboards, last person out each day, is on the wall card.",
+          "sentence": "Victor keeps a _____ every week bedtime, always at nine, even on Friday.",
           "answer": "regular"
         },
         {
           "id": "set-094-q20",
           "code": "S094-Q20",
           "tag": "habits",
-          "sentence": "A labelled caddy of cloths, one colour per room, made the weekend _____ a little smoother.",
+          "sentence": "The hallway floor dried quickly after Maya mopped, ending the _____.",
           "answer": "housework"
         },
         {
           "id": "set-094-q21",
           "code": "S094-Q21",
           "tag": "disasters",
-          "sentence": "A _____ left cracks in the clay court that a tennis ball bounced strangely in, then not at all, because play stopped.",
+          "sentence": "For weeks of _____, the park fountain stayed off, as there was little rain.",
           "answer": "drought"
         },
         {
           "id": "set-094-q22",
           "code": "S094-Q22",
           "tag": "habits",
-          "sentence": "The _____ gift-wrapper’s tape stuck to itself, then to the cat, then, finally, to the paper.",
+          "sentence": "Leo is _____ and dropped it with umbrellas, always hooking a stranger’s bag.",
           "answer": "clumsy"
         },
         {
           "id": "set-094-q23",
           "code": "S094-Q23",
           "tag": "illness",
-          "sentence": "A minty toothpaste on an exposed nerve can sting and briefly sharpen a _____.",
+          "sentence": "After the hard biscuit, Daisy had a lasting _____ in a tooth.",
           "answer": "toothache"
         },
         {
           "id": "set-094-q24",
           "code": "S094-Q24",
           "tag": "habits",
-          "sentence": "A _____ stranger at the ferry paid the shortfall for a lost ticket, and walked away before thanks could be long.",
+          "sentence": "A _____ pack of extra colouring sheets went to every younger class.",
           "answer": "generous"
         },
         {
           "id": "set-094-q25",
           "code": "S094-Q25",
           "tag": "illness",
-          "sentence": "When the evening temperature rose and morning aches arrived, the pattern of the _____ was familiar.",
+          "sentence": "Ryan asked for help with socks, too weak from the _____.",
           "answer": "flu"
         }
       ]
@@ -17693,183 +17693,183 @@ window.CLOZE_BANK = {
         "id": "set-095-ex",
         "code": "S095-EX",
         "tag": "example",
-        "sentence": "A broken _____ is worse than none, because it turns inside out and still lets you get wet.",
-        "answer": "umbrella"
+        "sentence": "An _____ made the ground tremble under the covered playground.",
+        "answer": "earthquake"
       },
       "items": [
         {
           "id": "set-095-q01",
           "code": "S095-Q01",
           "tag": "illness",
-          "sentence": "After the fair’s candy floss, toffee apple and cola, the combination was a textbook _____.",
+          "sentence": "The nurse felt Eric’s tummy gently and agreed it was a _____.",
           "answer": "stomachache"
         },
         {
           "id": "set-095-q02",
           "code": "S095-Q02",
           "tag": "disasters",
-          "sentence": "During the _____, the usual wet-season smell of the earth simply did not arrive.",
+          "sentence": "The _____, with little rain, shrunk the puddle that usually stayed under the slide.",
           "answer": "drought"
         },
         {
           "id": "set-095-q03",
           "code": "S095-Q03",
           "tag": "habits",
-          "sentence": "The radio traffic bulletin is _____, at :15 and :45, so drivers can plan around it.",
+          "sentence": "Yuki has a _____ time for packing sports kit, every Thursday night.",
           "answer": "regular"
         },
         {
           "id": "set-095-q04",
           "code": "S095-Q04",
           "tag": "illness",
-          "sentence": "The clinic bin for unused tablets is the right goodbye for leftover _____, not the sink.",
+          "sentence": "The nurse changed the dose of _____ after the next check.",
           "answer": "medicine"
         },
         {
           "id": "set-095-q05",
           "code": "S095-Q05",
           "tag": "disasters",
-          "sentence": "An _____ felt at school is reported, and then, often, the day continues, with a slightly higher attention to hanging things.",
+          "sentence": "The ground shook in the _____, and the clock slid an inch.",
           "answer": "earthquake"
         },
         {
           "id": "set-095-q06",
           "code": "S095-Q06",
           "tag": "habits",
-          "sentence": "The last ten minutes before the tutor arrives are now a flying, honest burst of hall _____.",
+          "sentence": "Dust rose as Sam cleaned the top shelf, part of today’s _____.",
           "answer": "housework"
         },
         {
           "id": "set-095-q07",
           "code": "S095-Q07",
           "tag": "illness",
-          "sentence": "After the beach clean-up, bending for bottles all morning, the volunteers queued for ointment for more than one _____.",
+          "sentence": "Stan stood in the tram, holding the pole and a _____ in his back.",
           "answer": "backache"
         },
         {
           "id": "set-095-q08",
           "code": "S095-Q08",
           "tag": "habits",
-          "sentence": "A _____ catch of a falling orange was a success — and the second orange was not.",
+          "sentence": "The vase wobbled after _____ and dropped it Eva brushed the shelf with a bag.",
           "answer": "clumsy"
         },
         {
           "id": "set-095-q09",
           "code": "S095-Q09",
           "tag": "illness",
-          "sentence": "A cancelled swimming badge test was disappointing, but chlorine and the _____ do not mix well.",
+          "sentence": "Even holding a book felt heavy while Nora had the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-095-q10",
           "code": "S095-Q10",
           "tag": "habits",
-          "sentence": "The _____ club’s “spare jacket” peg is always full, because members keep bringing extras.",
+          "sentence": "A _____ neighbour shared shade and cold water with walkers.",
           "answer": "generous"
         },
         {
           "id": "set-095-q11",
           "code": "S095-Q11",
           "tag": "disasters",
-          "sentence": "The drought’s _____ period, officially named, was the six weeks without a useful cloud.",
+          "sentence": "The _____ swelling after the sprain meant PE was off for a week.",
           "answer": "severe"
         },
         {
           "id": "set-095-q12",
           "code": "S095-Q12",
           "tag": "habits",
-          "sentence": "Because the examiner was _____, every candidate received the full, fair amount of time.",
+          "sentence": "Wade was thanked for being _____ when the photographer arrived early.",
           "answer": "punctual"
         },
         {
           "id": "set-095-q13",
           "code": "S095-Q13",
           "tag": "illness",
-          "sentence": "After watching the match in a packed, shouting stand, I walked home quietly with a drumming _____.",
+          "sentence": "Amy could not wear her tight hairband; it woke a _____ in her head.",
           "answer": "headache"
         },
         {
           "id": "set-095-q14",
           "code": "S095-Q14",
           "tag": "disasters",
-          "sentence": "The official letter thanked the year group for a _____ of $2,000, and named the equipment it would buy.",
+          "sentence": "Mum took a _____ of rice and oil to the community box.",
           "answer": "donation"
         },
         {
           "id": "set-095-q15",
           "code": "S095-Q15",
           "tag": "habits",
-          "sentence": "The “quiet” celebration whisper was perfectly audible, and the team felt happily _____.",
+          "sentence": "Joel felt _____ after mixing up the birthday and the day before.",
           "answer": "embarrassed"
         },
         {
           "id": "set-095-q16",
           "code": "S095-Q16",
           "tag": "illness",
-          "sentence": "When the canteen sold very hard biscuits, the dental-club teacher warned they were risky during a _____.",
+          "sentence": "Hugo rinsed after every snack, hoping to keep the _____ in a tooth quiet.",
           "answer": "toothache"
         },
         {
           "id": "set-095-q17",
           "code": "S095-Q17",
           "tag": "disasters",
-          "sentence": "A _____ that stays offshore can still bring dangerous winds on the headlands and the islands.",
+          "sentence": "Neighbours texted about the _____, then stayed in for the tropical storm.",
           "answer": "typhoon"
         },
         {
           "id": "set-095-q18",
           "code": "S095-Q18",
           "tag": "habits",
-          "sentence": "Being _____ for the garden hose means coiling it back, so no one trips the next morning.",
+          "sentence": "Pearl took the duty seriously, as a _____ class helper should.",
           "answer": "responsible"
         },
         {
           "id": "set-095-q19",
           "code": "S095-Q19",
           "tag": "illness",
-          "sentence": "The morning dew hike was lovely until cold air hit our throats and started a round of _____.",
+          "sentence": "A peppery noodle soup started a fierce _____ in her throat at supper.",
           "answer": "cough"
         },
         {
           "id": "set-095-q20",
           "code": "S095-Q20",
           "tag": "habits",
-          "sentence": "After fewer sweet drinks, one pupil said the afternoon slump had gone and they felt more _____.",
+          "sentence": "Mum called the new timetable _____ : sleep, school, then a walk.",
           "answer": "healthy"
         },
         {
           "id": "set-095-q21",
           "code": "S095-Q21",
           "tag": "habits",
-          "sentence": "The _____ storyteller let the youngest ask a long question, and then answered it fully.",
+          "sentence": "Lila was _____ and waited calmly at the photo booth, letting others go first.",
           "answer": "patient"
         },
         {
           "id": "set-095-q22",
           "code": "S095-Q22",
           "tag": "illness",
-          "sentence": "After two days, the chart finally showed a flat, normal line where the _____ had been.",
+          "sentence": "Ken was burning hot, and the reading showed a clear _____.",
           "answer": "fever"
         },
         {
           "id": "set-095-q23",
           "code": "S095-Q23",
           "tag": "disasters",
-          "sentence": "The ground-floor piano was lifted onto bricks after the last _____, and it has stayed there.",
+          "sentence": "A _____ from the swollen stream left water covering the picnic lawn.",
           "answer": "flood"
         },
         {
           "id": "set-095-q24",
           "code": "S095-Q24",
           "tag": "habits",
-          "sentence": "A kind judge’s first sentence can _____ a faltering speaker to find the next point.",
+          "sentence": "Mum used kind words to _____ Liam when the lines would not come.",
           "answer": "encourage"
         },
         {
           "id": "set-095-q25",
           "code": "S095-Q25",
           "tag": "disasters",
-          "sentence": "A _____ siren in this valley is not for the sea; it is for the hill behind the houses.",
+          "sentence": "The _____ was small, but mud still reached the garden wall.",
           "answer": "landslide"
         }
       ]
@@ -17881,183 +17881,183 @@ window.CLOZE_BANK = {
         "id": "set-096-ex",
         "code": "S096-EX",
         "tag": "example",
-        "sentence": "A clean _____ on photo day is expected, and the spare shirt in the office is only for accidents.",
-        "answer": "uniform"
+        "sentence": "A kind whisper from a friend helped _____ Sam to raise a hand.",
+        "answer": "encourage"
       },
       "items": [
         {
           "id": "set-096-q01",
           "code": "S096-Q01",
           "tag": "disasters",
-          "sentence": "A _____ frost, coming after a warm spell, was more damaging than an ordinary winter night.",
+          "sentence": "The _____ swelling in Zack’s lip looked worse than the small cut.",
           "answer": "severe"
         },
         {
           "id": "set-096-q02",
           "code": "S096-Q02",
           "tag": "habits",
-          "sentence": "When two people wore the same rare shirt on photo day, both laughed and felt a little _____.",
+          "sentence": "The late arrival made Iris feel _____ and shy, red as every head turned.",
           "answer": "embarrassed"
         },
         {
           "id": "set-096-q03",
           "code": "S096-Q03",
           "tag": "illness",
-          "sentence": "A new pillow that sat too high made the first school morning arrive with a stiff-neck _____ as well.",
+          "sentence": "A slow _____ in his head grew during the talk, and Leo looked at the clock.",
           "answer": "headache"
         },
         {
           "id": "set-096-q04",
           "code": "S096-Q04",
           "tag": "disasters",
-          "sentence": "A heavy _____ of boxed goods arrived on a trolley, and then the real work of sharing it out began.",
+          "sentence": "A _____ of packed unused art paper went to a neighbouring school.",
           "answer": "donation"
         },
         {
           "id": "set-096-q05",
           "code": "S096-Q05",
           "tag": "habits",
-          "sentence": "A _____ exam-room helper, in charge of the clock, does not give a hint, only the time.",
+          "sentence": "A _____ end to the day: Will checked every plug was out.",
           "answer": "responsible"
         },
         {
           "id": "set-096-q06",
           "code": "S096-Q06",
           "tag": "illness",
-          "sentence": "A night guard was recommended to stop the grinding that kept inviting a dawn _____.",
+          "sentence": "The night felt long, with the _____ in a tooth coming and going.",
           "answer": "toothache"
         },
         {
           "id": "set-096-q07",
           "code": "S096-Q07",
           "tag": "disasters",
-          "sentence": "The family packed a “_____ bag”: radio, water, cards, and a printed list of emergency numbers.",
+          "sentence": "Shopkeepers boarded their doors, ready for the tropical storm and _____.",
           "answer": "typhoon"
         },
         {
           "id": "set-096-q08",
           "code": "S096-Q08",
           "tag": "habits",
-          "sentence": "A _____ kitchen habit is to put fruit in a bowl we can see, and crisps in a higher cupboard.",
+          "sentence": "The club talked about _____ snacks of fruit that still taste good.",
           "answer": "healthy"
         },
         {
           "id": "set-096-q09",
           "code": "S096-Q09",
           "tag": "illness",
-          "sentence": "After the family reunion photo, two households went quiet online, both fighting the _____.",
+          "sentence": "Ted spoke little, weak all over after a night of _____.",
           "answer": "flu"
         },
         {
           "id": "set-096-q10",
           "code": "S096-Q10",
           "tag": "habits",
-          "sentence": "A _____ planter of bamboo knows it takes time, and still waters it through the quiet months.",
+          "sentence": "Stan was _____ with the new recipe, waiting for the soup to thicken.",
           "answer": "patient"
         },
         {
           "id": "set-096-q11",
           "code": "S096-Q11",
           "tag": "habits",
-          "sentence": "A _____ sock-pairing in the laundry on Sundays stops a weekday hunt in the dark.",
+          "sentence": "Ken files worksheets every Friday, a _____ end-of-week habit.",
           "answer": "regular"
         },
         {
           "id": "set-096-q12",
           "code": "S096-Q12",
           "tag": "illness",
-          "sentence": "The cookery-room stool had no back support, and an hour of peeling left Miss Wan with a _____.",
+          "sentence": "After painting the low wall, Nell stood up slowly with a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-096-q13",
           "code": "S096-Q13",
           "tag": "disasters",
-          "sentence": "When the train’s overhead line was inspected after a tremor, the delay was named, correctly, as an _____ check.",
+          "sentence": "An _____ sent a tremble through the hall, and people waited.",
           "answer": "earthquake"
         },
         {
           "id": "set-096-q14",
           "code": "S096-Q14",
           "tag": "habits",
-          "sentence": "After winter coats were put away, the cupboard floor was wiped, a seasonal piece of _____.",
+          "sentence": "Lucy wiped the skirting boards, a slow job on the _____ list.",
           "answer": "housework"
         },
         {
           "id": "set-096-q15",
           "code": "S096-Q15",
           "tag": "illness",
-          "sentence": "When the blender lid was loose, a cloud of cocoa made Mum turn away with a _____.",
+          "sentence": "A sudden _____ from his throat made the little ones look up.",
           "answer": "cough"
         },
         {
           "id": "set-096-q16",
           "code": "S096-Q16",
           "tag": "disasters",
-          "sentence": "A _____ warning cancelled the dragon-boat practice, because the course was no longer a marked river but a field of water.",
+          "sentence": "The _____ rose against the shop shutter, water covering the step.",
           "answer": "flood"
         },
         {
           "id": "set-096-q17",
           "code": "S096-Q17",
           "tag": "habits",
-          "sentence": "When the class stood at once, a _____ chair-leg caught a bag and produced a short scrape.",
+          "sentence": "Liam bumped the printer, and a _____ knock sent paper flying.",
           "answer": "clumsy"
         },
         {
           "id": "set-096-q18",
           "code": "S096-Q18",
           "tag": "illness",
-          "sentence": "A sip of cool water helped the dry mouth that often comes with a high _____.",
+          "sentence": "A night of high _____ left Maya tired and hot in the morning.",
           "answer": "fever"
         },
         {
           "id": "set-096-q19",
           "code": "S096-Q19",
           "tag": "disasters",
-          "sentence": "The last photo in the engineer’s report is a green slope, and a date, and a note: “no further _____ this season”.",
+          "sentence": "The _____ moved mud and stones down towards the estate wall.",
           "answer": "landslide"
         },
         {
           "id": "set-096-q20",
           "code": "S096-Q20",
           "tag": "habits",
-          "sentence": "A _____ child broke a large chocolate into many squares and did not keep a private reserve.",
+          "sentence": "Tess gave a _____ portion of her time to walk a lost child home.",
           "answer": "generous"
         },
         {
           "id": "set-096-q21",
           "code": "S096-Q21",
           "tag": "illness",
-          "sentence": "A warm, bland snack later, not more rich food, is the kinder answer to a fading _____.",
+          "sentence": "Cora held her middle in the queue, quiet with a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-096-q22",
           "code": "S096-Q22",
           "tag": "disasters",
-          "sentence": "A typhoon’s rain finally broke the _____, a rough kind of rescue that the dry fields still needed.",
+          "sentence": "A long _____ made the soil hard, and seedlings would not push through.",
           "answer": "drought"
         },
         {
           "id": "set-096-q23",
           "code": "S096-Q23",
           "tag": "habits",
-          "sentence": "The family used a shared chart only to _____ effort, not to compare the children against each other.",
+          "sentence": "The teacher’s kind remark helped _____ Kate to ask a question.",
           "answer": "encourage"
         },
         {
           "id": "set-096-q24",
           "code": "S096-Q24",
           "tag": "illness",
-          "sentence": "A quiet reminder, not a battle, at eight o’clock kept the habit of taking the _____ steady.",
+          "sentence": "Mark made a chart on the wall to tick each dose of _____.",
           "answer": "medicine"
         },
         {
           "id": "set-096-q25",
           "code": "S096-Q25",
           "tag": "habits",
-          "sentence": "The community choir respects a _____ rehearsal; late chatter in the doorway is gently discouraged.",
+          "sentence": "Carl kept his blazer on the chair at night, a _____, early and ready trick.",
           "answer": "punctual"
         }
       ]
@@ -18069,183 +18069,183 @@ window.CLOZE_BANK = {
         "id": "set-097-ex",
         "code": "S097-EX",
         "tag": "example",
-        "sentence": "Add one more _____ to the soup — perhaps carrot — so the colour and the taste both improve.",
-        "answer": "vegetable"
+        "sentence": "The _____ damage to the steps made the short cut too dangerous.",
+        "answer": "severe"
       },
       "items": [
         {
           "id": "set-097-q01",
           "code": "S097-Q01",
           "tag": "habits",
-          "sentence": "We _____ a classmate returning after a long absence by saving a seat and saying, “We kept your place.”",
+          "sentence": "Grandad’s kind words helped _____ Ryan to try the high bar again.",
           "answer": "encourage"
         },
         {
           "id": "set-097-q02",
           "code": "S097-Q02",
           "tag": "illness",
-          "sentence": "When Dad assembled the folding table upside down, he stood up with a grimace and a sudden _____.",
+          "sentence": "After the long walk, Wade rubbed his back and said it was a _____.",
           "answer": "backache"
         },
         {
           "id": "set-097-q03",
           "code": "S097-Q03",
           "tag": "disasters",
-          "sentence": "When the drain covers lifted and water rose between the tiles, the street had begun its _____.",
+          "sentence": "A late-summer _____ left water covering the path to the canteen.",
           "answer": "flood"
         },
         {
           "id": "set-097-q04",
           "code": "S097-Q04",
           "tag": "habits",
-          "sentence": "A _____ ferry captain casts off at the advertised minute, which is why the gangway is already clear.",
+          "sentence": "A late train did not stop Carl; he had allowed time and stayed _____.",
           "answer": "punctual"
         },
         {
           "id": "set-097-q05",
           "code": "S097-Q05",
           "tag": "illness",
-          "sentence": "The debate coach taught us to breathe slowly so that a nervous _____ would not cost us points.",
+          "sentence": "A _____ in her throat during the hymn made the row in front look back.",
           "answer": "cough"
         },
         {
           "id": "set-097-q06",
           "code": "S097-Q06",
           "tag": "disasters",
-          "sentence": "A child asked why the ugly nets were there, and the answer was one word that now they know: _____.",
+          "sentence": "Families watched the news for any _____ on the nearby hill.",
           "answer": "landslide"
         },
         {
           "id": "set-097-q07",
           "code": "S097-Q07",
           "tag": "habits",
-          "sentence": "House meetings fall on a _____ fortnightly pattern, always in the same classroom on even weeks.",
+          "sentence": "A _____ every week bag-check the night before keeps Zoe calm.",
           "answer": "regular"
         },
         {
           "id": "set-097-q08",
           "code": "S097-Q08",
           "tag": "illness",
-          "sentence": "The baby’s fontanelle felt warm, so the clinic visit was booked for a suspected _____.",
+          "sentence": "A wet fringe on his forehead told Mum the _____ was up.",
           "answer": "fever"
         },
         {
           "id": "set-097-q09",
           "code": "S097-Q09",
           "tag": "disasters",
-          "sentence": "The children’s book about a _____ ended with a cloud, and this year they believed the middle pages more.",
+          "sentence": "The long _____ left the playground grass thin and dry.",
           "answer": "drought"
         },
         {
           "id": "set-097-q10",
           "code": "S097-Q10",
           "tag": "habits",
-          "sentence": "The family joke is that no film starts until someone can honestly say the _____ is done.",
+          "sentence": "Jack shook the doormat outside, a small start to the _____, then wiped the floor.",
           "answer": "housework"
         },
         {
           "id": "set-097-q11",
           "code": "S097-Q11",
           "tag": "illness",
-          "sentence": "After the sweet bubble-tea, a straw was no protection; the cold still woke a quiet _____.",
+          "sentence": "Joel could not chew the steak, stopped by a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-097-q12",
           "code": "S097-Q12",
           "tag": "disasters",
-          "sentence": "After Signal No. 1, we still went out, but after the higher _____ signal, the streets emptied.",
+          "sentence": "The _____ left wet posters hanging, torn by the strong wind.",
           "answer": "typhoon"
         },
         {
           "id": "set-097-q13",
           "code": "S097-Q13",
           "tag": "habits",
-          "sentence": "The class trusts a _____ typist with the shared slide file, because changes must be saved properly.",
+          "sentence": "Chris was trusted to hold the trip money, a _____ honour.",
           "answer": "responsible"
         },
         {
           "id": "set-097-q14",
           "code": "S097-Q14",
           "tag": "illness",
-          "sentence": "The science poster labelled the seasonal _____ as a whole-body illness, not a single sore spot.",
+          "sentence": "Tina skipped the sleepover, not wanting to spread the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-097-q15",
           "code": "S097-Q15",
           "tag": "disasters",
-          "sentence": "After the _____, we looked twice around the familiar room, checking what had moved when the floor shook.",
+          "sentence": "During an _____ as the ground shook, pupils stayed under desks until the shaking ended.",
           "answer": "earthquake"
         },
         {
           "id": "set-097-q16",
           "code": "S097-Q16",
           "tag": "habits",
-          "sentence": "The nurse’s smile at a clear check-up was a “you are looking _____” that felt earned.",
+          "sentence": "Mum cooked a _____ dinner with soup, rice, and vegetables.",
           "answer": "healthy"
         },
         {
           "id": "set-097-q17",
           "code": "S097-Q17",
           "tag": "illness",
-          "sentence": "The storybook hero who ate the giant pie ended, of course, with a legendary _____.",
+          "sentence": "Gary sat with his belt loosened, easing a tight _____ in his tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-097-q18",
           "code": "S097-Q18",
           "tag": "disasters",
-          "sentence": "The flooding warning was upgraded to _____, and that one word moved families upstairs.",
+          "sentence": "A _____ injury to Vera’s wrist meant she could not write that day.",
           "answer": "severe"
         },
         {
           "id": "set-097-q19",
           "code": "S097-Q19",
           "tag": "habits",
-          "sentence": "When the last ice lolly was being wrapped slowly, a _____ line did not push the stallholder.",
+          "sentence": "Nell stayed _____ as the kettle boiled, waiting without a sigh.",
           "answer": "patient"
         },
         {
           "id": "set-097-q20",
           "code": "S097-Q20",
           "tag": "habits",
-          "sentence": "The _____ host of the online call paid for the upgraded meeting time, so no one would be cut off.",
+          "sentence": "Victor was _____ with his time, staying extra to help everyone pack.",
           "answer": "generous"
         },
         {
           "id": "set-097-q21",
           "code": "S097-Q21",
           "tag": "disasters",
-          "sentence": "The last lesson of the drive was this: a _____ is a gift of money or goods, given to help, and then recorded, and then used.",
+          "sentence": "The class made a _____ of packed thank-you notes and a bag of fruit.",
           "answer": "donation"
         },
         {
           "id": "set-097-q22",
           "code": "S097-Q22",
           "tag": "habits",
-          "sentence": "The _____ sailor-for-a-day let go of the rope too soon, and the fender bumped the pier, softly.",
+          "sentence": "The model ship’s mast broke when _____ and dropped it Nina reached across.",
           "answer": "clumsy"
         },
         {
           "id": "set-097-q23",
           "code": "S097-Q23",
           "tag": "illness",
-          "sentence": "When the bottle arrived with a new colour cap, we still read the name before using the _____.",
+          "sentence": "Ken put the empty _____ bottle in the chemist’s return bin.",
           "answer": "medicine"
         },
         {
           "id": "set-097-q24",
           "code": "S097-Q24",
           "tag": "habits",
-          "sentence": "A forgotten line of the national song, recovered at once, still left a small _____ glow.",
+          "sentence": "Liam felt _____ when his stomach app buzzed during the prayer.",
           "answer": "embarrassed"
         },
         {
           "id": "set-097-q25",
           "code": "S097-Q25",
           "tag": "illness",
-          "sentence": "The language lab headsets crackled, and a long listening test ended with more than one _____ request.",
+          "sentence": "Eva asked classmates to talk softly, pointing to a _____ in her head.",
           "answer": "headache"
         }
       ]
@@ -18257,183 +18257,183 @@ window.CLOZE_BANK = {
         "id": "set-098-ex",
         "code": "S098-EX",
         "tag": "example",
-        "sentence": "The _____ case must stay upright on the bus, and the aisle is not a safe place for it.",
-        "answer": "violin"
+        "sentence": "The class packed a _____ of cards to go with the food boxes.",
+        "answer": "donation"
       },
       "items": [
         {
           "id": "set-098-q01",
           "code": "S098-Q01",
           "tag": "illness",
-          "sentence": "After skipping water all morning, a late, huge juice still sat strangely and felt like a _____.",
+          "sentence": "Daisy wanted only toast soldiers, still careful after a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-098-q02",
           "code": "S098-Q02",
           "tag": "disasters",
-          "sentence": "The last line of our family plan is a meeting place, a telephone number, and the word we hope not to need often: _____.",
+          "sentence": "The _____ shook the ground, and the door rattled in its frame.",
           "answer": "earthquake"
         },
         {
           "id": "set-098-q03",
           "code": "S098-Q03",
           "tag": "habits",
-          "sentence": "A _____ auntie knits more hats than her own grandchildren can wear, and the rest go to the charity box.",
+          "sentence": "Yuki was _____ with her new stickers, starting an extra swap for everyone.",
           "answer": "generous"
         },
         {
           "id": "set-098-q04",
           "code": "S098-Q04",
           "tag": "illness",
-          "sentence": "The science poster said “ask a pharmacist” if any _____ looks different from last time.",
+          "sentence": "A sticky label with the time sat on Otto’s _____ bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-098-q05",
           "code": "S098-Q05",
           "tag": "disasters",
-          "sentence": "The toothache was _____, unusually serious, so the clinic opened a night slot for him at once.",
+          "sentence": "The _____ pain in Ruby’s neck made turning to the board hard.",
           "answer": "severe"
         },
         {
           "id": "set-098-q06",
           "code": "S098-Q06",
           "tag": "habits",
-          "sentence": "A _____ turn in the revolving door left one shopper politely backing out to try again.",
+          "sentence": "Sean is _____ and dropped it with zips too, always catching the fabric.",
           "answer": "clumsy"
         },
         {
           "id": "set-098-q07",
           "code": "S098-Q07",
           "tag": "illness",
-          "sentence": "A Thursday return to school was too early; the leftover weakness of the _____ proved it.",
+          "sentence": "Will asked for the lights low, exhausted by the _____, still weak.",
           "answer": "flu"
         },
         {
           "id": "set-098-q08",
           "code": "S098-Q08",
           "tag": "disasters",
-          "sentence": "A neighbour’s _____ of a sewing machine, serviced, changed what the community workshop could make.",
+          "sentence": "Chris packed a _____ of tinned food after checking the dates.",
           "answer": "donation"
         },
         {
           "id": "set-098-q09",
           "code": "S098-Q09",
           "tag": "habits",
-          "sentence": "After waving to a poster that looked, for one second, like a real person, the child felt _____.",
+          "sentence": "Kate hid a red face, _____ after an unexpected compliment.",
           "answer": "embarrassed"
         },
         {
           "id": "set-098-q10",
           "code": "S098-Q10",
           "tag": "habits",
-          "sentence": "A _____ door monitor during a test lets no one in without the invigilator’s nod.",
+          "sentence": "A _____ check of the first-aid dates was Zack’s monthly job.",
           "answer": "responsible"
         },
         {
           "id": "set-098-q11",
           "code": "S098-Q11",
           "tag": "disasters",
-          "sentence": "A _____ leaves a city’s lowest places honest: they show, at last, which way the water wanted to go.",
+          "sentence": "A _____ in the night left water covering the playground tiles.",
           "answer": "flood"
         },
         {
           "id": "set-098-q12",
           "code": "S098-Q12",
           "tag": "habits",
-          "sentence": "A _____ end to the day is a light supper and time to wind down, so the body can repair.",
+          "sentence": "Nell chose steamed dumplings, a _____ with fruit and water option at the shop.",
           "answer": "healthy"
         },
         {
           "id": "set-098-q13",
           "code": "S098-Q13",
           "tag": "illness",
-          "sentence": "When the ear thermometer beeped a high number, even the sceptic agreed it was a _____.",
+          "sentence": "Even the light blanket felt heavy over a high _____.",
           "answer": "fever"
         },
         {
           "id": "set-098-q14",
           "code": "S098-Q14",
           "tag": "disasters",
-          "sentence": "When the slope drains are cleared before June, the chance of a _____ in the wet months falls, and that is the work.",
+          "sentence": "Workers cleared rocks after the _____, starting at dawn.",
           "answer": "landslide"
         },
         {
           "id": "set-098-q15",
           "code": "S098-Q15",
           "tag": "habits",
-          "sentence": "The _____ pianist repeated the bar until it was clean, without slamming the lid in between.",
+          "sentence": "A _____ and waited calmly smile stayed on Eric’s face while the printer slowly woke.",
           "answer": "patient"
         },
         {
           "id": "set-098-q16",
           "code": "S098-Q16",
           "tag": "illness",
-          "sentence": "When the sun hit the whiteboard at an angle, we could barely read it, and the strain became a _____.",
+          "sentence": "After the long ferry wait, Owen sat with a heavy _____ in his head.",
           "answer": "headache"
         },
         {
           "id": "set-098-q17",
           "code": "S098-Q17",
           "tag": "disasters",
-          "sentence": "A _____ reminder on the bathroom mirror said “turn it off”, and for once, everyone did, most of the time.",
+          "sentence": "The _____ lasted weeks, and the lawn turned yellow with no rain.",
           "answer": "drought"
         },
         {
           "id": "set-098-q18",
           "code": "S098-Q18",
           "tag": "habits",
-          "sentence": "The coach’s whispered “breathe, then go” was enough to _____ the high-jumper into a run-up.",
+          "sentence": "Mum used kind words to _____ Nora through a long practice.",
           "answer": "encourage"
         },
         {
           "id": "set-098-q19",
           "code": "S098-Q19",
           "tag": "illness",
-          "sentence": "The model of a tooth with a red nerve helped the class understand why a deep hole means a _____.",
+          "sentence": "The throbbing eased when Iris sat still and held her jaw through the _____.",
           "answer": "toothache"
         },
         {
           "id": "set-098-q20",
           "code": "S098-Q20",
           "tag": "habits",
-          "sentence": "When the school bell and a _____ teacher meet, the first sentence of the lesson is not an apology for being late.",
+          "sentence": "Being _____ helped Rose greet the visitor at the exact meeting time.",
           "answer": "punctual"
         },
         {
           "id": "set-098-q21",
           "code": "S098-Q21",
           "tag": "habits",
-          "sentence": "A _____ stretch of the strings, before every guitar practice, is now automatic.",
+          "sentence": "Wendy sets a _____ reminder for watering, every Monday and Thursday.",
           "answer": "regular"
         },
         {
           "id": "set-098-q22",
           "code": "S098-Q22",
           "tag": "illness",
-          "sentence": "After the Chinese-dance rehearsal, deep bends and all, Kylie asked to sit out the last run because of a _____.",
+          "sentence": "Polly could not pick up the bags because of a _____ in her back.",
           "answer": "backache"
         },
         {
           "id": "set-098-q23",
           "code": "S098-Q23",
           "tag": "disasters",
-          "sentence": "From our balcony the circling _____ was a roaring night of wind and rain, and no one slept well.",
+          "sentence": "A coastal _____ brought a tropical storm and high waves at the pier.",
           "answer": "typhoon"
         },
         {
           "id": "set-098-q24",
           "code": "S098-Q24",
           "tag": "habits",
-          "sentence": "A small dustpan lives under the kettle now, because crumbs are easier to catch before the big _____.",
+          "sentence": "Mum smiled at the already-done _____, floors and all.",
           "answer": "housework"
         },
         {
           "id": "set-098-q25",
           "code": "S098-Q25",
           "tag": "illness",
-          "sentence": "After the Mid-Autumn stall, incense and fried food smells left Grandpa clearing a tight _____.",
+          "sentence": "Hugh stepped into the corridor to let the _____ in his throat pass.",
           "answer": "cough"
         }
       ]
@@ -18445,183 +18445,183 @@ window.CLOZE_BANK = {
         "id": "set-099-ex",
         "code": "S099-EX",
         "tag": "example",
-        "sentence": "A parent _____ will walk with the infant class, not to teach, but to keep the group together at crossings.",
-        "answer": "volunteer"
+        "sentence": "The class stayed _____ and waited calmly while the guest found the right slide.",
+        "answer": "patient"
       },
       "items": [
         {
           "id": "set-099-q01",
           "code": "S099-Q01",
           "tag": "disasters",
-          "sentence": "The last page of the weather diary was a date, a signal number, and one word: _____.",
+          "sentence": "The _____ and tropical storm lasted until dawn, then the sky cleared.",
           "answer": "typhoon"
         },
         {
           "id": "set-099-q02",
           "code": "S099-Q02",
           "tag": "habits",
-          "sentence": "A teacher may _____ a new language by trying a word herself, badly, and laughing first.",
+          "sentence": "Grandma’s kind words helped _____ Ted to taste the new dish.",
           "answer": "encourage"
         },
         {
           "id": "set-099-q03",
           "code": "S099-Q03",
           "tag": "illness",
-          "sentence": "A flushed face in the Zoom lesson made the teacher privately message, “Please check for a _____.”",
+          "sentence": "Jack pressed a cold spoon to his forehead during the _____.",
           "answer": "fever"
         },
         {
           "id": "set-099-q04",
           "code": "S099-Q04",
           "tag": "disasters",
-          "sentence": "The last sentence in the estate log that week was a time, a depth in centimetres, and the word _____.",
+          "sentence": "The _____ overflowed the playground drain, water covering the painted track.",
           "answer": "flood"
         },
         {
           "id": "set-099-q05",
           "code": "S099-Q05",
           "tag": "habits",
-          "sentence": "The cinema trailers had already begun, so only a _____ family was in their seats for the advertised start time.",
+          "sentence": "The morning run club left at 6:45, and _____, early and ready Hugh was stretching already.",
           "answer": "punctual"
         },
         {
           "id": "set-099-q06",
           "code": "S099-Q06",
           "tag": "illness",
-          "sentence": "After skipping water during the charity walk, the last kilometre was finished with a dehydrated _____.",
+          "sentence": "Nina stopped skipping, holding her head through a _____.",
           "answer": "headache"
         },
         {
           "id": "set-099-q07",
           "code": "S099-Q07",
           "tag": "disasters",
-          "sentence": "The ridge path was rerouted inland after a _____ ate the seaward edge, leaving a new, raw cliff of earth.",
+          "sentence": "The _____ moved slowly, mud creeping over the lower steps.",
           "answer": "landslide"
         },
         {
           "id": "set-099-q08",
           "code": "S099-Q08",
           "tag": "habits",
-          "sentence": "The park’s _____ fountain-cleaning is done each dawn, which is why the water stays clear.",
+          "sentence": "Ruby updates the family calendar as a _____ every week Sunday task.",
           "answer": "regular"
         },
         {
           "id": "set-099-q09",
           "code": "S099-Q09",
           "tag": "illness",
-          "sentence": "A sudden pain when the spoon touched one place made breakfast the official start of the _____.",
+          "sentence": "Liam sat quietly in class, holding his jaw through a _____.",
           "answer": "toothache"
         },
         {
           "id": "set-099-q10",
           "code": "S099-Q10",
           "tag": "habits",
-          "sentence": "When the cousins stay over, extra bedding means extra _____, and everyone is warned kindly in advance.",
+          "sentence": "A short burst of _____ left the floor shining and the bins out.",
           "answer": "housework"
         },
         {
           "id": "set-099-q11",
           "code": "S099-Q11",
           "tag": "habits",
-          "sentence": "A _____ friend sat with a worried classmate until the feeling eased, and did not demand a quick smile.",
+          "sentence": "Holly was _____ when the bus skipped a stop, and waited for the next.",
           "answer": "patient"
         },
         {
           "id": "set-099-q12",
           "code": "S099-Q12",
           "tag": "illness",
-          "sentence": "A tight knot in the middle before the contest faded once we talked; the teacher said it had been nerves, not a true _____.",
+          "sentence": "A sudden _____ in his tummy sent Ivan to the nearest bench.",
           "answer": "stomachache"
         },
         {
           "id": "set-099-q13",
           "code": "S099-Q13",
           "tag": "disasters",
-          "sentence": "The last official sentence on the board was short: the disruption is _____, and lessons will be online until Friday.",
+          "sentence": "A _____ injury from the fall meant Cora could not play on Friday.",
           "answer": "severe"
         },
         {
           "id": "set-099-q14",
           "code": "S099-Q14",
           "tag": "habits",
-          "sentence": "The _____ team bought an extra medal out of their own pockets, so the reserve player would have one too.",
+          "sentence": "Chris was _____ and shared extra and split his last bun so everyone had a taste.",
           "answer": "generous"
         },
         {
           "id": "set-099-q15",
           "code": "S099-Q15",
           "tag": "illness",
-          "sentence": "A weekend bag checklist now includes the labelled _____ beside the toothbrush.",
+          "sentence": "Dad kept the receipt in case the _____ bottle needed to be changed.",
           "answer": "medicine"
         },
         {
           "id": "set-099-q16",
           "code": "S099-Q16",
           "tag": "disasters",
-          "sentence": "When the box was sealed, labelled, and signed for, the _____ had completed the short, important journey from our hall to their door.",
+          "sentence": "A _____ of packed garden tools, cleaned and oiled, went to the community plot.",
           "answer": "donation"
         },
         {
           "id": "set-099-q17",
           "code": "S099-Q17",
           "tag": "habits",
-          "sentence": "Because both reached for the same cup, a _____ mid-air change of mind left it in nobody’s hand for a second.",
+          "sentence": "Rita tripped over her own bag and, being _____, hit the chair.",
           "answer": "clumsy"
         },
         {
           "id": "set-099-q18",
           "code": "S099-Q18",
           "tag": "illness",
-          "sentence": "A weekend of video-editing at a kitchen stool, screen too low, gave the secondary cousin a fine _____ of his own.",
+          "sentence": "A long queue without a seat started a _____ in Wade’s back.",
           "answer": "backache"
         },
         {
           "id": "set-099-q19",
           "code": "S099-Q19",
           "tag": "disasters",
-          "sentence": "When the first proper rain returned, the _____ was not officially over, but the sound on the roof felt like an answer.",
+          "sentence": "A _____ with little rain made the trees drop leaves early.",
           "answer": "drought"
         },
         {
           "id": "set-099-q20",
           "code": "S099-Q20",
           "tag": "habits",
-          "sentence": "The automatic “Good morning, sir” was said to a statue in the museum, and the speaker was _____.",
+          "sentence": "A small, shy, _____ wave followed Ryan into the wrong office.",
           "answer": "embarrassed"
         },
         {
           "id": "set-099-q21",
           "code": "S099-Q21",
           "tag": "illness",
-          "sentence": "The quiet museum gallery made my small _____ feel like a drum, so I stepped into the lobby.",
+          "sentence": "A hidden _____ in her throat behind the mask still reached the front row.",
           "answer": "cough"
         },
         {
           "id": "set-099-q22",
           "code": "S099-Q22",
           "tag": "disasters",
-          "sentence": "A gentle classroom reminder, after a distant tremor in the news, was enough to take the _____ drill seriously again the next morning.",
+          "sentence": "The _____ made the floor tremble, and someone held the fish tank.",
           "answer": "earthquake"
         },
         {
           "id": "set-099-q23",
           "code": "S099-Q23",
           "tag": "habits",
-          "sentence": "Being _____ for a borrowed umbrella means bringing it the next day, wet or dry, not “forgetting” it.",
+          "sentence": "Sara kept the permission folder dry in a bag, being trusted and _____.",
           "answer": "responsible"
         },
         {
           "id": "set-099-q24",
           "code": "S099-Q24",
           "tag": "illness",
-          "sentence": "When even holding a comic felt tiring, I knew the _____ had not yet finished with me.",
+          "sentence": "Lila sat wrapped in a shawl, weak after the _____.",
           "answer": "flu"
         },
         {
           "id": "set-099-q25",
           "code": "S099-Q25",
           "tag": "habits",
-          "sentence": "After the term of daily stretching and better lunches, the class looked and felt more _____.",
+          "sentence": "Karl felt more _____ after swapping late games for earlier sleep.",
           "answer": "healthy"
         }
       ]
@@ -18633,183 +18633,183 @@ window.CLOZE_BANK = {
         "id": "set-100-ex",
         "code": "S100-EX",
         "tag": "example",
-        "sentence": "The path ends at a small _____, where the stream drops over a rock into a clear, noisy pool.",
-        "answer": "waterfall"
+        "sentence": "Nina shared her new chalks, a _____ start to the art lesson.",
+        "answer": "generous"
       },
       "items": [
         {
           "id": "set-100-q01",
           "code": "S100-Q01",
           "tag": "habits",
-          "sentence": "A walk after dinner and a plate with plenty of greens left the whole family feeling _____ and well.",
+          "sentence": "A _____ diet of rice, greens, and fish kept the family strong.",
           "answer": "healthy"
         },
         {
           "id": "set-100-q02",
           "code": "S100-Q02",
           "tag": "illness",
-          "sentence": "The last spoonful of the course was celebrated with a sticker, because finishing the _____ mattered.",
+          "sentence": "The clinic called to check Stan still had enough _____ in the bottle.",
           "answer": "medicine"
         },
         {
           "id": "set-100-q03",
           "code": "S100-Q03",
           "tag": "disasters",
-          "sentence": "The last line in the farm diary that season was a date and a rainfall number at last, marking the end of the long _____.",
+          "sentence": "After a _____ with little rain, the soil would not hold a stick.",
           "answer": "drought"
         },
         {
           "id": "set-100-q04",
           "code": "S100-Q04",
           "tag": "habits",
-          "sentence": "The _____ crossing guard held the stop sign until the last pupil was fully on the pavement, unhurried.",
+          "sentence": "Carl was _____ and waited calmly with a stuck zip, easing it rather than pulling hard.",
           "answer": "patient"
         },
         {
           "id": "set-100-q05",
           "code": "S100-Q05",
           "tag": "illness",
-          "sentence": "The old park bench was so hard that after the long chat Grandma needed help standing; she had a _____ in her back.",
+          "sentence": "After reaching for a high book, Rose felt a _____ in her back twinge.",
           "answer": "backache"
         },
         {
           "id": "set-100-q06",
           "code": "S100-Q06",
           "tag": "disasters",
-          "sentence": "A soft roll under the assembly hall made the principal pause, then name it, calmly, as a light _____.",
+          "sentence": "An _____ made the classroom globe tremble on its stand.",
           "answer": "earthquake"
         },
         {
           "id": "set-100-q07",
           "code": "S100-Q07",
           "tag": "habits",
-          "sentence": "A _____ daily habit of this grandfather is to leave a little more than enough, and never count it back.",
+          "sentence": "A _____ gift of extra scarves went to anyone who felt cold.",
           "answer": "generous"
         },
         {
           "id": "set-100-q08",
           "code": "S100-Q08",
           "tag": "illness",
-          "sentence": "A dry winter classroom and no plants left even the teacher reaching for water after a hoarse _____.",
+          "sentence": "Wendy turned aside, a loud _____ coming from her throat.",
           "answer": "cough"
         },
         {
           "id": "set-100-q09",
           "code": "S100-Q09",
           "tag": "habits",
-          "sentence": "The _____ chef-of-the-day wore the apron, then stepped on its tie, and learned a new little dance.",
+          "sentence": "Hugo misjudged the gap and, being _____ and dropped it, clipped the door.",
           "answer": "clumsy"
         },
         {
           "id": "set-100-q10",
           "code": "S100-Q10",
           "tag": "illness",
-          "sentence": "The last dumpling at the family table was optional; leaving it there would have prevented a certain _____.",
+          "sentence": "Faith missed the second half, sitting out with a _____ in her tummy.",
           "answer": "stomachache"
         },
         {
           "id": "set-100-q11",
           "code": "S100-Q11",
           "tag": "illness",
-          "sentence": "The last day of the _____ was marked by a small appetite returning and the aches beginning to fade.",
+          "sentence": "A week of the _____, still weak, left Zack thin-faced and very tired.",
           "answer": "flu"
         },
         {
           "id": "set-100-q12",
           "code": "S100-Q12",
           "tag": "disasters",
-          "sentence": "The delay on the only access road was _____, and ambulances were given a special escort because the wait had become serious.",
+          "sentence": "The _____ damage after the storm meant the hall lights could not be used.",
           "answer": "severe"
         },
         {
           "id": "set-100-q13",
           "code": "S100-Q13",
           "tag": "habits",
-          "sentence": "The last message before the contest was short, kind, and meant to _____ : “We are glad you are here.”",
+          "sentence": "Dad used kind words to _____ Ryan after the first failed try.",
           "answer": "encourage"
         },
         {
           "id": "set-100-q14",
           "code": "S100-Q14",
           "tag": "illness",
-          "sentence": "The last page of the illness diary was dated the morning the _____ finally stayed down.",
+          "sentence": "A _____ at dawn left Eva hot and tired before school even started.",
           "answer": "fever"
         },
         {
           "id": "set-100-q15",
           "code": "S100-Q15",
           "tag": "disasters",
-          "sentence": "A late-evening text confirmed that the boxed _____ of tinned milk had arrived at the centre, counted and stored in the cool room.",
+          "sentence": "Tess helped load a _____ of packed books onto the trolley.",
           "answer": "donation"
         },
         {
           "id": "set-100-q16",
           "code": "S100-Q16",
           "tag": "habits",
-          "sentence": "A _____ relief teacher was at the classroom door as the period changed, and the class did not lose a minute.",
+          "sentence": "The club notice thanked members who were _____ and not late.",
           "answer": "punctual"
         },
         {
           "id": "set-100-q17",
           "code": "S100-Q17",
           "tag": "illness",
-          "sentence": "The quiet car ride with a sleeping baby was peaceful, except for Dad’s hidden, tired _____ after the long day.",
+          "sentence": "Sean closed his eyes, a _____ in his head after the drums.",
           "answer": "headache"
         },
         {
           "id": "set-100-q18",
           "code": "S100-Q18",
           "tag": "disasters",
-          "sentence": "The observation lesson ended with this: a _____ is a tropical cyclone, and in Hong Kong we respect its wind.",
+          "sentence": "A named _____ crossed the sea, a tropical storm with heavy rain.",
           "answer": "typhoon"
         },
         {
           "id": "set-100-q19",
           "code": "S100-Q19",
           "tag": "habits",
-          "sentence": "A _____ spelling list, given every Monday and tested every Friday, structures the week’s homework.",
+          "sentence": "The choir’s _____ every week rehearsal never changes its night or hall.",
           "answer": "regular"
         },
         {
           "id": "set-100-q20",
           "code": "S100-Q20",
           "tag": "habits",
-          "sentence": "The pride of a clear sink at nine o’clock is, in this house, the official end of the day’s _____.",
+          "sentence": "Zoe sorted socks from the laundry, a quiet bit of _____.",
           "answer": "housework"
         },
         {
           "id": "set-100-q21",
           "code": "S100-Q21",
           "tag": "disasters",
-          "sentence": "A burst hillside pipe sent water down the steps until a shallow _____ covered the usually dry podium.",
+          "sentence": "During the _____, water covered the last three steps to the pier.",
           "answer": "flood"
         },
         {
           "id": "set-100-q22",
           "code": "S100-Q22",
           "tag": "habits",
-          "sentence": "When the last biscuit was taken, and it had been meant to be shared, the taker felt rightly _____.",
+          "sentence": "Nora felt _____ when the teacher repeated her funny mistake kindly.",
           "answer": "embarrassed"
         },
         {
           "id": "set-100-q23",
           "code": "S100-Q23",
           "tag": "illness",
-          "sentence": "The taxi ride to the clinic was silent except for a careful “mm” each time the _____ flared.",
+          "sentence": "Kate slept with an extra pillow, easing a _____ in her cheek.",
           "answer": "toothache"
         },
         {
           "id": "set-100-q24",
           "code": "S100-Q24",
           "tag": "disasters",
-          "sentence": "A drainage crew found fresh mud against the berm and closed the lane until a possible _____ could be ruled out.",
+          "sentence": "The _____ of mud on the slope blocked a lane, and cars used the lower road.",
           "answer": "landslide"
         },
         {
           "id": "set-100-q25",
           "code": "S100-Q25",
           "tag": "habits",
-          "sentence": "In our camp the night-watch duty is real, so we choose someone _____ enough to stay at the gate and fetch an adult if needed.",
+          "sentence": "A trusted, _____ look at the door, then Eric turned the key twice.",
           "answer": "responsible"
         }
       ]
