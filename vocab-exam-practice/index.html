@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vocabulary Exam Practice</title>
+  <style>
+    :root {
+      --navy: #1b2a4a;
+      --navy-2: #24365c;
+      --ink: #1c2434;
+      --muted: #5b6578;
+      --line: #d9d3c7;
+      --cream: #f6f3ec;
+      --paper: #fffdf8;
+      --gold: #b8892d;
+      --gold-soft: #f3e6c8;
+      --alert: #8a3b12;
+      --alert-bg: #fbe8d8;
+      --ok: #215c3a;
+      --ok-bg: #e5f3ea;
+      --warn: #7a4a08;
+      --warn-bg: #fff3d6;
+      --danger: #7a1f1f;
+      --shadow: 0 10px 30px rgba(27, 42, 74, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", "PingFang HK", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #efe6d3 0, transparent 28%),
+        linear-gradient(180deg, #eef1f6 0, var(--cream) 220px);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 20px 80px; }
+    header.hero {
+      background: var(--navy);
+      color: #f8f4ea;
+      border-radius: 16px;
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow);
+      margin: 18px 0 22px;
+    }
+    header.hero .kicker {
+      color: var(--gold-soft);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    header.hero h1 {
+      font-size: 28px;
+      line-height: 1.25;
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+    header.hero p { margin: 0; color: #d9deea; max-width: 70ch; }
+    section.card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+    }
+    section.card h2 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      color: var(--navy);
+    }
+    .hint { color: var(--muted); margin: 0 0 16px; }
+    .name-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    @media (max-width: 700px) {
+      .name-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .name-btn, button, select, input[type="number"] {
+      font-family: inherit;
+    }
+    .name-btn {
+      appearance: none;
+      background: #fff;
+      border: 2px solid #cfc8ba;
+      border-radius: 12px;
+      padding: 14px 10px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      cursor: pointer;
+    }
+    .name-btn:hover { border-color: var(--navy); }
+    .name-btn[aria-pressed="true"] {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .pill.ok { background: var(--ok-bg); color: var(--ok); }
+    .pill.warn { background: var(--warn-bg); color: var(--warn); }
+    .pill.danger { background: #f8e3e3; color: var(--danger); }
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 700px) {
+      .options { grid-template-columns: 1fr; }
+    }
+    label.field { display: block; }
+    label.field span {
+      display: block;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    select, input[type="number"] {
+      width: 100%;
+      border: 1px solid #cfc8ba;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 16px;
+      background: #fff;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .btn {
+      appearance: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 11px 16px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-primary:hover:not(:disabled) { background: var(--navy-2); }
+    .btn-secondary { background: #ece7dc; color: var(--navy); }
+    .btn-danger {
+      background: transparent;
+      color: var(--danger);
+      border: 1px solid #e3b8b8;
+    }
+    .msg {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      display: none;
+    }
+    .msg.show { display: block; }
+    .msg.info { background: #e8eef8; color: var(--navy); }
+    .msg.ok { background: var(--ok-bg); color: var(--ok); }
+    .msg.warn { background: var(--warn-bg); color: var(--warn); }
+    .msg.danger { background: #f8e3e3; color: var(--danger); }
+    .preview-block { margin-top: 8px; }
+    .version-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 18px 8px;
+      margin: 0 0 16px;
+      background: #fff;
+    }
+    .version-card h3 { margin: 0 0 8px; color: var(--navy); }
+    .example, .item, .bank, .answers {
+      margin: 0 0 12px;
+    }
+    .bank {
+      background: #f3efe6;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .bank strong { display: block; margin-bottom: 4px; }
+    .blank { letter-spacing: 0.12em; }
+    footer.note {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 0 4px;
+    }
+    #workspace[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <p class="kicker">P.6 vocabulary cloze</p>
+      <h1>Vocabulary Exam Practice</h1>
+      <p>Pick your name, choose how many questions and versions, then download a Word file. Each version has one example plus the cloze items, then an answer key on the next page. Times New Roman 14 pt, double line spacing.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Choose your name 先揀你嘅名</h2>
+      <p class="hint">Used-set history is saved only for the name you pick, and only in this browser.</p>
+      <div class="name-grid" id="nameGrid"></div>
+      <div class="status-row" id="remainRow" hidden>
+        <span class="pill ok" id="remainPill">Unused sets: — / 100</span>
+        <span id="remainDetail" class="hint" style="margin:0;"></span>
+      </div>
+    </section>
+
+    <section class="card" id="workspace" aria-disabled="true">
+      <h2>2. Choose questions and versions</h2>
+      <p class="hint">每一個 version 都係一組完整 quiz（一個 set）。Example 係額外一題，唔計入 10–25 題。同一位同事唔會再收到已用過嘅 set；用晒 100 組就唔會循環再用。</p>
+      <div class="options">
+        <label class="field">
+          <span>Number of questions（題數，另加 example）</span>
+          <select id="qCount"></select>
+        </label>
+        <label class="field">
+          <span>Number of versions（份數）</span>
+          <select id="vCount"></select>
+        </label>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn btn-secondary" id="btnPreview">Preview on this page</button>
+        <button type="button" class="btn btn-primary" id="btnDownload">Generate and download Word</button>
+        <button type="button" class="btn btn-danger" id="btnClear">Clear my used-set history (this browser only)</button>
+      </div>
+      <div class="msg" id="message" role="status"></div>
+    </section>
+
+    <section class="card" id="previewCard" hidden>
+      <h2>On-screen preview</h2>
+      <p class="hint" id="previewHint"></p>
+      <div id="preview"></div>
+    </section>
+
+    <footer class="note">
+      <p>This is not the public student Pages site. Used-set records live in this browser’s localStorage and do not sync across devices, browsers, or other computers. See HOWTO.md for how to open and use the tool.</p>
+    </footer>
+  </div>
+  <script src="bank.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
