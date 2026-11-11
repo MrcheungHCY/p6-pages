@@ -27,7 +27,8 @@ Until that save, https://mrcheunghcy.github.io/p6-pages/ returns 404. After it i
 ## File tree
 
 ```
-index.html                 hub (U1–U3, Exam Vocab, Games, tenses link)
+index.html                 hub (U1–U3, Exam Vocab, Games, P.6 Tenses Practice)
+tenses-practice/           P.6 Tenses Practice (100 passages)
 units/u1 … units/u3        scrolling unit pages (no character-library strip)
 units/u4/index.html        student placeholder — U4 is not in this exam
 units/u4/teaching-page.restore.html
@@ -48,7 +49,7 @@ assets/character-library/  README, index.csv, hcy-chars.js, png/char-001 … cha
 assets/ocr/                offline Tesseract bundle for Dictation Tug-of-War
 ```
 
-Tenses practice lives on its own site: https://mrcheunghcy.github.io/6d-tenses-practice/
+Tenses practice: https://mrcheunghcy.github.io/p6-pages/tenses-practice/
 
 FX demo (same kit the revision games load): `assets/fx-kit/demo.html`  
 on Pages: https://mrcheunghcy.github.io/p6-pages/assets/fx-kit/demo.html
