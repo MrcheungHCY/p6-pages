@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>P.6 Writing · 4-Grid Picture Writing</title>
+<link rel="stylesheet" href="assets/css/portal.css"/>
 <link rel="stylesheet" href="../assets/css/portal.css"/>
 <style>
   :root {
@@ -46,13 +47,11 @@
   }
   .pic-card img, .pic-art {
     width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
-    background: #fff7ed;
+    background: #fff;
   }
   .pic-art {
     display: grid; place-items: center; padding: .6rem;
-    background:
-      radial-gradient(circle at 20% 15%, #fff 0, transparent 40%),
-      linear-gradient(160deg, #fff7ed, #ffedd5 55%, #ccfbf1);
+    background: #fff;
   }
   .pic-meta { padding: .65rem .75rem .8rem; }
   .pic-no {
@@ -104,7 +103,6 @@
   .planner .box strong { display: block; margin-bottom: .35rem; }
   .planner .lines { color: #d1d5db; line-height: 1.85; font-size: .9rem; }
   .key-legend span { margin-right: .7rem; white-space: nowrap; }
-  /* Simple illustrated panels (used as fallback art; photos replace when present) */
   .scene {
     width: 100%; height: 100%; min-height: 220px;
     border-radius: 0; position: relative; overflow: hidden;
@@ -131,34 +129,34 @@
 <main class="wrap">
   <div class="hero">
     <div class="badge">P.6 English · Writing</div>
-    <h1>4-Grid Picture Writing · 四格看圖寫作</h1>
-    <p>先搵問題，再向外擴；用伏筆把故事串起，用對話同描寫推展情節，最後用對比寫出角色學到嘅改變。</p>
-    <p class="note key-legend">顏色提示：
-      <span class="tok-problem">problem 問題</span>
-      <span class="tok-gem">伏筆 / hidden gem</span>
-      <span class="tok-dialog">dialogue 對話</span>
-      <span class="tok-desc">descriptive phrase 描寫</span>
-      <span class="tok-before">beginning 開頭性格</span>
-      <span class="tok-after">ending 改變後</span>
+    <h1>4-Grid Picture Writing</h1>
+    <p>Find the problem first, then expand outward. Use a hidden gem (<span class="tok-gem">伏筆</span>) to connect the story, use dialogue and descriptive phrases to move the plot on, and use contrast to show what the character has learnt.</p>
+    <p class="note key-legend">Colour key:
+      <span class="tok-problem">problem</span>
+      <span class="tok-gem">hidden gem / 伏筆</span>
+      <span class="tok-dialog">dialogue</span>
+      <span class="tok-desc">descriptive phrase</span>
+      <span class="tok-before">beginning</span>
+      <span class="tok-after">ending</span>
     </p>
     <nav class="jump" aria-label="On this page">
-      <a href="#s1">1 四格四段</a>
-      <a href="#s2">2 先搵問題</a>
-      <a href="#s3">3 順暢發展</a>
-      <a href="#s4">4 搵伏筆</a>
-      <a href="#s5">5 六套例子</a>
-      <a href="#s6">6 有用對話</a>
-      <a href="#s7">7 描寫句子</a>
-      <a href="#s8">8 詞彙</a>
-      <a href="#s9">9 範文</a>
-      <a href="#s10">10 性格對比</a>
-      <a href="#s11">11 先計劃再寫</a>
+      <a href="#s1">1 Four pictures, four paragraphs</a>
+      <a href="#s2">2 Find the problem first</a>
+      <a href="#s3">3 Keep the story flowing</a>
+      <a href="#s4">4 Find the hidden gem</a>
+      <a href="#s5">5 Six example sets</a>
+      <a href="#s6">6 Meaningful dialogue</a>
+      <a href="#s7">7 Descriptive phrases</a>
+      <a href="#s8">8 Vocabulary</a>
+      <a href="#s9">9 Sample writing</a>
+      <a href="#s10">10 Character contrast</a>
+      <a href="#s11">11 Plan, then write</a>
     </nav>
   </div>
 
   <section class="section" id="s1">
-    <h2><span class="step-num">1</span> Look at the 4 pictures · 四格、四段</h2>
-    <p>一格圖對應一段。至少要有 <strong>4 幅圖、4 段文字</strong>，每段寫嗰格發生嘅事，唔好把四格塞進兩段，亦唔好跳格。</p>
+    <h2><span class="step-num">1</span> Look at the 4 pictures</h2>
+    <p>One picture, one paragraph. You need at least <strong>4 pictures and 4 paragraphs</strong>. Write what happens in that picture. Do not squeeze four pictures into two paragraphs, and do not skip a picture.</p>
     <div class="formula">
       <span class="tok-obj">Picture 1</span><span class="eq">→</span><span>Paragraph 1</span>
       <span class="eq">·</span>
@@ -172,92 +170,93 @@
       <div class="trap-head">
         <div>
           <span class="trap-chip">Hidden traps &amp; tricks</span>
-          <h3>隱藏陷阱／小技巧 · 分段</h3>
+          <h3>Paragraphing</h3>
         </div>
       </div>
       <div class="ex-grid">
         <div class="ex-card"><span class="ex-label">Trap</span><br/>
-          <span class="mark-bad">✗</span> 把 Picture 1–4 寫成一大段。<br/>
-          <span class="mark-ok">✓</span> One picture, one paragraph.</div>
+          <span class="mark-bad">✗ Do not write Pictures 1–4 as one long paragraph.</span><br/>
+          <span class="mark-ok">✓ One picture, one paragraph.</span>
+        </div>
         <div class="ex-card"><span class="ex-label">Trap</span><br/>
-          <span class="mark-bad">✗</span> Skip Picture 3 and jump to the ending.<br/>
-          <span class="mark-ok">✓</span> 每格都要有事發生，先自然去到結尾。</div>
+          <span class="mark-bad">✗ Do not skip Picture 3 and jump to the ending.</span><br/>
+          <span class="mark-ok">✓ Something must happen in every picture, so the ending feels natural.</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="s2">
-    <h2><span class="step-num">2</span> Find the problem first · 先搵問題，再向外擴</h2>
-    <p>唔好一開波只望第一格「開頭發生咩」。先掃四格，問：<strong>真正嘅問題係邊格？</strong> 通常係中間（多數 Picture 2）。搵到問題之後，先向外擴：</p>
+    <h2><span class="step-num">2</span> Find the problem first, then expand outward</h2>
+    <p>Do not start by looking only at Picture 1 and asking what happens at the beginning. First look at all four pictures and ask: <strong class="tok-problem">Which picture shows the real problem?</strong> It is often in the middle (usually Picture 2). After you find the problem, expand outward:</p>
     <div class="formula">
-      <span class="tok-problem">1. Where is the problem?</span>
-      <span class="eq">→</span>
-      <span class="tok-desc">2. What happened before?</span>
-      <span class="eq">→</span>
-      <span class="tok-after">3. How is it solved?</span>
-      <span class="eq">→</span>
-      <span class="tok-after">4. What has changed?</span>
+      <span>1. Where is the problem?</span><span class="eq">→</span>
+      <span>2. What happened before?</span><span class="eq">→</span>
+      <span>3. How is it solved?</span><span class="eq">→</span>
+      <span>4. What has changed?</span>
     </div>
     <div class="ex-grid">
-      <div class="ex-card"><span class="ex-label">先問</span><br/>Which picture shows the trouble? 邊格最「出事」？</div>
-      <div class="ex-card"><span class="ex-label">再向外</span><br/>Before：點解會變成咁？ After：點樣解決？角色學到乜？</div>
-      <div class="ex-card"><span class="ex-label">為什麼要咁做</span><br/>由問題出發，故事先有方向，唔會寫到第三格先發現自己唔知結局寫咩。</div>
+      <div class="ex-card"><span class="ex-label">Ask first</span><br/>Which picture shows the trouble? Which one is the “something went wrong” picture?</div>
+      <div class="ex-card"><span class="ex-label">Then expand</span><br/><strong>Before:</strong> Why did this happen? <strong>After:</strong> How is it solved? What has the character learnt?</div>
+      <div class="ex-card"><span class="ex-label">Why this order?</span><br/>If you start from the problem, the story has a clear direction. You will not reach Picture 3 and suddenly realise you do not know how to end it.</div>
     </div>
   </section>
 
   <section class="section" id="s3">
-    <h2><span class="step-num">3</span> Keep the story flowing · 每段要接住上一格</h2>
-    <p>故事要 <strong>naturally progress</strong>：每一段承接上一幅圖，唔好突然完、亦唔好中間插入一個無伏筆嘅新結局。</p>
+    <h2><span class="step-num">3</span> Keep the story flowing</h2>
+    <p>The story should progress naturally. Each paragraph continues from the previous picture. Do not stop suddenly, and do not add a new ending that was never prepared.</p>
     <div class="ex-grid">
-      <div class="ex-card"><span class="ex-label">好嘅 flow</span><br/>
-        He ignored the <span class="tok-gem">alarm clock</span>. <span class="tok-conn">The next morning</span>, he woke up late… <span class="tok-conn">That evening</span>, he set the clock beside his bed. <span class="tok-conn">The following day</span>, he arrived early.</div>
-      <div class="ex-card"><span class="ex-label">跳格／突然完</span><br/>
-        <span class="mark-bad">✗</span> He was late. Then he was a good boy. The end.<br/>
-        無經過解決過程，讀者唔知佢點學識準時。</div>
+      <div class="ex-card"><span class="ex-label">Good flow</span><br/>
+        He ignored the <span class="tok-gem">alarm clock</span>. <span class="tok-desc">The next morning</span>, he woke up late… <span class="tok-desc">That evening</span>, he set the clock beside his bed. <span class="tok-desc">The following day</span>, he arrived early.
+      </div>
+      <div class="ex-card"><span class="ex-label">Jumping / sudden ending</span><br/>
+        <span class="mark-bad">✗ He was late. Then he was a good boy. The end.</span><br/>
+        There is no solving process, so readers cannot see how he learnt to be punctual.
+      </div>
     </div>
-    <p class="mini-note">有用連接：<span class="tok-conn">The next morning</span> · <span class="tok-conn">Suddenly</span> · <span class="tok-conn">At that moment</span> · <span class="tok-conn">After that</span> · <span class="tok-conn">The following day</span>。用嚟推進時間，唔好淨係堆 and then。</p>
+    <p class="mini-note">Useful links: <em>The next morning · Suddenly · At that moment · After that · The following day</em>. Use them to move time on, not just a pile of <em>and then</em>.</p>
   </section>
 
   <section class="section" id="s4">
-    <h2><span class="step-num">4</span> Locate the hidden gem · 點樣喺圖中搵伏筆</h2>
-    <p><span class="tok-gem">伏筆 / hidden gem</span> 係圖裡一件細物件，同問題有關。你可以喺圖中搵到，或者合理加進去。用它令問題自然出現，亦令解決方法有根。</p>
-    <p>搵法：<strong>先鎖定問題，再問「邊件細嘢可以引起或解決呢個問題？」</strong> 然後返去較早嘅圖，圈出嗰件嘢——好多時它一早就喺度，只係學生無望到。</p>
+    <h2><span class="step-num">4</span> Locate the hidden gem (<span class="tok-gem">伏筆</span>)</h2>
+    <p>A <strong class="tok-gem">hidden gem / 伏筆</strong> is a small object in the pictures that is related to the problem. You can find it in the pictures, or you can reasonably add it. Use it so the problem appears naturally, and so the solution has a root.</p>
+    <p>How to find it: lock onto the problem first, then ask, “Which small object could cause or solve this problem?” Then go back to an earlier picture and circle that object — it is often already there, but students have not noticed it.</p>
 
-    <article class="gem-page" id="gem-a">
-      <h3>Example page A · 鬧鐘</h3>
+    <article class="gem-page">
+      <h3>Example page A · The alarm clock</h3>
       <div class="gem-layout">
-        <img src="images/gem-alarm.jpg" alt="A yellow alarm clock sits unused on a desk while a boy builds a model aeroplane on the floor."/>
+        <img src="images/gem-alarm.jpg" alt="A twin-bell alarm clock sitting unused on a desk"/>
         <div>
-          <p><strong>先搵問題：</strong> 第二格佢 <span class="tok-problem">遲到</span> 上學。</p>
-          <p><strong>再問：</strong> 點解會遲到？圖裡有冇一件同「時間」有關嘅細物件？</p>
-          <p><strong>圈出伏筆：</strong> 書檯上那個未被設定嘅 <span class="tok-gem">黃色鬧鐘</span>。它早在第一格就出現，只是沒被使用。</p>
-          <p><strong>點樣連接故事：</strong> 問題（遲到）來自忽略鬧鐘；解決（準時）來自把鬧鐘放到床邊並設定。同一件物件貫穿四格。</p>
+          <p><strong class="tok-problem">Find the problem first:</strong> In Picture 2 he is <strong>late</strong> for school.</p>
+          <p><strong>Then ask:</strong> Why is he late? Is there a small object in the pictures that is related to time?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the unused <strong>twin-bell alarm clock</strong> on the desk. It is already in Picture 1, but it has not been set.</p>
+          <p><strong>How it connects the story:</strong> The problem (being late) comes from ignoring the clock. The solution (being on time) comes from putting the clock beside the bed and setting it. The same object runs through all four pictures.</p>
         </div>
       </div>
     </article>
 
-    <article class="gem-page" id="gem-b">
-      <h3>Example page B · 多出來的午餐盒</h3>
+    <article class="gem-page">
+      <h3>Example page B · The extra lunchbox</h3>
       <div class="gem-layout">
-        <img src="images/gem-lunchbox.jpg" alt="An open school bag with two lunchboxes inside, one slightly hidden."/>
+        <img src="images/gem-lunchbox.jpg" alt="An extra floral lunchbox inside an open school bag"/>
         <div>
-          <p><strong>先搵問題：</strong> 同學 <span class="tok-problem">忘記帶午餐</span>，挨餓。</p>
-          <p><strong>再問：</strong> 主角袋裡有冇一件可以幫到人嘅細物件？</p>
-          <p><strong>圈出伏筆：</strong> 書包裡多出來的那個 <span class="tok-gem">午餐盒</span>（媽媽多裝了一份）。</p>
-          <p><strong>點樣連接故事：</strong> 開頭她想藏起它；後來摸到它，決定分享。同一件午餐盒令「自私 → 慷慨」自然發生，而不是突然變好人。</p>
+          <p><strong class="tok-problem">Find the problem first:</strong> A classmate has <strong>forgotten her lunch</strong> and is hungry.</p>
+          <p><strong>Then ask:</strong> Is there a small object in the main character’s bag that could help?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the <strong>extra lunchbox</strong> in the school bag (Mum packed one more).</p>
+          <p><strong>How it connects the story:</strong> At first she wants to hide it. Later she feels it in her bag and decides to share it. The same lunchbox makes the change from selfish to generous feel natural, not sudden.</p>
         </div>
       </div>
     </article>
 
-    <article class="gem-page" id="gem-c">
-      <h3>Example page C · 星形鑰匙扣</h3>
+    <article class="gem-page">
+      <h3>Example page C · The star keychain</h3>
       <div class="gem-layout">
-        <img src="images/gem-keychain.jpg" alt="A star-shaped keychain dangling loosely from a school-bag zipper."/>
+        <img src="images/gem-keychain.jpg" alt="A star-shaped keychain hanging loosely from a bag zipper"/>
         <div>
-          <p><strong>先搵問題：</strong> 放學後他 <span class="tok-problem">拿不到家門鑰匙</span>，進不了家門。</p>
-          <p><strong>再問：</strong> 鑰匙本來在哪？有冇一件細物件一直掛在袋上？</p>
-          <p><strong>圈出伏筆：</strong> 書包拉鏈上搖來搖去的 <span class="tok-gem">星形鑰匙扣</span>。它早在第一格就掛得不穩。</p>
-          <p><strong>點樣連接故事：</strong> 因為掛得不穩，所以會掉；因為同學拾到鑰匙扣，問題才可以解決。他學會把鑰匙扣扣在袋內。</p>
+          <p><strong class="tok-problem">Find the problem first:</strong> After school he <strong>cannot find his house key</strong> and cannot get in.</p>
+          <p><strong>Then ask:</strong> Where was the key? Is there a small object that has been hanging on the bag all along?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the <strong>star keychain</strong> swinging from the zipper. In Picture 1 it is already hanging loosely.</p>
+          <p><strong>How it connects the story:</strong> Because it is loose, it can fall off. Because a classmate finds the keychain, the problem can be solved. He learns to clip the keychain inside his bag.</p>
         </div>
       </div>
     </article>
@@ -266,43 +265,48 @@
       <div class="trap-head">
         <div>
           <span class="trap-chip">Hidden traps &amp; tricks</span>
-          <h3>伏筆不是裝飾</h3>
+          <h3>The hidden gem is not decoration</h3>
         </div>
       </div>
       <div class="ex-grid">
-        <div class="ex-card"><span class="ex-label">弱</span><br/><span class="mark-bad">✗</span> 只寫 “There was a pretty keychain.” 之後再也唔提。</div>
-        <div class="ex-card"><span class="ex-label">強</span><br/><span class="mark-ok">✓</span> 伏筆要在開頭出現、引起或解釋問題、並在解決時再被用到。</div>
-        <div class="ex-card"><span class="ex-label">水壺都可以</span><br/>你可以用水壺、票據、提示卡呢類日常物件。重點係它要同問題有關，而不是随便加一件漂亮嘅嘢。</div>
+        <div class="ex-card"><span class="ex-label">Weak</span><br/>
+          <span class="mark-bad">✗ Only write “There was a pretty keychain.” and never mention it again.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Strong</span><br/>
+          <span class="mark-ok">✓ The hidden gem should appear early, help cause or explain the problem, and be used again in the solution.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Everyday objects</span><br/>
+          You can use a water bottle, a ticket, a cue card, or another everyday object. The important point is that it is related to the problem, not that it looks pretty.
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="s5">
-    <h2><span class="step-num">5</span> Six daily 4-grid examples · 六套日常例子</h2>
-    <p>每套都有對比。圖下有可用嘅 <span class="tok-dialog">dialogue</span>、<span class="tok-desc">descriptive phrases</span>，同埋開頭／結尾嘅性格對比。寫作時可以改寫，唔好原句照抄整篇。</p>
+    <h2><span class="step-num">5</span> Six daily 4-grid examples</h2>
+    <p>Each set shows a contrast. Under the pictures there are useful <span class="tok-dialog">dialogue</span> lines, <span class="tok-desc">descriptive phrases</span>, and the beginning / ending character contrast. You may rewrite them in your own words. Do not copy a whole sample as your own writing.</p>
 
-    <!-- SET 1 -->
     <article class="set-block" id="set1">
       <h3 class="set-head">Set 1 · The Alarm Clock</h3>
       <div class="contrast-bar">
         <span class="tok-before">usually late</span>
         <span class="arrow">→</span>
         <span class="tok-after">punctual</span>
-        <span class="note">伏筆：<span class="tok-gem">yellow alarm clock</span></span>
+        <span class="tok-gem">Hidden gem: twin-bell alarm clock</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，Ken 遲到。然後先睇返 Picture 1 書檯上那個沒用過嘅鬧鐘。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Ken is late. Then look back at Picture 1: the unused alarm clock on the desk.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set1-p1.jpg" alt="At night Ken builds a model aeroplane on the bedroom floor. A yellow alarm clock sits unused on the desk."/>
+          <img src="images/set1-p1.jpg" alt="Ken practises the piano after dinner and does not set the alarm clock"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
-            <p><span class="lab tok-dialog">Dialogue</span><br/>“Just one more piece. I won’t be late tomorrow,” Ken whispered.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The <span class="tok-gem">yellow alarm clock</span> sat quietly on the desk, but he did not touch it.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>Ken is <span class="tok-before">usually late</span> because he keeps building late at night.</p>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Just one more song. I won’t be late tomorrow,” Ken whispered.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Ken is <strong class="tok-before">usually late</strong> because he keeps practising the piano after dinner.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set1-p2.jpg" alt="The next morning Ken runs towards the school gate, looking worried because he is late."/>
+          <img src="images/set1-p2.jpg" alt="Ken rushes to school with his bag half-zipped as the gate is closing"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Oh no! The gate is closing!” Ken cried.</p>
@@ -311,47 +315,46 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set1-p3.jpg" alt="That evening Ken carefully sets the yellow alarm clock on his bedside table."/>
+          <img src="images/set1-p3.jpg" alt="Ken sets the alarm clock beside his pillow"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“I should set the alarm beside my bed tonight,” he said firmly.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He placed the <span class="tok-gem">alarm clock</span> next to his pillow and checked the time twice.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He placed the alarm clock next to his pillow and checked the time twice.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set1-p4.jpg" alt="The next morning Ken walks into school early, smiling and calm."/>
+          <img src="images/set1-p4.jpg" alt="Ken arrives at a quiet school yard early the next morning"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Good morning, Miss Chan. I’m early today!” Ken smiled.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>The school yard was still quiet when he walked in, calm and ready.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>Now he is <span class="tok-after">punctual</span>. He has learnt to plan ahead.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Now he is <strong class="tok-after">punctual</strong>. He has learnt to plan ahead.</p>
           </figcaption>
         </figure>
       </div>
     </article>
 
-    <!-- SET 2 -->
     <article class="set-block" id="set2">
       <h3 class="set-head">Set 2 · The Extra Lunchbox</h3>
       <div class="contrast-bar">
         <span class="tok-before">selfish</span>
         <span class="arrow">→</span>
         <span class="tok-after">generous</span>
-        <span class="note">伏筆：<span class="tok-gem">extra lunchbox</span></span>
+        <span class="tok-gem">Hidden gem: extra lunchbox</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，同學沒有午餐。然後先睇返 Maya 袋裡多出來的那個午餐盒。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, a classmate has no lunch. Then look back at the extra lunchbox in Maya’s bag.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set2-p1.jpg" alt="Maya peeks into her school bag at recess and hides a second lunchbox behind her books."/>
+          <img src="images/set2-p1.jpg" alt="Maya hides an extra lunchbox behind her books"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“This extra lunch is mine. I won’t share it,” Maya muttered.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She pushed the <span class="tok-gem">second lunchbox</span> behind her books so nobody could see it.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>At first Maya is <span class="tok-before">selfish</span>.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She pushed the second lunchbox behind her books so nobody could see it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>At first Maya is <strong class="tok-before">selfish</strong>.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set2-p2.jpg" alt="A classmate sits on a bench with an empty bag, looking hungry, while Maya watches."/>
+          <img src="images/set2-p2.jpg" alt="A classmate looks hungry with an empty bag while Maya watches"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“I left my lunch at home,” her classmate said softly, staring at the ground.</p>
@@ -360,47 +363,46 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set2-p3.jpg" alt="Maya takes the extra lunchbox from her bag and offers it to her classmate."/>
+          <img src="images/set2-p3.jpg" alt="Maya offers the floral lunchbox to her classmate"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Mum packed an extra one. You can have it,” Maya said, holding it out.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She felt the <span class="tok-gem">lunchbox</span> in her bag and her cheeks turned warm.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She felt the lunchbox in her bag and her cheeks turned warm.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set2-p4.jpg" alt="Maya and her classmate eat together on the bench, both smiling."/>
+          <img src="images/set2-p4.jpg" alt="Maya and her classmate sit side by side sharing lunch"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Thank you. It tastes wonderful!” her classmate grinned.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>They sat side by side, sharing the food and laughing in the warm sun.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>Maya has become <span class="tok-after">generous</span>.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Maya has become <strong class="tok-after">generous</strong>.</p>
           </figcaption>
         </figure>
       </div>
     </article>
 
-    <!-- SET 3 -->
     <article class="set-block" id="set3">
       <h3 class="set-head">Set 3 · The Star Keychain</h3>
       <div class="contrast-bar">
         <span class="tok-before">careless</span>
         <span class="arrow">→</span>
         <span class="tok-after">responsible / careful</span>
-        <span class="note">伏筆：<span class="tok-gem">star keychain</span></span>
+        <span class="tok-gem">Hidden gem: star keychain</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，Leo 進不了家門。然後先睇返拉鏈上搖來搖去嘅星形鑰匙扣。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Leo cannot get into his home. Then look back at the star keychain swinging from the zipper.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set3-p1.jpg" alt="Leo swings his school bag as he leaves school. A star keychain dangles loosely from the zipper."/>
+          <img src="images/set3-p1.jpg" alt="Leo swings his bag with a star keychain hanging loosely from the zipper"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Hurry up! I’ll race you to the corner,” Leo laughed, swinging his bag.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A <span class="tok-gem">star keychain</span> dangled loosely from the zipper and jingled with every step.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>Leo is <span class="tok-before">careless</span> with his things.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A star keychain dangled loosely from the zipper and jingled with every step.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Leo is <strong class="tok-before">careless</strong> with his things.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set3-p2.jpg" alt="Leo stands outside his front door, pockets empty, looking worried because he cannot find his key."/>
+          <img src="images/set3-p2.jpg" alt="Leo stands at a locked door searching his pockets for the key"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Where is my key? I can’t get in!” Leo shouted, checking every pocket.</p>
@@ -409,47 +411,46 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set3-p3.jpg" alt="A classmate holds up the star keychain on the path and Leo looks relieved."/>
+          <img src="images/set3-p3.jpg" alt="A classmate holds out the star keychain she found on the path"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Leo, is this yours? I found it on the path,” his classmate called.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The <span class="tok-gem">star keychain</span> shone in her hand as Leo let out a long breath.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The star keychain shone in her hand as Leo let out a long breath.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set3-p4.jpg" alt="At home Leo clips the star keychain safely inside his bag."/>
+          <img src="images/set3-p4.jpg" alt="Leo clips the star keychain safely inside his bag"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“From now on, I’ll clip it inside my bag,” Leo promised.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>He fastened the keychain tightly and patted the bag to check it twice.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>He has become <span class="tok-after">careful and responsible</span>.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>He has become <strong class="tok-after">careful and responsible</strong>.</p>
           </figcaption>
         </figure>
       </div>
     </article>
 
-    <!-- SET 4 -->
     <article class="set-block" id="set4">
       <h3 class="set-head">Set 4 · The Queue Ticket</h3>
       <div class="contrast-bar">
         <span class="tok-before">impatient</span>
         <span class="arrow">→</span>
         <span class="tok-after">patient</span>
-        <span class="note">伏筆：<span class="tok-gem">ticket number 28</span></span>
+        <span class="tok-gem">Hidden gem: ticket number 28</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，Ava 插隊令別人不高興。然後先睇返她手上的號碼票。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Ava jumps the queue and upsets others. Then look back at the ticket in her hand.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set4-p1.jpg" alt="At a busy school book fair Ava holds ticket 28 and frowns at the long queue."/>
+          <img src="images/set4-p1.jpg" alt="Ava waits in a queue, tapping her foot and holding ticket number 28"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Why is this queue so slow? I don’t want to wait,” Ava groaned.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She squeezed <span class="tok-gem">ticket number 28</span> in her hand and tapped her foot.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>Ava is <span class="tok-before">impatient</span>.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She squeezed ticket number 28 in her hand and tapped her foot.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Ava is <strong class="tok-before">impatient</strong>.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set4-p2.jpg" alt="Ava steps in front of other students. A staff member and a classmate look upset."/>
+          <img src="images/set4-p2.jpg" alt="A staff member asks Ava to go back after she jumps the queue"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“It’s not your turn yet. Please go back,” the staff member said firmly.</p>
@@ -458,47 +459,46 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set4-p3.jpg" alt="Ava looks at ticket 28, walks back to her place, and waits quietly."/>
+          <img src="images/set4-p3.jpg" alt="Ava steps back into the queue and looks at ticket 28"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Sorry. I’ll wait for number 28,” Ava said, stepping back.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She looked down at the <span class="tok-gem">ticket</span> and stood still, even though she still felt restless.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She looked down at the ticket and stood still, even though she still felt restless.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set4-p4.jpg" alt="The sign shows 28. Ava walks to the counter calmly and smiles."/>
+          <img src="images/set4-p4.jpg" alt="Ava is served calmly at the counter when number 28 is called"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Number 28, please,” the helper called. “That’s me. Thank you for waiting,” Ava smiled.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>When her number finally lit up, she walked forward calmly.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>She has learnt to be <span class="tok-after">patient</span>.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>She has learnt to be <strong class="tok-after">patient</strong>.</p>
           </figcaption>
         </figure>
       </div>
     </article>
 
-    <!-- SET 5 -->
     <article class="set-block" id="set5">
       <h3 class="set-head">Set 5 · The Cue Card</h3>
       <div class="contrast-bar">
         <span class="tok-before">embarrassed / too shy to speak</span>
         <span class="arrow">→</span>
         <span class="tok-after">brave</span>
-        <span class="note">伏筆：<span class="tok-gem">small cue card</span></span>
+        <span class="tok-gem">Hidden gem: small cue card</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，Hugo 站在全班面前說不出話。然後先睇返口袋裡那張提示卡。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Hugo cannot start speaking in front of the class. Then look back at the cue card in his pocket.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set5-p1.jpg" alt="Hugo sits at his desk before a class sharing, hiding a small cue card in his pocket."/>
+          <img src="images/set5-p1.jpg" alt="Hugo hides a small cue card in his pocket and looks down at his shoes"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“What if I forget everything?” Hugo whispered, sliding the card away.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He hid the <span class="tok-gem">cue card</span> in his pocket and looked down at his shoes.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>He feels <span class="tok-before">embarrassed</span> and is afraid to speak.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He hid the cue card in his pocket and looked down at his shoes.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>He feels <strong class="tok-before">embarrassed</strong> and is afraid to speak.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set5-p2.jpg" alt="Hugo stands at the front of the classroom, frozen, as classmates wait quietly."/>
+          <img src="images/set5-p2.jpg" alt="Hugo freezes in front of the class and cannot start"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“I… I can’t start,” Hugo stammered. The room was very quiet.</p>
@@ -507,47 +507,46 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set5-p3.jpg" alt="Hugo takes the cue card from his pocket and reads the first line."/>
+          <img src="images/set5-p3.jpg" alt="Hugo looks at his cue card and starts his talk"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“My first point is… we should help new classmates,” he read, then looked up.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He touched the <span class="tok-gem">cue card</span> in his pocket, took a deep breath, and his voice grew steadier.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He touched the cue card in his pocket, took a deep breath, and his voice grew steadier.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set5-p4.jpg" alt="After the sharing Hugo smiles and encourages a quieter classmate, holding the cue card loosely."/>
+          <img src="images/set5-p4.jpg" alt="Hugo walks back to his seat and encourages a quieter classmate"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“You can look at your card too. I was scared, but it helped,” Hugo told a quieter classmate.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>He walked back to his seat with a small, proud smile.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>Hugo has become <span class="tok-after">brave</span>.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Hugo has become <strong class="tok-after">brave</strong>.</p>
           </figcaption>
         </figure>
       </div>
     </article>
 
-    <!-- SET 6 -->
     <article class="set-block" id="set6">
       <h3 class="set-head">Set 6 · The Chore Chart</h3>
       <div class="contrast-bar">
         <span class="tok-before">messy / not helping</span>
         <span class="arrow">→</span>
         <span class="tok-after">responsible</span>
-        <span class="note">伏筆：<span class="tok-gem">chore chart on the fridge</span></span>
+        <span class="tok-gem">Hidden gem: chore chart on the fridge</span>
       </div>
-      <p class="mini-note">先搵問題：Picture 2，弟弟被地上的書包絆倒（或家裡很亂）。然後先睇返雪櫃上的家務表。</p>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, her little brother trips over the bag on the floor. Then look back at the chore chart on the fridge.</p>
       <div class="four-grid">
         <figure class="pic-card">
-          <img src="images/set6-p1.jpg" alt="Chloe drops her bag and jacket on the living-room floor. A colourful chore chart is on the fridge behind her."/>
+          <img src="images/set6-p1.jpg" alt="Chloe drops her bag on the floor and walks past the chore chart"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 1 · beginning</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“I’ll tidy up later,” Chloe said, dropping her bag on the floor.</p>
-            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A colourful <span class="tok-gem">chore chart</span> hung on the fridge, but she walked past it.</p>
-            <p><span class="lab tok-before">Contrast</span><br/>Chloe is <span class="tok-before">messy</span> and does not help yet.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A chore chart with simple pictures hung on the fridge, but she walked past it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Chloe is <strong class="tok-before">messy</strong> and does not help yet.</p>
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set6-p2.jpg" alt="Chloe's little brother trips over the school bag. Mum looks tired."/>
+          <img src="images/set6-p2.jpg" alt="Chloe’s little brother trips over the bag in a messy hallway"/>
           <figcaption class="pic-meta">
             <span class="pic-no problem">Picture 2 · problem</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“Ouch! I didn’t see the bag!” her little brother cried.</p>
@@ -556,7 +555,7 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set6-p3.jpg" alt="Chloe looks at the chore chart, then picks up the bag and starts tidying."/>
+          <img src="images/set6-p3.jpg" alt="Chloe looks at the chore chart and starts hanging up the jackets"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 3 · solution starts</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“I’m sorry. The chart says it’s my turn to tidy. I’ll do it now,” Chloe said.</p>
@@ -564,12 +563,12 @@
           </figcaption>
         </figure>
         <figure class="pic-card">
-          <img src="images/set6-p4.jpg" alt="The living room is tidy. Chloe ticks the chore chart and her brother plays safely."/>
+          <img src="images/set6-p4.jpg" alt="The hallway is tidy and Chloe ticks the chore chart"/>
           <figcaption class="pic-meta">
             <span class="pic-no">Picture 4 · ending</span>
             <p><span class="lab tok-dialog">Dialogue</span><br/>“The floor is clear now. You can play safely,” Chloe smiled.</p>
             <p><span class="lab tok-desc">Descriptive phrase</span><br/>She ticked her name on the chart and the room finally felt calm.</p>
-            <p><span class="lab tok-after">Contrast</span><br/>She has become <span class="tok-after">responsible</span>.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>She has become <strong class="tok-after">responsible</strong>.</p>
           </figcaption>
         </figure>
       </div>
@@ -577,96 +576,103 @@
   </section>
 
   <section class="section" id="s6">
-    <h2><span class="step-num">6</span> Meaningful dialogue · 對話要推進故事、表現情緒</h2>
-    <p>對話唔好淨係打招呼。一句好嘅對話應該做到其中一樣：<strong>推進問題或解決方法</strong>，同埋 <strong>讓讀者聽到角色當時的心情</strong>。</p>
+    <h2><span class="step-num">6</span> Meaningful dialogue</h2>
+    <p>Do not use dialogue only to say hello. A useful line should do at least one of these things: <strong>move the problem or the solution forward</strong>, and <strong>let readers hear how the character feels</strong>.</p>
     <div class="ex-grid">
-      <div class="ex-card"><span class="ex-label">弱 · 空打招呼</span><br/>
-        <span class="mark-bad">✗</span> “Hi.” “Hello.” “How are you?” “I’m fine.”<br/>
-        故事無前進一步。</div>
-      <div class="ex-card"><span class="ex-label">強 · 推進問題</span><br/>
-        <span class="mark-ok">✓</span> <span class="tok-dialog">“Where is my key? I can’t get in!”</span><br/>
-        讀者立刻知道問題，亦聽到他著急。</div>
-      <div class="ex-card"><span class="ex-label">強 · 推進解決</span><br/>
-        <span class="mark-ok">✓</span> <span class="tok-dialog">“Mum packed an extra one. You can have it.”</span><br/>
-        對話本身就係解決方法。</div>
-      <div class="ex-card"><span class="ex-label">強 · 表現情緒</span><br/>
-        <span class="mark-ok">✓</span> <span class="tok-dialog">“What if I forget everything?”</span> he whispered.<br/>
-        whispered / cried / groaned / promised 幫你寫心情。</div>
+      <div class="ex-card"><span class="ex-label">Weak · empty greeting</span><br/>
+        <span class="mark-bad">✗ “Hi.” “Hello.” “How are you?” “I’m fine.”</span><br/>
+        The story does not move forward.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · move the problem on</span><br/>
+        <span class="mark-ok tok-dialog">✓ “Where is my key? I can’t get in!”</span><br/>
+        Readers know the problem at once, and they can hear that he is worried.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · move the solution on</span><br/>
+        <span class="mark-ok tok-dialog">✓ “Mum packed an extra one. You can have it.”</span><br/>
+        The dialogue itself is the solution.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · show feeling</span><br/>
+        <span class="mark-ok tok-dialog">✓ “What if I forget everything?” he whispered.</span><br/>
+        Words like <em>whispered / cried / groaned / promised</em> help you show feelings.
+      </div>
     </div>
     <div class="trap">
       <div class="trap-head">
         <div>
           <span class="trap-chip">Hidden traps &amp; tricks</span>
-          <h3>對話標點同說話動詞</h3>
+          <h3>Punctuation and speaking verbs</h3>
         </div>
       </div>
-      <p><span class="mark-ok">✓</span> “I’m early today!” Ken <span class="tok-v">smiled</span>.</p>
-      <p><span class="mark-ok">✓</span> “I can’t start,” Hugo <span class="tok-v">stammered</span>.</p>
-      <p class="mini-note">唔好每句都用 said。試：whispered, cried, muttered, groaned, promised, called, stammered。但要配合情緒，唔好亂配。</p>
+      <p><span class="mark-ok">✓ “I’m early today!” Ken <em>smiled</em>.</span></p>
+      <p><span class="mark-ok">✓ “I can’t start,” Hugo <em>stammered</em>.</span></p>
+      <p class="mini-note">Do not use <em>said</em> in every sentence. Try: whispered, cried, muttered, groaned, promised, called, stammered. Match the verb to the feeling. Do not pick one at random.</p>
     </div>
   </section>
 
   <section class="section" id="s7">
-    <h2><span class="step-num">7</span> Descriptive phrases · 用描寫推進故事</h2>
-    <p>唔可以淨係靠對話。描寫可以寫出時間、動作、物件同感受，令下一格自然出現。</p>
+    <h2><span class="step-num">7</span> Descriptive phrases</h2>
+    <p>Do not depend on dialogue alone. Descriptive phrases can show time, actions, objects and feelings, so the next picture follows naturally.</p>
     <div class="formula">
-      <span class="tok-desc">What can we see?</span>
-      <span class="eq">+</span>
-      <span class="tok-desc">How does it feel?</span>
-      <span class="eq">+</span>
-      <span class="tok-gem">Where is the hidden gem?</span>
+      <span>What can we see?</span><span class="eq">+</span>
+      <span>How does it feel?</span><span class="eq">+</span>
+      <span>Where is the hidden gem?</span>
     </div>
     <div class="ex-grid">
-      <div class="ex-card"><span class="ex-label">弱</span><br/><span class="mark-bad">✗</span> He was late. He was sad. Then he was good.</div>
-      <div class="ex-card"><span class="ex-label">強 · 物件推動情節</span><br/><span class="mark-ok">✓</span> <span class="tok-desc">The yellow alarm clock sat quietly on the desk, but he did not touch it.</span></div>
-      <div class="ex-card"><span class="ex-label">強 · 感受推動情節</span><br/><span class="mark-ok">✓</span> <span class="tok-desc">His face turned red and his hands would not stop shaking.</span></div>
-      <div class="ex-card"><span class="ex-label">強 · 時間連接</span><br/><span class="mark-ok">✓</span> <span class="tok-desc">The school yard was still quiet when he walked in, calm and ready.</span></div>
+      <div class="ex-card"><span class="ex-label">Weak</span><br/>
+        <span class="mark-bad">✗ He was late. He was sad. Then he was good.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · an object moves the story on</span><br/>
+        <span class="mark-ok tok-desc">✓ The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · a feeling moves the story on</span><br/>
+        <span class="mark-ok tok-desc">✓ His face turned red and his hands would not stop shaking.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · a time link</span><br/>
+        <span class="mark-ok tok-desc">✓ The school yard was still quiet when he walked in, calm and ready.</span>
+      </div>
     </div>
   </section>
 
   <section class="section" id="s8">
-    <h2><span class="step-num">8</span> Useful vocabulary · 有用詞彙</h2>
-    <p>用這些詞寫內容同感受。你可以在不同故事裡重用，但句子要配合你自己嘅四格。</p>
+    <h2><span class="step-num">8</span> Useful vocabulary</h2>
+    <p>Use these words to write what happens and how people feel. You may reuse them in different stories, but the sentences must fit your own four pictures.</p>
     <div class="ex-grid">
       <div class="ex-card"><span class="ex-label">Character change</span><br/>
-        late → <strong>punctual</strong><br/>
-        selfish → <strong>generous</strong><br/>
-        careless → <strong>careful / responsible</strong><br/>
-        impatient → <strong>patient</strong><br/>
-        embarrassed / shy → <strong>brave</strong><br/>
-        messy → <strong>responsible</strong></div>
-      <div class="ex-card"><span class="ex-label">Feelings</span><br/>
-        worried, embarrassed, restless, proud, relieved, sorry, determined, grateful</div>
-      <div class="ex-card"><span class="ex-label">Story verbs</span><br/>
-        rushed, dangled, squeezed, stammered, fastened, offered, stepped back, ticked</div>
-      <div class="ex-card"><span class="ex-label">Time / flow</span><br/>
-        that evening, the next morning, at that moment, after a deep breath, from now on, the following day</div>
-      <div class="ex-card"><span class="ex-label">Hidden-gem nouns</span><br/>
-        alarm clock, lunchbox, keychain, queue ticket, cue card, chore chart, water bottle, notepad</div>
+        late → punctual<br/>
+        selfish → generous<br/>
+        careless → careful / responsible<br/>
+        impatient → patient<br/>
+        embarrassed / shy → brave<br/>
+        messy → responsible
+      </div>
+      <div class="ex-card"><span class="ex-label">Feelings</span><br/>worried, embarrassed, restless, proud, relieved, sorry, determined, grateful</div>
+      <div class="ex-card"><span class="ex-label">Story verbs</span><br/>rushed, dangled, squeezed, stammered, fastened, offered, stepped back, ticked</div>
+      <div class="ex-card"><span class="ex-label">Time / flow</span><br/>that evening, the next morning, at that moment, after a deep breath, from now on, the following day</div>
+      <div class="ex-card"><span class="ex-label">Hidden-gem nouns</span><br/>alarm clock, lunchbox, keychain, queue ticket, cue card, chore chart, water bottle, notepad</div>
     </div>
   </section>
 
   <section class="section" id="s9">
-    <h2><span class="step-num">9</span> Sample writing · 範文（Set 1）</h2>
-    <p>以下四段用齊上面嘅技巧：一格一段、由問題想出去、伏筆貫穿、有意義對話、描寫推進、開頭同結尾有對比。顏色同上面的提示一樣。</p>
+    <h2><span class="step-num">9</span> Sample writing (Set 1)</h2>
+    <p>These four paragraphs use all the skills above: one picture, one paragraph; start from the problem; a hidden gem that runs through the story; meaningful dialogue; descriptive phrases that move the story on; and a clear contrast between the beginning and the ending. The colours match the key at the top.</p>
     <div class="sample">
-      <p><strong>Paragraph 1</strong> · Picture 1<br/>
-      After dinner, Ken sat on the bedroom floor and kept building his model aeroplane. <span class="tok-dialog">“Just one more piece. I won’t be late tomorrow,”</span> he whispered. <span class="tok-desc">The <span class="tok-gem">yellow alarm clock</span> sat quietly on the desk, but he did not touch it.</span> He was <span class="tok-before">usually late</span>, and tonight he did not change that habit.</p>
-      <p><strong>Paragraph 2</strong> · Picture 2 · problem<br/>
-      <span class="tok-conn">The next morning</span>, Ken opened his eyes and jumped up. Daylight was already bright. He grabbed his bag and ran. <span class="tok-dialog">“Oh no! The gate is closing!”</span> he cried. <span class="tok-desc">He rushed down the street with his bag half-zipped, his heart beating fast.</span> He was late for school again.</p>
-      <p><strong>Paragraph 3</strong> · Picture 3<br/>
-      <span class="tok-conn">That evening</span>, Ken looked at the <span class="tok-gem">alarm clock</span> and thought about the morning. <span class="tok-dialog">“I should set the alarm beside my bed tonight,”</span> he said firmly. <span class="tok-desc">He placed it next to his pillow and checked the time twice.</span> This time, the little clock would really help him.</p>
-      <p><strong>Paragraph 4</strong> · Picture 4<br/>
-      <span class="tok-conn">The following day</span>, the alarm rang and Ken got up at once. <span class="tok-desc">The school yard was still quiet when he walked in, calm and ready.</span> <span class="tok-dialog">“Good morning, Miss Chan. I’m early today!”</span> he smiled. Ken was no longer the boy who was always late. He had learnt to be <span class="tok-after">punctual</span>.</p>
+      <p><strong>Paragraph 1 · Picture 1</strong><br/>
+      After dinner, Ken sat at the piano and kept practising. <span class="tok-dialog">“Just one more song. I won’t be late tomorrow,”</span> he whispered. <span class="tok-desc">The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</span> He was <span class="tok-before">usually late</span>, and tonight he did not change that habit.</p>
+      <p><strong>Paragraph 2 · Picture 2 · problem</strong><br/>
+      <span class="tok-desc">The next morning</span>, Ken opened his eyes and jumped up. Daylight was already bright. He grabbed his bag and ran. <span class="tok-dialog">“Oh no! The gate is closing!”</span> he cried. <span class="tok-desc">He rushed down the street with his bag half-zipped, his heart beating fast.</span> He was late for school again.</p>
+      <p><strong>Paragraph 3 · Picture 3</strong><br/>
+      <span class="tok-desc">That evening</span>, Ken looked at the <span class="tok-gem">alarm clock</span> and thought about the morning. <span class="tok-dialog">“I should set the alarm beside my bed tonight,”</span> he said firmly. <span class="tok-desc">He placed it next to his pillow and checked the time twice.</span> This time, the little clock would really help him.</p>
+      <p><strong>Paragraph 4 · Picture 4</strong><br/>
+      <span class="tok-desc">The following day</span>, the alarm rang and Ken got up at once. <span class="tok-desc">The school yard was still quiet when he walked in, calm and ready.</span> <span class="tok-dialog">“Good morning, Miss Chan. I’m early today!”</span> he smiled. Ken was no longer the boy who was always late. He had learnt to be <span class="tok-after">punctual</span>.</p>
     </div>
-    <p class="mini-note">寫第二套故事時，用同一條骨架，換伏筆同對比就得，例如 extra lunchbox：selfish → generous。</p>
+    <p class="mini-note">When you write another set, use the same frame and change the hidden gem and the contrast — for example, the extra lunchbox: selfish → generous.</p>
   </section>
 
   <section class="section" id="s10">
-    <h2><span class="step-num">10</span> Show what the character has learnt · 用對比寫出改變</h2>
-    <p>結尾唔好只講 “He was happy.” 要讓讀者比較 <span class="tok-before">開頭嘅性格</span> 同 <span class="tok-after">結尾嘅性格</span>，先清楚佢學到乜。</p>
+    <h2><span class="step-num">10</span> Show what the character has learnt</h2>
+    <p>Do not end with only “He was happy.” Let readers compare the character <strong class="tok-before">at the beginning</strong> with the character <strong class="tok-after">at the end</strong>, so the change is clear.</p>
     <div class="ex-grid">
-      <div class="ex-card"><span class="ex-label">Set 1</span><br/>usually <span class="tok-before">late</span> → <span class="tok-after">punctual</span></div>
+      <div class="ex-card"><span class="ex-label">Set 1</span><br/><span class="tok-before">usually late</span> → <span class="tok-after">punctual</span></div>
       <div class="ex-card"><span class="ex-label">Set 2</span><br/><span class="tok-before">selfish</span> → <span class="tok-after">generous</span></div>
       <div class="ex-card"><span class="ex-label">Set 3</span><br/><span class="tok-before">careless</span> → <span class="tok-after">responsible</span></div>
       <div class="ex-card"><span class="ex-label">Set 4</span><br/><span class="tok-before">impatient</span> → <span class="tok-after">patient</span></div>
@@ -677,30 +683,60 @@
       <div class="trap-head">
         <div>
           <span class="trap-chip">Hidden traps &amp; tricks</span>
-          <h3>對比要寫得見，不要只宣布</h3>
+          <h3>Show the contrast. Do not only announce it.</h3>
         </div>
       </div>
       <div class="ex-grid">
-        <div class="ex-card"><span class="ex-label">弱</span><br/><span class="mark-bad">✗</span> He learnt a lesson. He was good now.</div>
-        <div class="ex-card"><span class="ex-label">強</span><br/><span class="mark-ok">✓</span> In the beginning he hid the lunchbox. In the end he held it out and shared it. He had become generous.</div>
+        <div class="ex-card"><span class="ex-label">Weak</span><br/>
+          <span class="mark-bad">✗ He learnt a lesson. He was good now.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Strong</span><br/>
+          <span class="mark-ok">✓ In the beginning he hid the lunchbox. In the end he held it out and shared it. He had become generous.</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="s11">
-    <h2><span class="step-num">11</span> Plan first, then write · 先計劃，再寫四段</h2>
-    <p>落筆前用呢張表。順序係：<strong>問題 → 伏筆 → 解決 → 對話／描寫 → 改變</strong>。計劃好先寫 Paragraph 1–4。</p>
+    <h2><span class="step-num">11</span> Plan first, then write</h2>
+    <p>Use this table before you write. The order is: <strong class="tok-problem">problem</strong> → <strong class="tok-gem">hidden gem</strong> → solution → dialogue / description → change. Plan first, then write Paragraphs 1–4.</p>
     <div class="planner">
-      <div class="box"><strong>1. Problem（先寫呢度）</strong><div class="lines">Which picture? What went wrong?<br/>__________________<br/>__________________</div></div>
-      <div class="box"><strong>2. Hidden gem 伏筆</strong><div class="lines">What small object connects the story?<br/>__________________<br/>__________________</div></div>
-      <div class="box"><strong>3. Solution</strong><div class="lines">How is the problem solved?<br/>__________________<br/>__________________</div></div>
-      <div class="box"><strong>4. Dialogue + description</strong><div class="lines">One useful line of speech, one descriptive phrase<br/>__________________<br/>__________________</div></div>
-      <div class="box"><strong>5. Character change</strong><div class="lines">From ________ → to ________<br/>What has the character learnt?<br/>__________________</div></div>
-      <div class="box"><strong>Then write</strong><div class="lines">Paragraph 1 → 2 → 3 → 4<br/>One picture, one paragraph.</div></div>
+      <div class="box">
+        <strong>1. Problem (start here)</strong>
+        Which picture? What went wrong?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>2. Hidden gem / 伏筆</strong>
+        What small object connects the story?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>3. Solution</strong>
+        How is the problem solved?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>4. Dialogue + description</strong>
+        One useful line of speech, one descriptive phrase
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>5. Character change</strong>
+        From ________ → to ________<br/>
+        What has the character learnt?
+        <div class="lines">__________________</div>
+      </div>
+      <div class="box">
+        <strong>Then write Paragraph 1 → 2 → 3 → 4</strong>
+        One picture, one paragraph.
+      </div>
     </div>
   </section>
 
-  <p class="footer">Scrolling page (not flip-book) · P.6 Mr Cheung · 4-Grid Picture Writing · for students only — no scores / name lists here.</p>
+  <footer class="footer">
+    <p>Scrolling page · P.6 Mr Cheung · 4-Grid Picture Writing · for students only — no scores or name lists here.</p>
+  </footer>
 </main>
 </body>
 </html>
