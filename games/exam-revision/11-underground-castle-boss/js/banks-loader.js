@@ -187,18 +187,24 @@
     };
   }
 
+  function reshuffle() {
+    state.items = diversify(state.items);
+    state.cursor = 0;
+    return state.items.length;
+  }
+
   function nextItem() {
     if (!state.items.length) return null;
-    if (state.cursor >= state.items.length) {
-      state.items = diversify(state.items);
-      state.cursor = 0;
-    }
-    return state.items[state.cursor++];
+    if (state.cursor >= state.items.length) reshuffle();
+    var item = state.items[state.cursor++];
+    if (item && Array.isArray(item.hand)) item.hand = shuffle(item.hand.slice());
+    return item;
   }
 
   global.CastleBossBanks = {
     load: load,
     nextItem: nextItem,
+    reshuffle: reshuffle,
     getItems: function () { return state.items.slice(); },
     getCounts: function () { return { counts: state.counts, total: state.items.length, skipped: state.skipped, examFlaggedInLive: state.examFlaggedInLive }; },
     looksLikeExamItem: looksLikeExamItem,

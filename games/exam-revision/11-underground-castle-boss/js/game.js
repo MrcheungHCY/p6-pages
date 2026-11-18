@@ -3,8 +3,8 @@
   'use strict';
 
   var CHAR_BASE = '../../../assets/character-library/';
-  var BOSS_ID = 'char-010';
-  var BOSS_NAME = 'Crystal Golem';
+  var bossId = '';
+  var bossName = 'Crystal Golem';
   var ANIM_MS = 3600;
 
   var party = [];
@@ -34,6 +34,53 @@
     var tags = String(c.tags || '').split(',')[0];
     var role = c.role || tags || c.id;
     return String(role).replace(/-/g, ' ');
+  }
+
+  function titleCase(s) {
+    return String(s || '').split(/[\s-]+/).filter(Boolean).map(function (w) {
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    }).join(' ');
+  }
+
+  function prettyName(c) {
+    var tag = String((c && c.tags) || '').split(',')[0].trim();
+    if (!tag) tag = (c && (c.role || c.id)) || 'Boss';
+    return titleCase(tag);
+  }
+
+  function listBosses() {
+    var list = (global.HCY_CHARS && HCY_CHARS.list) || [];
+    return list.filter(function (c) { return c && c.role === 'boss'; });
+  }
+
+  function applyBossArt() {
+    var img = $('#boss-actor img');
+    if (img) {
+      img.src = charUrl(bossId || 'char-010');
+      img.alt = bossName;
+    }
+    var actorName = $('#boss-actor-name');
+    if (actorName) actorName.textContent = bossName;
+    var hud = $('#boss-name');
+    if (hud) hud.textContent = bossName;
+  }
+
+  function pickBoss(forcedId) {
+    var bosses = listBosses();
+    var chosen = null;
+    if (forcedId) {
+      chosen = bosses.filter(function (c) { return c.id === forcedId; })[0] || charMeta(forcedId);
+    } else {
+      var pool = bosses.filter(function (c) { return c.id !== bossId; });
+      if (!pool.length) pool = bosses.slice();
+      if (pool.length) chosen = pool[Math.floor(Math.random() * pool.length)];
+    }
+    if (chosen && chosen.id) {
+      bossId = chosen.id;
+      bossName = prettyName(chosen);
+    }
+    applyBossArt();
+    return { id: bossId, name: bossName };
   }
 
   function showScreen(id) {
@@ -147,7 +194,7 @@
     if (global.DungeonScene) DungeonScene.setPhase(s.phase);
     var bossActor = $('#boss-actor');
     if (bossActor) bossActor.classList.toggle('phase2', s.phase === 2);
-    $('#boss-name').textContent = s.phase === 2 ? (BOSS_NAME + ' — Enraged') : BOSS_NAME;
+    $('#boss-name').textContent = s.phase === 2 ? (bossName + ' — Enraged') : bossName;
   }
 
   function paintTimer() {
@@ -200,8 +247,7 @@
       wrap.appendChild(pose);
       row.appendChild(wrap);
     });
-    var bossImg = $('#boss-actor img');
-    if (bossImg) bossImg.src = charUrl(BOSS_ID);
+    applyBossArt();
   }
 
   function setActiveFighter() {
@@ -488,8 +534,13 @@
   }
 
   /* ---------- turns ---------- */
-  function beginFight() {
+  function beginFight(opts) {
+    opts = opts || {};
     initFx();
+    pickBoss(opts.bossId || null);
+    if (!opts.keepDeck && global.CastleBossBanks && typeof CastleBossBanks.reshuffle === 'function') {
+      CastleBossBanks.reshuffle();
+    }
     combat = global.CastleCombat.create({ timerSec: timerSec });
     activeIndex = 0;
     misses = [];
@@ -593,7 +644,7 @@
     showScreen('screen-end');
     $('#end-title').textContent = win ? 'VICTORY!' : 'TRY AGAIN';
     $('#end-lead').textContent = win
-      ? 'The Crystal Golem falls. Your party cleared the underground castle.'
+      ? 'The ' + bossName + ' falls. Your party cleared the underground castle.'
       : 'The party is down. Review the misses and try again.';
     var recap = $('#end-recap');
     if (!misses.length) {
@@ -769,8 +820,9 @@
       party = partyIds.slice();
       timerSec = 30;
       showScreen('screen-fight');
-      beginFight();
+      beginFight({ bossId: 'char-010' });
       var s0 = combat.snapshot();
+      assert('pinned boss is Crystal Golem', bossId === 'char-010' && bossName === 'Crystal Golem' && listBosses().length === 8, { id: bossId, name: bossName, bosses: listBosses().length });
       assert('start HP 18/12', s0.bossHp === 18 && s0.partyHp === 12, s0);
       assert('timer defaults to 30', s0.timerSec === 30, s0);
       assert('three damage segments', global.CastleCombat.DMG_MID === 2 && global.CastleCombat.SEGMENTS === 3);
@@ -828,9 +880,9 @@
     initFx();
     CastleCards.mount('#card-table');
     var bossImg = $('#boss-actor img');
-    if (bossImg) {
-      bossImg.src = charUrl(BOSS_ID);
-      bossImg.alt = BOSS_NAME;
+    if (bossImg && !bossImg.getAttribute('src')) {
+      bossImg.src = charUrl('char-010');
+      bossImg.alt = 'Crystal Golem';
     }
     $('#btn-start').addEventListener('click', startFromTitle);
     $('#btn-enter').addEventListener('click', function () {
@@ -851,7 +903,8 @@
 
     global.CastleBoss = {
       CHAR_BASE: CHAR_BASE,
-      BOSS_ID: BOSS_ID,
+      get bossId() { return bossId; },
+      listBosses: listBosses,
       getCounts: function () { return countsInfo; },
       getParty: function () { return party.slice(); },
       setParty: function (ids) { party = ids.slice(); syncPicker(); },
