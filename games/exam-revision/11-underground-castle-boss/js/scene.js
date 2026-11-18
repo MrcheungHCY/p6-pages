@@ -6,6 +6,22 @@
   var renderer, scene, camera, lights = [], crystals = [], torches = [];
   var phase = 1, shakeT = 0, flash = null, t0 = 0;
   var ctx2d = null, w = 0, h = 0;
+  var progress = 0, progressNow = 0, walkUntil = 0, lastFrame = 0;
+  var CAM_Z0 = 15.2, CAM_Z1 = 7.2, LOOK_Z0 = -3.6, LOOK_Z1 = -11.6;
+  var CAM_Y = 2.55, LOOK_Y = 2.05;
+
+  function stepProgress(now) {
+    var dt = lastFrame ? Math.min(0.05, (now - lastFrame) / 1000) : 0.016;
+    lastFrame = now;
+    progressNow += (progress - progressNow) * (1 - Math.exp(-dt / 0.28));
+    if (Math.abs(progress - progressNow) < 0.0008) progressNow = progress;
+    return progressNow;
+  }
+
+  function walkBob(now) {
+    if (now >= walkUntil) return 0;
+    return Math.abs(Math.sin(now / 70)) * 0.18;
+  }
 
   function hasWebGL() {
     try {
@@ -72,8 +88,8 @@
     scene.fog = new THREE.FogExp2(0x120a18, 0.028);
 
     camera = new THREE.PerspectiveCamera(52, 1, 0.1, 120);
-    camera.position.set(0, 3.4, 13.2);
-    camera.lookAt(0, 2.6, -4);
+    camera.position.set(0, CAM_Y, CAM_Z0);
+    camera.lookAt(0, LOOK_Y, LOOK_Z0);
 
     var floorTex = stoneTexture(THREE, 256, ['#2a2430', '#3a3340', '#241e28', '#4a4250']);
     var wallTex = stoneTexture(THREE, 256, ['#1e1826', '#2c2434', '#3a2e42', '#261c30']);
@@ -188,13 +204,16 @@
   function render3d(now) {
     if (disposed || mode !== 'webgl') return;
     var t = (now - t0) / 1000;
+    var p = stepProgress(now);
     camera.position.x = Math.sin(t * 0.22) * 0.35;
-    camera.position.y = 3.4 + Math.sin(t * 0.35) * 0.08;
+    camera.position.y = CAM_Y + Math.sin(t * 0.35) * 0.08 + walkBob(now);
+    camera.position.z = CAM_Z0 + (CAM_Z1 - CAM_Z0) * p;
     if (shakeT > 0) {
       camera.position.x += (Math.random() - 0.5) * 0.18;
       camera.position.y += (Math.random() - 0.5) * 0.1;
       shakeT -= 16;
     }
+    camera.lookAt(0, LOOK_Y, LOOK_Z0 + (LOOK_Z1 - LOOK_Z0) * p);
     var i, cr, to;
     for (i = 0; i < crystals.length; i++) {
       cr = crystals[i];
@@ -242,7 +261,9 @@
     var dpr = Math.min(2, global.devicePixelRatio || 1);
     var W = c.width, H = c.height;
     var g = ctx2d;
-    var t = (performance.now() - t0) / 1000;
+    var now2 = performance.now();
+    var t = (now2 - t0) / 1000;
+    var p = stepProgress(now2);
     g.setTransform(1, 0, 0, 1, 0, 0);
     var bg = g.createLinearGradient(0, 0, 0, H);
     bg.addColorStop(0, phase === 2 ? '#1a0a28' : '#140c1c');
@@ -252,7 +273,7 @@
     g.fillRect(0, 0, W, H);
 
     // stained window
-    var wx = W * 0.32, wy = H * 0.08, ww = W * 0.2, wh = H * 0.32;
+    var wx = W * 0.32, wy = H * (0.08 - p * 0.05), ww = W * 0.2, wh = H * 0.32;
     g.fillStyle = phase === 2 ? '#7a3cb0' : '#4a2a88';
     g.globalAlpha = 0.85;
     g.beginPath();
@@ -269,12 +290,12 @@
     g.stroke();
 
     // floor vanishing tiles
-    var horizon = H * 0.46;
+    var horizon = H * (0.46 - p * 0.07);
     var k, row;
     g.strokeStyle = 'rgba(80,70,90,0.45)';
     g.lineWidth = 2 * dpr;
     for (row = 0; row < 14; row++) {
-      var y = horizon + Math.pow(row / 14, 1.4) * (H - horizon);
+      var y = horizon + Math.pow(((row + p * 2.4) % 14) / 14, 1.4) * (H - horizon);
       g.beginPath();
       g.moveTo(0, y);
       g.lineTo(W, y);
@@ -361,6 +382,9 @@
       canvas = typeof el === 'string' ? document.getElementById(el) : el;
       disposed = false;
       phase = 1;
+      progress = 0;
+      progressNow = 0;
+      walkUntil = 0;
       if (global.THREE && hasWebGL()) {
         try {
           init3d();
@@ -382,6 +406,13 @@
         if (scene.background) scene.background.set(phase === 2 ? 0x180814 : 0x0b0710);
       }
     },
+    setProgress: function (p, instant) {
+      var n = Number(p);
+      if (!isFinite(n)) n = 0;
+      progress = Math.max(0, Math.min(1, n));
+      if (instant) progressNow = progress;
+    },
+    walk: function (ms) { walkUntil = performance.now() + (ms || 820); },
     shake: function (ms) { shakeT = Math.max(shakeT, ms || 280); },
     flash: function (hex) {
       if (mode !== 'webgl' || !scene || !global.THREE) return;

@@ -5,7 +5,7 @@
   var CHAR_BASE = '../../../assets/character-library/';
   var BOSS_ID = 'char-010';
   var BOSS_NAME = 'Crystal Golem';
-  var ANIM_MS = 2400;
+  var ANIM_MS = 3600;
 
   var party = [];
   var combat = null;
@@ -15,7 +15,7 @@
   var misses = [];
   var fxReady = false;
   var resolveBusy = false;
-  var timerSec = 12;
+  var timerSec = 30;
   var countsInfo = null;
 
   function $(sel) { return document.querySelector(sel); }
@@ -158,10 +158,11 @@
     var usedFrac = 1 - (s.timeLeft / (s.timerSec * 1000));
     usedFrac = Math.max(0, Math.min(1, usedFrac));
     $('#speed-needle').style.left = (usedFrac * 100) + '%';
-    var fast = s.isFast && s.timeLeft > 0;
+    var band = s.timeLeft <= 0 ? 'timeup' : (s.speedBand || 'fast');
+    var labels = { fast: 'FAST', mid: 'MID', slow: 'SLOW', timeup: 'TIME UP' };
     var tag = $('#speed-tag');
-    tag.textContent = s.timeLeft <= 0 ? 'TIME UP' : (fast ? 'FAST' : 'SLOW');
-    tag.className = 'speed-tag ' + (fast ? 'fast' : 'slow');
+    tag.textContent = labels[band] || 'FAST';
+    tag.className = 'speed-tag ' + band;
   }
 
   function tickTimer() {
@@ -269,7 +270,7 @@
   }
   function clearAttackClasses() {
     $all('#party-row .actor, #boss-actor').forEach(function (el) {
-      el.classList.remove('atk-strong', 'atk-weak', 'atk-miss', 'atk-boss', 'hit-strong', 'hit-weak', 'hit-boss', 'boss-taunt', 'lunge', 'lunge-weak', 'fumble', 'hit', 'atk-hold');
+      el.classList.remove('atk-strong', 'atk-mid', 'atk-weak', 'atk-miss', 'atk-boss', 'hit-strong', 'hit-mid', 'hit-weak', 'hit-boss', 'boss-taunt', 'lunge', 'lunge-weak', 'fumble', 'hit', 'atk-hold', 'walking');
       el.className = el.className.replace(/\bstyle-\w+/g, '').replace(/\s+/g, ' ').trim();
     });
   }
@@ -303,7 +304,7 @@
 
   function spawnAttackFx(style, kind) {
     var hold = '';
-    var life = kind === 'strong' ? 1200 : 1100;
+    var life = kind === 'strong' ? 1200 : kind === 'mid' ? 1100 : 1000;
     function fx(cls, styles, text) { return addFx(cls + hold, styles, life, text); }
     if (kind === 'miss') {
       if (style === 'arrow') fx('fx-arrow miss');
@@ -321,36 +322,46 @@
       return;
     }
     var strong = kind === 'strong';
+    var mid = kind === 'mid';
+    var tier = strong ? '' : mid ? ' mid' : ' weak';
     if (style === 'arrow') {
-      fx('fx-arrow' + (strong ? '' : ' weak'));
+      fx('fx-arrow' + tier);
+      if (strong) fx('fx-spark');
     } else if (style === 'magic') {
-      fx('fx-orb' + (strong ? '' : ' weak'));
+      fx('fx-orb' + tier);
       if (strong) { fx('fx-spark'); fx('fx-spark s2'); }
+      else if (mid) fx('fx-spark');
     } else if (style === 'holy') {
-      fx('fx-beam' + (strong ? '' : ' weak'));
+      fx('fx-beam' + tier);
       if (strong) { fx('fx-heart', null, '♥'); fx('fx-heart h2', null, '♥'); }
+      else if (mid) fx('fx-heart', null, '♥');
     } else if (style === 'bash') {
-      fx('fx-shield' + (strong ? '' : ' weak'));
+      fx('fx-shield' + tier);
       if (strong) fx('fx-ring');
+      else if (mid) fx('fx-spark');
     } else if (style === 'stab') {
-      fx('fx-dagger');
+      fx('fx-dagger' + tier);
       if (strong) fx('fx-dagger d2');
     } else if (style === 'song') {
-      fx('fx-note', null, '♪');
+      fx('fx-note' + tier, null, '♪');
       if (strong) { fx('fx-note n2', null, '♫'); fx('fx-ring song'); }
+      else if (mid) fx('fx-note n2', null, '♫');
     } else if (style === 'pounce') {
-      fx('fx-burst' + (strong ? '' : ' weak'));
+      fx('fx-burst' + tier);
+      if (strong) fx('fx-shockwave');
     } else if (style === 'book') {
-      fx('fx-book' + (strong ? '' : ' weak'));
+      fx('fx-book' + tier);
       if (strong) fx('fx-spark book');
+      else if (mid) fx('fx-spark');
     } else if (style === 'kick') {
-      fx('fx-ball' + (strong ? '' : ' weak'));
+      fx('fx-ball' + tier);
     } else if (style === 'gust') {
-      fx('fx-wind' + (strong ? '' : ' weak'));
+      fx('fx-wind' + tier);
       if (strong) fx('fx-wind w2');
     } else {
-      fx('fx-slash' + (strong ? '' : ' weak'));
-      if (strong) { fx('fx-slash s2'); fx('fx-shockwave'); }
+      fx('fx-slash' + tier);
+      if (strong) { fx('fx-slash s2'); fx('fx-shockwave'); fx('fx-spark'); }
+      else if (mid) fx('fx-spark');
     }
   }
 
@@ -370,9 +381,9 @@
       gust: [0xa8e0ff, 0xd0f0ff]
     };
     var pair = map[style] || map.slash;
-    var strong = kind === 'strong';
-    DungeonScene.flash(pair[0]);
-    DungeonScene.shake(strong ? 440 : 150);
+    var shake = kind === 'strong' ? 560 : kind === 'mid' ? 300 : 150;
+    DungeonScene.flash(pair[kind === 'strong' ? 0 : 1] || pair[0]);
+    DungeonScene.shake(shake);
   }
 
   function kickAnim(el, cls) {
@@ -381,33 +392,52 @@
     void el.offsetWidth;
     el.classList.add(cls);
   }
+  function setPartyWalking(on) {
+    $all('#party-row .actor').forEach(function (el) {
+      el.classList.toggle('walking', !!on);
+    });
+  }
+
+  function applyProgress(advance) {
+    var s = combat ? combat.snapshot() : null;
+    var p = s ? (1 - s.bossHp / s.bossMax) : 0;
+    if (!isFinite(p)) p = 0;
+    var fight = $('#screen-fight');
+    if (fight) fight.style.setProperty('--progress', String(p));
+    var arena = $('#arena');
+    if (arena) arena.style.setProperty('--progress', String(p));
+    if (global.DungeonScene && DungeonScene.setProgress) DungeonScene.setProgress(p);
+    if (!advance) return Promise.resolve();
+    setPartyWalking(true);
+    if (global.DungeonScene && DungeonScene.walk) DungeonScene.walk(820);
+    return wait(820).then(function () { setPartyWalking(false); });
+  }
+
   function animatePartyAttack(kind) {
     clearCombatFx();
     var actor = $('#party-actor-' + activeIndex);
     var boss = $('#boss-actor');
     var style = applyAttackStyle(actor);
-    if (kind === 'strong') {
-      kickAnim(actor, 'atk-strong');
-      spawnAttackFx(style, 'strong');
-      return wait(280).then(function () {
-        kickAnim(boss, 'hit-strong');
-        attackFlash(style, 'strong');
-        flyDamage('#boss-actor', '-3', 'party-dmg dmg-strong');
-        fxCorrect();
-        return wait(720);
-      }).then(function () {
-        clearAttackClasses();
-      });
-    }
-    kickAnim(actor, 'atk-weak');
-    spawnAttackFx(style, 'weak');
-    return wait(300).then(function () {
-      kickAnim(boss, 'hit-weak');
-      attackFlash(style, 'weak');
-      flyDamage('#boss-actor', '-1', 'party-dmg dmg-weak');
-      return wait(620);
+    var atkCls = kind === 'strong' ? 'atk-strong' : kind === 'mid' ? 'atk-mid' : 'atk-weak';
+    var hitCls = kind === 'strong' ? 'hit-strong' : kind === 'mid' ? 'hit-mid' : 'hit-weak';
+    var dmg = kind === 'strong' ? '-3' : kind === 'mid' ? '-2' : '-1';
+    var dmgCls = kind === 'strong' ? 'dmg-strong' : kind === 'mid' ? 'dmg-mid' : 'dmg-weak';
+    setPartyWalking(true);
+    if (global.DungeonScene && DungeonScene.walk) DungeonScene.walk(340);
+    return wait(340).then(function () {
+      setPartyWalking(false);
+      kickAnim(actor, atkCls);
+      spawnAttackFx(style, kind);
+      return wait(kind === 'strong' ? 360 : kind === 'mid' ? 320 : 280);
+    }).then(function () {
+      kickAnim(boss, hitCls);
+      attackFlash(style, kind);
+      flyDamage('#boss-actor', dmg, 'party-dmg ' + dmgCls);
+      if (kind === 'strong' || kind === 'mid') fxCorrect();
+      return wait(kind === 'strong' ? 780 : kind === 'mid' ? 680 : 540);
     }).then(function () {
       clearAttackClasses();
+      return applyProgress(true);
     });
   }
 
@@ -464,6 +494,9 @@
     activeIndex = 0;
     misses = [];
     resolveBusy = false;
+    var fight = $('#screen-fight');
+    if (fight) fight.style.setProperty('--progress', '0');
+    if (global.DungeonScene && DungeonScene.setProgress) DungeonScene.setProgress(0, true);
     renderArena();
     paintHp();
     showScreen('screen-fight');
@@ -522,6 +555,10 @@
       CastleCards.play(meta.index, { glow: true });
       showBanner(result.label, 'strong');
       chain = animatePartyAttack('strong');
+    } else if (result.kind === 'mid') {
+      CastleCards.play(meta.index, { glow: true });
+      showBanner(result.label, 'mid');
+      chain = animatePartyAttack('mid');
     } else if (result.kind === 'weak') {
       CastleCards.play(meta.index, { glow: true });
       showBanner(result.label, 'weak');
@@ -579,13 +616,18 @@
   }
 
   /* ---------- public API / QA ---------- */
+  function windowSeconds(n) {
+    var w = Math.round((n / 3) * 10) / 10;
+    if (Math.abs(w - Math.round(w)) < 0.05) return String(Math.round(w));
+    return w.toFixed(1);
+  }
+
   function readTimerInput() {
     var n = Number($('#timer-input').value);
-    if (!isFinite(n)) n = 12;
-    n = Math.max(6, Math.min(30, Math.round(n)));
+    if (!isFinite(n) || n < 6 || n > 60) n = 30;
+    else n = Math.round(n);
     $('#timer-input').value = String(n);
-    var fast = (n * 0.4).toFixed(1);
-    $('#timer-fast-hint').textContent = 'Fast window = first 40% (' + fast + 's at ' + n + 's).';
+    $('#timer-fast-hint').textContent = 'Damage: FAST 3 · MID 2 · SLOW 1 — three equal windows (' + windowSeconds(n) + 's each at ' + n + 's).';
     timerSec = n;
     return n;
   }
@@ -616,6 +658,12 @@
       spawnHoldFx(style, 'strong');
       showBanner('STRONG HIT 3', 'strong');
       flyDamage('#boss-actor', '-3', 'party-dmg dmg-strong dmg-hold');
+    } else if (kind === 'mid') {
+      if (actor) actor.classList.add('atk-mid', 'atk-hold');
+      if (boss) boss.classList.add('hit-mid', 'atk-hold');
+      spawnHoldFx(style, 'mid');
+      showBanner('MID HIT 2', 'mid');
+      flyDamage('#boss-actor', '-2', 'party-dmg dmg-mid dmg-hold');
     } else if (kind === 'weak') {
       if (actor) actor.classList.add('atk-weak', 'atk-hold');
       if (boss) boss.classList.add('hit-weak', 'atk-hold');
@@ -664,9 +712,10 @@
       onTimeout();
       return { kind: 'timeout' };
     }
-    var wantCorrect = (kind === 'strong' || kind === 'weak');
+    var wantCorrect = (kind === 'strong' || kind === 'mid' || kind === 'weak');
     if (kind === 'strong') combat.setElapsedMs(0);
-    if (kind === 'weak') combat.setElapsedMs(combat.snapshot().timerSec * 1000 * 0.7);
+    if (kind === 'mid') combat.setElapsedMs(combat.snapshot().timerSec * 1000 * 0.5);
+    if (kind === 'weak') combat.setElapsedMs(combat.snapshot().timerSec * 1000 * 0.85);
     if (kind === 'miss') combat.setElapsedMs(200);
     paintTimer();
     var idx = 0, i, text;
@@ -718,11 +767,13 @@
       assert('4 eligible party ids', partyIds.length === 4 && unique(partyIds).length === 4);
       assert('party not bosses', partyIds.every(function (id) { return charMeta(id).role !== 'boss'; }));
       party = partyIds.slice();
-      timerSec = 12;
+      timerSec = 30;
       showScreen('screen-fight');
       beginFight();
       var s0 = combat.snapshot();
       assert('start HP 18/12', s0.bossHp === 18 && s0.partyHp === 12, s0);
+      assert('timer defaults to 30', s0.timerSec === 30, s0);
+      assert('three damage segments', global.CastleCombat.DMG_MID === 2 && global.CastleCombat.SEGMENTS === 3);
       return wait(120);
     }).then(function () {
       qaResolve('strong');
@@ -730,16 +781,21 @@
     }).then(function () {
       var s = combat.snapshot();
       assert('after STRONG HIT boss=15 party=12', s.bossHp === 15 && s.partyHp === 12, s);
+      qaResolve('mid');
+      return wait(ANIM_MS + 200);
+    }).then(function () {
+      var s = combat.snapshot();
+      assert('after MID HIT boss=13 party=12', s.bossHp === 13 && s.partyHp === 12, s);
       qaResolve('weak');
       return wait(ANIM_MS + 200);
     }).then(function () {
       var s = combat.snapshot();
-      assert('after WEAK HIT boss=14 party=12', s.bossHp === 14 && s.partyHp === 12, s);
+      assert('after WEAK HIT boss=12 party=12', s.bossHp === 12 && s.partyHp === 12, s);
       qaResolve('miss');
       return wait(ANIM_MS + 400);
     }).then(function () {
       var s = combat.snapshot();
-      assert('after MISS boss=14 party=10', s.bossHp === 14 && s.partyHp === 10, s);
+      assert('after MISS boss=12 party=10', s.bossHp === 12 && s.partyHp === 10, s);
       qaResolve('timeout');
       return wait(80).then(function () {
         var probe = lateTapProbe();
@@ -748,7 +804,7 @@
       });
     }).then(function () {
       var s = combat.snapshot();
-      assert('after TIMEOUT/BOSS ATTACK boss=14 party=8', s.bossHp === 14 && s.partyHp === 8, s);
+      assert('after TIMEOUT/BOSS ATTACK boss=12 party=8', s.bossHp === 12 && s.partyHp === 8, s);
       report.finalHp = combat.snapshot();
       report.ok = report.steps.every(function (st) { return st.pass; });
       $('#selftest-report').textContent = JSON.stringify(report, null, 2);

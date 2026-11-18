@@ -24,8 +24,8 @@
         <p class="sub">P.6 exam-revision practice · Units 1–3 skills · teacher preview</p>
         <div class="timer-row">
           <label for="timer-input">Question timer (seconds)</label>
-          <input id="timer-input" type="number" min="6" max="30" step="1" value="12" inputmode="numeric" />
-          <div class="timer-hint" id="timer-fast-hint">Fast window = first 40% (4.8s at 12s).</div>
+          <input id="timer-input" type="number" min="6" max="60" step="1" value="30" inputmode="numeric" />
+          <div class="timer-hint" id="timer-fast-hint">Damage: FAST 3 · MID 2 · SLOW 1 — three equal windows (10s each at 30s).</div>
         </div>
         <button type="button" class="btn" id="btn-start">Enter the Castle</button>
       </div>
@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <section id="screen-fight" class="screen">
+    <section id="screen-fight" class="screen third-person">
       <div class="hud">
         <div class="panel hp-box party">
           <header><span class="hud-label">PARTY HP</span><span class="hp-val" id="party-hp-val">12 / 12</span></header>
@@ -62,9 +62,10 @@
         </div>
         <div class="panel timer-box">
           <header><span class="hud-label">TIMER</span></header>
-          <div class="timer-num" id="timer-num">12.0</div>
-          <div class="speed-band" title="Fast is the first 40% of the timer">
+          <div class="timer-num" id="timer-num">30.0</div>
+          <div class="speed-band" title="Three equal windows: FAST, MID, and SLOW">
             <div class="fast"></div>
+            <div class="mid"></div>
             <div class="slow"></div>
             <div class="needle" id="speed-needle"></div>
           </div>
