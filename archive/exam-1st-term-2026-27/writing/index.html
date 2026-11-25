@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>P.6 Writing · 4-Grid Picture Writing</title>
+<link rel="stylesheet" href="assets/css/portal.css"/>
+<link rel="stylesheet" href="../assets/css/portal.css"/>
+<style>
+  :root {
+    --w-dialog: #0d9488;
+    --w-desc: #7c3aed;
+    --w-gem: #ea580c;
+    --w-before: #be123c;
+    --w-after: #047857;
+    --w-problem: #b45309;
+  }
+  .tok-dialog { color: var(--w-dialog); font-weight: 800; }
+  .tok-desc { color: var(--w-desc); font-weight: 800; }
+  .tok-gem { color: var(--w-gem); font-weight: 800; }
+  .tok-before { color: var(--w-before); font-weight: 800; }
+  .tok-after { color: var(--w-after); font-weight: 800; }
+  .tok-problem { color: var(--w-problem); font-weight: 800; }
+  .jump {
+    display: flex; flex-wrap: wrap; gap: .4rem; margin: .7rem 0 0;
+  }
+  .jump a {
+    font-size: .82rem; font-weight: 800; text-decoration: none;
+    background: #fff; border: 2px solid #fdba74; color: #9a3412;
+    border-radius: 999px; padding: .2rem .65rem;
+  }
+  .step-num {
+    display: inline-grid; place-items: center;
+    width: 1.7rem; height: 1.7rem; border-radius: 50%;
+    background: #ea580c; color: #fff; font-weight: 900; font-size: .85rem;
+    margin-right: .35rem;
+  }
+  .section h2 .step-num { vertical-align: middle; }
+  .four-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: .7rem;
+    margin: .7rem 0 1rem;
+  }
+  @media (max-width: 640px) { .four-grid { grid-template-columns: 1fr; } }
+  .pic-card {
+    background: #fff; border: 2px solid var(--line); border-radius: 16px;
+    overflow: hidden; box-shadow: var(--shadow);
+  }
+  .pic-card img, .pic-art {
+    width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+    background: #fff;
+  }
+  .pic-art {
+    display: grid; place-items: center; padding: .6rem;
+    background: #fff;
+  }
+  .pic-meta { padding: .65rem .75rem .8rem; }
+  .pic-no {
+    display: inline-block; font-size: .75rem; font-weight: 900;
+    letter-spacing: .04em; text-transform: uppercase;
+    background: #fff7ed; color: #9a3412; border-radius: 999px;
+    padding: .08rem .5rem; margin-bottom: .35rem;
+  }
+  .pic-no.problem { background: #fff7ed; color: #9a3412; border: 1px solid #fdba74; }
+  .pic-meta p { margin: .2rem 0; font-size: .9rem; }
+  .lab { font-weight: 800; font-size: .72rem; letter-spacing: .03em; text-transform: uppercase; }
+  .set-head { margin: 0 0 .35rem; font-size: 1.15rem; }
+  .set-block {
+    background: #fff; border: 2px solid var(--line); border-radius: 18px;
+    padding: 1rem 1.05rem 1.1rem; margin: 1rem 0 1.4rem;
+    box-shadow: var(--shadow);
+  }
+  .contrast-bar {
+    display: flex; flex-wrap: wrap; gap: .45rem; align-items: center;
+    margin: .3rem 0 .7rem; font-weight: 800;
+  }
+  .arrow { color: var(--muted); }
+  .gem-page {
+    background: #fff; border: 2px dashed #fb923c; border-radius: 18px;
+    padding: 1rem; margin: .9rem 0; box-shadow: var(--shadow);
+  }
+  .gem-page .gem-layout {
+    display: grid; gap: .9rem; grid-template-columns: minmax(180px, 280px) 1fr;
+    align-items: start;
+  }
+  @media (max-width: 700px) { .gem-page .gem-layout { grid-template-columns: 1fr; } }
+  .gem-page img, .gem-page .pic-art {
+    width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px;
+    border: 3px solid #ea580c;
+  }
+  .sample {
+    background: #fff; border: 2px solid #fdba74; border-radius: 16px;
+    padding: 1rem 1.1rem; box-shadow: var(--shadow);
+  }
+  .sample p { margin: .7rem 0; font-size: 1.02rem; }
+  .planner {
+    display: grid; gap: .65rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .planner .box {
+    background: #fff; border: 2px dashed #fdba74; border-radius: 14px;
+    padding: .7rem .8rem; min-height: 7.5rem;
+  }
+  .planner .box strong { display: block; margin-bottom: .35rem; }
+  .planner .lines { color: #d1d5db; line-height: 1.85; font-size: .9rem; }
+  .key-legend span { margin-right: .7rem; white-space: nowrap; }
+  .scene {
+    width: 100%; height: 100%; min-height: 220px;
+    border-radius: 0; position: relative; overflow: hidden;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+  .scene svg { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<header class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="../index.html">P.6 Student Portal · Mr Cheung</a>
+    <a href="../index.html">Hub</a>
+    <a href="../units/u1/">U1</a>
+    <a href="../units/u2/">U2</a>
+    <a href="../units/u3/">U3</a>
+    <a href="../vocab/">Exam Vocab</a>
+    <a href="../games/">Games</a>
+    <a href="../tenses-practice/">P.6 Tenses Practice</a>
+    <a href="../writing/">Writing</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="badge">P.6 English · Writing</div>
+    <h1>4-Grid Picture Writing</h1>
+    <p>Find the problem first, then expand outward. Use a hidden gem (<span class="tok-gem">伏筆</span>) to connect the story, use dialogue and descriptive phrases to move the plot on, and use contrast to show what the character has learnt.</p>
+    <p class="note key-legend">Colour key:
+      <span class="tok-problem">problem</span>
+      <span class="tok-gem">hidden gem / 伏筆</span>
+      <span class="tok-dialog">dialogue</span>
+      <span class="tok-desc">descriptive phrase</span>
+      <span class="tok-before">beginning</span>
+      <span class="tok-after">ending</span>
+    </p>
+    <nav class="jump" aria-label="On this page">
+      <a href="#s1">1 Four pictures, four paragraphs</a>
+      <a href="#s2">2 Find the problem first</a>
+      <a href="#s3">3 Keep the story flowing</a>
+      <a href="#s4">4 Find the hidden gem</a>
+      <a href="#s5">5 Six example sets</a>
+      <a href="#s6">6 Meaningful dialogue</a>
+      <a href="#s7">7 Descriptive phrases</a>
+      <a href="#s8">8 Vocabulary</a>
+      <a href="#s9">9 Sample writing</a>
+      <a href="#s10">10 Character contrast</a>
+      <a href="#s11">11 Plan, then write</a>
+    </nav>
+  </div>
+
+  <section class="section" id="s1">
+    <h2><span class="step-num">1</span> Look at the 4 pictures</h2>
+    <p>One picture, one paragraph. You need at least <strong>4 pictures and 4 paragraphs</strong>. Write what happens in that picture. Do not squeeze four pictures into two paragraphs, and do not skip a picture.</p>
+    <div class="formula">
+      <span class="tok-obj">Picture 1</span><span class="eq">→</span><span>Paragraph 1</span>
+      <span class="eq">·</span>
+      <span class="tok-obj">Picture 2</span><span class="eq">→</span><span>Paragraph 2</span>
+      <span class="eq">·</span>
+      <span class="tok-obj">Picture 3</span><span class="eq">→</span><span>Paragraph 3</span>
+      <span class="eq">·</span>
+      <span class="tok-obj">Picture 4</span><span class="eq">→</span><span>Paragraph 4</span>
+    </div>
+    <div class="trap">
+      <div class="trap-head">
+        <div>
+          <span class="trap-chip">Hidden traps &amp; tricks</span>
+          <h3>Paragraphing</h3>
+        </div>
+      </div>
+      <div class="ex-grid">
+        <div class="ex-card"><span class="ex-label">Trap</span><br/>
+          <span class="mark-bad">✗ Do not write Pictures 1–4 as one long paragraph.</span><br/>
+          <span class="mark-ok">✓ One picture, one paragraph.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Trap</span><br/>
+          <span class="mark-bad">✗ Do not skip Picture 3 and jump to the ending.</span><br/>
+          <span class="mark-ok">✓ Something must happen in every picture, so the ending feels natural.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="s2">
+    <h2><span class="step-num">2</span> Find the problem first, then expand outward</h2>
+    <p>Do not start by looking only at Picture 1 and asking what happens at the beginning. First look at all four pictures and ask: <strong class="tok-problem">Which picture shows the real problem?</strong> It is often in the middle (usually Picture 2). After you find the problem, expand outward:</p>
+    <div class="formula">
+      <span>1. Where is the problem?</span><span class="eq">→</span>
+      <span>2. What happened before?</span><span class="eq">→</span>
+      <span>3. How is it solved?</span><span class="eq">→</span>
+      <span>4. What has changed?</span>
+    </div>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Ask first</span><br/>Which picture shows the trouble? Which one is the “something went wrong” picture?</div>
+      <div class="ex-card"><span class="ex-label">Then expand</span><br/><strong>Before:</strong> Why did this happen? <strong>After:</strong> How is it solved? What has the character learnt?</div>
+      <div class="ex-card"><span class="ex-label">Why this order?</span><br/>If you start from the problem, the story has a clear direction. You will not reach Picture 3 and suddenly realise you do not know how to end it.</div>
+    </div>
+  </section>
+
+  <section class="section" id="s3">
+    <h2><span class="step-num">3</span> Keep the story flowing</h2>
+    <p>The story should progress naturally. Each paragraph continues from the previous picture. Do not stop suddenly, and do not add a new ending that was never prepared.</p>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Good flow</span><br/>
+        He ignored the <span class="tok-gem">alarm clock</span>. <span class="tok-desc">The next morning</span>, he woke up late… <span class="tok-desc">That evening</span>, he set the clock beside his bed. <span class="tok-desc">The following day</span>, he arrived early.
+      </div>
+      <div class="ex-card"><span class="ex-label">Jumping / sudden ending</span><br/>
+        <span class="mark-bad">✗ He was late. Then he was a good boy. The end.</span><br/>
+        There is no solving process, so readers cannot see how he learnt to be punctual.
+      </div>
+    </div>
+    <p class="mini-note">Useful links: <em>The next morning · Suddenly · At that moment · After that · The following day</em>. Use them to move time on, not just a pile of <em>and then</em>.</p>
+  </section>
+
+  <section class="section" id="s4">
+    <h2><span class="step-num">4</span> Locate the hidden gem (<span class="tok-gem">伏筆</span>)</h2>
+    <p>A <strong class="tok-gem">hidden gem / 伏筆</strong> is a small object in the pictures that is related to the problem. You can find it in the pictures, or you can reasonably add it. Use it so the problem appears naturally, and so the solution has a root.</p>
+    <p>How to find it: lock onto the problem first, then ask, “Which small object could cause or solve this problem?” Then go back to an earlier picture and circle that object — it is often already there, but students have not noticed it.</p>
+
+    <article class="gem-page">
+      <h3>Example page A · The alarm clock</h3>
+      <div class="gem-layout">
+        <img src="images/gem-alarm.jpg" alt="A twin-bell alarm clock sitting unused on a desk"/>
+        <div>
+          <p><strong class="tok-problem">Find the problem first:</strong> In Picture 2 he is <strong>late</strong> for school.</p>
+          <p><strong>Then ask:</strong> Why is he late? Is there a small object in the pictures that is related to time?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the unused <strong>twin-bell alarm clock</strong> on the desk. It is already in Picture 1, but it has not been set.</p>
+          <p><strong>How it connects the story:</strong> The problem (being late) comes from ignoring the clock. The solution (being on time) comes from putting the clock beside the bed and setting it. The same object runs through all four pictures.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="gem-page">
+      <h3>Example page B · The extra lunchbox</h3>
+      <div class="gem-layout">
+        <img src="images/gem-lunchbox.jpg" alt="An extra floral lunchbox inside an open school bag"/>
+        <div>
+          <p><strong class="tok-problem">Find the problem first:</strong> A classmate has <strong>forgotten her lunch</strong> and is hungry.</p>
+          <p><strong>Then ask:</strong> Is there a small object in the main character’s bag that could help?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the <strong>extra lunchbox</strong> in the school bag (Mum packed one more).</p>
+          <p><strong>How it connects the story:</strong> At first she wants to hide it. Later she feels it in her bag and decides to share it. The same lunchbox makes the change from selfish to generous feel natural, not sudden.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="gem-page">
+      <h3>Example page C · The star keychain</h3>
+      <div class="gem-layout">
+        <img src="images/gem-keychain.jpg" alt="A star-shaped keychain hanging loosely from a bag zipper"/>
+        <div>
+          <p><strong class="tok-problem">Find the problem first:</strong> After school he <strong>cannot find his house key</strong> and cannot get in.</p>
+          <p><strong>Then ask:</strong> Where was the key? Is there a small object that has been hanging on the bag all along?</p>
+          <p><strong class="tok-gem">Circle the hidden gem:</strong> the <strong>star keychain</strong> swinging from the zipper. In Picture 1 it is already hanging loosely.</p>
+          <p><strong>How it connects the story:</strong> Because it is loose, it can fall off. Because a classmate finds the keychain, the problem can be solved. He learns to clip the keychain inside his bag.</p>
+        </div>
+      </div>
+    </article>
+
+    <div class="trap">
+      <div class="trap-head">
+        <div>
+          <span class="trap-chip">Hidden traps &amp; tricks</span>
+          <h3>The hidden gem is not decoration</h3>
+        </div>
+      </div>
+      <div class="ex-grid">
+        <div class="ex-card"><span class="ex-label">Weak</span><br/>
+          <span class="mark-bad">✗ Only write “There was a pretty keychain.” and never mention it again.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Strong</span><br/>
+          <span class="mark-ok">✓ The hidden gem should appear early, help cause or explain the problem, and be used again in the solution.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Everyday objects</span><br/>
+          You can use a water bottle, a ticket, a cue card, or another everyday object. The important point is that it is related to the problem, not that it looks pretty.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="s5">
+    <h2><span class="step-num">5</span> Six daily 4-grid examples</h2>
+    <p>Each set shows a contrast. Under the pictures there are useful <span class="tok-dialog">dialogue</span> lines, <span class="tok-desc">descriptive phrases</span>, and the beginning / ending character contrast. You may rewrite them in your own words. Do not copy a whole sample as your own writing.</p>
+
+    <article class="set-block" id="set1">
+      <h3 class="set-head">Set 1 · The Alarm Clock</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">usually late</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">punctual</span>
+        <span class="tok-gem">Hidden gem: twin-bell alarm clock</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Ken is late. Then look back at Picture 1: the unused alarm clock on the desk.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set1-p1.jpg" alt="Ken practises the piano after dinner and does not set the alarm clock"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Just one more song. I won’t be late tomorrow,” Ken whispered.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Ken is <strong class="tok-before">usually late</strong> because he keeps practising the piano after dinner.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set1-p2.jpg" alt="Ken rushes to school with his bag half-zipped as the gate is closing"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Oh no! The gate is closing!” Ken cried.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He rushed down the street with his bag half-zipped, his heart beating fast.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>He woke up late and almost missed school.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set1-p3.jpg" alt="Ken sets the alarm clock beside his pillow"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“I should set the alarm beside my bed tonight,” he said firmly.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He placed the alarm clock next to his pillow and checked the time twice.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set1-p4.jpg" alt="Ken arrives at a quiet school yard early the next morning"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Good morning, Miss Chan. I’m early today!” Ken smiled.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The school yard was still quiet when he walked in, calm and ready.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Now he is <strong class="tok-after">punctual</strong>. He has learnt to plan ahead.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="set-block" id="set2">
+      <h3 class="set-head">Set 2 · The Extra Lunchbox</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">selfish</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">generous</span>
+        <span class="tok-gem">Hidden gem: extra lunchbox</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, a classmate has no lunch. Then look back at the extra lunchbox in Maya’s bag.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set2-p1.jpg" alt="Maya hides an extra lunchbox behind her books"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“This extra lunch is mine. I won’t share it,” Maya muttered.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She pushed the second lunchbox behind her books so nobody could see it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>At first Maya is <strong class="tok-before">selfish</strong>.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set2-p2.jpg" alt="A classmate looks hungry with an empty bag while Maya watches"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“I left my lunch at home,” her classmate said softly, staring at the ground.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The girl’s stomach rumbled and her eyes looked watery.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>A classmate has no lunch.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set2-p3.jpg" alt="Maya offers the floral lunchbox to her classmate"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Mum packed an extra one. You can have it,” Maya said, holding it out.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She felt the lunchbox in her bag and her cheeks turned warm.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set2-p4.jpg" alt="Maya and her classmate sit side by side sharing lunch"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Thank you. It tastes wonderful!” her classmate grinned.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>They sat side by side, sharing the food and laughing in the warm sun.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Maya has become <strong class="tok-after">generous</strong>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="set-block" id="set3">
+      <h3 class="set-head">Set 3 · The Star Keychain</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">careless</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">responsible / careful</span>
+        <span class="tok-gem">Hidden gem: star keychain</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Leo cannot get into his home. Then look back at the star keychain swinging from the zipper.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set3-p1.jpg" alt="Leo swings his bag with a star keychain hanging loosely from the zipper"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Hurry up! I’ll race you to the corner,” Leo laughed, swinging his bag.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A star keychain dangled loosely from the zipper and jingled with every step.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Leo is <strong class="tok-before">careless</strong> with his things.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set3-p2.jpg" alt="Leo stands at a locked door searching his pockets for the key"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Where is my key? I can’t get in!” Leo shouted, checking every pocket.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The door stayed locked and the empty zipper looked strangely quiet.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>The keychain has fallen off. He is locked out.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set3-p3.jpg" alt="A classmate holds out the star keychain she found on the path"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Leo, is this yours? I found it on the path,” his classmate called.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>The star keychain shone in her hand as Leo let out a long breath.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set3-p4.jpg" alt="Leo clips the star keychain safely inside his bag"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“From now on, I’ll clip it inside my bag,” Leo promised.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He fastened the keychain tightly and patted the bag to check it twice.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>He has become <strong class="tok-after">careful and responsible</strong>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="set-block" id="set4">
+      <h3 class="set-head">Set 4 · The Queue Ticket</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">impatient</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">patient</span>
+        <span class="tok-gem">Hidden gem: ticket number 28</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Ava jumps the queue and upsets others. Then look back at the ticket in her hand.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set4-p1.jpg" alt="Ava waits in a queue, tapping her foot and holding ticket number 28"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Why is this queue so slow? I don’t want to wait,” Ava groaned.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She squeezed ticket number 28 in her hand and tapped her foot.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Ava is <strong class="tok-before">impatient</strong>.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set4-p2.jpg" alt="A staff member asks Ava to go back after she jumps the queue"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“It’s not your turn yet. Please go back,” the staff member said firmly.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A boy behind her looked hurt, and the queue became noisy.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>She jumps the queue and upsets others.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set4-p3.jpg" alt="Ava steps back into the queue and looks at ticket 28"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Sorry. I’ll wait for number 28,” Ava said, stepping back.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She looked down at the ticket and stood still, even though she still felt restless.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set4-p4.jpg" alt="Ava is served calmly at the counter when number 28 is called"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Number 28, please,” the helper called. “That’s me. Thank you for waiting,” Ava smiled.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>When her number finally lit up, she walked forward calmly.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>She has learnt to be <strong class="tok-after">patient</strong>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="set-block" id="set5">
+      <h3 class="set-head">Set 5 · The Cue Card</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">embarrassed / too shy to speak</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">brave</span>
+        <span class="tok-gem">Hidden gem: small cue card</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, Hugo cannot start speaking in front of the class. Then look back at the cue card in his pocket.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set5-p1.jpg" alt="Hugo hides a small cue card in his pocket and looks down at his shoes"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“What if I forget everything?” Hugo whispered, sliding the card away.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He hid the cue card in his pocket and looked down at his shoes.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>He feels <strong class="tok-before">embarrassed</strong> and is afraid to speak.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set5-p2.jpg" alt="Hugo freezes in front of the class and cannot start"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“I… I can’t start,” Hugo stammered. The room was very quiet.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>His face turned red and his hands would not stop shaking.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>He freezes in front of the class.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set5-p3.jpg" alt="Hugo looks at his cue card and starts his talk"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“My first point is… we should help new classmates,” he read, then looked up.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He touched the cue card in his pocket, took a deep breath, and his voice grew steadier.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set5-p4.jpg" alt="Hugo walks back to his seat and encourages a quieter classmate"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“You can look at your card too. I was scared, but it helped,” Hugo told a quieter classmate.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>He walked back to his seat with a small, proud smile.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>Hugo has become <strong class="tok-after">brave</strong>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="set-block" id="set6">
+      <h3 class="set-head">Set 6 · The Chore Chart</h3>
+      <div class="contrast-bar">
+        <span class="tok-before">messy / not helping</span>
+        <span class="arrow">→</span>
+        <span class="tok-after">responsible</span>
+        <span class="tok-gem">Hidden gem: chore chart on the fridge</span>
+      </div>
+      <p class="mini-note"><strong class="tok-problem">Find the problem first:</strong> Picture 2, her little brother trips over the bag on the floor. Then look back at the chore chart on the fridge.</p>
+      <div class="four-grid">
+        <figure class="pic-card">
+          <img src="images/set6-p1.jpg" alt="Chloe drops her bag on the floor and walks past the chore chart"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 1 · beginning</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“I’ll tidy up later,” Chloe said, dropping her bag on the floor.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>A chore chart with simple pictures hung on the fridge, but she walked past it.</p>
+            <p><span class="lab tok-before">Contrast</span><br/>Chloe is <strong class="tok-before">messy</strong> and does not help yet.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set6-p2.jpg" alt="Chloe’s little brother trips over the bag in a messy hallway"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no problem">Picture 2 · problem</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“Ouch! I didn’t see the bag!” her little brother cried.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>Mum looked tired, and the hallway was covered with shoes and jackets.</p>
+            <p><span class="lab tok-problem">Problem</span><br/>The mess hurts someone and makes home unsafe.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set6-p3.jpg" alt="Chloe looks at the chore chart and starts hanging up the jackets"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 3 · solution starts</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“I’m sorry. The chart says it’s my turn to tidy. I’ll do it now,” Chloe said.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She studied the <span class="tok-gem">chore chart</span>, then lifted the bag and hung up the jackets one by one.</p>
+          </figcaption>
+        </figure>
+        <figure class="pic-card">
+          <img src="images/set6-p4.jpg" alt="The hallway is tidy and Chloe ticks the chore chart"/>
+          <figcaption class="pic-meta">
+            <span class="pic-no">Picture 4 · ending</span>
+            <p><span class="lab tok-dialog">Dialogue</span><br/>“The floor is clear now. You can play safely,” Chloe smiled.</p>
+            <p><span class="lab tok-desc">Descriptive phrase</span><br/>She ticked her name on the chart and the room finally felt calm.</p>
+            <p><span class="lab tok-after">Contrast</span><br/>She has become <strong class="tok-after">responsible</strong>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="s6">
+    <h2><span class="step-num">6</span> Meaningful dialogue</h2>
+    <p>Do not use dialogue only to say hello. A useful line should do at least one of these things: <strong>move the problem or the solution forward</strong>, and <strong>let readers hear how the character feels</strong>.</p>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Weak · empty greeting</span><br/>
+        <span class="mark-bad">✗ “Hi.” “Hello.” “How are you?” “I’m fine.”</span><br/>
+        The story does not move forward.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · move the problem on</span><br/>
+        <span class="mark-ok tok-dialog">✓ “Where is my key? I can’t get in!”</span><br/>
+        Readers know the problem at once, and they can hear that he is worried.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · move the solution on</span><br/>
+        <span class="mark-ok tok-dialog">✓ “Mum packed an extra one. You can have it.”</span><br/>
+        The dialogue itself is the solution.
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · show feeling</span><br/>
+        <span class="mark-ok tok-dialog">✓ “What if I forget everything?” he whispered.</span><br/>
+        Words like <em>whispered / cried / groaned / promised</em> help you show feelings.
+      </div>
+    </div>
+    <div class="trap">
+      <div class="trap-head">
+        <div>
+          <span class="trap-chip">Hidden traps &amp; tricks</span>
+          <h3>Punctuation and speaking verbs</h3>
+        </div>
+      </div>
+      <p><span class="mark-ok">✓ “I’m early today!” Ken <em>smiled</em>.</span></p>
+      <p><span class="mark-ok">✓ “I can’t start,” Hugo <em>stammered</em>.</span></p>
+      <p class="mini-note">Do not use <em>said</em> in every sentence. Try: whispered, cried, muttered, groaned, promised, called, stammered. Match the verb to the feeling. Do not pick one at random.</p>
+    </div>
+  </section>
+
+  <section class="section" id="s7">
+    <h2><span class="step-num">7</span> Descriptive phrases</h2>
+    <p>Do not depend on dialogue alone. Descriptive phrases can show time, actions, objects and feelings, so the next picture follows naturally.</p>
+    <div class="formula">
+      <span>What can we see?</span><span class="eq">+</span>
+      <span>How does it feel?</span><span class="eq">+</span>
+      <span>Where is the hidden gem?</span>
+    </div>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Weak</span><br/>
+        <span class="mark-bad">✗ He was late. He was sad. Then he was good.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · an object moves the story on</span><br/>
+        <span class="mark-ok tok-desc">✓ The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · a feeling moves the story on</span><br/>
+        <span class="mark-ok tok-desc">✓ His face turned red and his hands would not stop shaking.</span>
+      </div>
+      <div class="ex-card"><span class="ex-label">Strong · a time link</span><br/>
+        <span class="mark-ok tok-desc">✓ The school yard was still quiet when he walked in, calm and ready.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="s8">
+    <h2><span class="step-num">8</span> Useful vocabulary</h2>
+    <p>Use these words to write what happens and how people feel. You may reuse them in different stories, but the sentences must fit your own four pictures.</p>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Character change</span><br/>
+        late → punctual<br/>
+        selfish → generous<br/>
+        careless → careful / responsible<br/>
+        impatient → patient<br/>
+        embarrassed / shy → brave<br/>
+        messy → responsible
+      </div>
+      <div class="ex-card"><span class="ex-label">Feelings</span><br/>worried, embarrassed, restless, proud, relieved, sorry, determined, grateful</div>
+      <div class="ex-card"><span class="ex-label">Story verbs</span><br/>rushed, dangled, squeezed, stammered, fastened, offered, stepped back, ticked</div>
+      <div class="ex-card"><span class="ex-label">Time / flow</span><br/>that evening, the next morning, at that moment, after a deep breath, from now on, the following day</div>
+      <div class="ex-card"><span class="ex-label">Hidden-gem nouns</span><br/>alarm clock, lunchbox, keychain, queue ticket, cue card, chore chart, water bottle, notepad</div>
+    </div>
+  </section>
+
+  <section class="section" id="s9">
+    <h2><span class="step-num">9</span> Sample writing (Set 1)</h2>
+    <p>These four paragraphs use all the skills above: one picture, one paragraph; start from the problem; a hidden gem that runs through the story; meaningful dialogue; descriptive phrases that move the story on; and a clear contrast between the beginning and the ending. The colours match the key at the top.</p>
+    <div class="sample">
+      <p><strong>Paragraph 1 · Picture 1</strong><br/>
+      After dinner, Ken sat at the piano and kept practising. <span class="tok-dialog">“Just one more song. I won’t be late tomorrow,”</span> he whispered. <span class="tok-desc">The twin-bell alarm clock sat quietly on the desk, but he did not touch it.</span> He was <span class="tok-before">usually late</span>, and tonight he did not change that habit.</p>
+      <p><strong>Paragraph 2 · Picture 2 · problem</strong><br/>
+      <span class="tok-desc">The next morning</span>, Ken opened his eyes and jumped up. Daylight was already bright. He grabbed his bag and ran. <span class="tok-dialog">“Oh no! The gate is closing!”</span> he cried. <span class="tok-desc">He rushed down the street with his bag half-zipped, his heart beating fast.</span> He was late for school again.</p>
+      <p><strong>Paragraph 3 · Picture 3</strong><br/>
+      <span class="tok-desc">That evening</span>, Ken looked at the <span class="tok-gem">alarm clock</span> and thought about the morning. <span class="tok-dialog">“I should set the alarm beside my bed tonight,”</span> he said firmly. <span class="tok-desc">He placed it next to his pillow and checked the time twice.</span> This time, the little clock would really help him.</p>
+      <p><strong>Paragraph 4 · Picture 4</strong><br/>
+      <span class="tok-desc">The following day</span>, the alarm rang and Ken got up at once. <span class="tok-desc">The school yard was still quiet when he walked in, calm and ready.</span> <span class="tok-dialog">“Good morning, Miss Chan. I’m early today!”</span> he smiled. Ken was no longer the boy who was always late. He had learnt to be <span class="tok-after">punctual</span>.</p>
+    </div>
+    <p class="mini-note">When you write another set, use the same frame and change the hidden gem and the contrast — for example, the extra lunchbox: selfish → generous.</p>
+  </section>
+
+  <section class="section" id="s10">
+    <h2><span class="step-num">10</span> Show what the character has learnt</h2>
+    <p>Do not end with only “He was happy.” Let readers compare the character <strong class="tok-before">at the beginning</strong> with the character <strong class="tok-after">at the end</strong>, so the change is clear.</p>
+    <div class="ex-grid">
+      <div class="ex-card"><span class="ex-label">Set 1</span><br/><span class="tok-before">usually late</span> → <span class="tok-after">punctual</span></div>
+      <div class="ex-card"><span class="ex-label">Set 2</span><br/><span class="tok-before">selfish</span> → <span class="tok-after">generous</span></div>
+      <div class="ex-card"><span class="ex-label">Set 3</span><br/><span class="tok-before">careless</span> → <span class="tok-after">responsible</span></div>
+      <div class="ex-card"><span class="ex-label">Set 4</span><br/><span class="tok-before">impatient</span> → <span class="tok-after">patient</span></div>
+      <div class="ex-card"><span class="ex-label">Set 5</span><br/><span class="tok-before">embarrassed</span> → <span class="tok-after">brave</span></div>
+      <div class="ex-card"><span class="ex-label">Set 6</span><br/><span class="tok-before">messy</span> → <span class="tok-after">responsible</span></div>
+    </div>
+    <div class="trap">
+      <div class="trap-head">
+        <div>
+          <span class="trap-chip">Hidden traps &amp; tricks</span>
+          <h3>Show the contrast. Do not only announce it.</h3>
+        </div>
+      </div>
+      <div class="ex-grid">
+        <div class="ex-card"><span class="ex-label">Weak</span><br/>
+          <span class="mark-bad">✗ He learnt a lesson. He was good now.</span>
+        </div>
+        <div class="ex-card"><span class="ex-label">Strong</span><br/>
+          <span class="mark-ok">✓ In the beginning he hid the lunchbox. In the end he held it out and shared it. He had become generous.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="s11">
+    <h2><span class="step-num">11</span> Plan first, then write</h2>
+    <p>Use this table before you write. The order is: <strong class="tok-problem">problem</strong> → <strong class="tok-gem">hidden gem</strong> → solution → dialogue / description → change. Plan first, then write Paragraphs 1–4.</p>
+    <div class="planner">
+      <div class="box">
+        <strong>1. Problem (start here)</strong>
+        Which picture? What went wrong?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>2. Hidden gem / 伏筆</strong>
+        What small object connects the story?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>3. Solution</strong>
+        How is the problem solved?
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>4. Dialogue + description</strong>
+        One useful line of speech, one descriptive phrase
+        <div class="lines">__________________<br/>__________________</div>
+      </div>
+      <div class="box">
+        <strong>5. Character change</strong>
+        From ________ → to ________<br/>
+        What has the character learnt?
+        <div class="lines">__________________</div>
+      </div>
+      <div class="box">
+        <strong>Then write Paragraph 1 → 2 → 3 → 4</strong>
+        One picture, one paragraph.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Scrolling page · P.6 Mr Cheung · 4-Grid Picture Writing · for students only — no scores or name lists here.</p>
+  </footer>
+</main>
+</body>
+</html>
